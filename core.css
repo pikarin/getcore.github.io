@@ -1,0 +1,2923 @@
+/*!
+ * Core by Flamecore
+ * Copyright 2017 Flamecore
+ * Licensed All Rights Reserved
+ * Author Andika Chamberlin
+ 
+/*================================================= Core ========================================================*/
+
+/* Default Coreal by Flamecore */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+	  -ms-box-sizing: border-box;
+	   -o-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+	  -ms-box-sizing: border-box;
+	   -o-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html{
+	overflow-x:hidden;
+	font-size:16px;
+	font-family: "Segoe UI",Verdana;
+}
+body{
+	font-size:16px;
+	color:#555;
+}
+a{
+	text-decoration:none;
+}
+p{
+	word-wrap: break-word!important;
+	line-height:1.3;
+}
+pre{
+	overflow-x: scroll; 
+	overflow-y:scroll;
+	text-align:left;
+  }
+pre {
+  margin: 0 0 10px 0;
+}
+h1{
+	font-size: 50px;
+}
+h2{
+	font-size: 42px;
+}
+h3{
+	font-size: 35px;
+}
+h4{
+	font-size: 28px;
+}
+h5{
+	font-size: 21px;
+}
+h6{
+	font-size: 16px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-family: inherit;
+	font-weight: 500;
+	margin:0;
+}
+/* End Default */
+
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+
+/* Document
+   ========================================================================== */
+
+html {
+  font-family: sans-serif; /* 1 */
+  line-height: 1.15; /* 2 */
+  -ms-text-size-adjust: 100%; /* 3 */
+  -webkit-text-size-adjust: 100%; /* 3 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 50px;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+
+figcaption,
+figure,
+main { /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+
+details, /* 1 */
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10-.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/* End Normalize */
+
+/* Container */
+.interior:before,
+.interior:after,
+.container:before,
+.container:after,
+.container-full:before,
+.container-full:after{
+	display: table;
+	content: " ";
+}
+
+.interior:after,
+.container:after,
+.container-full:after{
+	clear: both;
+}
+.interior{
+	padding:0 16px;
+}
+.container {
+	margin:0px 24px;
+}
+.container-full {
+	margin:0;
+}
+/* End Container */
+
+
+/* Core Column */
+.row:before,
+.row:after{
+	display: table;
+	content: " ";
+}
+.row:after{
+	clear: both;
+}
+.column{float:left;width:100%}
+
+.column.eq12 	     {width:100%}
+.column.eql1             {width:91.66666667%}
+.column.eq10             {width:83.33333333%}
+.column.eq9               {width:75%}
+.column.eq8               {width:66.66666667%}
+.column.eq7               {width:58.33333333%}
+.column.eq6               {width:50%}
+.column.eq5               {width:41.66666667%}
+.column.eq4               {width:33.33333333%}
+.column.eq3               {width:25%}
+.column.eq2               {width:16.66666667%}
+.column.eq1               {width:8.33333333%}
+
+.column.eq12-pull     {right:100%}
+.column.eq11-pull     {right:91.66666667%}
+.column.eq10-pull     {right:83.33333333%}
+.column.eq9-pull       {right:75%}
+.column.eq8-pull       {right:66.66666667%}
+.column.eq7-pull       {right:58.33333333%}
+.column.eq6-pull       {right:50%}
+.column.eq5-pull       {right:41.66666667%}
+.column.eq4-pull       {right:33.33333333%}  
+.column.eq3-pull       {right:25%}
+.column.eq2-pull       {right:16.66666667%}
+.column.eq1-pull       {right:8.33333333%}
+.column.eq0-pull       {right:auto;}
+
+.column.eq12-push     {left:100%;}
+.column.eq11-push     {left:91.66666667%;}
+.column.eq10-push     {left:83.33333333%;}
+.column.eq9-push       {left:75%;}
+.column.eq8-push       {left:66.66666667%;}
+.column.eq7-push       {left:58.33333333%;}
+.column.eq6-push       {left:50%;}
+.column.eq5-push       {left:41.66666667%;}
+.column.eq4-push       {left:33.33333333%;}
+.column.eq3-push       {left:25%;}
+.column.eq2-push       {left:16.66666667%;}
+.column.eq1-push       {left:8.33333333%;}
+.column.eq0-push       {left: auto;}
+
+.column.eq12-offset {margin-left:100%;}
+.column.eq11-offset {margin-left:91.66666667%;}
+.column.eq10-offset {margin-left:83.33333333%;}
+.column.eq9-offset   {margin-left:75%;}
+.column.eq8-offset   {margin-left:66.66666667%;}
+.column.eq7-offset   {margin-left:58.33333333%;}
+.column.eq6-offset   {margin-left:50%;}
+.column.eq5-offset   {margin-left:41.66666667%;}
+.column.eq4-offset   {margin-left:33.33333333%;}
+.column.eq3-offset   {margin-left:25%;}
+.column.eq2-offset   {margin-left:16.66666667%;}
+.column.eq1-offset   {margin-left:8.33333333%;}
+.column.eq0-offset   {margin-left:0;}}
+
+.column.s12 	       {width:100%}
+.column.s11 	       {width:91.66666667%}
+.column.s10         {width:83.33333333%}
+.column.s9           {width:75%}
+.column.s8           {width:66.66666667%}
+.column.s7           {width:58.33333333%}
+.column.s6           {width:50%}
+.column.s5           {width:41.66666667%}
+.column.s4           {width:33.33333333%}
+.column.s3           {width:25%}
+.column.s2           {width:16.66666667%}
+.column.s1           {width:8.33333333%}
+
+.column.s12-pull     {right:100%}
+.column.s11-pull     {right:91.66666667%}
+.column.s10-pull     {right:83.33333333%}
+.column.s9-pull       {right:75%}
+.column.s8-pull       {right:66.66666667%}
+.column.s7-pull       {right:58.33333333%}
+.column.s6-pull       {right:50%}
+.column.s5-pull       {right:41.66666667%}
+.column.s4-pull       {right:33.33333333%}  
+.column.s3-pull       {right:25%}
+.column.s2-pull       {right:16.66666667%}
+.column.s1-pull       {right:8.33333333%}
+.column.s0-pull       {right:auto;}
+
+.column.s12-push     {left:100%;}
+.column.s11-push     {left:91.66666667%;}
+.column.s10-push     {left:83.33333333%;}
+.column.s9-push       {left:75%;}
+.column.s8-push       {left:66.66666667%;}
+.column.s7-push       {left:58.33333333%;}
+.column.s6-push       {left:50%;}
+.column.s5-push       {left:41.66666667%;}
+.column.s4-push       {left:33.33333333%;}
+.column.s3-push       {left:25%;}
+.column.s2-push       {left:16.66666667%;}
+.column.s1-push       {left:8.33333333%;}
+.column.s0-push 	     {left: auto;}
+
+.column.s12-offset {margin-left:100%;}
+.column.s11-offset {margin-left:91.66666667%;}
+.column.s10-offset {margin-left:83.33333333%;}
+.column.s9-offset   {margin-left:75%;}
+.column.s8-offset   {margin-left:66.66666667%;}
+.column.s7-offset   {margin-left:58.33333333%;}
+.column.s6-offset   {margin-left:50%;}
+.column.s5-offset   {margin-left:41.66666667%;}
+.column.s4-offset   {margin-left:33.33333333%;}
+.column.s3-offset   {margin-left:25%;}
+.column.s2-offset   {margin-left:16.66666667%;}
+.column.s1-offset   {margin-left:8.33333333%;}
+.column.s0-offset   {margin-left:0;}
+
+@media only screen and (min-width:601px) {
+.column.m12{width:100%}
+.column.m11{width:91.66666667%}
+.column.m10{width: 83.33333333%}
+.column.m9  {width:75%}
+.column.m8  {width:66.66666667%}
+.column.m7  {width:58.33333333%}
+.column.m6  {width:50%}
+.column.m5  {width:41.66666667%}
+.column.m4  {width:33.33333333%}
+.column.m3  {width:25%}
+.column.m2  {width:16.66666667%}
+.column.m1  {width:8.33333333%}
+
+.column.m12-pull {right:100%}
+.column.m11-pull {right:91.66666667%}
+.column.m10-pull {right:83.33333333%}
+.column.m9-pull  {right:75%}
+.column.m8-pull  {right:66.66666667%}
+.column.m7-pull  {right:58.33333333%}
+.column.m6-pull  {right:50%}
+.column.m5-pull  {right:41.66666667%}
+.column.m4-pull  {right:33.33333333%}  
+.column.m3-pull  {right:25%}
+.column.m2-pull  {right:16.66666667%}
+.column.m1-pull  {right:8.33333333%}
+.column.m0-pull  {right:auto;}
+
+.column.m12-push {left:100%;}
+.column.m11-push {left:91.66666667%;}
+.column.m10-push {left:83.33333333%;}
+.column.m9-push  {left:75%;}
+.column.m8-push  {left:66.66666667%;}
+.column.m7-push  {left:58.33333333%;}
+.column.m6-push  {left:50%;}
+.column.m5-push  {left:41.66666667%;}
+.column.m4-push  {left:33.33333333%;}
+.column.m3-push  {left:25%;}
+.column.m2-push  {left:16.66666667%;}
+.column.m1-push  {left:8.33333333%;}
+.column.m0-push  {left: auto;}
+
+.column.m12-offset  {margin-left:100%;}
+.column.m11-offset  {margin-left:91.66666667%;}
+.column.m10-offset  {margin-left:83.33333333%;}
+.column.m9-offset   {margin-left:75%;}
+.column.m8-offset   {margin-left:66.66666667%;}
+.column.m7-offset   {margin-left:58.33333333%;}
+.column.m6-offset   {margin-left:50%;}
+.column.m5-offset   {margin-left:41.66666667%;}
+.column.m4-offset   {margin-left:33.33333333%;}
+.column.m3-offset   {margin-left:25%;}
+.column.m2-offset   {margin-left:16.66666667%;}
+.column.m1-offset   {margin-left:8.33333333%;}
+.column.m0-offset   {margin-left:0;}}
+
+@media only screen and (min-width:993px){
+.column.l12 {width:100%}
+.column.l11 {width:91.66666667%}
+.column.l10 {width:83.33333333%}
+.column.l9  {width:75%;}
+.column.l8  {width:66.66666667%}
+.column.l7  {width:58.33333333%}
+.column.l6  {width:50%}
+.column.l5  {width:41.66666667%}
+.column.l4  {width:33.33333333%}
+.column.l3  {width:25%}
+.column.l2  {width:16.66666667%}
+.column.l1  {width:8.33333333%}
+
+.column.l12-pull {right:100%}
+.column.l11-pull {right:91.66666667%}
+.column.l10-pull {right:83.33333333%}
+.column.l9-pull  {right:75%}
+.column.l8-pull  {right:66.66666667%}
+.column.l7-pull  {right:58.33333333%}
+.column.l6-pull  {right:50%}
+.column.l5-pull  {right:41.66666667%}
+.column.l4-pull  {right:33.33333333%}  
+.column.l3-pull  {right:25%}
+.column.l2-pull  {right:16.66666667%}
+.column.l1-pull  {right:8.33333333%}
+.column.l0-pull  {right:auto;}
+
+.column.l12-push {left:100%;}
+.column.l11-push {left:91.66666667%;}
+.column.l10-push {left:83.33333333%;}
+.column.l9-push  {left:75%;}
+.column.l8-push  {left:66.66666667%;}
+.column.l7-push  {left:58.33333333%;}
+.column.l6-push  {left:50%;}
+.column.l5-push  {left:41.66666667%;}
+.column.l4-push  {left:33.33333333%;}
+.column.l3-push  {left:25%;}
+.column.l2-push  {left:16.66666667%;}
+.column.l1-push  {left:8.33333333%;}
+.column.l0-push  {left: auto;}
+
+.column.l12-offset {margin-left:100%;}
+.column.l11-offset {margin-left:91.66666667%;}
+.column.l10-offset {margin-left:83.33333333%;}
+.column.l9-offset  {margin-left:75%;}
+.column.l8-offset  {margin-left:66.66666667%;}
+.column.l7-offset  {margin-left:58.33333333%;}
+.column.l6-offset  {margin-left:50%;}
+.column.l5-offset  {margin-left:41.66666667%;}
+.column.l4-offset  {margin-left:33.33333333%;}
+.column.l3-offset  {margin-left:25%;}
+.column.l2-offset  {margin-left:16.66666667%;}
+.column.l1-offset  {margin-left:8.33333333%;}
+.column.l0-offset  {margin-left:0;}}
+
+/* End Column */
+
+/* Color Group */
+
+/* Color Pink */
+.pink{color:#FFC0CB}
+.lightpink {color:#FFB6C1}
+.hotpink{color:#FF69B4}
+.deeppink{color:#FF1493}
+.palevioletred{color:#DB7093}
+.mediumvioletred{color:#C71585}
+
+/* Color Purple */
+.lavender{color:#e6e6fa} 		
+.thistle{color:#d8bfd8!important} 		
+.plum{color:#dda0dd!important} 		
+.orchid{color:#da70d6!important}		
+.violet{color:#ee82ee}		
+.fuchsia{color:#ff00ff}		
+.magenta{color:#ff00ff}		
+.mediumorchid{color:#ba55d3}	 		
+.darkorchid{color:#9932cc!important}	
+.darkviolet{color:#9400d3}	
+.blueviolet{color:#8a2be2}	
+.darkmagenta{color:#8b008b}	
+.purple{color:#800080}
+.mediumpurple{color:#9370db}		
+.mediumslateblue{color:#7b68ee}		
+.slateblue{color:#6a5acd	}
+.darkslateblue{color:#483d8b}	
+.rebeccapurple{color:#663399}	
+.indigo{color:#4b0082}
+
+/* Red */
+.lightsalmon{color:#ffa07a}
+.salmon{color:#fa8072}
+.darksalmon{color:#e9967a}
+.lightcoral{color:#f08080}
+.indianred{color:#cd5c5c}
+.crimson{color:#dc143c}
+.red{color:#ff0000}
+.firebrick{color:#b22222}
+.darkred{color:#8b0000}
+
+/* Orange */
+.orange{color:#ffa500} 			
+.darkorange{color:#ff8c00}	 				
+.coral{color:#ff7f50}	 				
+.tomato{color:#ff6347}	 			
+.orangered{color:#ff4500}	
+
+/* Yellow */
+.gold{color:#ffd700}
+.yellow{color:#ffff00}
+.lightyellow{color:#ffffe0}
+.lemonchiffon{color:#fffacd}
+.lightgoldenrodyellow{color:#fafad2}
+.papayawhip{color:#ffefd5}
+.moccasin{color:#ffe4b5}
+.peachpuff{color:#ffdab9}
+.palegoldenrod{color:#eee8aa}
+.khaki{color:#f0e68c}
+.darkkhaki{color:#bdb76b}
+
+/* Green */
+.greenyellow{color:#adff2f}
+.chartreuse{color:#7fff00}
+.lawngreen{color:#7cfc00}
+.lime{color:#00ff00}
+.limegreen{color:#32cd32}
+.palegreen{color:#98fb98}
+.lightgreen{color:#90ee90}
+.mediumspringgreen{color:#00fa9a}
+.springgreen{color:#00ff7f}
+.mediumseagreen{color:#3cb371}
+.seagreen{color:#2e8b57}
+.forestgreen{color:#228b22}
+.green{color:#008000}
+.darkgreen{color:#006400}
+.yellowgreen{color:#9acd32}
+.olivedrab{color:#6b8e23}
+.darkolivegreen{color:#556b2f}
+.mediumaquamarine{color:#66cdaa}
+.darkseagreen{color:#8fbc8f}
+.lightseagreen{color:#20b2aa}
+.darkcyan{color:#008b8b}
+.teal{color:#008080}
+
+/* Cyan */
+.aqua{color:#00ffff}
+.cyan{color:#00ffff}
+.lightcyan{color:#e0ffff}
+.paleturquoise{color:#afeeee}
+.aquamarine{color:#7fffd4}
+.turquoise{color:#40e0d0}
+.mediumturquoise{color:#48d1cc}
+.darkturquoise{color:#00ced1}
+
+/* Blue */
+.cadetblue{color:#5f9ea0}
+.steelblue{color:#4682b4}
+.lightsteelblue{color:#b0c4de}
+.lightblue{color:#add8e6}
+.powderblue{color:#b0e0e6}
+.lightskyblue{color:#87cefa}
+.skyblue{color:#87ceeb}
+.cornflowerblue{color:#6495ed}
+.deepskyblue{color:#00bfff}
+.dodgerblue{color:#1e90ff}
+.royalblue{color:#4169e1}
+.blue{color:#0000ff}
+.mediumblue{color:#0000cd}
+.darkblue{color:#00008b}
+.navy{color:#000080}
+.midnightblue{color:#191970}
+
+/* Brown */
+.cornsilk{color:#fff8dc}
+.blanchedalmond{color:#ffebcd}
+.bisque{color:#ffe4c4}
+.navajowhite{color:#ffdead}
+.wheat{color:#f5deb3}
+.burlywood{color:#deb887}
+.tan{color:#d2b48c}
+.rosybrown{color:#bc8f8f}
+.sandybrown{color:#f4a460}
+.goldenrod{color:#daa520}
+.darkgoldenrod{color:#b8860b}
+.peru{color:#cd853f}
+.chocolate{color:#d2691e}
+.olive{color:#808000}
+.saddlebrown{color:#8b4513}
+.sienna{color:#a0522d}
+.brown{color:#a52a2a}
+.maroon{color:#800000}
+
+/* White */
+.white{color:#ffffff}
+.snow{color:#fffafa}
+.honeydew{color:#f0fff0}
+.mintcream{color:#f5fffa}
+.azure{color:#f0ffff}
+.aliceblue{color:#f0f8ff}
+.ghostwhite{color:#f8f8ff}
+.whitesmoke{color:#f5f5f5}
+.seashell{color:#fff5ee}
+.beige{color:#f5f5dc}
+.oldlace{color:#fdf5e6}
+.floralwhite{color:#fffaf0}
+.ivory{color:#fffff0}
+.antiquewhite{color:#faebd7}
+.linen{color:#faf0e6}
+.lavenderblush{color:#fff0f5}
+.mistyrose{color:#ffe4e1}
+
+/* Black */
+.gainsboro{color:#dcdcdc}
+.lightgray{color:#d3d3d3}
+.silver{color:#c0c0c0}
+.darkgray{color:#a9a9a9}
+.dimgray{color:#696969}
+.gray{color:#808080}
+.lightslategray{color:#778899}
+.slategray{color:#708090}
+.darkslategray{color:#2f4f4f}
+.black{color:#000000}
+
+/* End Color Group */
+
+/* Background Color Group */
+
+/* Color Pink */
+.bg-pink{color:#fff;background-color:#FFC0CB}
+.bg-lightpink {color:#fff;background-color:#FFB6C1}
+.bg-hotpink{color:#fff;background-color:#FF69B4}
+.bg-deeppink{color:#fff;background-color:#FF1493}
+.bg-palevioletred{color:#fff;background-color:#DB7093}
+.bg-mediumvioletred{color:#fff;background-color:#C71585}
+
+/* Color Purple */
+.bg-lavender{color:#fff;background-color:#e6e6fa} 		
+.bg-thistle{color:#fff;background-color:#d8bfd8!important} 		
+.bg-plum{color:#fff;background-color:#dda0dd!important} 		
+.bg-orchid{color:#fff;background-color:#da70d6!important}		
+.bg-violet{color:#fff;background-color:#ee82ee}		
+.bg-fuchsia{color:#fff;background-color:#ff00ff}		
+.bg-magenta{color:#fff;background-color:#ff00ff}		
+.bg-mediumorchid{color:#fff;background-color:#ba55d3}	 		
+.bg-darkorchid{color:#fff;background-color:#9932cc!important}	
+.bg-darkviolet{color:#fff;background-color:#9400d3}	
+.bg-blueviolet{color:#fff;background-color:#8a2be2}	
+.bg-darkmagenta{color:#fff;background-color:#8b008b}	
+.bg-purple{color:#fff;background-color:#800080}
+.bg-mediumpurple{color:#fff;background-color:#9370db}		
+.bg-mediumslateblue{color:#fff;background-color:#7b68ee}		
+.bg-slateblue{color:#fff;background-color:#6a5acd	}
+.bg-darkslateblue{color:#fff;background-color:#483d8b}	
+.bg-rebeccapurple{color:#fff;background-color:#663399}	
+.bg-indigo{color:#fff;background-color:#4b0082}
+
+/* Red */
+.bg-lightsalmon{color:#fff;background-color:#ffa07a}
+.bg-salmon{color:#fff;background-color:#fa8072}
+.bg-darksalmon{color:#fff;background-color:#e9967a}
+.bg-lightcoral{color:#fff;background-color:#f08080}
+.bg-indianred{color:#fff;background-color:#cd5c5c}
+.bg-crimson{color:#fff;background-color:#dc143c}
+.bg-red{color:#fff;background-color:#ff0000}
+.bg-firebrick{color:#fff;background-color:#b22222}
+.bg-darkred{color:#fff;background-color:#8b0000}
+
+/* Orange */
+.bg-orange{color:#fff;background-color:#ffa500} 			
+.bg-darkorange{color:#fff;background-color:#ff8c00}	 				
+.bg-coral{color:#fff;background-color:#ff7f50}	 				
+.bg-tomato{color:#fff;background-color:#ff6347}	 			
+.bg-orangered{color:#fff;background-color:#ff4500}	
+
+/* Yellow */
+.bg-gold{color:#000;background-color:#ffd700}
+.bg-yellow{color:#000;background-color:#ffff00}
+.bg-lightyellow{color:#000;background-color:#ffffe0}
+.bg-lemonchiffon{color:#000;background-color:#fffacd}
+.bg-lightgoldenrodyellow{color:#000;background-color:#fafad2}
+.bg-papayawhip{color:#000;background-color:#ffefd5}
+.bg-moccasin{color:#fff;background-color:#ffe4b5}
+.bg-peachpuff{color:#fff;background-color:#ffdab9}
+.bg-palegoldenrod{color:#fff;background-color:#eee8aa}
+.bg-khaki{color:#fff;background-color:#f0e68c}
+.bg-darkkhaki{color:#fff;background-color:#bdb76b}
+
+/* Green */
+.bg-greenyellow{color:#fff;background-color:#adff2f}
+.bg-chartreuse{color:#fff;background-color:#7fff00}
+.bg-lawngreen{color:#fff;background-color:#7cfc00}
+.bg-lime{color:#fff;background-color:#00ff00}
+.bg-limegreen{color:#fff;background-color:#32cd32}
+.bg-palegreen{color:#fff;background-color:#98fb98}
+.bg-lightgreen{color:#fff;background-color:#90ee90}
+.bg-mediumspringgreen{color:#fff;background-color:#00fa9a}
+.bg-springgreen{color:#fff;background-color:#00ff7f}
+.bg-mediumseagreen{color:#fff;background-color:#3cb371}
+.bg-seagreen{color:#fff;background-color:#2e8b57}
+.bg-forestgreen{color:#fff;background-color:#228b22}
+.bg-green{color:#fff;background-color:#008000}
+.bg-darkgreen{color:#fff;background-color:#006400}
+.bg-yellowgreen{color:#fff;background-color:#9acd32}
+.bg-olivedrab{color:#fff;background-color:#6b8e23}
+.bg-darkolivegreen{color:#fff;background-color:#556b2f}
+.bg-mediumaquamarine{color:#fff;background-color:#66cdaa}
+.bg-darkseagreen{color:#fff;background-color:#8fbc8f}
+.bg-lightseagreen{color:#fff;background-color:#20b2aa}
+.bg-darkcyan{color:#fff;background-color:#008b8b}
+.bg-teal{color:#fff;background-color:#008080}
+
+/* Cyan */
+.bg-aqua{color:#fff;background-color:#00ffff}
+.bg-cyan{color:#fff;background-color:#00ffff}
+.bg-lightcyan{color:#fff;background-color:#e0ffff}
+.bg-paleturquoise{color:#fff;background-color:#afeeee}
+.bg-aquamarine{color:#fff;background-color:#7fffd4}
+.bg-turquoise{color:#fff;background-color:#40e0d0}
+.bg-mediumturquoise{color:#fff;background-color:#48d1cc}
+.bg-darkturquoise{color:#fff;background-color:#00ced1}
+
+/* Blue */
+.bg-cadetblue{color:#fff;background-color:#5f9ea0}
+.bg-steelblue{color:#fff;background-color:#4682b4}
+.bg-lightsteelblue{color:#fff;background-color:#b0c4de}
+.bg-lightblue{color:#fff;background-color:#add8e6}
+.bg-powderblue{color:#fff;background-color:#b0e0e6}
+.bg-lightskyblue{color:#fff;background-color:#87cefa}
+.bg-skyblue{color:#fff;background-color:#87ceeb}
+.bg-cornflowerblue{color:#fff;background-color:#6495ed}
+.bg-deepskyblue{color:#fff;background-color:#00bfff}
+.bg-dodgerblue{color:#fff;background-color:#1e90ff}
+.bg-royalblue{color:#fff;background-color:#4169e1}
+.bg-blue{color:#fff;background-color:#0000ff}
+.bg-mediumblue{color:#fff;background-color:#0000cd}
+.bg-darkblue{color:#fff;background-color:#00008b}
+.bg-navy{color:#fff;background-color:#000080}
+.bg-midnightblue{color:#fff;background-color:#191970}
+
+/* Brown */
+.bg-cornsilk{color:#fff;background-color:#fff8dc}
+.bg-blanchedalmond{color:#fff;background-color:#ffebcd}
+.bg-bisque{color:#fff;background-color:#ffe4c4}
+.bg-navajowhite{color:#fff;background-color:#ffdead}
+.bg-wheat{color:#fff;background-color:#f5deb3}
+.bg-burlywood{color:#fff;background-color:#deb887}
+.bg-tan{color:#fff;background-color:#d2b48c}
+.bg-rosybrown{color:#fff;background-color:#bc8f8f}
+.bg-sandybrown{color:#fff;background-color:#f4a460}
+.bg-goldenrod{color:#fff;background-color:#daa520}
+.bg-darkgoldenrod{color:#fff;background-color:#b8860b}
+.bg-peru{color:#fff;background-color:#cd853f}
+.bg-chocolate{color:#fff;background-color:#d2691e}
+.bg-olive{color:#fff;background-color:#808000}
+.bg-saddlebrown{color:#fff;background-color:#8b4513}
+.bg-sienna{color:#fff;background-color:#a0522d}
+.bg-brown{color:#fff;background-color:#a52a2a}
+.bg-maroon{color:#fff;background-color:#800000}
+
+/* White */
+.bg-white{color:#000:#fff;background-color:#ffffff}
+.bg-snow{color:#000:#fff;background-color:#fffafa}
+.bg-honeydew{color:#000:#fff;background-color:#f0fff0}
+.bg-mintcream{color:#000:#fff;background-color:#f5fffa}
+.bg-azure{color:#000:#fff;background-color:#f0ffff}
+.bg-aliceblue{color:#000:#fff;background-color:#f0f8ff}
+.bg-ghostwhite{color:#000:#fff;background-color:#f8f8ff}
+.bg-whitesmoke{color:#000:#fff;background-color:#f5f5f5}
+.bg-seashell{color:#000:#fff;background-color:#fff5ee}
+.bg-beige{color:#000:#fff;background-color:#f5f5dc}
+.bg-oldlace{color:#000:#fff;background-color:#fdf5e6}
+.bg-floralwhite{color:#000:#fff;background-color:#fffaf0}
+.bg-ivory{color:#000:#fff;background-color:#fffff0}
+.bg-antiquewhite{color:#000:#fff;background-color:#faebd7}
+.bg-linen{color:#000:#fff;background-color:#faf0e6}
+.bg-lavenderblush{color:#000:#fff;background-color:#fff0f5}
+.bg-mistyrose{color:#000:#fff;background-color:#ffe4e1}
+
+/* Black */
+.bg-gainsboro{color:#fff;background-color:#dcdcdc}
+.bg-lightgray{color:#fff;background-color:#d3d3d3}
+.bg-silver{color:#fff;background-color:#c0c0c0}
+.bg-darkgray{color:#fff;background-color:#a9a9a9}
+.bg-dimgray{color:#fff;background-color:#696969}
+.bg-gray{color:#fff;background-color:#808080}
+.bg-lightslategray{color:#fff;background-color:#778899}
+.bg-slategray{color:#fff;background-color:#708090}
+.bg-darkslategray{color:#fff;background-color:#2f4f4f}
+.bg-black{color:#fff;background-color:#000000}
+
+/* End Background Color Group */
+
+/* Background Hover Group */
+
+/* Color Pink */
+.hover-pink:hover{color:#fff;transition-duration:0.9s;background-color:#FFC0CB}
+.hover-lightpink:hover{color:#fff;transition-duration:0.9s;background-color:#FFB6C1}
+.hover-hotpink:hover{color:#fff;transition-duration:0.9s;background-color:#FF69B4}
+.hover-deeppink:hover{color:#fff;transition-duration:0.9s;background-color:#FF1493}
+.hover-palevioletred:hover{color:#fff;transition-duration:0.9s;background-color:#DB7093}
+.hover-mediumvioletred:hover{color:#fff;transition-duration:0.9s;background-color:#C71585}
+
+/* Color Purple */
+.hover-lavender:hover{color:#fff;transition-duration:0.9s;background-color:#e6e6fa} 		
+.hover-thistle:hover{color:#fff;transition-duration:0.9s;background-color:#d8bfd8!important} 		
+.hover-plum:hover{color:#fff;transition-duration:0.9s;background-color:#dda0dd!important} 		
+.hover-orchid:hover{color:#fff;transition-duration:0.9s;background-color:#da70d6!important}		
+.hover-violet:hover{color:#fff;transition-duration:0.9s;background-color:#ee82ee}		
+.hover-fuchsia:hover{color:#fff;transition-duration:0.9s;background-color:#ff00ff}		
+.hover-magenta:hover{color:#fff;transition-duration:0.9s;background-color:#ff00ff}		
+.hover-mediumorchid:hover{color:#fff;transition-duration:0.9s;background-color:#ba55d3}	 		
+.hover-darkorchid:hover{color:#fff;transition-duration:0.9s;background-color:#9932cc!important}	
+.hover-darkviolet:hover{color:#fff;transition-duration:0.9s;background-color:#9400d3}	
+.hover-blueviolet:hover{color:#fff;transition-duration:0.9s;background-color:#8a2be2}	
+.hover-darkmagenta:hover{color:#fff;transition-duration:0.9s;background-color:#8b008b}	
+.hover-purple:hover{color:#fff;transition-duration:0.9s;background-color:#800080}
+.hover-mediumpurple:hover{color:#fff;transition-duration:0.9s;background-color:#9370db}		
+.hover-mediumslateblue:hover{color:#fff;transition-duration:0.9s;background-color:#7b68ee}		
+.hover-slateblue:hover{color:#fff;transition-duration:0.9s;background-color:#6a5acd	}
+.hover-darkslateblue:hover{color:#fff;transition-duration:0.9s;background-color:#483d8b}	
+.hover-rebeccapurple:hover{color:#fff;transition-duration:0.9s;background-color:#663399}	
+.hover-indigo:hover{color:#fff;transition-duration:0.9s;background-color:#4b0082}
+
+/* Red */
+.hover-lightsalmon:hover{color:#fff;transition-duration:0.9s;background-color:#ffa07a}
+.hover-salmon:hover{color:#fff;transition-duration:0.9s;background-color:#fa8072}
+.hover-darksalmon:hover{color:#fff;transition-duration:0.9s;background-color:#e9967a}
+.hover-lightcoral:hover{color:#fff;transition-duration:0.9s;background-color:#f08080}
+.hover-indianred:hover{color:#fff;transition-duration:0.9s;background-color:#cd5c5c}
+.hover-crimson:hover{color:#fff;transition-duration:0.9s;background-color:#dc143c}
+.hover-red:hover{color:#fff;transition-duration:0.9s;background-color:#ff0000}
+.hover-firebrick:hover{color:#fff;transition-duration:0.9s;background-color:#b22222}
+.hover-darkred:hover{color:#fff;transition-duration:0.9s;background-color:#8b0000}
+
+/* Orange */
+.hover-orange:hover{color:#fff;transition-duration:0.9s;background-color:#ffa500} 			
+.hover-darkorange:hover{color:#fff;transition-duration:0.9s;background-color:#ff8c00}	 				
+.hover-coral:hover{color:#fff;transition-duration:0.9s;background-color:#ff7f50}	 				
+.hover-tomato:hover{color:#fff;transition-duration:0.9s;background-color:#ff6347}	 			
+.hover-orangered:hover{color:#fff;transition-duration:0.9s;background-color:#ff4500}	
+
+/* Yellow */
+.hover-gold:hover{color:#000;transition-duration:0.9s;background-color:#ffd700}
+.hover-yellow:hover{color:#000;transition-duration:0.9s;background-color:#ffff00}
+.hover-lightyellow:hover{color0:#000;transition-duration:0.9s;background-color:#ffffe0}
+.hover-lemonchiffon:hover{color:#000;transition-duration:0.9s;background-color:#fffacd}
+.hover-lightgoldenrodyellow:hover{color:#000;transition-duration:0.9s;background-color:#fafad2}
+.hover-papayawhip:hover{color:#000;transition-duration:0.9s;background-color:#ffefd5}
+.hover-moccasin:hover{color:#fff;transition-duration:0.9s;background-color:#ffe4b5}
+.hover-peachpuff:hover{color:#fff;transition-duration:0.9s;background-color:#ffdab9}
+.hover-palegoldenrod:hover{color:#fff;transition-duration:0.9s;background-color:#eee8aa}
+.hover-khaki:hover{color:#fff;transition-duration:0.9s;background-color:#f0e68c}
+.hover-darkkhaki:hover{color:#fff;transition-duration:0.9s;background-color:#bdb76b}
+
+/* Green */
+.hover-greenyellow:hover{color:#fff;transition-duration:0.9s;background-color:#adff2f}
+.hover-chartreuse:hover{color:#fff;transition-duration:0.9s;background-color:#7fff00}
+.hover-lawngreen:hover{color:#fff;transition-duration:0.9s;background-color:#7cfc00}
+.hover-lime:hover{color:#fff;transition-duration:0.9s;background-color:#00ff00}
+.hover-limegreen:hover{color:#fff;transition-duration:0.9s;background-color:#32cd32}
+.hover-palegreen:hover{color:#fff;transition-duration:0.9s;background-color:#98fb98}
+.hover-lightgreen:hover{color:#fff;transition-duration:0.9s;background-color:#90ee90}
+.hover-mediumspringgreen:hover{color:#fff;transition-duration:0.9s;background-color:#00fa9a}
+.hover-springgreen:hover{color:#fff;transition-duration:0.9s;background-color:#00ff7f}
+.hover-mediumseagreen:hover{color:#fff;transition-duration:0.9s;background-color:#3cb371}
+.hover-seagreen:hover{color:#fff;transition-duration:0.9s;background-color:#2e8b57}
+.hover-forestgreen:hover{color:#fff;transition-duration:0.9s;background-color:#228b22}
+.hover-green:hover{color:#fff;transition-duration:0.9s;background-color:#008000}
+.hover-darkgreen:hover{color:#fff;transition-duration:0.9s;background-color:#006400}
+.hover-yellowgreen:hover{color:#fff;transition-duration:0.9s;background-color:#9acd32}
+.hover-olivedrab:hover{color:#fff;transition-duration:0.9s;background-color:#6b8e23}
+.hover-darkolivegreen:hover{color:#fff;transition-duration:0.9s;background-color:#556b2f}
+.hover-mediumaquamarine:hover{color:#fff;transition-duration:0.9s;background-color:#66cdaa}
+.hover-darkseagreen:hover{color:#fff;transition-duration:0.9s;background-color:#8fbc8f}
+.hover-lightseagreen:hover{color:#fff;transition-duration:0.9s;background-color:#20b2aa}
+.hover-darkcyan:hover{color:#fff;transition-duration:0.9s;background-color:#008b8b}
+.hover-teal:hover{color:#fff;transition-duration:0.9s;background-color:#008080}
+
+/* Cyan */
+.hover-aqua:hover{color:#fff;transition-duration:0.9s;background-color:#00ffff}
+.hover-cyan:hover{color:#fff;transition-duration:0.9s;background-color:#00ffff}
+.hover-lightcyan:hover{color:#fff;transition-duration:0.9s;background-color:#e0ffff}
+.hover-paleturquoise:hover{color:#fff;transition-duration:0.9s;background-color:#afeeee}
+.hover-aquamarine:hover{color:#fff;transition-duration:0.9s;background-color:#7fffd4}
+.hover-turquoise:hover{color:#fff;transition-duration:0.9s;background-color:#40e0d0}
+.hover-mediumturquoise:hover{color:#fff;transition-duration:0.9s;background-color:#48d1cc}
+.hover-darkturquoise:hover{color:#fff;transition-duration:0.9s;background-color:#00ced1}
+
+/* Blue */
+.hover-cadetblue:hover{color:#fff;transition-duration:0.9s;background-color:#5f9ea0}
+.hover-steelblue:hover{color:#fff;transition-duration:0.9s;background-color:#4682b4}
+.hover-lightsteelblue:hover{color:#fff;transition-duration:0.9s;background-color:#b0c4de}
+.hover-lightblue:hover{color:#fff;transition-duration:0.9s;background-color:#add8e6}
+.hover-powderblue:hover{color:#fff;transition-duration:0.9s;background-color:#b0e0e6}
+.hover-lightskyblue:hover{color:#fff;transition-duration:0.9s;background-color:#87cefa}
+.hover-skyblue:hover{color:#fff;transition-duration:0.9s;background-color:#87ceeb}
+.hover-cornflowerblue:hover{color:#fff;transition-duration:0.9s;background-color:#6495ed}
+.hover-deepskyblue:hover{color:#fff;transition-duration:0.9s;background-color:#00bfff}
+.hover-dodgerblue:hover{color:#fff;transition-duration:0.9s;background-color:#1e90ff}
+.hover-royalblue:hover{color:#fff;transition-duration:0.9s;background-color:#4169e1}
+.hover-blue:hover{color:#fff;transition-duration:0.9s;background-color:#0000ff}
+.hover-mediumblue:hover{color:#fff;transition-duration:0.9s;background-color:#0000cd}
+.hover-darkblue:hover{color:#fff;transition-duration:0.9s;background-color:#00008b}
+.hover-navy:hover{color:#fff;transition-duration:0.9s;background-color:#000080}
+.hover-midnightblue:hover{color:#fff;transition-duration:0.9s;background-color:#191970}
+
+/* Brown */
+.hover-cornsilk:hover{color:#fff;transition-duration:0.9s;background-color:#fff8dc}
+.hover-blanchedalmond:hover{color:#fff;transition-duration:0.9s;background-color:#ffebcd}
+.hover-bisque:hover{color:#fff;transition-duration:0.9s;background-color:#ffe4c4}
+.hover-navajowhite:hover{color:#fff;transition-duration:0.9s;background-color:#ffdead}
+.hover-wheat:hover{color:#fff;transition-duration:0.9s;background-color:#f5deb3}
+.hover-burlywood:hover{color:#fff;transition-duration:0.9s;background-color:#deb887}
+.hover-tan:hover{color:#fff;transition-duration:0.9s;background-color:#d2b48c}
+.hover-rosybrown:hover{color:#fff;transition-duration:0.9s;background-color:#bc8f8f}
+.hover-sandybrown:hover{color:#fff;transition-duration:0.9s;background-color:#f4a460}
+.hover-goldenrod:hover{color:#fff;transition-duration:0.9s;background-color:#daa520}
+.hover-darkgoldenrod:hover{color:#fff;transition-duration:0.9s;background-color:#b8860b}
+.hover-peru:hover{color:#fff;transition-duration:0.9s;background-color:#cd853f}
+.hover-chocolate:hover{color:#fff;transition-duration:0.9s;background-color:#d2691e}
+.hover-olive:hover{color:#fff;transition-duration:0.9s;background-color:#808000}
+.hover-saddlebrown:hover{color:#fff;transition-duration:0.9s;background-color:#8b4513}
+.hover-sienna:hover{color:#fff;transition-duration:0.9s;background-color:#a0522d}
+.hover-brown:hover{color:#fff;transition-duration:0.9s;background-color:#a52a2a}
+.hover-maroon:hover{color:#fff;transition-duration:0.9s;background-color:#800000}
+
+/* White */
+.hover-white:hover{color:#000;transition-duration:0.9s;background-color:#ffffff}
+.hover-snow:hover{color:#000;transition-duration:0.9s;background-color:#fffafa}
+.hover-honeydew:hover{color:#000;transition-duration:0.9s;background-color:#f0fff0}
+.hover-mintcream:hover{color:#000;transition-duration:0.9s;background-color:#f5fffa}
+.hover-azure:hover{color:#000;transition-duration:0.9s;background-color:#f0ffff}
+.hover-aliceblue:hover{color:#000;transition-duration:0.9s;background-color:#f0f8ff}
+.hover-ghostwhite:hover{color:#000;transition-duration:0.9s;background-color:#f8f8ff}
+.hover-whitesmoke:hover{color:#000;transition-duration:0.9s;background-color:#f5f5f5}
+.hover-seashell:hover{color:#000;transition-duration:0.9s;background-color:#fff5ee}
+.hover-beige:hover{color:#000;transition-duration:0.9s;background-color:#f5f5dc}
+.hover-oldlace:hover{color:#000;transition-duration:0.9s;background-color:#fdf5e6}
+.hover-floralwhite:hover{color:#000;transition-duration:0.9s;background-color:#fffaf0}
+.hover-ivory:hover{color:#000;transition-duration:0.9s;background-color:#fffff0}
+.hover-antiquewhite:hover{color:#000;transition-duration:0.9s;background-color:#faebd7}
+.hover-linen:hover{color:#000;transition-duration:0.9s;background-color:#faf0e6}
+.hover-lavenderblush:hover{color:#000;transition-duration:0.9s;background-color:#fff0f5}
+.hover-mistyrose:hover{color:#000;transition-duration:0.9s;background-color:#ffe4e1}
+
+/* Black */
+.hover-gainsboro:hover{color:#fff;transition-duration:0.9s;background-color:#dcdcdc}
+.hover-lightgray:hover{color:#fff;transition-duration:0.9s;background-color:#d3d3d3}
+.hover-silver:hover{color:#fff;transition-duration:0.9s;background-color:#c0c0c0}
+.hover-darkgray:hover{color:#fff;transition-duration:0.9s;background-color:#a9a9a9}
+.hover-dimgray:hover{color:#fff;transition-duration:0.9s;background-color:#696969}
+.hover-gray:hover{color:#fff;transition-duration:0.9s;background-color:#808080}
+.hover-lightslategray:hover{color:#fff;transition-duration:0.9s;background-color:#778899}
+.hover-slategray:hover{color:#fff;transition-duration:0.9s;background-color:#708090}
+.hover-darkslategray:hover{color:#fff;transition-duration:0.9s;background-color:#2f4f4f}
+.hover-black:hover{color:#fff;transition-duration:0.9s;background-color:#000000}
+
+/* Color Pink */
+.hover-pink{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#FFC0CB}
+.hover-lightpink{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#FFB6C1}
+.hover-hotpink{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#FF69B4}
+.hover-deeppink{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#FF1493}
+.hover-palevioletred{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#DB7093}
+.hover-mediumvioletred{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#C71585}
+
+/* Color Purple */
+.hover-lavender{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#e6e6fa} 		
+.hover-thistle{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#d8bfd8} 		
+.hover-plum{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#dda0dd} 		
+.hover-orchid{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#da70d6}		
+.hover-violet{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ee82ee}		
+.hover-fuchsia{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ff00ff}		
+.hover-magenta{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ff00ff}		
+.hover-mediumorchid{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ba55d3}	 		
+.hover-darkorchid{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#9932cc}	
+.hover-darkviolet{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#9400d3}	
+.hover-blueviolet{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#8a2be2}	
+.hover-darkmagenta{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#8b008b}	
+.hover-purple{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#800080}
+.hover-mediumpurple{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#9370db}		
+.hover-mediumslateblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#7b68ee}		
+.hover-slateblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#6a5acd	}
+.hover-darkslateblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#483d8b}	
+.hover-rebeccapurple{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#663399}	
+.hover-indigo{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#4b0082}
+
+/* Red */
+.hover-lightsalmon{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffa07a}
+.hover-salmon{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#fa8072}
+.hover-darksalmon{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#e9967a}
+.hover-lightcoral{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f08080}
+.hover-indianred{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#cd5c5c}
+.hover-crimson{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#dc143c}
+.hover-red{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ff0000}
+.hover-firebrick{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#b22222}
+.hover-darkred{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#8b0000}
+
+/* Orange */
+.hover-orange{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffa500} 			
+.hover-darkorange{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ff8c00}	 				
+.hover-coral{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ff7f50}	 				
+.hover-tomato{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ff6347}	 			
+.hover-orangered{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ff4500}	
+
+/* Yellow */
+.hover-gold{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffd700}
+.hover-yellow{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffff00}
+.hover-lightyellow{color0:-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#000;transition-duration:0.9s;background-color:-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffffe0}
+.hover-lemonchiffon{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#fffacd}
+.hover-lightgoldenrodyellow{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#fafad2}
+.hover-papayawhip{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffefd5}
+.hover-moccasin{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffe4b5}
+.hover-peachpuff{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffdab9}
+.hover-palegoldenrod{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#eee8aa}
+.hover-khaki{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f0e68c}
+.hover-darkkhaki{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#bdb76b}
+
+/* Green */
+.hover-greenyellow{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#adff2f}
+.hover-chartreuse{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#7fff00}
+.hover-lawngreen{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#7cfc00}
+.hover-lime{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#00ff00}
+.hover-limegreen{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#32cd32}
+.hover-palegreen{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#98fb98}
+.hover-lightgreen{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#90ee90}
+.hover-mediumspringgreen{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#00fa9a}
+.hover-springgreen{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#00ff7f}
+.hover-mediumseagreen{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#3cb371}
+.hover-seagreen{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#2e8b57}
+.hover-forestgreen{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#228b22}
+.hover-green{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#008000}
+.hover-darkgreen{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#006400}
+.hover-yellowgreen{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#9acd32}
+.hover-olivedrab{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#6b8e23}
+.hover-darkolivegreen{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#556b2f}
+.hover-mediumaquamarine{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#66cdaa}
+.hover-darkseagreen{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#8fbc8f}
+.hover-lightseagreen{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#20b2aa}
+.hover-darkcyan{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#008b8b}
+.hover-teal{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#008080}
+
+/* Cyan */
+.hover-aqua{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#00ffff}
+.hover-cyan{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#00ffff}
+.hover-lightcyan{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#e0ffff}
+.hover-paleturquoise{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#afeeee}
+.hover-aquamarine{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#7fffd4}
+.hover-turquoise{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#40e0d0}
+.hover-mediumturquoise{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#48d1cc}
+.hover-darkturquoise{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#00ced1}
+
+/* Blue */
+.hover-cadetblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#5f9ea0}
+.hover-steelblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#4682b4}
+.hover-lightsteelblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#b0c4de}
+.hover-lightblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#add8e6}
+.hover-powderblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#b0e0e6}
+.hover-lightskyblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#87cefa}
+.hover-skyblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#87ceeb}
+.hover-cornflowerblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#6495ed}
+.hover-deepskyblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#00bfff}
+.hover-dodgerblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#1e90ff}
+.hover-royalblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#4169e1}
+.hover-blue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#0000ff}
+.hover-mediumblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#0000cd}
+.hover-darkblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#00008b}
+.hover-navy{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#000080}
+.hover-midnightblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#191970}
+
+/* Brown */
+.hover-cornsilk{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#fff8dc}
+.hover-blanchedalmond{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffebcd}
+.hover-bisque{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffe4c4}
+.hover-navajowhite{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffdead}
+.hover-wheat{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f5deb3}
+.hover-burlywood{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#deb887}
+.hover-tan{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#d2b48c}
+.hover-rosybrown{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#bc8f8f}
+.hover-sandybrown{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f4a460}
+.hover-goldenrod{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#daa520}
+.hover-darkgoldenrod{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#b8860b}
+.hover-peru{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#cd853f}
+.hover-chocolate{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#d2691e}
+.hover-olive{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#808000}
+.hover-saddlebrown{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#8b4513}
+.hover-sienna{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#a0522d}
+.hover-brown{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#a52a2a}
+.hover-maroon{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#800000}
+
+/* White */
+.hover-white{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffffff}
+.hover-snow{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#fffafa}
+.hover-honeydew{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f0fff0}
+.hover-mintcream{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f5fffa}
+.hover-azure{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f0ffff}
+.hover-aliceblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f0f8ff}
+.hover-ghostwhite{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f8f8ff}
+.hover-whitesmoke{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f5f5f5}
+.hover-seashell{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#fff5ee}
+.hover-beige{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f5f5dc}
+.hover-oldlace{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#fdf5e6}
+.hover-floralwhite{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#fffaf0}
+.hover-ivory{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#fffff0}
+.hover-antiquewhite{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#faebd7}
+.hover-linen{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#faf0e6}
+.hover-lavenderblush{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#fff0f5}
+.hover-mistyrose{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffe4e1}
+
+/* Black */
+.hover-gainsboro{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#dcdcdc}
+.hover-lightgray{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#d3d3d3}
+.hover-silver{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#c0c0c0}
+.hover-darkgray{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#a9a9a9}
+.hover-dimgray{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#696969}
+.hover-gray{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#808080}
+.hover-lightslategray{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#778899}
+.hover-slategray{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#708090}
+.hover-darkslategray{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#2f4f4f}
+.hover-black{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#000000}
+
+/* Color Pink */
+.text-hover-pink:hover{transition-duration:0.9s;color:#FFC0CB}
+.text-hover-lightpink:hover{transition-duration:0.9s;color:#FFB6C1}
+.text-hover-hotpink:hover{transition-duration:0.9s;color:#FF69B4}
+.text-hover-deeppink:hover{transition-duration:0.9s;color:#FF1493}
+.text-hover-palevioletred:hover{transition-duration:0.9s;color:#DB7093}
+.text-hover-mediumvioletred:hover{transition-duration:0.9s;color:#C71585}
+
+/* Color Purple */
+.text-hover-lavender:hover{transition-duration:0.9s;color:#e6e6fa} 		
+.text-hover-thistle:hover{transition-duration:0.9s;color:#d8bfd8!important} 		
+.text-hover-plum:hover{transition-duration:0.9s;color:#dda0dd!important} 		
+.text-hover-orchid:hover{transition-duration:0.9s;color:#da70d6!important}		
+.text-hover-violet:hover{transition-duration:0.9s;color:#ee82ee}		
+.text-hover-fuchsia:hover{transition-duration:0.9s;color:#ff00ff}		
+.text-hover-magenta:hover{transition-duration:0.9s;color:#ff00ff}		
+.text-hover-mediumorchid:hover{transition-duration:0.9s;color:#ba55d3}	 		
+.text-hover-darkorchid:hover{transition-duration:0.9s;color:#9932cc!important}	
+.text-hover-darkviolet:hover{transition-duration:0.9s;color:#9400d3}	
+.text-hover-blueviolet:hover{transition-duration:0.9s;color:#8a2be2}	
+.text-hover-darkmagenta:hover{transition-duration:0.9s;color:#8b008b}	
+.text-hover-purple:hover{transition-duration:0.9s;color:#800080}
+.text-hover-mediumpurple:hover{transition-duration:0.9s;color:#9370db}		
+.text-hover-mediumslateblue:hover{transition-duration:0.9s;color:#7b68ee}		
+.text-hover-slateblue:hover{transition-duration:0.9s;color:#6a5acd	}
+.text-hover-darkslateblue:hover{transition-duration:0.9s;color:#483d8b}	
+.text-hover-rebeccapurple:hover{transition-duration:0.9s;color:#663399}	
+.text-hover-indigo:hover{transition-duration:0.9s;color:#4b0082}
+
+/* Red */
+.text-hover-lightsalmon:hover{transition-duration:0.9s;color:#ffa07a}
+.text-hover-salmon:hover{transition-duration:0.9s;color:#fa8072}
+.text-hover-darksalmon:hover{transition-duration:0.9s;color:#e9967a}
+.text-hover-lightcoral:hover{transition-duration:0.9s;color:#f08080}
+.text-hover-indianred:hover{transition-duration:0.9s;color:#cd5c5c}
+.text-hover-crimson:hover{transition-duration:0.9s;color:#dc143c}
+.text-hover-red:hover{transition-duration:0.9s;color:#ff0000}
+.text-hover-firebrick:hover{transition-duration:0.9s;color:#b22222}
+.text-hover-darkred:hover{transition-duration:0.9s;color:#8b0000}
+
+/* Orange */
+.text-hover-orange:hover{transition-duration:0.9s;color:#ffa500} 			
+.text-hover-darkorange:hover{transition-duration:0.9s;color:#ff8c00}	 				
+.text-hover-coral:hover{transition-duration:0.9s;color:#ff7f50}	 				
+.text-hover-tomato:hover{transition-duration:0.9s;color:#ff6347}	 			
+.text-hover-orangered:hover{transition-duration:0.9s;color:#ff4500}	
+
+/* Yellow */
+.text-hover-gold:hover{transition-duration:0.9s;color:#ffd700}
+.text-hover-yellow:hover{transition-duration:0.9s;color:#ffff00}
+.text-hover-lightyellow:hover{color0:#000;transition-duration:0.9s;color:#ffffe0}
+.text-hover-lemonchiffon:hover{transition-duration:0.9s;color:#fffacd}
+.text-hover-lightgoldenrodyellow:hover{transition-duration:0.9s;color:#fafad2}
+.text-hover-papayawhip:hover{transition-duration:0.9s;color:#ffefd5}
+.text-hover-moccasin:hover{transition-duration:0.9s;color:#ffe4b5}
+.text-hover-peachpuff:hover{transition-duration:0.9s;color:#ffdab9}
+.text-hover-palegoldenrod:hover{transition-duration:0.9s;color:#eee8aa}
+.text-hover-khaki:hover{transition-duration:0.9s;color:#f0e68c}
+.text-hover-darkkhaki:hover{transition-duration:0.9s;color:#bdb76b}
+
+/* Green */
+.text-hover-greenyellow:hover{transition-duration:0.9s;color:#adff2f}
+.text-hover-chartreuse:hover{transition-duration:0.9s;color:#7fff00}
+.text-hover-lawngreen:hover{transition-duration:0.9s;color:#7cfc00}
+.text-hover-lime:hover{transition-duration:0.9s;color:#00ff00}
+.text-hover-limegreen:hover{transition-duration:0.9s;color:#32cd32}
+.text-hover-palegreen:hover{transition-duration:0.9s;color:#98fb98}
+.text-hover-lightgreen:hover{transition-duration:0.9s;color:#90ee90}
+.text-hover-mediumspringgreen:hover{transition-duration:0.9s;color:#00fa9a}
+.text-hover-springgreen:hover{transition-duration:0.9s;color:#00ff7f}
+.text-hover-mediumseagreen:hover{transition-duration:0.9s;color:#3cb371}
+.text-hover-seagreen:hover{transition-duration:0.9s;color:#2e8b57}
+.text-hover-forestgreen:hover{transition-duration:0.9s;color:#228b22}
+.text-hover-green:hover{transition-duration:0.9s;color:#008000}
+.text-hover-darkgreen:hover{transition-duration:0.9s;color:#006400}
+.text-hover-yellowgreen:hover{transition-duration:0.9s;color:#9acd32}
+.text-hover-olivedrab:hover{transition-duration:0.9s;color:#6b8e23}
+.text-hover-darkolivegreen:hover{transition-duration:0.9s;color:#556b2f}
+.text-hover-mediumaquamarine:hover{transition-duration:0.9s;color:#66cdaa}
+.text-hover-darkseagreen:hover{transition-duration:0.9s;color:#8fbc8f}
+.text-hover-lightseagreen:hover{transition-duration:0.9s;color:#20b2aa}
+.text-hover-darkcyan:hover{transition-duration:0.9s;color:#008b8b}
+.text-hover-teal:hover{transition-duration:0.9s;color:#008080}
+
+/* Cyan */
+.text-hover-aqua:hover{transition-duration:0.9s;color:#00ffff}
+.text-hover-cyan:hover{transition-duration:0.9s;color:#00ffff}
+.text-hover-lightcyan:hover{transition-duration:0.9s;color:#e0ffff}
+.text-hover-paleturquoise:hover{transition-duration:0.9s;color:#afeeee}
+.text-hover-aquamarine:hover{transition-duration:0.9s;color:#7fffd4}
+.text-hover-turquoise:hover{transition-duration:0.9s;color:#40e0d0}
+.text-hover-mediumturquoise:hover{transition-duration:0.9s;color:#48d1cc}
+.text-hover-darkturquoise:hover{transition-duration:0.9s;color:#00ced1}
+
+/* Blue */
+.text-hover-cadetblue:hover{transition-duration:0.9s;color:#5f9ea0}
+.text-hover-steelblue:hover{transition-duration:0.9s;color:#4682b4}
+.text-hover-lightsteelblue:hover{transition-duration:0.9s;color:#b0c4de}
+.text-hover-lightblue:hover{transition-duration:0.9s;color:#add8e6}
+.text-hover-powderblue:hover{transition-duration:0.9s;color:#b0e0e6}
+.text-hover-lightskyblue:hover{transition-duration:0.9s;color:#87cefa}
+.text-hover-skyblue:hover{transition-duration:0.9s;color:#87ceeb}
+.text-hover-cornflowerblue:hover{transition-duration:0.9s;color:#6495ed}
+.text-hover-deepskyblue:hover{transition-duration:0.9s;color:#00bfff}
+.text-hover-dodgerblue:hover{transition-duration:0.9s;color:#1e90ff}
+.text-hover-royalblue:hover{transition-duration:0.9s;color:#4169e1}
+.text-hover-blue:hover{transition-duration:0.9s;color:#0000ff}
+.text-hover-mediumblue:hover{transition-duration:0.9s;color:#0000cd}
+.text-hover-darkblue:hover{transition-duration:0.9s;color:#00008b}
+.text-hover-navy:hover{transition-duration:0.9s;color:#000080}
+.text-hover-midnightblue:hover{transition-duration:0.9s;color:#191970}
+
+/* Brown */
+.text-hover-cornsilk:hover{transition-duration:0.9s;color:#fff8dc}
+.text-hover-blanchedalmond:hover{transition-duration:0.9s;color:#ffebcd}
+.text-hover-bisque:hover{transition-duration:0.9s;color:#ffe4c4}
+.text-hover-navajowhite:hover{transition-duration:0.9s;color:#ffdead}
+.text-hover-wheat:hover{transition-duration:0.9s;color:#f5deb3}
+.text-hover-burlywood:hover{transition-duration:0.9s;color:#deb887}
+.text-hover-tan:hover{transition-duration:0.9s;color:#d2b48c}
+.text-hover-rosybrown:hover{transition-duration:0.9s;color:#bc8f8f}
+.text-hover-sandybrown:hover{transition-duration:0.9s;color:#f4a460}
+.text-hover-goldenrod:hover{transition-duration:0.9s;color:#daa520}
+.text-hover-darkgoldenrod:hover{transition-duration:0.9s;color:#b8860b}
+.text-hover-peru:hover{transition-duration:0.9s;color:#cd853f}
+.text-hover-chocolate:hover{transition-duration:0.9s;color:#d2691e}
+.text-hover-olive:hover{transition-duration:0.9s;color:#808000}
+.text-hover-saddlebrown:hover{transition-duration:0.9s;color:#8b4513}
+.text-hover-sienna:hover{transition-duration:0.9s;color:#a0522d}
+.text-hover-brown:hover{transition-duration:0.9s;color:#a52a2a}
+.text-hover-maroon:hover{transition-duration:0.9s;color:#800000}
+
+/* White */
+.text-hover-white:hover{transition-duration:0.9s;color:#ffffff}
+.text-hover-snow:hover{transition-duration:0.9s;color:#fffafa}
+.text-hover-honeydew:hover{transition-duration:0.9s;color:#f0fff0}
+.text-hover-mintcream:hover{transition-duration:0.9s;color:#f5fffa}
+.text-hover-azure:hover{transition-duration:0.9s;color:#f0ffff}
+.text-hover-aliceblue:hover{transition-duration:0.9s;color:#f0f8ff}
+.text-hover-ghostwhite:hover{transition-duration:0.9s;color:#f8f8ff}
+.text-hover-whitesmoke:hover{transition-duration:0.9s;color:#f5f5f5}
+.text-hover-seashell:hover{transition-duration:0.9s;color:#fff5ee}
+.text-hover-beige:hover{transition-duration:0.9s;color:#f5f5dc}
+.text-hover-oldlace:hover{transition-duration:0.9s;color:#fdf5e6}
+.text-hover-floralwhite:hover{transition-duration:0.9s;color:#fffaf0}
+.text-hover-ivory:hover{transition-duration:0.9s;color:#fffff0}
+.text-hover-antiquewhite:hover{transition-duration:0.9s;color:#faebd7}
+.text-hover-linen:hover{transition-duration:0.9s;color:#faf0e6}
+.text-hover-lavenderblush:hover{transition-duration:0.9s;color:#fff0f5}
+.text-hover-mistyrose:hover{transition-duration:0.9s;color:#ffe4e1}
+
+/* Black */
+.text-hover-gainsboro:hover{transition-duration:0.9s;color:#dcdcdc}
+.text-hover-lightgray:hover{transition-duration:0.9s;color:#d3d3d3}
+.text-hover-silver:hover{transition-duration:0.9s;color:#c0c0c0}
+.text-hover-darkgray:hover{transition-duration:0.9s;color:#a9a9a9}
+.text-hover-dimgray:hover{transition-duration:0.9s;color:#696969}
+.text-hover-gray:hover{transition-duration:0.9s;color:#808080}
+.text-hover-lightslategray:hover{transition-duration:0.9s;color:#778899}
+.text-hover-slategray:hover{transition-duration:0.9s;color:#708090}
+.text-hover-darkslategray:hover{transition-duration:0.9s;color:#2f4f4f}
+.text-hover-black:hover{transition-duration:0.9s;color:#000000}
+
+/* Color Pink */
+.text-hover-pink{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#FFC0CB}
+.text-hover-lightpink{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#FFB6C1}
+.text-hover-hotpink{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#FF69B4}
+.text-hover-deeppink{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#FF1493}
+.text-hover-palevioletred{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#DB7093}
+.text-hover-mediumvioletred{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#C71585}
+
+/* Color Purple */
+.text-hover-lavender{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#e6e6fa} 		
+.text-hover-thistle{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#d8bfd8} 		
+.text-hover-plum{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#dda0dd} 		
+.text-hover-orchid{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#da70d6}		
+.text-hover-violet{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ee82ee}		
+.text-hover-fuchsia{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ff00ff}		
+.text-hover-magenta{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ff00ff}		
+.text-hover-mediumorchid{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ba55d3}	 		
+.text-hover-darkorchid{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#9932cc}	
+.text-hover-darkviolet{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#9400d3}	
+.text-hover-blueviolet{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#8a2be2}	
+.text-hover-darkmagenta{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#8b008b}	
+.text-hover-purple{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#800080}
+.text-hover-mediumpurple{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#9370db}		
+.text-hover-mediumslateblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#7b68ee}		
+.text-hover-slateblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#6a5acd	}
+.text-hover-darkslateblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#483d8b}	
+.text-hover-rebeccapurple{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#663399}	
+.text-hover-indigo{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#4b0082}
+
+/* Red */
+.text-hover-lightsalmon{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffa07a}
+.text-hover-salmon{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#fa8072}
+.text-hover-darksalmon{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#e9967a}
+.text-hover-lightcoral{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f08080}
+.text-hover-indianred{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#cd5c5c}
+.text-hover-crimson{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#dc143c}
+.text-hover-red{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ff0000}
+.text-hover-firebrick{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#b22222}
+.text-hover-darkred{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#8b0000}
+
+/* Orange */
+.text-hover-orange{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffa500} 			
+.text-hover-darkorange{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ff8c00}	 				
+.text-hover-coral{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ff7f50}	 				
+.text-hover-tomato{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ff6347}	 			
+.text-hover-orangered{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ff4500}	
+
+/* Yellow */
+.text-hover-gold{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffd700}
+.text-hover-yellow{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffff00}
+.text-hover-lightyellow{color0:-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#000;transition-duration:0.9s;color:-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffffe0}
+.text-hover-lemonchiffon{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#fffacd}
+.text-hover-lightgoldenrodyellow{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#fafad2}
+.text-hover-papayawhip{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffefd5}
+.text-hover-moccasin{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffe4b5}
+.text-hover-peachpuff{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffdab9}
+.text-hover-palegoldenrod{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#eee8aa}
+.text-hover-khaki{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f0e68c}
+.text-hover-darkkhaki{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#bdb76b}
+
+/* Green */
+.text-hover-greenyellow{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#adff2f}
+.text-hover-chartreuse{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#7fff00}
+.text-hover-lawngreen{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#7cfc00}
+.text-hover-lime{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#00ff00}
+.text-hover-limegreen{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#32cd32}
+.text-hover-palegreen{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#98fb98}
+.text-hover-lightgreen{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#90ee90}
+.text-hover-mediumspringgreen{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#00fa9a}
+.text-hover-springgreen{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#00ff7f}
+.text-hover-mediumseagreen{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#3cb371}
+.text-hover-seagreen{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#2e8b57}
+.text-hover-forestgreen{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#228b22}
+.text-hover-green{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#008000}
+.text-hover-darkgreen{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#006400}
+.text-hover-yellowgreen{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#9acd32}
+.text-hover-olivedrab{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#6b8e23}
+.text-hover-darkolivegreen{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#556b2f}
+.text-hover-mediumaquamarine{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#66cdaa}
+.text-hover-darkseagreen{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#8fbc8f}
+.text-hover-lightseagreen{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#20b2aa}
+.text-hover-darkcyan{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#008b8b}
+.text-hover-teal{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#008080}
+
+/* Cyan */
+.text-hover-aqua{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#00ffff}
+.text-hover-cyan{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#00ffff}
+.text-hover-lightcyan{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#e0ffff}
+.text-hover-paleturquoise{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#afeeee}
+.text-hover-aquamarine{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#7fffd4}
+.text-hover-turquoise{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#40e0d0}
+.text-hover-mediumturquoise{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#48d1cc}
+.text-hover-darkturquoise{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#00ced1}
+
+/* Blue */
+.text-hover-cadetblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#5f9ea0}
+.text-hover-steelblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#4682b4}
+.text-hover-lightsteelblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#b0c4de}
+.text-hover-lightblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#add8e6}
+.text-hover-powderblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#b0e0e6}
+.text-hover-lightskyblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#87cefa}
+.text-hover-skyblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#87ceeb}
+.text-hover-cornflowerblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#6495ed}
+.text-hover-deepskyblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#00bfff}
+.text-hover-dodgerblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#1e90ff}
+.text-hover-royalblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#4169e1}
+.text-hover-blue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#0000ff}
+.text-hover-mediumblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#0000cd}
+.text-hover-darkblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#00008b}
+.text-hover-navy{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#000080}
+.text-hover-midnightblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#191970}
+
+/* Brown */
+.text-hover-cornsilk{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#fff8dc}
+.text-hover-blanchedalmond{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffebcd}
+.text-hover-bisque{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffe4c4}
+.text-hover-navajowhite{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffdead}
+.text-hover-wheat{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f5deb3}
+.text-hover-burlywood{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#deb887}
+.text-hover-tan{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#d2b48c}
+.text-hover-rosybrown{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#bc8f8f}
+.text-hover-sandybrown{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f4a460}
+.text-hover-goldenrod{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#daa520}
+.text-hover-darkgoldenrod{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#b8860b}
+.text-hover-peru{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#cd853f}
+.text-hover-chocolate{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#d2691e}
+.text-hover-olive{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#808000}
+.text-hover-saddlebrown{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#8b4513}
+.text-hover-sienna{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#a0522d}
+.text-hover-brown{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#a52a2a}
+.text-hover-maroon{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#800000}
+
+/* White */
+.text-hover-white{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffffff}
+.text-hover-snow{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#fffafa}
+.text-hover-honeydew{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f0fff0}
+.text-hover-mintcream{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f5fffa}
+.text-hover-azure{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f0ffff}
+.text-hover-aliceblue{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f0f8ff}
+.text-hover-ghostwhite{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f8f8ff}
+.text-hover-whitesmoke{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f5f5f5}
+.text-hover-seashell{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#fff5ee}
+.text-hover-beige{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f5f5dc}
+.text-hover-oldlace{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#fdf5e6}
+.text-hover-floralwhite{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#fffaf0}
+.text-hover-ivory{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#fffff0}
+.text-hover-antiquewhite{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#faebd7}
+.text-hover-linen{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#faf0e6}
+.text-hover-lavenderblush{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#fff0f5}
+.text-hover-mistyrose{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffe4e1}
+
+/* Black */
+.text-hover-gainsboro{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#dcdcdc}
+.text-hover-lightgray{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#d3d3d3}
+.text-hover-silver{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#c0c0c0}
+.text-hover-darkgray{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#a9a9a9}
+.text-hover-dimgray{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#696969}
+.text-hover-gray{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#808080}
+.text-hover-lightslategray{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#778899}
+.text-hover-slategray{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#708090}
+.text-hover-darkslategray{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#2f4f4f}
+.text-hover-black{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#000000}
+
+/* End Hover Group */
+
+/* Core Border Group*/
+
+/* Color Pink */
+.border-pink{border: 1px solid #FFC0CB}
+.border-lightpink {border: 1px solid #FFB6C1}
+.border-hotpink{border: 1px solid #FF69B4}
+.border-deeppink{border: 1px solid #FF1493}
+.border-palevioletred{border: 1px solid #DB7093}
+.border-mediumvioletred{border: 1px solid #C71585}
+
+/* Color Purple */
+.border-lavender{border: 1px solid #e6e6fa} 		
+.border-thistle{border: 1px solid #d8bfd8!important} 		
+.border-plum{border: 1px solid #dda0dd!important} 		
+.border-orchid{border: 1px solid #da70d6!important}		
+.border-violet{border: 1px solid #ee82ee}		
+.border-fuchsia{border: 1px solid #ff00ff}		
+.border-magenta{border: 1px solid #ff00ff}		
+.border-mediumorchid{border: 1px solid #ba55d3}	 		
+.border-darkorchid{border: 1px solid #9932cc!important}	
+.border-darkviolet{border: 1px solid #9400d3}	
+.border-blueviolet{border: 1px solid #8a2be2}	
+.border-darkmagenta{border: 1px solid #8b008b}	
+.border-purple{border: 1px solid #800080}
+.border-mediumpurple{border: 1px solid #9370db}		
+.border-mediumslateblue{border: 1px solid #7b68ee}		
+.border-slateblue{border: 1px solid #6a5acd	}
+.border-darkslateblue{border: 1px solid #483d8b}	
+.border-rebeccapurple{border: 1px solid #663399}	
+.border-indigo{border: 1px solid #4b0082}
+
+/* Red */
+.border-lightsalmon{border: 1px solid #ffa07a}
+.border-salmon{border: 1px solid #fa8072}
+.border-darksalmon{border: 1px solid #e9967a}
+.border-lightcoral{border: 1px solid #f08080}
+.border-indianred{border: 1px solid #cd5c5c}
+.border-crimson{border: 1px solid #dc143c}
+.border-red{border: 1px solid #ff0000}
+.border-firebrick{border: 1px solid #b22222}
+.border-darkred{border: 1px solid #8b0000}
+
+/* Orange */
+.border-orange{border: 1px solid #ffa500} 			
+.border-darkorange{border: 1px solid #ff8c00}	 				
+.border-coral{border: 1px solid #ff7f50}	 				
+.border-tomato{border: 1px solid #ff6347}	 			
+.border-orangered{border: 1px solid #ff4500}	
+
+/* Yellow */
+.border-gold{border: 1px solid #ffd700}
+.border-yellow{border: 1px solid #ffff00}
+.border-lightyellow{border: 1px solid #ffffe0}
+.border-lemonchiffon{border: 1px solid #fffacd}
+.border-lightgoldenrodyellow{border: 1px solid #fafad2}
+.border-papayawhip{border: 1px solid #ffefd5}
+.border-moccasin{border: 1px solid #ffe4b5}
+.border-peachpuff{border: 1px solid #ffdab9}
+.border-palegoldenrod{border: 1px solid #eee8aa}
+.border-khaki{border: 1px solid #f0e68c}
+.border-darkkhaki{border: 1px solid #bdb76b}
+
+/* Green */
+.border-greenyellow{border: 1px solid #adff2f}
+.border-chartreuse{border: 1px solid #7fff00}
+.border-lawngreen{border: 1px solid #7cfc00}
+.border-lime{border: 1px solid #00ff00}
+.border-limegreen{border: 1px solid #32cd32}
+.border-palegreen{border: 1px solid #98fb98}
+.border-lightgreen{border: 1px solid #90ee90}
+.border-mediumspringgreen{border: 1px solid #00fa9a}
+.border-springgreen{border: 1px solid #00ff7f}
+.border-mediumseagreen{border: 1px solid #3cb371}
+.border-seagreen{border: 1px solid #2e8b57}
+.border-forestgreen{border: 1px solid #228b22}
+.border-green{border: 1px solid #008000}
+.border-darkgreen{border: 1px solid #006400}
+.border-yellowgreen{border: 1px solid #9acd32}
+.border-olivedrab{border: 1px solid #6b8e23}
+.border-darkolivegreen{border: 1px solid #556b2f}
+.border-mediumaquamarine{border: 1px solid #66cdaa}
+.border-darkseagreen{border: 1px solid #8fbc8f}
+.border-lightseagreen{border: 1px solid #20b2aa}
+.border-darkcyan{border: 1px solid #008b8b}
+.border-teal{border: 1px solid #008080}
+
+/* Cyan */
+.border-aqua{border: 1px solid #00ffff}
+.border-cyan{border: 1px solid #00ffff}
+.border-lightcyan{border: 1px solid #e0ffff}
+.border-paleturquoise{border: 1px solid #afeeee}
+.border-aquamarine{border: 1px solid #7fffd4}
+.border-turquoise{border: 1px solid #40e0d0}
+.border-mediumturquoise{border: 1px solid #48d1cc}
+.border-darkturquoise{border: 1px solid #00ced1}
+
+/* Blue */
+.border-cadetblue{border: 1px solid #5f9ea0}
+.border-steelblue{border: 1px solid #4682b4}
+.border-lightsteelblue{border: 1px solid #b0c4de}
+.border-lightblue{border: 1px solid #add8e6}
+.border-powderblue{border: 1px solid #b0e0e6}
+.border-lightskyblue{border: 1px solid #87cefa}
+.border-skyblue{border: 1px solid #87ceeb}
+.border-cornflowerblue{border: 1px solid #6495ed}
+.border-deepskyblue{border: 1px solid #00bfff}
+.border-dodgerblue{border: 1px solid #1e90ff}
+.border-royalblue{border: 1px solid #4169e1}
+.border-blue{border: 1px solid #0000ff}
+.border-mediumblue{border: 1px solid #0000cd}
+.border-darkblue{border: 1px solid #00008b}
+.border-navy{border: 1px solid #000080}
+.border-midnightblue{border: 1px solid #191970}
+
+/* Brown */
+.border-cornsilk{border: 1px solid #fff8dc}
+.border-blanchedalmond{border: 1px solid #ffebcd}
+.border-bisque{border: 1px solid #ffe4c4}
+.border-navajowhite{border: 1px solid #ffdead}
+.border-wheat{border: 1px solid #f5deb3}
+.border-burlywood{border: 1px solid #deb887}
+.border-tan{border: 1px solid #d2b48c}
+.border-rosybrown{border: 1px solid #bc8f8f}
+.border-sandybrown{border: 1px solid #f4a460}
+.border-goldenrod{border: 1px solid #daa520}
+.border-darkgoldenrod{border: 1px solid #b8860b}
+.border-peru{border: 1px solid #cd853f}
+.border-chocolate{border: 1px solid #d2691e}
+.border-olive{border: 1px solid #808000}
+.border-saddlebrown{border: 1px solid #8b4513}
+.border-sienna{border: 1px solid #a0522d}
+.border-brown{border: 1px solid #a52a2a}
+.border-maroon{border: 1px solid #800000}
+
+/* White */
+.border-white{border: 1px solid #ffffff}
+.border-snow{border: 1px solid #fffafa}
+.border-honeydew{border: 1px solid #f0fff0}
+.border-mintcream{border: 1px solid #f5fffa}
+.border-azure{border: 1px solid #f0ffff}
+.border-aliceblue{border: 1px solid #f0f8ff}
+.border-ghostwhite{border: 1px solid #f8f8ff}
+.border-whitesmoke{border: 1px solid #f5f5f5}
+.border-seashell{border: 1px solid #fff5ee}
+.border-beige{border: 1px solid #f5f5dc}
+.border-oldlace{border: 1px solid #fdf5e6}
+.border-floralwhite{border: 1px solid #fffaf0}
+.border-ivory{border: 1px solid #fffff0}
+.border-antiquewhite{border: 1px solid #faebd7}
+.border-linen{border: 1px solid #faf0e6}
+.border-lavenderblush{border: 1px solid #fff0f5}
+.border-mistyrose{border: 1px solid #ffe4e1}
+.border-snow{border: 1px solid #fffafa}
+.border-honeydew{border: 1px solid #f0fff0}
+.border-mintcream{border: 1px solid #f5fffa}
+.border-azure{border: 1px solid #f0ffff}
+.border-aliceblue{border: 1px solid #f0f8ff}
+.border-ghostwhite{border: 1px solid #f8f8ff}
+.border-whitesmoke{border: 1px solid #f5f5f5}
+.border-seashell{border: 1px solid #fff5ee}
+.border-beige{border: 1px solid #f5f5dc}
+.border-oldlace{border: 1px solid #fdf5e6}
+.border-floralwhite{border: 1px solid #fffaf0}
+.border-ivory{border: 1px solid #fffff0}
+.border-antiquewhite{border: 1px solid #faebd7}
+.border-linen{border: 1px solid #faf0e6}
+.border-lavenderblush{border: 1px solid #fff0f5}
+.border-mistyrose{border: 1px solid #ffe4e1}
+
+/* Black */
+.border-gainsboro{border: 1px solid #dcdcdc}
+.border-lightgray{border: 1px solid #d3d3d3}
+.border-silver{border: 1px solid #c0c0c0}
+.border-darkgray{border: 1px solid #a9a9a9}
+.border-dimgray{border: 1px solid #696969}
+.border-gray{border: 1px solid #808080}
+.border-lightslategray{border: 1px solid #778899}
+.border-slategray{border: 1px solid #708090}
+.border-darkslategray{border: 1px solid #2f4f4f}
+.border-black{border: 1px solid #000000}
+
+/* End Border Group */
+
+/* Border Bottombar */
+
+/* Color Pink */
+.bottombar-pink{border-bottom: 6px solid #FFC0CB}
+.bottombar-lightpink {border-bottom: 6px solid #FFB6C1}
+.bottombar-hotpink{border-bottom: 6px solid #FF69B4}
+.bottombar-deeppink{border-bottom: 6px solid #FF1493}
+.bottombar-palevioletred{border-bottom: 6px solid #DB7093}
+.bottombar-mediumvioletred{border-bottom: 6px solid #C71585}
+
+/* Color Purple */
+.bottombar-lavender{border-bottom: 6px solid #e6e6fa} 		
+.bottombar-thistle{border-bottom: 6px solid #d8bfd8!important} 		
+.bottombar-plum{border-bottom: 6px solid #dda0dd!important} 		
+.bottombar-orchid{border-bottom: 6px solid #da70d6!important}		
+.bottombar-violet{border-bottom: 6px solid #ee82ee}		
+.bottombar-fuchsia{border-bottom: 6px solid #ff00ff}		
+.bottombar-magenta{border-bottom: 6px solid #ff00ff}		
+.bottombar-mediumorchid{border-bottom: 6px solid #ba55d3}	 		
+.bottombar-darkorchid{border-bottom: 6px solid #9932cc!important}	
+.bottombar-darkviolet{border-bottom: 6px solid #9400d3}	
+.bottombar-blueviolet{border-bottom: 6px solid #8a2be2}	
+.bottombar-darkmagenta{border-bottom: 6px solid #8b008b}	
+.bottombar-purple{border-bottom: 6px solid #800080}
+.bottombar-mediumpurple{border-bottom: 6px solid #9370db}		
+.bottombar-mediumslateblue{border-bottom: 6px solid #7b68ee}		
+.bottombar-slateblue{border-bottom: 6px solid #6a5acd	}
+.bottombar-darkslateblue{border-bottom: 6px solid #483d8b}	
+.bottombar-rebeccapurple{border-bottom: 6px solid #663399}	
+.bottombar-indigo{border-bottom: 6px solid #4b0082}
+
+/* Red */
+.bottombar-lightsalmon{border-bottom: 6px solid #ffa07a}
+.bottombar-salmon{border-bottom: 6px solid #fa8072}
+.bottombar-darksalmon{border-bottom: 6px solid #e9967a}
+.bottombar-lightcoral{border-bottom: 6px solid #f08080}
+.bottombar-indianred{border-bottom: 6px solid #cd5c5c}
+.bottombar-crimson{border-bottom: 6px solid #dc143c}
+.bottombar-red{border-bottom: 6px solid #ff0000}
+.bottombar-firebrick{border-bottom: 6px solid #b22222}
+.bottombar-darkred{border-bottom: 6px solid #8b0000}
+
+/* Orange */
+.bottombar-orange{border-bottom: 6px solid #ffa500} 			
+.bottombar-darkorange{border-bottom: 6px solid #ff8c00}	 				
+.bottombar-coral{border-bottom: 6px solid #ff7f50}	 				
+.bottombar-tomato{border-bottom: 6px solid #ff6347}	 			
+.bottombar-orangered{border-bottom: 6px solid #ff4500}	
+
+/* Yellow */
+.bottombar-gold{border-bottom: 6px solid #ffd700}
+.bottombar-yellow{border-bottom: 6px solid #ffff00}
+.bottombar-lightyellow{border-bottom: 6px solid #ffffe0}
+.bottombar-lemonchiffon{border-bottom: 6px solid #fffacd}
+.bottombar-lightgoldenrodyellow{border-bottom: 6px solid #fafad2}
+.bottombar-papayawhip{border-bottom: 6px solid #ffefd5}
+.bottombar-moccasin{border-bottom: 6px solid #ffe4b5}
+.bottombar-peachpuff{border-bottom: 6px solid #ffdab9}
+.bottombar-palegoldenrod{border-bottom: 6px solid #eee8aa}
+.bottombar-khaki{border-bottom: 6px solid #f0e68c}
+.bottombar-darkkhaki{border-bottom: 6px solid #bdb76b}
+
+/* Green */
+.bottombar-greenyellow{border-bottom: 6px solid #adff2f}
+.bottombar-chartreuse{border-bottom: 6px solid #7fff00}
+.bottombar-lawngreen{border-bottom: 6px solid #7cfc00}
+.bottombar-lime{border-bottom: 6px solid #00ff00}
+.bottombar-limegreen{border-bottom: 6px solid #32cd32}
+.bottombar-palegreen{border-bottom: 6px solid #98fb98}
+.bottombar-lightgreen{border-bottom: 6px solid #90ee90}
+.bottombar-mediumspringgreen{border-bottom: 6px solid #00fa9a}
+.bottombar-springgreen{border-bottom: 6px solid #00ff7f}
+.bottombar-mediumseagreen{border-bottom: 6px solid #3cb371}
+.bottombar-seagreen{border-bottom: 6px solid #2e8b57}
+.bottombar-forestgreen{border-bottom: 6px solid #228b22}
+.bottombar-green{border-bottom: 6px solid #008000}
+.bottombar-darkgreen{border-bottom: 6px solid #006400}
+.bottombar-yellowgreen{border-bottom: 6px solid #9acd32}
+.bottombar-olivedrab{border-bottom: 6px solid #6b8e23}
+.bottombar-darkolivegreen{border-bottom: 6px solid #556b2f}
+.bottombar-mediumaquamarine{border-bottom: 6px solid #66cdaa}
+.bottombar-darkseagreen{border-bottom: 6px solid #8fbc8f}
+.bottombar-lightseagreen{border-bottom: 6px solid #20b2aa}
+.bottombar-darkcyan{border-bottom: 6px solid #008b8b}
+.bottombar-teal{border-bottom: 6px solid #008080}
+
+/* Cyan */
+.bottombar-aqua{border-bottom: 6px solid #00ffff}
+.bottombar-cyan{border-bottom: 6px solid #00ffff}
+.bottombar-lightcyan{border-bottom: 6px solid #e0ffff}
+.bottombar-paleturquoise{border-bottom: 6px solid #afeeee}
+.bottombar-aquamarine{border-bottom: 6px solid #7fffd4}
+.bottombar-turquoise{border-bottom: 6px solid #40e0d0}
+.bottombar-mediumturquoise{border-bottom: 6px solid #48d1cc}
+.bottombar-darkturquoise{border-bottom: 6px solid #00ced1}
+
+/* Blue */
+.bottombar-cadetblue{border-bottom: 6px solid #5f9ea0}
+.bottombar-steelblue{border-bottom: 6px solid #4682b4}
+.bottombar-lightsteelblue{border-bottom: 6px solid #b0c4de}
+.bottombar-lightblue{border-bottom: 6px solid #add8e6}
+.bottombar-powderblue{border-bottom: 6px solid #b0e0e6}
+.bottombar-lightskyblue{border-bottom: 6px solid #87cefa}
+.bottombar-skyblue{border-bottom: 6px solid #87ceeb}
+.bottombar-cornflowerblue{border-bottom: 6px solid #6495ed}
+.bottombar-deepskyblue{border-bottom: 6px solid #00bfff}
+.bottombar-dodgerblue{border-bottom: 6px solid #1e90ff}
+.bottombar-royalblue{border-bottom: 6px solid #4169e1}
+.bottombar-blue{border-bottom: 6px solid #0000ff}
+.bottombar-mediumblue{border-bottom: 6px solid #0000cd}
+.bottombar-darkblue{border-bottom: 6px solid #00008b}
+.bottombar-navy{border-bottom: 6px solid #000080}
+.bottombar-midnightblue{border-bottom: 6px solid #191970}
+
+/* Brown */
+.bottombar-cornsilk{border-bottom: 6px solid #fff8dc}
+.bottombar-blanchedalmond{border-bottom: 6px solid #ffebcd}
+.bottombar-bisque{border-bottom: 6px solid #ffe4c4}
+.bottombar-navajowhite{border-bottom: 6px solid #ffdead}
+.bottombar-wheat{border-bottom: 6px solid #f5deb3}
+.bottombar-burlywood{border-bottom: 6px solid #deb887}
+.bottombar-tan{border-bottom: 6px solid #d2b48c}
+.bottombar-rosybrown{border-bottom: 6px solid #bc8f8f}
+.bottombar-sandybrown{border-bottom: 6px solid #f4a460}
+.bottombar-goldenrod{border-bottom: 6px solid #daa520}
+.bottombar-darkgoldenrod{border-bottom: 6px solid #b8860b}
+.bottombar-peru{border-bottom: 6px solid #cd853f}
+.bottombar-chocolate{border-bottom: 6px solid #d2691e}
+.bottombar-olive{border-bottom: 6px solid #808000}
+.bottombar-saddlebrown{border-bottom: 6px solid #8b4513}
+.bottombar-sienna{border-bottom: 6px solid #a0522d}
+.bottombar-brown{border-bottom: 6px solid #a52a2a}
+.bottombar-maroon{border-bottom: 6px solid #800000}
+
+/* White */
+.bottombar-white{border-bottom: 6px solid #ffffff}
+.bottombar-snow{border-bottom: 6px solid #fffafa}
+.bottombar-honeydew{border-bottom: 6px solid #f0fff0}
+.bottombar-mintcream{border-bottom: 6px solid #f5fffa}
+.bottombar-azure{border-bottom: 6px solid #f0ffff}
+.bottombar-aliceblue{border-bottom: 6px solid #f0f8ff}
+.bottombar-ghostwhite{border-bottom: 6px solid #f8f8ff}
+.bottombar-whitesmoke{border-bottom: 6px solid #f5f5f5}
+.bottombar-seashell{border-bottom: 6px solid #fff5ee}
+.bottombar-beige{border-bottom: 6px solid #f5f5dc}
+.bottombar-oldlace{border-bottom: 6px solid #fdf5e6}
+.bottombar-floralwhite{border-bottom: 6px solid #fffaf0}
+.bottombar-ivory{border-bottom: 6px solid #fffff0}
+.bottombar-antiquewhite{border-bottom: 6px solid #faebd7}
+.bottombar-linen{border-bottom: 6px solid #faf0e6}
+.bottombar-lavenderblush{border-bottom: 6px solid #fff0f5}
+.bottombar-mistyrose{border-bottom: 6px solid #ffe4e1}
+.bottombar-snow{border-bottom: 6px solid #fffafa}
+.bottombar-honeydew{border-bottom: 6px solid #f0fff0}
+.bottombar-mintcream{border-bottom: 6px solid #f5fffa}
+.bottombar-azure{border-bottom: 6px solid #f0ffff}
+.bottombar-aliceblue{border-bottom: 6px solid #f0f8ff}
+.bottombar-ghostwhite{border-bottom: 6px solid #f8f8ff}
+.bottombar-whitesmoke{border-bottom: 6px solid #f5f5f5}
+.bottombar-seashell{border-bottom: 6px solid #fff5ee}
+.bottombar-beige{border-bottom: 6px solid #f5f5dc}
+.bottombar-oldlace{border-bottom: 6px solid #fdf5e6}
+.bottombar-floralwhite{border-bottom: 6px solid #fffaf0}
+.bottombar-ivory{border-bottom: 6px solid #fffff0}
+.bottombar-antiquewhite{border-bottom: 6px solid #faebd7}
+.bottombar-linen{border-bottom: 6px solid #faf0e6}
+.bottombar-lavenderblush{border-bottom: 6px solid #fff0f5}
+.bottombar-mistyrose{border-bottom: 6px solid #ffe4e1}
+
+/* Black */
+.bottombar-gainsboro{border-bottom: 6px solid #dcdcdc}
+.bottombar-lightgray{border-bottom: 6px solid #d3d3d3}
+.bottombar-silver{border-bottom: 6px solid #c0c0c0}
+.bottombar-darkgray{border-bottom: 6px solid #a9a9a9}
+.bottombar-dimgray{border-bottom: 6px solid #696969}
+.bottombar-gray{border-bottom: 6px solid #808080}
+.bottombar-lightslategray{border-bottom: 6px solid #778899}
+.bottombar-slategray{border-bottom: 6px solid #708090}
+.bottombar-darkslategray{border-bottom: 6px solid #2f4f4f}
+.bottombar-black{border-bottom: 6px solid #000000}
+
+/* End Core Border Group */
+
+/* Core Position */
+
+.relative{position:relative}
+.absolute{position:absolute}
+.static{position:static}
+.fixed{position:fixed}
+.fixed-top{position:fixed!important;top:0;width:100%;z-index:1}
+.fixed-bottom{position:fixed!important;bottom:0;width:100%;z-index:1}
+
+/* Core position */
+.position-container{position:relative}
+.position-left{position:absolute;top:50%;left:0%;-webkit-transform:translate(0%,-50%);-moz-transform:translate(0%,-50%);-o-transform:translate(0%,-50%);transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.position-right{position:absolute;top:50%;right:0%;-webkit-transform:translate(0%,-50%);-moz-transform:translate(0%,-50%);-o-transform:translate(0%,-50%);transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.position-topmiddle{position:absolute;left:50%;top:0;-webkit-transform:translate(0%,-50%);-moz-transform:translate(0%,-50%);-o-transform:translate(0%,-50%);transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.position-bottommiddle{position:absolute;left:50%;bottom:0;-webkit-transform:translate(0%,-50%);-moz-transform:translate(0%,-50%);-o-transform:translate(0%,-50%);transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.position-middle{position:absolute;top:50%;left:50%;-webkit-transform:translate(0%,-50%);-moz-transform:translate(0%,-50%);-o-transform:translate(0%,-50%);transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.position-topleft{position:absolute;top:0;left:0}
+.position-topright{position:absolute;top:0;right:0}
+.position-bottomright{position:absolute;bottom:0;right:0}
+.position-bottomleft{position:absolute;bottom:0;left:0}
+
+/* End Position */
+
+/* Core Float */
+.left{float:left!important}
+.right{float:right!important}
+/* End Core Float */
+
+/* Core navbar */
+.navbar:before,
+.navbar:after{
+	display: table;
+	content: " ";
+}
+.navbar:after{
+	clear: both;
+}
+.navbar a{
+	-webkit-transition: all ease 0.9s;
+	-moz-transition: all ease 0.9s;
+	-o-transition: all ease 0.9s;
+	-ms-transition: all ease 0.9s;
+	transition: all ease 0.9s;
+}
+.navbar a:focus{
+	outline:0;
+}
+.navbar{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	z-index:7!important;
+	position:relative;
+}
+.navbar li{float:left}
+.navbar li a{
+	padding:18px 16px 18px 16px;
+	display:block;
+	text-decoration:none
+}
+/* End Navbar */
+
+/* Navbar Hover Group */
+
+/* Color Pink */
+.navbar-pink li a:hover{color:#fff;transition-duration:0.9s;background-color:#FFC0CB}
+.navbar-lightpink li a:hover{color:#fff;transition-duration:0.9s;background-color:#FFB6C1}
+.navbar-hotpink li a:hover{color:#fff;transition-duration:0.9s;background-color:#FF69B4}
+.navbar-deeppink li a:hover{color:#fff;transition-duration:0.9s;background-color:#FF1493}
+.navbar-palevioletred li a:hover{color:#fff;transition-duration:0.9s;background-color:#DB7093}
+.navbar-mediumvioletred li a:hover{color:#fff;transition-duration:0.9s;background-color:#C71585}
+
+/* Color Purple */
+.navbar-lavender li a:hover{color:#fff;transition-duration:0.9s;background-color:#e6e6fa} 		
+.navbar-thistle li a:hover{color:#fff;transition-duration:0.9s;background-color:#d8bfd8!important} 		
+.navbar-plum li a:hover{color:#fff;transition-duration:0.9s;background-color:#dda0dd!important} 		
+.navbar-orchid li a:hover{color:#fff;transition-duration:0.9s;background-color:#da70d6!important}		
+.navbar-violet li a:hover{color:#fff;transition-duration:0.9s;background-color:#ee82ee}		
+.navbar-fuchsia li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff00ff}		
+.navbar-magenta li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff00ff}		
+.navbar-mediumorchid li a:hover{color:#fff;transition-duration:0.9s;background-color:#ba55d3}	 		
+.navbar-darkorchid li a:hover{color:#fff;transition-duration:0.9s;background-color:#9932cc!important}	
+.navbar-darkviolet li a:hover{color:#fff;transition-duration:0.9s;background-color:#9400d3}	
+.navbar-blueviolet li a:hover{color:#fff;transition-duration:0.9s;background-color:#8a2be2}	
+.navbar-darkmagenta li a:hover{color:#fff;transition-duration:0.9s;background-color:#8b008b}	
+.navbar-purple li a:hover{color:#fff;transition-duration:0.9s;background-color:#800080}
+.navbar-mediumpurple li a:hover{color:#fff;transition-duration:0.9s;background-color:#9370db}		
+.navbar-mediumslateblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#7b68ee}		
+.navbar-slateblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#6a5acd	}
+.navbar-darkslateblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#483d8b}	
+.navbar-rebeccapurple li a:hover{color:#fff;transition-duration:0.9s;background-color:#663399}	
+.navbar-indigo li a:hover{color:#fff;transition-duration:0.9s;background-color:#4b0082}
+
+/* Red */
+.navbar-lightsalmon li a:hover{color:#fff;transition-duration:0.9s;background-color:#ffa07a}
+.navbar-salmon li a:hover{color:#fff;transition-duration:0.9s;background-color:#fa8072}
+.navbar-darksalmon li a:hover{color:#fff;transition-duration:0.9s;background-color:#e9967a}
+.navbar-lightcoral li a:hover{color:#fff;transition-duration:0.9s;background-color:#f08080}
+.navbar-indianred li a:hover{color:#fff;transition-duration:0.9s;background-color:#cd5c5c}
+.navbar-crimson li a:hover{color:#fff;transition-duration:0.9s;background-color:#dc143c}
+.navbar-red li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff0000}
+.navbar-firebrick li a:hover{color:#fff;transition-duration:0.9s;background-color:#b22222}
+.navbar-darkred li a:hover{color:#fff;transition-duration:0.9s;background-color:#8b0000}
+
+/* Orange */
+.navbar-orange li a:hover{color:#fff;transition-duration:0.9s;background-color:#ffa500} 			
+.navbar-darkorange li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff8c00}	 				
+.navbar-coral li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff7f50}	 				
+.navbar-tomato li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff6347}	 			
+.navbar-orangered li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff4500}	
+
+/* Yellow */
+.navbar-gold li a:hover{color:#fff;transition-duration:0.9s;background-color:#ffd700}
+.navbar-yellow li a:hover{color:#fff;transition-duration:0.9s;background-color:#ffff00}
+.navbar-lightyellow li a:hover{color:#fff;transition-duration:0.9s;background-color:#ffffe0}
+.navbar-lemonchiffon li a:hover{color:#fff;transition-duration:0.9s;background-color:#fffacd}
+.navbar-lightgoldenrodyellow li a:hover{color:#fff;transition-duration:0.9s;background-color:#fafad2}
+.navbar-papayawhip li a:hover{color:#fff;transition-duration:0.9s;background-color:#ffefd5}
+.navbar-moccasin li a:hover{color:#fff;transition-duration:0.9s;background-color:#ffe4b5}
+.navbar-peachpuff li a:hover{color:#fff;transition-duration:0.9s;background-color:#ffdab9}
+.navbar-palegoldenrod li a:hover{color:#fff;transition-duration:0.9s;background-color:#eee8aa}
+.navbar-khaki li a:hover{color:#fff;transition-duration:0.9s;background-color:#f0e68c}
+.navbar-darkkhaki li a:hover{color:#fff;transition-duration:0.9s;background-color:#bdb76b}
+
+/* Green */
+.navbar-greenyellow li a:hover{color:#fff;transition-duration:0.9s;background-color:#adff2f}
+.navbar-chartreuse li a:hover{color:#fff;transition-duration:0.9s;background-color:#7fff00}
+.navbar-lawngreen li a:hover{color:#fff;transition-duration:0.9s;background-color:#7cfc00}
+.navbar-lime li a:hover{color:#fff;transition-duration:0.9s;background-color:#00ff00}
+.navbar-limegreen li a:hover{color:#fff;transition-duration:0.9s;background-color:#32cd32}
+.navbar-palegreen li a:hover{color:#fff;transition-duration:0.9s;background-color:#98fb98}
+.navbar-lightgreen li a:hover{color:#fff;transition-duration:0.9s;background-color:#90ee90}
+.navbar-mediumspringgreen li a:hover{color:#fff;transition-duration:0.9s;background-color:#00fa9a}
+.navbar-springgreen li a:hover{color:#fff;transition-duration:0.9s;background-color:#00ff7f}
+.navbar-mediumseagreen li a:hover{color:#fff;transition-duration:0.9s;background-color:#3cb371}
+.navbar-seagreen li a:hover{color:#fff;transition-duration:0.9s;background-color:#2e8b57}
+.navbar-forestgreen li a:hover{color:#fff;transition-duration:0.9s;background-color:#228b22}
+.navbar-green li a:hover{color:#fff;transition-duration:0.9s;background-color:#008000}
+.navbar-darkgreen li a:hover{color:#fff;transition-duration:0.9s;background-color:#006400}
+.navbar-yellowgreen li a:hover{color:#fff;transition-duration:0.9s;background-color:#9acd32}
+.navbar-olivedrab li a:hover{color:#fff;transition-duration:0.9s;background-color:#6b8e23}
+.navbar-darkolivegreen li a:hover{color:#fff;transition-duration:0.9s;background-color:#556b2f}
+.navbar-mediumaquamarine li a:hover{color:#fff;transition-duration:0.9s;background-color:#66cdaa}
+.navbar-darkseagreen li a:hover{color:#fff;transition-duration:0.9s;background-color:#8fbc8f}
+.navbar-lightseagreen li a:hover{color:#fff;transition-duration:0.9s;background-color:#20b2aa}
+.navbar-darkcyan li a:hover{color:#fff;transition-duration:0.9s;background-color:#008b8b}
+.navbar-teal li a:hover{color:#fff;transition-duration:0.9s;background-color:#008080}
+
+/* Cyan */
+.navbar-aqua li a:hover{color:#fff;transition-duration:0.9s;background-color:#00ffff}
+.navbar-cyan li a:hover{color:#fff;transition-duration:0.9s;background-color:#00ffff}
+.navbar-lightcyan li a:hover{color:#fff;transition-duration:0.9s;background-color:#e0ffff}
+.navbar-paleturquoise li a:hover{color:#fff;transition-duration:0.9s;background-color:#afeeee}
+.navbar-aquamarine li a:hover{color:#fff;transition-duration:0.9s;background-color:#7fffd4}
+.navbar-turquoise li a:hover{color:#fff;transition-duration:0.9s;background-color:#40e0d0}
+.navbar-mediumturquoise li a:hover{color:#fff;transition-duration:0.9s;background-color:#48d1cc}
+.navbar-darkturquoise li a:hover{color:#fff;transition-duration:0.9s;background-color:#00ced1}
+
+/* Blue */
+.navbar-cadetblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#5f9ea0}
+.navbar-steelblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#4682b4}
+.navbar-lightsteelblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#b0c4de}
+.navbar-lightblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#add8e6}
+.navbar-powderblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#b0e0e6}
+.navbar-lightskyblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#87cefa}
+.navbar-skyblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#87ceeb}
+.navbar-cornflowerblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#6495ed}
+.navbar-deepskyblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#00bfff}
+.navbar-dodgerblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#1e90ff}
+.navbar-royalblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#4169e1}
+.navbar-blue li a:hover{color:#fff;transition-duration:0.9s;background-color:#0000ff}
+.navbar-mediumblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#0000cd}
+.navbar-darkblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#00008b}
+.navbar-navy li a:hover{color:#fff;transition-duration:0.9s;background-color:#000080}
+.navbar-midnightblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#191970}
+
+/* Brown */
+.navbar-cornsilk li a:hover{color:#fff;transition-duration:0.9s;background-color:#fff8dc}
+.navbar-blanchedalmond li a:hover{color:#fff;transition-duration:0.9s;background-color:#ffebcd}
+.navbar-bisque li a:hover{color:#fff;transition-duration:0.9s;background-color:#ffe4c4}
+.navbar-navajowhite li a:hover{color:#fff;transition-duration:0.9s;background-color:#ffdead}
+.navbar-wheat li a:hover{color:#fff;transition-duration:0.9s;background-color:#f5deb3}
+.navbar-burlywood li a:hover{color:#fff;transition-duration:0.9s;background-color:#deb887}
+.navbar-tan li a:hover{color:#fff;transition-duration:0.9s;background-color:#d2b48c}
+.navbar-rosybrown li a:hover{color:#fff;transition-duration:0.9s;background-color:#bc8f8f}
+.navbar-sandybrown li a:hover{color:#fff;transition-duration:0.9s;background-color:#f4a460}
+.navbar-goldenrod li a:hover{color:#fff;transition-duration:0.9s;background-color:#daa520}
+.navbar-darkgoldenrod li a:hover{color:#fff;transition-duration:0.9s;background-color:#b8860b}
+.navbar-peru li a:hover{color:#fff;transition-duration:0.9s;background-color:#cd853f}
+.navbar-chocolate li a:hover{color:#fff;transition-duration:0.9s;background-color:#d2691e}
+.navbar-olive li a:hover{color:#fff;transition-duration:0.9s;background-color:#808000}
+.navbar-saddlebrown li a:hover{color:#fff;transition-duration:0.9s;background-color:#8b4513}
+.navbar-sienna li a:hover{color:#fff;transition-duration:0.9s;background-color:#a0522d}
+.navbar-brown li a:hover{color:#fff;transition-duration:0.9s;background-color:#a52a2a}
+.navbar-maroon li a:hover{color:#fff;transition-duration:0.9s;background-color:#800000}
+
+/* White */
+.navbar-white li a:hover{color:#000;transition-duration:0.9s;background-color:#ffffff}
+.navbar-snow li a:hover{color:#000;transition-duration:0.9s;background-color:#fffafa}
+.navbar-honeydew li a:hover{color:#000;transition-duration:0.9s;background-color:#f0fff0}
+.navbar-mintcream li a:hover{color:#000;transition-duration:0.9s;background-color:#f5fffa}
+.navbar-azure li a:hover{color:#000;transition-duration:0.9s;background-color:#f0ffff}
+.navbar-aliceblue li a:hover{color:#000;transition-duration:0.9s;background-color:#f0f8ff}
+.navbar-ghostwhite li a:hover{color:#000;transition-duration:0.9s;background-color:#f8f8ff}
+.navbar-whitesmoke li a:hover{color:#000;transition-duration:0.9s;background-color:#f5f5f5}
+.navbar-seashell li a:hover{color:#000;transition-duration:0.9s;background-color:#fff5ee}
+.navbar-beige li a:hover{color:#000;transition-duration:0.9s;background-color:#f5f5dc}
+.navbar-oldlace li a:hover{color:#000;transition-duration:0.9s;background-color:#fdf5e6}
+.navbar-floralwhite li a:hover{color:#000;transition-duration:0.9s;background-color:#fffaf0}
+.navbar-ivory li a:hover{color:#000;transition-duration:0.9s;background-color:#fffff0}
+.navbar-antiquewhite li a:hover{color:#000;transition-duration:0.9s;background-color:#faebd7}
+.navbar-linen li a:hover{color:#000;transition-duration:0.9s;background-color:#faf0e6}
+.navbar-lavenderblush li a:hover{color:#000;transition-duration:0.9s;background-color:#fff0f5}
+.navbar-mistyrose li a:hover{color:#000;transition-duration:0.9s;background-color:#ffe4e1}
+.navbar-snow li a:hover{color:#000;transition-duration:0.9s;background-color:#fffafa}
+.navbar-honeydew li a:hover{color:#000;transition-duration:0.9s;background-color:#f0fff0}
+.navbar-mintcream li a:hover{color:#000;transition-duration:0.9s;background-color:#f5fffa}
+.navbar-azure li a:hover{color:#000;transition-duration:0.9s;background-color:#f0ffff}
+.navbar-aliceblue li a:hover{color:#000;transition-duration:0.9s;background-color:#f0f8ff}
+.navbar-ghostwhite li a:hover{color:#000;transition-duration:0.9s;background-color:#f8f8ff}
+.navbar-whitesmoke li a:hover{color:#000;transition-duration:0.9s;background-color:#f5f5f5}
+.navbar-seashell li a:hover{color:#000;transition-duration:0.9s;background-color:#fff5ee}
+.navbar-beige li a:hover{color:#000;transition-duration:0.9s;background-color:#f5f5dc}
+.navbar-oldlace li a:hover{color:#000;transition-duration:0.9s;background-color:#fdf5e6}
+.navbar-floralwhite li a:hover{color:#000;transition-duration:0.9s;background-color:#fffaf0}
+.navbar-ivory li a:hover{color:#000;transition-duration:0.9s;background-color:#fffff0}
+.navbar-antiquewhite li a:hover{color:#000;transition-duration:0.9s;background-color:#faebd7}
+.navbar-linen li a:hover{color:#000;transition-duration:0.9s;background-color:#faf0e6}
+.navbar-lavenderblush li a:hover{color:#000;transition-duration:0.9s;background-color:#fff0f5}
+.navbar-mistyrose li a:hover{color:#000;transition-duration:0.9s;background-color:#ffe4e1}
+
+/* Black */
+.navbar-gainsboro li a:hover{color:#fff;transition-duration:0.9s;background-color:#dcdcdc}
+.navbar-lightgray li a:hover{color:#fff;transition-duration:0.9s;background-color:#d3d3d3}
+.navbar-silver li a:hover{color:#fff;transition-duration:0.9s;background-color:#c0c0c0}
+.navbar-darkgray li a:hover{color:#fff;transition-duration:0.9s;background-color:#a9a9a9}
+.navbar-dimgray li a:hover{color:#fff;transition-duration:0.9s;background-color:#696969}
+.navbar-gray li a:hover{color:#fff;transition-duration:0.9s;background-color:#808080}
+.navbar-lightslategray li a:hover{color:#fff;transition-duration:0.9s;background-color:#778899}
+.navbar-slategray li a:hover{color:#fff;transition-duration:0.9s;background-color:#708090}
+.navbar-darkslategray li a:hover{color:#fff;transition-duration:0.9s;background-color:#2f4f4f}
+.navbar-black li a:hover{color:#fff;transition-duration:0.9s;background-color:#000000}
+
+/* End Navbar Hover Group */
+
+/* Core sidebar */
+.sidebar:before,
+.sidebar:after{
+	display: table;
+	content: " ";
+}
+.sidebar:after{
+	clear: both;
+}
+.sidebar{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	z-index:5!important;
+	position:relative;
+}
+.sidebar{
+	height:100%;
+	width:230px;
+	position:fixed!important;
+	overflow:auto;
+}
+.sidebar a {
+	-webkit-transition: all ease 0.9s;
+	-moz-transition: all ease 0.9s;
+	-o-transition: all ease 0.9s;
+	-ms-transition: all ease 0.9s;
+	transition: all ease 0.9s;
+}
+.sidebar li a{
+	padding:8px 16px;
+	text-decoration:none;
+	display:block;
+}
+@media screen and (max-width:992px){.sidebar{display:none}.main{margin-left:0!important;margin-right:0!important}}
+@media screen and (min-width:993px){.sidebar{display:block!important}}
+
+.main{
+	margin-left:230px;
+	transition:margin-left .9s;
+}
+/* Sidebar Hover Group */
+
+/* Color Pink */
+.sidebar-pink li a:hover{color:#fff;transition-duration:0.9s;background-color:#FFC0CB}
+.sidebar-lightpink li a:hover{color:#fff;transition-duration:0.9s;background-color:#FFB6C1}
+.sidebar-hotpink li a:hover{color:#fff;transition-duration:0.9s;background-color:#FF69B4}
+.sidebar-deeppink li a:hover{color:#fff;transition-duration:0.9s;background-color:#FF1493}
+.sidebar-palevioletred li a:hover{color:#fff;transition-duration:0.9s;background-color:#DB7093}
+.sidebar-mediumvioletred li a:hover{color:#fff;transition-duration:0.9s;background-color:#C71585}
+
+/* Color Purple */
+.sidebar-lavender li a:hover{color:#fff;transition-duration:0.9s;background-color:#e6e6fa} 		
+.sidebar-thistle li a:hover{color:#fff;transition-duration:0.9s;background-color:#d8bfd8!important} 		
+.sidebar-plum li a:hover{color:#fff;transition-duration:0.9s;background-color:#dda0dd!important} 		
+.sidebar-orchid li a:hover{color:#fff;transition-duration:0.9s;background-color:#da70d6!important}		
+.sidebar-violet li a:hover{color:#fff;transition-duration:0.9s;background-color:#ee82ee}		
+.sidebar-fuchsia li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff00ff}		
+.sidebar-magenta li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff00ff}		
+.sidebar-mediumorchid li a:hover{color:#fff;transition-duration:0.9s;background-color:#ba55d3}	 		
+.sidebar-darkorchid li a:hover{color:#fff;transition-duration:0.9s;background-color:#9932cc!important}	
+.sidebar-darkviolet li a:hover{color:#fff;transition-duration:0.9s;background-color:#9400d3}	
+.sidebar-blueviolet li a:hover{color:#fff;transition-duration:0.9s;background-color:#8a2be2}	
+.sidebar-darkmagenta li a:hover{color:#fff;transition-duration:0.9s;background-color:#8b008b}	
+.sidebar-purple li a:hover{color:#fff;transition-duration:0.9s;background-color:#800080}
+.sidebar-mediumpurple li a:hover{color:#fff;transition-duration:0.9s;background-color:#9370db}		
+.sidebar-mediumslateblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#7b68ee}		
+.sidebar-slateblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#6a5acd	}
+.sidebar-darkslateblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#483d8b}	
+.sidebar-rebeccapurple li a:hover{color:#fff;transition-duration:0.9s;background-color:#663399}	
+.sidebar-indigo li a:hover{color:#fff;transition-duration:0.9s;background-color:#4b0082}
+
+/* Red */
+.sidebar-lightsalmon li a:hover{color:#fff;transition-duration:0.9s;background-color:#ffa07a}
+.sidebar-salmon li a:hover{color:#fff;transition-duration:0.9s;background-color:#fa8072}
+.sidebar-darksalmon li a:hover{color:#fff;transition-duration:0.9s;background-color:#e9967a}
+.sidebar-lightcoral li a:hover{color:#fff;transition-duration:0.9s;background-color:#f08080}
+.sidebar-indianred li a:hover{color:#fff;transition-duration:0.9s;background-color:#cd5c5c}
+.sidebar-crimson li a:hover{color:#fff;transition-duration:0.9s;background-color:#dc143c}
+.sidebar-red li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff0000}
+.sidebar-firebrick li a:hover{color:#fff;transition-duration:0.9s;background-color:#b22222}
+.sidebar-darkred li a:hover{color:#fff;transition-duration:0.9s;background-color:#8b0000}
+
+/* Orange */
+.sidebar-orange li a:hover{color:#fff;transition-duration:0.9s;background-color:#ffa500} 			
+.sidebar-darkorange li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff8c00}	 				
+.sidebar-coral li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff7f50}	 				
+.sidebar-tomato li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff6347}	 			
+.sidebar-orangered li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff4500}	
+
+/* Yellow */
+.sidebar-gold li a:hover{color:#fff;transition-duration:0.9s;background-color:#ffd700}
+.sidebar-yellow li a:hover{color:#fff;transition-duration:0.9s;background-color:#ffff00}
+.sidebar-lightyellow li a:hover{color:#fff;transition-duration:0.9s;background-color:#ffffe0}
+.sidebar-lemonchiffon li a:hover{color:#fff;transition-duration:0.9s;background-color:#fffacd}
+.sidebar-lightgoldenrodyellow li a:hover{color:#fff;transition-duration:0.9s;background-color:#fafad2}
+.sidebar-papayawhip li a:hover{color:#fff;transition-duration:0.9s;background-color:#ffefd5}
+.sidebar-moccasin li a:hover{color:#fff;transition-duration:0.9s;background-color:#ffe4b5}
+.sidebar-peachpuff li a:hover{color:#fff;transition-duration:0.9s;background-color:#ffdab9}
+.sidebar-palegoldenrod li a:hover{color:#fff;transition-duration:0.9s;background-color:#eee8aa}
+.sidebar-khaki li a:hover{color:#fff;transition-duration:0.9s;background-color:#f0e68c}
+.sidebar-darkkhaki li a:hover{color:#fff;transition-duration:0.9s;background-color:#bdb76b}
+
+/* Green */
+.sidebar-greenyellow li a:hover{color:#fff;transition-duration:0.9s;background-color:#adff2f}
+.sidebar-chartreuse li a:hover{color:#fff;transition-duration:0.9s;background-color:#7fff00}
+.sidebar-lawngreen li a:hover{color:#fff;transition-duration:0.9s;background-color:#7cfc00}
+.sidebar-lime li a:hover{color:#fff;transition-duration:0.9s;background-color:#00ff00}
+.sidebar-limegreen li a:hover{color:#fff;transition-duration:0.9s;background-color:#32cd32}
+.sidebar-palegreen li a:hover{color:#fff;transition-duration:0.9s;background-color:#98fb98}
+.sidebar-lightgreen li a:hover{color:#fff;transition-duration:0.9s;background-color:#90ee90}
+.sidebar-mediumspringgreen li a:hover{color:#fff;transition-duration:0.9s;background-color:#00fa9a}
+.sidebar-springgreen li a:hover{color:#fff;transition-duration:0.9s;background-color:#00ff7f}
+.sidebar-mediumseagreen li a:hover{color:#fff;transition-duration:0.9s;background-color:#3cb371}
+.sidebar-seagreen li a:hover{color:#fff;transition-duration:0.9s;background-color:#2e8b57}
+.sidebar-forestgreen li a:hover{color:#fff;transition-duration:0.9s;background-color:#228b22}
+.sidebar-green li a:hover{color:#fff;transition-duration:0.9s;background-color:#008000}
+.sidebar-darkgreen li a:hover{color:#fff;transition-duration:0.9s;background-color:#006400}
+.sidebar-yellowgreen li a:hover{color:#fff;transition-duration:0.9s;background-color:#9acd32}
+.sidebar-olivedrab li a:hover{color:#fff;transition-duration:0.9s;background-color:#6b8e23}
+.sidebar-darkolivegreen li a:hover{color:#fff;transition-duration:0.9s;background-color:#556b2f}
+.sidebar-mediumaquamarine li a:hover{color:#fff;transition-duration:0.9s;background-color:#66cdaa}
+.sidebar-darkseagreen li a:hover{color:#fff;transition-duration:0.9s;background-color:#8fbc8f}
+.sidebar-lightseagreen li a:hover{color:#fff;transition-duration:0.9s;background-color:#20b2aa}
+.sidebar-darkcyan li a:hover{color:#fff;transition-duration:0.9s;background-color:#008b8b}
+.sidebar-teal li a:hover{color:#fff;transition-duration:0.9s;background-color:#008080}
+
+/* Cyan */
+.sidebar-aqua li a:hover{color:#fff;transition-duration:0.9s;background-color:#00ffff}
+.sidebar-cyan li a:hover{color:#fff;transition-duration:0.9s;background-color:#00ffff}
+.sidebar-lightcyan li a:hover{color:#fff;transition-duration:0.9s;background-color:#e0ffff}
+.sidebar-paleturquoise li a:hover{color:#fff;transition-duration:0.9s;background-color:#afeeee}
+.sidebar-aquamarine li a:hover{color:#fff;transition-duration:0.9s;background-color:#7fffd4}
+.sidebar-turquoise li a:hover{color:#fff;transition-duration:0.9s;background-color:#40e0d0}
+.sidebar-mediumturquoise li a:hover{color:#fff;transition-duration:0.9s;background-color:#48d1cc}
+.sidebar-darkturquoise li a:hover{color:#fff;transition-duration:0.9s;background-color:#00ced1}
+
+/* Blue */
+.sidebar-cadetblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#5f9ea0}
+.sidebar-steelblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#4682b4}
+.sidebar-lightsteelblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#b0c4de}
+.sidebar-lightblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#add8e6}
+.sidebar-powderblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#b0e0e6}
+.sidebar-lightskyblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#87cefa}
+.sidebar-skyblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#87ceeb}
+.sidebar-cornflowerblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#6495ed}
+.sidebar-deepskyblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#00bfff}
+.sidebar-dodgerblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#1e90ff}
+.sidebar-royalblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#4169e1}
+.sidebar-blue li a:hover{color:#fff;transition-duration:0.9s;background-color:#0000ff}
+.sidebar-mediumblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#0000cd}
+.sidebar-darkblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#00008b}
+.sidebar-navy li a:hover{color:#fff;transition-duration:0.9s;background-color:#000080}
+.sidebar-midnightblue li a:hover{color:#fff;transition-duration:0.9s;background-color:#191970}
+
+/* Brown */
+.sidebar-cornsilk li a:hover{color:#fff;transition-duration:0.9s;background-color:#fff8dc}
+.sidebar-blanchedalmond li a:hover{color:#fff;transition-duration:0.9s;background-color:#ffebcd}
+.sidebar-bisque li a:hover{color:#fff;transition-duration:0.9s;background-color:#ffe4c4}
+.sidebar-navajowhite li a:hover{color:#fff;transition-duration:0.9s;background-color:#ffdead}
+.sidebar-wheat li a:hover{color:#fff;transition-duration:0.9s;background-color:#f5deb3}
+.sidebar-burlywood li a:hover{color:#fff;transition-duration:0.9s;background-color:#deb887}
+.sidebar-tan li a:hover{color:#fff;transition-duration:0.9s;background-color:#d2b48c}
+.sidebar-rosybrown li a:hover{color:#fff;transition-duration:0.9s;background-color:#bc8f8f}
+.sidebar-sandybrown li a:hover{color:#fff;transition-duration:0.9s;background-color:#f4a460}
+.sidebar-goldenrod li a:hover{color:#fff;transition-duration:0.9s;background-color:#daa520}
+.sidebar-darkgoldenrod li a:hover{color:#fff;transition-duration:0.9s;background-color:#b8860b}
+.sidebar-peru li a:hover{color:#fff;transition-duration:0.9s;background-color:#cd853f}
+.sidebar-chocolate li a:hover{color:#fff;transition-duration:0.9s;background-color:#d2691e}
+.sidebar-olive li a:hover{color:#fff;transition-duration:0.9s;background-color:#808000}
+.sidebar-saddlebrown li a:hover{color:#fff;transition-duration:0.9s;background-color:#8b4513}
+.sidebar-sienna li a:hover{color:#fff;transition-duration:0.9s;background-color:#a0522d}
+.sidebar-brown li a:hover{color:#fff;transition-duration:0.9s;background-color:#a52a2a}
+.sidebar-maroon li a:hover{color:#fff;transition-duration:0.9s;background-color:#800000}
+
+/* White */
+.sidebar-white li a:hover{color:#000;transition-duration:0.9s;background-color:#ffffff}
+.sidebar-snow li a:hover{color:#000;transition-duration:0.9s;background-color:#fffafa}
+.sidebar-honeydew li a:hover{color:#000;transition-duration:0.9s;background-color:#f0fff0}
+.sidebar-mintcream li a:hover{color:#000;transition-duration:0.9s;background-color:#f5fffa}
+.sidebar-azure li a:hover{color:#000;transition-duration:0.9s;background-color:#f0ffff}
+.sidebar-aliceblue li a:hover{color:#000;transition-duration:0.9s;background-color:#f0f8ff}
+.sidebar-ghostwhite li a:hover{color:#000;transition-duration:0.9s;background-color:#f8f8ff}
+.sidebar-whitesmoke li a:hover{color:#000;transition-duration:0.9s;background-color:#f5f5f5}
+.sidebar-seashell li a:hover{color:#000;transition-duration:0.9s;background-color:#fff5ee}
+.sidebar-beige li a:hover{color:#000;transition-duration:0.9s;background-color:#f5f5dc}
+.sidebar-oldlace li a:hover{color:#000;transition-duration:0.9s;background-color:#fdf5e6}
+.sidebar-floralwhite li a:hover{color:#000;transition-duration:0.9s;background-color:#fffaf0}
+.sidebar-ivory li a:hover{color:#000;transition-duration:0.9s;background-color:#fffff0}
+.sidebar-antiquewhite li a:hover{color:#000;transition-duration:0.9s;background-color:#faebd7}
+.sidebar-linen li a:hover{color:#000;transition-duration:0.9s;background-color:#faf0e6}
+.sidebar-lavenderblush li a:hover{color:#000;transition-duration:0.9s;background-color:#fff0f5}
+.sidebar-mistyrose li a:hover{color:#000;transition-duration:0.9s;background-color:#ffe4e1}
+.sidebar-snow li a:hover{color:#000;transition-duration:0.9s;background-color:#fffafa}
+.sidebar-honeydew li a:hover{color:#000;transition-duration:0.9s;background-color:#f0fff0}
+.sidebar-mintcream li a:hover{color:#000;transition-duration:0.9s;background-color:#f5fffa}
+.sidebar-azure li a:hover{color:#000;transition-duration:0.9s;background-color:#f0ffff}
+.sidebar-aliceblue li a:hover{color:#000;transition-duration:0.9s;background-color:#f0f8ff}
+.sidebar-ghostwhite li a:hover{color:#000;transition-duration:0.9s;background-color:#f8f8ff}
+.sidebar-whitesmoke li a:hover{color:#000;transition-duration:0.9s;background-color:#f5f5f5}
+.sidebar-seashell li a:hover{color:#000;transition-duration:0.9s;background-color:#fff5ee}
+.sidebar-beige li a:hover{color:#000;transition-duration:0.9s;background-color:#f5f5dc}
+.sidebar-oldlace li a:hover{color:#000;transition-duration:0.9s;background-color:#fdf5e6}
+.sidebar-floralwhite li a:hover{color:#000;transition-duration:0.9s;background-color:#fffaf0}
+.sidebar-ivory li a:hover{color:#000;transition-duration:0.9s;background-color:#fffff0}
+.sidebar-antiquewhite li a:hover{color:#000;transition-duration:0.9s;background-color:#faebd7}
+.sidebar-linen li a:hover{color:#000;transition-duration:0.9s;background-color:#faf0e6}
+.sidebar-lavenderblush li a:hover{color:#000;transition-duration:0.9s;background-color:#fff0f5}
+.sidebar-mistyrose li a:hover{color:#000;transition-duration:0.9s;background-color:#ffe4e1}
+
+/* Black */
+.sidebar-gainsboro li a:hover{color:#fff;transition-duration:0.9s;background-color:#dcdcdc}
+.sidebar-lightgray li a:hover{color:#fff;transition-duration:0.9s;background-color:#d3d3d3}
+.sidebar-silver li a:hover{color:#fff;transition-duration:0.9s;background-color:#c0c0c0}
+.sidebar-darkgray li a:hover{color:#fff;transition-duration:0.9s;background-color:#a9a9a9}
+.sidebar-dimgray li a:hover{color:#fff;transition-duration:0.9s;background-color:#696969}
+.sidebar-gray li a:hover{color:#fff;transition-duration:0.9s;background-color:#808080}
+.sidebar-lightslategray li a:hover{color:#fff;transition-duration:0.9s;background-color:#778899}
+.sidebar-slategray li a:hover{color:#fff;transition-duration:0.9s;background-color:#708090}
+.sidebar-darkslategray li a:hover{color:#fff;transition-duration:0.9s;background-color:#2f4f4f}
+.sidebar-black li a:hover{color:#fff;transition-duration:0.9s;background-color:#000000}
+
+/* End Sidebar hover group */
+
+/* Core Font */
+
+/* Font Size */
+.font-2{font-size:2px}
+.font-4{font-size:4px}
+.font-5{font-size:5px}
+.font-6{font-size:6px}
+.font-8{font-size:8px}
+.font-10{font-size:10px}
+.font-12{font-size:12px}
+.font-14{font-size:14px}
+.font-16{font-size:16px}
+.font-18{font-size:18px}
+.font-20{font-size:20px}
+.font-21{font-size:21px}
+.font-22{font-size:22px}
+.font-24{font-size:24px}
+.font-26{font-size:26px}
+.font-28{font-size:28px}
+.font-30{font-size:30px}
+.font-32{font-size:32px}
+.font-36{font-size:36px}
+.font-48{font-size:48px}
+.font-64{font-size:64px}
+.font-72{font-size:72px}
+.font-128{font-size:128px}
+.font-256{font-size:256px}
+.font-512{font-size:512px}
+
+.left-align {
+	text-align: left;
+}
+.right-align {
+	text-align: right;
+}
+.center-align {
+	text-align: center;
+}
+.justify-align {
+	text-align: justify;
+}
+.nowrap {
+	white-space: nowrap;
+}
+.lowercase {
+	text-transform: lowercase;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+
+/* End Font */
+
+/* Core Scroll */
+.scroll{
+	width:100%;
+	max-height:100px;
+	overflow-y:auto;
+	overflow-x:auto;
+}
+/* End Scroll */
+
+/* Core Table */
+.table{
+	border-collapse:collapse;
+	border-spacing:0;
+	display:table;
+	width:100%;
+}
+.table td,.table th{
+	padding:12px;
+	display:table-cell;
+	text-align:left;
+	vertical-align:top;
+}
+/* End Table */
+
+/* Core Section */
+.section{margin:24px 0px}
+.section-s{margin:8px 0px}
+.section-m{margin:16px 0px}
+.section-l{margin:32px 0px}
+
+.secpad{padding:24px 0px}
+.secpad-s{padding:8px 0px}
+.secpad-m{padding:16px 0px}
+.secpad-l{padding:32px 0px}
+/* End Section */
+
+/* Core List */
+.list{
+	padding:0;
+	list-style-type:none;
+}
+.list li{
+	padding:3px 0px;
+}
+
+/* End List */
+
+/* Core Tag */
+.tag{
+	display:inline-block;
+	padding:8px 16px;
+	text-align:center;
+}
+
+/* Core Img */
+.img-responsive{
+	display:block;
+	max-width:100%;
+	height:auto;
+}
+/* End img */
+
+/* End Tag */
+
+/* Progress */
+.progress{
+	width:100%;
+	height:1.5em;
+	position:relative;
+	
+}
+.progressbar{
+	height:100%;
+	position:absolute;
+	padding:2px
+}
+.progress-radius{
+	border-radius:16px
+}
+/* End Progrss */
+
+/* DL */
+.dl-horizontal:before,
+.dl-horizontal:after{
+	display: table;
+	content: " ";
+}
+.dl-horizontal:after{
+  clear: both;
+}
+  .dl-horizontal dt {
+    float: left;
+    width: 100px;
+    overflow: hidden;
+    clear: left;
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .dl-horizontal dd {
+    margin-left: 115px;
+  }
+
+/* End DL */
+
+/* Core Accordion */
+
+.accordion {
+    background-color: #eee;
+    cursor: pointer;
+    padding:16px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+	font-family:inherit;
+}
+.accordion.active,.accordion:hover {
+    background-color: #ddd;
+}
+.accordion-content {
+    padding:0 16px;
+    background-color: white;
+    display: none;
+}
+.accordion:after {
+    content: '\02795';
+    font-size: 16px;
+    float: right;
+    margin-left: 5px;
+}
+
+.accordion.active:after {
+    content: "\2796";
+	font-size:16px;
+}
+.accordion:focus{
+	outline:0;
+}
+
+/* End Core Accrodion */
+
+
+/* Core Button */
+
+.button{
+	display: inline-block;
+	font-size:16px;
+	padding: 10px 16px;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	border: none;
+	font-family:inherit;
+	cursor:pointer;
+}
+.button:focus{
+	outline:0;
+}
+
+/* End 
+/* Dropdown & Dropdown Content*/
+.dropdown-button {
+    font-size: 16px;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 8!important;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropnav-content {
+    display: none;
+    position: absolute;
+    min-width: 600px;
+    z-index: 8!important;
+}
+/* End Core Dropdown */
+
+
+/* Core Box/Text Shadow */
+
+.box-shadow{box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important}
+.text-shadow{text-shadow: 0 1px 2px rgba(0, 0, 0, .6)!important}
+
+/* End Box/Text Shadow */
+
+/* Core Hide */
+@media (max-width:600px){.hs{display:none!important}}
+@media (max-width:992px) and (min-width:601px){.hm{display:none!important}}
+@media (min-width:993px){.hl{display:none!important}}
+
+.hide{display:none!important}
+.show{display:block!important}
+
+.hover-none:hover{box-shadow:none!important;background-color:transparent!important;color:#000000}
+.hover-text-none:hover{box-shadow:none!important;background-color:transparent!important}
+/* End Core Hide */
+
+
+/* Core Animation */
+.animation-fading{-webkit-animation:fading 9s infinite;animation:fading 9s infinite}
+@-webkit-keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.animation-opacity{-webkit-animation:opac 0.9s;animation:opac 0.9s}
+@-webkit-keyframes opac{from{opacity:0} to{opacity:1}}
+@keyframes opac{from{opacity:0} to{opacity:1}}
+.animation-top{position:relative;-webkit-animation:animationtop 0.9s;animation:animationtop 0.9s}
+@-webkit-keyframes animationtop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+@keyframes animationtop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.animation-left{position:relative;-webkit-animation:animationleft 0.9s;animation:animationleft 0.9s}
+@-webkit-keyframes animationleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+@keyframes animationleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.animation-right{position:relative;-webkit-animation:animationright 0.9s;animation:animationright 0.9s}
+@-webkit-keyframes animationright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+@keyframes animationright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.animation-bottom{position:relative;-webkit-animation:animationbottom 0.9s;animation:animationbottom 0.9s}
+@-webkit-keyframes animationbottom{from{bottom:-300px;opacity:0} to{bottom:0px;opacity:1}}
+@keyframes animationbottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.animation-zoom {-webkit-animation:animationzoom 0.9s;animation:animationzoom 0.9s}
+@-webkit-keyframes animationzoom{from{-webkit-transform:scale(0)} to{-webkit-transform:scale(1)}}
+@keyframes animationzoom{from{transform:scale(0)} to{transform:scale(1)}}
+
+/* End Animation */
