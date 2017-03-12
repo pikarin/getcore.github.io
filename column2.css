@@ -1,0 +1,23 @@
+/* Core Column 2*/
+.row:before,
+.row:after{
+	display: table;
+	content: " ";
+}
+.row:after{
+	clear: both;
+}
+.column{float:left;width:100%}
+
+.column.s1{width:50%}
+.column.s2{width:100%}
+
+@media only screen and (min-width:601px) {
+.column.m1{width:50%}
+.column.m2{width:100%}
+}
+
+@media only screen and (min-width:993px) {
+.column.l1{width:50%}
+.column.l2{width:100%}
+}
