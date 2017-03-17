@@ -1,12 +1,13 @@
 /*!
- * Core by Flamecore
+ * Core Version 1.0 by getcore.github.io
  * Copyright 2017 Flamecore
- * Licensed All Rights Reserved
- * Author Andika Chamberlin
+ * Github site github.com/getcore/core
+ * Author Andika Chamberlin Follow Me twitter.com/andikamingo
+ * MIT License 
  
 /*================================================= Core ========================================================*/
 
-/* Default Coreal by Flamecore */
+/*======================================== Default Core by Flamecore ============================================*/
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -23,9 +24,14 @@
           box-sizing: border-box;
 }
 html{
+	box-sizing: border-box;
 	overflow-x:hidden;
+	overflow-y:scroll;
 	font-size:16px;
 	font-family: "Segoe UI",Verdana;
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
 }
 body{
 	font-size:16px;
@@ -74,7 +80,10 @@ h6{
 	font-weight: 500;
 	margin:0;
 }
-/* End Default */
+/*================================================= End Default ==================================================*/
+
+
+/*================================================= Normalize ====================================================*/
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 
@@ -89,7 +98,7 @@ h6{
    ========================================================================== */
 
 html {
-  font-family: sans-serif; /* 1 */
+  font-family: "Segoe UI" sans-serif; /* 1 */
   line-height: 1.15; /* 2 */
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
@@ -537,10 +546,11 @@ template {
 [hidden] {
   display: none;
 }
+/*================================================= End Normalize ================================================*/
 
-/* End Normalize */
-
-/* Container */
+/*================================================= Container ====================================================*/
+.inside:before,
+.inside:after,
 .interior:before,
 .interior:after,
 .container:before,
@@ -550,25 +560,33 @@ template {
 	display: table;
 	content: " ";
 }
-
+.inside:after,
 .interior:after,
 .container:after,
 .container-full:after{
 	clear: both;
 }
+.inside{
+	margin:0 16px;
+}
 .interior{
 	padding:0 16px;
 }
 .container {
-	margin:0px 24px;
+	margin:0 24px;
 }
 .container-full {
 	margin:0;
 }
-/* End Container */
+@media only screen and (max-width: 600px) {
+	.container{
+		margin: 0;
+	}
+}
+/*================================================= End Container ================================================*/
 
+/*================================================= Core Column ==================================================*/
 
-/* Core Column */
 .row:before,
 .row:after{
 	display: table;
@@ -591,34 +609,6 @@ template {
 .column.eq3               {width:25%}
 .column.eq2               {width:16.66666667%}
 .column.eq1               {width:8.33333333%}
-
-.column.eq12-pull     {right:100%}
-.column.eq11-pull     {right:91.66666667%}
-.column.eq10-pull     {right:83.33333333%}
-.column.eq9-pull       {right:75%}
-.column.eq8-pull       {right:66.66666667%}
-.column.eq7-pull       {right:58.33333333%}
-.column.eq6-pull       {right:50%}
-.column.eq5-pull       {right:41.66666667%}
-.column.eq4-pull       {right:33.33333333%}  
-.column.eq3-pull       {right:25%}
-.column.eq2-pull       {right:16.66666667%}
-.column.eq1-pull       {right:8.33333333%}
-.column.eq0-pull       {right:auto;}
-
-.column.eq12-push     {left:100%;}
-.column.eq11-push     {left:91.66666667%;}
-.column.eq10-push     {left:83.33333333%;}
-.column.eq9-push       {left:75%;}
-.column.eq8-push       {left:66.66666667%;}
-.column.eq7-push       {left:58.33333333%;}
-.column.eq6-push       {left:50%;}
-.column.eq5-push       {left:41.66666667%;}
-.column.eq4-push       {left:33.33333333%;}
-.column.eq3-push       {left:25%;}
-.column.eq2-push       {left:16.66666667%;}
-.column.eq1-push       {left:8.33333333%;}
-.column.eq0-push       {left: auto;}
 
 .column.eq12-offset {margin-left:100%;}
 .column.eq11-offset {margin-left:91.66666667%;}
@@ -646,34 +636,6 @@ template {
 .column.s3           {width:25%}
 .column.s2           {width:16.66666667%}
 .column.s1           {width:8.33333333%}
-
-.column.s12-pull     {right:100%}
-.column.s11-pull     {right:91.66666667%}
-.column.s10-pull     {right:83.33333333%}
-.column.s9-pull       {right:75%}
-.column.s8-pull       {right:66.66666667%}
-.column.s7-pull       {right:58.33333333%}
-.column.s6-pull       {right:50%}
-.column.s5-pull       {right:41.66666667%}
-.column.s4-pull       {right:33.33333333%}  
-.column.s3-pull       {right:25%}
-.column.s2-pull       {right:16.66666667%}
-.column.s1-pull       {right:8.33333333%}
-.column.s0-pull       {right:auto;}
-
-.column.s12-push     {left:100%;}
-.column.s11-push     {left:91.66666667%;}
-.column.s10-push     {left:83.33333333%;}
-.column.s9-push       {left:75%;}
-.column.s8-push       {left:66.66666667%;}
-.column.s7-push       {left:58.33333333%;}
-.column.s6-push       {left:50%;}
-.column.s5-push       {left:41.66666667%;}
-.column.s4-push       {left:33.33333333%;}
-.column.s3-push       {left:25%;}
-.column.s2-push       {left:16.66666667%;}
-.column.s1-push       {left:8.33333333%;}
-.column.s0-push 	     {left: auto;}
 
 .column.s12-offset {margin-left:100%;}
 .column.s11-offset {margin-left:91.66666667%;}
@@ -703,34 +665,6 @@ template {
 .column.m2  {width:16.66666667%}
 .column.m1  {width:8.33333333%}
 
-.column.m12-pull {right:100%}
-.column.m11-pull {right:91.66666667%}
-.column.m10-pull {right:83.33333333%}
-.column.m9-pull  {right:75%}
-.column.m8-pull  {right:66.66666667%}
-.column.m7-pull  {right:58.33333333%}
-.column.m6-pull  {right:50%}
-.column.m5-pull  {right:41.66666667%}
-.column.m4-pull  {right:33.33333333%}  
-.column.m3-pull  {right:25%}
-.column.m2-pull  {right:16.66666667%}
-.column.m1-pull  {right:8.33333333%}
-.column.m0-pull  {right:auto;}
-
-.column.m12-push {left:100%;}
-.column.m11-push {left:91.66666667%;}
-.column.m10-push {left:83.33333333%;}
-.column.m9-push  {left:75%;}
-.column.m8-push  {left:66.66666667%;}
-.column.m7-push  {left:58.33333333%;}
-.column.m6-push  {left:50%;}
-.column.m5-push  {left:41.66666667%;}
-.column.m4-push  {left:33.33333333%;}
-.column.m3-push  {left:25%;}
-.column.m2-push  {left:16.66666667%;}
-.column.m1-push  {left:8.33333333%;}
-.column.m0-push  {left: auto;}
-
 .column.m12-offset  {margin-left:100%;}
 .column.m11-offset  {margin-left:91.66666667%;}
 .column.m10-offset  {margin-left:83.33333333%;}
@@ -759,34 +693,6 @@ template {
 .column.l2  {width:16.66666667%}
 .column.l1  {width:8.33333333%}
 
-.column.l12-pull {right:100%}
-.column.l11-pull {right:91.66666667%}
-.column.l10-pull {right:83.33333333%}
-.column.l9-pull  {right:75%}
-.column.l8-pull  {right:66.66666667%}
-.column.l7-pull  {right:58.33333333%}
-.column.l6-pull  {right:50%}
-.column.l5-pull  {right:41.66666667%}
-.column.l4-pull  {right:33.33333333%}  
-.column.l3-pull  {right:25%}
-.column.l2-pull  {right:16.66666667%}
-.column.l1-pull  {right:8.33333333%}
-.column.l0-pull  {right:auto;}
-
-.column.l12-push {left:100%;}
-.column.l11-push {left:91.66666667%;}
-.column.l10-push {left:83.33333333%;}
-.column.l9-push  {left:75%;}
-.column.l8-push  {left:66.66666667%;}
-.column.l7-push  {left:58.33333333%;}
-.column.l6-push  {left:50%;}
-.column.l5-push  {left:41.66666667%;}
-.column.l4-push  {left:33.33333333%;}
-.column.l3-push  {left:25%;}
-.column.l2-push  {left:16.66666667%;}
-.column.l1-push  {left:8.33333333%;}
-.column.l0-push  {left: auto;}
-
 .column.l12-offset {margin-left:100%;}
 .column.l11-offset {margin-left:91.66666667%;}
 .column.l10-offset {margin-left:83.33333333%;}
@@ -801,9 +707,145 @@ template {
 .column.l1-offset  {margin-left:8.33333333%;}
 .column.l0-offset  {margin-left:0;}}
 
-/* End Column */
+/* Column Cell */
+.row-cell {
+    display:table;
+    width:100%;
+}
+.cell:before,
+.cell:after{
+	display: table;
+	content: " ";
+}
+.cell:after{
+	clear: both;
+}
+.cell{
+    display:table-cell;
+}
 
-/* Color Group */
+.cell.s12 {width:100%}
+.cell.s11 {width:91.66666667%}
+.cell.s10 {width:83.33333333%}
+.cell.s9  {width:75%;}
+.cell.s8  {width:66.66666667%}
+.cell.s7  {width:58.33333333%}
+.cell.s6  {width:50%}
+.cell.s5  {width:41.66666667%}
+.cell.s4  {width:33.33333333%}
+.cell.s3  {width:25%}
+.cell.s2  {width:16.66666667%}
+.cell.s1  {width:8.33333333%}
+}
+
+@media only screen and (min-width:601px){
+.cell.m12 {width:100%}
+.cell.m11 {width:91.66666667%}
+.cell.m10 {width:83.33333333%}
+.cell.m9  {width:75%;}
+.cell.m8  {width:66.66666667%}
+.cell.m7  {width:58.33333333%}
+.cell.m6  {width:50%}
+.cell.m5  {width:41.66666667%}
+.cell.m4  {width:33.33333333%}
+.cell.m3  {width:25%}
+.cell.m2  {width:16.66666667%}
+.cell.m1  {width:8.33333333%}
+}
+@media only screen and (min-width:993px){
+.cell.l12 {width:100%}
+.cell.l11 {width:91.66666667%}
+.cell.l10 {width:83.33333333%}
+.cell.l9  {width:75%;}
+.cell.l8  {width:66.66666667%}
+.cell.l7  {width:58.33333333%}
+.cell.l6  {width:50%}
+.cell.l5  {width:41.66666667%}
+.cell.l4  {width:33.33333333%}
+.cell.l3  {width:25%}
+.cell.l2  {width:16.66666667%}
+.cell.l1  {width:8.33333333%}
+}
+@media only screen and (max-width: 600px) {
+    .cell.s12 { 
+        display: block;
+    }
+}
+/* End Column Cell */
+
+/* Column Flex */
+.gallery-flex{
+	display:flex;
+    display:-moz-flex;
+    display:-o-flex;
+    display:-webkit-flex;
+	display:-ms-flex;
+	flex-direction: row;
+	margin:0 8px;
+	overflow-y:hidden;
+	overflow-x:scroll;
+}
+.gallery{
+	padding: 0 8px;
+}
+.row-flex{
+	display:flex;
+    display:-moz-flex;
+    display:-o-flex;
+    display:-webkit-flex;
+	display:-ms-flex;
+	flex-direction: row;
+}
+.flex:before,
+.flex:after{
+	display: table;
+	content: " ";
+}
+.flex:after{
+	clear: both;
+}
+.flex{
+	display:row;
+}
+
+@media only screen and (min-width:601px){
+.flex.m12 {width:100%}
+.flex.m11 {width:91.66666667%}
+.flex.m10 {width:83.33333333%}
+.flex.m9  {width:75%;}
+.flex.m8  {width:66.66666667%}
+.flex.m7  {width:58.33333333%}
+.flex.m6  {width:50%}
+.flex.m5  {width:41.66666667%}
+.flex.m4  {width:33.33333333%}
+.flex.m3  {width:25%}
+.flex.m2  {width:16.66666667%}
+.flex.m1  {width:8.33333333%}
+}
+@media only screen and (min-width:993px){
+.flex.l12 {width:100%}
+.flex.l11 {width:91.66666667%}
+.flex.l10 {width:83.33333333%}
+.flex.l9  {width:75%;}
+.flex.l8  {width:66.66666667%}
+.flex.l7  {width:58.33333333%}
+.flex.l6  {width:50%}
+.flex.l5  {width:41.66666667%}
+.flex.l4  {width:33.33333333%}
+.flex.l3  {width:25%}
+.flex.l2  {width:16.66666667%}
+.flex.l1  {width:8.33333333%}
+}
+@media only screen and (max-width: 600px) {
+	.row-flex{
+		display:block;
+	}
+}
+/* End Column Flex */
+
+/*================================================= End Column ===================================================*/
+
+/*================================================= Color Group ==================================================*/
 
 /* Color Pink */
 .pink{color:#FFC0CB}
@@ -968,11 +1010,11 @@ template {
 .darkslategray{color:#2f4f4f}
 .black{color:#000000}
 
-/* End Color Group */
+/*================================================= End Color Group ==============================================*/
 
-/* Background Color Group */
+/*============================================== Background Color Group ==========================================*/
 
-/* Color Pink */
+/* Background Color Pink */
 .bg-pink{color:#fff;background-color:#FFC0CB}
 .bg-lightpink {color:#fff;background-color:#FFB6C1}
 .bg-hotpink{color:#fff;background-color:#FF69B4}
@@ -1105,23 +1147,23 @@ template {
 .bg-maroon{color:#fff;background-color:#800000}
 
 /* White */
-.bg-white{color:#000:#fff;background-color:#ffffff}
-.bg-snow{color:#000:#fff;background-color:#fffafa}
-.bg-honeydew{color:#000:#fff;background-color:#f0fff0}
-.bg-mintcream{color:#000:#fff;background-color:#f5fffa}
-.bg-azure{color:#000:#fff;background-color:#f0ffff}
-.bg-aliceblue{color:#000:#fff;background-color:#f0f8ff}
-.bg-ghostwhite{color:#000:#fff;background-color:#f8f8ff}
-.bg-whitesmoke{color:#000:#fff;background-color:#f5f5f5}
-.bg-seashell{color:#000:#fff;background-color:#fff5ee}
-.bg-beige{color:#000:#fff;background-color:#f5f5dc}
-.bg-oldlace{color:#000:#fff;background-color:#fdf5e6}
-.bg-floralwhite{color:#000:#fff;background-color:#fffaf0}
-.bg-ivory{color:#000:#fff;background-color:#fffff0}
-.bg-antiquewhite{color:#000:#fff;background-color:#faebd7}
-.bg-linen{color:#000:#fff;background-color:#faf0e6}
-.bg-lavenderblush{color:#000:#fff;background-color:#fff0f5}
-.bg-mistyrose{color:#000:#fff;background-color:#ffe4e1}
+.bg-white{color:#000;background-color:#ffffff}
+.bg-snow{color:#000;background-color:#fffafa}
+.bg-honeydew{color:#000;background-color:#f0fff0}
+.bg-mintcream{color:#000;background-color:#f5fffa}
+.bg-azure{color:#000;background-color:#f0ffff}
+.bg-aliceblue{color:#000;background-color:#f0f8ff}
+.bg-ghostwhite{color:#000;background-color:#f8f8ff}
+.bg-whitesmoke{color:#000;background-color:#f5f5f5}
+.bg-seashell{color:#000;background-color:#fff5ee}
+.bg-beige{color:#000;background-color:#f5f5dc}
+.bg-oldlace{color:#000;background-color:#fdf5e6}
+.bg-floralwhite{color:#000;background-color:#fffaf0}
+.bg-ivory{color:#000;background-color:#fffff0}
+.bg-antiquewhite{color:#000;background-color:#faebd7}
+.bg-linen{color:#000;background-color:#faf0e6}
+.bg-lavenderblush{color:#000;background-color:#fff0f5}
+.bg-mistyrose{color:#000;background-color:#ffe4e1}
 
 /* Black */
 .bg-gainsboro{color:#fff;background-color:#dcdcdc}
@@ -1135,9 +1177,9 @@ template {
 .bg-darkslategray{color:#fff;background-color:#2f4f4f}
 .bg-black{color:#fff;background-color:#000000}
 
-/* End Background Color Group */
+/*========================================= End Background Color Group ==========================================*/
 
-/* Background Hover Group */
+/*========================================= Background Hover Group ==============================================*/
 
 /* Color Pink */
 .hover-pink:hover{color:#fff;transition-duration:0.9s;background-color:#FFC0CB}
@@ -1465,6 +1507,9 @@ template {
 .hover-darkslategray{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#2f4f4f}
 .hover-black{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#000000}
 
+/*========================================== End Background Hover ===============================================*/
+
+/*============================================== Tex Hover ======================================================*/
 /* Color Pink */
 .text-hover-pink:hover{transition-duration:0.9s;color:#FFC0CB}
 .text-hover-lightpink:hover{transition-duration:0.9s;color:#FFB6C1}
@@ -1791,9 +1836,9 @@ template {
 .text-hover-darkslategray{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#2f4f4f}
 .text-hover-black{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#000000}
 
-/* End Hover Group */
+/*=============================================== End Text Hover ================================================*/
 
-/* Core Border Group*/
+/*================================================= Border Solid Group ================================================*/
 
 /* Color Pink */
 .border-pink{border: 1px solid #FFC0CB}
@@ -1974,9 +2019,9 @@ template {
 .border-darkslategray{border: 1px solid #2f4f4f}
 .border-black{border: 1px solid #000000}
 
-/* End Border Group */
+/*============================================= End Border Group ================================================*/
 
-/* Border Bottombar */
+/*=========================================== Bottombar Solid Group =============================================*/
 
 /* Color Pink */
 .bottombar-pink{border-bottom: 6px solid #FFC0CB}
@@ -2157,14 +2202,13 @@ template {
 .bottombar-darkslategray{border-bottom: 6px solid #2f4f4f}
 .bottombar-black{border-bottom: 6px solid #000000}
 
-/* End Core Border Group */
+/*============================================ End Bottombar Solid Group ========================================*/
 
-/* Core Position */
-
+/*================================================= Position ====================================================*/
 .relative{position:relative}
 .absolute{position:absolute}
 .static{position:static}
-.fixed{position:fixed}
+.fixed{position:fixed;width:100%}
 .fixed-top{position:fixed!important;top:0;width:100%;z-index:1}
 .fixed-bottom{position:fixed!important;bottom:0;width:100%;z-index:1}
 
@@ -2180,14 +2224,16 @@ template {
 .position-bottomright{position:absolute;bottom:0;right:0}
 .position-bottomleft{position:absolute;bottom:0;left:0}
 
-/* End Position */
+/*================================================= End Position ================================================*/
 
-/* Core Float */
+/*===================================================== Float ===================================================*/
+
 .left{float:left!important}
 .right{float:right!important}
-/* End Core Float */
 
-/* Core navbar */
+/*================================================= End Float ===================================================*/
+
+/*================================================= Navbar ======================================================*/
 .navbar:before,
 .navbar:after{
 	display: table;
@@ -2402,9 +2448,9 @@ template {
 .navbar-darkslategray li a:hover{color:#fff;transition-duration:0.9s;background-color:#2f4f4f}
 .navbar-black li a:hover{color:#fff;transition-duration:0.9s;background-color:#000000}
 
-/* End Navbar Hover Group */
+/*============================================== End Navbar =====================================================*/
 
-/* Core sidebar */
+/*=============================================== Sidebar =======================================================*/
 .sidebar:before,
 .sidebar:after{
 	display: table;
@@ -2626,10 +2672,9 @@ template {
 .sidebar-darkslategray li a:hover{color:#fff;transition-duration:0.9s;background-color:#2f4f4f}
 .sidebar-black li a:hover{color:#fff;transition-duration:0.9s;background-color:#000000}
 
-/* End Sidebar hover group */
+/*============================================== End Sidebar ====================================================*/
 
-/* Core Font */
-
+/*================================================= Font ========================================================*/
 /* Font Size */
 .font-2{font-size:2px}
 .font-4{font-size:4px}
@@ -2681,19 +2726,18 @@ template {
 .capitalize {
 	text-transform: capitalize;
 }
-
-/* End Font */
-
-/* Core Scroll */
+.paragraf{
+	text-indent:2em;
+}
+/*=============================================== Scroll ========================================================*/
 .scroll{
 	width:100%;
 	max-height:100px;
-	overflow-y:auto;
-	overflow-x:auto;
+	overflow:auto;
 }
-/* End Scroll */
+/*============================================= End Scroll ======================================================*/
 
-/* Core Table */
+/*================================================ Table ========================================================*/
 .table{
 	border-collapse:collapse;
 	border-spacing:0;
@@ -2706,9 +2750,7 @@ template {
 	text-align:left;
 	vertical-align:top;
 }
-/* End Table */
-
-/* Core Section */
+/*================================================ Section ======================================================*/
 .section{margin:24px 0px}
 .section-s{margin:8px 0px}
 .section-m{margin:16px 0px}
@@ -2718,9 +2760,9 @@ template {
 .secpad-s{padding:8px 0px}
 .secpad-m{padding:16px 0px}
 .secpad-l{padding:32px 0px}
-/* End Section */
+/*============================================== End Section ====================================================*/
 
-/* Core List */
+/*================================================= List ========================================================*/
 .list{
 	padding:0;
 	list-style-type:none;
@@ -2728,27 +2770,26 @@ template {
 .list li{
 	padding:3px 0px;
 }
+/*=============================================== End List ======================================================*/
 
-/* End List */
-
-/* Core Tag */
+/*================================================= Tag =========================================================*/
 .tag{
 	display:inline-block;
 	padding:8px 16px;
 	text-align:center;
 }
+/*================================================ End Tag ======================================================*/
 
-/* Core Img */
+/*================================================ Images =======================================================*/
 .img-responsive{
 	display:block;
 	max-width:100%;
 	height:auto;
+	margin:auto;
 }
-/* End img */
+/*=============================================== End Images ====================================================*/
 
-/* End Tag */
-
-/* Progress */
+/*=============================================== Progress ======================================================*/
 .progress{
 	width:100%;
 	height:1.5em;
@@ -2763,9 +2804,9 @@ template {
 .progress-radius{
 	border-radius:16px
 }
-/* End Progrss */
+/*============================================= End Progress ====================================================*/
 
-/* DL */
+/*============================================== Description ====================================================*/
 .dl-horizontal:before,
 .dl-horizontal:after{
 	display: table;
@@ -2774,7 +2815,7 @@ template {
 .dl-horizontal:after{
   clear: both;
 }
-  .dl-horizontal dt {
+.dl-horizontal dt {
     float: left;
     width: 100px;
     overflow: hidden;
@@ -2782,15 +2823,11 @@ template {
     text-align: right;
     text-overflow: ellipsis;
     white-space: nowrap;
-  }
-  .dl-horizontal dd {
+}
+.dl-horizontal dd {
     margin-left: 115px;
-  }
-
-/* End DL */
-
-/* Core Accordion */
-
+}
+/*============================================= Accordion =======================================================*/
 .accordion {
     background-color: #eee;
     cursor: pointer;
@@ -2824,11 +2861,9 @@ template {
 	outline:0;
 }
 
-/* End Core Accrodion */
+/*============================================ And Accordion ====================================================*/
 
-
-/* Core Button */
-
+/*=============================================== Button ========================================================*/
 .button{
 	display: inline-block;
 	font-size:16px;
@@ -2843,9 +2878,9 @@ template {
 .button:focus{
 	outline:0;
 }
+/*=========================================== End Button ========================================================*/
 
-/* End 
-/* Dropdown & Dropdown Content*/
+/*============================================ Dropdown =========================================================*/
 .dropdown-button {
     font-size: 16px;
     cursor: pointer;
@@ -2874,30 +2909,31 @@ template {
     min-width: 600px;
     z-index: 8!important;
 }
-/* End Core Dropdown */
+/*=========================================== End Dropdown ======================================================*/
 
-
-/* Core Box/Text Shadow */
+/*=========================================== Box Shadow ========================================================*/
 
 .box-shadow{box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important}
 .text-shadow{text-shadow: 0 1px 2px rgba(0, 0, 0, .6)!important}
 
-/* End Box/Text Shadow */
+/*========================================== End Box-shadow =====================================================*/
 
-/* Core Hide */
+/*============================================== Hide ===========================================================*/
+
 @media (max-width:600px){.hs{display:none!important}}
 @media (max-width:992px) and (min-width:601px){.hm{display:none!important}}
 @media (min-width:993px){.hl{display:none!important}}
 
+.hidden{display:visibility:hidden!important}
 .hide{display:none!important}
 .show{display:block!important}
 
 .hover-none:hover{box-shadow:none!important;background-color:transparent!important;color:#000000}
 .hover-text-none:hover{box-shadow:none!important;background-color:transparent!important}
-/* End Core Hide */
 
+/*============================================= End Hide ========================================================*/
 
-/* Core Animation */
+/*============================================ Animation ========================================================*/
 .animation-fading{-webkit-animation:fading 9s infinite;animation:fading 9s infinite}
 @-webkit-keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
 @keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
@@ -2920,4 +2956,4 @@ template {
 @-webkit-keyframes animationzoom{from{-webkit-transform:scale(0)} to{-webkit-transform:scale(1)}}
 @keyframes animationzoom{from{transform:scale(0)} to{transform:scale(1)}}
 
-/* End Animation */
+/*========================================== End Animation ======================================================*/
