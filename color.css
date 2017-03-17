@@ -1,9 +1,10 @@
 /*!
- * Core Color Group by Flamecore
+ * Core Color Group by getcore.github.io
  * Copyright 2017 Flamecore
- * Licensed All Rights Reserved
- * Author Andika Chamberlin
- 
+ * Github site github.com/getcore/core
+ * Author Andika Chamberlin Follow Me twitter.com/andikamingo
+ * MIT License 
+
 /*================================================= Color Group ========================================================*/
 
 /* Color Group */
@@ -308,23 +309,23 @@
 .bg-maroon{color:#fff;background-color:#800000}
 
 /* White */
-.bg-white{color:#000:#fff;background-color:#ffffff}
-.bg-snow{color:#000:#fff;background-color:#fffafa}
-.bg-honeydew{color:#000:#fff;background-color:#f0fff0}
-.bg-mintcream{color:#000:#fff;background-color:#f5fffa}
-.bg-azure{color:#000:#fff;background-color:#f0ffff}
-.bg-aliceblue{color:#000:#fff;background-color:#f0f8ff}
-.bg-ghostwhite{color:#000:#fff;background-color:#f8f8ff}
-.bg-whitesmoke{color:#000:#fff;background-color:#f5f5f5}
-.bg-seashell{color:#000:#fff;background-color:#fff5ee}
-.bg-beige{color:#000:#fff;background-color:#f5f5dc}
-.bg-oldlace{color:#000:#fff;background-color:#fdf5e6}
-.bg-floralwhite{color:#000:#fff;background-color:#fffaf0}
-.bg-ivory{color:#000:#fff;background-color:#fffff0}
-.bg-antiquewhite{color:#000:#fff;background-color:#faebd7}
-.bg-linen{color:#000:#fff;background-color:#faf0e6}
-.bg-lavenderblush{color:#000:#fff;background-color:#fff0f5}
-.bg-mistyrose{color:#000:#fff;background-color:#ffe4e1}
+.bg-white{color:#000;background-color:#ffffff}
+.bg-snow{color:#000;background-color:#fffafa}
+.bg-honeydew{color:#000;background-color:#f0fff0}
+.bg-mintcream{color:#000;background-color:#f5fffa}
+.bg-azure{color:#000;background-color:#f0ffff}
+.bg-aliceblue{color:#000;background-color:#f0f8ff}
+.bg-ghostwhite{color:#000;background-color:#f8f8ff}
+.bg-whitesmoke{color:#000;background-color:#f5f5f5}
+.bg-seashell{color:#000;background-color:#fff5ee}
+.bg-beige{color:#000;background-color:#f5f5dc}
+.bg-oldlace{color:#000;background-color:#fdf5e6}
+.bg-floralwhite{color:#000;background-color:#fffaf0}
+.bg-ivory{color:#000;background-color:#fffff0}
+.bg-antiquewhite{color:#000;background-color:#faebd7}
+.bg-linen{color:#000;background-color:#faf0e6}
+.bg-lavenderblush{color:#000;background-color:#fff0f5}
+.bg-mistyrose{color:#000;background-color:#ffe4e1}
 
 /* Black */
 .bg-gainsboro{color:#fff;background-color:#dcdcdc}
