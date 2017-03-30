@@ -1,0 +1,71 @@
+/*!
+ * Core Column Table Cell by getcore.github.io
+ * Copyright 2017 Flamecore
+ * Github site github.com/getcore/core
+ * Author Andika Chamberlin Follow Me twitter.com/andikamingo
+ * MIT License 
+*/
+
+/* Column Cell */
+.row-cell {
+    display:table;
+    width:100%;
+}
+.cell:before,
+.cell:after{
+	display: table;
+	content: " ";
+}
+.cell:after{
+	clear: both;
+}
+.cell{
+    display:table-cell;
+}
+.cell.s12 {width:100%}
+.cell.s11 {width:91.66666667%}
+.cell.s10 {width:83.33333333%}
+.cell.s9  {width:75%;}
+.cell.s8  {width:66.66666667%}
+.cell.s7  {width:58.33333333%}
+.cell.s6  {width:50%}
+.cell.s5  {width:41.66666667%}
+.cell.s4  {width:33.33333333%}
+.cell.s3  {width:25%}
+.cell.s2  {width:16.66666667%}
+.cell.s1  {width:8.33333333%}
+
+@media only screen and (min-width:601px){
+.cell.m12 {width:100%}
+.cell.m11 {width:91.66666667%}
+.cell.m10 {width:83.33333333%}
+.cell.m9  {width:75%;}
+.cell.m8  {width:66.66666667%}
+.cell.m7  {width:58.33333333%}
+.cell.m6  {width:50%}
+.cell.m5  {width:41.66666667%}
+.cell.m4  {width:33.33333333%}
+.cell.m3  {width:25%}
+.cell.m2  {width:16.66666667%}
+.cell.m1  {width:8.33333333%}
+}
+@media only screen and (min-width:993px){
+.cell.l12 {width:100%}
+.cell.l11 {width:91.66666667%}
+.cell.l10 {width:83.33333333%}
+.cell.l9  {width:75%;}
+.cell.l8  {width:66.66666667%}
+.cell.l7  {width:58.33333333%}
+.cell.l6  {width:50%}
+.cell.l5  {width:41.66666667%}
+.cell.l4  {width:33.33333333%}
+.cell.l3  {width:25%}
+.cell.l2  {width:16.66666667%}
+.cell.l1  {width:8.33333333%}
+}
+@media only screen and (max-width: 600px) {
+    .cell.s12 { 
+        display: block;
+    }
+}
+/* End Column Cell */

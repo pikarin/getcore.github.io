@@ -1,0 +1,77 @@
+/*!
+ * Core Column Table Cell 16 by getcore.github.io
+ * Copyright 2017 Flamecore
+ * Github site github.com/getcore/core
+ * Author Andika Chamberlin Follow Me twitter.com/andikamingo
+ * MIT License 
+*/
+
+.row-cell {
+    display:table;
+    width:100%;
+}
+.cell:before,
+.cell:after{
+	display: table;
+	content: " ";
+}
+.cell:after{
+	clear: both;
+}
+.cell{
+    display:table-cell;
+}
+.cell.s1{width:6.25%}
+.cell.s2{width:12.5%}
+.cell.s3{width:18.75%}
+.cell.s4{width:25%}
+.cell.s5{width:31.25%}
+.cell.s6{width:37.5%}
+.cell.s7{width:43.75%}
+.cell.s8{width:50%}
+.cell.s9{width:56.25%}
+.cell.s10{width:62.5%}
+.cell.s11{width:68.75%}
+.cell.s12{width:75%}
+.cell.s13{width:81.25%}
+.cell.s14{width:87.5%}
+.cell.s15{width:93.75%}
+.cell.s16{width:100%}
+
+@media only screen and (min-width:601px) {
+.cell.m1{width:6.25%}
+.cell.m2{width:12.5%}
+.cell.m3{width:18.75%}
+.cell.m4{width:25%}
+.cell.m5{width:31.25%}
+.cell.m6{width:37.5%}
+.cell.m7{width:43.75%}
+.cell.m8{width:50%}
+.cell.m9{width:56.25%}
+.cell.m10{width:62.5%}
+.cell.m11{width:68.75%}
+.cell.m12{width:75%}
+.cell.m13{width:81.25%}
+.cell.m14{width:87.5%}
+.cell.m15{width:93.75%}
+.cell.m16{width:100%}
+}
+
+@media only screen and (min-width:993px) {
+.cell.l1{width:6.25%}
+.cell.l2{width:12.5%}
+.cell.l3{width:18.75%}
+.cell.l4{width:25%}
+.cell.l5{width:31.25%}
+.cell.l6{width:37.5%}
+.cell.l7{width:43.75%}
+.cell.l8{width:50%}
+.cell.l9{width:56.25%}
+.cell.l10{width:62.5%}
+.cell.l11{width:68.75%}
+.cell.l12{width:75%}
+.cell.l13{width:81.25%}
+.cell.l14{width:87.5%}
+.cell.l15{width:93.75%}
+.cell.l16{width:100%}
+}
