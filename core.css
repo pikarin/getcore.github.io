@@ -35,7 +35,8 @@ html{
 }
 body{
 	font-size:16px;
-	color:#555;
+	color:#000;
+	font-weight:300;
 }
 a{
 	text-decoration:none;
@@ -45,12 +46,20 @@ p{
 	line-height:1.3;
 }
 pre{
-	overflow-x: scroll; 
-	overflow-y:scroll;
-	text-align:left;
-  }
+	overflow: auto;
+	word-wrap: break-word!important;
+}
 pre {
-  margin: 0 0 10px 0;
+	display: block;
+	padding: 0 16px;
+	margin: 0;
+	background-color: #f5f5f5;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+pre code {
+	font-size:14px;
+	white-space: pre-wrap;
 }
 h1{
 	font-size: 50px;
@@ -79,6 +88,21 @@ h6{
 	font-family: inherit;
 	font-weight: 500;
 	margin:0;
+}
+address {
+  margin-bottom: 20px;
+  font-style: normal;
+  line-height: 1.4;
+}
+blockquote {
+  padding: 10px 16px;
+  margin: 0 0 20px;
+  border-left: 6px solid #ccc;
+}
+label{
+	display:block;
+	margin-bottom:8px;
+	
 }
 /*================================================= End Default ==================================================*/
 
@@ -555,6 +579,8 @@ template {
 .interior:after,
 .container:before,
 .container:after,
+.container-equal:before,
+.container-equal:after,
 .container-full:before,
 .container-full:after{
 	display: table;
@@ -563,6 +589,7 @@ template {
 .inside:after,
 .interior:after,
 .container:after,
+.container-equal:after,
 .container-full:after{
 	clear: both;
 }
@@ -575,11 +602,19 @@ template {
 .container {
 	margin:0 24px;
 }
+.container-equal{
+	margin:24px;
+}
 .container-full {
 	margin:0;
 }
 @media only screen and (max-width: 600px) {
 	.container{
+		margin: 0;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.container-equal{
 		margin: 0;
 	}
 }
@@ -708,6 +743,14 @@ template {
 .column.l0-offset  {margin-left:0;}}
 
 /* Column Cell */
+.row-cell:before,
+.row-cell:after{
+  display: table;
+  content: " ";
+}
+.row-cell:after{
+  clear: both;
+}
 .row-cell {
     display:table;
     width:100%;
@@ -723,7 +766,6 @@ template {
 .cell{
     display:table-cell;
 }
-
 .cell.s12 {width:100%}
 .cell.s11 {width:91.66666667%}
 .cell.s10 {width:83.33333333%}
@@ -736,7 +778,6 @@ template {
 .cell.s3  {width:25%}
 .cell.s2  {width:16.66666667%}
 .cell.s1  {width:8.33333333%}
-}
 
 @media only screen and (min-width:601px){
 .cell.m12 {width:100%}
@@ -788,6 +829,14 @@ template {
 .gallery{
 	padding: 0 8px;
 }
+.row-flex:before,
+.row-flex:after{
+  display: table;
+  content: " ";
+}
+.row-flex:after{
+  clear: both;
+}
 .row-flex{
 	display:flex;
     display:-moz-flex;
@@ -795,6 +844,7 @@ template {
     display:-webkit-flex;
 	display:-ms-flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 }
 .flex:before,
 .flex:after{
@@ -805,8 +855,20 @@ template {
 	clear: both;
 }
 .flex{
-	display:row;
+	width:100%;
 }
+.flex.s12 {width:100%}
+.flex.s11 {width:91.66666667%}
+.flex.s10 {width:83.33333333%}
+.flex.s9  {width:75%;}
+.flex.s8  {width:66.66666667%}
+.flex.s7  {width:58.33333333%}
+.flex.s6  {width:50%}
+.flex.s5  {width:41.66666667%}
+.flex.s4  {width:33.33333333%}
+.flex.s3  {width:25%}
+.flex.s2  {width:16.66666667%}
+.flex.s1  {width:8.33333333%}
 
 @media only screen and (min-width:601px){
 .flex.m12 {width:100%}
@@ -835,11 +897,6 @@ template {
 .flex.l3  {width:25%}
 .flex.l2  {width:16.66666667%}
 .flex.l1  {width:8.33333333%}
-}
-@media only screen and (max-width: 600px) {
-	.row-flex{
-		display:block;
-	}
 }
 /* End Column Flex */
 
@@ -1014,7 +1071,7 @@ template {
 
 /*============================================== Background Color Group ==========================================*/
 
-/* Background Color Pink */
+/* Color Pink */
 .bg-pink{color:#fff;background-color:#FFC0CB}
 .bg-lightpink {color:#fff;background-color:#FFB6C1}
 .bg-hotpink{color:#fff;background-color:#FF69B4}
@@ -1509,7 +1566,336 @@ template {
 
 /*========================================== End Background Hover ===============================================*/
 
-/*============================================== Tex Hover ======================================================*/
+/*============================================== Hover Link ======================================================*/
+/* Color Pink */
+.ahover-pink a:hover{color:#fff;background-color:#FFC0CB}
+.ahover-lightpink a:hover{color:#fff;background-color:#FFB6C1}
+.ahover-hotpink a:hover{color:#fff;background-color:#FF69B4}
+.ahover-deeppink a:hover{color:#fff;background-color:#FF1493}
+.ahover-palevioletred a:hover{color:#fff;background-color:#DB7093}
+.ahover-mediumvioletred a:hover{color:#fff;background-color:#C71585}
+
+/* Color Purple */
+.ahover-lavender a:hover{color:#fff;background-color:#e6e6fa} 		
+.ahover-thistle a:hover{color:#fff;background-color:#d8bfd8!important} 		
+.ahover-plum a:hover{color:#fff;background-color:#dda0dd!important} 		
+.ahover-orchid a:hover{color:#fff;background-color:#da70d6!important}		
+.ahover-violet a:hover{color:#fff;background-color:#ee82ee}		
+.ahover-fuchsia a:hover{color:#fff;background-color:#ff00ff}		
+.ahover-magenta a:hover{color:#fff;background-color:#ff00ff}		
+.ahover-mediumorchid a:hover{color:#fff;background-color:#ba55d3}	 		
+.ahover-darkorchid a:hover{color:#fff;background-color:#9932cc!important}	
+.ahover-darkviolet a:hover{color:#fff;background-color:#9400d3}	
+.ahover-blueviolet a:hover{color:#fff;background-color:#8a2be2}	
+.ahover-darkmagenta a:hover{color:#fff;background-color:#8b008b}	
+.ahover-purple a:hover{color:#fff;background-color:#800080}
+.ahover-mediumpurple a:hover{color:#fff;background-color:#9370db}		
+.ahover-mediumslateblue a:hover{color:#fff;background-color:#7b68ee}		
+.ahover-slateblue a:hover{color:#fff;background-color:#6a5acd	}
+.ahover-darkslateblue a:hover{color:#fff;background-color:#483d8b}	
+.ahover-rebeccapurple a:hover{color:#fff;background-color:#663399}	
+.ahover-indigo a:hover{color:#fff;background-color:#4b0082}
+
+/* Red */
+.ahover-lightsalmon a:hover{color:#fff;background-color:#ffa07a}
+.ahover-salmon a:hover{color:#fff;background-color:#fa8072}
+.ahover-darksalmon a:hover{color:#fff;background-color:#e9967a}
+.ahover-lightcoral a:hover{color:#fff;background-color:#f08080}
+.ahover-indianred a:hover{color:#fff;background-color:#cd5c5c}
+.ahover-crimson a:hover{color:#fff;background-color:#dc143c}
+.ahover-red a:hover{color:#fff;background-color:#ff0000}
+.ahover-firebrick a:hover{color:#fff;background-color:#b22222}
+.ahover-darkred a:hover{color:#fff;background-color:#8b0000}
+
+/* Orange */
+.ahover-orange a:hover{color:#fff;background-color:#ffa500} 			
+.ahover-darkorange a:hover{color:#fff;background-color:#ff8c00}	 				
+.ahover-coral a:hover{color:#fff;background-color:#ff7f50}	 				
+.ahover-tomato a:hover{color:#fff;background-color:#ff6347}	 			
+.ahover-orangered a:hover{color:#fff;background-color:#ff4500}	
+
+/* Yellow */
+.ahover-gold a:hover{color:#000;background-color:#ffd700}
+.ahover-yellow a:hover{color:#000;background-color:#ffff00}
+.ahover-lightyellow a:hover{color0:#000;background-color:#ffffe0}
+.ahover-lemonchiffon a:hover{color:#000;background-color:#fffacd}
+.ahover-lightgoldenrodyellow a:hover{color:#000;background-color:#fafad2}
+.ahover-papayawhip a:hover{color:#000;background-color:#ffefd5}
+.ahover-moccasin a:hover{color:#fff;background-color:#ffe4b5}
+.ahover-peachpuff a:hover{color:#fff;background-color:#ffdab9}
+.ahover-palegoldenrod a:hover{color:#fff;background-color:#eee8aa}
+.ahover-khaki a:hover{color:#fff;background-color:#f0e68c}
+.ahover-darkkhaki a:hover{color:#fff;background-color:#bdb76b}
+
+/* Green */
+.ahover-greenyellow a:hover{color:#fff;background-color:#adff2f}
+.ahover-chartreuse a:hover{color:#fff;background-color:#7fff00}
+.ahover-lawngreen a:hover{color:#fff;background-color:#7cfc00}
+.ahover-lime a:hover{color:#fff;background-color:#00ff00}
+.ahover-limegreen a:hover{color:#fff;background-color:#32cd32}
+.ahover-palegreen a:hover{color:#fff;background-color:#98fb98}
+.ahover-lightgreen a:hover{color:#fff;background-color:#90ee90}
+.ahover-mediumspringgreen a:hover{color:#fff;background-color:#00fa9a}
+.ahover-springgreen a:hover{color:#fff;background-color:#00ff7f}
+.ahover-mediumseagreen a:hover{color:#fff;background-color:#3cb371}
+.ahover-seagreen a:hover{color:#fff;background-color:#2e8b57}
+.ahover-forestgreen a:hover{color:#fff;background-color:#228b22}
+.ahover-green a:hover{color:#fff;background-color:#008000}
+.ahover-darkgreen a:hover{color:#fff;background-color:#006400}
+.ahover-yellowgreen a:hover{color:#fff;background-color:#9acd32}
+.ahover-olivedrab a:hover{color:#fff;background-color:#6b8e23}
+.ahover-darkolivegreen a:hover{color:#fff;background-color:#556b2f}
+.ahover-mediumaquamarine a:hover{color:#fff;background-color:#66cdaa}
+.ahover-darkseagreen a:hover{color:#fff;background-color:#8fbc8f}
+.ahover-lightseagreen a:hover{color:#fff;background-color:#20b2aa}
+.ahover-darkcyan a:hover{color:#fff;background-color:#008b8b}
+.ahover-teal a:hover{color:#fff;background-color:#008080}
+
+/* Cyan */
+.ahover-aqua a:hover{color:#fff;background-color:#00ffff}
+.ahover-cyan a:hover{color:#fff;background-color:#00ffff}
+.ahover-lightcyan a:hover{color:#fff;background-color:#e0ffff}
+.ahover-paleturquoise a:hover{color:#fff;background-color:#afeeee}
+.ahover-aquamarine a:hover{color:#fff;background-color:#7fffd4}
+.ahover-turquoise a:hover{color:#fff;background-color:#40e0d0}
+.ahover-mediumturquoise a:hover{color:#fff;background-color:#48d1cc}
+.ahover-darkturquoise a:hover{color:#fff;background-color:#00ced1}
+
+/* Blue */
+.ahover-cadetblue a:hover{color:#fff;background-color:#5f9ea0}
+.ahover-steelblue a:hover{color:#fff;background-color:#4682b4}
+.ahover-lightsteelblue a:hover{color:#fff;background-color:#b0c4de}
+.ahover-lightblue a:hover{color:#fff;background-color:#add8e6}
+.ahover-powderblue a:hover{color:#fff;background-color:#b0e0e6}
+.ahover-lightskyblue a:hover{color:#fff;background-color:#87cefa}
+.ahover-skyblue a:hover{color:#fff;background-color:#87ceeb}
+.ahover-cornflowerblue a:hover{color:#fff;background-color:#6495ed}
+.ahover-deepskyblue a:hover{color:#fff;background-color:#00bfff}
+.ahover-dodgerblue a:hover{color:#fff;background-color:#1e90ff}
+.ahover-royalblue a:hover{color:#fff;background-color:#4169e1}
+.ahover-blue a:hover{color:#fff;background-color:#0000ff}
+.ahover-mediumblue a:hover{color:#fff;background-color:#0000cd}
+.ahover-darkblue a:hover{color:#fff;background-color:#00008b}
+.ahover-navy a:hover{color:#fff;background-color:#000080}
+.ahover-midnightblue a:hover{color:#fff;background-color:#191970}
+
+/* Brown */
+.ahover-cornsilk a:hover{color:#fff;background-color:#fff8dc}
+.ahover-blanchedalmond a:hover{color:#fff;background-color:#ffebcd}
+.ahover-bisque a:hover{color:#fff;background-color:#ffe4c4}
+.ahover-navajowhite a:hover{color:#fff;background-color:#ffdead}
+.ahover-wheat a:hover{color:#fff;background-color:#f5deb3}
+.ahover-burlywood a:hover{color:#fff;background-color:#deb887}
+.ahover-tan a:hover{color:#fff;background-color:#d2b48c}
+.ahover-rosybrown a:hover{color:#fff;background-color:#bc8f8f}
+.ahover-sandybrown a:hover{color:#fff;background-color:#f4a460}
+.ahover-goldenrod a:hover{color:#fff;background-color:#daa520}
+.ahover-darkgoldenrod a:hover{color:#fff;background-color:#b8860b}
+.ahover-peru a:hover{color:#fff;background-color:#cd853f}
+.ahover-chocolate a:hover{color:#fff;background-color:#d2691e}
+.ahover-olive a:hover{color:#fff;background-color:#808000}
+.ahover-saddlebrown a:hover{color:#fff;background-color:#8b4513}
+.ahover-sienna a:hover{color:#fff;background-color:#a0522d}
+.ahover-brown a:hover{color:#fff;background-color:#a52a2a}
+.ahover-maroon a:hover{color:#fff;background-color:#800000}
+
+/* White */
+.ahover-white a:hover{color:#000;background-color:#ffffff}
+.ahover-snow a:hover{color:#000;background-color:#fffafa}
+.ahover-honeydew a:hover{color:#000;background-color:#f0fff0}
+.ahover-mintcream a:hover{color:#000;background-color:#f5fffa}
+.ahover-azure a:hover{color:#000;background-color:#f0ffff}
+.ahover-aliceblue a:hover{color:#000;background-color:#f0f8ff}
+.ahover-ghostwhite a:hover{color:#000;background-color:#f8f8ff}
+.ahover-whitesmoke a:hover{color:#000;background-color:#f5f5f5}
+.ahover-seashell a:hover{color:#000;background-color:#fff5ee}
+.ahover-beige a:hover{color:#000;background-color:#f5f5dc}
+.ahover-oldlace a:hover{color:#000;background-color:#fdf5e6}
+.ahover-floralwhite a:hover{color:#000;background-color:#fffaf0}
+.ahover-ivory a:hover{color:#000;background-color:#fffff0}
+.ahover-antiquewhite a:hover{color:#000;background-color:#faebd7}
+.ahover-linen a:hover{color:#000;background-color:#faf0e6}
+.ahover-lavenderblush a:hover{color:#000;background-color:#fff0f5}
+.ahover-mistyrose a:hover{color:#000;background-color:#ffe4e1}
+
+/* Black */
+.ahover-gainsboro a:hover{color:#fff;background-color:#dcdcdc}
+.ahover-lightgray a:hover{color:#fff;background-color:#d3d3d3}
+.ahover-silver a:hover{color:#fff;background-color:#c0c0c0}
+.ahover-darkgray a:hover{color:#fff;background-color:#a9a9a9}
+.ahover-dimgray a:hover{color:#fff;background-color:#696969}
+.ahover-gray a:hover{color:#fff;background-color:#808080}
+.ahover-lightslategray a:hover{color:#fff;background-color:#778899}
+.ahover-slategray a:hover{color:#fff;background-color:#708090}
+.ahover-darkslategray a:hover{color:#fff;background-color:#2f4f4f}
+.ahover-black a:hover{color:#fff;background-color:#000000}
+
+/* Color Pink */
+.ahover-pink a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#FFC0CB}
+.ahover-lightpink a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#FFB6C1}
+.ahover-hotpink a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#FF69B4}
+.ahover-deeppink a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#FF1493}
+.ahover-palevioletred a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#DB7093}
+.ahover-mediumvioletred a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#C71585}
+
+/* Color Purple */
+.ahover-lavender a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#e6e6fa} 		
+.ahover-thistle a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#d8bfd8} 		
+.ahover-plum a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#dda0dd} 		
+.ahover-orchid a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#da70d6}		
+.ahover-violet a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ee82ee}		
+.ahover-fuchsia a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ff00ff}		
+.ahover-magenta a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ff00ff}		
+.ahover-mediumorchid a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ba55d3}	 		
+.ahover-darkorchid a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#9932cc}	
+.ahover-darkviolet a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#9400d3}	
+.ahover-blueviolet a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#8a2be2}	
+.ahover-darkmagenta a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#8b008b}	
+.ahover-purple a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#800080}
+.ahover-mediumpurple a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#9370db}		
+.ahover-mediumslateblue a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#7b68ee}		
+.ahover-slateblue a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#6a5acd	}
+.ahover-darkslateblue a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#483d8b}	
+.ahover-rebeccapurple a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#663399}	
+.ahover-indigo a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#4b0082}
+
+/* Red */
+.ahover-lightsalmon a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffa07a}
+.ahover-salmon a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#fa8072}
+.ahover-darksalmon a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#e9967a}
+.ahover-lightcoral a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f08080}
+.ahover-indianred a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#cd5c5c}
+.ahover-crimson a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#dc143c}
+.ahover-red a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ff0000}
+.ahover-firebrick a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#b22222}
+.ahover-darkred a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#8b0000}
+
+/* Orange */
+.ahover-orange a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffa500} 			
+.ahover-darkorange a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ff8c00}	 				
+.ahover-coral a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ff7f50}	 				
+.ahover-tomato a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ff6347}	 			
+.ahover-orangered a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ff4500}	
+
+/* Yellow */
+.ahover-gold a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffd700}
+.ahover-yellow a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffff00}
+.ahover-lightyellow a{color0:-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#000;transition-duration:0.9s;background-color:-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffffe0}
+.ahover-lemonchiffon a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#fffacd}
+.ahover-lightgoldenrodyellow a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#fafad2}
+.ahover-papayawhip a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffefd5}
+.ahover-moccasin a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffe4b5}
+.ahover-peachpuff a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffdab9}
+.ahover-palegoldenrod a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#eee8aa}
+.ahover-khaki a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f0e68c}
+.ahover-darkkhaki a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#bdb76b}
+
+/* Green */
+.ahover-greenyellow a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#adff2f}
+.ahover-chartreuse a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#7fff00}
+.ahover-lawngreen a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#7cfc00}
+.ahover-lime a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#00ff00}
+.ahover-limegreen a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#32cd32}
+.ahover-palegreen a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#98fb98}
+.ahover-lightgreen a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#90ee90}
+.ahover-mediumspringgreen a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#00fa9a}
+.ahover-springgreen a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#00ff7f}
+.ahover-mediumseagreen a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#3cb371}
+.ahover-seagreen a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#2e8b57}
+.ahover-forestgreen a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#228b22}
+.ahover-green a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#008000}
+.ahover-darkgreen a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#006400}
+.ahover-yellowgreen a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#9acd32}
+.ahover-olivedrab a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#6b8e23}
+.ahover-darkolivegreen a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#556b2f}
+.ahover-mediumaquamarine a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#66cdaa}
+.ahover-darkseagreen a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#8fbc8f}
+.ahover-lightseagreen a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#20b2aa}
+.ahover-darkcyan a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#008b8b}
+.ahover-teal a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#008080}
+
+/* Cyan */
+.ahover-aqua a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#00ffff}
+.ahover-cyan a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#00ffff}
+.ahover-lightcyan a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#e0ffff}
+.ahover-paleturquoise a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#afeeee}
+.ahover-aquamarine a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#7fffd4}
+.ahover-turquoise a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#40e0d0}
+.ahover-mediumturquoise a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#48d1cc}
+.ahover-darkturquoise a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#00ced1}
+
+/* Blue */
+.ahover-cadetblue a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#5f9ea0}
+.ahover-steelblue a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#4682b4}
+.ahover-lightsteelblue a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#b0c4de}
+.ahover-lightblue a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#add8e6}
+.ahover-powderblue a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#b0e0e6}
+.ahover-lightskyblue a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#87cefa}
+.ahover-skyblue a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#87ceeb}
+.ahover-cornflowerblue a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#6495ed}
+.ahover-deepskyblue a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#00bfff}
+.ahover-dodgerblue a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#1e90ff}
+.ahover-royalblue a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#4169e1}
+.ahover-blue a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#0000ff}
+.ahover-mediumblue a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#0000cd}
+.ahover-darkblue a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#00008b}
+.ahover-navy a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#000080}
+.ahover-midnightblue a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#191970}
+
+/* Brown */
+.ahover-cornsilk a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#fff8dc}
+.ahover-blanchedalmond a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffebcd}
+.ahover-bisque a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffe4c4}
+.ahover-navajowhite a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffdead}
+.ahover-wheat a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f5deb3}
+.ahover-burlywood a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#deb887}
+.ahover-tan a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#d2b48c}
+.ahover-rosybrown a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#bc8f8f}
+.ahover-sandybrown a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f4a460}
+.ahover-goldenrod a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#daa520}
+.ahover-darkgoldenrod a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#b8860b}
+.ahover-peru a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#cd853f}
+.ahover-chocolate a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#d2691e}
+.ahover-olive a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#808000}
+.ahover-saddlebrown a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#8b4513}
+.ahover-sienna a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#a0522d}
+.ahover-brown a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#a52a2a}
+.ahover-maroon a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#800000}
+
+/* White */
+.ahover-white a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffffff}
+.ahover-snow a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#fffafa}
+.ahover-honeydew a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f0fff0}
+.ahover-mintcream a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f5fffa}
+.ahover-azure a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f0ffff}
+.ahover-aliceblue a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f0f8ff}
+.ahover-ghostwhite a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f8f8ff}
+.ahover-whitesmoke a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f5f5f5}
+.ahover-seashell a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#fff5ee}
+.ahover-beige a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#f5f5dc}
+.ahover-oldlace a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#fdf5e6}
+.ahover-floralwhite a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#fffaf0}
+.ahover-ivory a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#fffff0}
+.ahover-antiquewhite a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#faebd7}
+.ahover-linen a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#faf0e6}
+.ahover-lavenderblush a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#fff0f5}
+.ahover-mistyrose a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffe4e1}
+
+/* Black */
+.ahover-gainsboro a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#dcdcdc}
+.ahover-lightgray a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#d3d3d3}
+.ahover-silver a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#c0c0c0}
+.ahover-darkgray a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#a9a9a9}
+.ahover-dimgray a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#696969}
+.ahover-gray a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#808080}
+.ahover-lightslategray a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#778899}
+.ahover-slategray a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#708090}
+.ahover-darkslategray a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#2f4f4f}
+.ahover-black a{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#000000}
+
+/*============================================== End link Hover ======================================================*/
+
+/*============================================== Text Hover ======================================================*/
 /* Color Pink */
 .text-hover-pink:hover{transition-duration:0.9s;color:#FFC0CB}
 .text-hover-lightpink:hover{transition-duration:0.9s;color:#FFB6C1}
@@ -2226,12 +2612,18 @@ template {
 
 /*================================================= End Position ================================================*/
 
-/*===================================================== Float ===================================================*/
+/*============================================= Position character ==============================================*/
 
 .left{float:left!important}
 .right{float:right!important}
 
-/*================================================= End Float ===================================================*/
+.left-flex{
+	flex-direction: row!important;
+}
+.right-flex{
+	flex-direction: row-reverse!important;
+}
+/*=========================================== End Position character ============================================*/
 
 /*================================================= Navbar ======================================================*/
 .navbar:before,
@@ -2257,7 +2649,6 @@ template {
 	margin:0;
 	padding:0;
 	z-index:7!important;
-	position:relative;
 }
 .navbar li{float:left}
 .navbar li a{
@@ -2266,6 +2657,19 @@ template {
 	text-decoration:none
 }
 /* End Navbar */
+
+/* Navbar Header */
+.navbar-header{
+	list-style-type:none;
+}
+.navbar-header li{
+	display:inline-block;
+}
+.navbar-header li a{
+	padding:18px 16px 18px 16px;
+	text-decoration:none
+}
+/* End Navbar Header */
 
 /* Navbar Hover Group */
 
@@ -2448,6 +2852,515 @@ template {
 .navbar-darkslategray li a:hover{color:#fff;transition-duration:0.9s;background-color:#2f4f4f}
 .navbar-black li a:hover{color:#fff;transition-duration:0.9s;background-color:#000000}
 
+/* Navbar Dropdown */
+.navbar-dropdown:before,
+.navbar-dropdown:after{
+	display: table;
+	content: " ";
+}
+.navbar-dropdown:after{
+	clear: both;
+}
+.navbar-dropdown {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar-dropdown li {
+    float: left;
+}
+.navbar-dropdown a{
+	-webkit-transition: all ease 0.9s;
+	-moz-transition: all ease 0.9s;
+	-o-transition: all ease 0.9s;
+	-ms-transition: all ease 0.9s;
+	transition: all ease 0.9s;
+}
+.navbar-dropdown a, .ndropdown-button {
+    display: inline-block;
+    padding: 18px 16px;
+    text-decoration: none;
+}
+.navbar-dropdown li.ndropdown {
+    display: inline-block;
+}
+.ndropdown-content{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 8!important;
+}
+.ndropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.ndropdown:hover .ndropdown-content {
+    display: block;
+}
+/* Pink */
+.ndropdown:hover .active-pink{color:#fff;background-color:#FFC0CB}
+.ndropdown:hover .active-lightpink {color:#fff;background-color:#FFB6C1}
+.ndropdown:hover .active-hotpink{color:#fff;background-color:#FF69B4}
+.ndropdown:hover .active-deeppink{color:#fff;background-color:#FF1493}
+.ndropdown:hover .active-palevioletred{color:#fff;background-color:#DB7093}
+.ndropdown:hover .active-mediumvioletred{color:#fff;background-color:#C71585}
+
+/* Purple */
+.ndropdown:hover .active-lavender{color:#fff;background-color:#e6e6fa} 		
+.ndropdown:hover .active-thistle{color:#fff;background-color:#d8bfd8!important} 		
+.ndropdown:hover .active-plum{color:#fff;background-color:#dda0dd!important} 		
+.ndropdown:hover .active-orchid{color:#fff;background-color:#da70d6!important}		
+.ndropdown:hover .active-violet{color:#fff;background-color:#ee82ee}		
+.ndropdown:hover .active-fuchsia{color:#fff;background-color:#ff00ff}		
+.ndropdown:hover .active-magenta{color:#fff;background-color:#ff00ff}		
+.ndropdown:hover .active-mediumorchid{color:#fff;background-color:#ba55d3}	 		
+.ndropdown:hover .active-darkorchid{color:#fff;background-color:#9932cc!important}	
+.ndropdown:hover .active-darkviolet{color:#fff;background-color:#9400d3}	
+.ndropdown:hover .active-blueviolet{color:#fff;background-color:#8a2be2}	
+.ndropdown:hover .active-darkmagenta{color:#fff;background-color:#8b008b}	
+.ndropdown:hover .active-purple{color:#fff;background-color:#800080}
+.ndropdown:hover .active-mediumpurple{color:#fff;background-color:#9370db}		
+.ndropdown:hover .active-mediumslateblue{color:#fff;background-color:#7b68ee}		
+.ndropdown:hover .active-slateblue{color:#fff;background-color:#6a5acd	}
+.ndropdown:hover .active-darkslateblue{color:#fff;background-color:#483d8b}	
+.ndropdown:hover .active-rebeccapurple{color:#fff;background-color:#663399}	
+.ndropdown:hover .active-indigo{color:#fff;background-color:#4b0082}
+
+/* Red */
+.ndropdown:hover .active-lightsalmon{color:#fff;background-color:#ffa07a}
+.ndropdown:hover .active-salmon{color:#fff;background-color:#fa8072}
+.ndropdown:hover .active-darksalmon{color:#fff;background-color:#e9967a}
+.ndropdown:hover .active-lightcoral{color:#fff;background-color:#f08080}
+.ndropdown:hover .active-indianred{color:#fff;background-color:#cd5c5c}
+.ndropdown:hover .active-crimson{color:#fff;background-color:#dc143c}
+.ndropdown:hover .active-red{color:#fff;background-color:#ff0000}
+.ndropdown:hover .active-firebrick{color:#fff;background-color:#b22222}
+.ndropdown:hover .active-darkred{color:#fff;background-color:#8b0000}
+
+/* Orange */
+.ndropdown:hover .active-orange{color:#fff;background-color:#ffa500} 			
+.ndropdown:hover .active-darkorange{color:#fff;background-color:#ff8c00}	 				
+.ndropdown:hover .active-coral{color:#fff;background-color:#ff7f50}	 				
+.ndropdown:hover .active-tomato{color:#fff;background-color:#ff6347}	 			
+.ndropdown:hover .active-orangered{color:#fff;background-color:#ff4500}	
+
+/* Yellow */
+.ndropdown:hover .active-gold{color:#000;background-color:#ffd700}
+.ndropdown:hover .active-yellow{color:#000;background-color:#ffff00}
+.ndropdown:hover .active-lightyellow{color:#000;background-color:#ffffe0}
+.ndropdown:hover .active-lemonchiffon{color:#000;background-color:#fffacd}
+.ndropdown:hover .active-lightgoldenrodyellow{color:#000;background-color:#fafad2}
+.ndropdown:hover .active-papayawhip{color:#000;background-color:#ffefd5}
+.ndropdown:hover .active-moccasin{color:#fff;background-color:#ffe4b5}
+.ndropdown:hover .active-peachpuff{color:#fff;background-color:#ffdab9}
+.ndropdown:hover .active-palegoldenrod{color:#fff;background-color:#eee8aa}
+.ndropdown:hover .active-khaki{color:#fff;background-color:#f0e68c}
+.ndropdown:hover .active-darkkhaki{color:#fff;background-color:#bdb76b}
+
+/* Green */
+.ndropdown:hover .active-greenyellow{color:#fff;background-color:#adff2f}
+.ndropdown:hover .active-chartreuse{color:#fff;background-color:#7fff00}
+.ndropdown:hover .active-lawngreen{color:#fff;background-color:#7cfc00}
+.ndropdown:hover .active-lime{color:#fff;background-color:#00ff00}
+.ndropdown:hover .active-limegreen{color:#fff;background-color:#32cd32}
+.ndropdown:hover .active-palegreen{color:#fff;background-color:#98fb98}
+.ndropdown:hover .active-lightgreen{color:#fff;background-color:#90ee90}
+.ndropdown:hover .active-mediumspringgreen{color:#fff;background-color:#00fa9a}
+.ndropdown:hover .active-springgreen{color:#fff;background-color:#00ff7f}
+.ndropdown:hover .active-mediumseagreen{color:#fff;background-color:#3cb371}
+.ndropdown:hover .active-seagreen{color:#fff;background-color:#2e8b57}
+.ndropdown:hover .active-forestgreen{color:#fff;background-color:#228b22}
+.ndropdown:hover .active-green{color:#fff;background-color:#008000}
+.ndropdown:hover .active-darkgreen{color:#fff;background-color:#006400}
+.ndropdown:hover .active-yellowgreen{color:#fff;background-color:#9acd32}
+.ndropdown:hover .active-olivedrab{color:#fff;background-color:#6b8e23}
+.ndropdown:hover .active-darkolivegreen{color:#fff;background-color:#556b2f}
+.ndropdown:hover .active-mediumaquamarine{color:#fff;background-color:#66cdaa}
+.ndropdown:hover .active-darkseagreen{color:#fff;background-color:#8fbc8f}
+.ndropdown:hover .active-lightseagreen{color:#fff;background-color:#20b2aa}
+.ndropdown:hover .active-darkcyan{color:#fff;background-color:#008b8b}
+.ndropdown:hover .active-teal{color:#fff;background-color:#008080}
+
+/* Cyan */
+.ndropdown:hover .active-aqua{color:#fff;background-color:#00ffff}
+.ndropdown:hover .active-cyan{color:#fff;background-color:#00ffff}
+.ndropdown:hover .active-lightcyan{color:#fff;background-color:#e0ffff}
+.ndropdown:hover .active-paleturquoise{color:#fff;background-color:#afeeee}
+.ndropdown:hover .active-aquamarine{color:#fff;background-color:#7fffd4}
+.ndropdown:hover .active-turquoise{color:#fff;background-color:#40e0d0}
+.ndropdown:hover .active-mediumturquoise{color:#fff;background-color:#48d1cc}
+.ndropdown:hover .active-darkturquoise{color:#fff;background-color:#00ced1}
+
+/* Blue */
+.ndropdown:hover .active-cadetblue{color:#fff;background-color:#5f9ea0}
+.ndropdown:hover .active-steelblue{color:#fff;background-color:#4682b4}
+.ndropdown:hover .active-lightsteelblue{color:#fff;background-color:#b0c4de}
+.ndropdown:hover .active-lightblue{color:#fff;background-color:#add8e6}
+.ndropdown:hover .active-powderblue{color:#fff;background-color:#b0e0e6}
+.ndropdown:hover .active-lightskyblue{color:#fff;background-color:#87cefa}
+.ndropdown:hover .active-skyblue{color:#fff;background-color:#87ceeb}
+.ndropdown:hover .active-cornflowerblue{color:#fff;background-color:#6495ed}
+.ndropdown:hover .active-deepskyblue{color:#fff;background-color:#00bfff}
+.ndropdown:hover .active-dodgerblue{color:#fff;background-color:#1e90ff}
+.ndropdown:hover .active-royalblue{color:#fff;background-color:#4169e1}
+.ndropdown:hover .active-blue{color:#fff;background-color:#0000ff}
+.ndropdown:hover .active-mediumblue{color:#fff;background-color:#0000cd}
+.ndropdown:hover .active-darkblue{color:#fff;background-color:#00008b}
+.ndropdown:hover .active-navy{color:#fff;background-color:#000080}
+.ndropdown:hover .active-midnightblue{color:#fff;background-color:#191970}
+
+/* Brown */
+.ndropdown:hover .active-cornsilk{color:#fff;background-color:#fff8dc}
+.ndropdown:hover .active-blanchedalmond{color:#fff;background-color:#ffebcd}
+.ndropdown:hover .active-bisque{color:#fff;background-color:#ffe4c4}
+.ndropdown:hover .active-navajowhite{color:#fff;background-color:#ffdead}
+.ndropdown:hover .active-wheat{color:#fff;background-color:#f5deb3}
+.ndropdown:hover .active-burlywood{color:#fff;background-color:#deb887}
+.ndropdown:hover .active-tan{color:#fff;background-color:#d2b48c}
+.ndropdown:hover .active-rosybrown{color:#fff;background-color:#bc8f8f}
+.ndropdown:hover .active-sandybrown{color:#fff;background-color:#f4a460}
+.ndropdown:hover .active-goldenrod{color:#fff;background-color:#daa520}
+.ndropdown:hover .active-darkgoldenrod{color:#fff;background-color:#b8860b}
+.ndropdown:hover .active-peru{color:#fff;background-color:#cd853f}
+.ndropdown:hover .active-chocolate{color:#fff;background-color:#d2691e}
+.ndropdown:hover .active-olive{color:#fff;background-color:#808000}
+.ndropdown:hover .active-saddlebrown{color:#fff;background-color:#8b4513}
+.ndropdown:hover .active-sienna{color:#fff;background-color:#a0522d}
+.ndropdown:hover .active-brown{color:#fff;background-color:#a52a2a}
+.ndropdown:hover .active-maroon{color:#fff;background-color:#800000}
+
+/* White */
+.ndropdown:hover .active-white{color:#000;background-color:#ffffff}
+.ndropdown:hover .active-snow{color:#000;background-color:#fffafa}
+.ndropdown:hover .active-honeydew{color:#000;background-color:#f0fff0}
+.ndropdown:hover .active-mintcream{color:#000;background-color:#f5fffa}
+.ndropdown:hover .active-azure{color:#000;background-color:#f0ffff}
+.ndropdown:hover .active-aliceblue{color:#000;background-color:#f0f8ff}
+.ndropdown:hover .active-ghostwhite{color:#000;background-color:#f8f8ff}
+.ndropdown:hover .active-whitesmoke{color:#000;background-color:#f5f5f5}
+.ndropdown:hover .active-seashell{color:#000;background-color:#fff5ee}
+.ndropdown:hover .active-beige{color:#000;background-color:#f5f5dc}
+.ndropdown:hover .active-oldlace{color:#000;background-color:#fdf5e6}
+.ndropdown:hover .active-floralwhite{color:#000;background-color:#fffaf0}
+.ndropdown:hover .active-ivory{color:#000;background-color:#fffff0}
+.ndropdown:hover .active-antiquewhite{color:#000;background-color:#faebd7}
+.ndropdown:hover .active-linen{color:#000;background-color:#faf0e6}
+.ndropdown:hover .active-lavenderblush{color:#000;background-color:#fff0f5}
+.ndropdown:hover .active-mistyrose{color:#000;background-color:#ffe4e1}
+
+/* Black */
+.ndropdown:hover .active-gainsboro{color:#fff;background-color:#dcdcdc}
+.ndropdown:hover .active-lightgray{color:#fff;background-color:#d3d3d3}
+.ndropdown:hover .active-silver{color:#fff;background-color:#c0c0c0}
+.ndropdown:hover .active-darkgray{color:#fff;background-color:#a9a9a9}
+.ndropdown:hover .active-dimgray{color:#fff;background-color:#696969}
+.ndropdown:hover .active-gray{color:#fff;background-color:#808080}
+.ndropdown:hover .active-lightslategray{color:#fff;background-color:#778899}
+.ndropdown:hover .active-slategray{color:#fff;background-color:#708090}
+.ndropdown:hover .active-darkslategray{color:#fff;background-color:#2f4f4f}
+.ndropdown:hover .active-black{color:#fff;background-color:#000000}
+
+/* Navbar-smoott */
+.navbar-smooth a{
+	-webkit-transition: all ease 0.9s;
+	-moz-transition: all ease 0.9s;
+	-o-transition: all ease 0.9s;
+	-ms-transition: all ease 0.9s;
+	transition: all ease 0.9s;
+}
+.navbar-smooth a:focus{
+	outline:0;
+}
+.navbar-smooth{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	z-index:7!important;
+	display:flex;
+    display:-moz-flex;
+    display:-o-flex;
+    display:-webkit-flex;
+	display:-ms-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	border:1px solid #ddd;
+	background-color:#e8e8e8;
+}
+.navbar-smooth a{
+	color:#555;
+}
+.navbar-smooth li{
+	margin: 8px 0;
+}
+.navbar-smooth li a{
+	padding:8px 16px;
+	display:block;
+	text-decoration:none
+}
+.navbar-smooth li a:hover{
+	background-color:#e1e1e1;
+	border-radius:4px;
+}
+.dropsmooth {
+	position: relative;
+	display: inline-block;
+	text-align: left;
+	width: 132px;
+}
+.dropsmooth-text {
+	cursor: pointer;
+	position: absolute;
+	padding-left:16px;
+	line-height: 32px;
+	background-color: #eee;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-shadow: 0 1px 0 rgba(255,255,255, .9) inset, 0 1px 3px rgba(0,0,0, .1);
+	width: 100%;
+	top:-15.5px;
+}
+.dropsmooth-text:after {
+	position: absolute;
+	right: 6px;
+	top: 15px;
+	content: '';
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 5px 4px 0 4px;
+	border-color: #555 transparent transparent transparent;
+}
+
+.dropsmooth-text,
+.dropsmooth-content a {
+	color: #333;
+	text-shadow: 0 1px #fff;
+}
+.dropsmooth-content li{
+	margin:0!important;
+}
+.dropsmooth-toggle {
+	font-size: 0;
+	z-index: 1;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	border: none;
+	padding: 0;
+	margin: 0 0 0 1px;
+	background: transparent;
+	text-indent: -10px;
+	height: 34px;
+	width: 100%;
+}
+.dropsmooth-toggle:focus {
+	outline: 0;
+}
+.dropsmooth-content {
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+	list-style-type: none;
+	position: absolute;
+	top: 32px;
+	padding: 0;
+	margin: 0;
+	opacity: 0;
+	visibility:hidden;
+	border-radius: 3px;
+	background-color: #eee;
+	border: 1px solid #ccc;
+	width: 140px;
+}
+.dropsmooth-content a {
+	display: block;
+}
+.dropsmooth-content a:hover {
+	background: #e8e8e8;
+}
+.dropsmooth-toggle:hover ~ .dropsmooth-text,
+.dropsmooth-toggle:focus ~ .dropsmooth-text {
+	background-color: #e8e8e8;
+}
+
+.dropsmooth-toggle:focus ~ .dropsmooth-text {
+	box-shadow: 0 1px 3px rgba(0,0,0, .2) inset, 0 1px 0 rgba(255,255,255, 0.8);
+	z-index: 2;
+}
+
+.dropsmooth-toggle:focus ~ .dropsmooth-text:after {
+	border-width: 0 4px 5px 4px;
+	border-color: transparent transparent #555 transparent;
+}
+
+.dropsmooth-content:hover,
+.dropsmooth-toggle:focus ~ .dropsmooth-content {
+	opacity: 1;
+	visibility:visible;
+	top: 29px;
+}
+/* End navbar smooth */
+
+/* Navbar Alfa & Delta */
+.navbar-alfa:before,
+.navbar-alfa:after{
+	display: table;
+	content: " ";
+}
+.navbar-alfa:after{
+	clear:both;
+}
+.navbar-alfa{
+	background-color: #e8e8e8;
+	border:1px solid #ddd;
+}
+.navbar-alfa ul{
+	margin: 0;
+	padding: 0;
+}
+.navbar-alfa li {
+	float: left;
+	list-style: none;
+	position: relative;
+}
+.navbar-alfa li a {
+	text-decoration: none;
+	color:#555;
+	display: block;
+	padding: 15px 16px;
+}
+.navbar-alfa li ul {
+	display: none;
+	position: absolute;
+	left: 0; top: 100%;
+	width: 10em;
+	border:1px solid #ddd;
+	z-index: 8!important;
+	background-color: #e8e8e8;
+}
+.navbar-alfa li ul li {
+	float: none;
+}
+.navbar-alfa li ul li ul {
+	left: 100%; top: 0;
+}
+.navbar-alfa li:hover {
+	background: #ddd;
+}
+.navbar-alfa li:hover > ul {
+	display: block;
+}
+.input-alfa{
+	margin:8px 16px 0 16px;
+}
+.input-alfa:hover{
+	box-shadow:none!important;background-color:transparent!important;;
+}
+.input-alfa input{
+	padding:6px 16px;
+	border:1px solid #ddd;
+	width:300px;
+	border-radius:4px 0px 0px 4px;
+}
+.input-alfa input:focus{
+	outline:0;
+}
+.input-alfa button{
+	margin-left:-6px;
+	padding:6px 12px;
+	border:1px solid #ddd;
+	cursor:pointer;
+	background-color:#595959;
+	color:#fff;
+	border-radius:0px 4px 4px 0px;
+}
+
+.navbar-delta:before,
+.navbar-delta:after{
+	display: table;
+	content: " ";
+}
+.navbar-delta:after{
+	clear:both;
+}
+.navbar-delta{
+	background-color: #090909;
+}
+.navbar-delta ul{
+	margin: 0;
+	padding: 0;
+}
+.navbar-delta li {
+	float: left;
+	list-style: none;
+	position: relative;
+}
+.navbar-delta li a {
+	text-decoration: none;
+	color:#b5b5b5;
+	font-weight:300;
+	display: block;
+	padding: 18px 16px;
+}
+.navbar-delta li ul {
+	display: none;
+	position: absolute;
+	left: 0; top: 100%;
+	width: 10em;
+	border:1px solid transparent;
+	z-index: 8!important;
+	background-color: #090909;
+}
+
+.navbar-delta li ul li {
+	float: none;
+}
+
+.navbar-delta li ul li ul {
+	left: 100%; top: 0;
+}
+
+.navbar-delta li:hover {
+	background: #222;
+}
+
+.navbar-delta li:hover > ul {
+	display: block;
+}
+.input-delta{
+	margin:11px 16px 0 16px;
+}
+.input-delta:hover{
+	box-shadow:none!important;background-color:transparent!important;;
+}
+.input-delta input{
+	padding:6px 16px;
+	border:1px solid transparent;
+	width:300px;
+	border-radius:4px 0px 0px 4px;
+	background-color:#444;
+}
+.input-delta input:focus{
+	outline:0;
+	color:#c2c2c2;
+}
+.input-delta button{
+	margin-left:-6px;
+	padding:6px 12px;
+	border:1px solid transparent;
+	cursor:pointer;
+	background-color:#595959;
+	color:#fff;
+	border-radius:0px 4px 4px 0px;
+}
+/* End Navbar Alfa & Delta */
+
+/* Navbar Dropdown */
+
 /*============================================== End Navbar =====================================================*/
 
 /*=============================================== Sidebar =======================================================*/
@@ -2464,7 +3377,6 @@ template {
 	margin:0;
 	padding:0;
 	z-index:5!important;
-	position:relative;
 }
 .sidebar{
 	height:100%;
@@ -2480,7 +3392,7 @@ template {
 	transition: all ease 0.9s;
 }
 .sidebar li a{
-	padding:8px 16px;
+	padding:5px 16px;
 	text-decoration:none;
 	display:block;
 }
@@ -2717,6 +3629,9 @@ template {
 .nowrap {
 	white-space: nowrap;
 }
+.word-wrap{
+	word-wrap: break-word!important;
+}
 .lowercase {
 	text-transform: lowercase;
 }
@@ -2729,15 +3644,117 @@ template {
 .paragraf{
 	text-indent:2em;
 }
+.subheader{
+	font-size:18px;
+	font-weight:500;
+}
+.blockquote-right {
+  padding: 10px 16px;
+  margin: 0 0 20px;
+  text-align:right;
+  border-left:none;
+  border-right: 6px solid #ccc;
+}
+.dl-horizontal:before,
+.dl-horizontal:after{
+	display: table;
+	content: " ";
+}
+.dl-horizontal:after{
+  clear: both;
+}
+.dl-horizontal dt {
+    float: left;
+    width: 150px;
+    overflow: hidden;
+    clear: left;
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+	font-weight:500;
+	padding:1px 0;
+}
+.dl-horizontal dd {
+    margin-left: 166px;
+}
+@media (max-width:600px){
+	.dl-horizontal dt{
+		text-align:left;
+		display:block;
+		float:none;
+	}
+	.dl-horizontal dd{
+		margin:0;
+	}
+}
+.list{
+	padding:0;
+	list-style-type:none;
+}
+.list li{
+	padding:3px 0;
+}
+.sublist{
+	list-style-type:none;
+	padding-left:20px;
+}
+.subnum{
+	padding-left:35px;
+}
+.list-inline {
+	padding-left: 0;
+	margin-left: -5px;
+	list-style: none;
+}
+.list-inline li {
+	display: inline-block;
+	padding:3px 4px;
+}
+.list-none {
+	padding-left: 0;
+	list-style-type: none;
+}
+/*============================================== End Font =======================================================*/
+
 /*=============================================== Scroll ========================================================*/
 .scroll{
 	width:100%;
 	max-height:100px;
 	overflow:auto;
 }
+.scroll-s{
+	width:100%;
+	max-height:70px;
+	overflow:auto;
+}
+.scroll-m{
+	width:100%;
+	max-height:200px;
+	overflow:auto;
+}
+.scroll-l{
+	width:100%;
+	max-height:400px;
+	overflow:auto;
+}
+.scroll-g{
+	width:100%;
+	max-height:600px;
+	overflow:auto;
+}
 /*============================================= End Scroll ======================================================*/
 
+/*=============================================== Link ==========================================================*/
+.hlink-underline:hover{
+	text-decoration:underline;
+}
+/*=============================================== End Link ======================================================*/
+
 /*================================================ Table ========================================================*/
+.scroll-table{
+	width:100%;
+	overflow-x:auto;
+}
 .table{
 	border-collapse:collapse;
 	border-spacing:0;
@@ -2750,27 +3767,216 @@ template {
 	text-align:left;
 	vertical-align:top;
 }
+.table-border{
+	border-collapse:collapse;
+	border-spacing:0;
+	display:table;
+	width:100%
+}
+.table-border td,.table-border th{
+	padding:12px;
+	display:table-cell;
+	text-align:left;
+	vertical-align:top;
+	border:1px solid #ccc;
+}
+.table-uborder{
+	border-collapse:collapse;
+	border-spacing:0;
+	display:table;
+	width:100%
+}
+.table-uborder td,.table-uborder th{
+	padding:12px;
+	display:table-cell;
+	text-align:left;
+	vertical-align:top;
+	border-bottom:1px solid #ccc;
+}
+.table-uborder{
+	border-collapse:collapse;
+	border-spacing:0;
+	display:table;
+	width:100%
+}
+.table-uborder td,.table-uborder th{
+	padding:12px;
+	display:table-cell;
+	text-align:left;
+	vertical-align:top;
+	border-bottom:1px solid #ccc;
+}
+.table-hover tbody  tr:hover {
+	background-color: #f5f5f5;
+	transition: all ease 1s;
+}
+.table-hover tbody tr{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#008080}
+.striped tbody tr:nth-child(even){background-color:#f5f5f5}
+
+/*============================================== End Table ======================================================*/
+
+/*================================================= Alert =======================================================*/
+.alert{
+	padding: 16px;
+	border: 1px solid transparent;
+}
+.alert-opacity{
+	padding: 16px;
+	opacity:0.75;
+	filter:alpha(opacity=75);
+	-webkit-backface-visibility:hidden;
+}
+.default{
+	background-color:#fff;
+	color:#000;
+	border:1px solid #ccc!important;
+}
+.danger{
+	background-color:#dc143c;
+	color:#fff;
+}
+.warning{
+	background-color:#ffd700;
+	color:#000;
+}
+.success{
+	background-color:#32cd32;
+	color:#fff;
+}
+.info{
+	background-color:#00bfff;
+	color:#fff;
+}
+.link{
+	background-color:#fff;
+	color:#00bfff;
+}
+/*================================================ End Alert ====================================================*/
+
+/*================================================ End Alert ====================================================*/
+.radio,
+.checkbox {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.form-container {
+	margin-bottom: 16px;
+}
+@media (min-width: 992px) {
+	label{
+		display:inline;
+	}
+  .form-inline .form-container{
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .form-inline .input {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+	margin-top:0px;
+  }
+  .form-inline .radio,
+  .form-inline .checkbox {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+}
+.form-horizontal:before,
+.form-horizontal:after{
+	display: table;
+	content: " ";
+}
+.form-horizontal:after{
+	clear: both;
+}
+@media (min-width: 600px) {
+	.form-horizontal .label {
+	padding:17px 16px 0 0;
+    margin-bottom: 0;
+    text-align: right;
+  }
+}
+@media (max-width: 600px) {
+	.form-horizontal .label{
+		margin-top:8px;
+	}
+}
+.input{
+	margin-top:8px;
+	display: block;
+	width: 100%;
+	padding: 10px 16px;
+	border: 1px solid #ccc;
+}
+.input-static{
+	padding-bottom: 8px;
+}
+.input-search:before,
+.input-search:after,
+.input-button:before,
+.input-button:after{
+	display: table;
+	content: " ";
+}
+.input-search:after,
+.input-button:after{
+	clear: both;
+}
+.input-search{
+	margin:12px 10px 0 10px;
+	display: block;
+	width: 100%;
+	padding: 5px 16px;
+	border: 1px solid transparent;
+	border-radius:6px;
+	width:200px;
+}
+.input-button{
+	margin:12px 10px 0 0;
+	display: block;
+	width: 100%;
+	padding: 5px 16px;
+	border: 1px solid transparent;
+	border-radius:6px;
+	width:50px;
+	cursor:pointer;
+}
+.input-search:focus{
+	outline:0;
+}
+/*================================================ End Alert ====================================================*/
+
+/*================================================ Display ======================================================*/
+.inline{
+	display:inline!important;
+}
+.block{
+	display:block!important;
+}
+.inline-block{
+	display:inline-block!important:
+}
+/*================================================ End Display ==================================================*/
+
 /*================================================ Section ======================================================*/
 .section{margin:24px 0px}
 .section-s{margin:8px 0px}
 .section-m{margin:16px 0px}
 .section-l{margin:32px 0px}
+.section-g{margin:64px 0px}
 
 .secpad{padding:24px 0px}
 .secpad-s{padding:8px 0px}
 .secpad-m{padding:16px 0px}
 .secpad-l{padding:32px 0px}
+.secpad-g{padding:64px 0px}
 /*============================================== End Section ====================================================*/
-
-/*================================================= List ========================================================*/
-.list{
-	padding:0;
-	list-style-type:none;
-}
-.list li{
-	padding:3px 0px;
-}
-/*=============================================== End List ======================================================*/
 
 /*================================================= Tag =========================================================*/
 .tag{
@@ -2806,27 +4012,6 @@ template {
 }
 /*============================================= End Progress ====================================================*/
 
-/*============================================== Description ====================================================*/
-.dl-horizontal:before,
-.dl-horizontal:after{
-	display: table;
-	content: " ";
-}
-.dl-horizontal:after{
-  clear: both;
-}
-.dl-horizontal dt {
-    float: left;
-    width: 100px;
-    overflow: hidden;
-    clear: left;
-    text-align: right;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-.dl-horizontal dd {
-    margin-left: 115px;
-}
 /*============================================= Accordion =======================================================*/
 .accordion {
     background-color: #eee;
@@ -2871,17 +4056,66 @@ template {
 	text-align: center;
 	white-space: nowrap;
 	vertical-align: middle;
+	word-wrap: break-word;
 	border: none;
 	font-family:inherit;
 	cursor:pointer;
 }
-.button:focus{
-	outline:0;
+.button-block{
+	display:block;
+	font-size:16px;
+	padding: 10px 16px;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	word-wrap: break-word;
+	border: none;
+	font-family:inherit;
+	cursor:pointer;
+	margin-bottom:10px;
 }
+.button-default{
+	display: inline-block;
+	font-size:16px;
+	padding: 10px 16px;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	word-wrap: break-word;
+	border: none;
+	font-family:inherit;
+	cursor:pointer;
+	border:1px solid #ccc;
+	background-color:#fff;
+}
+.button-disabled{
+	display: inline-block;
+	font-size:16px;
+	padding: 10px 16px;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	word-wrap: break-word;
+	border: none;
+	font-family:inherit;
+	cursor:normal;
+	opacity:0.65;
+	filter:alpha(opacity=65);
+	-webkit-backface-visibility:hidden;
+}
+.button.active:focus{
+	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .7) 0%, rgba(0, 0, 0, .0001) 100%);
+	background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .7) 0%, rgba(0, 0, 0, .0001) 100%);
+	background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .7)), to(rgba(0, 0, 0, .0001)));
+	background-image:         linear-gradient(to right, rgba(0, 0, 0, .10) 0%, rgba(0, 0, 0, .0001) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+	background-repeat: repeat-x;
+}
+
 /*=========================================== End Button ========================================================*/
 
 /*============================================ Dropdown =========================================================*/
-.dropdown-button {
+.dropdown-button{
     font-size: 16px;
     cursor: pointer;
 }
@@ -2889,14 +4123,12 @@ template {
     position: relative;
     display: inline-block;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
     min-width: 160px;
     z-index: 8!important;
 }
-
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -2910,6 +4142,43 @@ template {
     z-index: 8!important;
 }
 /*=========================================== End Dropdown ======================================================*/
+
+/*============================================= Opacity =========================================================*/
+
+.opacity{
+	opacity:0.60;
+	filter:alpha(opacity=60);
+	-webkit-backface-visibility:hidden;
+}
+.opacity-off{
+	opacity:1;filter:
+	alpha(opacity=100);
+	-webkit-backface-visibility:hidden;
+}
+.opacity-max{
+	opacity:0.25;
+	filter:alpha(opacity=25);
+	-webkit-backface-visibility:hidden;
+}
+.opacity-min{
+	opacity:0.75;
+	filter:alpha(opacity=75);
+	-webkit-backface-visibility:hidden;
+}
+.hover-opacity-off:hover{
+	opacity:1;filter:alpha(opacity=100);
+	-webkit-backface-visibility:hidden;
+}
+.hover-opacity:hover{
+	opacity:0.60;filter:alpha(opacity=60);
+	-webkit-backface-visibility:hidden;
+}
+.hover-opacity{
+	-webkit-transition:background-color .9s,color .15s,box-shadow .9s,opacity 0.9s,filter 0.9s;
+	transition:background-color .9s,color .15s,box-shadow .9s,opacity 0.9s,filter 0.9s;
+}
+
+/*=========================================== Opacity ===========================================================*/
 
 /*=========================================== Box Shadow ========================================================*/
 
