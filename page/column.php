@@ -1,0 +1,108 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Comming Soon</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Flamecore, Framework Core, Core CSS, Templates with Core, Framework CSS Indonesia,
+Framework Indonesia, Core, Core Column, Core Color">
+<meta name="description" content="Framework CSS with Library Colors Indonesia">
+<meta name="author" content="Andika Chamberlin">
+<link rel="icon" href="getcore.github.io/icore.png" type="image/x-icon">
+<link rel="stylesheet" href="getcore.github.io/core.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Finger+Paint" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre" rel="stylesheet">
+<style>
+.font{font-family: 'Finger Paint', cursive;}
+body{font-family: 'Averia Sans Libre', cursive;}
+
+.core-animation-circle{
+	border: 5px solid skyblue;
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 50%;
+	-webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+	opacity: .1;
+}
+.core-animation-circle:nth-child(1) {
+  width: 0px;
+  height: 0px;
+  border-color: #fff;
+  -webkit-animation: 2s 0s rotater infinite alternate;
+          animation: 2s 0s rotater infinite alternate;
+}
+.core-animation-circle:nth-child(2) {
+  width: 40px;
+  height: 40px;
+  border-color: #fff;
+  -webkit-animation: 2s 0.1s rotater infinite alternate;
+          animation: 2s 0.1s rotater infinite alternate;
+}
+.core-animation-circle:nth-child(3) {
+  width: 80px;
+  height: 80px;
+  border-color: #fff;
+  -webkit-animation: 2s 0.2s rotater infinite alternate;
+          animation: 2s 0.2s rotater infinite alternate;
+}
+
+.core-animation-circle:nth-child(4) {
+  width: 120px;
+  height: 120px;
+  border-color: #fff;
+  -webkit-animation: 2s 0.3s rotater infinite alternate;
+          animation: 2s 0.3s rotater infinite alternate;
+}
+
+.core-animation-circle:nth-child(5) {
+  width: 160px;
+  height: 160px;
+  border-color: #fff;
+  -webkit-animation: 2s 0.4s rotater infinite alternate;
+          animation: 2s 0.4s rotater infinite alternate;
+}
+@-webkit-keyframes rotater {
+  to {
+    -webkit-transform: translate(-50%, -50%) scale(2.3);
+            transform: translate(-50%, -50%) scale(2.3);
+    opacity: 1;
+  }
+}
+
+@keyframes rotater {
+  to {
+    -webkit-transform: translate(-50%, -50%) scale(2.3);
+            transform: translate(-50%, -50%) scale(2.3);
+    opacity: 1;
+  }
+}
+</style>
+</head>
+<body class="bg-crimson" style="height:100%">
+		
+	<div class="position-topleft">
+		<div class="core-animation-circle border-color:#fff"></div>
+		<div class="core-animation-circle border-color:#fff"></div>
+		<div class="core-animation-circle border-color:#fff"></div>
+		<div class="core-animation-circle border-color:#fff"></div>
+		<div class="core-animation-circle border-color:#fff"></div>
+	</div>
+	
+	<div class="position-middle center-align" style="padding:16px">
+		<h1 class="font animation-top">COMMING SOON</h1>
+	</div>
+		
+	<div class="position-bottomleft" style="padding:16px">
+		Powered by <a href="http://getcore.github.io" class="white">getcore.github.io</a>
+	</div>
+
+</body>
+<script>
+</script>
+</html>
