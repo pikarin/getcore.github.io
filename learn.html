@@ -1,8 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Comming Soon</title>
+<title>Framework Core Indonesia</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,98 +9,2774 @@
 Framework Indonesia, Core, Core Column, Core Color">
 <meta name="description" content="Framework CSS with Library Colors Indonesia">
 <meta name="author" content="Andika Chamberlin">
-<link rel="icon" href="getcore.github.io/images/icore.png" type="image/x-icon">
-<link rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css">
+<link rel="icon" href="getcore.github.io/icore.png" type="image/x-icon">
+<link rel="stylesheet" href="getcore.github.io/core.css" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Finger+Paint" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <style>
 .font{font-family: 'Finger Paint', cursive;}
-body{font-family: 'Averia Sans Libre', cursive;}
-
-.core-animation-circle{
-	border: 5px solid skyblue;
-	margin: 0 auto;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	border-radius: 50%;
-	-webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-	opacity: .1;
-}
-.core-animation-circle:nth-child(1) {
-  width: 0px;
-  height: 0px;
-  border-color: #fff;
-  -webkit-animation: 2s 0s rotater infinite alternate;
-          animation: 2s 0s rotater infinite alternate;
-}
-.core-animation-circle:nth-child(2) {
-  width: 40px;
-  height: 40px;
-  border-color: #fff;
-  -webkit-animation: 2s 0.1s rotater infinite alternate;
-          animation: 2s 0.1s rotater infinite alternate;
-}
-.core-animation-circle:nth-child(3) {
-  width: 80px;
-  height: 80px;
-  border-color: #fff;
-  -webkit-animation: 2s 0.2s rotater infinite alternate;
-          animation: 2s 0.2s rotater infinite alternate;
-}
-
-.core-animation-circle:nth-child(4) {
-  width: 120px;
-  height: 120px;
-  border-color: #fff;
-  -webkit-animation: 2s 0.3s rotater infinite alternate;
-          animation: 2s 0.3s rotater infinite alternate;
-}
-
-.core-animation-circle:nth-child(5) {
-  width: 160px;
-  height: 160px;
-  border-color: #fff;
-  -webkit-animation: 2s 0.4s rotater infinite alternate;
-          animation: 2s 0.4s rotater infinite alternate;
-}
-@-webkit-keyframes rotater {
-  to {
-    -webkit-transform: translate(-50%, -50%) scale(2.3);
-            transform: translate(-50%, -50%) scale(2.3);
-    opacity: 1;
-  }
-}
-
-@keyframes rotater {
-  to {
-    -webkit-transform: translate(-50%, -50%) scale(2.3);
-            transform: translate(-50%, -50%) scale(2.3);
-    opacity: 1;
-  }
-}
+.font2{font-family: 'Averia Sans Libre', cursive;}
+.navbar a{color:#fff}
+.sidebar a{color:#fff}
+.list a{color:#000}
+.list a:hover{text-decoration:underline}
 </style>
 </head>
-<body class="bg-crimson" style="height:100%">
+<body>
+	<div class="container-full">
+		<div class="row">
+			<div class="column eq12">
+				<ul class="navbar navbar-crimson bg-darkslategray box-shadow animation-top fixed-top">
+					<li class="hm hl">
+						<div class="click-dropdown">
+							<a onclick="dropdown()"><i class="fa fa-bars dropdown-button"></i></a>
+							<div id="dropdownMenu" class="dropnav-content bg-darkslategray box-shadow">
+								<a href="index.html">Core</a>
+								<a href="learn.html">Learn</a>
+								<a href="column.html">Column</a>
+								<a href="color.html">Color</a>
+								<a href="js.html">JS</a>
+								<a href="templates.html">Templates</a>
+								<a href="author.html">Author</a>
+							</div>
+						</div>
+					</li>
+					<li class="hs"><a href="index.html">Core</a></li>
+					<li class="bg-crimson hs"><a href="learn.html">Learn</a></li>
+					<li class="hs"><a href="column.html">Column</a></li>
+					<li class="hs"><a href="color.html">Color</a></li>
+					<li class="hs"><a href="js.html">JS</a></li>
+					<li class="hs"><a href="templates.html">Templates</a></li>
+					<li class="right hs">
+						<a href="author.html" target="_blank">
+							Author
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- Sidebar -->
+		<div id="sidebar" class="box-shadow">
+			<ul class="sidebar bg-darkslategray sidebar-crimson animation-left" style="width:200px">
+				<div style="margin-bottom:80px"></div>
+				<li class="section-s" style="margin-left:16px"><h4>Learn Core</h4></li>
+				<li><a href="#beginning">Beginning</a></li>
+				<li><a href="#container">Container</a></li>
+				<li><a href="#grid">Sistem Grid</a></li>
+				<li><a href="#tipografi">Tipografi</a></li>
+				<li><a href="#code">Code</a></li>
+				<li><a href="#table">Table</a></li>
+				<li><a href="#alert">Alert</a></li>
+				<li><a href="#formulir">Formulir</a></li>
+				<li><a href="#button">Button</a></li>
+				<li><a href="#images">Images</a></li>
+				<li><a href="#section">Section</a></li>
+				<li><a href="#pagination">Pagination</a></li>
+				<li><a href="#ribbon">Ribbon</a></li>
+				<li><a href="#progressbar">Progress Bar</a></li>
+				<li><a href="#sidebarlist">Sidebar List</a></li>
+				<li><a href="#video">Video</a></li>
+				<li><a href="page/sidebar.html">Sidebar</a></li>
+				<li><a href="#opacity">Opacity</a></li>
+				<li><a href="#shadow">Shadow</a></li>
+				<li><a href="#hide">Hide</a></li>
+				<li><a href="#animation">Animation</a></li>
+				<li><a href="#position">Position</a></li>
+			</ul>
+		</div>
+		<!-- End Sidebar -->
 		
-	<div class="position-topleft">
-		<div class="core-animation-circle border-color:#fff"></div>
-		<div class="core-animation-circle border-color:#fff"></div>
-		<div class="core-animation-circle border-color:#fff"></div>
-		<div class="core-animation-circle border-color:#fff"></div>
-		<div class="core-animation-circle border-color:#fff"></div>
-	</div>
-	
-	<div class="position-middle center-align" style="padding:16px">
-		<h1 class="font animation-top">COMMING SOON</h1>
-	</div>
-		
-	<div class="position-bottomleft" style="padding:16px">
-		Powered by <a href="http://getcore.github.io" class="white">getcore.github.io</a>
-	</div>
+		<!-- Main -->
+		<div class="main animation-right" style="margin-left:200px">
+			<div class="interior bg-crimson box-shadow">
+				<header class="white" style="padding:200px 0px">
+					<center>
+						<h1 class="font" style="font-size:80px;padding-bottom:30px">Learn Core</h1>
+					</center>
+				</header>
+			</div>
+			
+			<!-- Beginning -->
+			<div class="section">
+				<div class="interior">
+					<!-- Intro -->
+					<h4>Intro</h4>
+					<p class="paragraf">Core adalah karya anak negeri bernama <a href="http://twitter.com/andikamingo" 
+					class="hlink-underline">Andika Chamberlin</a>. Untuk itu gunakanlah. Berarti kita
+					bangga dengan karya indonesia. Seharusnya kita juga sadar, dimana kita berasal
+					dan akan mendukung setiap karya yang baik untuk indonesia. Merdeka!!!
+					</p>
+					<p class="subheader">Sejarah</p>
+					<p class="paragraf">
+						Alangkah baiknya, sebelum belajar core, kita harus tahu kenapa framework core bisa di 
+						ciptakan oleh orang aneh bernama andika chamberlin.
+						Alasan Pertama : Dika nama panggilannya, adalah seorang yang sangat individual,
+						kebiasannya itu adalah suka berhayal tentang mimpi mimpi, dan salah satunya yang sudah
+						terwujud adalah framework core. Sejujurnya ia ingin membuat framework php, framework javascript
+						framework SQL dan yang paling dia inginkan menciptakan exstensi program baru, yang ada di benaknya
+						saat ini adalah extensi file (.impact) yaitu bahasa pemograman khusus buat orang indonesia :), agar
+						kita tidak susah susah mengerti syntax bahasa inggris :). Klimaksnya
+						ia ingin membuat Operating system yang akan membawa indonesia lebih di segani oleh negara lain
+						mungkin dengan menciptakan OS baru yang terkenal di indonesia khususnya, kita sebagai warga
+						indonesia tidak dipandang lemah dalam segi teknologi. Saat ini nama OS yang ada di impiannya adalah
+						Magnum atau Diamon.
+					</p>
+					<p class="paragraf">
+						Alasan kedua: si Dika ini orangnya sangat tidak suka menggunakan barang yang hanya tinggal pakai,
+						di pikirannya adalah, ("percuma memakai tapi tidak tahu apa apa"), dari situ ia belajar mati matian
+						hingga jatuh sakit <del>(yang sering sakit hati)</del> untuk terus belajar bahasa CSS lalu Sass SCSS dan lain lain.
+						Sekarang, ia telah faham dengan CSS, dan dia telah membuat Core unggul pada sistem grid, yaitu sistem grid
+						menggunakan float, table cell, flexbox dalam kondisi grid yang berbeda beda : 2, 4, 8, 12, 16, 24.
+					</p>
+					<p class="paragraf">
+						Alasan ketiga: Dika ingin sekali bermanfaat bagi orang lain, dika ingin membantu orang lain,
+						dan dika ingin mempunyai banyak teman baik. Doakan dika masuk surga. Amiin.
+						Semoga framework core bermanfaat buat orang banyak amiin. 
+					</p>
+					<h4 class="center-align section-l">Saatnya Belajar GO!</h4>
+					<!-- Intro -->
+					
+					<!-- Beginning -->
+					<div class="section">
+						<div class="secpad-s" id="beginning" style="margin-top:50px">
+							<h4>Beginning</h4>
+							<div class="bottombar-crimson box-shadow section-m"></div>
+							<p class="subheader">Memulai</p>
+							<p>
+								Memulai core secara online
+							</p>
+<pre>
+<code>
+&ltDOCTYPE html&gt
+&lthtml lang="en"&gt
+ &lthead&gt
+  &ltlink rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css"&gt
+ &lt/head&gt
+&lt/html&gt
+</code>
+</pre>
+							<p>
+								Memulai core secara offline | <a class="hlink-underline" href="getcore.github.io/core/core.css" download">Download</a>
+							</p>
+							<p>
+								Untuk mendownload semuanya dari Core lihat di | <a class="hlink-underline" href="github.com/getcore/core">Project Files</a>
+							</p>
+<pre>
+<code>
+&ltDOCTYPE html&gt
+&lthtml lang="en"&gt
+ &lthead&gt
+  &ltlink rel="stylesheet" href=".../core.css" type="text/css"&gt
+ &lt/head&gt
+&lt/html&gt
+</code>
+</pre>
+							<p class="subheader">HTML5</p>
+							<p>
+								Core sangat menganjurkan untuk memasukan elemen DOCTYPE html. Karena sebagian besar core menggunakan HTML 5.
+							</p>
+<pre>
+<code>
+&ltDOCTYPE html&gt
+&lthtml lang="en"&gt
+......
+&lt/html&gt
+</code>
+</pre>
+							<p class="subheader">Responsive</p>
+							<p>
+								Core adalah framework yang dibuat khusus untuk membuat website
+								responsive. Maka diwajibkan memasukan element ini pada document html.
+							</p>
+<pre>
+<code>
+&ltDOCTYPE html&gt
+&lthtml lang="en"&gt
+ &lthead&gt
+  &ltmeta name= "viewport" content= "width=device-width, initial-scale=1"&gt
+ &lt/head&gt
+......
+&lt/html&gt
+</code>		
+</pre>			
+							<p class="subheader">Normalize</p>
+							<p>
+								Untuk meningkatkan render lintas browser, Core menggunakan Normalize.css , proyek dari Nicolas Gallagher dan Jonathan Neal.
+							</p>		
+						</div>
+					</div>
+					<!-- End Beginning -->
+					
+					<!-- Container -->
+					<div id="container">
+						<h4>Container</h4>
+						<div class="bottombar-crimson box-shadow section-m"></div>
+						<p class="subheader">Container</p>
+						<p>
+							Digunakan untuk membuat container dengan margin kanan kiri 24px.
+						</p>
+<pre>
+<code>
+&ltDOCTYPE html&gt
+&lthtml lang="en"&gt
+ &lthead&gt
+  &lttitle&gtContainer&lt/title&gt
+  &ltmeta name= "viewport" content= "width=device-width, initial-scale=1"&gt
+  &ltlink rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css"&gt
+ &lt/head&gt
+ &ltbody&gt
+  &ltdiv class="container"&gt
+   .................
+  &lt/div&gt
+ &lt/body&gt
+&lt/html&gt
+</code>		
+</pre>		
+					</div>
+					
+					<p class="subheader">Container Equal</p>
+					<p>
+						Digunakan untuk membuat container dengan margin sama sebesar 24px.
+					</p>
+<pre>
+<code>
+&ltDOCTYPE html&gt
+&lthtml lang="en"&gt
+ &lthead&gt
+  &lttitle&gtContainer Equal&lt/title&gt
+  &ltmeta name= "viewport" content= "width=device-width, initial-scale=1"&gt
+  &ltlink rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css"&gt
+ &lt/head&gt
+ &ltbody&gt
+  &ltdiv class="container-equal"&gt
+   .................
+  &lt/div&gt
+ &lt/body&gt
+&lt/html&gt
+</code>		
+</pre>					
 
+					<p class="subheader">Container Full</p>
+					<p>
+						Digunakan untuk membuat container full yaitu margin 0 pada setiap sisi.
+					</p>
+<pre>
+<code>
+&ltDOCTYPE html&gt
+&lthtml lang="en"&gt
+ &lthead&gt
+  &lttitle&gtContainer Full&lt/title&gt
+  &ltmeta name= "viewport" content= "width=device-width, initial-scale=1"&gt
+  &ltlink rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css"&gt
+ &lt/head&gt
+ &ltbody&gt
+  &ltdiv class="container-full"&gt
+  .................
+  &lt/div&gt
+ &lt/body&gt
+&lt/html&gt
+</code>		
+</pre>				
+
+					<p class="subheader">Inside</p>
+					<p>
+						Digunakan untuk membuat margin kanan dan kiri sebesar 16px. Ini digunakan untuk content agar tidak terlalu
+						dekat dengan dinding margin container.
+					</p>
+<pre>
+<code>
+&ltDOCTYPE html&gt
+&lthtml lang="en"&gt
+ &lthead&gt
+  &lttitle&gtInside&lt/title&gt
+  &ltmeta name="viewport" content="width=device-width, initial-scale=1"&gt
+  &ltlink rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css"&gt
+ &lt/head&gt
+ &ltbody&gt
+  &ltdiv class="container"&gt
+   &ltdiv class="inside"&gt
+    ............
+   &lt/div&gt
+  &lt/div&gt
+ &lt/body&gt
+&lt/html&gt
+</code>		
+</pre>					
+
+					<p class="subheader">Interior</p>
+					<p>
+						Sama seperti inside, interior digunakan untuk membuat content tidak terlalu dekat dengan margin container,
+						bedanya, interior adalah padding sebeser 16px. Penulis lebih rekomendasi menggunakan interior untuk membuat
+						content terlihat baik.
+					</p>
+<pre>
+<code>
+&ltDOCTYPE html&gt
+&lthtml lang="en"&gt
+ &lthead&gt
+  &lttitle&gtInterior&lt/title&gt
+  &ltmeta name="viewport" content="width=device-width, initial-scale=1"&gt
+  &ltlink rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css"&gt
+ &lt/head&gt
+ &ltbody&gt
+  &ltdiv class="container"&gt
+   &ltdiv class="interior"&gt
+    ............
+   &lt/div&gt
+  &lt/div&gt
+ &lt/body&gt
+&lt/html&gt
+</code>		
+</pre>						
+					<!-- End Container -->
+					
+					<!-- System Grid -->
+					<div class="section">
+						<div class="secpad-s" id="grid">
+							<h4>Sistem Grid</h4>
+							<div class="bottombar-crimson box-shadow section-m"></div>
+							<p>
+								Core mempunyai sistem grid, defaultnya 12 grid. Anda bisa menggunakan
+								grid 2, 4, 8, 16, 24 sesuai kebutuhan anda. Selain itu, 
+								Core juga memiliki grid dengan dasar pembuatan table cell dan flexbox.
+								Pelajari Sistem grid <a href="getcore.github.io/column.html" class="hlink-underline">Go</a>
+							</p>
+						</div>
+					</div>
+					<!-- End Sistem Grid -->
+					
+					<!-- Tripogafi -->
+					<div class="section" id="tipografi">
+							<div class="secpad-s">
+								<h4>Tipografi</h4>
+								<div class="bottombar-crimson box-shadow section-m"></div>
+								<h1>h1. Core</h1>
+								<h2 class="section">h2. Core</h2>
+								<h3 class="section">h3. Core</h3>
+								<h4 class="section">h4. Core</h4>
+								<h5 class="section">h5. Core</h5>
+								<h6 class="section">h6. Core</h6>
+							</div>
+							<div class="secpad-s">
+								<p class="subheader">Paragraf</p>
+								<p>Membuat 4 jenis paragraf.</p>
+								<ul class="list">
+									<li>center-align</li>
+									<li>left-align</li>
+									<li>right-align</li>
+									<li>justify-align</li>
+								</u>
+								<p class="subheader">Transformasi</p>
+								<ul class="list">
+									<li>lowercase</li>
+									<li>uppercase</li>
+									<li>capitalize</li>
+									<li>nowrap</li>
+								</u>
+								<p class="subheader">Mendorong Paragraf</p>
+								<ul class="list">
+									<li>paragraf</li>
+								</u>
+								<p class="subheader">Sub Header</p>
+								<ul class="list">
+									<li>subheader</li>
+								</u>
+								<br>
+<pre>
+<code>
+&ltDOCTYPE html&gt
+&lthtml lang="en"&gt
+&lthead&gt
+&lttitle&gtTipografi&lt/title&gt
+&ltmeta name="viewport" content="width=device-width, initial-scale=1"&gt
+&ltlink rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css"&gt
+&lt/head&gt
+&ltbody&gt
+ &ltdiv class="container"&gt
+  &ltdiv class="interior"&gt
+   &ltp class="center-align"&gtCenter&lt/p&gt 
+   &ltp class="left-align"&gtLeft&lt/p&gt 
+   &ltp class="right-align"&gtRight&lt/p&gt 
+   &ltp class="justify-align"&gtJustify&lt/p&gt 
+   
+   &ltp class="lowercase"&gtPerbedaan Text&lt/p&gt 
+   &ltp class="uppercase"&gtPerbedaan Text&lt/p&gt 
+   &ltp class="capitalize"&gtPerbedaan Text&lt/p&gt 
+   &ltp class="word-wrap"&gtword-wrap memaksa text untuk responsive pada setiap ukuran&lt/p&gt 
+   
+   &ltp class="paragraf"&gtMendorong paragraf pertama&lt/p&gt 
+	
+   &ltp class="subheader"&gtMembuat sub judul&lt/p&gt 
+  &lt/div&gt
+ &lt/div&gt
+&lt/body&gt
+&lt/html&gt
+</code>		
+</pre>		
+								<br>
+								<div class="interior border-lightgray" style="border-radius:4px">
+									<div class="secpad">
+										<p class="center-align">Center</p>
+										<p class="left-align">Left</p> 
+										<p class="right-align">Right</p> 
+										<p class="justify-align">Justify</p> 
+									   
+										<p class="lowercase">lowercase</p> 
+										<p class="uppercase">uppercase</p> 
+										<p class="capitalize">capitalize</p> 
+										<p class="word-wrap">word-wrap memaksa text untuk responsive pada setiap ukuran</p> 
+										<p class="paragraf">Mendorong paragraf pertama : 
+										Core adalah framework yang dibuat oleh andika chamberlin
+										Dengan usaha yang sangat sulit, akhirnya ia berhasil menciptakan sesuatu yang berguna untuk indonesia
+										khususnya Web Designer indonesia. Maka gunakalah karya anak negeri, itu yang membuktikan dari mana kita berasal.
+ 
+										</p> 
+											
+										<p class="subheader">Membuat sub judul</p> 
+									</div>
+								</div>
+							</div>
+							<div style="margin-top:-20px">
+								<p class="subheader">Alamat</p>
+								<address> 
+									<strong> Flamecore, Inc. </strong><br> 
+										Jalan Melati II, Perbaungan, Serdang Bedagai <br> Sumatra Utara, 20986 <br> 
+									<abbr title= "Phone" > Phone:
+									</abbr> (+68) 23 6232 xxxx
+								</address> 
+								<address> 
+									<strong> Email </strong><br> 
+									<a href= "mailto:htmlandika@gmail.com" > htmlandika@gmail.com </a> 
+								</address>
+<pre>
+<code>
+&ltDOCTYPE html&gt
+&lthtml lang="en"&gt
+&lthead&gt
+&lttitle&gtAlamat&lt/title&gt
+&ltmeta name="viewport" content="width=device-width, initial-scale=1"&gt
+&ltlink rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css"&gt
+&lt/head&gt
+&ltbody&gt
+ &ltdiv class="container"&gt
+  &ltdiv class="interior"&gt
+   &ltaddress&gt 
+    &ltstrong&gt Flamecore, Inc. &lt/strong&gt&ltbr&gt 
+     Jalan Melati II, Perbaungan, Serdang Bedagai &ltbr&gt Sumatra Utara, 20986 &ltbr&gt 
+    &ltabbr title= "Phone" &gt Phone:&lt/abbr&gt (+68) 23 6232 xxxx
+   &lt/address&gt 
+   &ltaddress&gt 
+    &ltstrong&gt Email &lt/strong&gt&ltbr&gt 
+    &lta href= "mailto:htmlandika@gmail.com" &gt htmlandika@gmail.com &lt/a&gt 
+   &lt/address&gt
+  &lt/div&gt
+ &lt/div&gt
+&lt/body&gt
+&lt/html&gt
+</code>		
+</pre>	
+								<p class="subheader">Blockquotes</p>
+								<blockquote> 
+									<p> "Color your life is determined not from yourself, but of others" </p> 
+									<cite> - Andika Chamberlin </cite>
+								</blockquote>
+								<blockquote class="blockquote-right"> 
+									<p> "Color your life is determined not from yourself, but of others" </p> 
+									<cite> - Andika Chamberlin </cite>
+								</blockquote>
+<pre>
+<code>
+&ltDOCTYPE html&gt
+&lthtml lang="en"&gt
+&lthead&gt
+&lttitle&gtKutipan&lt/title&gt
+&ltmeta name="viewport" content="width=device-width, initial-scale=1"&gt
+&ltlink rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css"&gt
+&lt/head&gt
+&ltbody&gt
+ &ltdiv class="container"&gt
+  &ltdiv class="interior"&gt
+   &ltblockquote&gt 
+    &ltp&gt "Color your life is determined not from yourself, but of others" &lt/p&gt 
+    &ltcite&gt - Andika Chamberlin &lt/cite&gt
+   &lt/blockquote&gt
+   
+   &ltblockquote class="blockquote-right"&gt 
+    &ltp&gt "Color your life is determined not from yourself, but of others" &lt/p&gt 
+    &ltcite&gt - Andika Chamberlin &lt/cite&gt
+   &lt/blockquote&gt
+  &lt/div&gt
+ &lt/div&gt
+&lt/body&gt
+&lt/html&gt
+</code>		
+</pre>							
+								<p class="subheader">List</p>
+								<ul class="list">
+									<li>List 1</li>
+										<ul class="sublist">
+											<li>Sub List 1</li>
+											<li>Sub List 2</li>
+											<li>Sub List 3</li>
+										</ul>
+									<li>List 2</li>
+										<ol class="subnum">
+											<li>Sub List 1</li>
+											<li>Sub List 2</li>
+											<li>Sub List 3</li>
+										</ol>
+									<li>List 3</li>
+								</ul>
+								<ul class="list-inline">
+									<li>List Inline</li>
+										<ul class="sublist">
+											<li>Sub List 1</li>
+											<li>Sub List 2</li>
+											<li>Sub List 3</li>
+										</ul>
+									</li>
+								</ul>
+<pre>
+<code>
+&ltDOCTYPE html&gt
+&lthtml lang="en"&gt
+&lthead&gt
+&lttitle&gtList&lt/title&gt
+&ltmeta name="viewport" content="width=device-width, initial-scale=1"&gt
+&ltlink rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css"&gt
+&lt/head&gt
+&ltbody&gt
+ &ltdiv class="container"&gt
+  &ltdiv class="interior"&gt
+   &ltul class="list"&gt
+    &ltli&gtList 1&lt/li&gt
+     &ltul class="sublist"&gt
+      &ltli&gtSub List 1&lt/li&gt
+      &ltli&gtSub List 2&lt/li&gt
+      &ltli&gtSub List 3&lt/li&gt
+    &lt/ul&gt
+    &ltli&gtList 2&lt/li&gt
+     &ltol class="subnum"&gt
+      &ltli&gtSub List 1&lt/li&gt
+      &ltli&gtSub List 2&lt/li&gt
+      &ltli&gtSub List 3&lt/li&gt
+     &lt/ol&gt
+    &ltli&gtList 3&lt/li&gt
+   &lt/ul&gt
+   &ltul class="list-inline"&gt
+    &ltli&gtList Inline&lt/li&gt
+     &ltul class="sublist"&gt
+      &ltli&gtSub List 1&lt/li&gt
+      &ltli&gtSub List 2&lt/li&gt
+      &ltli&gtSub List 3&lt/li&gt
+     &lt/ul&gt
+   &lt/ul&gt
+  &lt/div&gt
+ &lt/div&gt
+&lt/body&gt
+&lt/html&gt
+</code>		
+</pre>	
+								<p class="subheader">Deskripsi</p>
+								<dl class= "dl-horizontal"> 
+									<dt> Nama : </dt> 
+									<dd> Andika </dd> 
+								</dl>
+								<dl class= "dl-horizontal"> 
+									<dt> Nama Populer : </dt> 
+									<dd> Andika Chamberlin</dd> 
+								</dl>
+								<dl class= "dl-horizontal"> 
+									<dt> Tempat : </dt> 
+									<dd> Perbaungan, Indonesia, ID</dd> 
+								</dl>
+<pre>
+<code>
+&ltDOCTYPE html&gt
+&lthtml lang="en"&gt
+&lthead&gt
+&lttitle&gtDeskripsi&lt/title&gt
+&ltmeta name="viewport" content="width=device-width, initial-scale=1"&gt
+&ltlink rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css"&gt
+&lt/head&gt
+&ltbody&gt
+ &ltdiv class="container"&gt
+  &ltdiv class="interior"&gt
+   &ltdl class= "dl-horizontal"&gt 
+    &ltdt&gt Nama : &lt/dt&gt 
+    &ltdd&gt Andika &lt/dd&gt 
+   &lt/dl&gt
+   &ltdl class= "dl-horizontal"&gt 
+    &ltdt&gt Nama Populer : &lt/dt&gt 
+    &ltdd&gt Andika Chamberlin&lt/dd&gt 
+   &lt/dl&gt
+   &ltdl class= "dl-horizontal"&gt 
+    &ltdt&gt Tempat : &lt/dt&gt 
+    &ltdd&gt Perbaungan, Indonesia, ID&lt/dd&gt 
+   &lt/dl&gt
+  &lt/div&gt
+ &lt/div&gt
+&lt/body&gt
+&lt/html&gt
+</code>		
+</pre>	
+						</div>
+					</div>
+					<!-- End Tipografi -->
+					
+					<!-- Code -->
+					<div class="section">
+							<div class="secpad-s" id="code">
+								<h4>Code</h4>
+								<div class="bottombar-crimson box-shadow section-m"></div>
+								<p>
+								Membuat barisan kode dengan tag code. Default tag code adalah inline, berarti
+								kesamping, jika ingin membuat code sifat block maka gunakan tag pre dan code.
+								</p>
+								<p>Gunakan class scroll-s untuk membuat code responsive. Dibawah terdapat beberapa ukuran scroll (max-height)</p>
+								<dl class= "dl-horizontal"> 
+									<dt> scroll : </dt> 
+									<dd> 100px </dd> 
+								</dl>
+								<dl class= "dl-horizontal"> 
+									<dt> scroll-s : </dt> 
+									<dd> 70px </dd>
+								</dl>
+								<dl class= "dl-horizontal"> 
+									<dt> scroll-m : </dt> 
+									<dd> 200px </dd>
+								</dl>
+								<dl class= "dl-horizontal"> 
+									<dt> scroll-l : </dt> 
+									<dd> 400px </dd>
+								</dl>
+								<dl class= "dl-horizontal"> 
+									<dt> scroll-g : </dt> 
+									<dd> 600px </dd>
+								</dl>
+<pre>
+	<code>
+&ltcode&gt Tag code &lt/code&gt
+	</code>
+</pre>						
+<pre class="scroll-s">
+	<code>
+&ltpre class="scroll-s"&gt
+ &ltcode&gt Tag pre dan code &lt/code&gt
+&lt/pre&gt
+	</code>
+</pre>
+						</div>
+					</div>
+					<!-- End Code -->
+					
+					<!-- Table -->
+					
+						<div class="section">
+							<div class="secpad-s" id="table">
+								<h4>Table</h4>
+								<div class="bottombar-crimson box-shadow section-m"></div>
+							</div>
+							<p>Terdapat Beberapa pilihan class table<p>
+							<ul class="list">
+								<li>table</li>
+								<li>table-border</li>
+								<li>table-uborder</li>
+								<li>table-shadow</li>
+							</ul>
+							<div class="scroll-table">
+								<table class="table">
+									<tr>
+										<th>Buah</th>
+										<td>Pisang</td>
+										<td>Apel</td>
+										<td>Anggur</td>
+										<td>Nanas</td>
+										<td>Jeruk</td>
+										<td>Semangka</td>
+										<td>Durian</td>
+										<td>Mangga</td>
+									</tr>
+									<tr>
+										<th>Hewan</th>
+										<td>Komodo</td>
+										<td>Singa</td>
+										<td>Kudanil</td>
+										<td>Kadal</td>
+										<td>Koala</td>
+										<td>Buaya</td>
+										<td>Musang</td>
+										<td>Kambing</td>
+									</tr>
+									<tr>
+										<th>Sayur</th>
+										<td>Kangkung</td>
+										<td>Bayam</td>
+										<td>Sawi</td>
+										<td>Kubis</td>
+										<td>Brokoli</td>
+										<td>Daun Ubi</td>
+										<td>Wortel</td>
+										<td>Tomat</td>
+									</tr>
+								</table>
+							</div>
+							<br>
+							<div class="scroll-table">
+								<table class="table-border">
+									<tr>
+										<th>Buah</th>
+										<td>Pisang</td>
+										<td>Apel</td>
+										<td>Anggur</td>
+										<td>Nanas</td>
+										<td>Jeruk</td>
+										<td>Semangka</td>
+										<td>Durian</td>
+										<td>Mangga</td>
+									</tr>
+									<tr>
+										<th>Hewan</th>
+										<td>Komodo</td>
+										<td>Singa</td>
+										<td>Kudanil</td>
+										<td>Kadal</td>
+										<td>Koala</td>
+										<td>Buaya</td>
+										<td>Musang</td>
+										<td>Kambing</td>
+									</tr>
+									<tr>
+										<th>Sayur</th>
+										<td>Kangkung</td>
+										<td>Bayam</td>
+										<td>Sawi</td>
+										<td>Kubis</td>
+										<td>Brokoli</td>
+										<td>Daun Ubi</td>
+										<td>Wortel</td>
+										<td>Tomat</td>
+									</tr>
+								</table>
+							</div>
+							<br>
+							<div class="scroll-table">
+								<table class="table-uborder">
+									<tr>
+										<th>Buah</th>
+										<td>Pisang</td>
+										<td>Apel</td>
+										<td>Anggur</td>
+										<td>Nanas</td>
+										<td>Jeruk</td>
+										<td>Semangka</td>
+										<td>Durian</td>
+										<td>Mangga</td>
+									</tr>
+									<tr>
+										<th>Hewan</th>
+										<td>Komodo</td>
+										<td>Singa</td>
+										<td>Kudanil</td>
+										<td>Kadal</td>
+										<td>Koala</td>
+										<td>Buaya</td>
+										<td>Musang</td>
+										<td>Kambing</td>
+									</tr>
+									<tr>
+										<th>Sayur</th>
+										<td>Kangkung</td>
+										<td>Bayam</td>
+										<td>Sawi</td>
+										<td>Kubis</td>
+										<td>Brokoli</td>
+										<td>Daun Ubi</td>
+										<td>Wortel</td>
+										<td>Tomat</td>
+									</tr>
+								</table>
+							</div>
+							<br>
+							<p>
+							Membuat table responsive menggunakan class scroll-table dan class striped, table-hover.
+							</p>
+							<div class="scroll-table">
+								<table class="table-border striped table-hover">
+									<tr>
+										<th>Buah</th>
+										<td>Pisang</td>
+										<td>Apel</td>
+										<td>Anggur</td>
+										<td>Nanas</td>
+										<td>Jeruk</td>
+										<td>Semangka</td>
+										<td>Durian</td>
+										<td>Mangga</td>
+									</tr>
+									<tr>
+										<th>Hewan</th>
+										<td>Komodo</td>
+										<td>Singa</td>
+										<td>Kudanil</td>
+										<td>Kadal</td>
+										<td>Koala</td>
+										<td>Buaya</td>
+										<td>Musang</td>
+										<td>Kambing</td>
+									</tr>
+									<tr>
+										<th>Sayur</th>
+										<td>Kangkung</td>
+										<td>Bayam</td>
+										<td>Sawi</td>
+										<td>Kubis</td>
+										<td>Brokoli</td>
+										<td>Daun Ubi</td>
+										<td>Wortel</td>
+										<td>Tomat</td>
+									</tr>
+								</table>
+							</div>
+							<br>
+<pre>
+<code>
+&ltDOCTYPE html&gt
+&lthtml lang="en"&gt
+&lthead&gt
+&lttitle&gtTable Responsive&lt/title&gt
+&ltmeta name="viewport" content="width=device-width, initial-scale=1"&gt
+&ltlink rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css"&gt
+&lt/head&gt
+&ltbody&gt
+ &ltdiv class="container"&gt
+  &ltdiv class="interior"&gt
+   &ltdiv class="scroll-table"&gt
+    &lttable class="table-border striped table-hover"&gt
+     &lttr&gt
+      &ltth&gtBuah&lt/th&gt
+      &lttd&gtPisang&lt/td&gt
+      &lttd&gtApel&lt/td&gt
+      &lttd&gtAnggur&lt/td&gt
+      &lttd&gtNanas&lt/td&gt
+      &lttd&gtJeruk&lt/td&gt
+      &lttd&gtSemangka&lt/td&gt
+      &lttd&gtDurian&lt/td&gt
+      &lttd&gtMangga&lt/td&gt
+     &lt/tr&gt
+     &lttr&gt
+      &ltth&gtHewan&lt/th&gt
+      &lttd&gtKomodo&lt/td&gt
+      &lttd&gtSinga&lt/td&gt
+      &lttd&gtKudanil&lt/td&gt
+      &lttd&gtKadal&lt/td&gt
+      &lttd&gtKoala&lt/td&gt
+      &lttd&gtBuaya&lt/td&gt
+      &lttd&gtMusang&lt/td&gt
+      &lttd&gtKambing&lt/td&gt
+     &lt/tr&gt
+     &lttr&gt
+      &ltth&gtSayur&lt/th&gt
+      &lttd&gtKangkung&lt/td&gt
+      &lttd&gtBayam&lt/td&gt
+      &lttd&gtSawi&lt/td&gt
+      &lttd&gtKubis&lt/td&gt
+      &lttd&gtBrokoli&lt/td&gt
+      &lttd&gtDaun Ubi&lt/td&gt
+      &lttd&gtWortel&lt/td&gt
+      &lttd&gtTomat&lt/td&gt
+     &lt/tr&gt
+    &lt/table&gt
+   &lt/div&gt
+  &lt/div&gt
+ &lt/div&gt
+&lt/body&gt
+&lt/html&gt
+</code>		
+</pre>	
+					</div>
+					<!-- End Table -->
+					
+					<!-- Alert -->
+					<div class="section">
+							<div class="secpad-s" id="alert">
+								<h4>Alert</h4>
+								<div class="bottombar-crimson box-shadow section-m"></div>
+								<p class="subheader">Danger</p>
+								<div class="alert danger">
+									Danger
+								</div>
+								<p class="subheader">Warning</p>
+								<div class="alert warning">
+									Warning
+								</div>
+								<p class="subheader">Success</p>
+								<div class="alert success">
+									Success
+								</div>
+								<p class="subheader">Info</p>
+								<div class="alert info">
+									Info
+								</div>
+								<br>
+								
+								<p class="subheader">Danger Opacity</p>
+								<div class="alert-opacity danger">
+									Danger
+								</div>
+								<p class="subheader">Warning Opacity</p>
+								<div class="alert-opacity warning">
+									Warning
+								</div>
+								<p class="subheader">Success Opacity</p>
+								<div class="alert-opacity success">
+									Success
+								</div>
+								<p class="subheader">Info Opacity</p>
+								<div class="alert-opacity info">
+									Info
+								</div>
+								<br>
+								
+								<p class="subheader">Danger Dashed</p>
+								<div class="alert danger-dashed">
+									Danger
+								</div>
+								<p class="subheader">Warning Dashed</p>
+								<div class="alert warning-dashed">
+									Warning
+								</div>
+								<p class="subheader">Success Dashed</p>
+								<div class="alert success-dashed">
+									Success
+								</div>
+								<p class="subheader">Info Dashed</p>
+								<div class="alert info-dashed">
+									Info
+								</div>
+								<br>
+								
+								
+<pre>
+<code>
+&ltDOCTYPE html&gt
+&lthtml lang="en"&gt
+&lthead&gt
+&lttitle&gtAlert&lt/title&gt
+&ltmeta name="viewport" content="width=device-width, initial-scale=1"&gt
+&ltlink rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css"&gt
+&lt/head&gt
+&ltbody&gt
+ &ltdiv class="container"&gt
+  &ltdiv class="interior"&gt
+   &ltdiv class="alert danger"&gt
+    Danger
+   &lt/div&gt
+   &ltdiv class="alert warning"&gt
+    Warning
+   &lt/div&gt
+   &ltdiv class="alert success"&gt
+    Success
+   &lt/div&gt
+   &ltdiv class="alert info"&gt
+    Info
+   &lt/div&gt
+   
+   &ltdiv class="alert-opacity danger"&gt
+    Danger
+   &lt/div&gt
+   &ltdiv class="alert-opacity warning"&gt
+    Warning
+   &lt/div&gt
+   &ltdiv class="alert-opacity success"&gt
+    Success
+   &lt/div&gt
+   &ltdiv class="alert-opacity info"&gt
+    Info
+   &lt/div&gt
+   
+   &ltdiv class="alert danger-dashed"&gt
+    Danger
+   &lt/div&gt
+   &ltdiv class="alert warning-dashed"&gt
+    Warning
+   &lt/div&gt
+   &ltdiv class="alert success-dashed"&gt
+    success
+   &lt/div&gt
+   &ltdiv class="alert info-dashed"&gt
+    Info
+   &lt/div&gt
+  &lt/div&gt
+ &lt/div&gt
+&lt/body&gt
+&lt/html&gt
+</code>		
+</pre>	
+						</div>							
+					</div>
+					<!-- End Alert -->
+					
+					<!-- Form -->
+					<div class="section">
+							<div class="secpad-s" id="formulir">
+								<h4>Formulir</h4>
+								<div class="bottombar-crimson box-shadow section-m"></div>
+								<p class="subheader">Basic</p>
+								<form> 
+									<div class= "form-container"> 
+										<label> Email address </label> 
+										<input type= "email" class= "input" placeholder= "Email" > 
+									</div> 
+									<div class= "form-container" > 
+										<label> Password </label> 
+										<input type= "password" class= "input" placeholder= "Password" > 
+									</div> 
+									<div class= "form-container" > 
+										<label class="block">Masukan file </label> 
+										<input type= "file"> 
+										<p class= "block"> Menambahkan text jika di perlukan </p> 
+									</div> 
+									<div class= "checkbox" > 
+										<input type= "checkbox" > Check </label> 
+									</div> 
+									<button type= "submit" class= "button-default" > Submit </button> 
+								</form>
+								<br>
+<pre>
+<code>
+&ltDOCTYPE html&gt
+&lthtml lang="en"&gt
+&lthead&gt
+&lttitle&gtForm&lt/title&gt
+&ltmeta name="viewport" content="width=device-width, initial-scale=1"&gt
+&ltlink rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css"&gt
+&lt/head&gt
+&ltbody&gt
+ &ltdiv class="container"&gt
+  &ltdiv class="interior"&gt
+   &ltform&gt 
+    &ltdiv class= "form-container"&gt 
+     &ltlabel&gt Email address &lt/label&gt 
+     &ltinput type= "email" class= "input" placeholder= "Email" &gt 
+    &lt/div&gt 
+    &ltdiv class= "form-container" &gt 
+     &ltlabel&gt Password &lt/label&gt 
+     &ltinput type= "password" class= "input" placeholder= "Password" &gt 
+    &lt/div&gt 
+    &ltdiv class= "form-container" &gt 
+     &ltlabel class="block"&gtMasukan file &lt/label&gt 
+     &ltinput type= "file"&gt 
+     &ltp class= "block"&gt Menambahkan text jika di perlukan &lt/p&gt 
+    &lt/div&gt 
+    &ltdiv class= "checkbox" &gt 
+     &ltinput type= "checkbox" &gt Check &lt/label&gt 
+    &lt/div&gt 
+    &ltbutton type= "submit" class= "button-default" &gt Submit &lt/button&gt 
+   &lt/form&gt
+  &lt/div&gt
+ &lt/div&gt
+&lt/body&gt
+&lt/html&gt
+</code>
+</pre>
+								<p class="subheader">Form Inline Type 1</p>
+								<form class= "form-inline"> 
+									<div class= "form-container"> 
+										<label> Name </label> 
+										<input type= "text" class= "input" placeholder= "Andika" > 
+									</div> 
+									<div class= "form-container"> 
+										<label> Email </label> 
+										<input type= "email" class= "input" placeholder= "htmlandika@gmail.com" > 
+									</div> 
+									<button type= "submit" class= "button-default"> Send invitation </button> 
+								</form>
+								<br>
+<pre>
+<code>
+&ltform class="form-inline"&gt 
+ &ltdiv class="form-container"&gt 
+  &ltlabel&gt Name &lt/label&gt 
+  &ltinput type= "text" class="input" placeholder="Andika"&gt 
+ &lt/div&gt 
+ &ltdiv class="form-container"&gt 
+  &ltlabel&gt Email &lt/label&gt 
+  &ltinput type="email" class="input" placeholder="htmlandika@gmail.com"&gt 
+ &lt/div&gt 
+ &ltbutton type="submit" class="button-default"&gt Send invitation &lt/button&gt 
+&lt/form&gt
+</code>
+</pre>
+								<p class="subheader">Form Inline Type 2</p>
+								<form class= "form-inline"> 
+									<div class= "form-container"> 
+										<label> Email address </label> 
+										<input type= "email" class= "input" placeholder= "Email" > 
+									</div> 
+									<div class= "form-container"> 
+										<label> Password </label> 
+										<input type= "password" class= "input" placeholder= "Password" > 
+									</div> 
+									<div class= "checkbox" > 
+										<label> 
+											<input type= "checkbox" > Remember me 
+										</label> 
+									</div> 
+									<button type= "submit" class= "button-default" > Sign in </button> 
+								</form>
+								<br>
+<pre>
+<code>
+&ltform class="form-inline"&gt 
+ &ltdiv class="form-container"&gt 
+  &ltlabel&gt Email address &lt/label&gt 
+  &ltinput type= "email" class= "input" placeholder= "Email"&gt 
+ &lt/div&gt 
+ &ltdiv class="form-container"&gt 
+  &ltlabel&gt Password &lt/label&gt 
+  &ltinput type="password" class="input" placeholder= "Password"&gt 
+ &lt/div&gt 
+ &ltdiv class="checkbox"&gt 
+  &ltlabel&gt 
+  &ltinput type="checkbox"&gt Remember me 
+  &lt/label&gt 
+ &lt/div&gt 
+ &ltbutton type="submit" class="button-default"&gt Sign in &lt/button&gt 
+&lt/form&gt
+</code>
+</pre>
+								<p class="subheader">Form Horizontal</p>
+								<form class= "form-horizontal"> 
+									<div class="form-container"> 
+										<label class="column l2 m2 label"> Email </label> 
+										<div class="column l10 m10"> 
+											<input type="email" class="input" placeholder="Email"> 
+										</div> 
+									</div> 
+									<div class="form-container"> 
+										<label class="column l2 m2 label"> Password </label> 
+										<div class="column l10 m10"> 
+											<input type="password" class="input" placeholder= "Password"> 
+										</div> 
+									</div> 
+									<div class="form-container"> 
+										<div class="column l2-offset m2-offset l10 m10"> 
+											<div class="checkbox"> 
+												<label> 
+													<input type="checkbox"> Remember me 
+												</label> 
+											</div> 
+										</div> 
+									</div> 
+									<div class="form-container"> 
+										<div class="column l2-offset m2-offset l10 m10"> 
+											<button type="submit" class="button-default"> Sign in </button> 
+										</div> 
+									</div> 
+								</form>
+								<br>
+<pre>
+<code>
+&ltform class= "form-horizontal"&gt 
+ &ltdiv class="form-container"&gt 
+  &ltlabel class="column l2 m2 label"&gt Email &lt/label&gt 
+  &ltdiv class="column l10 m10"&gt 
+   &ltinput type="email" class="input" placeholder="Email"&gt 
+  &lt/div&gt 
+ &lt/div&gt 
+ &ltdiv class="form-container"&gt 
+  &ltlabel class="column l2 m2 label"&gt Password &lt/label&gt 
+  &ltdiv class="column l10 m10"&gt 
+   &ltinput type="password" class="input" placeholder= "Password"&gt 
+  &lt/div&gt 
+ &lt/div&gt 
+ &ltdiv class="form-container"&gt 
+  &ltdiv class="column l2-offset m2-offset l10 m10"&gt 
+   &ltdiv class="checkbox"&gt 
+    &ltlabel&gt 
+     &ltinput type="checkbox"&gt Remember me 
+    &lt/label&gt 
+   &lt/div&gt 
+  &lt/div&gt 
+ &lt/div&gt 
+ &ltdiv class="form-container"&gt 
+  &ltdiv class="column l2-offset m2-offset l10 m10"&gt 
+   &ltbutton type="submit" class="button-default"&gt Sign in &lt/button&gt 
+  &lt/div&gt 
+ &lt/div&gt 
+&lt/form&gt
+</code>
+</pre>
+								
+								<p class="subheader">Input Static</p>
+								<form class="form-horizontal"> 
+									<div class="form-container"> 
+										<label class="column l2 m2 label"> Email </label> 
+										<div class="column l10 m10" > 
+											<p class="input-static"> htmlandika@gmail.com </p> 
+										</div> 
+									</div> 
+									<div class="form-container"> 
+										<label class="column l2 m2 label"> Password </label> 
+										<div class="column l10 m10" > 
+											<input type= "password" class="input" placeholder="Password"> 
+										</div> 
+									</div> 
+								</form>
+								<br>
+<pre>
+<code>
+&ltform class="form-horizontal"&gt 
+ &ltdiv class="form-container"&gt 
+  &ltlabel class="column l2 m2 label"&gt Email &lt/label&gt 
+  &ltdiv class="column l10 m10"&gt 
+   &ltp&gt htmlandika@gmail.com &lt/p&gt 
+  &lt/div&gt 
+ &lt/div&gt 
+ &ltdiv class="form-container"&gt 
+ &ltlabel class="column l2 m2 label"&gt Password &lt/label&gt 
+  &ltdiv class="column l10 m10" &gt 
+   &ltinput type= "password" class="input" placeholder="Password"&gt 
+  &lt/div&gt 
+ &lt/div&gt 
+&lt/form&gt
+</code>
+</pre>
+								<p class="subheader">Memilih Type 1</p>
+								<select class= "input" > 
+									<option> 1 </option> 
+									<option> 2 </option> 
+									<option> 3 </option>
+									<option> 4 </option> 
+									<option> 5 </option> 									
+								</select>
+								<p class="subheader">Memilih Type 2</p>
+								<select multiple class= "input"> 
+									<option> 1 </option> 
+									<option> 2 </option> 
+									<option> 3 </option> 
+									<option> 4 </option> 
+									<option> 5 </option>
+								</select>
+								<br>
+<pre>
+<code>
+&ltp class="subheader"&gtMemilih Type 1&lt/p&gt
+&ltselect class= "input" &gt 
+ &ltoption&gt 1 &lt/option&gt 
+ &ltoption&gt 2 &lt/option&gt 
+ &ltoption&gt 3 &lt/option&gt
+ &ltoption&gt 4 &lt/option&gt 
+ &ltoption&gt 5 &lt/option&gt 									
+&lt/select&gt
+&ltp class="subheader"&gtMemilih Type 2&lt/p&gt
+&ltselect multiple class= "input"&gt 
+ &ltoption&gt 1 &lt/option&gt 
+ &ltoption&gt 2 &lt/option&gt 
+ &ltoption&gt 3 &lt/option&gt 
+ &ltoption&gt 4 &lt/option&gt 
+ &ltoption&gt 5 &lt/option&gt
+&lt/select&gt
+</code>
+</pre>
+							
+								<p class="subheader">Input Disable</p>
+								<input class= "input" type= "text" placeholder= "Disabled" disabled>
+								<br>
+<pre>
+<code>
+&ltinput class= "input" type= "text" placeholder= "Disabled" disabled&gt
+</code>
+</pre>
+							</div>
+						</div>
+					<!-- Formulir -->
+					
+					<!-- Button -->
+					<div class="section">
+							<div class="secpad-s" id="button">
+								<h4>Button</h4>
+								<div class="bottombar-crimson box-shadow section-m"></div>
+								<p class="subheader">Button Alert</p>
+<button type="button" class="button default"> Default </button> 
+<button type= "button" class= "button success"> Success </button> 
+<button type= "button" class= "button info"> Info </button> 
+<button type= "button" class= "button warning"> Warning </button> 
+<button type= "button" class= "button danger"> Danger </button>
+<button type= "button" class= "button link"> Link </button>
+								<p class="subheader">Button Block</p>
+<button type="button" class="button-block default"> Default </button>
+<button type="button" class="button-block default"> Default </button>
+								<p class="subheader">Button Disable</p>
+<button type= "button" class="button-disabled" disabled="disabled"> Primary button </button> 
+<button type= "button" class= "button-disabled" disabled="disabled"> Button </button>
+<br>
+<br>
+<pre>
+<code>
+&ltbutton type="button" class="button default"&gt Default &lt/button&gt 
+&ltbutton type= "button" class= "button success"&gt Success &lt/button&gt 
+&ltbutton type= "button" class= "button info"&gt Info &lt/button&gt 
+&ltbutton type= "button" class= "button warning"&gt Warning &lt/button&gt 
+&ltbutton type= "button" class= "button danger"&gt Danger &lt/button&gt
+&ltbutton type= "button" class= "button link"&gt Link &lt/button&gt
+
+&ltp class="subheader"&gtButton Block&lt/p&gt
+&ltbutton type="button" class="button-block default"&gt Default &lt/button&gt
+&ltbutton type="button" class="button-block default"&gt Default &lt/button&gt
+
+&ltp class="subheader"&gtButton Disable&lt/p&gt
+&ltbutton type= "button" class="button-disabled" disabled="disabled"&gt Primary button &lt/button&gt 
+&ltbutton type= "button" class= "button-disabled" disabled="disabled"&gt Button &lt/button&gt
+</code>
+</pre>
+						</div>
+					</div>
+					<!-- End Button -->
+					
+					<!-- Images -->
+					<div class="section">
+							<div class="secpad-s" id="images">
+								<h4>Images</h4>
+								<div class="bottombar-crimson box-shadow section-m"></div>
+								<p class="subheader">Gambar</p>
+								<p>Membuat Gamber Responsive</p>
+								<div class="inside">
+									<img src="images/icore/icore-l.png" class="img-responsive">
+								</div>
+							</div>
+					</div>
+					<br>
+					
+<pre>
+<code>
+&ltimg src="images/icore/icore-l.png" class="img-responsive"&gt
+</code>
+</pre>
+					<!-- End Images -->
+					
+					<!-- Section -->
+					<div class="section">
+							<div class="secpad-s" id="section">
+								<h4>Section</h4>
+								<div class="bottombar-crimson box-shadow section-m"></div>
+								<p class="subheader">section</p>
+								<p>
+								Section adalah margin atas dan bawah. Membuat content agar tidak terlalu dekat
+								dengan dinding margin atas dan bawah. Sama seperti section, secpad membuat content
+								tidak terlalu dekat dengan dinding margin, perbedaannya secpad bersifat padding.
+								
+								<ul class="list">
+									<li>section normal</li>
+									<li>section-s small</li>
+									<li>section-m medium</li>
+									<li>section-l large</li>
+									<li>section-g gigant</li>
+								</ul>
+								</p>
+								<div class="section border-lightgray">
+									section
+								</div>
+								<div class="section-s border-lightgray">
+									section-s
+								</div>
+								<div class="section-m border-lightgray">
+									section-m
+								</div>
+								<div class="section-l border-lightgray">
+									section-l
+								</div>
+								<div class="section-g border-lightgray">
+									section-g
+								</div>
+								
+								<p class="subheader">secpad</p>
+								<div class="secpad border-lightgray">
+									secpad
+								</div>
+								<div class="secpad-s border-lightgray">
+									secpad-s
+								</div>
+								<div class="secpad-m border-lightgray">
+									secpad-m
+								</div>
+								<div class="secpad-l border-lightgray">
+									secpad-l
+								</div>
+								<div class="secpad-g border-lightgray">
+									secpad-g
+								</div>
+								<br>
+								
+<pre>
+<code>
+&ltdiv class="section border-lightgray"&gt
+ section
+&lt/div&gt
+&ltdiv class="section-s border-lightgray"&gt
+ section-s
+&lt/div&gt
+&ltdiv class="section-m border-lightgray"&gt
+ section-m
+&lt/div&gt
+&ltdiv class="section-l border-lightgray"&gt
+ section-l
+&lt/div&gt
+&ltdiv class="section-g border-lightgray"&gt
+ section-g
+ &lt/div&gt
+</code>
+</pre>								
+							</div>
+						</div>
+					<!-- End Section -->
+					
+					<!-- Display -->
+					<div class="section">
+							<div class="secpad-s" id="display">
+								<h4>Display</h4>
+								<div class="bottombar-crimson box-shadow section-m"></div>
+								<p class="subheader">Inline</p>
+								<p>
+								Membuat display menjadi inline yang berarti kesamping, lebar bergantung pada
+								content. Tag yang sudah umum bersifat inline adalah tag &ltspan&gt
+								</p>
+								<div class="inline border-lightgray">
+									<span>Core</span>
+									<span>Balloon</span>
+								</div>
+								<p class="subheader">Block</p>
+								<p>
+								Membuat display penuh 100%, berarti content selanjutnya berada di bawah.
+								Tag &ltdiv&gt adalah salah satu tag yang bersifat block.
+								</p>
+								<div class="block border-lightgray">
+									<div>Core</div>
+									<div>Balloon</div>
+								</div>
+								<p class="subheader">Inline Block</p>
+								<p>
+								Membuat display kesamping 100%, bedanya dengan inline adalah,
+								inline bergantung lebar ukuran pada content, jika inline-block sudah memiliki lebar 100%, 
+								tapi content selanjutnya tidak kebawah melainkan kesamping.
+								</p>
+								<div class="inline-block border-lightgray">
+									<span>Core</span>
+									<span>Balloon</span>
+								</div>
+								<br>
+<pre>
+<code>
+&ltdiv class="inline"&gt
+ &ltspan&gtCore&lt/span&gt
+ &ltspan&gtBalloon&lt/span&gt
+&lt/div&gt
+
+&ltdiv class="block"&gt
+ &ltspan&gtCore&lt/span&gt
+ &ltspan&gtBalloon&lt/span&gt
+&lt/div&gt
+
+&ltdiv class="inline-block"&gt
+ &ltspan&gtCore&lt/span&gt
+ &ltspan&gtBalloon&lt/span&gt
+&lt/div&gt
+</code>
+</pre>			
+							</div>
+						</div>
+					<!-- End Dispay -->
+					
+					<!-- Navbar -->
+					<div class="section">
+							<div class="secpad-s" id="navbar">
+								<h4>Navbar</h4>
+								<div class="bottombar-crimson box-shadow section-m"></div>
+								<p class="subheader">Navbar</p>
+								<p>
+								Navbar core dasar tidak memiliki warna apapun, maka jika anda lihat, itu hanya sebuah
+								background putih. Untuk membuatnya berwarna, maka gunakan warna background color dari Core.
+								</p>
+<ul class="navbar">
+	<li><a href="#">Core</a></li>
+	<li><a href="#">Learn</a></li>
+	<li><a href="#">Column</a></li>
+</ul>
+<br>
+<pre>
+<code>
+&ltul class="navbar"&gt
+ &ltli&gt&lta href="#"&gtCore&lt/a&gt&lt/li&gt
+ &ltli&gt&lta href="#"&gtLearn&lt/a&gt&lt/li&gt
+ &ltli&gt&lta href="#"&gtColumn&lt/a&gt&lt/li&gt
+&lt/ul&gt
+</code>
+</pre>
+								<p>Berikan class bg-crimson maka akan menjadi seperti ini.</p>							
+<ul class="navbar bg-crimson">
+	<li><a href="#">Core</a></li>
+	<li><a href="#">Learn</a></li>
+	<li><a href="#">Column</a></li>
+</ul>
+<br>
+<pre>
+<code>
+&ltul class="navbar bg-crimson"&gt
+ &ltli&gt&lta href="#"&gtCore&lt/a&gt&lt/li&gt
+ &ltli&gt&lta href="#"&gtLearn&lt/a&gt&lt/li&gt
+ &ltli&gt&lta href="#"&gtColumn&lt/a&gt&lt/li&gt
+&lt/ul&gt
+</code>
+</pre>
+								<p>Untuk memberikan efek hover halus, maka gunakan class="navbar-...". Pada kasus di bawah
+								kita berikan class="navbar-darkslategray". Warna hover navbar sama seperti warna color group, hanya tambahkan navbar-(nama-warna).
+								</p>
+<ul class="navbar bg-crimson navbar-darkslategray">
+	<li><a href="#">Core</a></li>
+	<li><a href="#">Learn</a></li>
+	<li><a href="#">Column</a></li>
+</ul>
+<br>
+<pre>
+<code>
+&ltul class="navbar bg-crimson navbar-darkslategray"&gt
+ &ltli&gt&lta href="#"&gtCore&lt/a&gt&lt/li&gt
+ &ltli&gt&lta href="#"&gtLearn&lt/a&gt&lt/li&gt
+ &ltli&gt&lta href="#"&gtColumn&lt/a&gt&lt/li&gt
+&lt/ul&gt
+</code>
+</pre>							
+								<p>Untuk memberikan efex shadow, berikan class="box-shadow"
+								</p>
+<ul class="navbar bg-crimson navbar-darkslategray box-shadow">
+	<li><a href="#">Core</a></li>
+	<li><a href="#">Learn</a></li>
+	<li><a href="#">Column</a></li>
+</ul>
+<br>
+<pre>
+<code>
+&ltul class="navbar bg-crimson navbar-darkslategray box-shadow"&gt
+ &ltli&gt&lta href="#"&gtCore&lt/a&gt&lt/li&gt
+ &ltli&gt&lta href="#"&gtLearn&lt/a&gt&lt/li&gt
+ &ltli&gt&lta href="#"&gtColumn&lt/a&gt&lt/li&gt
+&lt/ul&gt
+</code>
+</pre>					
+								<p>Untuk memberikan animation pada navbar, gunakan class="animation-...". 
+								Pada kasus ini kita akan memberikan animation-top, maka ketika halaman
+								kita refresh, navbar akan bergerak dari atas kebawah. Di pelajaran berikutnya, kita
+								akan membahas animation.
+								</p>
+<ul class="navbar bg-crimson navbar-darkslategray box-shadow animation-top" style="z-index:1!important">
+	<li><a href="#">Core</a></li>
+	<li><a href="#">Learn</a></li>
+	<li><a href="#">Column</a></li>
+</ul>
+<br>
+<pre>
+<code>
+&ltul class="navbar bg-crimson navbar-darkslategray box-shadow animation-top"&gt
+ &ltli&gt&lta href="#"&gtCore&lt/a&gt&lt/li&gt
+ &ltli&gt&lta href="#"&gtLearn&lt/a&gt&lt/li&gt
+ &ltli&gt&lta href="#"&gtColumn&lt/a&gt&lt/li&gt
+&lt/ul&gt
+</code>
+</pre>					
+								<p>Untuk Membuat navbar text sebalah kanan, kita masukan class="right".
+								</p>
+<ul class="navbar bg-crimson navbar-darkslategray box-shadow">
+	<li class="right"><a href="#">Core</a></li>
+	<li class="right"><a href="#">Learn</a></li>
+	<li class="right"><a href="#">Column</a></li>
+</ul>
+<br>
+<pre>
+<code>
+&ltul class="navbar bg-crimson navbar-darkslategray box-shadow"&gt
+ &ltli class="right"&gt&lta href="#"&gtCore&lt/a&gt&lt/li&gt
+ &ltli class="right"&gt&lta href="#"&gtLearn&lt/a&gt&lt/li&gt
+ &ltli class="right"&gt&lta href="#"&gtColumn&lt/a&gt&lt/li&gt
+&lt/ul&gt
+</code>
+</pre>		
+<br>			
+<ul class="navbar bg-crimson navbar-darkslategray box-shadow">
+	<li><a href="#">Core</a></li>
+	<li><a href="#">Learn</a></li>
+	<li class="right"><a href="#">Column</a></li>
+</ul>
+<br>
+<pre>
+<code>
+&ltul class="navbar bg-crimson navbar-darkslategray box-shadow"&gt
+ &ltli&gt&lta href="#"&gtCore&lt/a&gt&lt/li&gt
+ &ltli&gt&lta href="#"&gtLearn&lt/a&gt&lt/li&gt
+ &ltli class="right"&gt&lta href="#"&gtColumn&lt/a&gt&lt/li&gt
+&lt/ul&gt
+</code>
+</pre>					
+<p>Icon bars yang berada disamping kanan, dibuat dengan font awesome. Ini di panggil secara online<br>
+&ltlink rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"&gt
+</p>
+<ul class="navbar bg-crimson navbar-darkslategray box-shadow">
+	<li><a href="#">Core</a></li>
+	<li><a href="#">Learn</a></li>
+	<li class="right"><a href="#"><i class="fa fa-bars"></i></a></li>
+</ul>
+<br>
+<pre>
+<code>
+&ltDOCTYPE html&gt
+&lthtml lang="en"&gt
+&lthead&gt
+&lttitle&gtNavbar&lt/title&gt
+&ltmeta name="viewport" content="width=device-width, initial-scale=1"&gt
+&ltlink rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css"&gt
+&ltlink rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"&gt
+&lt/head&gt
+&ltbody&gt
+ &ltdiv class="container"&gt
+  &ltdiv class="interior"&gt
+   &ltul class="navbar bg-crimson navbar-darkslategray box-shadow"&gt
+    &ltli&gt&lta href="#"&gtCore&lt/a&gt&lt/li&gt
+    &ltli&gt&lta href="#"&gtLearn&lt/a&gt&lt/li&gt
+    &ltli class="right"&gt&lta href="#"&gt&lti class="fa fa-bars"&gt&lt/i&gt&lt/a&gt&lt/li&gt
+   &lt/ul&gt
+  &lt/div&gt
+ &lt/div&gt
+&lt/body&gt
+&lt/html&gt  
+</code>
+</pre>	
+<p class="subheader">Navbar Fixed</p>	
+<p>
+Untuk membuat navbar tetap, maka gunakan class fixed. Jika ingin membuatnya berada di atas, berikan class
+fixed-top dan jika ingin kebawah berikan class fixed-bottom.
+</p>			
+<br>
+<pre>
+<code>
+&ltul class="navbar bg-crimson navbar-darkslategray box-shadow fixed"&gt
+ &ltli&gt&lta href="#"&gtCore&lt/a&gt&lt/li&gt
+ &ltli&gt&lta href="#"&gtLearn&lt/a&gt&lt/li&gt
+ &ltli&gt&ltinput type="search" class="input-search" placeholder="Search"&gt&lt/li&gt
+ &ltli&gt&lta href="#"&gtColor&lt/a&gt&lt/li&gt
+ &ltli class="right"&gt&lta href="#"&gt&lti class="fa fa-bars"&gt&lt/i&gt&lt/a&gt&lt/li&gt
+&lt/ul&gt
+</code>
+</pre>
+								<p class="subheader">Navbar Dropdown</p>
+								<p>
+									Navbar Dropdown core tidak dibuat ketetapan pada warna link, maka gantilah warna link
+									sesuai keinginan anda, contoh pada kasus warna background-color dibawah
+									.navbar-dropdown a{color:#fff} pada style internal.
+								</p>
+								<p>
+									Supaya navbar dropdown active, maka anda harus menuliskan
+									class="active-....". Gunakan warna color group dan hanya menambahkan
+									active sebelumn nama warna color group.
+									Pada kasus di bawah, kita tambahkan class="active-crimson.
+									Itu di samakan dengan warna hover class="navbar-crimson".
+								</p>
+								<br>
+<ul class="navbar-dropdown bg-darkslategray navbar-crimson">
+	<li><a href="#home">Home</a></li>
+	<li><a href="#news">News</a></li>
+	<li class="ndropdown">
+		<a href="#" class="active-crimson">Dropdown</a>
+		<div class="ndropdown-content bg-darkslategray">
+			<a href="#">Link 1</a>
+			<a href="#">Link 2</a>
+			<a href="#">Link 3</a>
+		</div>
+	</li>
+</ul>
+<br>
+<pre>
+<code>
+&ltstyle&gt
+.navbar-dropdown a{color:#fff};
+&lt/style&gt
+</code>
+</pre>
+<ul class="navbar-dropdown bg-darkslategray navbar-crimson">
+	<li><a href="#home" class="white">Core</a></li>
+	<li><a href="#news" class="white">Learn</a></li>
+	<li class="ndropdown">
+		<a href="#" class="active-crimson white">Dropdown</a>
+		<div class="ndropdown-content bg-darkslategray">
+			<a href="#" class="white">Link 1</a>
+			<a href="#" class="white">Link 2</a>
+			<a href="#" class="white">Link 3</a>
+		</div>
+	</li>
+</ul>
+<br>
+<pre>
+<code>
+&ltul class="navbar-dropdown bg-darkslategray navbar-crimson"&gt
+ &ltli&gt&lta href="#home"&gtHome&lt/a&gt&lt/li&gt
+ &ltli&gt&lta href="#news"&gtNews&lt/a&gt&lt/li&gt
+ &ltli class="ndropdown"&gt
+  &lta href="#" class="active-crimson"&gtDropdown&lt/a&gt
+  &ltdiv class="ndropdown-content bg-darkslategray"&gt
+   &lta href="#"&gtLink 1&lt/a&gt
+   &lta href="#"&gtLink 2&lt/a&gt
+   &lta href="#"&gtLink 3&lt/a&gt
+  &lt/div&gt
+ &lt/li&gt
+&lt/ul&gt
+</code>
+</pre>
+<p class="subheader">Navbar Smooth</p>
+<p>
+Dengan dasar display flexbox, core coba membuat navbar yang berbeda dari sebelumnya, ini adalah 
+navbar smooth dengan dropdown click namun tidak menggunakan javascript. Navbar smooth masih
+belum stabil, karena belum bisa memisahkan element kiri dan kanan seperti navbar float, jadi
+navbar smooth hanya bisa menggantikan posisi keseluruhan, sebelah kiri atau sebelah kanan, tidak
+dapat memisahkan 1 element.
+</p>
+<ul class="navbar-smooth">
+	<li><a href="#">Home</a></li>
+		<li>
+			<div class="dropsmooth">
+				<input class="dropsmooth-toggle" type="text">
+				<div class="dropsmooth-text">Account</div>
+				<ul class="dropsmooth-content">
+					<li><a href="#">Settings</a></li>
+					<li><a href="#">Projects</a></li>
+					<li><a href="#">Log out</a></li>
+				</ul>
+			</div>
+		</li>
+	<li><a href="#">Profil</a></li>
+	<li><a href="#">About</a></li>
+</ul>
+<br>
+
+<pre>
+<code>
+&ltul class="navbar-smooth"&gt
+ &ltli&gt&lta href="#"&gtHome&lt/a&gt&lt/li&gt
+  &ltli&gt
+   &ltdiv class="dropsmooth"&gt
+    &ltinput class="dropsmooth-toggle" type="text"&gt
+    &ltdiv class="dropsmooth-text"&gtAccount&lt/div&gt
+     &ltul class="dropsmooth-content"&gt
+      &ltli&gt&lta href="#"&gtSettings&lt/a&gt&lt/li&gt
+      &ltli&gt&lta href="#"&gtProjects&lt/a&gt&lt/li&gt
+      &ltli&gt&lta href="#"&gtLog out&lt/a&gt&lt/li&gt
+     &lt/ul&gt
+   &lt/div&gt
+  &lt/li&gt
+  &ltli&gt&lta href="#"&gtProfil&lt/a&gt&lt/li&gt
+  &ltli&gt&lta href="#"&gtAbout&lt/a&gt&lt/li&gt
+&lt/ul&gt
+</code>
+</pre>
+
+<p>
+Untuk membuat navbar smooth menjadi sebelah kanan, gunakan right-flex.
+</p>
+<ul class="navbar-smooth right-flex">
+	<li><a href="#">Home</a></li>
+		<li>
+			<div class="dropsmooth">
+				<input class="dropsmooth-toggle" type="text">
+				<div class="dropsmooth-text">Account</div>
+				<ul class="dropsmooth-content">
+					<li><a href="#">Settings</a></li>
+					<li><a href="#">Projects</a></li>
+					<li><a href="#">Log out</a></li>
+				</ul>
+			</div>
+		</li>
+	<li><a href="#">Profil</a></li>
+	<li><a href="#">About</a></li>
+</ul>
+<br>
+<pre>
+<code>
+&ltul class="navbar-smooth right-flex"&gt
+ &ltli&gt&lta href="#"&gtHome&lt/a&gt&lt/li&gt
+  &ltli&gt
+   &ltdiv class="dropsmooth"&gt
+    &ltinput class="dropsmooth-toggle" type="text"&gt
+    &ltdiv class="dropsmooth-text"&gtAccount&lt/div&gt
+     &ltul class="dropsmooth-content"&gt
+      &ltli&gt&lta href="#"&gtSettings&lt/a&gt&lt/li&gt
+      &ltli&gt&lta href="#"&gtProjects&lt/a&gt&lt/li&gt
+      &ltli&gt&lta href="#"&gtLog out&lt/a&gt&lt/li&gt
+     &lt/ul&gt
+   &lt/div&gt
+  &lt/li&gt
+  &ltli&gt&lta href="#"&gtProfil&lt/a&gt&lt/li&gt
+  &ltli&gt&lta href="#"&gtAbout&lt/a&gt&lt/li&gt
+&lt/ul&gt
+</code>
+</pre>
+<p class="subheader">Navbar Alfa</p>
+<div class="navbar-alfa">
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Dropdown &nbsp;<i class="fa fa-caret-down"></i></a>
+			<ul>
+				<li><a href="#">Item</a></li>
+				<li><a href="#">Sub Dropdown &nbsp;<i class="fa fa-caret-right"></i></a>
+					<ul>
+						<li><a href="#">Item</a></li>
+						<li><a href="#">Item</a></li>
+						<li><a href="#">Item</a></li>
+						<li><a href="#">Item</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Item</a></li>
+				<li><a href="#">Item</a></li>
+			</ul>
+		</li>
+		<li><a href="#">History</a></li>
+		<li class="input-alfa">
+			<input type="search" placeholder="search...">
+			<button type="button"><i class="fa fa-search"></i></button>
+		</li>
+		<li class="right"><a href="#">About</a></li>
+	</ul>
+</div>
+<br>
+<pre>
+<code>
+&ltdiv class="navbar-alfa"&gt
+ &ltul&gt
+  &ltli&gt&lta href="#"&gtHome&lt/a&gt&lt/li&gt
+  &ltli&gt&lta href="#"&gtDropdown &nbsp;&lti class="fa fa-caret-down"&gt&lt/i&gt&lt/a&gt
+   &ltul&gt
+    &ltli&gt&lta href="#"&gtItem&lt/a&gt&lt/li&gt
+    &ltli&gt&lta href="#"&gtSub Dropdown &nbsp;&lti class="fa fa-caret-right"&gt&lt/i&gt&lt/a&gt
+     &ltul&gt
+      &ltli&gt&lta href="#"&gtItem&lt/a&gt&lt/li&gt
+      &ltli&gt&lta href="#"&gtItem&lt/a&gt&lt/li&gt
+      &ltli&gt&lta href="#"&gtItem&lt/a&gt&lt/li&gt
+      &ltli&gt&lta href="#"&gtItem&lt/a&gt&lt/li&gt
+     &lt/ul&gt
+    &lt/li&gt
+    &ltli&gt&lta href="#"&gtItem&lt/a&gt&lt/li&gt
+    &ltli&gt&lta href="#"&gtItem&lt/a&gt&lt/li&gt
+   &lt/ul&gt
+  &lt/li&gt
+  &ltli&gt&lta href="#"&gtHistory&lt/a&gt&lt/li&gt
+  &ltli class="input-alfa"&gt
+   &ltinput type="search" placeholder="search..."&gt
+   &ltbutton type="button"&gt&lti class="fa fa-search"&gt&lt/i&gt&lt/button&gt
+  &lt/li&gt
+  &ltli class="right"&gt&lta href="#"&gtAbout&lt/a&gt&lt/li&gt
+ &lt/ul&gt
+&lt/div&gt
+</code>
+</pre>
+
+<p class="subheader">Navbar Delta</p>
+<div class="navbar-delta">
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Dropdown &nbsp;<i class="fa fa-caret-down"></i></a>
+			<ul>
+				<li><a href="#">Item</a></li>
+				<li><a href="#">Sub Dropdown &nbsp;<i class="fa fa-caret-right"></i></a>
+					<ul>
+						<li><a href="#">Item</a></li>
+						<li><a href="#">Item</a></li>
+						<li><a href="#">Item</a></li>
+						<li><a href="#">Item</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Item</a></li>
+				<li><a href="#">Item</a></li>
+			</ul>
+		</li>
+		<li><a href="#">History</a></li>
+		<li class="input-delta">
+			<input type="search" placeholder="search...">
+			<button type="button"><i class="fa fa-search"></i></button>
+		</li>
+		<li class="right"><a href="#">About</a></li>
+	</ul>
+</div>
+<br>
+<pre>
+<code>
+&ltdiv class="navbar-delta"&gt
+ &ltul&gt
+  &ltli&gt&lta href="#"&gtHome&lt/a&gt&lt/li&gt
+  &ltli&gt&lta href="#"&gtDropdown &nbsp;&lti class="fa fa-caret-down"&gt&lt/i&gt&lt/a&gt
+   &ltul&gt
+    &ltli&gt&lta href="#"&gtItem&lt/a&gt&lt/li&gt
+    &ltli&gt&lta href="#"&gtSub Dropdown &nbsp;&lti class="fa fa-caret-right"&gt&lt/i&gt&lt/a&gt
+     &ltul&gt
+      &ltli&gt&lta href="#"&gtItem&lt/a&gt&lt/li&gt
+      &ltli&gt&lta href="#"&gtItem&lt/a&gt&lt/li&gt
+      &ltli&gt&lta href="#"&gtItem&lt/a&gt&lt/li&gt
+      &ltli&gt&lta href="#"&gtItem&lt/a&gt&lt/li&gt
+     &lt/ul&gt
+    &lt/li&gt
+    &ltli&gt&lta href="#"&gtItem&lt/a&gt&lt/li&gt
+    &ltli&gt&lta href="#"&gtItem&lt/a&gt&lt/li&gt
+   &lt/ul&gt
+  &lt/li&gt
+  &ltli&gt&lta href="#"&gtHistory&lt/a&gt&lt/li&gt
+  &ltli class="input-delta"&gt
+   &ltinput type="search" placeholder="search..."&gt
+   &ltbutton type="button"&gt&lti class="fa fa-search"&gt&lt/i&gt&lt/button&gt
+  &lt/li&gt
+  &ltli class="right"&gt&lta href="#"&gtAbout&lt/a&gt&lt/li&gt
+ &lt/ul&gt
+&lt/div&gt
+</code>
+</pre>
+
+<p class="subheader">Navbar Ultimate</p>
+<p>Penulis merekomendasikan menggunakan navbar ultimate jika ingin navbar terlihat bagus di semua ukuran.</p>
+<ul class="nav">
+			<li class="hm hl"><a href="#"><i class="fa fa-bars"></i></a>
+				<ul class="nav-small">
+					<li><a href="#">Phone</a></li>
+					<li><a href="#">Phone</a></li>
+					<li><a href="#">Phone</a></li>
+				</ul>
+			</li>
+			<li class="hm hl" style="float:right"><a href="#"><i class="fa fa-bars"></i></a>
+				<ul class="nav-small-right">
+					<li><a href="#">Phone</a></li>
+					<li><a href="#">Phone</a></li>
+					<li><a href="#">Phone</a></li>
+				</ul>
+			</li>
+			<li class="hs"><a href="#"><i class="fa fa-home"></i>&nbsp; Nav</a></li>
+			<li class="hs"><a href="#">Dropdown &nbsp;<i class="fa fa-caret-down"></i></a>
+						<ul class="subnav">
+							<li><a href="#">Subnav</a></li>
+							<li><a href="#">Subnav-2 &nbsp;<i class="fa fa-caret-right"></i></a>
+								<ul class="subnav-2">
+									<li><a href="#">Subnav-2.1</a></li>
+									<li><a href="#">Subnav-2.2</a></li>
+									<li><a href="#">Subnav-2.3</a></li>
+									<li><a href="#">Subnav-2.4</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Subnav</a>
+							</li>
+							<li><a href="#">Subnav</a></li>
+						</ul>
+			</li>
+			<li class="hs"><a href="#">Dropdown Inline &nbsp;<i class="fa fa-caret-down"></i></a>
+						<ul class="subnav-inline">
+							<li><a href="#">Inline 1</a></li>
+							<li><a href="#">Inline 2</a></li>
+							<li><a href="#">Inline 3</a></li>
+							<li><a href="#">Inline 4</a></li>
+						</ul>
+			</li>
+			<li class="nav-search hs"><a href="#"><i class="fa fa-search"></i></a>
+				<input type="search" name="search">
+			<li>
+			<li class="hs right"><a href="#"><i class="fa fa-caret-down"></i>&nbsp; Dropdown</a>
+						<ul class="subnav-right">
+							<li><a href="#">Subnav</a></li>
+							<li><a href="#"><i class="fa fa-caret-left"></i>&nbsp; Subnav-2</a>
+								<ul class="subnav-2-right">
+									<li><a href="#">Subnav-2</a></li>
+									<li><a href="#">Subnav-2</a></li>
+									<li><a href="#">Subnav-2</a></li>
+									<li><a href="#">Subnav-2</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Subnav</a>
+							</li>
+							<li><a href="#">Subnav</a></li>
+						</ul>
+			</li>
+		</ul>	
+<br>
+<pre>
+<code>
+&ltul class="nav"&gt
+ &ltli class="hm hl"&gt&lta href="#"&gt&lti class="fa fa-bars"&gt&lt/i&gt&lt/a&gt
+  &lt!-- Membuat navbar ketika ukuran smartphone --&gt
+  &ltul class="nav-small"&gt
+   &ltli&gt&lta href="#"&gtPhone&lt/a&gt&lt/li&gt
+   &ltli&gt&lta href="#"&gtPhone&lt/a&gt&lt/li&gt
+   &ltli&gt&lta href="#"&gtPhone&lt/a&gt&lt/li&gt
+  &lt/ul&gt
+ &lt/li&gt
+ &ltli class="hm hl right"&gt&lta href="#"&gt&lti class="fa fa-bars"&gt&lt/i&gt&lt/a&gt
+  &ltul class="nav-small-right"&gt
+   &ltli&gt&lta href="#"&gtPhone&lt/a&gt&lt/li&gt
+   &ltli&gt&lta href="#"&gtPhone&lt/a&gt&lt/li&gt
+   &ltli&gt&lta href="#"&gtPhone&lt/a&gt&lt/li&gt
+  &lt/ul&gt
+ &lt/li&gt
+ &ltli class="hs"&gt&lta href="#"&gt&lti class="fa fa-home"&gt&lt/i&gt&nbsp; Nav&lt/a&gt&lt/li&gt
+ &ltli class="hs"&gt&lta href="#"&gtDropdown &nbsp;&lti class="fa fa-caret-down"&gt&lt/i&gt&lt/a&gt
+  &ltul class="subnav"&gt
+   &ltli&gt&lta href="#"&gtSubnav&lt/a&gt&lt/li&gt
+   &ltli&gt&lta href="#"&gtSubnav-2 &nbsp;&lti class="fa fa-caret-right"&gt&lt/i&gt&lt/a&gt
+    &ltul class="subnav-2"&gt
+     &ltli&gt&lta href="#"&gtSubnav-2.1&lt/a&gt&lt/li&gt
+     &ltli&gt&lta href="#"&gtSubnav-2.2&lt/a&gt&lt/li&gt
+     &ltli&gt&lta href="#"&gtSubnav-2.3&lt/a&gt&lt/li&gt
+     &ltli&gt&lta href="#"&gtSubnav-2.4&lt/a&gt&lt/li&gt
+    &lt/ul&gt
+   &lt/li&gt
+   &ltli&gt&lta href="#"&gtSubnav&lt/a&gt&lt/li&gt
+   &ltli&gt&lta href="#"&gtSubnav&lt/a&gt&lt/li&gt
+  &lt/ul&gt
+ &lt/li&gt
+ &ltli class="hs"&gt&lta href="#"&gtDropdown Inline &nbsp;&lti class="fa fa-caret-down"&gt&lt/i&gt&lt/a&gt
+  &ltul class="subnav-inline"&gt
+   &ltli&gt&lta href="#"&gtInline 1&lt/a&gt&lt/li&gt
+   &ltli&gt&lta href="#"&gtInline 2&lt/a&gt&lt/li&gt
+   &ltli&gt&lta href="#"&gtInline 3&lt/a&gt&lt/li&gt
+   &ltli&gt&lta href="#"&gtInline 4&lt/a&gt&lt/li&gt
+  &lt/ul&gt
+ &lt/li&gt
+ &ltli class="nav-search hs"&gt&lta href="#"&gt&lti class="fa fa-search"&gt&lt/i&gt&lt/a&gt
+  &ltinput type="search" name="search"&gt
+ &ltli&gt
+ &ltli class="hs right"&gt&lta href="#"&gt&lti class="fa fa-caret-down"&gt&lt/i&gt&nbsp; Dropdown&lt/a&gt
+  &ltul class="subnav-right"&gt
+   &ltli&gt&lta href="#"&gtSubnav&lt/a&gt&lt/li&gt
+   &ltli&gt&lta href="#"&gt&lti class="fa fa-caret-left"&gt&lt/i&gt&nbsp; Subnav-2&lt/a&gt
+    &ltul class="subnav-2-right"&gt
+     &ltli&gt&lta href="#"&gtSubnav-2&lt/a&gt&lt/li&gt
+     &ltli&gt&lta href="#"&gtSubnav-2&lt/a&gt&lt/li&gt
+     &ltli&gt&lta href="#"&gtSubnav-2&lt/a&gt&lt/li&gt
+     &ltli&gt&lta href="#"&gtSubnav-2&lt/a&gt&lt/li&gt
+    &lt/ul&gt
+   &lt/li&gt
+   &ltli&gt&lta href="#"&gtSubnav&lt/a&gt&lt/li&gt
+   &ltli&gt&lta href="#"&gtSubnav&lt/a&gt&lt/li&gt
+  &lt/ul&gt
+ &lt/li&gt
+&lt/ul&gt
+</code>
+</pre>		
+						</div>
+					</div>
+					<!-- End Navbar -->
+					
+					<!-- Pagination -->
+					<h4 class="section" id="pagination">Pagination</h4> 
+<div class="bottombar-crimson box-shadow section-m"></div>
+	<ul class="pagination"> 
+		<li><a href= "#"><span> &laquo; </span></a></li> 
+		<li><a href= "#"> 1 </a></li> 
+		<li><a href= "#"> 2 </a></li> 
+		<li><a href= "#"> 3 </a></li> 
+		<li><a href= "#"> 4 </a></li> 
+		<li><a href= "#"> 5 </a></li> 
+		<li><a href= "#"><span> &raquo; </span></a></li> 
+	</ul> 
+
+<pre>
+<code>
+&ltul class="pagination"&gt 
+ &ltli&gt&lta href= "#"&gt&ltspan&gt &laquo; &lt/span&gt&lt/a&gt&lt/li&gt 
+ &ltli&gt&lta href= "#"&gt 1 &lt/a&gt&lt/li&gt 
+ &ltli&gt&lta href= "#"&gt 2 &lt/a&gt&lt/li&gt 
+ &ltli&gt&lta href= "#"&gt 3 &lt/a&gt&lt/li&gt 
+ &ltli&gt&lta href= "#"&gt 4 &lt/a&gt&lt/li&gt 
+ &ltli&gt&lta href= "#"&gt 5 &lt/a&gt&lt/li&gt 
+ &ltli&gt&lta href= "#"&gt&ltspan&gt &raquo; &lt/span&gt&lt/a&gt&lt/li&gt 
+&lt/ul&gt 
+</code>
+</pre>
+
+<p class="subheader">Pager (Previous & Next)</p> 	
+	<ul class="pager"> 
+		<li><a href="#"> Previous </a></li> 
+		<li><a href="#"> Next </a></li> 
+	</ul> 
+
+<pre>
+<code>
+&ltul class="pager"&gt 
+ &ltli&gt&lta href="#"&gt Previous &lt/a&gt&lt/li&gt 
+ &ltli&gt&lta href="#"&gt Next &lt/a&gt&lt/li&gt 
+&lt/ul&gt 
+</code>
+</pre>
+
+<p class="subheader">Pager (Right Left)</p> 	
+<ul class="pager"> 
+	<li class="previous"><a href="#">
+		<span> &larr; </span> Older </a>
+	</li> 
+	<li class="next"><a href="#"> Newer 
+		<span> &rarr; </span></a>
+	</li> 
+</ul>
+
+
+<pre>
+<code>
+&ltul class="pager"&gt 
+ &ltli class="previous"&gt&lta href="#"&gt
+  &ltspan&gt &larr; &lt/span&gt Older &lt/a&gt
+ &lt/li&gt 
+ &ltli class="next"&gt&lta href="#"&gt Newer 
+  &ltspan&gt &rarr; &lt/span&gt&lt/a&gt
+ &lt/li&gt 
+&lt/ul&gt
+</code>
+</pre>
+
+<p class="subheader">Pager Disabled</p> 	
+<ul class="pager"> 
+	<li class="previous disabled"><a href= "#" >
+		<span> &larr; </span> Older </a>
+	</li> 
+	<li class="next"><a href="#"> Newer 
+		<span> &rarr; </span></a>
+	</li> 
+</ul>
+<pre>
+<code>
+&ltul class="pager"&gt 
+ &ltli class="previous disabled"&gt&lta href= "#"&gt
+  &ltspan&gt &larr; &lt/span&gt Older &lt/a&gt
+ &lt/li&gt 
+ &ltli class="next"&gt&lta href="#"&gt Newer 
+  &ltspan&gt &rarr; &lt/span&gt&lt/a&gt
+ &lt/li&gt 
+&lt/ul&gt
+</code>
+</pre>
+<br>
+					<!-- End Pagination -->
+					
+					<!-- Ribbon -->
+					<h4 class="section" id="ribbon">Ribbon</h4> 
+<div class="bottombar-crimson box-shadow section-m"></div>
+<a href= "#"> Inbox <span class= "ribbon"> 7 </span></a>
+<a href= "#" class="button info"> Inbox <span class="ribbon"> 7 </span></a>
+
+<br>
+<br>
+<pre>
+<code>
+&lta href="#"&gt Inbox &ltspan class="ribbon"&gt 8 &lt/span&gt&lt/a&gt
+&lta href="#" class="button info"&gt Inbox &ltspan class="ribbon"&gt 8 &lt/span&gt&lt/a&gt
+</code>
+</pre>
+<br>
+					<!-- End Ribbon -->
+					
+					<!-- Progressbar -->
+					<h4 class="section" id="progressbar">Progress Bar</h4> 
+<div class="bottombar-crimson box-shadow section-m"></div>
+<p>HTML</p>
+<div class="progress progress-radius box-shadow font-14">
+	<div class="progressbar box-shadow progress-radius bg-green" style="width:90%">
+		<div class="center-align white">90%</div>
+	</div>
+</div>
+<p>CSS</p>
+<div class="progress progress-radius box-shadow font-14">
+	<div class="progressbar box-shadow progress-radius bg-green" style="width:90%">
+		<div class="center-align white">90%</div>
+	</div>
+</div>
+<p>JavaScript</p>
+<div class="progress progress-radius box-shadow font-14">
+	<div class="progressbar box-shadow progress-radius bg-gold" style="width:70%">
+		<div class="center-align white">70%</div>
+	</div>
+</div>
+<br>
+<pre>
+<code>
+&ltp&gtHTML&lt/p&gt
+&ltdiv class="progress progress-radius box-shadow font-14"&gt
+ &ltdiv class="progressbar box-shadow progress-radius bg-green" style="width:90%"&gt
+  &ltdiv class="center-align white"&gt90%&lt/div&gt
+ &lt/div&gt
+&lt/div&gt
+&ltp&gtCSS&lt/p&gt
+&ltdiv class="progress progress-radius box-shadow font-14"&gt
+ &ltdiv class="progressbar box-shadow progress-radius bg-green" style="width:90%"&gt
+  &ltdiv class="center-align white"&gt90%&lt/div&gt
+ &lt/div&gt
+&lt/div&gt
+&ltp&gtJavaScript&lt/p&gt
+&ltdiv class="progress progress-radius box-shadow font-14"&gt
+ &ltdiv class="progressbar box-shadow progress-radius bg-gold" style="width:70%"&gt
+  &ltdiv class="center-align white"&gt70%&lt/div&gt
+ &lt/div&gt
+&lt/div&gt
+</code>
+</pre>
+
+					<!-- End Progressbar -->
+					
+					<!-- Sidebar List -->
+					<h4 class="section" id="sidebarlist">Sidebar List</h4> 
+<div class="bottombar-crimson box-shadow section-m"></div>
+<p class="subheader">Media Default</p>
+<p>Ukuran gambar bisa dibuat random, namun tidak di rekomendasikan terlalu besar.</p>
+<div class="sidebar-list"> 
+	<div class="media-left"> 
+		<a href= "#"> <img class="media-object" alt= "equal 60px" 
+			style="background-color:#eee;width:60px;height:60px"> 
+		</a> 
+	</div> 
+	<div class="media-container"> 
+		<h5 class= "media-header"> Media heading </h5>
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</div> 
+</div>
+<br>
+<pre>
+<code>
+&ltdiv class="sidebar-list"&gt 
+ &ltdiv class="media-left"&gt 
+  &lta href= "#"&gt &ltimg class="media-object" alt= "equal 60px" 
+   style="background-color:#eee;width:60px;height:60px"&gt 
+  &lt/a&gt 
+ &lt/div&gt 
+ &ltdiv class="media-container"&gt 
+ &lth5 class= "media-header"&gt Media heading &lt/h5&gt
+  &ltp&gt
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  &lt/p&gt
+ &lt/div&gt 
+&lt/div&gt
+</code>
+</pre>
+<p>Untuk membuat media posisi Top, masukan class="media-top"</p>
+<pre>
+<code>
+&ltdiv class="media-left media-top"&gt 
+</code>
+</pre>
+<p>Untuk membuat media posisi middle, masukan class="media-middle"</p>
+<pre>
+<code>
+&ltdiv class="media-left media-middle"&gt 
+</code>
+</pre>
+<p>Untuk membuat media posisi bottom, masukan class="media-bottom"</p>
+<pre>
+<code>
+&ltdiv class="media-left media-bottom"&gt 
+</code>
+</pre>
+<p class="subheader">Media Top</p>
+<div class="sidebar-list"> 
+	<div class="media-left media-top"> 
+		<a href= "#" > <img class= "media-object" alt= "Equal 60px" 
+			style="background-color:#eee;width:60px;height:60px"> 
+		</a> 
+	</div> 
+	<div class="media-container"> 
+		<h5 class="media-header"> Middle </h5>
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</div> 
+</div>
+<p class="subheader">Media Middle</p>
+<div class="sidebar-list"> 
+	<div class="media-left media-middle"> 
+		<a href= "#" > <img class= "media-object" alt= "Equal 60px" 
+			style="background-color:#eee;width:60px;height:60px"> 
+		</a> 
+	</div> 
+	<div class="media-container"> 
+		<h5 class="media-header"> Middle </h5>
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</div> 
+</div>
+<p class="subheader">Media Bottom</p>
+<div class="sidebar-list"> 
+	<div class="media-left media-bottom"> 
+		<a href= "#" > <img class= "media-object" alt= "Equal 60px" 
+			style="background-color:#eee;width:60px;height:60px"> 
+		</a> 
+	</div> 
+	<div class="media-container"> 
+		<h5 class="media-header"> Middle </h5>
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</div> 
+</div>
+
+					<!-- End Sidebar List -->
+					
+					<!-- Video -->
+					<h4 class="section" id="video">Video</h4> 
+<div class="bottombar-crimson box-shadow section-m"></div>
+<!-- 16:9 aspect ratio --> 
+<p class="subheader">Video 16:9</p>
+<div class="video v16by9 bg-crimson"> 
+	<iframe class="video-item" src=""></iframe> 
+	<div class="position-middle">
+		Video 16:9
+	</div>
+</div> 
+<!-- 4:3 aspect ratio --> 
+<p class="subheader">Video 4:3</p>
+<div class="video v4by3 bg-crimson"> 
+	<iframe class="video-item" src=""></iframe> 
+	<div class="position-middle">
+		Video 4:3
+	</div>
+</div>
+<br>
+<pre>
+<code>
+&lt!-- 16:9 aspect ratio --&gt 
+&ltp class="subheader"&gtVideo 16:9&lt/p&gt
+&ltdiv class="video v16by9 bg-crimson"&gt 
+ &ltiframe class="video-item" src=""&gt&lt/iframe&gt 
+ &ltdiv class="position-middle"&gt
+  Video 16:9
+ &lt/div&gt
+&lt/div&gt 
+&lt!-- 4:3 aspect ratio --&gt 
+&ltp class="subheader"&gtVideo 4:3&lt/p&gt
+&ltdiv class="video v4by3 bg-crimson"&gt 
+ &ltiframe class="video-item" src=""&gt&lt/iframe&gt 
+ &ltdiv class="position-middle"&gt
+  Video 4:3
+ &lt/div&gt
+&lt/div&gt
+</code>
+</pre>
+					<!-- End Video -->
+					
+					<!-- Sidebar -->
+					<h4 class="section" id="sidebar">Sidebar</h4> 
+<div class="bottombar-crimson box-shadow section-m"></div>
+<p>Membuat sidebar sebelah kanan, lihat disini <a href="page/sidebar.html" class="hlink-underline">Go!</a></p>
+					<!-- End Sidebar -->
+					
+					<!-- Opacity -->
+					<h4 class="section" id="opacity">Opacity</h4> 
+<div class="bottombar-crimson box-shadow section-m"></div>
+<div class="alert success opacity-min">
+opacity-min
+</div>
+<br>
+<div class="alert success opacity">
+opacity
+</div>
+<br>
+<div class="alert success opacity-max">
+opacity-max
+</div>
+<br>
+<div class="alert success hover-opacity">
+Hover Opacity
+</div>
+<br>
+
+<pre>
+<code>
+&ltdiv class="alert success opacity-min"&gt
+opacity-min
+&lt/div&gt
+
+&ltdiv class="alert success opacity"&gt
+opacity
+&lt/div&gt
+
+&ltdiv class="alert success opacity-max"&gt
+opacity-max
+&lt/div&gt
+
+&ltdiv class="alert success hover-opacity"&gt
+Hover Opacity
+&lt/div&gt
+</code>
+</pre>
+
+					<!-- End Opacity -->
+					
+					<!-- Shadow -->
+					<h4 class="section" id="shadow">Shadow</h4> 
+<div class="bottombar-crimson box-shadow section-m"></div>
+<p>Box Shadow</p>
+<div class="alert success box-shadow">
+box-shadow
+</div>
+<br>
+<div class="section center-align">
+<h3 class="text-shadow">text-shadow</h3>
+</div>
+<br>
+
+<pre>
+<code>
+&ltdiv class="alert success box-shadow"&gt
+ box-shadow
+&lt/div&gt
+
+&ltdiv class="section center-align"&gt
+ &lth3 class="text-shadow"&gttext-shadow&lt/h3&gt
+&lt/div&gt
+</code>
+</pre>
+					<!-- End Shadow -->
+					
+					<!-- Hide -->
+					<h4 class="section" id="hide">Hide</h4> 
+<div class="bottombar-crimson box-shadow section-m"></div>
+<div class="dl-horizontal">
+ <dt>hs :</dt>
+ <dd>Membuat content menghilang pada ukuran smartphone</dd>
+ <dt>hm :</dt> 
+ <dd>Membuat content menghilang pada ukuran Tablet</dd>
+ <dt>hl :</dt> 
+ <dd>Membuat content menghilang pada ukuran Laptop or Computer</dd>
+ <dt>hidden :</dt>
+ <dd>Membuat content seolah menghilang tetapi masih berada pada tempatnya</dd>
+ <dt>hide :</dt>
+ <dd>Menghilangkan Content seutuhnya</dd>
+ <dt>show :</dt>
+ <dd>Membuat content terlihat</dd>
+</div>
+<br>
+<div class="hs">
+Text pada ukuran smartphone menghilang
+</div> 
+<div class="hm">
+Text pada ukuran Tablet menghilang
+</div> 
+<p>text disini telah menghilang</p>
+<div class="hl">
+Text pada ukuran Laptop/Computer menghilang
+</div> 
+<br>
+<pre>
+<code>
+&ltdiv class="hs"&gt
+Text pada ukuran smartphone menghilang
+&lt/div&gt 
+&ltdiv class="hm"&gt
+Text pada ukuran Tablet menghilang
+&lt/div&gt 
+&ltdiv class="hl"&gt
+Text pada ukuran Laptop/Computer menghilang
+&lt/div&gt
+&ltdiv class="hidden"&gt
+Text Menghilang tetapi tidak meninggalkan ruang.
+&lt/div&gt
+&ltdiv class="none"&gt
+Hilang Permanent
+&lt/div&gt
+&ltdiv class="show"&gt
+Menampilkan
+&lt/div&gt
+</code>
+</pre>
+					<!-- End Hide -->
+					
+					<!-- Animation -->
+					<h4 class="section" id="animation">Animation</h4> 
+<div class="bottombar-crimson box-shadow section-m"></div>
+
+<div class="animation-fading secpad border-lightgray">
+ <div class="interior">
+  Animation Kabur
+ </div>
+</div>
+<div class="animation-opacity secpad border-lightgray">
+ <div class="interior">
+  Animation Tembus Pandang
+ </div>
+</div>
+<div class="animation-top secpad border-lightgray">
+ <div class="interior">
+  Animation Top
+ </div>
+</div>
+<div class="animation-right secpad border-lightgray">
+ <div class="interior">
+  Animation Right | Agar terlihat baik, maka kita harus membuat overflow-x menjadi hidden.
+ </div>
+</div>
+<div class="animation-bottom secpad border-lightgray">
+ <div class="interior">
+  Animation Bottom
+ </div>
+</div>
+<div class="animation-left secpad border-lightgray">
+ <div class="interior">
+  Animation Left
+ </div>
+</div>
+<div class="animation-zoom secpad border-lightgray">
+ <div class="interior">
+  Animation Zoom
+ </div>
+</div>
+<br>
+<pre>
+<code>
+&ltdiv class="animation-fading secpad border-lightgray"&gt
+ &ltdiv class="interior"&gt
+  Animation Kabur
+ &lt/div&gt
+&lt/div&gt
+&ltdiv class="animation-opacity secpad border-lightgray"&gt
+ &ltdiv class="interior"&gt
+  Animation Tembus Pandang
+ &lt/div&gt
+&lt/div&gt
+&ltdiv class="animation-top secpad border-lightgray"&gt
+ &ltdiv class="interior"&gt
+  Animation Top
+ &lt/div&gt
+&lt/div&gt
+&ltdiv class="animation-right secpad border-lightgray"&gt
+ &ltdiv class="interior"&gt
+  Animation Right | Agar terlihat baik, maka kita harus membuat overflow-x menjadi hidden.
+ &lt/div&gt
+&lt/div&gt
+&ltdiv class="animation-bottom secpad border-lightgray"&gt
+ &ltdiv class="interior"&gt
+  Animation Bottom
+ &lt/div&gt
+&lt/div&gt
+&ltdiv class="animation-left secpad border-lightgray"&gt
+ &ltdiv class="interior"&gt
+  Animation Left
+ &lt/div&gt
+&lt/div&gt
+&ltdiv class="animation-zoom secpad border-lightgray"&gt
+ &ltdiv class="interior"&gt
+  Animation Zoom
+ &lt/div&gt
+&lt/div&gt
+</code>
+</pre>
+<br>
+<br>
+					<!-- End Animation -->
+					
+					<!-- Position -->
+					<h4 class="section" id="position">Position</h4> 
+<div class="bottombar-crimson box-shadow section-m"></div>
+<p>Text di samping kiri adalah nama class untuk memposisikan content</p>
+<div class="dl-horizontal">
+ <dt>relative :</dt>
+ <dd>Membuat posisi menjadi relative</dd>
+ <dt>absolute :</dt> 
+ <dd>Membuat posisi menjadi absolute</dd>
+ <dt>static :</dt> 
+ <dd>Membuat posisi menjadi static</dd>
+ <dt>fixed :</dt>
+ <dd>Membuat posisi menjadi fixed</dd>
+ <dt>fixed-top :</dt>
+ <dd>Membuat posisi menjadi fixed 0 di atas</dd>
+ <dt>fixed-bottom :</dt>
+ <dd>Membuat posisi menjadi fixed 0 di bawah</dd>
+ <dt>position-container:</dt>
+ <dd>Pembungkus posisi</dd>
+ 
+ <dt>position-left:</dt>
+ <dd>Membuat content berada di tengah sebelah kiri</dd>
+ 
+ <dt>position-right:</dt>
+ <dd>Membuat content berada di tengah sebelah kanan</dd>
+ 
+ <dt>position-topmiddle:</dt>
+ <dd>Membuat content berada di tengah atas</dd>
+ 
+ <dt>Position-bottommiddle:</dt>
+ <dd>Membuat content berada di tengah bawah</dd>
+ 
+ <dt>Position-middle:</dt>
+ <dd>Membuat content berada ditengah tepat</dd>
+ 
+ <dt>Position-topleft:</dt>
+ <dd>Membuat content berada di atas sebelah kiri</dd>
+ 
+ <dt>Position-topright:</dt>
+ <dd>Membuat content berada di atas sebelah kanan</dd>
+ 
+ <dt>Position-bottomright:</dt>
+ <dd>Membuat content berada di bawah sebelah kanan</dd>
+ 
+ <dt>Position-bottomleft:</dt>
+ <dd>Membuat content berada di bawah sebelah kiri</dd>
+ 
+ <dt>left:</dt>
+ <dd>Membuat float sebelah kiri</dd>
+ 
+ <dt>right:</dt>
+ <dd>Membuat float sebelah kanan</dd>
+ 
+ <dt>left-flex:</dt>
+ <dd>Membuat flexbox dari sebelah kiri</dd>
+ 
+ <dt>right-flex:</dt>
+ <dd>Membuat flexbox dari sebelah kanan</dd>
+</div>
+<br>
+
+<div class="position-container bg-crimson" style="width:100%;height:400px">
+ <div class="position-left">
+ position-left
+ </div>
+ <div class="position-right">
+ position-right
+ </div>
+ <div class="position-topmiddle">
+ position-topmiddle
+ </div>
+ <div class="position-bottommiddle">
+ position-bottommiddle
+ </div>
+ <div class="position-middle">
+ position-middle
+ </div>
+ <div class="position-topleft">
+ position-topleft
+ </div>
+ <div class="position-topright">
+ position-topright
+ </div>
+ <div class="position-bottomright">
+ position-bottomright
+ </div>
+ <div class="position-bottomleft">
+ position-bottomleft
+ </div>
+</div>
+<br>
+
+<pre>
+<code>
+&ltdiv class="position-container bg-crimson" style="width:100%;height:400px"&gt
+ &ltdiv class="position-left"&gt
+ position-left
+ &lt/div&gt
+ &ltdiv class="position-right"&gt
+ position-right
+ &lt/div&gt
+ &ltdiv class="position-topmiddle"&gt
+ position-topmiddle
+ &lt/div&gt
+ &ltdiv class="position-bottommiddle"&gt
+ position-bottommiddle
+ &lt/div&gt
+ &ltdiv class="position-middle"&gt
+ position-middle
+ &lt/div&gt
+ &ltdiv class="position-topleft"&gt
+ position-topleft
+ &lt/div&gt
+ &ltdiv class="position-topright"&gt
+ position-topright
+ &lt/div&gt
+ &ltdiv class="position-bottomright"&gt
+ position-bottomright
+ &lt/div&gt
+ &ltdiv class="position-bottomleft"&gt
+ position-bottomleft
+ &lt/div&gt
+&lt/div&gt
+</code>
+</pre>
+<br>
+<br>
+					<!-- End Position -->
+				</div>
+			</div>
+			
+			
+			<!-- Footer -->
+			<div class="box-shadow bg-crimson white animation-bottom" style="padding:32px 16px">
+				<p class="center-align">
+					Core is a CSS framework created by Andika Chamberlin. 
+				</p>
+				<p class="font center-align">Copyright © Andika Chamberlin.</p>
+			</div>
+			<!-- End Footer -->
+			
+		</div>
+		<!-- End Main -->
+		
+	</div>
+	<!-- End Container Full -->
 </body>
 <script>
+function dropdown() {
+    document.getElementById("dropdownMenu").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+	if (!event.target.matches('.dropdown-button')) {
+
+    var dropdowns = document.getElementsByClassName("dropnav-content");
+    var i;
+	for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+function dropdownExample() {
+    document.getElementById("dropdownMenuExample").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+	if (!event.target.matches('.dropdown-button')) {
+
+    var dropdowns = document.getElementsByClassName("dropnav-content");
+    var i;
+	for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
 </script>
 </html>
