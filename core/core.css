@@ -3933,11 +3933,14 @@ template {
   border-right: 6px solid #ccc;
 }
 .dl-horizontal:before,
-.dl-horizontal:after{
+.dl-horizontal:after,
+.dl-horizontal dd:before,
+.dl-horizontal dd:after{
 	display: table;
 	content: " ";
 }
-.dl-horizontal:after{
+.dl-horizontal:after,
+.dl-horizontal dd:after{
   clear: both;
 }
 .dl-horizontal dt {
@@ -3953,6 +3956,7 @@ template {
 }
 .dl-horizontal dd {
     margin-left: 166px;
+	margin-top: 1.9px;
 }
 @media (max-width:600px){
 	.dl-horizontal dt{
