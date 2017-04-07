@@ -1,5 +1,5 @@
 /*!
- * Core Version 1.2 by getcore.github.io
+ * Core Version 1.3 by getcore.github.io
  * Copyright 2017 Flamecore
  * Github site github.com/getcore/core
  * Author Andika Chamberlin Follow Me twitter.com/andikamingo
@@ -578,6 +578,8 @@ template {
 .inside:after,
 .interior:before,
 .interior:after,
+.equal:before,
+.equal:after,
 .container:before,
 .container:after,
 .container-equal:before,
@@ -589,6 +591,7 @@ template {
 }
 .inside:after,
 .interior:after,
+.equal:after,
 .container:after,
 .container-equal:after,
 .container-full:after{
@@ -599,6 +602,9 @@ template {
 }
 .interior{
 	padding:0 16px;
+}
+.equal{
+	padding:16px;
 }
 .container {
 	margin:0 24px;
@@ -2407,6 +2413,190 @@ template {
 .border-black{border: 1px solid #000000}
 
 /*============================================= End Border Group ================================================*/
+
+
+/*=========================================== Border Dashed Group ===============================================*/
+
+/* Color Pink */
+.dashed-pink{border: 1px dashed #FFC0CB}
+.dashed-lightpink {border: 1px dashed #FFB6C1}
+.dashed-hotpink{border: 1px dashed #FF69B4}
+.dashed-deeppink{border: 1px dashed #FF1493}
+.dashed-palevioletred{border: 1px dashed #DB7093}
+.dashed-mediumvioletred{border: 1px dashed #C71585}
+
+/* Color Purple */
+.dashed-lavender{border: 1px dashed #e6e6fa} 		
+.dashed-thistle{border: 1px dashed #d8bfd8!important} 		
+.dashed-plum{border: 1px dashed #dda0dd!important} 		
+.dashed-orchid{border: 1px dashed #da70d6!important}		
+.dashed-violet{border: 1px dashed #ee82ee}		
+.dashed-fuchsia{border: 1px dashed #ff00ff}		
+.dashed-magenta{border: 1px dashed #ff00ff}		
+.dashed-mediumorchid{border: 1px dashed #ba55d3}	 		
+.dashed-darkorchid{border: 1px dashed #9932cc!important}	
+.dashed-darkviolet{border: 1px dashed #9400d3}	
+.dashed-blueviolet{border: 1px dashed #8a2be2}	
+.dashed-darkmagenta{border: 1px dashed #8b008b}	
+.dashed-purple{border: 1px dashed #800080}
+.dashed-mediumpurple{border: 1px dashed #9370db}		
+.dashed-mediumslateblue{border: 1px dashed #7b68ee}		
+.dashed-slateblue{border: 1px dashed #6a5acd	}
+.dashed-darkslateblue{border: 1px dashed #483d8b}	
+.dashed-rebeccapurple{border: 1px dashed #663399}	
+.dashed-indigo{border: 1px dashed #4b0082}
+
+/* Red */
+.dashed-lightsalmon{border: 1px dashed #ffa07a}
+.dashed-salmon{border: 1px dashed #fa8072}
+.dashed-darksalmon{border: 1px dashed #e9967a}
+.dashed-lightcoral{border: 1px dashed #f08080}
+.dashed-indianred{border: 1px dashed #cd5c5c}
+.dashed-crimson{border: 1px dashed #dc143c}
+.dashed-red{border: 1px dashed #ff0000}
+.dashed-firebrick{border: 1px dashed #b22222}
+.dashed-darkred{border: 1px dashed #8b0000}
+
+/* Orange */
+.dashed-orange{border: 1px dashed #ffa500} 			
+.dashed-darkorange{border: 1px dashed #ff8c00}	 				
+.dashed-coral{border: 1px dashed #ff7f50}	 				
+.dashed-tomato{border: 1px dashed #ff6347}	 			
+.dashed-orangered{border: 1px dashed #ff4500}	
+
+/* Yellow */
+.dashed-gold{border: 1px dashed #ffd700}
+.dashed-yellow{border: 1px dashed #ffff00}
+.dashed-lightyellow{border: 1px dashed #ffffe0}
+.dashed-lemonchiffon{border: 1px dashed #fffacd}
+.dashed-lightgoldenrodyellow{border: 1px dashed #fafad2}
+.dashed-papayawhip{border: 1px dashed #ffefd5}
+.dashed-moccasin{border: 1px dashed #ffe4b5}
+.dashed-peachpuff{border: 1px dashed #ffdab9}
+.dashed-palegoldenrod{border: 1px dashed #eee8aa}
+.dashed-khaki{border: 1px dashed #f0e68c}
+.dashed-darkkhaki{border: 1px dashed #bdb76b}
+
+/* Green */
+.dashed-greenyellow{border: 1px dashed #adff2f}
+.dashed-chartreuse{border: 1px dashed #7fff00}
+.dashed-lawngreen{border: 1px dashed #7cfc00}
+.dashed-lime{border: 1px dashed #00ff00}
+.dashed-limegreen{border: 1px dashed #32cd32}
+.dashed-palegreen{border: 1px dashed #98fb98}
+.dashed-lightgreen{border: 1px dashed #90ee90}
+.dashed-mediumspringgreen{border: 1px dashed #00fa9a}
+.dashed-springgreen{border: 1px dashed #00ff7f}
+.dashed-mediumseagreen{border: 1px dashed #3cb371}
+.dashed-seagreen{border: 1px dashed #2e8b57}
+.dashed-forestgreen{border: 1px dashed #228b22}
+.dashed-green{border: 1px dashed #008000}
+.dashed-darkgreen{border: 1px dashed #006400}
+.dashed-yellowgreen{border: 1px dashed #9acd32}
+.dashed-olivedrab{border: 1px dashed #6b8e23}
+.dashed-darkolivegreen{border: 1px dashed #556b2f}
+.dashed-mediumaquamarine{border: 1px dashed #66cdaa}
+.dashed-darkseagreen{border: 1px dashed #8fbc8f}
+.dashed-lightseagreen{border: 1px dashed #20b2aa}
+.dashed-darkcyan{border: 1px dashed #008b8b}
+.dashed-teal{border: 1px dashed #008080}
+
+/* Cyan */
+.dashed-aqua{border: 1px dashed #00ffff}
+.dashed-cyan{border: 1px dashed #00ffff}
+.dashed-lightcyan{border: 1px dashed #e0ffff}
+.dashed-paleturquoise{border: 1px dashed #afeeee}
+.dashed-aquamarine{border: 1px dashed #7fffd4}
+.dashed-turquoise{border: 1px dashed #40e0d0}
+.dashed-mediumturquoise{border: 1px dashed #48d1cc}
+.dashed-darkturquoise{border: 1px dashed #00ced1}
+
+/* Blue */
+.dashed-cadetblue{border: 1px dashed #5f9ea0}
+.dashed-steelblue{border: 1px dashed #4682b4}
+.dashed-lightsteelblue{border: 1px dashed #b0c4de}
+.dashed-lightblue{border: 1px dashed #add8e6}
+.dashed-powderblue{border: 1px dashed #b0e0e6}
+.dashed-lightskyblue{border: 1px dashed #87cefa}
+.dashed-skyblue{border: 1px dashed #87ceeb}
+.dashed-cornflowerblue{border: 1px dashed #6495ed}
+.dashed-deepskyblue{border: 1px dashed #00bfff}
+.dashed-dodgerblue{border: 1px dashed #1e90ff}
+.dashed-royalblue{border: 1px dashed #4169e1}
+.dashed-blue{border: 1px dashed #0000ff}
+.dashed-mediumblue{border: 1px dashed #0000cd}
+.dashed-darkblue{border: 1px dashed #00008b}
+.dashed-navy{border: 1px dashed #000080}
+.dashed-midnightblue{border: 1px dashed #191970}
+
+/* Brown */
+.dashed-cornsilk{border: 1px dashed #fff8dc}
+.dashed-blanchedalmond{border: 1px dashed #ffebcd}
+.dashed-bisque{border: 1px dashed #ffe4c4}
+.dashed-navajowhite{border: 1px dashed #ffdead}
+.dashed-wheat{border: 1px dashed #f5deb3}
+.dashed-burlywood{border: 1px dashed #deb887}
+.dashed-tan{border: 1px dashed #d2b48c}
+.dashed-rosybrown{border: 1px dashed #bc8f8f}
+.dashed-sandybrown{border: 1px dashed #f4a460}
+.dashed-goldenrod{border: 1px dashed #daa520}
+.dashed-darkgoldenrod{border: 1px dashed #b8860b}
+.dashed-peru{border: 1px dashed #cd853f}
+.dashed-chocolate{border: 1px dashed #d2691e}
+.dashed-olive{border: 1px dashed #808000}
+.dashed-saddlebrown{border: 1px dashed #8b4513}
+.dashed-sienna{border: 1px dashed #a0522d}
+.dashed-brown{border: 1px dashed #a52a2a}
+.dashed-maroon{border: 1px dashed #800000}
+
+/* White */
+.dashed-white{border: 1px dashed #ffffff}
+.dashed-snow{border: 1px dashed #fffafa}
+.dashed-honeydew{border: 1px dashed #f0fff0}
+.dashed-mintcream{border: 1px dashed #f5fffa}
+.dashed-azure{border: 1px dashed #f0ffff}
+.dashed-aliceblue{border: 1px dashed #f0f8ff}
+.dashed-ghostwhite{border: 1px dashed #f8f8ff}
+.dashed-whitesmoke{border: 1px dashed #f5f5f5}
+.dashed-seashell{border: 1px dashed #fff5ee}
+.dashed-beige{border: 1px dashed #f5f5dc}
+.dashed-oldlace{border: 1px dashed #fdf5e6}
+.dashed-floralwhite{border: 1px dashed #fffaf0}
+.dashed-ivory{border: 1px dashed #fffff0}
+.dashed-antiquewhite{border: 1px dashed #faebd7}
+.dashed-linen{border: 1px dashed #faf0e6}
+.dashed-lavenderblush{border: 1px dashed #fff0f5}
+.dashed-mistyrose{border: 1px dashed #ffe4e1}
+.dashed-snow{border: 1px dashed #fffafa}
+.dashed-honeydew{border: 1px dashed #f0fff0}
+.dashed-mintcream{border: 1px dashed #f5fffa}
+.dashed-azure{border: 1px dashed #f0ffff}
+.dashed-aliceblue{border: 1px dashed #f0f8ff}
+.dashed-ghostwhite{border: 1px dashed #f8f8ff}
+.dashed-whitesmoke{border: 1px dashed #f5f5f5}
+.dashed-seashell{border: 1px dashed #fff5ee}
+.dashed-beige{border: 1px dashed #f5f5dc}
+.dashed-oldlace{border: 1px dashed #fdf5e6}
+.dashed-floralwhite{border: 1px dashed #fffaf0}
+.dashed-ivory{border: 1px dashed #fffff0}
+.dashed-antiquewhite{border: 1px dashed #faebd7}
+.dashed-linen{border: 1px dashed #faf0e6}
+.dashed-lavenderblush{border: 1px dashed #fff0f5}
+.dashed-mistyrose{border: 1px dashed #ffe4e1}
+
+/* Black */
+.dashed-gainsboro{border: 1px dashed #dcdcdc}
+.dashed-lightgray{border: 1px dashed #d3d3d3}
+.dashed-silver{border: 1px dashed #c0c0c0}
+.dashed-darkgray{border: 1px dashed #a9a9a9}
+.dashed-dimgray{border: 1px dashed #696969}
+.dashed-gray{border: 1px dashed #808080}
+.dashed-lightslategray{border: 1px dashed #778899}
+.dashed-slategray{border: 1px dashed #708090}
+.dashed-darkslategray{border: 1px dashed #2f4f4f}
+.dashed-black{border: 1px dashed #000000}
+
+/*========================================== End Border Dashed ==================================================*/
 
 /*=========================================== Bottombar Solid Group =============================================*/
 
@@ -4606,6 +4796,9 @@ template {
 /*=========================================== Box Shadow ========================================================*/
 
 .box-shadow{box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important}
+.box-shadow-bottom{box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important}
+.box-shadow-top{box-shadow:0 1px 4px 2px rgba(0,0,0,0.16),0 2px 10px 2px rgba(0,0,0,0.12)!important}
+
 .text-shadow{text-shadow: 0 1px 2px rgba(0, 0, 0, .6)!important}
 
 /*========================================== End Box-shadow =====================================================*/
@@ -4619,6 +4812,8 @@ template {
 .hidden{display:visibility:hidden!important}
 .hide{display:none!important}
 .show{display:block!important}
+.border-none{border:none!important;}
+.radius-none{border-radius:none!important}
 
 .hover-none:hover{box-shadow:none!important;background-color:transparent!important;color:#000000}
 .hover-text-none:hover{box-shadow:none!important;background-color:transparent!important}
@@ -4649,3 +4844,109 @@ template {
 @keyframes animationzoom{from{transform:scale(0)} to{transform:scale(1)}}
 
 /*========================================== End Animation ======================================================*/
+
+/*========================================== Border Radius ======================================================*/
+.radius{
+	border-radius:4px;
+}
+.radius-s{
+	border-radius:8px;
+}
+.radius-m{
+	border-radius:16px;
+}
+.radius-l{
+	border-radius:24px;
+}
+.radius-g{
+	border-radius:32px;
+}
+.radius-circle{
+	border-radius:50%;
+}
+/*======================================== End Border Radius ====================================================*/
+
+/*========================================== Filter =============================================================*/
+
+.blur{
+	filter: blur(5px);
+	-webkit-filter: blur(5px);
+}
+.brightness-min{
+	filter: brightness(50%);
+	-webkit-filter: brightness(50%);
+	transition:ease 1s;
+}
+.brightness{
+	filter: brightness(100%);
+	-webkit-filter: brightness(100%);
+}
+.brightness-max{
+	filter: brightness(150%);
+	-webkit-filter: brightness(150%);
+}
+
+.contrast-min{
+	filter: contrast(50%);
+	-webkit-filter: contrast(50%);
+}
+.contrast{
+	filter: contrast(100%);
+	-webkit-filter: contrast(100%);
+}
+.contrast-max{
+	filter: contrast(150%);
+	-webkit-filter: contrast(150%);
+}
+
+.saturate-min{
+	filter: saturate(50%);
+	-webkit-filter: saturate(50%);
+}
+.saturate{
+	filter: saturate(100%);
+	-webkit-filter: saturate(100%);
+}
+.saturate-max{
+	filter: saturate(150%);
+	-webkit-filter: saturate(150%);
+}
+
+.grayscale-min{
+	filter: grayscale(50%);
+	-webkit-filter: grayscale(50%);
+}
+.grayscale{
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+}
+
+.sepia-min{
+	filter: sepia(50%);
+	-webkit-filter: sepia(50%);
+}
+.sepia{
+	filter: sepia(100%);
+	-webkit-filter: sepia(100%);
+}
+
+.hue-rotate-max{
+	filter: hue-rotate(100deg);
+	-webkit-filter: hue-rotate(100deg);
+}
+.hue-rotate-min{
+	filter: hue-rotate(-100deg);
+	-webkit-filter: hue-rotate(-100deg);
+}
+
+.invert{
+	filter: invert(100%);
+	-webkit-filter: invert(100%);
+}
+
+.drop-shadow{
+	filter: drop-shadow(1px 1px 2px black);
+	-webkit-filter: drop-shadow(1px 1px 2px black);
+}
+
+/*========================================== End Filter =========================================================*/
