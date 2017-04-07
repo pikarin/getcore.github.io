@@ -1,107 +1,1480 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Comming Soon</title>
+<title>Core Columns</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="Flamecore, Framework Core, Core CSS, Templates with Core, Framework CSS Indonesia,
+<meta name="keywords" content="Flamecore, Column, Column Responsive, Column Flexbox, Column Table Cell, Column Float, Column Flexbox 12, Column Table Cell 12, Column Float 12, Framework Core, Core CSS, Templates with Core, Framework CSS Indonesia,
 Framework Indonesia, Core, Core Column, Core Color">
 <meta name="description" content="Framework CSS with Library Colors Indonesia">
 <meta name="author" content="Andika Chamberlin">
 <link rel="icon" href="getcore.github.io/icore.png" type="image/x-icon">
-<link rel="stylesheet" href="getcore.github.io/core.css" type="text/css">
-<link rel="stylesheet" href="core/core.css" type="text/css">
+<link rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Finger+Paint" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <style>
 .font{font-family: 'Finger Paint', cursive;}
-body{font-family: 'Averia Sans Libre', cursive;}
-
-.core-animation-circle{
-	border: 5px solid skyblue;
-	margin: 0 auto;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	border-radius: 50%;
-	-webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-	opacity: .1;
-}
-.core-animation-circle:nth-child(1) {
-  width: 0px;
-  height: 0px;
-  border-color: #fff;
-  -webkit-animation: 2s 0s rotater infinite alternate;
-          animation: 2s 0s rotater infinite alternate;
-}
-.core-animation-circle:nth-child(2) {
-  width: 40px;
-  height: 40px;
-  border-color: #fff;
-  -webkit-animation: 2s 0.1s rotater infinite alternate;
-          animation: 2s 0.1s rotater infinite alternate;
-}
-.core-animation-circle:nth-child(3) {
-  width: 80px;
-  height: 80px;
-  border-color: #fff;
-  -webkit-animation: 2s 0.2s rotater infinite alternate;
-          animation: 2s 0.2s rotater infinite alternate;
-}
-
-.core-animation-circle:nth-child(4) {
-  width: 120px;
-  height: 120px;
-  border-color: #fff;
-  -webkit-animation: 2s 0.3s rotater infinite alternate;
-          animation: 2s 0.3s rotater infinite alternate;
-}
-
-.core-animation-circle:nth-child(5) {
-  width: 160px;
-  height: 160px;
-  border-color: #fff;
-  -webkit-animation: 2s 0.4s rotater infinite alternate;
-          animation: 2s 0.4s rotater infinite alternate;
-}
-@-webkit-keyframes rotater {
-  to {
-    -webkit-transform: translate(-50%, -50%) scale(2.3);
-            transform: translate(-50%, -50%) scale(2.3);
-    opacity: 1;
-  }
-}
-
-@keyframes rotater {
-  to {
-    -webkit-transform: translate(-50%, -50%) scale(2.3);
-            transform: translate(-50%, -50%) scale(2.3);
-    opacity: 1;
-  }
-}
+.font2{font-family: 'Averia Sans Libre', cursive;}
+.navbar a{color:#fff}
 </style>
 </head>
-<body class="bg-crimson" style="height:100%">
-		
-	<div class="position-topleft">
-		<div class="core-animation-circle border-color:#fff"></div>
-		<div class="core-animation-circle border-color:#fff"></div>
-		<div class="core-animation-circle border-color:#fff"></div>
-		<div class="core-animation-circle border-color:#fff"></div>
-		<div class="core-animation-circle border-color:#fff"></div>
-	</div>
-	
-	<div class="position-middle center-align" style="padding:16px">
-		<h1 class="font animation-top">COMMING SOON</h1>
-	</div>
-		
-	<div class="position-bottomleft" style="padding:16px">
-		Powered by <a href="http://getcore.github.io" class="white">getcore.github.io</a>
-	</div>
+<body>
+	<div class="container-full" id="up">
+		<div class="row">
+			<div class="column eq12">
+				<ul class="navbar navbar-crimson bg-darkslategray box-shadow animation-top fixed-top">
+					<li class="hm hl">
+						<div class="dropdown">
+							<a onclick="dropdown()"><i class="fa fa-bars dropdown-button"></i></a>
+							<div id="dropdownMenu" class="dropnav-content bg-darkslategray box-shadow">
+								<a href="index.html">Core</a>
+								<a href="learn.html">Learn</a>
+								<a href="column.html">Column</a>
+								<a href="color.html">Color</a>
+								<a href="js.html">JS</a>
+								<a href="templates.html">Templates</a>
+								<a href="author.html">Author</a>
+							</div>
+						</div>
+					</li>
+					<li class="hs"><a href="index.html">Core</a></li>
+					<li class="hs"><a href="learn.html">Learn</a></li>
+					<li class="bg-crimson hs"><a href="column.html">Column</a></li>
+					<li class="hs"><a href="color.html">Color</a></li>
+					<li class="hs"><a href="js.html">JS</a></li>
+					<li class="hs"><a href="templates.html">Templates</a></li>
+					<li class="right hs">
+						<a href="author.html" target="_blank">
+							Author
+						</a>
+					</li>
+				</ul>
+				<ul class="navbar navbar-crimson bg-darkslategray box-shadow-top animation-bottom fixed-bottom">
+					<li class="right"><a href="#up" class="page-scroll"><i class="fa fa-caret-up"></i></a></li>
+					<li class="right"><a href="#float" class="page-scroll">Float</a></li>
+					<li class="right"><a href="#cell" class="page-scroll">Cell</a></li>
+					<li class="right"><a href="#flex" class="page-scroll">Flex</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column eq12">
+				<div class="interior bg-crimson box-shadow">
+					<header class="white" style="padding:200px 0px;">
+						<div class="center-align">
+							<h1 class="font hs text-shadow" style="font-size:100px;margin-bottom:50px">Core Columns</h1>
+							<h1 class="font hm hl" style="font-size:50px;margin-bottom:30px">Core Columns</h1>
+							<p class="font-21">Sangat mudah membuat kolom dengan core column</p>
+						</div>
+					</header>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column eq12">
+				<div class="section">
+					<div class="interior">
+						<br>
+						<h3 class="center-align font2">Pengantar</h3>
+						<p>
+						Core Column memiliki 3 sifat, yaitu float, table cell dan flexbox. Dalam segi penulisan
+						code tidak jauh berbeda. Float menambahkan class (row) Table cell (row-cell) Flexbox 
+						(row-flex) untuk membuat column, Float menambahkan (column) Table cell (cell) Flexbox
+						(flex). Berikut Contoh Penulisannya.
 
+<p class="subheader">Float (column)</p>
+<pre class="bg-crimson border-none">
+<code>
+&lt;div class="row"&gt;
+ &lt;div class="column l6 m6 s6"&gt;
+ Column Float 6 (Kiri)
+ &lt;/div&gt;
+ &lt;div class="column l6 m6 s6"&gt;
+ Column Float 6 (kanan)
+ &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+<br>
+<div class="row center-align bg-crimson radius">
+	<div class="column l6 m6 s6">
+		<div class="equal">
+			Column Float 6 (Kiri)
+		</div>
+	</div>
+	<div class="column l6 m6 s6" style="border-left:1px dashed #fff">
+		<div class="equal">
+			Column Float 6 (Kanan)
+		</div>
+	</div>
+</div>
+<br>
+
+<p class="subheader">Table Cell (cell)</p>
+<p>Table Cell sangat cocok untuk anda yang menginginkan kolom sama tinggi, walaupun pada salah satu content 
+hanya sedikit, Cell akan membuat kolom sama tinggi dengan content yang banyak. Berikut codenya.
+</p>
+<pre class="bg-crimson border-none">
+<code>
+&lt;div class="row-cell"&gt;
+ &lt;div class="cell l6 m6 s6"&gt;
+ Column Cell 6 (Kiri)
+ &lt;/div&gt;
+ &lt;div class="cell l6 m6 s6"&gt;
+ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+ &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+<br>
+
+<div class="row-cell bg-crimson radius">
+	<div class="cell l6 m6 s6">
+		<div class="equal center-align">
+			Column Cell 6 (Kiri)
+		</div>
+	</div>
+	<div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
+		<div class="equal">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+	</div>
+</div>
+<p>Tetapi, cell memiliki kekurangan yaitu tidak bersifat block jika kita membuat cell dalam satu row cell. 
+Untuk mengatasinya, ketika ingin membuat cell baru, kita diwajibkan menuliskan row cell kembali. Ini adalah tampilan
+kekurangn dari cell jika tidak membuat row cell baru.
+</p>
+
+<div class="row-cell bg-crimson radius">
+	<div class="cell l6 m6 s6">
+		<div class="equal center-align">
+			Column Cell 6 (Kiri)
+		</div>
+	</div>
+	<div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
+		<div class="equal">
+			Column Cell 6 (Kanan)
+		</div>
+	</div>
+	<div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
+		<div class="equal">
+			Tanpa row-cell baru
+		</div>
+	</div>
+</div>
+<p>Maka untuk mengatasi hal tersebut, kita di wajibkan menuliskan row-cell baru</p>
+<pre class="bg-crimson border-none">
+<code>
+&lt;div class="row-cell"&gt;
+ &lt;div class="cell l6 m6 s6"&gt;
+  Column Cell 6 (Kiri)
+ &lt;/div&gt;
+ &lt;div class="cell l6 m6 s6"&gt;
+  Column Cell 6 (Kanan)
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row-cell"&gt;
+ &lt;div class="cell l6 m6 s6"&gt;
+  Column Cell 6 (Kiri)
+ &lt;/div&gt;
+ &lt;div class="cell l6 m6 s6"&gt;
+  Column Cell 6 (Kanan)
+ &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+<br>
+<div class="row-cell bg-crimson radius">
+	<div class="cell l6 m6 s6">
+		<div class="equal center-align">
+			Column Cell 6 (Kiri)
+		</div>
+	</div>
+	<div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
+		<div class="equal center-align">
+			Column Cell 6 (Kanan)
+		</div>
+	</div>
+</div>
+<div class="row-cell bg-crimson radius" style="border-top:1px dashed #fff">
+	<div class="cell l6 m6 s6">
+		<div class="equal center-align">
+			Column Cell 6 (Kiri)
+		</div>
+	</div>
+	<div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
+		<div class="equal center-align">
+			Column Cell 6 (Kanan)
+		</div>
+	</div>
+</div>
+<br>
+
+
+<p class="subheader">Flexbox (flex)</p>
+<p>Keunggulan dari flexbox adalah tidak menggunakan offset untuk membuat ruang tanpa content. 
+Sifat flexbox berbeda dengan float yang harus menggunakan margin untuk mendorong atau mengkosongkan content.
+Dengan flexbox dari Core, kita tidak harus menggunakan offset, gunakan code seperti biasanya dan lihat haslinya.
+Berikut codenya dan lihat hasilnya.
+</p>
+<pre class="bg-crimson border-none">
+<code>
+&lt;div class="row-flex"&gt;
+ &lt;div class="flex l6 m6 s6"&gt;
+
+ &lt;/div&gt;
+ &lt;div class="flex l6 m6 s6"&gt;
+  Column Cell 6 (Kanan)
+ &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+<br>
+<div class="row-flex center-align bg-crimson radius">
+	<div class="flex l6 m6 s6">
+		<div class="equal">
+			
+		</div>
+	</div>
+	<div class="flex l6 m6 s6" style="border-left:1px dashed #fff">
+		<div class="equal">
+			Column Flex 6 (Kanan)
+		</div>
+	</div>
+</div>
+<p>Wow! sangat keren, namun flexbox dari core mempunyai masalah pada responsive ukuran smarphone. 
+pada ukuran s1 (smartphone ukuran 1). Melebihi batas lebar browser. Untuk mengatasinya gunakan
+s2 minimal ketika ingin responsive terlihat bagus pada smartphone. Berikut yang tidak boleh di gunakan
+untuk responsive smartphone.
+</p>
+<pre class="bg-crimson border-none">
+<code>
+&lt;div class="row-flex"&gt;
+ &lt;div class="flex l6 m6 s1"&gt;
+ Column s1 pada smartphone akan melebih lebar browser (walaupun hanya sedikit).
+ &lt;/div&gt;
+ &lt;div class="flex l6 m6 s11"&gt;
+  Column Cell 6 (Kanan)
+ &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+<br>
+<pre class="bg-crimson border-none">
+<code>
+&lt;div class="row-flex"&gt;
+ &lt;div class="flex l6 m6 s2"&gt;
+ Column s2 adalah yang paling di rekomendasikan untuk ukuran smartphone.
+ &lt;/div&gt;
+ &lt;div class="flex l6 m6 s10"&gt;
+  Column Cell 6 (Kanan)
+ &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+						
+						<div style="margin-top:80px" id="float"></div>
+						<h3  class="center-align font2">Float Column 12 Responsive</h3>
+						<h5 class="hs section center-align">Description</h5>
+						<div class="row hs">
+							<div class="column l6 m12 s12">
+								<div class="row">
+									<div class="column l3 m3 s3">
+										<div class="interior right-align">
+											<p>Technical :</p>
+										</div>
+									</div>
+									<div class="column l1 m1 s1">
+										<div class="left-align">
+											<p>[l]</p>
+											<p>[m]</p>
+											<p>[s]</p>
+										</div>
+									</div>
+									<div class="column l8 m8 s8">
+										<div class="left-align">
+											<p>Large (Computer, Notebook, Netbook)</p>
+											<p>Medium (Tablet)</p>
+											<p>Small (Smartphone)</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="column l6 m12 s12">
+								<div class="row">
+									<div class="column l3 m3 s3">
+										<div class="interior right-align">
+											<p>Size :</p>
+										</div>
+									</div>
+									<div class="column l1 m1 s1">
+										<div class="left-align">
+											<p>[12]</p>
+											<p>[11]</p>
+											<p>[10]</p>
+											<p>[9]</p>
+											<p>[8]</p>
+											<p>[7]</p>
+											<p>[6]</p>
+											<p>[5]</p>
+											<p>[4]</p>
+											<p>[3]</p>
+											<p>[2]</p>
+											<p>[1]</p>
+										</div>
+									</div>
+									<div class="column l8 m8 s8">
+										<div class="left-align">
+											<p>width:100%</p>
+											<p>width:91.66666667%</p>
+											<p>width:83.33333333%</p>
+											<p>width:75%</p>
+											<p>width:66.66666667%</p>
+											<p>width:58.33333333%</p>
+											<p>width:50%</p>
+											<p>width:41.66666667%</p>
+											<p>width:33.33333333%</p>
+											<p>width:25%</p>
+											<p>width:16.66666667%</p>
+											<p>width:8.33333333%</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<br>
+						
+<!-- Float -->
+<div class="row center-align bg-crimson radius">
+ <div class="column l1 m1 s1">
+  <div class="equal">
+	1
+  </div>
+ </div>
+ <div class="column l11 m11 s11" style="border-left:1px dashed #fff">
+  <div class="equal">
+	11
+  </div>
+ </div>
+</div>
+<br>
+<div class="row center-align bg-crimson radius">
+ <div class="column l2 m2 s2">
+  <div class="equal">
+	2
+  </div>
+ </div>
+ <div class="column l10 m10 s10" style="border-left:1px dashed #fff">
+  <div class="equal">
+	10
+  </div>
+ </div>
+</div>
+<br>
+<div class="row center-align bg-crimson radius">
+ <div class="column l3 m3 s3">
+  <div class="equal">
+	3
+  </div>
+ </div>
+ <div class="column l9 m9 s9" style="border-left:1px dashed #fff">
+  <div class="equal">
+	9
+  </div>
+ </div>
+</div>
+<br>
+<div class="row center-align bg-crimson radius">
+ <div class="column l4 m4 s4">
+  <div class="equal">
+	4
+  </div>
+ </div>
+ <div class="column l8 m8 s8" style="border-left:1px dashed #fff">
+  <div class="equal">
+	8
+  </div>
+ </div>
+</div>
+<br>
+<div class="row center-align bg-crimson radius">
+ <div class="column l5 m5 s5">
+  <div class="equal">
+	5
+  </div>
+ </div>
+ <div class="column l7 m7 s7" style="border-left:1px dashed #fff">
+  <div class="equal">
+	7
+  </div>
+ </div>
+</div>
+<br>
+<div class="row center-align bg-crimson radius">
+ <div class="column l6 m6 s6">
+  <div class="equal">
+	6
+  </div>
+ </div>
+ <div class="column l6 m6 s6" style="border-left:1px dashed #fff">
+  <div class="equal">
+	6
+  </div>
+ </div>
+</div>
+<br>
+<p>Membuat kolom di dalam kolom</p>
+<div class="row center-align bg-crimson radius">
+ <div class="column l6 m6 s6" style="border-right:1px dashed #fff">
+  <div class="equal">
+   6
+  </div>
+  <!-- Sub Column -->
+  <div class="row" style="border-top:1px dashed #fff">
+   <div class="column l6 m6 s6" style="border-right:1px dashed #fff">
+	<div class="equal">
+    6
+	</div>
+	<!-- Sub Column 2 -->
+	<div class="row" style="border-top:1px dashed #fff">
+     <div class="column l6 m6 s6">
+	  <div class="equal">
+      6
+	  </div>
+     </div>
+     <div class="column l6 m6 s6" style="border-left:1px dashed #fff">
+      <div class="equal">
+      6
+	  </div>
+     </div>
+    </div>
+	<!-- End Sub Column 2 -->
+   </div>
+   <!-- End Sub Column -->
+   <div class="column l6 m6 s6">
+    <div class="equal">
+    6
+	</div>
+   </div>
+  </div>
+ </div>
+ <div class="column l6 m6 s6">
+  <div class="equal">
+	6
+  </div>
+ </div>
+</div>
+<br>
+<pre class="bg-crimson border-none">
+<code>
+&lt;div class="row center-align bg-crimson radius"&gt;
+ &lt;div class="column l6 m6 s6" style="border-right:1px dashed #fff"&gt;
+  &lt;div class="equal"&gt;
+   6
+  &lt;/div&gt;
+  &lt;!-- Sub Column --&gt;
+  &lt;div class="row" style="border-top:1px dashed #fff"&gt;
+   &lt;div class="column l6 m6 s6" style="border-right:1px dashed #fff"&gt;
+    &lt;div class="equal"&gt;
+    6
+    &lt;/div&gt;
+    &lt;!-- Sub Column 2 --&gt;
+    &lt;div class="row" style="border-top:1px dashed #fff"&gt;
+     &lt;div class="column l6 m6 s6"&gt;
+      &lt;div class="equal"&gt;
+      6
+      &lt;/div&gt;
+     &lt;/div&gt;
+     &lt;div class="column l6 m6 s6" style="border-left:1px dashed #fff"&gt;
+      &lt;div class="equal"&gt;
+      6
+      &lt;/div&gt;
+     &lt;/div&gt;
+    &lt;/div&gt;
+   &lt;!-- End Sub Column 2 --&gt;
+   &lt;/div&gt;
+   &lt;!-- End Sub Column --&gt;
+   &lt;div class="column l6 m6 s6"&gt;
+    &lt;div class="equal"&gt;
+    6
+    &lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="column l6 m6 s6"&gt;
+  &lt;div class="equal"&gt;
+   6
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+<br>
+<p class="subheader"> Membuat Column Responsive</p> 
+<p>Resize browser agar terlihat perubahannya. Jika tidak mengerti fungsi code hl hm dan hl berikut penjelasannya.</p>
+<div class="dl-horizontal">
+ <dt>hs :</dt>
+ <dd>Membuat content menghilang pada ukuran smartphone</dd>
+ <dt>hm :</dt> 
+ <dd>Membuat content menghilang pada ukuran Tablet</dd>
+ <dt>hl :</dt> 
+ <dd>Membuat content menghilang pada ukuran Laptop or Computer</dd>
+</div>
+<br>
+<div class="row bg-crimson radius center-align">
+ <div class="column l8 m6 s12">
+  <div class="hs hm equal">
+  8
+  </div>
+  <div class="hs hl equal">
+  6
+  </div>
+  <div class="hm hl equal">
+  12
+  </div>
+ </div>
+ <div class="column l4 m6 s12" style="border-left:1px dashed #fff">
+  <div class="hs hm equal">
+  4
+  </div>
+  <div class="hs hl equal">
+  6
+  </div>
+  <div class="hm hl equal">
+  12
+  </div>
+ </div>
+</div>
+<br>
+<pre class="bg-crimson border-none">
+<code>
+&lt;div class="row bg-crimson radius center-align"&gt;
+ &lt;div class="column l8 m6 s12"&gt;
+  &lt;div class="hs hm equal"&gt;
+  8
+  &lt;/div&gt;
+  &lt;div class="hs hl equal"&gt;
+  6
+  &lt;/div&gt;
+  &lt;div class="hm hl equal"&gt;
+  12
+  &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="column l4 m6 s12" style="border-left:1px dashed #fff"&gt;
+  &lt;div class="hs hm equal"&gt;
+  4
+  &lt;/div&gt;
+  &lt;div class="hs hl equal"&gt;
+  6
+  &lt;/div&gt;
+  &lt;div class="hm hl equal"&gt;
+  12
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+<p> Class eq(..) membuat kolom tetap sama pada setiap ukuran. Ukuran smartphone, table atau Laptop/Computer 
+tidak berpengaruh. Penulisan codenya juga hanya sekali. Berikut codenya dan lihat hasilnya.
+</p>
+<pre class="bg-crimson border-none">
+<code>
+&lt;div class="row radius bg-crimson"&gt;
+ &lt;div class="column eq6"&gt;
+  &lt;div class="equal"&gt;
+   Ukuran tetap sama pada semua ukuran browser
+  &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="column eq6" style="border-left:1px dashed #fff"&gt;
+  &lt;div class="equal"&gt;
+   Ukuran tetap sama pada semua ukuran browser
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+<br>
+<div class="row radius bg-crimson">
+ <div class="column eq6">
+  <div class="equal">
+   Ukuran tetap sama pada semua ukuran browser
+  </div>
+ </div>
+ <div class="column eq6" style="border-left:1px dashed #fff">
+  <div class="equal">
+   Ukuran tetap sama pada semua ukuran browser
+  </div>
+ </div>
+</div>
+<br>
+<p>Membuat offset yang tidak berpengaruh pada setiap ukuran</p>
+<pre class="bg-crimson border-none">
+<code>
+&lt;div class="row radius bg-crimson"&gt;
+ &lt;div class="column eq6 eq6-offset"&gt;
+  &lt;div class="equal"&gt;
+   Ukuran Offset tetap sama pada semua ukuran browser
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+<br>
+<div class="row radius bg-crimson">
+ <div class="column eq6 eq6-offset" style="border-left:1px dashed #fff">
+  <div class="equal">
+   Ukuran Offset tetap sama pada semua ukuran browser
+  </div>
+ </div>
+</div>
+<!-- End Float -->						
+						<br>
+						<br>
+						<h3 class="section-l center-align font2">Float Column Offset 12</h3>
+						<h5 class="hs section center-align">Description</h5>
+						<div class="row hs">
+							<div class="column l6 m12 s12">
+								<div class="row">
+									<div class="column l3 m3 s3">
+										<div class="interior right-align">
+											<p>Technical :</p>
+										</div>
+									</div>
+									<div class="column l1 m1 s1">
+										<div class="left-align">
+											<p>[l]</p>
+											<p>[m]</p>
+											<p>[s]</p>
+										</div>
+									</div>
+									<div class="column l8 m8 s8">
+										<div class="left-align">
+											<p>Large (Computer, Notebook, Netbook)</p>
+											<p>Medium (Tablet)</p>
+											<p>Small (Smartphone)</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="column l6 m12 s12">
+								<div class="row">
+									<div class="column l3 m3 s3">
+										<div class="interior right-align">
+											<p>Margin:</p>
+										</div>
+									</div>
+									<div class="column l1 m1 s1">
+										<div class="left-align">
+											<p>[12]</p>
+											<p>[11]</p>
+											<p>[10]</p>
+											<p>[9]</p>
+											<p>[8]</p>
+											<p>[7]</p>
+											<p>[6]</p>
+											<p>[5]</p>
+											<p>[4]</p>
+											<p>[3]</p>
+											<p>[2]</p>
+											<p>[1]</p>
+										</div>
+									</div>
+									<div class="column l8 m8 s8">
+										<div class="left-align">
+											<p>margin-left:100%</p>
+											<p>margin-left:91.66666667%</p>
+											<p>margin-left:83.33333333%</p>
+											<p>margin-left:75%</p>
+											<p>margin-left:66.66666667%</p>
+											<p>margin-left:58.33333333%</p>
+											<p>margin-left:50%</p>
+											<p>margin-left:41.66666667%</p>
+											<p>margin-left:33.33333333%</p>
+											<p>margin-left:25%</p>
+											<p>margin-left:16.66666667%</p>
+											<p>margin-left:8.33333333%</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+<!-- Offset -->
+<div class="row bg-crimson center-align radius">
+ <div class="column l6 m6 s6 l6-offset m6-offset s6-offset" style="border-left:1px dashed #fff">
+  <div class="equal">
+  Offset 6
+  </div>
+ </div>
+</div>
+<br>
+<pre class="bg-crimson border-none">
+<code>
+&lt;div class="row bg-crimson center-align radius"&gt;
+ &lt;div class="column l6 m6 s6 l6-offset m6-offset s6-offset" style="border-left:1px dashed #fff"&gt;
+  &lt;div class="equal"&gt;
+  Offset 6
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+<!-- End Offset -->			
+						<br>
+						<br>
+						<h3 class="section-l center-align font2" id="cell">Table Cell Column 12</h3>
+						<h5 class="hs section center-align">Description</h5>
+						<div class="row hs">
+							<div class="column l6 m12 s12">
+								<div class="row">
+									<div class="column l3 m3 s3">
+										<div class="interior right-align">
+											<p>Technical :</p>
+										</div>
+									</div>
+									<div class="column l1 m1 s1">
+										<div class="left-align">
+											<p>[l]</p>
+											<p>[m]</p>
+											<p>[s]</p>
+										</div>
+									</div>
+									<div class="column l8 m8 s8">
+										<div class="left-align">
+											<p>Large (Computer, Notebook, Netbook)</p>
+											<p>Medium (Tablet)</p>
+											<p>Small (Smartphone)</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="column l6 m12 s12">
+								<div class="row">
+									<div class="column l3 m3 s3">
+										<div class="interior right-align">
+											<p>Width:</p>
+										</div>
+									</div>
+									<div class="column l1 m1 s1">
+										<div class="left-align">
+											<p>[12]</p>
+											<p>[11]</p>
+											<p>[10]</p>
+											<p>[9]</p>
+											<p>[8]</p>
+											<p>[7]</p>
+											<p>[6]</p>
+											<p>[5]</p>
+											<p>[4]</p>
+											<p>[3]</p>
+											<p>[2]</p>
+											<p>[1]</p>
+										</div>
+									</div>
+									<div class="column l8 m8 s8">
+										<div class="left-align">
+											<p>width:100%</p>
+											<p>width:91.66666667%</p>
+											<p>width:83.33333333%</p>
+											<p>width:75%</p>
+											<p>width:66.66666667%</p>
+											<p>width:58.33333333%</p>
+											<p>width:50%</p>
+											<p>width:41.66666667%</p>
+											<p>width:33.33333333%</p>
+											<p>width:25%</p>
+											<p>width:16.66666667%</p>
+											<p>width:8.33333333%</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+<!-- Cell -->
+<div class="row-cell center-align bg-crimson radius">
+ <div class="cell l1 m1 s1">
+  <div class="equal">
+	1
+  </div>
+ </div>
+ <div class="cell l11 m11 s11" style="border-left:1px dashed #fff">
+  <div class="equal">
+	11
+  </div>
+ </div>
+</div>
+<br>
+<div class="row-cell center-align bg-crimson radius">
+ <div class="cell l2 m2 s2">
+  <div class="equal">
+	2
+  </div>
+ </div>
+ <div class="cell l10 m10 s10" style="border-left:1px dashed #fff">
+  <div class="equal">
+	10
+  </div>
+ </div>
+</div>
+<br>
+<div class="row-cell center-align bg-crimson radius">
+ <div class="cell l3 m3 s3">
+  <div class="equal">
+	3
+  </div>
+ </div>
+ <div class="cell l9 m9 s9" style="border-left:1px dashed #fff">
+  <div class="equal">
+	9
+  </div>
+ </div>
+</div>
+<br>
+<div class="row-cell center-align bg-crimson radius">
+ <div class="cell l4 m4 s4">
+  <div class="equal">
+	4
+  </div>
+ </div>
+ <div class="cell l8 m8 s8" style="border-left:1px dashed #fff">
+  <div class="equal">
+	8
+  </div>
+ </div>
+</div>
+<br>
+<div class="row-cell center-align bg-crimson radius">
+ <div class="cell l5 m5 s5">
+  <div class="equal">
+	5
+  </div>
+ </div>
+ <div class="cell l7 m7 s7" style="border-left:1px dashed #fff">
+  <div class="equal">
+	7
+  </div>
+ </div>
+</div>
+<br>
+<div class="row-cell center-align bg-crimson radius">
+ <div class="cell l6 m6 s6">
+  <div class="equal">
+	6
+  </div>
+ </div>
+ <div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
+  <div class="equal">
+	6
+  </div>
+ </div>
+</div>
+<br>
+<pre class="bg-crimson border-none">
+<code>
+&lt;div class="row-cell center-align bg-crimson radius"&gt;
+ &lt;div class="cell l6 m6 s6"&gt;
+  &lt;div class="equal"&gt;
+   6
+  &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="cell l6 m6 s6" style="border-left:1px dashed #fff"&gt;
+  &lt;div class="equal"&gt;
+   6
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+<br>
+<p>Core Cell membuat offset secara otomatis. Coba lihat code dibawah dan hasilnya</p>
+<pre class="bg-crimson border-none">
+<code>
+&lt;div class="row-cell center-align bg-crimson radius"&gt;
+ &lt;div class="cell l6 m6 s6"&gt;
+  &lt;div class="equal"&gt;
+	
+  &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="cell l6 m6 s6" style="border-left:1px dashed #fff"&gt;
+  &lt;div class="equal"&gt;
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+<br>
+<div class="row-cell center-align bg-crimson radius">
+ <div class="cell l6 m6 s6">
+  <div class="equal">
+	
+  </div>
+ </div>
+ <div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
+  <div class="equal">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+ </div>
+</div>
+<br>
+<p>Membuat kolom di dalam kolom pada Cell</p>
+<div class="row-cell center-align bg-crimson radius">
+ <div class="cell l6 m6 s6" style="border-right:1px dashed #fff">
+  <div class="equal">
+   6
+  </div>
+  <!-- Sub cell -->
+  <div class="row-cell" style="border-top:1px dashed #fff">
+   <div class="cell l6 m6 s6" style="border-right:1px dashed #fff">
+	<div class="equal">
+    6
+	</div>
+	<!-- Sub cell 2 -->
+	<div class="row-cell" style="border-top:1px dashed #fff">
+     <div class="cell l6 m6 s6">
+	  <div class="equal">
+      6
+	  </div>
+     </div>
+     <div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
+      <div class="equal">
+      6
+	  </div>
+     </div>
+    </div>
+	<!-- End Sub cell 2 -->
+   </div>
+   <!-- End Sub cell -->
+   <div class="cell l6 m6 s6">
+    <div class="equal">
+    6
+	</div>
+   </div>
+  </div>
+ </div>
+ <div class="cell l6 m6 s6">
+  <div class="equal">
+	6
+  </div>
+ </div>
+</div>
+<br>
+<pre class="bg-crimson border-none">
+<code>
+&lt;div class="row-cell center-align bg-crimson radius"&gt;
+ &lt;div class="cell l6 m6 s6" style="border-right:1px dashed #fff"&gt;
+  &lt;div class="equal"&gt;
+   6
+  &lt;/div&gt;
+  &lt;!-- Sub cell --&gt;
+  &lt;div class="row-cell" style="border-top:1px dashed #fff"&gt;
+   &lt;div class="cell l6 m6 s6" style="border-right:1px dashed #fff"&gt;
+    &lt;div class="equal"&gt;
+    6
+    &lt;/div&gt;
+    &lt;!-- Sub cell 2 --&gt;
+    &lt;div class="row-cell" style="border-top:1px dashed #fff"&gt;
+     &lt;div class="cell l6 m6 s6"&gt;
+      &lt;div class="equal"&gt;
+      6
+      &lt;/div&gt;
+     &lt;/div&gt;
+     &lt;div class="cell l6 m6 s6" style="border-left:1px dashed #fff"&gt;
+      &lt;div class="equal"&gt;
+      6
+      &lt;/div&gt;
+     &lt;/div&gt;
+    &lt;/div&gt;
+   &lt;!-- End Sub cell 2 --&gt;
+   &lt;/div&gt;
+   &lt;!-- End Sub cell --&gt;
+   &lt;div class="cell l6 m6 s6"&gt;
+    &lt;div class="equal"&gt;
+    6
+    &lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="cell l6 m6 s6"&gt;
+  &lt;div class="equal"&gt;
+   6
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+<br>
+<p>Membuat kolom responsive pada Cell.</p>
+<div class="row-cell bg-crimson radius center-align">
+ <div class="cell l8 m6 s12">
+  <div class="hs hm equal">
+  8
+  </div>
+  <div class="hs hl equal">
+  6
+  </div>
+  <div class="hm hl equal">
+  12
+  </div>
+ </div>
+ <div class="cell l4 m6 s12" style="border-left:1px dashed #fff">
+  <div class="hs hm equal">
+  4
+  </div>
+  <div class="hs hl equal">
+  6
+  </div>
+  <div class="hm hl equal">
+  12
+  </div>
+ </div>
+</div>
+<br>
+<pre class="bg-crimson border-none">
+<code>
+&lt;div class="row-cell bg-crimson radius center-align"&gt;
+ &lt;div class="cell l8 m6 s12"&gt;
+  &lt;div class="hs hm equal"&gt;
+  8
+  &lt;/div&gt;
+  &lt;div class="hs hl equal"&gt;
+  6
+  &lt;/div&gt;
+  &lt;div class="hm hl equal"&gt;
+  12
+  &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="cell l4 m6 s12" style="border-left:1px dashed #fff"&gt;
+  &lt;div class="hs hm equal"&gt;
+  4
+  &lt;/div&gt;
+  &lt;div class="hs hl equal"&gt;
+  6
+  &lt;/div&gt;
+  &lt;div class="hm hl equal"&gt;
+  12
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+<!-- End Cell -->						
+						<br>
+						<br>
+						<h3 class="section-l center-align font2" id="flex">Flexbox Column 12</h3>
+						<h5 class="hs section center-align">Description</h5>
+						<div class="row hs">
+							<div class="column l6 m12 s12">
+								<div class="row">
+									<div class="column l3 m3 s3">
+										<div class="interior right-align">
+											<p>Technical :</p>
+										</div>
+									</div>
+									<div class="column l1 m1 s1">
+										<div class="left-align">
+											<p>[l]</p>
+											<p>[m]</p>
+											<p>[s]</p>
+										</div>
+									</div>
+									<div class="column l8 m8 s8">
+										<div class="left-align">
+											<p>Large (Computer, Notebook, Netbook)</p>
+											<p>Medium (Tablet)</p>
+											<p>Small (Smartphone)</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="column l6 m12 s12">
+								<div class="row">
+									<div class="column l3 m3 s3">
+										<div class="interior right-align">
+											<p>Width:</p>
+										</div>
+									</div>
+									<div class="column l1 m1 s1">
+										<div class="left-align">
+											<p>[12]</p>
+											<p>[11]</p>
+											<p>[10]</p>
+											<p>[9]</p>
+											<p>[8]</p>
+											<p>[7]</p>
+											<p>[6]</p>
+											<p>[5]</p>
+											<p>[4]</p>
+											<p>[3]</p>
+											<p>[2]</p>
+											<p>[1]</p>
+										</div>
+									</div>
+									<div class="column l8 m8 s8">
+										<div class="left-align">
+											<p>width:100%</p>
+											<p>width:91.66666667%</p>
+											<p>width:83.33333333%</p>
+											<p>width:75%</p>
+											<p>width:66.66666667%</p>
+											<p>width:58.33333333%</p>
+											<p>width:50%</p>
+											<p>width:41.66666667%</p>
+											<p>width:33.33333333%</p>
+											<p>width:25%</p>
+											<p>width:16.66666667%</p>
+											<p>width:8.33333333%</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!-- Flex -->
+<div class="row-flex center-align bg-crimson radius">
+ <div class="flex l1 m1 s1">
+  <div class="equal">
+	1
+  </div>
+ </div>
+ <div class="flex l11 m11 s11" style="border-left:1px dashed #fff">
+  <div class="equal">
+	11
+  </div>
+ </div>
+</div>
+<br>
+<div class="row-flex center-align bg-crimson radius">
+ <div class="flex l2 m2 s2">
+  <div class="equal">
+	2
+  </div>
+ </div>
+ <div class="flex l10 m10 s10" style="border-left:1px dashed #fff">
+  <div class="equal">
+	10
+  </div>
+ </div>
+</div>
+<br>
+<div class="row-flex center-align bg-crimson radius">
+ <div class="flex l3 m3 s3">
+  <div class="equal">
+	3
+  </div>
+ </div>
+ <div class="flex l9 m9 s9" style="border-left:1px dashed #fff">
+  <div class="equal">
+	9
+  </div>
+ </div>
+</div>
+<br>
+<div class="row-flex center-align bg-crimson radius">
+ <div class="flex l4 m4 s4">
+  <div class="equal">
+	4
+  </div>
+ </div>
+ <div class="flex l8 m8 s8" style="border-left:1px dashed #fff">
+  <div class="equal">
+	8
+  </div>
+ </div>
+</div>
+<br>
+<div class="row-flex center-align bg-crimson radius">
+ <div class="flex l5 m5 s5">
+  <div class="equal">
+	5
+  </div>
+ </div>
+ <div class="flex l7 m7 s7" style="border-left:1px dashed #fff">
+  <div class="equal">
+	7
+  </div>
+ </div>
+</div>
+<br>
+<div class="row-flex center-align bg-crimson radius">
+ <div class="flex l6 m6 s6">
+  <div class="equal">
+	6
+  </div>
+ </div>
+ <div class="flex l6 m6 s6" style="border-left:1px dashed #fff">
+  <div class="equal">
+	6
+  </div>
+ </div>
+</div>
+<br>
+<pre class="bg-crimson border-none">
+<code>
+&lt;div class="row-flex center-align bg-crimson radius"&gt;
+ &lt;div class="flex l6 m6 s6"&gt;
+  &lt;div class="equal"&gt;
+   6
+  &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="flex l6 m6 s6" style="border-left:1px dashed #fff"&gt;
+  &lt;div class="equal"&gt;
+   6
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+<br>
+<p>Membuat kolom di dalam kolom dengan Flex.</p>
+<div class="row-flex center-align bg-crimson radius">
+ <div class="flex l6 m6 s6" style="border-right:1px dashed #fff">
+  <div class="equal">
+   6
+  </div>
+  <!-- Sub flex -->
+  <div class="row-flex" style="border-top:1px dashed #fff">
+   <div class="flex l6 m6 s6" style="border-right:1px dashed #fff">
+    <div class="equal">
+    6
+    </div>
+    <!-- Sub flex 2 -->
+    <div class="row-flex" style="border-top:1px dashed #fff">
+     <div class="flex l6 m6 s6">
+      <div class="equal">
+       6
+      </div>
+     </div>
+     <div class="flex l6 m6 s6" style="border-left:1px dashed #fff">
+      <div class="equal">
+       6
+      </div>
+     </div>
+    </div>
+   <!-- End Sub flex 2 -->
+   </div>
+   <!-- End Sub flex -->
+   <div class="flex l6 m6 s6">
+    <div class="equal">
+     6
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="flex l6 m6 s6">
+  <div class="equal">
+   6
+  </div>
+ </div>
+</div>
+<br>
+<pre class="bg-crimson border-none">
+<code>
+&lt;div class="row-flex center-align bg-crimson radius"&gt;
+ &lt;div class="flex l6 m6 s6" style="border-right:1px dashed #fff"&gt;
+  &lt;div class="equal"&gt;
+   6
+  &lt;/div&gt;
+  &lt;!-- Sub flex --&gt;
+  &lt;div class="row-flex" style="border-top:1px dashed #fff"&gt;
+   &lt;div class="flex l6 m6 s6" style="border-right:1px dashed #fff"&gt;
+    &lt;div class="equal"&gt;
+    6
+    &lt;/div&gt;
+    &lt;!-- Sub flex 2 --&gt;
+    &lt;div class="row-flex" style="border-top:1px dashed #fff"&gt;
+     &lt;div class="flex l6 m6 s6"&gt;
+      &lt;div class="equal"&gt;
+      6
+      &lt;/div&gt;
+     &lt;/div&gt;
+     &lt;div class="flex l6 m6 s6" style="border-left:1px dashed #fff"&gt;
+      &lt;div class="equal"&gt;
+      6
+      &lt;/div&gt;
+     &lt;/div&gt;
+    &lt;/div&gt;
+   &lt;!-- End Sub flex 2 --&gt;
+   &lt;/div&gt;
+   &lt;!-- End Sub flex --&gt;
+   &lt;div class="flex l6 m6 s6"&gt;
+    &lt;div class="equal"&gt;
+    6
+    &lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="flex l6 m6 s6"&gt;
+  &lt;div class="equal"&gt;
+   6
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+<br>
+<p>Membuat kolom responsive dengan flex</p>
+<div class="row-flex bg-crimson radius center-align">
+ <div class="flex l8 m6 s12">
+  <div class="hs hm equal">
+  8
+  </div>
+  <div class="hs hl equal">
+  6
+  </div>
+  <div class="hm hl equal">
+  12
+  </div>
+ </div>
+ <div class="flex l4 m6 s12" style="border-left:1px dashed #fff">
+  <div class="hs hm equal">
+  4
+  </div>
+  <div class="hs hl equal">
+  6
+  </div>
+  <div class="hm hl equal">
+  12
+  </div>
+ </div>
+</div>
+<br>
+<pre class="bg-crimson border-none">
+<code>
+&lt;div class="row-flex bg-crimson radius center-align"&gt;
+ &lt;div class="flex l8 m6 s12"&gt;
+  &lt;div class="hs hm equal"&gt;
+  8
+  &lt;/div&gt;
+  &lt;div class="hs hl equal"&gt;
+  6
+  &lt;/div&gt;
+  &lt;div class="hm hl equal"&gt;
+  12
+  &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="flex l4 m6 s12" style="border-left:1px dashed #fff"&gt;
+  &lt;div class="hs hm equal"&gt;
+  4
+  &lt;/div&gt;
+  &lt;div class="hs hl equal"&gt;
+  6
+  &lt;/div&gt;
+  &lt;div class="hm hl equal"&gt;
+  12
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+<br>
+<p>Flex juga bisa membuat kolom sama tinggi. Berikut codenya dan lihat hasilnya</p>
+<pre class="bg-crimson border-none">
+<code>
+&lt;div class="row-flex bg-crimson radius"&gt;
+ &lt;div class="flex l6 m6 s6"&gt;
+  &lt;div class="equal"&gt;
+   Content teks sedikit
+  &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="flex l6 m6 s6" style="border-left:1px dashed #fff"&gt;
+  &lt;div class="equal"&gt;
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+<br>
+<div class="row-flex bg-crimson radius">
+ <div class="flex l6 m6 s6">
+  <div class="equal">
+   Content text sedikit
+  </div>
+ </div>
+ <div class="flex l6 m6 s6" style="border-left:1px dashed #fff">
+  <div class="equal">
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+ </div>
+</div>
+<!-- End Flex -->
+						
+					</div>	
+					<!-- End Interior -->
+					<div class="center-align box-shadow" style="background-color:#f2f2f2;margin-top:50px">
+						<div class="interior">
+							<div class="secpad-g">
+								<h1 class="font2">Next Project</h1> 
+								<p class="font-18">Column CSS3 Transform 3D and Many More.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row box-shadow">
+			<div class="column eq12">
+				<div class="bg-crimson white" style="padding:64px 16px">
+					<p class="center-align">
+						Core is a CSS framework created by Andika Chamberlin. 
+					</p>
+					<p class="font center-align">Copyright © Andika Chamberlin.</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 <script>
+function dropdown() {
+    document.getElementById("dropdownMenu").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+	if (!event.target.matches('.dropdown-button')) {
+
+    var dropdowns = document.getElementsByClassName("dropnav-content");
+    var i;
+	for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
 </script>
+
 </html>
