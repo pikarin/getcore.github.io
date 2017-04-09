@@ -1,12 +1,12 @@
-/*!
- * Core Color Group by Flamecore
+/*
+ * Core Color Group by getcore.github.io
  * Copyright 2017 Flamecore
- * Licensed All Rights Reserved
- * Author Andika Chamberlin
- 
-/*================================================= Color Group ========================================================*/
+ * Github site github.com/getcore/core
+ * Author Andika Chamberlin Follow Me twitter.com/andikamingo
+ * MIT License 
+*/
 
-/* Color Group */
+/*================================================= Color Group ========================================================*/
 
 /* Color Pink */
 .pink{color:#FFC0CB}
@@ -17,15 +17,15 @@
 .mediumvioletred{color:#C71585}
 
 /* Color Purple */
-.lavender{color:#e6e6fa} 		
-.thistle{color:#d8bfd8!important} 		
-.plum{color:#dda0dd!important} 		
-.orchid{color:#da70d6!important}		
-.violet{color:#ee82ee}		
-.fuchsia{color:#ff00ff}		
-.magenta{color:#ff00ff}		
-.mediumorchid{color:#ba55d3}	 		
-.darkorchid{color:#9932cc!important}	
+.lavender{color:#e6e6fa}
+.thistle{color:#d8bfd8}
+.plum{color:#dda0dd}
+.orchid{color:#da70d6}		
+.violet{color:#ee82ee}
+.fuchsia{color:#ff00ff}
+.magenta{color:#ff00ff}
+.mediumorchid{color:#ba55d3}
+.darkorchid{color:#9932cc}	
 .darkviolet{color:#9400d3}	
 .blueviolet{color:#8a2be2}	
 .darkmagenta{color:#8b008b}	
@@ -49,10 +49,10 @@
 .darkred{color:#8b0000}
 
 /* Orange */
-.orange{color:#ffa500} 			
-.darkorange{color:#ff8c00}	 				
-.coral{color:#ff7f50}	 				
-.tomato{color:#ff6347}	 			
+.orange{color:#ffa500}
+.darkorange{color:#ff8c00}
+.coral{color:#ff7f50}
+.tomato{color:#ff6347}
 .orangered{color:#ff4500}	
 
 /* Yellow */
@@ -184,15 +184,15 @@
 .bg-mediumvioletred{color:#fff;background-color:#C71585}
 
 /* Color Purple */
-.bg-lavender{color:#fff;background-color:#e6e6fa} 		
-.bg-thistle{color:#fff;background-color:#d8bfd8!important} 		
-.bg-plum{color:#fff;background-color:#dda0dd!important} 		
-.bg-orchid{color:#fff;background-color:#da70d6!important}		
+.bg-lavender{color:#000;background-color:#e6e6fa}
+.bg-thistle{color:#fff;background-color:#d8bfd8}
+.bg-plum{color:#fff;background-color:#dda0dd}
+.bg-orchid{color:#fff;background-color:#da70d6}
 .bg-violet{color:#fff;background-color:#ee82ee}		
 .bg-fuchsia{color:#fff;background-color:#ff00ff}		
 .bg-magenta{color:#fff;background-color:#ff00ff}		
-.bg-mediumorchid{color:#fff;background-color:#ba55d3}	 		
-.bg-darkorchid{color:#fff;background-color:#9932cc!important}	
+.bg-mediumorchid{color:#fff;background-color:#ba55d3}
+.bg-darkorchid{color:#fff;background-color:#9932cc}	
 .bg-darkviolet{color:#fff;background-color:#9400d3}	
 .bg-blueviolet{color:#fff;background-color:#8a2be2}	
 .bg-darkmagenta{color:#fff;background-color:#8b008b}	
@@ -216,10 +216,10 @@
 .bg-darkred{color:#fff;background-color:#8b0000}
 
 /* Orange */
-.bg-orange{color:#fff;background-color:#ffa500} 			
-.bg-darkorange{color:#fff;background-color:#ff8c00}	 				
-.bg-coral{color:#fff;background-color:#ff7f50}	 				
-.bg-tomato{color:#fff;background-color:#ff6347}	 			
+.bg-orange{color:#fff;background-color:#ffa500}
+.bg-darkorange{color:#fff;background-color:#ff8c00}
+.bg-coral{color:#fff;background-color:#ff7f50}
+.bg-tomato{color:#fff;background-color:#ff6347}
 .bg-orangered{color:#fff;background-color:#ff4500}	
 
 /* Yellow */
@@ -229,11 +229,11 @@
 .bg-lemonchiffon{color:#000;background-color:#fffacd}
 .bg-lightgoldenrodyellow{color:#000;background-color:#fafad2}
 .bg-papayawhip{color:#000;background-color:#ffefd5}
-.bg-moccasin{color:#fff;background-color:#ffe4b5}
-.bg-peachpuff{color:#fff;background-color:#ffdab9}
-.bg-palegoldenrod{color:#fff;background-color:#eee8aa}
-.bg-khaki{color:#fff;background-color:#f0e68c}
-.bg-darkkhaki{color:#fff;background-color:#bdb76b}
+.bg-moccasin{color:#000;background-color:#ffe4b5}
+.bg-peachpuff{color:#000;background-color:#ffdab9}
+.bg-palegoldenrod{color:#000;background-color:#eee8aa}
+.bg-khaki{color:#000;background-color:#f0e68c}
+.bg-darkkhaki{color:#000;background-color:#bdb76b}
 
 /* Green */
 .bg-greenyellow{color:#fff;background-color:#adff2f}
@@ -262,7 +262,7 @@
 /* Cyan */
 .bg-aqua{color:#fff;background-color:#00ffff}
 .bg-cyan{color:#fff;background-color:#00ffff}
-.bg-lightcyan{color:#fff;background-color:#e0ffff}
+.bg-lightcyan{color:#000;background-color:#e0ffff}
 .bg-paleturquoise{color:#fff;background-color:#afeeee}
 .bg-aquamarine{color:#fff;background-color:#7fffd4}
 .bg-turquoise{color:#fff;background-color:#40e0d0}
@@ -288,11 +288,11 @@
 .bg-midnightblue{color:#fff;background-color:#191970}
 
 /* Brown */
-.bg-cornsilk{color:#fff;background-color:#fff8dc}
-.bg-blanchedalmond{color:#fff;background-color:#ffebcd}
-.bg-bisque{color:#fff;background-color:#ffe4c4}
-.bg-navajowhite{color:#fff;background-color:#ffdead}
-.bg-wheat{color:#fff;background-color:#f5deb3}
+.bg-cornsilk{color:#000;background-color:#fff8dc}
+.bg-blanchedalmond{color:#000;background-color:#ffebcd}
+.bg-bisque{color:#000;background-color:#ffe4c4}
+.bg-navajowhite{color:#000;background-color:#ffdead}
+.bg-wheat{color:#000;background-color:#f5deb3}
 .bg-burlywood{color:#fff;background-color:#deb887}
 .bg-tan{color:#fff;background-color:#d2b48c}
 .bg-rosybrown{color:#fff;background-color:#bc8f8f}
@@ -351,15 +351,15 @@
 .hover-mediumvioletred:hover{color:#fff;transition-duration:0.9s;background-color:#C71585}
 
 /* Color Purple */
-.hover-lavender:hover{color:#fff;transition-duration:0.9s;background-color:#e6e6fa} 		
-.hover-thistle:hover{color:#fff;transition-duration:0.9s;background-color:#d8bfd8!important} 		
-.hover-plum:hover{color:#fff;transition-duration:0.9s;background-color:#dda0dd!important} 		
-.hover-orchid:hover{color:#fff;transition-duration:0.9s;background-color:#da70d6!important}		
+.hover-lavender:hover{color:color:#000;transition-duration:0.9s;background-color:#e6e6fa}
+.hover-thistle:hover{color:#fff;transition-duration:0.9s;background-color:#d8bfd8}
+.hover-plum:hover{color:#fff;transition-duration:0.9s;background-color:#dda0dd}
+.hover-orchid:hover{color:#fff;transition-duration:0.9s;background-color:#da70d6}		
 .hover-violet:hover{color:#fff;transition-duration:0.9s;background-color:#ee82ee}		
 .hover-fuchsia:hover{color:#fff;transition-duration:0.9s;background-color:#ff00ff}		
 .hover-magenta:hover{color:#fff;transition-duration:0.9s;background-color:#ff00ff}		
-.hover-mediumorchid:hover{color:#fff;transition-duration:0.9s;background-color:#ba55d3}	 		
-.hover-darkorchid:hover{color:#fff;transition-duration:0.9s;background-color:#9932cc!important}	
+.hover-mediumorchid:hover{color:#fff;transition-duration:0.9s;background-color:#ba55d3}
+.hover-darkorchid:hover{color:#fff;transition-duration:0.9s;background-color:#9932cc}	
 .hover-darkviolet:hover{color:#fff;transition-duration:0.9s;background-color:#9400d3}	
 .hover-blueviolet:hover{color:#fff;transition-duration:0.9s;background-color:#8a2be2}	
 .hover-darkmagenta:hover{color:#fff;transition-duration:0.9s;background-color:#8b008b}	
@@ -383,10 +383,10 @@
 .hover-darkred:hover{color:#fff;transition-duration:0.9s;background-color:#8b0000}
 
 /* Orange */
-.hover-orange:hover{color:#fff;transition-duration:0.9s;background-color:#ffa500} 			
-.hover-darkorange:hover{color:#fff;transition-duration:0.9s;background-color:#ff8c00}	 				
-.hover-coral:hover{color:#fff;transition-duration:0.9s;background-color:#ff7f50}	 				
-.hover-tomato:hover{color:#fff;transition-duration:0.9s;background-color:#ff6347}	 			
+.hover-orange:hover{color:#fff;transition-duration:0.9s;background-color:#ffa500}
+.hover-darkorange:hover{color:#fff;transition-duration:0.9s;background-color:#ff8c00}
+.hover-coral:hover{color:#fff;transition-duration:0.9s;background-color:#ff7f50}
+.hover-tomato:hover{color:#fff;transition-duration:0.9s;background-color:#ff6347}
 .hover-orangered:hover{color:#fff;transition-duration:0.9s;background-color:#ff4500}	
 
 /* Yellow */
@@ -396,11 +396,11 @@
 .hover-lemonchiffon:hover{color:#000;transition-duration:0.9s;background-color:#fffacd}
 .hover-lightgoldenrodyellow:hover{color:#000;transition-duration:0.9s;background-color:#fafad2}
 .hover-papayawhip:hover{color:#000;transition-duration:0.9s;background-color:#ffefd5}
-.hover-moccasin:hover{color:#fff;transition-duration:0.9s;background-color:#ffe4b5}
-.hover-peachpuff:hover{color:#fff;transition-duration:0.9s;background-color:#ffdab9}
-.hover-palegoldenrod:hover{color:#fff;transition-duration:0.9s;background-color:#eee8aa}
-.hover-khaki:hover{color:#fff;transition-duration:0.9s;background-color:#f0e68c}
-.hover-darkkhaki:hover{color:#fff;transition-duration:0.9s;background-color:#bdb76b}
+.hover-moccasin:hover{color:#000;transition-duration:0.9s;background-color:#ffe4b5}
+.hover-peachpuff:hover{color:#000;transition-duration:0.9s;background-color:#ffdab9}
+.hover-palegoldenrod:hover{color:#000;transition-duration:0.9s;background-color:#eee8aa}
+.hover-khaki:hover{color:#000;transition-duration:0.9s;background-color:#f0e68c}
+.hover-darkkhaki:hover{color:#000;transition-duration:0.9s;background-color:#bdb76b}
 
 /* Green */
 .hover-greenyellow:hover{color:#fff;transition-duration:0.9s;background-color:#adff2f}
@@ -429,7 +429,7 @@
 /* Cyan */
 .hover-aqua:hover{color:#fff;transition-duration:0.9s;background-color:#00ffff}
 .hover-cyan:hover{color:#fff;transition-duration:0.9s;background-color:#00ffff}
-.hover-lightcyan:hover{color:#fff;transition-duration:0.9s;background-color:#e0ffff}
+.hover-lightcyan:hover{color:#000;transition-duration:0.9s;background-color:#e0ffff}
 .hover-paleturquoise:hover{color:#fff;transition-duration:0.9s;background-color:#afeeee}
 .hover-aquamarine:hover{color:#fff;transition-duration:0.9s;background-color:#7fffd4}
 .hover-turquoise:hover{color:#fff;transition-duration:0.9s;background-color:#40e0d0}
@@ -455,11 +455,11 @@
 .hover-midnightblue:hover{color:#fff;transition-duration:0.9s;background-color:#191970}
 
 /* Brown */
-.hover-cornsilk:hover{color:#fff;transition-duration:0.9s;background-color:#fff8dc}
-.hover-blanchedalmond:hover{color:#fff;transition-duration:0.9s;background-color:#ffebcd}
-.hover-bisque:hover{color:#fff;transition-duration:0.9s;background-color:#ffe4c4}
-.hover-navajowhite:hover{color:#fff;transition-duration:0.9s;background-color:#ffdead}
-.hover-wheat:hover{color:#fff;transition-duration:0.9s;background-color:#f5deb3}
+.hover-cornsilk:hover{color:#000;transition-duration:0.9s;background-color:#fff8dc}
+.hover-blanchedalmond:hover{color:#000;transition-duration:0.9s;background-color:#ffebcd}
+.hover-bisque:hover{color:#000;transition-duration:0.9s;background-color:#ffe4c4}
+.hover-navajowhite:hover{color:#000;transition-duration:0.9s;background-color:#ffdead}
+.hover-wheat:hover{color:#000;transition-duration:0.9s;background-color:#f5deb3}
 .hover-burlywood:hover{color:#fff;transition-duration:0.9s;background-color:#deb887}
 .hover-tan:hover{color:#fff;transition-duration:0.9s;background-color:#d2b48c}
 .hover-rosybrown:hover{color:#fff;transition-duration:0.9s;background-color:#bc8f8f}
@@ -514,14 +514,14 @@
 .hover-mediumvioletred{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#C71585}
 
 /* Color Purple */
-.hover-lavender{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#e6e6fa} 		
-.hover-thistle{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#d8bfd8} 		
-.hover-plum{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#dda0dd} 		
+.hover-lavender{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#e6e6fa}
+.hover-thistle{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#d8bfd8}
+.hover-plum{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#dda0dd}
 .hover-orchid{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#da70d6}		
 .hover-violet{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ee82ee}		
 .hover-fuchsia{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ff00ff}		
 .hover-magenta{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ff00ff}		
-.hover-mediumorchid{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ba55d3}	 		
+.hover-mediumorchid{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ba55d3}
 .hover-darkorchid{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#9932cc}	
 .hover-darkviolet{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#9400d3}	
 .hover-blueviolet{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#8a2be2}	
@@ -546,10 +546,10 @@
 .hover-darkred{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#8b0000}
 
 /* Orange */
-.hover-orange{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffa500} 			
-.hover-darkorange{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ff8c00}	 				
-.hover-coral{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ff7f50}	 				
-.hover-tomato{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ff6347}	 			
+.hover-orange{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ffa500}
+.hover-darkorange{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ff8c00}
+.hover-coral{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ff7f50}
+.hover-tomato{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ff6347}
 .hover-orangered{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ff4500}	
 
 /* Yellow */
@@ -677,15 +677,15 @@
 .text-hover-mediumvioletred:hover{transition-duration:0.9s;color:#C71585}
 
 /* Color Purple */
-.text-hover-lavender:hover{transition-duration:0.9s;color:#e6e6fa} 		
-.text-hover-thistle:hover{transition-duration:0.9s;color:#d8bfd8!important} 		
-.text-hover-plum:hover{transition-duration:0.9s;color:#dda0dd!important} 		
-.text-hover-orchid:hover{transition-duration:0.9s;color:#da70d6!important}		
+.text-hover-lavender:hover{transition-duration:0.9s;color:#e6e6fa}
+.text-hover-thistle:hover{transition-duration:0.9s;color:#d8bfd8}
+.text-hover-plum:hover{transition-duration:0.9s;color:#dda0dd}
+.text-hover-orchid:hover{transition-duration:0.9s;color:#da70d6}		
 .text-hover-violet:hover{transition-duration:0.9s;color:#ee82ee}		
 .text-hover-fuchsia:hover{transition-duration:0.9s;color:#ff00ff}		
 .text-hover-magenta:hover{transition-duration:0.9s;color:#ff00ff}		
-.text-hover-mediumorchid:hover{transition-duration:0.9s;color:#ba55d3}	 		
-.text-hover-darkorchid:hover{transition-duration:0.9s;color:#9932cc!important}	
+.text-hover-mediumorchid:hover{transition-duration:0.9s;color:#ba55d3}
+.text-hover-darkorchid:hover{transition-duration:0.9s;color:#9932cc}	
 .text-hover-darkviolet:hover{transition-duration:0.9s;color:#9400d3}	
 .text-hover-blueviolet:hover{transition-duration:0.9s;color:#8a2be2}	
 .text-hover-darkmagenta:hover{transition-duration:0.9s;color:#8b008b}	
@@ -709,10 +709,10 @@
 .text-hover-darkred:hover{transition-duration:0.9s;color:#8b0000}
 
 /* Orange */
-.text-hover-orange:hover{transition-duration:0.9s;color:#ffa500} 			
-.text-hover-darkorange:hover{transition-duration:0.9s;color:#ff8c00}	 				
-.text-hover-coral:hover{transition-duration:0.9s;color:#ff7f50}	 				
-.text-hover-tomato:hover{transition-duration:0.9s;color:#ff6347}	 			
+.text-hover-orange:hover{transition-duration:0.9s;color:#ffa500}
+.text-hover-darkorange:hover{transition-duration:0.9s;color:#ff8c00}
+.text-hover-coral:hover{transition-duration:0.9s;color:#ff7f50}
+.text-hover-tomato:hover{transition-duration:0.9s;color:#ff6347}
 .text-hover-orangered:hover{transition-duration:0.9s;color:#ff4500}	
 
 /* Yellow */
@@ -840,14 +840,14 @@
 .text-hover-mediumvioletred{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#C71585}
 
 /* Color Purple */
-.text-hover-lavender{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#e6e6fa} 		
-.text-hover-thistle{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#d8bfd8} 		
-.text-hover-plum{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#dda0dd} 		
+.text-hover-lavender{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#e6e6fa}
+.text-hover-thistle{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#d8bfd8}
+.text-hover-plum{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#dda0dd}
 .text-hover-orchid{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#da70d6}		
 .text-hover-violet{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ee82ee}		
 .text-hover-fuchsia{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ff00ff}		
 .text-hover-magenta{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ff00ff}		
-.text-hover-mediumorchid{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ba55d3}	 		
+.text-hover-mediumorchid{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#ba55d3}
 .text-hover-darkorchid{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#9932cc}	
 .text-hover-darkviolet{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#9400d3}	
 .text-hover-blueviolet{-webkit-transition: all ease 0.9s;-moz-transition: all ease 0.9s;-o-transition: all ease 0.9s;-ms-transition: all ease 0.9s;transition: all ease 0.9s;#8a2be2}	
