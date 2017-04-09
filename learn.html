@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,12 +6,17 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="Flamecore, Framework Core, Learn Core, Learn, Learn Framework Core, Core CSS, Templates with Core, Framework CSS Indonesia,
+<meta name="keywords" content="Flamecore, Learn Framework Core, Framework Core, Core CSS, Templates with Core, Framework CSS Indonesia,
 Framework Indonesia, Core, Core Column, Core Color">
 <meta name="description" content="Framework CSS with Library Colors Indonesia">
 <meta name="author" content="Andika Chamberlin">
 <link rel="icon" href="getcore.github.io/icore.png" type="image/x-icon">
 <link rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css">
+<link rel="stylesheet" href="getcore.github.io/core/color/color.css" type="text/css">
+<link rel="stylesheet" href="getcore.github.io/core/column/column12.css" type="text/css">
+<link rel="stylesheet" href="core/core.css" type="text/css">
+<link rel="stylesheet" href="core/color/color.css" type="text/css">
+<link rel="stylesheet" href="core/column/column12.css" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Finger+Paint" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -26,7 +32,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 <body>
 	<div class="container-full">
 		<div class="row">
-			<div class="column eq12">
+			<div class="column s12">
 				<ul class="navbar navbar-crimson bg-darkslategray box-shadow animation-top fixed-top">
 					<li class="hm hl">
 						<div class="click-dropdown">
@@ -72,6 +78,8 @@ Framework Indonesia, Core, Core Column, Core Color">
 				<li><a href="#button">Button</a></li>
 				<li><a href="#images">Images</a></li>
 				<li><a href="#section">Section</a></li>
+				<li><a href="#display">Display</a></li>
+				<li><a href="#navbar">Navbar</a></li>
 				<li><a href="#pagination">Pagination</a></li>
 				<li><a href="#ribbon">Ribbon</a></li>
 				<li><a href="#progressbar">Progress Bar</a></li>
@@ -92,7 +100,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 			<div class="interior bg-crimson box-shadow">
 				<header class="white" style="padding:200px 0px">
 					<center>
-						<h1 class="font text-shadow" style="font-size:80px;padding-bottom:30px">Learn Core</h1>
+						<h1 class="font" style="font-size:80px;padding-bottom:30px">Learn Core</h1>
 					</center>
 				</header>
 			</div>
@@ -160,7 +168,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 								Memulai core secara offline | <a class="hlink-underline" href="getcore.github.io/core/core.css" download">Download</a>
 							</p>
 							<p>
-								Untuk mendownload semuanya dari Core lihat di | <a class="hlink-underline" href="http://github.com/getcore/core">Project Files</a>
+								Untuk mendownload semuanya dari Core lihat di | <a class="hlink-underline" href="github.com/getcore/core">Project Files</a>
 							</p>
 <pre>
 <code>
@@ -1344,7 +1352,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 								<p class="subheader">Gambar</p>
 								<p>Membuat Gamber Responsive</p>
 								<div class="inside">
-									<img src="images/icore-l.png" class="img-responsive">
+									<img src="images/icore/icore-l.png" class="img-responsive">
 								</div>
 							</div>
 					</div>
@@ -1680,6 +1688,10 @@ fixed-top dan jika ingin kebawah berikan class fixed-bottom.
 									active sebelumn nama warna color group.
 									Pada kasus di bawah, kita tambahkan class="active-crimson.
 									Itu di samakan dengan warna hover class="navbar-crimson".
+									<br>
+									<div class="alert warning-dashed">
+										Warna dropdown active hanya berlaku pada warna Color Group
+									</div>
 								</p>
 								<br>
 <ul class="navbar-dropdown bg-darkslategray navbar-crimson">
@@ -2642,8 +2654,7 @@ Menampilkan
  
  <dt>Position-bottomleft:</dt>
  <dd>Membuat content berada di bawah sebelah kiri</dd>
-</div>
-<div class="dl-horizontal">
+ 
  <dt>left:</dt>
  <dd>Membuat float sebelah kiri</dd>
  
