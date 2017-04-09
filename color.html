@@ -1,107 +1,1004 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Comming Soon</title>
+<title>Core Colors</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="Flamecore, Framework Core, Core CSS, Templates with Core, Framework CSS Indonesia,
-Framework Indonesia, Core, Core Column, Core Color">
+Framework Indonesia, Core, Core Color, Color Group, Crayola, Crayola Color, Resense Color">
 <meta name="description" content="Framework CSS with Library Colors Indonesia">
 <meta name="author" content="Andika Chamberlin">
 <link rel="icon" href="getcore.github.io/icore.png" type="image/x-icon">
-<link rel="stylesheet" href="getcore.github.io/core.css" type="text/css">
+<link rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css">
+<link rel="stylesheet" href="getcore.github.io/core/color/color.css" type="text/css">
+<link rel="stylesheet" href="getcore.github.io/core/column/column24.css" type="text/css">
 <link rel="stylesheet" href="core/core.css" type="text/css">
+<link rel="stylesheet" href="core/color/color.css" type="text/css">
+<link rel="stylesheet" href="core/column/column12.css" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Finger+Paint" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <style>
 .font{font-family: 'Finger Paint', cursive;}
-body{font-family: 'Averia Sans Libre', cursive;}
+.font2{font-family: 'Averia Sans Libre', cursive;}
+.navbar a{color:#fff}
 
-.core-animation-circle{
-	border: 5px solid skyblue;
-	margin: 0 auto;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	border-radius: 50%;
-	-webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-	opacity: .1;
-}
-.core-animation-circle:nth-child(1) {
-  width: 0px;
-  height: 0px;
-  border-color: #fff;
-  -webkit-animation: 2s 0s rotater infinite alternate;
-          animation: 2s 0s rotater infinite alternate;
-}
-.core-animation-circle:nth-child(2) {
-  width: 40px;
-  height: 40px;
-  border-color: #fff;
-  -webkit-animation: 2s 0.1s rotater infinite alternate;
-          animation: 2s 0.1s rotater infinite alternate;
-}
-.core-animation-circle:nth-child(3) {
-  width: 80px;
-  height: 80px;
-  border-color: #fff;
-  -webkit-animation: 2s 0.2s rotater infinite alternate;
-          animation: 2s 0.2s rotater infinite alternate;
-}
-
-.core-animation-circle:nth-child(4) {
-  width: 120px;
-  height: 120px;
-  border-color: #fff;
-  -webkit-animation: 2s 0.3s rotater infinite alternate;
-          animation: 2s 0.3s rotater infinite alternate;
-}
-
-.core-animation-circle:nth-child(5) {
-  width: 160px;
-  height: 160px;
-  border-color: #fff;
-  -webkit-animation: 2s 0.4s rotater infinite alternate;
-          animation: 2s 0.4s rotater infinite alternate;
-}
-@-webkit-keyframes rotater {
-  to {
-    -webkit-transform: translate(-50%, -50%) scale(2.3);
-            transform: translate(-50%, -50%) scale(2.3);
-    opacity: 1;
-  }
-}
-
-@keyframes rotater {
-  to {
-    -webkit-transform: translate(-50%, -50%) scale(2.3);
-            transform: translate(-50%, -50%) scale(2.3);
-    opacity: 1;
-  }
+.bg{
+	background-image: url("images/bg1.png");
+	background-size:400%;
+	background-repeat:no-repeat;
 }
 </style>
 </head>
-<body class="bg-crimson" style="height:100%">
-		
-	<div class="position-topleft">
-		<div class="core-animation-circle border-color:#fff"></div>
-		<div class="core-animation-circle border-color:#fff"></div>
-		<div class="core-animation-circle border-color:#fff"></div>
-		<div class="core-animation-circle border-color:#fff"></div>
-		<div class="core-animation-circle border-color:#fff"></div>
-	</div>
-	
-	<div class="position-middle center-align" style="padding:16px">
-		<h1 class="font animation-top">COMMING SOON</h1>
-	</div>
-		
-	<div class="position-bottomleft" style="padding:16px">
-		Powered by <a href="http://getcore.github.io" class="white">getcore.github.io</a>
-	</div>
+<body class="relative">
 
+	<!-- Balloon -->
+	<div class="radius-circle absolute bg-darkslategray box-shadow rotate-circle" 
+		style="position:fixed;bottom:10px;right:10px;width:90px;height:90px">
+		<div class="position-middle">
+			<a href="#up" class="font-32 white text-hover-crimson">Up</a>
+		</div>
+	</div>
+	<div class="radius-circle absolute bg-darkslategray box-shadow rotate-circle" 
+		style="position:fixed;bottom:120px;right:20px;width:50px;height:50px">
+		<div class="position-middle">
+			<a href="#cg" class="white" title="Color Group">CG</a>
+		</div>
+	</div>
+	<div class="radius-circle absolute bg-darkslategray box-shadow rotate-circle" 
+		style="position:fixed;bottom:99px;right:90px;width:50px;height:50px">
+		<div class="position-middle">
+			<a href="#cc" class="white" title="Crayola Color">CC</a>
+		</div>
+	</div>
+	<div class="radius-circle absolute bg-darkslategray box-shadow rotate-circle" 
+		style="position:fixed;bottom:30px;right:120px;width:50px;height:50px">
+		<div class="position-middle">
+			<a href="#rs" class="white" title="Resense Color">CR</a>
+		</div>
+	</div>
+	<!-- End Ballon -->
+	
+	<div class="container-full" id="up">
+		<div class="row">
+			<div class="column s12">
+				<ul class="navbar navbar-crimson bg-darkslategray box-shadow animation-top fixed-top">
+					<li class="hm hl">
+						<div class="dropdown">
+							<a onclick="dropdown()"><i class="fa fa-bars dropdown-button"></i></a>
+							<div id="dropdownMenu" class="dropnav-content bg-darkslategray box-shadow">
+								<a href="index.html">Core</a>
+								<a href="learn.html">Learn</a>
+								<a href="column.html">Column</a>
+								<a href="color.html">Color</a>
+								<a href="js.html">JS</a>
+								<a href="templates.html">Templates</a>
+								<a href="author.html">Author</a>
+							</div>
+						</div>
+					</li>
+					<li class="hs"><a href="index.html">Core</a></li>
+					<li class="hs"><a href="learn.html">Learn</a></li>
+					<li class="hs"><a href="column.html">Column</a></li>
+					<li class="hs bg-crimson"><a href="color.html">Color</a></li>
+					<li class="hs"><a href="js.html">JS</a></li>
+					<li class="hs"><a href="templates.html">Templates</a></li>
+					<li class="right hs">
+						<a href="author.html" target="_blank">
+							Author
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="column s12">
+				<div class="interior bg-crimson box-shadow">
+					<header class="white" style="padding:200px 0px;">
+						<div class="center-align">
+							<h1 class="font hs text-shadow" style="font-size:100px;margin-bottom:50px">Core Colors</h1>
+							<h1 class="font hm hl" style="font-size:50px;margin-bottom:30px">Core Colors</h1>
+							<p class="font-21">Lebih mudah membuat berbagai macam warna</p>
+						</div>
+					</header>
+				</div>
+			</div>
+		</div>
+				
+		<div class="row" style="background-color:#f2f2f2" id="cg">
+			<div class="column s12">
+				<div class="interior" style="padding:100px 16px">
+					<div class="center-align">
+						<h2 class="font2">Color Group</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+<div class="row">
+	<div class="column l8 m8 s12">
+		<div class="interior">
+			<h3 class="section-l center-align font2">Memulai</h3>
+<p>Memulai secara online</p>
+<pre class="bg-crimson radius border-none">
+<code>
+&ltDOCTYPE html&gt
+&lthtml lang="en"&gt
+ &lthead&gt
+  &ltlink rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css"&gt
+  &ltlink rel="stylesheet" href="getcore.github.io/core/color/color.css" type="text/css"&gt
+ &lt/head&gt
+&lt/html&gt
+</code>
+</pre>		
+<br>
+<p>Memulai secara Offline | <a href="http://getcore.github.io" target="_blank" class="hlink-underline">Download</a></p>
+<pre class="bg-crimson radius border-none">
+<code>
+&ltDOCTYPE html&gt
+&lthtml lang="en"&gt
+ &lthead&gt
+  &ltlink rel="stylesheet" href="folder.../core.css" type="text/css"&gt
+  &ltlink rel="stylesheet" href="folder.../color/color.css" type="text/css"&gt
+ &lt/head&gt
+&lt/html&gt
+</code>
+</pre>		
+<br>		
+<p>Untuk membuat warna text berwarna, masukan class (warna). Berikut contoh warna code</p>
+<pre class="bg-crimson radius border-none">
+<code>
+&lt;span class="crimson"&gt;Crimson&lt;/span&gt;
+</code>			
+</pre>
+<br>
+<span class="crimson font-24">Crimson</span>
+
+<p>Untuk membuat text hover warna, gunakan class text-hover-(warna). Berikut codenya</p>
+<pre class="bg-crimson radius border-none">
+<code>
+&lt;span class="text-hover-crimson"&gt;Crimson&lt;/span&gt;
+</code>			
+</pre>
+<div class="section-m">
+	<span class="text-hover-crimson font-24">Hover Crimson</span>
+</div>
+
+<p>Untuk membuat warna background, gunakan class bg-(warna).Berikut codenya.
+<pre class="bg-crimson radius border-none">
+<code>
+&lt;div class="bg-crimson"&gt;bg-crimson&lt;/div&gt;
+</code>			
+</pre>
+<br>
+<div class="equal bg-crimson radius">
+	bg-crimson
+</div>
+
+<p>Untuk membuat hover background, gunakan class hover-(warna). Berikut codenya.
+<pre class="bg-crimson radius border-none">
+<code>
+&lt;div class="hover-crimson"&gt;hover-crimson&lt;/div&gt;
+</code>			
+</pre>
+<br>
+<div class="equal hover-crimson radius">
+	Hover Background Crimson
+</div>
+<br>
+		</div>
+	</div>		
+	<div class="column l4 m4 s12 hs">
+		<div class="interior">
+			<h3 class="section-l center-align font2">Tahukah Kamu ?</h3>
+			<div class="section-s">
+				<div class="alert info-dashed">
+					Warna dasar itu bukan merah, kuning, hijau, biru, ataupun hitam dan putih. Tetapi
+					RGB (Red, Green, Blue). Merah, hijau dan biru.
+				</div>
+			</div>
+			<div class="section-s">
+				<div class="alert info-dashed">
+					Apakah kamu tahu, kenapa warna lampu kendaraan pada umumnya berwarna kuning?
+					Karena warna kuning tidak kehilangan warnanya jika di gabungkan dengan warna putih.
+					Jelasnya warna putih seperti kehilangan warnanya.
+				</div>
+			</div>
+			<div class="section-s">
+				<div class="alert info-dashed">
+					Apakah kamu tahu, kenapa lambang cinta (love) selalu berwarna merah?
+					Karena warna merah melambangkan keberanian, yang berarti kita berani mencintai
+					tanpa dicintai, berani merelakan, berani berkorban, berani mengalah, berani menyatu, berani untuk membangun
+					kebersamaan sampai akhir hayat. Dan keberanian lain-lain dalam versi keberanianmu dalam cinta.
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Memulai -->
+
+		<!-- Color Group -->
+		<div class="row box-shadow">
+			<div class="column s12 bg">
+				<div class="row">
+					<div class="column l3 m3 s12">
+						<p class="section subheader center-align">Pink</p>
+						<div class="s12">
+							<div class="bg-pink equal">
+								bg-pink
+							</div>
+						</div>
+						<div class="s12">
+							<div class="bg-lightpink equal">
+								bg-lightpink
+							</div>
+						</div>
+						<div class="s12">
+							<div class="bg-hotpink equal">
+								bg-hotpink
+							</div>
+						</div>
+						<div class="s12">
+							<div class="bg-deeppink equal">
+								bg-deeppink
+							</div>
+						</div>
+						<div class="s12">
+							<div class="bg-palevioletred equal">
+								bg-palevioletred
+							</div>
+						</div>	
+						<div class="s12">
+							<div class="bg-mediumvioletred equal">
+								bg-mediumvioletred
+							</div>
+						</div>
+						
+						<p class="section subheader center-align">Red</p>
+						<div class="s12">
+							<div class="bg-lightsalmon equal">
+								bg-lightsalmon
+							</div>
+						</div>
+						<div class="s12">
+							<div class="bg-salmon equal">
+								salmon
+							</div>
+						</div>
+						<div class="s12">
+							<div class="bg-darksalmon equal">
+								bg-darksalmon
+							</div>
+						</div>
+						<div class="s12">
+							<div class="bg-lightcoral equal">
+								bg-lightcoral
+							</div>
+						</div>
+						<div class="s12">
+							<div class="bg-indianred equal">
+								bg-indianred
+							</div>
+						</div>
+						<div class="s12">
+							<div class="bg-crimson equal">
+								bg-crimson
+							</div>
+						</div>
+						<div class="s12">
+							<div class="bg-red equal">
+								bg-red
+							</div>
+						</div>
+						<div class="s12">
+							<div class="bg-firebrick equal">
+								bg-firebrick
+							</div>
+						</div>
+						<div class="s12">
+							<div class="bg-darkred equal">
+								bg-darkred
+							</div>
+						</div>
+						<p class="section subheader center-align">Orange</p>
+						<div class=" s12">
+							<div class="bg-orange equal">
+								bg-orange
+							</div>
+						</div>
+						<div class=" s12">
+							<div class="bg-darkorange equal">
+								bg-darkorange
+							</div>
+						</div>
+						<div class=" s12">
+							<div class="bg-coral equal">
+								bg-coral
+							</div>
+						</div>
+						<div class=" s12">
+							<div class="bg-tomato equal">
+								bg-tomato
+							</div>
+						</div>
+						<div class=" s12">
+							<div class="bg-orangered equal">
+								bg-orangered
+							</div>
+						</div>
+						<p class="section subheader center-align">Brown</p>
+				<div class="s12">
+					<div class="bg-cornsilk equal">
+						bg-cornsilk
+					</div>
+				</div>
+				<div class="s12">
+					<div class="bg-blanchedalmond equal">
+						bg-blanchedalmond
+					</div>
+				</div>
+				<div class="s12">
+					<div class="bg-bisque equal">
+						bg-bisque
+					</div>
+				</div>
+				<div class="s12">
+					<div class="bg-navajowhite equal">
+						bg-navajowhite
+					</div>
+				</div>
+				<div class="s12">
+					<div class="bg-wheat equal">
+						bg-wheat
+					</div>
+				</div>
+				<div class="s12">
+					<div class="bg-burlywood equal">
+						bg-burlywood
+					</div>
+				</div>
+				<div class="s12">
+					<div class="bg-tan equal">
+						bg-tan
+					</div>
+				</div>
+				<div class="s12">
+					<div class="bg-rosybrown equal">
+						bg-rosybrown
+					</div>
+				</div>
+				<div class="s12">
+					<div class="bg-sandybrown equal">
+						bg-sandybrown
+					</div>
+				</div>
+				<div class="s12">
+					<div class="bg-goldenrod equal">
+						bg-goldenrod
+					</div>
+				</div>
+				<div class="s12">
+					<div class="bg-darkgoldenrod equal">
+						bg-darkgoldenrod
+					</div>
+				</div>
+				<div class="s12">
+					<div class="bg-peru equal">
+						bg-peru
+					</div>
+				</div>
+				<div class="s12">
+					<div class="bg-chocolate equal">
+						bg-chocolate
+					</div>
+				</div>
+				<div class="s12">
+					<div class="bg-olive equal">
+						bg-olive
+					</div>
+				</div>
+				<div class="s12">
+					<div class="bg-saddlebrown equal">
+						bg-saddlebrown
+					</div>
+				</div>
+				<div class="s12">
+					<div class="bg-sienna equal">
+						bg-sienna
+					</div>
+				</div>
+				<div class="s12">
+					<div class="bg-brown equal">
+						bg-brown
+					</div>
+				</div>
+				<div class="s12">
+					<div class="bg-maroon equal">
+						bg-maroon
+					</div>
+				</div>
+						
+					</div>
+					<div class="column l3 m3 s12">
+						<p class="section subheader center-align">Purple</p>
+						<div class="s12">
+							<div class="bg-lavender equal">
+								bg-lavender
+							</div>
+						</div>
+						<div class="s12">
+							<div class="bg-thistle equal">
+								bg-thistle
+							</div>
+						</div>
+						<div class="s12">
+							<div class="bg-violet equal">
+								bg-violet
+							</div>
+						</div>
+						<div class="s12">
+							<div class="bg-plum equal">
+								bg-plum
+							</div>
+						</div>
+						<div class="s12">
+							<div class="bg-orchid equal">
+								bg-orchid
+							</div>
+						</div>
+						<div class="s12">
+							<div class="bg-violet equal">
+								bg-violet
+							</div>
+						</div>
+						<div class="s12">
+							<div class="bg-magenta equal">
+								bg-magenta
+							</div>
+						</div>
+						
+						<div class="s12">
+							<div class="bg-mediumorchid equal">
+								bg-mediumorchid
+							</div>
+						</div>
+						<div class="s12">
+							<div class="bg-darkorchid equal">
+								bg-darkorchid
+							</div>
+						</div>
+						<div class="s12">
+							<div class="bg-darkviolet equal">
+								bg-darkviolet
+							</div>
+						</div>
+						<div class="s12">
+							<div class="bg-blueviolet equal">
+								bg-blueviolet
+							</div>
+						</div>
+						<div class="s12">
+							<div class="bg-darkmagenta equal">
+								bg-darkmagenta
+							</div>
+						</div>
+						<div class="s12">
+							<div class="bg-purple equal">
+								bg-purple
+							</div>
+						</div>
+						<div class="s12">
+							<div class="bg-mediumpurple equal">
+								bg-mediumpurple
+							</div>
+						</div>
+						<div class="s12">
+							<div class="bg-mediumslateblue equal">
+								bg-mediumslateblue
+							</div>
+						</div>
+						<div class="s12">
+							<div class="bg-slateblue equal">
+								bg-slateblue
+							</div>
+						</div>
+						<div class="s12">
+							<div class="bg-darkslateblue equal">
+								bg-darkslateblue
+							</div>
+						</div>
+						<div class="s12">
+							<div class="bg-rebeccapurple equal">
+								bg-rebeccapurple
+							</div>
+						</div>
+						<div class="s12">
+							<div class="bg-indigo equal">
+								bg-indigo
+							</div>
+						</div>
+						<p class="section subheader center-align">Blue</p>
+				<div class=" s12">
+					<div class="bg-cadetblue equal">
+						bg-cadetblue
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-steelblue equal">
+						bg-steelblue
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-lightsteelblue equal">
+						bg-lightsteelblue
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-lightblue equal">
+						bg-lightblue
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-powderblue equal">
+						bg-powderblue
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-lightskyblue equal">
+						bg-lightskyblue
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-skyblue equal">
+						bg-skyblue
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-cornflowerblue equal">
+						bg-cornflowerblue
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-deepskyblue equal">
+						bg-deepskyblue
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-dodgerblue equal">
+						bg-dodgerblue
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-royalblue equal">
+						bg-royalblue
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-blue equal">
+						bg-blue
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-mediumblue equal">
+						bg-mediumblue
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-darkblue equal">
+						bg-darkblue
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-navy equal">
+						bg-navy
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-midnightblue equal">
+						bg-midnightblue
+					</div>
+				</div>
+					</div>
+					<div class="column l3 m3 s12">
+					<p class="section subheader center-align">Green</p>
+					<div class=" s12">
+					<div class="bg-greenyellow equal">
+						bg-greenyellow
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-chartreuse equal">
+						bg-chartreuse
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-lawngreen equal">
+						bg-lawngreen
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-lime equal">
+						bg-lime
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-limegreen equal">
+						bg-limegreen
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-palegreen equal">
+						bg-palegreen
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-lightgreen equal">
+						bg-lightgreen
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-mediumspringgreen equal">
+						bg-mediumspringgreen
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-springgreen equal">
+						bg-springgreen
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-mediumseagreen equal">
+						bg-mediumseagreen
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-seagreen equal">
+						bg-seagreen
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-forestgreen equal">
+						bg-forestgreen
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-green equal">
+						bg-green
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-darkgreen equal">
+						bg-darkgreen
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-yellowgreen equal">
+						bg-yellowgreen
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-olivedrab equal">
+						bg-olivedrab
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-darkolivegreen equal">
+						bg-darkolivegreen
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-mediumaquamarine equal">
+						bg-mediumaquamarine
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-darkseagreen equal">
+						bg-darkseagreen
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-lightseagreen equal">
+						bg-lightseagreen
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-darkcyan equal">
+						bg-darkcyan
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-teal equal">
+						bg-teal
+					</div>
+				</div>
+				<p class="section subheader center-align">Cyan</p>
+				<div class=" s12">
+					<div class="bg-aqua equal">
+						bg-aqua
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-cyan equal">
+						bg-cyan
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-lightcyan equal">
+						bg-lightcyan
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-paleturquoise equal">
+						bg-paleturquoise
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-aquamarine equal">
+						bg-aquamarine
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-turquoise equal">
+						bg-turquoise
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-mediumturquoise equal">
+						bg-mediumturquoise
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-darkturquoise equal">
+						bg-darkturquoise
+					</div>
+				</div>
+					</div>
+					<div class="column l3 m3 s12">
+					<p class="section subheader center-align">Yellow</p>
+				<div class=" s12">
+					<div class="bg-gold equal">
+						bg-gold
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-yellow equal">
+						bg-yellow
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-lightyellow equal">
+						bg-lightyellow
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-lemonchiffon equal">
+						bg-lemonchiffon
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-lightgoldenrodyellow equal">
+						bg-lightgoldenrodyellow
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-papayawhip equal">
+						bg-papayawhip
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-moccasin equal">
+						bg-moccasin
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-peachpuff equal">
+						bg-peachpuff
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-palegoldenrod equal">
+						bg-palegoldenrod
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-khaki equal">
+						bg-khaki
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-darkkhaki equal">
+						bg-darkkhaki
+					</div>
+				</div>
+				<p class="section subheader center-align">White</p>
+				<div class=" s12">
+					<div class="bg-white equal">
+						bg-white
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-snow equal">
+						bg-snow
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-honeydew equal">
+						bg-honeydew
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-mintcream equal">
+						bg-mintcream
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-azure equal">
+						bg-azure
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-aliceblue equal">
+						bg-aliceblue
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-ghostwhite equal">
+						bg-ghostwhite
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-whitesmoke equal">
+						bg-whitesmoke
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-seashell equal">
+						bg-seashell
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-beige equal">
+						bg-beige
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-oldlace equal">
+						bg-oldlace
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-floralwhite equal">
+						bg-floralwhite
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-ivory equal">
+						bg-ivory
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-antiquewhite equal">
+						bg-antiquewhite
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-linen equal">
+						bg-linen
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-lavenderblush equal">
+						bg-lavenderblush
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-mistyrose equal">
+						bg-mistyrose
+					</div>
+				</div>
+				<p class="section subheader center-align">Black</p>
+				<div class=" s12">
+					<div class="bg-gainsboro equal">
+						bg-gainsboro
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-lightgray equal">
+						bg-lightgray
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-silver equal">
+						bg-silver
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-darkgray equal">
+						bg-darkgray
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-dimgray equal">
+						bg-dimgray
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-gray equal">
+						bg-gray
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-lightslategray equal">
+						bg-lightslategray
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-slategray equal">
+						bg-slategray
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-darkslategray equal">
+						bg-darkslategray
+					</div>
+				</div>
+				<div class=" s12">
+					<div class="bg-black equal">
+						bg-black
+					</div>
+				</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Color Group -->
+		<br>
+		<div class="row box-shadow" style="background-color:#f2f2f2" id="cc">
+			<div class="column s12">
+				<div class="interior" style="padding:100px 16px">
+					<div class="center-align">
+						<h2 class="font2">Crayola Color</h2>
+						<p>Comming Soon</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+<!-- Footer -->
+<div class="row box-shadow">
+	<div class="column eq12">
+		<div class="bg-crimson white" style="padding:32px 16px">
+			<p class="center-align">
+				Core color is you.
+			</p>
+			<p class="font center-align">Copyright © Andika Chamberlin.</p>
+		</div>
+	</div>
+</div>
+<!-- END Footer -->
+
+	</div>
 </body>
 <script>
+function dropdown() {
+    document.getElementById("dropdownMenu").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+	if (!event.target.matches('.dropdown-button')) {
+
+    var dropdowns = document.getElementsByClassName("dropnav-content");
+    var i;
+	for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
 </script>
 </html>
