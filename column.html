@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +12,15 @@ Framework Indonesia, Core, Core Column, Core Color">
 <meta name="author" content="Andika Chamberlin">
 <link rel="icon" href="getcore.github.io/icore.png" type="image/x-icon">
 <link rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css">
+<link rel="stylesheet" href="getcore.github.io/core/color/color.css" type="text/css">
+<link rel="stylesheet" href="getcore.github.io/core/column/column12.css" type="text/css">
+<link rel="stylesheet" href="getcore.github.io/core/columncell/columncell12.css" type="text/css">
+<link rel="stylesheet" href="getcore.github.io/core/columnflex/columnflex12.css" type="text/css">
+<link rel="stylesheet" href="core/core.css" type="text/css">
+<link rel="stylesheet" href="core/color/color.css" type="text/css">
+<link rel="stylesheet" href="core/column/column12.css" type="text/css">
+<link rel="stylesheet" href="core/columncell/columncell12.css" type="text/css">
+<link rel="stylesheet" href="core/columnflex/columnflex12.css" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Finger+Paint" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -51,12 +61,33 @@ Framework Indonesia, Core, Core Column, Core Color">
 						</a>
 					</li>
 				</ul>
-				<ul class="navbar navbar-crimson bg-darkslategray box-shadow-top animation-bottom fixed-bottom">
-					<li class="right"><a href="#up" class="page-scroll"><i class="fa fa-caret-up"></i></a></li>
-					<li class="right"><a href="#float" class="page-scroll">Float</a></li>
-					<li class="right"><a href="#cell" class="page-scroll">Cell</a></li>
-					<li class="right"><a href="#flex" class="page-scroll">Flex</a></li>
-				</ul>
+				<!-- Balloon -->
+				<div class="radius-circle absolute bg-darkslategray box-shadow rotate-circle" 
+					style="position:fixed;bottom:10px;right:10px;width:90px;height:90px">
+					<div class="position-middle">
+						<a href="#up" class="font-32 white text-hover-crimson">Up</a>
+					</div>
+				</div>
+				<div class="radius-circle absolute bg-darkslategray box-shadow rotate-circle" 
+					style="position:fixed;bottom:120px;right:20px;width:50px;height:50px">
+					<div class="position-middle">
+						<a href="#float" class="white" title="Column Float">Fl</a>
+					</div>
+				</div>
+				<div class="radius-circle absolute bg-darkslategray box-shadow rotate-circle" 
+					style="position:fixed;bottom:99px;right:90px;width:50px;height:50px">
+					<div class="position-middle">
+						<a href="#cell" class="white" title="Column Cell">Cl</a>
+					</div>
+				</div>
+				<div class="radius-circle absolute bg-darkslategray box-shadow rotate-circle" 
+					style="position:fixed;bottom:30px;right:120px;width:50px;height:50px">
+					<div class="position-middle">
+						<a href="#flex" class="white" title="Column Flex">Fx</a>
+					</div>
+				</div>
+				<!-- End Ballon -->
+	
 			</div>
 		</div>
 		<div class="row">
@@ -75,15 +106,78 @@ Framework Indonesia, Core, Core Column, Core Color">
 		<div class="row">
 			<div class="column eq12">
 				<div class="section">
+							<br>
+						<h3 class="section-l center-align font2">Memulai</h3>
+
+						<div class="row">
+							<div class="column l6 m12 s12 interior">
+<p>Memulai column float 12</p>
+<pre class="bg-crimson radius border-none">
+<code>
+&ltDOCTYPE html&gt
+&lthtml lang="en"&gt
+ &lthead&gt
+  &ltlink rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css"&gt
+  &ltlink rel="stylesheet" href="getcore.github.io/core/column/column12.css" type="text/css"&gt
+ &lt/head&gt
+&lt/html&gt
+</code>
+</pre>								
+							</div>
+							<div class="column l6 m12 s12 interior">
+<p>Memulai column cell 12</p>
+<pre class="bg-crimson radius border-none">
+<code>
+&ltDOCTYPE html&gt
+&lthtml lang="en"&gt
+ &lthead&gt
+  &ltlink rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css"&gt
+  &ltlink rel="stylesheet" href="getcore.github.io/core/columncell/columncell12.css" type="text/css"&gt
+ &lt/head&gt
+&lt/html&gt
+</code>
+</pre>								
+							</div>
+							<div class="column l6 m12 s12 interior">
+<p>Memulai column flexbox 12</p>
+<pre class="bg-crimson radius border-none">
+<code>
+&ltDOCTYPE html&gt
+&lthtml lang="en"&gt
+ &lthead&gt
+  &ltlink rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css"&gt
+  &ltlink rel="stylesheet" href="getcore.github.io/core/columnflex/columnflex12.css" type="text/css"&gt
+ &lt/head&gt
+&lt/html&gt
+</code>
+</pre>								
+							</div>
+							<div class="column l6 m12 s12 interior">
+<p>Memulai column Offline | <a href="http://getcore.github.io" target="_blank" class="hlink-underline">Download</a></p>
+<pre class="bg-crimson radius border-none">
+<code>
+&ltDOCTYPE html&gt
+&lthtml lang="en"&gt
+ &lthead&gt
+  &ltlink rel="stylesheet" href="folder.../core.css" type="text/css"&gt
+  &ltlink rel="stylesheet" href="folder.../column12.css" type="text/css"&gt
+ &lt/head&gt
+&lt/html&gt
+</code>
+</pre>								
+							</div>
+						</div>
 					<div class="interior">
-						<br>
+						
+<br>
+<br>	
 						<h3 class="center-align font2">Pengantar</h3>
 						<p>
 						Core Column memiliki 3 sifat, yaitu float, table cell dan flexbox. Dalam segi penulisan
 						code tidak jauh berbeda. Float menambahkan class (row) Table cell (row-cell) Flexbox 
 						(row-flex) untuk membuat column, Float menambahkan (column) Table cell (cell) Flexbox
 						(flex). Berikut Contoh Penulisannya.
-
+						</p>
 <p class="subheader">Float (column)</p>
 <pre class="bg-crimson border-none">
 <code>
