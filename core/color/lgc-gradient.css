@@ -1,0 +1,13 @@
+/*
+ * Core Linear Gradient Combine 2,3,4 Color by getcore.github.io
+ * Copyright 2017 Flamecore
+ * Github site github.com/getcore/core
+ * Author Andika Chamberlin Follow Me twitter.com/andikamingo
+ * MIT License 
+*/
+
+/* Green */
+.lgc-green-1{
+	background-image: linear-gradient(to right, mediumaquamarine, darkseagreen, lightseagreen, darkcyan, teal);
+	color:#fff;
+}

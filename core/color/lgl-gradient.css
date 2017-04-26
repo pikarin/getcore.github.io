@@ -1,0 +1,268 @@
+/*
+ * Core Linear Gradient to left Color by getcore.github.io
+ * Copyright 2017 Flamecore
+ * Github site github.com/getcore/core
+ * Author Andika Chamberlin Follow Me twitter.com/andikamingo
+ * MIT License 
+*/
+
+/* Pink */
+.lgl-pink-1{
+	background-image: linear-gradient(to left, pink, lightpink);
+	color:#fff;
+}
+.lgl-pink-2{
+	background-image: linear-gradient(to left, lightpink, palevioletred);
+	color:#fff;
+}
+.lgl-pink-3{
+	background-image: linear-gradient(to left, hotpink, deeppink);
+	color:#fff;
+}
+.lgl-pink-4{
+	background-image: linear-gradient(to left, deeppink, mediumvioletred);
+	color:#fff;
+}
+/* End Pink */
+
+/* Red */
+.lgl-red-1{
+	background-image: linear-gradient(to left, lightsalmon, darksalmon);
+	color:#fff;
+}
+.lgl-red-2{
+	background-image: linear-gradient(to left, salmon, lightcoral);
+	color:#fff;
+}
+.lgl-red-3{
+	background-image: linear-gradient(to left, indianred, firebrick);
+	color:#fff;
+}
+.lgl-red-4{
+	background-image: linear-gradient(to left, firebrick, darkred);
+	color:#fff;
+}
+.lgl-red-5{
+	background-image: linear-gradient(to left, crimson, red);
+	color:#fff;
+}
+/* End Red */
+
+/* Orange */
+.lgl-orange-1{
+	background-image: linear-gradient(to left, orange, darkorange);
+	color:#fff;
+}
+.lgl-orange-2{
+	background-image: linear-gradient(to left, coral, tomato);
+	color:#fff;
+}
+.lgl-orange-3{
+	background-image: linear-gradient(to left, tomato, orangered);
+	color:#fff;
+}
+/* End Orange */
+
+/* Brown */
+.lgl-brown-1{
+	background-image: linear-gradient(to left, burlywood, tan);
+	color:#fff;
+}
+.lgl-brown-2{
+	background-image: linear-gradient(to left, sandybrown, peru);
+	color:#fff;
+}
+.lgl-brown-3{
+	background-image: linear-gradient(to left, sandybrown, chocolate);
+	color:#fff;
+}
+.lgl-brown-4{
+	background-image: linear-gradient(to left, goldenrod, darkgoldenrod);
+	color:#fff;
+}
+.lgl-brown-5{
+	background-image: linear-gradient(to left, darkgoldenrod, olive);
+	color:#fff;
+}
+.lgl-brown-6{
+	background-image: linear-gradient(to left, saddlebrown, sienna);
+	color:#fff;
+}
+.lgl-brown-7{
+	background-image: linear-gradient(to left, brown, maroon);
+	color:#fff;
+}
+/* End Brown */
+
+/* Purple */
+.lgl-purple-1{
+	background-image: linear-gradient(to left, lavender, thistle);
+	color:#000;
+}
+.lgl-purple-2{
+	background-image: linear-gradient(to left, violet, magenta);
+	color:#fff;
+}
+.lgl-purple-3{
+	background-image: linear-gradient(to left, violet, orchid);
+	color:#fff;
+}
+.lgl-purple-4{
+	background-image: linear-gradient(to left, orchid, mediumorchid);
+	color:#fff;
+}
+.lgl-purple-5{
+	background-image: linear-gradient(to left, darkorchid, darkviolet);
+	color:#fff;
+}
+.lgl-purple-6{
+	background-image: linear-gradient(to left, blueviolet, rebeccapurple);
+	color:#fff;
+}
+.lgl-purple-7{
+	background-image: linear-gradient(to left, darkmagenta, purple);
+	color:#fff;
+}
+.lgl-purple-8{
+	background-image: linear-gradient(to left, mediumslateblue, slateblue);
+	color:#fff;
+}
+.lgl-purple-9{
+	background-image: linear-gradient(to left, darkslateblue, rebeccapurple);
+	color:#fff;
+}
+.lgl-purple-10{
+	background-image: linear-gradient(to left, rebeccapurple, indigo);
+	color:#fff;
+}
+.lgl-purple-11{
+	background-image: linear-gradient(to left, blueviolet, slateblue);
+	color:#fff;
+}
+/* End Purple */
+
+/* Blue */
+.lgl-blue-1{
+	background-image: linear-gradient(to left, cadetblue, steelblue);
+	color:#fff;
+}
+.lgl-blue-2{
+	background-image: linear-gradient(to left, lightsteelblue, lightblue);
+	color:#fff;
+}
+.lgl-blue-3{
+	background-image: linear-gradient(to left, cornflowerblue, deepskyblue);
+	color:#fff;
+}
+.lgl-blue-4{
+	background-image: linear-gradient(to left, deepskyblue, dodgerblue);
+	color:#fff;
+}
+.lgl-blue-5{
+	background-image: linear-gradient(to left, royalblue, blue);
+	color:#fff;
+}
+.lgl-blue-6{
+	background-image: linear-gradient(to left, mediumblue, darkblue);
+	color:#fff;
+}
+/* End Blue */
+
+/* Green */
+.lgl-green-1{
+	background-image: linear-gradient(to left, mediumspringgreen, limegreen);
+	color:#fff;
+}
+.lgl-green-2{
+	background-image: linear-gradient(to left, mediumseagreen, seagreen);
+	color:#fff;
+}
+.lgl-green-3{
+	background-image: linear-gradient(to left, forestgreen, darkgreen);
+	color:#fff;
+}
+.lgl-green-4{
+	background-image: linear-gradient(to left, mediumaquamarine, lightseagreen);
+	color:#fff;
+}
+.lgl-green-5{
+	background-image: linear-gradient(to left, mediumaquamarine, darkcyan);
+	color:#fff;
+}
+.lgl-green-6{
+	background-image: linear-gradient(to left, mediumaquamarine, teal);
+	color:#fff;
+}
+.lgl-green-7{
+	background-image: linear-gradient(to left, lightseagreen, darkcyan);
+	color:#fff;
+}
+.lgl-green-8{
+	background-image: linear-gradient(to left, lightseagreen, teal);
+	color:#fff;
+}
+/* End Green */
+
+/* Cyan */
+.lgl-cyan-1{
+	background-image: linear-gradient(to left, aquamarine, turquoise);
+	color:#fff;
+}
+.lgl-cyan-2{
+	background-image: linear-gradient(to left, aquamarine, mediumturquoise);
+	color:#fff;
+}
+.lgl-cyan-3{
+	background-image: linear-gradient(to left, aquamarine, darkturquoise);
+	color:#fff;
+}
+.lgl-cyan-4{
+	background-image: linear-gradient(to left, mediumturquoise, darkturquoise);
+	color:#fff;
+}
+/* End Cyan */
+
+/* Yellow */
+.lgl-yellow-1{
+	background-image: linear-gradient(to left, moccasin, peachpuff);
+	color:#000;
+}
+.lgl-yellow-2{
+	background-image: linear-gradient(to left, palegoldenrod, khaki);
+	color:#000;
+}
+.lgl-yellow-3{
+	background-image: linear-gradient(to left, khaki, darkkhaki);
+	color:#000;
+}
+/* End Yellow */
+
+/* White */
+.lgl-white-1{
+	background-image: linear-gradient(to left, whitesmoke, ghostwhite);
+	color:#000;
+}
+.lgl-white-2{
+	background-image: linear-gradient(to left, snow, honeydew);
+	color:#000;
+}
+.lgl-white-3{
+	background-image: linear-gradient(to left, azure, aliceblue);
+	color:#000;
+}
+/* End Width */
+
+/* Black */
+.lgl-black-1{
+	background-image: linear-gradient(to left, dimgray, gray);
+	color:#fff;
+}
+.lgl-black-2{
+	background-image: linear-gradient(to left, dimgray, lightslategray);
+	color:#fff;
+}
+.lgl-black-3{
+	background-image: linear-gradient(to left, darkslategray, black);
+	color:#fff;
+}
+/* End Black */
