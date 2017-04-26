@@ -13,10 +13,22 @@ Framework Indonesia, Core, Core Color, Color Group, Crayola, Crayola Color, Rese
 <link rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css">
 <link rel="stylesheet" href="getcore.github.io/core/color/color.css" type="text/css">
 <link rel="stylesheet" href="getcore.github.io/core/color/crayola.css" type="text/css">
+<link rel="stylesheet" href="getcore.github.io/core/color/resene.css" type="text/css">
+<link rel="stylesheet" href="getcore.github.io/core/color/lgt-gradient.css" type="text/css">
+<link rel="stylesheet" href="getcore.github.io/core/color/lgr-gradient.css" type="text/css">
+<link rel="stylesheet" href="getcore.github.io/core/color/lgb-gradient" type="text/css">
+<link rel="stylesheet" href="getcore.github.io/core/color/lgl-gradient.css" type="text/css">
+<link rel="stylesheet" href="getcore.github.io/core/color/lgc-gradient.css" type="text/css">
 <link rel="stylesheet" href="getcore.github.io/core/column/column12.css" type="text/css">
 <link rel="stylesheet" href="core/core.css" type="text/css">
 <link rel="stylesheet" href="core/color/color.css" type="text/css">
 <link rel="stylesheet" href="core/color/crayola.css" type="text/css">
+<link rel="stylesheet" href="core/color/resene.css" type="text/css">
+<link rel="stylesheet" href="core/color/lgt-gradient.css" type="text/css">
+<link rel="stylesheet" href="core/color/lgr-gradient.css" type="text/css">
+<link rel="stylesheet" href="core/color/lgb-gradient.css" type="text/css">
+<link rel="stylesheet" href="core/color/lgl-gradient.css" type="text/css">
+<link rel="stylesheet" href="core/color/lgc-gradient.css" type="text/css">
 <link rel="stylesheet" href="core/column/column12.css" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Finger+Paint" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre" rel="stylesheet">
@@ -30,6 +42,17 @@ Framework Indonesia, Core, Core Color, Color Group, Crayola, Crayola Color, Rese
 	background-image: url("images/bg1.png");
 	background-size:400%;
 	background-repeat:no-repeat;
+}
+.purple{
+	background-image: url("images/purple.png");
+	background-size:100%;
+	background-position: bottom;
+	background-repeat:no-repeat;
+}
+
+.lgc-green-1{
+	background-image: linear-gradient(to right, mediumaquamarine, lightseagreen, darkcyan, teal);
+	color:#fff;
 }
 </style>
 </head>
@@ -46,6 +69,12 @@ Framework Indonesia, Core, Core Color, Color Group, Crayola, Crayola Color, Rese
 		style="position:fixed;bottom:120px;right:20px;width:50px;height:50px">
 		<div class="position-middle">
 			<a href="#cg" class="white" title="Color Group">CG</a>
+		</div>
+	</div>
+	<div class="radius-circle absolute bg-darkslategray box-shadow rotate-circle" 
+		style="position:fixed;bottom:190px;right:20px;width:50px;height:50px">
+		<div class="position-middle">
+			<a href="#lg" class="white" title="Color Group">LG</a>
 		</div>
 	</div>
 	<div class="radius-circle absolute bg-darkslategray box-shadow rotate-circle" 
@@ -74,7 +103,7 @@ Framework Indonesia, Core, Core Color, Color Group, Crayola, Crayola Color, Rese
 								<a href="learn.html">Learn</a>
 								<a href="column.html">Column</a>
 								<a href="color.html">Color</a>
-								<a href="js.html">JS</a>
+								<a href="js.html">jcore</a>
 								<a href="templates.html">Templates</a>
 								<a href="author.html">Author</a>
 							</div>
@@ -84,7 +113,7 @@ Framework Indonesia, Core, Core Color, Color Group, Crayola, Crayola Color, Rese
 					<li class="hs"><a href="learn.html">Learn</a></li>
 					<li class="hs"><a href="column.html">Column</a></li>
 					<li class="hs bg-crimson"><a href="color.html">Color</a></li>
-					<li class="hs"><a href="js.html">JS</a></li>
+					<li class="hs"><a href="js.html">jcore</a></li>
 					<li class="hs"><a href="templates.html">Templates</a></li>
 					<li class="right hs">
 						<a href="author.html" target="_blank">
@@ -97,18 +126,481 @@ Framework Indonesia, Core, Core Color, Color Group, Crayola, Crayola Color, Rese
 		
 		<div class="row">
 			<div class="column s12">
-				<div class="interior bg-crimson box-shadow">
-					<header class="white" style="padding:200px 0px;">
+				<div class="interior lgc-green-1 box-shadow">
+					<header class="white" style="padding:150px 0px;">
 						<div class="center-align">
 							<h1 class="font hs text-shadow" style="font-size:100px;margin-bottom:50px">Core Colors</h1>
-							<h1 class="font hm hl" style="font-size:50px;margin-bottom:30px">Core Colors</h1>
-							<p class="font-21">Lebih mudah membuat berbagai macam warna</p>
+							<h1 class="font hm hl" style="font-size:70px;margin-bottom:30px">Core Colors</h1>
 						</div>
+						
+						<div class="row center-align">
+							<div class="column l4 m4 s12">
+								<div class="section-m">
+									<a href="http://getcore.github.io/core/color/color.css" download class="border-white white" style="padding:8px 16px">
+										Color
+									<a>
+								</div>
+							</div>
+							<div class="column l4 m4 s12">
+								<div class="section-m">
+									<a href="http://getcore.github.io/core/color/crayola.css" download class="border-white white" style="padding:8px 16px">
+										Crayola
+									<a>
+								</div>
+							</div>
+							<div class="column l4 m4 s12">
+								<div class="section-m">
+									<a href="http://getcore.github.io/core/color/resene.css" download class="border-white white" style="padding:8px 16px">
+										Resene
+									<a>
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class="row center-align">
+							<div class="column l3 m6 s12">
+								<div class="section-m">
+									<a href="http://getcore.github.io/core/color/lgt-gradient.css" download class="border-white white" style="padding:8px 16px">
+										lgr-gradient-totop
+									<a>
+								</div>
+							</div>
+							<div class="column l3 m6 s12">
+								<div class="section-m">
+									<a href="http://getcore.github.io/core/color/lgr-gradient.css" download class="border-white white" style="padding:8px 16px">
+										lgr-gradient-toright
+									<a>
+								</div>
+							</div>
+							<div class="column l3 m6 s12">
+								<div class="section-m">
+									<a href="http://getcore.github.io/core/color/lgb-gradient.css" download class="border-white white" style="padding:8px 16px">
+										lgr-gradient-tobottom
+									<a>
+								</div>
+							</div>
+							<div class="column l3 m6 s12">
+								<div class="section-m">
+									<a href="http://getcore.github.io/core/color/lgl-gradient.css" download class="border-white white" style="padding:8px 16px">
+										lgr-gradient-toleft
+									<a>
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class="row center-align">
+							<div class="column s12">
+								<div class="section-m">
+									<a href="http://getcore.github.io/core/color/combine-gradient.css" download class="border-white white" style="padding:8px 16px">
+										combine-gradient
+									<a>
+								</div>
+							</div>
+						</div>
+						<p class="font-21 center-align">Lebih mudah membuat berbagai macam warna</p>
 					</header>
 				</div>
 			</div>
 		</div>
-				
+		<div class="row" style="background-color:#f2f2f2" id="lg">
+			<div class="column s12">
+				<div class="interior" style="padding:100px 16px">
+					<div class="center-align">
+						<h2 class="font2">Core Linear Gradient</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column l8 m8 s12">
+				<div class="interior">
+					<h3 class="section-l center-align font2">Memulai</h3>
+					<p class="subheader">Memulai secara online</p>
+					<p>Dibawah ini adalah contoh dari lgr-gradient</p>
+<pre class="bg-crimson radius border-none">
+<code>
+&ltDOCTYPE html&gt
+&lthtml lang="en"&gt
+ &lthead&gt
+  &ltlink rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css"&gt
+  &ltlink rel="stylesheet" href="getcore.github.io/core/color/lgr-gradient.css" type="text/css"&gt
+ &lt/head&gt
+&lt/html&gt
+</code>
+</pre>		
+<br>
+<p>Memulai secara Offline | <a href="http://getcore.github.io/color" target="_blank" class="hlink-underline">Download</a></p>
+<pre class="bg-crimson radius border-none">
+<code>
+&ltDOCTYPE html&gt
+&lthtml lang="en"&gt
+ &lthead&gt
+  &ltlink rel="stylesheet" href="folder.../core.css" type="text/css"&gt
+  &ltlink rel="stylesheet" href="folder.../color/lgr-gradient.css" type="text/css"&gt
+ &lt/head&gt
+&lt/html&gt
+</code>
+</pre>		
+<br>		
+<p>Untuk membuat warna linear-gradient, masukan class lgr-(warna). Berikut contoh warna code</p>
+<pre class="bg-crimson radius border-none">
+<code>
+&lt;div class="lgr-cyan-2"&gt;lgr-cyan-2&lt;/div&gt;
+</code>			
+</pre>
+<div class="section lgr-cyan-2 equal-l right-align">lgr-cyan-2</div>
+<br>
+				</div>
+			</div>
+			<div class="column l4 m4 s12">
+				<div class="interior">
+					<p>Ada 5 jenis warna linear gradient dari core</p>
+					<div class="alert warning-dashed">
+						<ul class="list" style="margin-top:-4px;margin-bottom:-4px">
+							<li>lgt-gradient</li>
+								<ul class="sublist">
+									<li>(linear gradient to top)</li>
+								</ul>
+							<li>lgr-gradient</li>
+								<ul class="sublist">
+									<li>(linear gradient to right)</li>
+								</ul>
+							<li>lgb-gradient</li>
+								<ul class="sublist">
+									<li>(linear gradient to bottom)</li>
+								</ul>
+							<li>lgl-gradient</li>
+								<ul class="sublist">
+									<li>(linear gradient to left)</li>
+								</ul>
+							<li>combine-gradient</li>
+								<ul class="sublist">
+									<li>(linear gradient combine 2 warna dan 3 warna berbeda)</li>
+								</ul>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row purple box-shadow">
+			<div class="column l4 m4 s12">
+				<p class="subheader center-align">Pink</p>
+				<div class="lgr-pink-1 equal">lgr-pink-1</div>
+				<div class="lgr-pink-2 equal">lgr-pink-2</div>
+				<div class="lgr-pink-3 equal">lgr-pink-3</div>
+				<div class="lgr-pink-4 equal">lgr-pink-4</div>
+				<p class="subheader center-align">Red</p>
+				<div class="lgr-red-1 equal">lgr-red-1</div>
+				<div class="lgr-red-2 equal">lgr-red-2</div>
+				<div class="lgr-red-3 equal">lgr-red-3</div>
+				<div class="lgr-red-4 equal">lgr-red-4</div>
+				<div class="lgr-red-5 equal">lgr-red-5</div>
+				<p class="subheader center-align">Orange</p>
+				<div class="lgr-orange-1 equal">lgr-orange-1</div>
+				<div class="lgr-orange-2 equal">lgr-orange-2</div>
+				<div class="lgr-orange-3 equal">lgr-orange-3</div>
+				<p class="subheader center-align">Brown</p>
+				<div class="lgr-brown-1 equal">lgr-brown-1</div>
+				<div class="lgr-brown-2 equal">lgr-brown-2</div>
+				<div class="lgr-brown-3 equal">lgr-brown-3</div>
+				<div class="lgr-brown-4 equal">lgr-brown-4</div>
+				<div class="lgr-brown-5 equal">lgr-brown-5</div>
+				<div class="lgr-brown-6 equal">lgr-brown-6</div>
+				<div class="lgr-brown-7 equal">lgr-brown-7</div>
+			</div>
+			<div class="column l4 m4 s12">
+				<p class="subheader center-align">Purple</p>
+				<div class="lgr-purple-1 equal">lgr-purple-1</div>
+				<div class="lgr-purple-2 equal">lgr-purple-2</div>
+				<div class="lgr-purple-3 equal">lgr-purple-3</div>
+				<div class="lgr-purple-4 equal">lgr-purple-4</div>
+				<div class="lgr-purple-5 equal">lgr-purple-5</div>
+				<div class="lgr-purple-6 equal">lgr-purple-6</div>
+				<div class="lgr-purple-7 equal">lgr-purple-7</div>
+				<div class="lgr-purple-8 equal">lgr-purple-8</div>
+				<div class="lgr-purple-9 equal">lgr-purple-9</div>
+				<div class="lgr-purple-10 equal">lgr-purple-10</div>
+				<p class="subheader center-align">Blue</p>
+				<div class="lgr-blue-1 equal">lgr-blue-1</div>
+				<div class="lgr-blue-2 equal">lgr-blue-2</div>
+				<div class="lgr-blue-3 equal">lgr-blue-3</div>
+				<div class="lgr-blue-4 equal">lgr-blue-4</div>
+				<div class="lgr-blue-5 equal">lgr-blue-5</div>
+				<div class="lgr-blue-6 equal">lgr-blue-6</div>
+				<p class="subheader center-align">Black</p>
+				<div class="lgr-black-1 equal">lgr-black-1</div>
+				<div class="lgr-black-2 equal">lgr-black-2</div>
+				<div class="lgr-black-3 equal">lgr-black-3</div>
+			</div>
+			<div class="column l4 m4 s12">
+				<p class="subheader center-align">Green</p>
+				<div class="lgr-green-1 equal">lgr-green-1</div>
+				<div class="lgr-green-2 equal">lgr-green-2</div>
+				<div class="lgr-green-3 equal">lgr-green-3</div>
+				<div class="lgr-green-4 equal">lgr-green-4</div>
+				<div class="lgr-green-5 equal">lgr-green-5</div>
+				<div class="lgr-green-6 equal">lgr-green-6</div>
+				<div class="lgr-green-7 equal">lgr-green-7</div>
+				<div class="lgr-green-8 equal">lgr-green-8</div>
+				<p class="subheader center-align">Cyan</p>
+				<div class="lgr-cyan-1 equal">lgr-cyan-1</div>
+				<div class="lgr-cyan-2 equal">lgr-cyan-2</div>
+				<div class="lgr-cyan-3 equal">lgr-cyan-3</div>
+				<div class="lgr-cyan-4 equal">lgr-cyan-4</div>
+				<p class="subheader center-align">Yellow</p>
+				<div class="lgr-yellow-1 equal">lgr-yellow-1</div>
+				<div class="lgr-yellow-2 equal">lgr-yellow-2</div>
+				<div class="lgr-yellow-3 equal">lgr-yellow-3</div>
+				<p class="subheader center-align">White</p>
+				<div class="lgr-white-1 equal">lgr-white-1</div>
+				<div class="lgr-white-2 equal">lgr-white-2</div>
+				<div class="lgr-white-3 equal">lgr-white-3</div>
+			</div>
+		</div>
+		<p class="subheader center-align">Linear Gradient to left</p>
+		<div class="row purple box-shadow">
+			<div class="column l4 m4 s12">
+				<p class="subheader center-align">Pink</p>
+				<div class="lgl-pink-1 equal">lgl-pink-1</div>
+				<div class="lgl-pink-2 equal">lgl-pink-2</div>
+				<div class="lgl-pink-3 equal">lgl-pink-3</div>
+				<div class="lgl-pink-4 equal">lgl-pink-4</div>
+				<p class="subheader center-align">Red</p>
+				<div class="lgl-red-1 equal">lgl-red-1</div>
+				<div class="lgl-red-2 equal">lgl-red-2</div>
+				<div class="lgl-red-3 equal">lgl-red-3</div>
+				<div class="lgl-red-4 equal">lgl-red-4</div>
+				<div class="lgl-red-5 equal">lgl-red-5</div>
+				<p class="subheader center-align">Orange</p>
+				<div class="lgl-orange-1 equal">lgl-orange-1</div>
+				<div class="lgl-orange-2 equal">lgl-orange-2</div>
+				<div class="lgl-orange-3 equal">lgl-orange-3</div>
+				<p class="subheader center-align">Brown</p>
+				<div class="lgl-brown-1 equal">lgl-brown-1</div>
+				<div class="lgl-brown-2 equal">lgl-brown-2</div>
+				<div class="lgl-brown-3 equal">lgl-brown-3</div>
+				<div class="lgl-brown-4 equal">lgl-brown-4</div>
+				<div class="lgl-brown-5 equal">lgl-brown-5</div>
+				<div class="lgl-brown-6 equal">lgl-brown-6</div>
+				<div class="lgl-brown-7 equal">lgl-brown-7</div>
+			</div>
+			<div class="column l4 m4 s12">
+				<p class="subheader center-align">Purple</p>
+				<div class="lgl-purple-1 equal">lgl-purple-1</div>
+				<div class="lgl-purple-2 equal">lgl-purple-2</div>
+				<div class="lgl-purple-3 equal">lgl-purple-3</div>
+				<div class="lgl-purple-4 equal">lgl-purple-4</div>
+				<div class="lgl-purple-5 equal">lgl-purple-5</div>
+				<div class="lgl-purple-6 equal">lgl-purple-6</div>
+				<div class="lgl-purple-7 equal">lgl-purple-7</div>
+				<div class="lgl-purple-8 equal">lgl-purple-8</div>
+				<div class="lgl-purple-9 equal">lgl-purple-9</div>
+				<div class="lgl-purple-10 equal">lgl-purple-10</div>
+				<p class="subheader center-align">Blue</p>
+				<div class="lgl-blue-1 equal">lgl-blue-1</div>
+				<div class="lgl-blue-2 equal">lgl-blue-2</div>
+				<div class="lgl-blue-3 equal">lgl-blue-3</div>
+				<div class="lgl-blue-4 equal">lgl-blue-4</div>
+				<div class="lgl-blue-5 equal">lgl-blue-5</div>
+				<div class="lgl-blue-6 equal">lgl-blue-6</div>
+				<p class="subheader center-align">Black</p>
+				<div class="lgl-black-1 equal">lgl-black-1</div>
+				<div class="lgl-black-2 equal">lgl-black-2</div>
+				<div class="lgl-black-3 equal">lgl-black-3</div>
+			</div>
+			<div class="column l4 m4 s12">
+				<p class="subheader center-align">Green</p>
+				<div class="lgl-green-1 equal">lgl-green-1</div>
+				<div class="lgl-green-2 equal">lgl-green-2</div>
+				<div class="lgl-green-3 equal">lgl-green-3</div>
+				<div class="lgl-green-4 equal">lgl-green-4</div>
+				<div class="lgl-green-5 equal">lgl-green-5</div>
+				<div class="lgl-green-6 equal">lgl-green-6</div>
+				<div class="lgl-green-7 equal">lgl-green-7</div>
+				<div class="lgl-green-8 equal">lgl-green-8</div>
+				<p class="subheader center-align">Cyan</p>
+				<div class="lgl-cyan-1 equal">lgl-cyan-1</div>
+				<div class="lgl-cyan-2 equal">lgl-cyan-2</div>
+				<div class="lgl-cyan-3 equal">lgl-cyan-3</div>
+				<div class="lgl-cyan-4 equal">lgl-cyan-4</div>
+				<p class="subheader center-align">Yellow</p>
+				<div class="lgl-yellow-1 equal">lgl-yellow-1</div>
+				<div class="lgl-yellow-2 equal">lgl-yellow-2</div>
+				<div class="lgl-yellow-3 equal">lgl-yellow-3</div>
+				<p class="subheader center-align">White</p>
+				<div class="lgl-white-1 equal">lgl-white-1</div>
+				<div class="lgl-white-2 equal">lgl-white-2</div>
+				<div class="lgl-white-3 equal">lgl-white-3</div>
+			</div>
+		</div>
+		<p class="subheader center-align">Linear Gradient to top</p>
+		<div class="row purple box-shadow">
+			<div class="column l4 m4 s12">
+				<p class="subheader center-align">Pink</p>
+				<div class="lgt-pink-1 equal">lgt-pink-1</div>
+				<div class="lgt-pink-2 equal">lgt-pink-2</div>
+				<div class="lgt-pink-3 equal">lgt-pink-3</div>
+				<div class="lgt-pink-4 equal">lgt-pink-4</div>
+				<p class="subheader center-align">Red</p>
+				<div class="lgt-red-1 equal">lgt-red-1</div>
+				<div class="lgt-red-2 equal">lgt-red-2</div>
+				<div class="lgt-red-3 equal">lgt-red-3</div>
+				<div class="lgt-red-4 equal">lgt-red-4</div>
+				<div class="lgt-red-5 equal">lgt-red-5</div>
+				<p class="subheader center-align">Orange</p>
+				<div class="lgt-orange-1 equal">lgt-orange-1</div>
+				<div class="lgt-orange-2 equal">lgt-orange-2</div>
+				<div class="lgt-orange-3 equal">lgt-orange-3</div>
+				<p class="subheader center-align">Brown</p>
+				<div class="lgt-brown-1 equal">lgt-brown-1</div>
+				<div class="lgt-brown-2 equal">lgt-brown-2</div>
+				<div class="lgt-brown-3 equal">lgt-brown-3</div>
+				<div class="lgt-brown-4 equal">lgt-brown-4</div>
+				<div class="lgt-brown-5 equal">lgt-brown-5</div>
+				<div class="lgt-brown-6 equal">lgt-brown-6</div>
+				<div class="lgt-brown-7 equal">lgt-brown-7</div>
+			</div>
+			<div class="column l4 m4 s12">
+				<p class="subheader center-align">Purple</p>
+				<div class="lgt-purple-1 equal">lgt-purple-1</div>
+				<div class="lgt-purple-2 equal">lgt-purple-2</div>
+				<div class="lgt-purple-3 equal">lgt-purple-3</div>
+				<div class="lgt-purple-4 equal">lgt-purple-4</div>
+				<div class="lgt-purple-5 equal">lgt-purple-5</div>
+				<div class="lgt-purple-6 equal">lgt-purple-6</div>
+				<div class="lgt-purple-7 equal">lgt-purple-7</div>
+				<div class="lgt-purple-8 equal">lgt-purple-8</div>
+				<div class="lgt-purple-9 equal">lgt-purple-9</div>
+				<div class="lgt-purple-10 equal">lgt-purple-10</div>
+				<p class="subheader center-align">Blue</p>
+				<div class="lgt-blue-1 equal">lgt-blue-1</div>
+				<div class="lgt-blue-2 equal">lgt-blue-2</div>
+				<div class="lgt-blue-3 equal">lgt-blue-3</div>
+				<div class="lgt-blue-4 equal">lgt-blue-4</div>
+				<div class="lgt-blue-5 equal">lgt-blue-5</div>
+				<div class="lgt-blue-6 equal">lgt-blue-6</div>
+				<p class="subheader center-align">Black</p>
+				<div class="lgt-black-1 equal">lgt-black-1</div>
+				<div class="lgt-black-2 equal">lgt-black-2</div>
+				<div class="lgt-black-3 equal">lgt-black-3</div>
+			</div>
+			<div class="column l4 m4 s12">
+				<p class="subheader center-align">Green</p>
+				<div class="lgt-green-1 equal">lgt-green-1</div>
+				<div class="lgt-green-2 equal">lgt-green-2</div>
+				<div class="lgt-green-3 equal">lgt-green-3</div>
+				<div class="lgt-green-4 equal">lgt-green-4</div>
+				<div class="lgt-green-5 equal">lgt-green-5</div>
+				<div class="lgt-green-6 equal">lgt-green-6</div>
+				<div class="lgt-green-7 equal">lgt-green-7</div>
+				<div class="lgt-green-8 equal">lgt-green-8</div>
+				<p class="subheader center-align">Cyan</p>
+				<div class="lgt-cyan-1 equal">lgt-cyan-1</div>
+				<div class="lgt-cyan-2 equal">lgt-cyan-2</div>
+				<div class="lgt-cyan-3 equal">lgt-cyan-3</div>
+				<div class="lgt-cyan-4 equal">lgt-cyan-4</div>
+				<p class="subheader center-align">Yellow</p>
+				<div class="lgt-yellow-1 equal">lgt-yellow-1</div>
+				<div class="lgt-yellow-2 equal">lgt-yellow-2</div>
+				<div class="lgt-yellow-3 equal">lgt-yellow-3</div>
+				<p class="subheader center-align">White</p>
+				<div class="lgt-white-1 equal">lgt-white-1</div>
+				<div class="lgt-white-2 equal">lgt-white-2</div>
+				<div class="lgt-white-3 equal">lgt-white-3</div>
+			</div>
+		</div>	
+		<p class="subheader center-align">Linear Gradient to bottom</p>
+		<div class="row purple box-shadow">
+			<div class="column l4 m4 s12">
+				<p class="subheader center-align">Pink</p>
+				<div class="lgb-pink-1 equal">lgb-pink-1</div>
+				<div class="lgb-pink-2 equal">lgb-pink-2</div>
+				<div class="lgb-pink-3 equal">lgb-pink-3</div>
+				<div class="lgb-pink-4 equal">lgb-pink-4</div>
+				<p class="subheader center-align">Red</p>
+				<div class="lgb-red-1 equal">lgb-red-1</div>
+				<div class="lgb-red-2 equal">lgb-red-2</div>
+				<div class="lgb-red-3 equal">lgb-red-3</div>
+				<div class="lgb-red-4 equal">lgb-red-4</div>
+				<div class="lgb-red-5 equal">lgb-red-5</div>
+				<p class="subheader center-align">Orange</p>
+				<div class="lgb-orange-1 equal">lgb-orange-1</div>
+				<div class="lgb-orange-2 equal">lgb-orange-2</div>
+				<div class="lgb-orange-3 equal">lgb-orange-3</div>
+				<p class="subheader center-align">Brown</p>
+				<div class="lgb-brown-1 equal">lgb-brown-1</div>
+				<div class="lgb-brown-2 equal">lgb-brown-2</div>
+				<div class="lgb-brown-3 equal">lgb-brown-3</div>
+				<div class="lgb-brown-4 equal">lgb-brown-4</div>
+				<div class="lgb-brown-5 equal">lgb-brown-5</div>
+				<div class="lgb-brown-6 equal">lgb-brown-6</div>
+				<div class="lgb-brown-7 equal">lgb-brown-7</div>
+			</div>
+			<div class="column l4 m4 s12">
+				<p class="subheader center-align">Purple</p>
+				<div class="lgb-purple-1 equal">lgb-purple-1</div>
+				<div class="lgb-purple-2 equal">lgb-purple-2</div>
+				<div class="lgb-purple-3 equal">lgb-purple-3</div>
+				<div class="lgb-purple-4 equal">lgb-purple-4</div>
+				<div class="lgb-purple-5 equal">lgb-purple-5</div>
+				<div class="lgb-purple-6 equal">lgb-purple-6</div>
+				<div class="lgb-purple-7 equal">lgb-purple-7</div>
+				<div class="lgb-purple-8 equal">lgb-purple-8</div>
+				<div class="lgb-purple-9 equal">lgb-purple-9</div>
+				<div class="lgb-purple-10 equal">lgb-purple-10</div>
+				<p class="subheader center-align">Blue</p>
+				<div class="lgb-blue-1 equal">lgb-blue-1</div>
+				<div class="lgb-blue-2 equal">lgb-blue-2</div>
+				<div class="lgb-blue-3 equal">lgb-blue-3</div>
+				<div class="lgb-blue-4 equal">lgb-blue-4</div>
+				<div class="lgb-blue-5 equal">lgb-blue-5</div>
+				<div class="lgb-blue-6 equal">lgb-blue-6</div>
+				<p class="subheader center-align">Black</p>
+				<div class="lgb-black-1 equal">lgb-black-1</div>
+				<div class="lgb-black-2 equal">lgb-black-2</div>
+				<div class="lgb-black-3 equal">lgb-black-3</div>
+			</div>
+			<div class="column l4 m4 s12">
+				<p class="subheader center-align">Green</p>
+				<div class="lgb-green-1 equal">lgb-green-1</div>
+				<div class="lgb-green-2 equal">lgb-green-2</div>
+				<div class="lgb-green-3 equal">lgb-green-3</div>
+				<div class="lgb-green-4 equal">lgb-green-4</div>
+				<div class="lgb-green-5 equal">lgb-green-5</div>
+				<div class="lgb-green-6 equal">lgb-green-6</div>
+				<div class="lgb-green-7 equal">lgb-green-7</div>
+				<div class="lgb-green-8 equal">lgb-green-8</div>
+				<p class="subheader center-align">Cyan</p>
+				<div class="lgb-cyan-1 equal">lgb-cyan-1</div>
+				<div class="lgb-cyan-2 equal">lgb-cyan-2</div>
+				<div class="lgb-cyan-3 equal">lgb-cyan-3</div>
+				<div class="lgb-cyan-4 equal">lgb-cyan-4</div>
+				<p class="subheader center-align">Yellow</p>
+				<div class="lgb-yellow-1 equal">lgb-yellow-1</div>
+				<div class="lgb-yellow-2 equal">lgb-yellow-2</div>
+				<div class="lgb-yellow-3 equal">lgb-yellow-3</div>
+				<p class="subheader center-align">White</p>
+				<div class="lgb-white-1 equal">lgb-white-1</div>
+				<div class="lgb-white-2 equal">lgb-white-2</div>
+				<div class="lgb-white-3 equal">lgb-white-3</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="column s12">
+				<div class="interior lgc-green-1" style="padding:100px 16px">
+					<div class="center-align">
+						<h2 class="font2">Linear Gradient Combine</h2>
+						<p>2,3,4,5 color combine</p>
+						<p>Comming Soon</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- End Gradient -->
+			
 		<div class="row" style="background-color:#f2f2f2" id="cg">
 			<div class="column s12">
 				<div class="interior" style="padding:100px 16px">
@@ -956,7 +1448,6 @@ Framework Indonesia, Core, Core Color, Color Group, Crayola, Crayola Color, Rese
 			</div>
 		</div>
 		<!-- End Color Group -->
-		<br>
 		
 		<!-- Crayola Color -->
 		<div class="row" style="background-color:#f2f2f2" id="cc">
