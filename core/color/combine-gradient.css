@@ -1,0 +1,134 @@
+/*
+ * Core Linear Gradient Combine 2,3,4 Color by getcore.github.io
+ * Copyright 2017 Flamecore
+ * Github site github.com/getcore/core
+ * Author Andika Chamberlin Follow Me twitter.com/andikamingo
+ * MIT License 
+*/
+
+/* Pink */
+.combine-pink{
+	background-image: linear-gradient(to right, hotpink, deeppink, mediumvioletred);
+	color:#fff;
+}
+/* End Pink */
+
+/* salmon */
+.combine-salmon{
+	background-image: linear-gradient(to right, lightsalmon, salmon, lightcoral);
+	color:#fff;
+}
+/* End Salmon */
+
+/* Red */
+.combine-red{
+	background-image: linear-gradient(to right, darkorange, orangered, red);
+	color:#fff;
+}
+/* End Red */
+
+/* Orange */
+.combine-orange{
+	background-image: linear-gradient(to right, orange, darkorange, orangered);
+	color:#fff;
+}
+/* End Orange */
+
+/* Brown */
+.combine-brown{
+	background-image: linear-gradient(to right, saddlebrown, sienna, brown, maroon);
+	color:#fff;
+}
+/* End Brown */
+
+/* Violet */
+.combine-violet{
+	background-image: linear-gradient(to right, violet, orchid, magenta);
+	color:#fff;
+}
+/* End Violet */
+
+/* Purple */
+.combine-purple{
+	background-image: linear-gradient(to right, darkviolet, darkmagenta, purple, indigo);
+	color:#fff;
+}
+/* End Purple */
+
+/* Slate Blue */
+.combine-slateblue{
+	background-image: linear-gradient(to right, mediumpurple, mediumslateblue, slateblue);
+	color:#fff;
+}
+/* End Slate Blue */
+
+/* Sky Blue */
+.combine-skyblue{
+	background-image: linear-gradient(to right, lightskyblue, skyblue, deepskyblue);
+	color:#fff;
+}
+/* End Sky Blue */
+
+/* Blue */
+.combine-blue{
+	background-image: linear-gradient(to right, dodgerblue, royalblue, blue, mediumblue);
+	color:#fff;
+}
+/* End Blue */
+
+/* Lime */
+.combine-lime{
+	background-image: linear-gradient(to right, lawngreen, lime, limegreen);
+	color:#000;
+}
+/* End Lime */
+
+/* Sea Green */
+.combine-seagreen{
+	background-image: linear-gradient(to right, springgreen, mediumseagreen, seagreen);
+	color:#fff;
+}
+/* End Sea Green */
+
+/* Green */
+.combine-green{
+	background-image: linear-gradient(to right, forestgreen, green, darkgreen);
+	color:#fff;
+}
+/* End Green */
+
+/* Teal */
+.combine-teal{
+	background-image: linear-gradient(to right, mediumaquamarine, lightseagreen, darkcyan, teal);
+	color:#fff;
+}
+/* End Teal */
+
+/* Aqua */
+.combine-aqua{
+	background-image: linear-gradient(to right, turquoise, mediumturquoise, darkturquoise);
+	color:#fff;
+}
+/* End Aqua */
+
+/* Yellow */
+.combine-yellow{
+	background-image: linear-gradient(to right, orange, yellow, gold);
+	color:#000;
+}
+/* End Yellow */
+
+/* Black */
+.combine-black{
+	background-image: linear-gradient(to right, slategray, darkslategray, black);
+	color:#fff;
+}
+/* End black */
+
+
+/* Black */
+.combine-white{
+	background-image: linear-gradient(to right, honeydew, mintcream, azure, aliceblue, ghostwhite);
+	color:#000;
+}
+/* End white */
