@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,7 +41,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 								<a href="learn.html">Learn</a>
 								<a href="column.html">Column</a>
 								<a href="color.html">Color</a>
-								<a href="js.html">JS</a>
+								<a href="js.html">jcore</a>
 								<a href="templates.html">Templates</a>
 								<a href="author.html">Author</a>
 							</div>
@@ -52,7 +51,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 					<li class="bg-crimson hs"><a href="learn.html">Learn</a></li>
 					<li class="hs"><a href="column.html">Column</a></li>
 					<li class="hs"><a href="color.html">Color</a></li>
-					<li class="hs"><a href="js.html">JS</a></li>
+					<li class="hs"><a href="js.html">jcore</a></li>
 					<li class="hs"><a href="templates.html">Templates</a></li>
 					<li class="right hs">
 						<a href="author.html" target="_blank">
@@ -91,6 +90,9 @@ Framework Indonesia, Core, Core Column, Core Color">
 				<li><a href="#hide">Hide</a></li>
 				<li><a href="#animation">Animation</a></li>
 				<li><a href="#position">Position</a></li>
+				<li><a href="#content">Content</a></li>
+				<li><a href="#filter">Filter</a></li>
+				<div style="margin-bottom:50px"></div>
 			</ul>
 		</div>
 		<!-- End Sidebar -->
@@ -154,7 +156,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 							<p>
 								Memulai core secara online
 							</p>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltDOCTYPE html&gt
 &lthtml lang="en"&gt
@@ -170,7 +172,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 							<p>
 								Untuk mendownload semuanya dari Core lihat di | <a class="hlink-underline" href="github.com/getcore/core">Project Files</a>
 							</p>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltDOCTYPE html&gt
 &lthtml lang="en"&gt
@@ -184,7 +186,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 							<p>
 								Core sangat menganjurkan untuk memasukan elemen DOCTYPE html. Karena sebagian besar core menggunakan HTML 5.
 							</p>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltDOCTYPE html&gt
 &lthtml lang="en"&gt
@@ -197,7 +199,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 								Core adalah framework yang dibuat khusus untuk membuat website
 								responsive. Maka diwajibkan memasukan element ini pada document html.
 							</p>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltDOCTYPE html&gt
 &lthtml lang="en"&gt
@@ -224,7 +226,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 						<p>
 							Digunakan untuk membuat container dengan margin kanan kiri 24px.
 						</p>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltDOCTYPE html&gt
 &lthtml lang="en"&gt
@@ -247,7 +249,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 					<p>
 						Digunakan untuk membuat container dengan margin sama sebesar 24px.
 					</p>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltDOCTYPE html&gt
 &lthtml lang="en"&gt
@@ -269,7 +271,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 					<p>
 						Digunakan untuk membuat container full yaitu margin 0 pada setiap sisi.
 					</p>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltDOCTYPE html&gt
 &lthtml lang="en"&gt
@@ -291,8 +293,71 @@ Framework Indonesia, Core, Core Column, Core Color">
 					<p>
 						Digunakan untuk membuat margin kanan dan kiri sebesar 16px. Ini digunakan untuk content agar tidak terlalu
 						dekat dengan dinding margin container.
+						<div>
+							<table>
+								<tr>
+									<td>inside</td>
+									<td>: margin: 0px 16px;</td>
+								</tr>
+								<tr>
+									<td>inside-s</td>
+									<td>: margin: 0px 8px;</td>
+								</tr>
+								<tr>
+									<td>inside-m</td>
+									<td>: margin: 0px 24px;</td>
+								</tr>
+								<tr>
+									<td>inside-l</td>
+									<td>: margin: 0px 32px;</td>
+								</tr>
+								<tr>
+									<td>inside-g</td>
+									<td>: margin: 0px 64px;</td>
+								</tr>
+							</table>
+						</div>
+						<div class="alert info-dashed section">
+							Kenapa marginnya 0px 8px? Kok ada dua element?
+						</div>
+						<p>Core akan membari tahu teknik penulisan diatas</p>
+						<p>Jika satu element, artinya margin atas, kanan, bawah, kiri itu sama, berikut contohnya</p>
+						<p>margin : 8px</p>
+						<p>Jika dua element, maka element yang pertama adalah atas bawah dan element yang kedua kanan kiri.
+						<p>margin : 0px 8px | Berarti margin atas bawah 0px, kanan kiri 8px</p>
+						<p>Jika 3 element, maka element yang pertama adalah atas, yang kedua kanan kiri, dan yang ketiga adalah bawah</p>
+						<p>Margin : 0px 8px 16px | Berarti margin atas 0px, margin kanan kiri 8px dan margin bawah 16px.
+						<p>Dan yang terakhir jika 4 element, berarti setiap sisi di atur marginya.</p>
+						<p>margin : 0px 8px 16px 32px | Berarti margin atas 0px kanan 8px bawah 16px kiri 32px.</p>
+						
+						<div class="alert warning-dashed section">
+							Ingat polanya : atas kanan bawah kiri
+						</div>
+						
+						
+						<div>
+							<p>Istilah</p>
+							<table>
+								<tr>
+									<td>s</td>
+									<td>: Small</td>
+								</tr>
+								<tr>
+									<td>m</td>
+									<td>: Medium</td>
+								</tr>
+								<tr>
+									<td>l</td>
+									<td>: Large</td>
+								</tr>
+								<tr>
+									<td>g</td>
+									<td>: Gigant</td>
+								</tr>
+							</table>
+						</div>
 					</p>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltDOCTYPE html&gt
 &lthtml lang="en"&gt
@@ -318,7 +383,32 @@ Framework Indonesia, Core, Core Column, Core Color">
 						bedanya, interior adalah padding sebeser 16px. Penulis lebih rekomendasi menggunakan interior untuk membuat
 						content terlihat baik.
 					</p>
-<pre>
+					<div>
+						<table>
+							<tr>
+								<td>interior</td>
+								<td>: padding: 0px 16px;</td>
+							</tr>
+							<tr>
+								<td>interior-s</td>
+								<td>: padding: 0px 8px;</td>
+							</tr>
+							<tr>
+								<td>interior-m</td>
+								<td>: padding: 0px 24px;</td>
+							</tr>
+							<tr>
+								<td>interior-l</td>
+								<td>: padding: 0px 32px;</td>
+							</tr>
+							<tr>
+								<td>interior-g</td>
+								<td>: padding: 0px 64px;</td>
+							</tr>
+						</table>
+					</div>
+					<br>
+<pre class="bg-crimson border-none">
 <code>
 &ltDOCTYPE html&gt
 &lthtml lang="en"&gt
@@ -336,7 +426,93 @@ Framework Indonesia, Core, Core Column, Core Color">
  &lt/body&gt
 &lt/html&gt
 </code>		
-</pre>						
+</pre>
+					<p class="subheader">Deep</p>
+					<p>Membuat margin sama sebesar 16px</p>
+					<div>
+						<table>
+							<tr>
+								<td>deep</td>
+								<td>: margin: 16px;</td>
+							</tr>
+							<tr>
+								<td>deep-s</td>
+								<td>: margin: 8px;</td>
+							</tr>
+							<tr>
+								<td>deep-m</td>
+								<td>: margin: 24px;</td>
+							</tr>
+							<tr>
+								<td>deep-l</td>
+								<td>: margin: 32px;</td>
+							</tr>
+							<tr>
+								<td>deep-g</td>
+								<td>: margin: 64px;</td>
+							</tr>
+						</table>
+					</div>
+					<br>
+<xmp><DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Deep</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css">
+ </head>
+ <body>
+  <div class="container">
+   <div class="deep">
+    ............
+   </div>
+  </div>
+ </body>
+</html>
+</xmp>				
+					<p class="subheader">Equal</p>
+					<p>Membuat padding sama sebesar 16px</p>
+					<div>
+						<table>
+							<tr>
+								<td>equal</td>
+								<td>: padding: 16px;</td>
+							</tr>
+							<tr>
+								<td>equal-s</td>
+								<td>: padding: 8px;</td>
+							</tr>
+							<tr>
+								<td>equal-m</td>
+								<td>: padding: 24px;</td>
+							</tr>
+							<tr>
+								<td>equal-l</td>
+								<td>: padding: 32px;</td>
+							</tr>
+							<tr>
+								<td>equal-g</td>
+								<td>: padding: 64px;</td>
+							</tr>
+						</table>
+					</div>
+					<br>
+<xmp><DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Equal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css">
+ </head>
+ <body>
+  <div class="container">
+   <div class="equal">
+    ............
+   </div>
+  </div>
+ </body>
+</html>
+</xmp>
 					<!-- End Container -->
 					
 					<!-- System Grid -->
@@ -391,7 +567,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 									<li>subheader</li>
 								</u>
 								<br>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltDOCTYPE html&gt
 &lthtml lang="en"&gt
@@ -457,7 +633,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 									<strong> Email </strong><br> 
 									<a href= "mailto:htmlandika@gmail.com" > htmlandika@gmail.com </a> 
 								</address>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltDOCTYPE html&gt
 &lthtml lang="en"&gt
@@ -493,7 +669,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 									<p> "Color your life is determined not from yourself, but of others" </p> 
 									<cite> - Andika Chamberlin </cite>
 								</blockquote>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltDOCTYPE html&gt
 &lthtml lang="en"&gt
@@ -545,7 +721,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 										</ul>
 									</li>
 								</ul>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltDOCTYPE html&gt
 &lthtml lang="en"&gt
@@ -599,7 +775,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 									<dt> Tempat : </dt> 
 									<dd> Perbaungan, Indonesia, ID</dd> 
 								</dl>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltDOCTYPE html&gt
 &lthtml lang="en"&gt
@@ -641,7 +817,17 @@ Framework Indonesia, Core, Core Column, Core Color">
 								<p>
 								Membuat barisan kode dengan tag code. Default tag code adalah inline, berarti
 								kesamping, jika ingin membuat code sifat block maka gunakan tag pre dan code.
+								Selain itu, html5 menyediakan tag &lt;xmp&gt; yang memungkinkan tulisan
+								sama persis dengan apa yang kita tulis. Tag xmp berbeda dengan tag pre yang
+								kita harus membuat tag tanda <xmp>&lt;</xmp> untuk membuat (<). Pada tag xmp kita menuliskan
+								< maka yang keluar adalah sama. Jadi fungsi setiap tag tidak berpengaruh.
 								</p>
+<xmp><xamp>
+ <div>
+  <p>xmp tag html5</p>
+ </div>
+</xamp>
+</xmp>								
 								<p>Gunakan class scroll-s untuk membuat code responsive. Dibawah terdapat beberapa ukuran scroll (max-height)</p>
 								<dl class= "dl-horizontal"> 
 									<dt> scroll : </dt> 
@@ -663,7 +849,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 									<dt> scroll-g : </dt> 
 									<dd> 600px </dd>
 								</dl>
-<pre>
+<pre class="bg-crimson border-none">
 	<code>
 &ltcode&gt Tag code &lt/code&gt
 	</code>
@@ -848,7 +1034,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 								</table>
 							</div>
 							<br>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltDOCTYPE html&gt
 &lthtml lang="en"&gt
@@ -966,7 +1152,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 								<br>
 								
 								
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltDOCTYPE html&gt
 &lthtml lang="en"&gt
@@ -1052,7 +1238,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 									<button type= "submit" class= "button-default" > Submit </button> 
 								</form>
 								<br>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltDOCTYPE html&gt
 &lthtml lang="en"&gt
@@ -1102,7 +1288,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 									<button type= "submit" class= "button-default"> Send invitation </button> 
 								</form>
 								<br>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltform class="form-inline"&gt 
  &ltdiv class="form-container"&gt 
@@ -1135,7 +1321,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 									<button type= "submit" class= "button-default" > Sign in </button> 
 								</form>
 								<br>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltform class="form-inline"&gt 
  &ltdiv class="form-container"&gt 
@@ -1185,7 +1371,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 									</div> 
 								</form>
 								<br>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltform class= "form-horizontal"&gt 
  &ltdiv class="form-container"&gt 
@@ -1234,7 +1420,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 									</div> 
 								</form>
 								<br>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltform class="form-horizontal"&gt 
  &ltdiv class="form-container"&gt 
@@ -1269,7 +1455,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 									<option> 5 </option>
 								</select>
 								<br>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltp class="subheader"&gtMemilih Type 1&lt/p&gt
 &ltselect class= "input" &gt 
@@ -1293,7 +1479,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 								<p class="subheader">Input Disable</p>
 								<input class= "input" type= "text" placeholder= "Disabled" disabled>
 								<br>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltinput class= "input" type= "text" placeholder= "Disabled" disabled&gt
 </code>
@@ -1322,7 +1508,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 <button type= "button" class= "button-disabled" disabled="disabled"> Button </button>
 <br>
 <br>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltbutton type="button" class="button default"&gt Default &lt/button&gt 
 &ltbutton type= "button" class= "button success"&gt Success &lt/button&gt 
@@ -1358,7 +1544,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 					</div>
 					<br>
 					
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltimg src="images/icore/icore-l.png" class="img-responsive"&gt
 </code>
@@ -1418,7 +1604,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 								</div>
 								<br>
 								
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltdiv class="section border-lightgray"&gt
  section
@@ -1475,7 +1661,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 									<span>Balloon</span>
 								</div>
 								<br>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltdiv class="inline"&gt
  &ltspan&gtCore&lt/span&gt
@@ -1513,7 +1699,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 	<li><a href="#">Column</a></li>
 </ul>
 <br>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltul class="navbar"&gt
  &ltli&gt&lta href="#"&gtCore&lt/a&gt&lt/li&gt
@@ -1529,7 +1715,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 	<li><a href="#">Column</a></li>
 </ul>
 <br>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltul class="navbar bg-crimson"&gt
  &ltli&gt&lta href="#"&gtCore&lt/a&gt&lt/li&gt
@@ -1547,7 +1733,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 	<li><a href="#">Column</a></li>
 </ul>
 <br>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltul class="navbar bg-crimson navbar-darkslategray"&gt
  &ltli&gt&lta href="#"&gtCore&lt/a&gt&lt/li&gt
@@ -1564,7 +1750,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 	<li><a href="#">Column</a></li>
 </ul>
 <br>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltul class="navbar bg-crimson navbar-darkslategray box-shadow"&gt
  &ltli&gt&lta href="#"&gtCore&lt/a&gt&lt/li&gt
@@ -1584,7 +1770,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 	<li><a href="#">Column</a></li>
 </ul>
 <br>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltul class="navbar bg-crimson navbar-darkslategray box-shadow animation-top"&gt
  &ltli&gt&lta href="#"&gtCore&lt/a&gt&lt/li&gt
@@ -1601,7 +1787,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 	<li class="right"><a href="#">Column</a></li>
 </ul>
 <br>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltul class="navbar bg-crimson navbar-darkslategray box-shadow"&gt
  &ltli class="right"&gt&lta href="#"&gtCore&lt/a&gt&lt/li&gt
@@ -1617,7 +1803,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 	<li class="right"><a href="#">Column</a></li>
 </ul>
 <br>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltul class="navbar bg-crimson navbar-darkslategray box-shadow"&gt
  &ltli&gt&lta href="#"&gtCore&lt/a&gt&lt/li&gt
@@ -1635,7 +1821,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 	<li class="right"><a href="#"><i class="fa fa-bars"></i></a></li>
 </ul>
 <br>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltDOCTYPE html&gt
 &lthtml lang="en"&gt
@@ -1665,7 +1851,7 @@ Untuk membuat navbar tetap, maka gunakan class fixed. Jika ingin membuatnya bera
 fixed-top dan jika ingin kebawah berikan class fixed-bottom.
 </p>			
 <br>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltul class="navbar bg-crimson navbar-darkslategray box-shadow fixed"&gt
  &ltli&gt&lta href="#"&gtCore&lt/a&gt&lt/li&gt
@@ -1707,7 +1893,7 @@ fixed-top dan jika ingin kebawah berikan class fixed-bottom.
 	</li>
 </ul>
 <br>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltstyle&gt
 .navbar-dropdown a{color:#fff};
@@ -1727,7 +1913,7 @@ fixed-top dan jika ingin kebawah berikan class fixed-bottom.
 	</li>
 </ul>
 <br>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltul class="navbar-dropdown bg-darkslategray navbar-crimson"&gt
  &ltli&gt&lta href="#home"&gtHome&lt/a&gt&lt/li&gt
@@ -1769,7 +1955,7 @@ dapat memisahkan 1 element.
 </ul>
 <br>
 
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltul class="navbar-smooth"&gt
  &ltli&gt&lta href="#"&gtHome&lt/a&gt&lt/li&gt
@@ -1810,7 +1996,7 @@ Untuk membuat navbar smooth menjadi sebelah kanan, gunakan right-flex.
 	<li><a href="#">About</a></li>
 </ul>
 <br>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltul class="navbar-smooth right-flex"&gt
  &ltli&gt&lta href="#"&gtHome&lt/a&gt&lt/li&gt
@@ -1858,7 +2044,7 @@ Untuk membuat navbar smooth menjadi sebelah kanan, gunakan right-flex.
 	</ul>
 </div>
 <br>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltdiv class="navbar-alfa"&gt
  &ltul&gt
@@ -1917,7 +2103,7 @@ Untuk membuat navbar smooth menjadi sebelah kanan, gunakan right-flex.
 	</ul>
 </div>
 <br>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltdiv class="navbar-delta"&gt
  &ltul&gt
@@ -2011,7 +2197,7 @@ Untuk membuat navbar smooth menjadi sebelah kanan, gunakan right-flex.
 			</li>
 		</ul>	
 <br>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltul class="nav"&gt
  &ltli class="hm hl"&gt&lta href="#"&gt&lti class="fa fa-bars"&gt&lt/i&gt&lt/a&gt
@@ -2091,7 +2277,7 @@ Untuk membuat navbar smooth menjadi sebelah kanan, gunakan right-flex.
 		<li><a href= "#"><span> &raquo; </span></a></li> 
 	</ul> 
 
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltul class="pagination"&gt 
  &ltli&gt&lta href= "#"&gt&ltspan&gt &laquo; &lt/span&gt&lt/a&gt&lt/li&gt 
@@ -2111,7 +2297,7 @@ Untuk membuat navbar smooth menjadi sebelah kanan, gunakan right-flex.
 		<li><a href="#"> Next </a></li> 
 	</ul> 
 
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltul class="pager"&gt 
  &ltli&gt&lta href="#"&gt Previous &lt/a&gt&lt/li&gt 
@@ -2131,7 +2317,7 @@ Untuk membuat navbar smooth menjadi sebelah kanan, gunakan right-flex.
 </ul>
 
 
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltul class="pager"&gt 
  &ltli class="previous"&gt&lta href="#"&gt
@@ -2153,7 +2339,7 @@ Untuk membuat navbar smooth menjadi sebelah kanan, gunakan right-flex.
 		<span> &rarr; </span></a>
 	</li> 
 </ul>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltul class="pager"&gt 
  &ltli class="previous disabled"&gt&lta href= "#"&gt
@@ -2176,7 +2362,7 @@ Untuk membuat navbar smooth menjadi sebelah kanan, gunakan right-flex.
 
 <br>
 <br>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &lta href="#"&gt Inbox &ltspan class="ribbon"&gt 8 &lt/span&gt&lt/a&gt
 &lta href="#" class="button info"&gt Inbox &ltspan class="ribbon"&gt 8 &lt/span&gt&lt/a&gt
@@ -2207,7 +2393,7 @@ Untuk membuat navbar smooth menjadi sebelah kanan, gunakan right-flex.
 	</div>
 </div>
 <br>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltp&gtHTML&lt/p&gt
 &ltdiv class="progress progress-radius box-shadow font-14"&gt
@@ -2256,7 +2442,7 @@ Untuk membuat navbar smooth menjadi sebelah kanan, gunakan right-flex.
 	</div> 
 </div>
 <br>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltdiv class="sidebar-list"&gt 
  &ltdiv class="media-left"&gt 
@@ -2279,19 +2465,19 @@ Untuk membuat navbar smooth menjadi sebelah kanan, gunakan right-flex.
 </code>
 </pre>
 <p>Untuk membuat media posisi Top, masukan class="media-top"</p>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltdiv class="media-left media-top"&gt 
 </code>
 </pre>
 <p>Untuk membuat media posisi middle, masukan class="media-middle"</p>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltdiv class="media-left media-middle"&gt 
 </code>
 </pre>
 <p>Untuk membuat media posisi bottom, masukan class="media-bottom"</p>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltdiv class="media-left media-bottom"&gt 
 </code>
@@ -2376,7 +2562,7 @@ Untuk membuat navbar smooth menjadi sebelah kanan, gunakan right-flex.
 	</div>
 </div>
 <br>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &lt!-- 16:9 aspect ratio --&gt 
 &ltp class="subheader"&gtVideo 16:9&lt/p&gt
@@ -2424,7 +2610,7 @@ Hover Opacity
 </div>
 <br>
 
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltdiv class="alert success opacity-min"&gt
 opacity-min
@@ -2459,7 +2645,7 @@ box-shadow
 </div>
 <br>
 
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltdiv class="alert success box-shadow"&gt
  box-shadow
@@ -2501,7 +2687,7 @@ Text pada ukuran Tablet menghilang
 Text pada ukuran Laptop/Computer menghilang
 </div> 
 <br>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltdiv class="hs"&gt
 Text pada ukuran smartphone menghilang
@@ -2565,7 +2751,7 @@ Menampilkan
  </div>
 </div>
 <br>
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltdiv class="animation-fading secpad border-lightgray"&gt
  &ltdiv class="interior"&gt
@@ -2700,7 +2886,7 @@ Menampilkan
 </div>
 <br>
 
-<pre>
+<pre class="bg-crimson border-none">
 <code>
 &ltdiv class="position-container bg-crimson" style="width:100%;height:400px"&gt
  &ltdiv class="position-left"&gt
@@ -2736,6 +2922,144 @@ Menampilkan
 <br>
 <br>
 					<!-- End Position -->
+					
+					<!-- Content-->
+					<h4 class="section" id="content">Content</h4> 
+					<div class="bottombar-crimson box-shadow section-m"></div>
+					<p>Content, adalah max width 980px digunakan pada tag body 
+						yang memungkinkan content akan berada di tengah walaupun ukuran browser diperkecil.
+						pada umumnya mengecilkan browser adalah ctrl + -
+					</p>
+					<div>
+						<table>
+							<tr>
+								<td>content</td>
+								<td>: max-width: 980px;margin: auto;</td>
+							</tr>
+							<tr>
+								<td>content-s</td>
+								<td>: max-width: 800px;margin: auto;</td>
+							</tr>
+							<tr>
+								<td>content-m</td>
+								<td>: max-width: 1024px;margin: auto;</td>
+							</tr>
+							<tr>
+								<td>content-l</td>
+								<td>: max-width: 1200px;margin: auto;</td>
+							</tr>
+							<tr>
+								<td>content-g</td>
+								<td>: max-width: 1500px;margin: auto;</td>
+							</tr>
+						</table>
+					</div>
+					<br>
+<xmp><body class="content">
+	...........
+</body>
+</xmp>
+<p>Untuk kostumisasi gunakan style inline</p>
+<xmp><body class="content" style="max-width:2000px">
+	...........
+</body>
+</xmp>
+<br>
+					<!-- End Content -->
+					
+					<!-- Filter -->
+					<h4 class="section" id="filter">Filter</h4> 
+					<div class="bottombar-crimson box-shadow section-m"></div>
+					<p>Filter core seperti software photoshop untuk memanipulasi warna, contrast dan lain lain. Dibawah ini adalah
+					warna logo Framework Core Normal</p>
+					<div class="interior">
+						<img src="images/icore/icore.png">
+					</div>
+<xmp><img src="">
+</xmp>
+					<div class="interior">
+						<img class="blur" src="images/icore/icore.png">
+					</div>
+					
+<xmp><img class="blur" src="">
+</xmp>
+					<div class="interior">
+						<img class="brightness-min" src="images/icore/icore.png">
+					</div>
+<xmp><img class="brightness-min" src="">
+</xmp>
+					<div class="interior">
+						<img class="brightness" src="images/icore/icore.png">
+					</div>
+<xmp><img class="brightness" src="">
+</xmp>
+					<div class="interior">
+						<img class="contrast" src="images/icore/icore.png">
+					</div>
+<xmp><img class="contrast" src="">
+</xmp>
+					<div class="interior">
+						<img class="contrast-max" src="images/icore/icore.png">
+					</div>
+<xmp><img class="contrast-max" src="">
+</xmp>
+					<div class="interior">
+						<img class="saturate-min" src="images/icore/icore.png">
+					</div>
+<xmp><img class="saturate-min" src="">
+</xmp>
+					<div class="interior">
+						<img class="saturate" src="images/icore/icore.png">
+					</div>
+<xmp><img class="saturate" src="">
+</xmp>
+					<div class="interior">
+						<img class="saturate-max" src="images/icore/icore.png">
+					</div>
+<xmp><img class="saturate-max" src="">
+</xmp>
+					<div class="interior">
+						<img class="grayscale-min" src="images/icore/icore.png">
+					</div>
+<xmp><img class="grayscale-min" src="">
+</xmp>
+					<div class="interior">
+						<img class="grayscale" src="images/icore/icore.png">
+					</div>
+<xmp><img class="grayscale" src="">
+</xmp>
+					<div class="interior">
+						<img class="sepia-min" src="images/icore/icore.png">
+					</div>
+<xmp><img class="sepia-min" src="">
+</xmp>
+					<div class="interior">
+						<img class="sepia" src="images/icore/icore.png">
+					</div>
+<xmp><img class="sepia" src="">
+</xmp>
+					<div class="interior">
+						<img class="hue-rotate-max" src="images/icore/icore.png">
+					</div>
+<xmp><img class="hue-rotate-max" src="">
+</xmp>
+					<div class="interior">
+						<img class="hue-rotate-min" src="images/icore/icore.png">
+					</div>
+<xmp><img class="hue-rotate-min" src="">
+</xmp>
+					<div class="interior">
+						<img class="invert" src="images/icore/icore.png">
+					</div>
+<xmp><img class="invert" src="">
+</xmp>
+					<div class="interior">
+						<img class="drop-shadow" src="images/icore/icore.png">
+					</div>
+<xmp><img class="drop-shadow" src="">
+</xmp>
+					<br>
+					<!-- End Filter -->
 				</div>
 			</div>
 			
