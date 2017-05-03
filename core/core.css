@@ -35,8 +35,7 @@ html{
 }
 body{
 	font-size:16px;
-	color:#000;
-	font-weight:lighter;
+	color:#444;
 }
 a{
 	text-decoration:none;
@@ -586,64 +585,6 @@ template {
 /*================================================= End Normalize ================================================*/
 
 /*================================================= Container ====================================================*/
-.inside:before,
-.inside:after,
-.inside-s:before,
-.inside-s:after,
-.inside-m:before,
-.inside-m:after,
-.inside-l:before,
-.inside-l:after,
-.inside-g:before,
-.inside-g:after,
-.interior:before,
-.interior:after,
-.interior-s:before,
-.interior-s:after,
-.interior-m:before,
-.interior-m:after,
-.interior-l:before,
-.interior-l:after,
-.interior-g:before,
-.interior-g:after,
-.equal:before,
-.equal:after,
-.equal-s:before,
-.equal-s:after,
-.equal-m:before,
-.equal-m:after,
-.equal-l:before,
-.equal-l:after,
-.equal-g:before,
-.equal-g:after,
-.deep:before,
-.deep:after,
-.deep-s:before,
-.deep-s:after,
-.deep-m:before,
-.deep-m:after,
-.deep-l:before,
-.deep-l:after,
-.deep-g:before,
-.deep-g:after,
-.container:before,
-.container:after,
-.container-equal:before,
-.container-equal:after,
-.container-full:before,
-.container-full:after{
-	display: table;
-	content: " ";
-}
-.inside:after,
-.interior:after,
-.equal:after
-.deep:after,
-.container:after,
-.container-equal:after,
-.container-full:after{
-	clear: both;
-}
 .inside{
 	margin:0 16px;
 }
@@ -736,14 +677,14 @@ template {
 .border-mediumvioletred{border: 1px solid #C71585}
 
 /* Color Purple */
-.border-lavender{border: 1px solid #e6e6fa} 		
-.border-thistle{border: 1px solid #d8bfd8!important} 		
-.border-plum{border: 1px solid #dda0dd!important} 		
+.border-lavender{border: 1px solid #e6e6fa}Â 		
+.border-thistle{border: 1px solid #d8bfd8!important}Â 		
+.border-plum{border: 1px solid #dda0dd!important}Â 		
 .border-orchid{border: 1px solid #da70d6!important}		
 .border-violet{border: 1px solid #ee82ee}		
 .border-fuchsia{border: 1px solid #ff00ff}		
 .border-magenta{border: 1px solid #ff00ff}		
-.border-mediumorchid{border: 1px solid #ba55d3}	 		
+.border-mediumorchid{border: 1px solid #ba55d3}	Â 		
 .border-darkorchid{border: 1px solid #9932cc!important}	
 .border-darkviolet{border: 1px solid #9400d3}	
 .border-blueviolet{border: 1px solid #8a2be2}	
@@ -768,10 +709,10 @@ template {
 .border-darkred{border: 1px solid #8b0000}
 
 /* Orange */
-.border-orange{border: 1px solid #ffa500} 			
-.border-darkorange{border: 1px solid #ff8c00}	 				
-.border-coral{border: 1px solid #ff7f50}	 				
-.border-tomato{border: 1px solid #ff6347}	 			
+.border-orange{border: 1px solid #ffa500}Â 			
+.border-darkorange{border: 1px solid #ff8c00}	Â 				
+.border-coral{border: 1px solid #ff7f50}	Â 				
+.border-tomato{border: 1px solid #ff6347}	Â 			
 .border-orangered{border: 1px solid #ff4500}	
 
 /* Yellow */
@@ -920,14 +861,14 @@ template {
 .dashed-mediumvioletred{border: 1px dashed #C71585}
 
 /* Color Purple */
-.dashed-lavender{border: 1px dashed #e6e6fa} 		
-.dashed-thistle{border: 1px dashed #d8bfd8!important} 		
-.dashed-plum{border: 1px dashed #dda0dd!important} 		
+.dashed-lavender{border: 1px dashed #e6e6fa}Â 		
+.dashed-thistle{border: 1px dashed #d8bfd8!important}Â 		
+.dashed-plum{border: 1px dashed #dda0dd!important}Â 		
 .dashed-orchid{border: 1px dashed #da70d6!important}		
 .dashed-violet{border: 1px dashed #ee82ee}		
 .dashed-fuchsia{border: 1px dashed #ff00ff}		
 .dashed-magenta{border: 1px dashed #ff00ff}		
-.dashed-mediumorchid{border: 1px dashed #ba55d3}	 		
+.dashed-mediumorchid{border: 1px dashed #ba55d3}	Â 		
 .dashed-darkorchid{border: 1px dashed #9932cc!important}	
 .dashed-darkviolet{border: 1px dashed #9400d3}	
 .dashed-blueviolet{border: 1px dashed #8a2be2}	
@@ -952,10 +893,10 @@ template {
 .dashed-darkred{border: 1px dashed #8b0000}
 
 /* Orange */
-.dashed-orange{border: 1px dashed #ffa500} 			
-.dashed-darkorange{border: 1px dashed #ff8c00}	 				
-.dashed-coral{border: 1px dashed #ff7f50}	 				
-.dashed-tomato{border: 1px dashed #ff6347}	 			
+.dashed-orange{border: 1px dashed #ffa500}Â 			
+.dashed-darkorange{border: 1px dashed #ff8c00}	Â 				
+.dashed-coral{border: 1px dashed #ff7f50}	Â 				
+.dashed-tomato{border: 1px dashed #ff6347}	Â 			
 .dashed-orangered{border: 1px dashed #ff4500}	
 
 /* Yellow */
@@ -1103,14 +1044,14 @@ template {
 .bottombar-mediumvioletred{border-bottom: 6px solid #C71585}
 
 /* Color Purple */
-.bottombar-lavender{border-bottom: 6px solid #e6e6fa} 		
-.bottombar-thistle{border-bottom: 6px solid #d8bfd8!important} 		
-.bottombar-plum{border-bottom: 6px solid #dda0dd!important} 		
+.bottombar-lavender{border-bottom: 6px solid #e6e6fa}Â 		
+.bottombar-thistle{border-bottom: 6px solid #d8bfd8!important}Â 		
+.bottombar-plum{border-bottom: 6px solid #dda0dd!important}Â 		
 .bottombar-orchid{border-bottom: 6px solid #da70d6!important}		
 .bottombar-violet{border-bottom: 6px solid #ee82ee}		
 .bottombar-fuchsia{border-bottom: 6px solid #ff00ff}		
 .bottombar-magenta{border-bottom: 6px solid #ff00ff}		
-.bottombar-mediumorchid{border-bottom: 6px solid #ba55d3}	 		
+.bottombar-mediumorchid{border-bottom: 6px solid #ba55d3}	Â 		
 .bottombar-darkorchid{border-bottom: 6px solid #9932cc!important}	
 .bottombar-darkviolet{border-bottom: 6px solid #9400d3}	
 .bottombar-blueviolet{border-bottom: 6px solid #8a2be2}	
@@ -1135,10 +1076,10 @@ template {
 .bottombar-darkred{border-bottom: 6px solid #8b0000}
 
 /* Orange */
-.bottombar-orange{border-bottom: 6px solid #ffa500} 			
-.bottombar-darkorange{border-bottom: 6px solid #ff8c00}	 				
-.bottombar-coral{border-bottom: 6px solid #ff7f50}	 				
-.bottombar-tomato{border-bottom: 6px solid #ff6347}	 			
+.bottombar-orange{border-bottom: 6px solid #ffa500}Â 			
+.bottombar-darkorange{border-bottom: 6px solid #ff8c00}	Â 				
+.bottombar-coral{border-bottom: 6px solid #ff7f50}	Â 				
+.bottombar-tomato{border-bottom: 6px solid #ff6347}	Â 			
 .bottombar-orangered{border-bottom: 6px solid #ff4500}	
 
 /* Yellow */
@@ -1386,10 +1327,10 @@ template {
 .navbar-darkred li a:hover{color:#fff;transition-duration:0.9s;background-color:#8b0000}
 
 /* Orange */
-.navbar-orange li a:hover{color:#fff;transition-duration:0.9s;background-color:#ffa500} 			
-.navbar-darkorange li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff8c00}	 				
-.navbar-coral li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff7f50}	 				
-.navbar-tomato li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff6347}	 			
+.navbar-orange li a:hover{color:#fff;transition-duration:0.9s;background-color:#ffa500}Â 			
+.navbar-darkorange li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff8c00}	Â 				
+.navbar-coral li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff7f50}	Â 				
+.navbar-tomato li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff6347}	Â 			
 .navbar-orangered li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff4500}	
 
 /* Yellow */
@@ -1580,14 +1521,14 @@ template {
 .ndropdown:hover .active-mediumvioletred{color:#fff;background-color:#C71585}
 
 /* Purple */
-.ndropdown:hover .active-lavender{color:#fff;background-color:#e6e6fa} 		
-.ndropdown:hover .active-thistle{color:#fff;background-color:#d8bfd8!important} 		
-.ndropdown:hover .active-plum{color:#fff;background-color:#dda0dd!important} 		
+.ndropdown:hover .active-lavender{color:#fff;background-color:#e6e6fa}Â 		
+.ndropdown:hover .active-thistle{color:#fff;background-color:#d8bfd8!important}Â 		
+.ndropdown:hover .active-plum{color:#fff;background-color:#dda0dd!important}Â 		
 .ndropdown:hover .active-orchid{color:#fff;background-color:#da70d6!important}		
 .ndropdown:hover .active-violet{color:#fff;background-color:#ee82ee}		
 .ndropdown:hover .active-fuchsia{color:#fff;background-color:#ff00ff}		
 .ndropdown:hover .active-magenta{color:#fff;background-color:#ff00ff}		
-.ndropdown:hover .active-mediumorchid{color:#fff;background-color:#ba55d3}	 		
+.ndropdown:hover .active-mediumorchid{color:#fff;background-color:#ba55d3}	Â 		
 .ndropdown:hover .active-darkorchid{color:#fff;background-color:#9932cc!important}	
 .ndropdown:hover .active-darkviolet{color:#fff;background-color:#9400d3}	
 .ndropdown:hover .active-blueviolet{color:#fff;background-color:#8a2be2}	
@@ -1612,10 +1553,10 @@ template {
 .ndropdown:hover .active-darkred{color:#fff;background-color:#8b0000}
 
 /* Orange */
-.ndropdown:hover .active-orange{color:#fff;background-color:#ffa500} 			
-.ndropdown:hover .active-darkorange{color:#fff;background-color:#ff8c00}	 				
-.ndropdown:hover .active-coral{color:#fff;background-color:#ff7f50}	 				
-.ndropdown:hover .active-tomato{color:#fff;background-color:#ff6347}	 			
+.ndropdown:hover .active-orange{color:#fff;background-color:#ffa500}Â 			
+.ndropdown:hover .active-darkorange{color:#fff;background-color:#ff8c00}	Â 				
+.ndropdown:hover .active-coral{color:#fff;background-color:#ff7f50}	Â 				
+.ndropdown:hover .active-tomato{color:#fff;background-color:#ff6347}	Â 			
 .ndropdown:hover .active-orangered{color:#fff;background-color:#ff4500}	
 
 /* Yellow */
@@ -2298,14 +2239,14 @@ template {
 .sidebar-mediumvioletred li a:hover{color:#fff;transition-duration:0.9s;background-color:#C71585}
 
 /* Color Purple */
-.sidebar-lavender li a:hover{color:#fff;transition-duration:0.9s;background-color:#e6e6fa} 		
-.sidebar-thistle li a:hover{color:#fff;transition-duration:0.9s;background-color:#d8bfd8!important} 		
-.sidebar-plum li a:hover{color:#fff;transition-duration:0.9s;background-color:#dda0dd!important} 		
+.sidebar-lavender li a:hover{color:#fff;transition-duration:0.9s;background-color:#e6e6fa}Â 		
+.sidebar-thistle li a:hover{color:#fff;transition-duration:0.9s;background-color:#d8bfd8!important}Â 		
+.sidebar-plum li a:hover{color:#fff;transition-duration:0.9s;background-color:#dda0dd!important}Â 		
 .sidebar-orchid li a:hover{color:#fff;transition-duration:0.9s;background-color:#da70d6!important}		
 .sidebar-violet li a:hover{color:#fff;transition-duration:0.9s;background-color:#ee82ee}		
 .sidebar-fuchsia li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff00ff}		
 .sidebar-magenta li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff00ff}		
-.sidebar-mediumorchid li a:hover{color:#fff;transition-duration:0.9s;background-color:#ba55d3}	 		
+.sidebar-mediumorchid li a:hover{color:#fff;transition-duration:0.9s;background-color:#ba55d3}	Â 		
 .sidebar-darkorchid li a:hover{color:#fff;transition-duration:0.9s;background-color:#9932cc!important}	
 .sidebar-darkviolet li a:hover{color:#fff;transition-duration:0.9s;background-color:#9400d3}	
 .sidebar-blueviolet li a:hover{color:#fff;transition-duration:0.9s;background-color:#8a2be2}	
@@ -2330,10 +2271,10 @@ template {
 .sidebar-darkred li a:hover{color:#fff;transition-duration:0.9s;background-color:#8b0000}
 
 /* Orange */
-.sidebar-orange li a:hover{color:#fff;transition-duration:0.9s;background-color:#ffa500} 			
-.sidebar-darkorange li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff8c00}	 				
-.sidebar-coral li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff7f50}	 				
-.sidebar-tomato li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff6347}	 			
+.sidebar-orange li a:hover{color:#fff;transition-duration:0.9s;background-color:#ffa500}Â 			
+.sidebar-darkorange li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff8c00}	Â 				
+.sidebar-coral li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff7f50}	Â 				
+.sidebar-tomato li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff6347}	Â 			
 .sidebar-orangered li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff4500}	
 
 /* Yellow */
@@ -3084,7 +3025,7 @@ template {
 /*================================================ End Display ==================================================*/
 
 /*================================================ Section ======================================================*/
-.section{margin-top:24px}
+.section{margin:24px 0px}
 .section-s{margin:8px 0px}
 .section-m{margin:16px 0px}
 .section-l{margin:32px 0px}
@@ -3596,3 +3537,21 @@ template {
 	-webkit-transform: scale(1.1);
 }
 /*========================================= End Hover ===========================================================*/
+
+/*========================================= Grid ================================================================*/
+.grid{
+	padding:0 8px;
+}
+.grid-s{
+	padding:0 4px;
+}
+.grid-m{
+	padding:0 16px;
+}
+.grid-l{
+	padding:0 24px;
+}
+.grid-g{
+	padding:0 32px;
+}
+/*========================================= End Grid ============================================================*/
