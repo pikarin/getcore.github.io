@@ -108,8 +108,8 @@ Framework Indonesia, Core, Core Column, Core Color">
 							<br>
 						<h3 class="section-l center-align font2">Memulai</h3>
 
-						<div class="row">
-							<div class="column l6 m12 s12 interior">
+						<div class="row grid">
+							<div class="column l6 m12 s12 grid">
 <p>Memulai column float 12</p>
 <pre class="bg-crimson radius border-none">
 <code>
@@ -123,7 +123,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 </code>
 </pre>								
 							</div>
-							<div class="column l6 m12 s12 interior">
+							<div class="column l6 m12 s12 grid">
 <p>Memulai column cell 12</p>
 <pre class="bg-crimson radius border-none">
 <code>
@@ -137,7 +137,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 </code>
 </pre>								
 							</div>
-							<div class="column l6 m12 s12 interior">
+							<div class="column l6 m12 s12 grid">
 <p>Memulai column flexbox 12</p>
 <pre class="bg-crimson radius border-none">
 <code>
@@ -151,7 +151,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 </code>
 </pre>								
 							</div>
-							<div class="column l6 m12 s12 interior">
+							<div class="column l6 m12 s12 grid">
 <p>Memulai column Offline | <a href="http://getcore.github.io" target="_blank" class="hlink-underline">Download</a></p>
 <pre class="bg-crimson radius border-none">
 <code>
@@ -175,8 +175,44 @@ Framework Indonesia, Core, Core Column, Core Color">
 						Core Column memiliki 3 sifat, yaitu float, table cell dan flexbox. Dalam segi penulisan
 						code tidak jauh berbeda. Float menambahkan class (row) Table cell (row-cell) Flexbox 
 						(row-flex) untuk membuat column, Float menambahkan (column) Table cell (cell) Flexbox
-						(flex). Berikut Contoh Penulisannya.
+						(flex). Untuk membuat kolom sama rata, gunakan class grid, jika menggunakan interior atau
+						inside, maka akan membuat jarak terlalu jauh. Grid class membersihkan kesenjangan itu. Berikut Contoh Penulisannya.
 						</p>
+<p>Beberapa jarak grid yang bisa anda gunakan</p>
+<ul class="list">
+	<li>grid :padding: 0 8px;</li>
+	<li>grid-s :padding: 0 4px;</li>
+	<li>grid-m :padding: 0 16px;</li>
+	<li>grid-l :padding: 0 24px;</li>
+	<li>grid-g :padding: 0 32px;</li>
+</ul>
+<p class="subheader">grid (Bisa di gunakan untuk semua Column)</p>
+<pre class="bg-crimson border-none">
+<code>
+&lt;div class="row grid"&gt;
+ &lt;div class="column grid l6 m6 s6"&gt;
+ Grid
+ &lt;/div&gt;
+ &lt;div class="column grid l6 m6 s6"&gt;
+ Grid
+ &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+<br>
+<div class="row grid">
+	<div class="column grid l6 m6 s6">
+		<div class="bg-crimson radius equal">
+		Grid
+		</div>
+	</div>
+	<div class="column grid l6 m6 s6">
+		<div class="bg-crimson radius equal">
+		Grid
+		</div>
+	</div>
+</div>
+<br>
 <p class="subheader">Float (column)</p>
 <pre class="bg-crimson border-none">
 <code>
