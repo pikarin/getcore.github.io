@@ -1,0 +1,8 @@
+/*!
+ * Core Column Table Cell 8 Compress by getcore.github.io
+ * Copyright 2017 Flamecore
+ * Github site github.com/getcore/core
+ * Author Andika Chamberlin Follow Me twitter.com/andikamingo
+ * MIT License 
+*/
+.row-cell{display:table;width:100%}.cell:before,.cell:after{display:table;content:" "}.cell:after{clear:both}.cell{display:table-cell}.cell.s1{width:12.5%}.cell.s2{width:25%}.cell.s3{width:37.5%}.cell.s4{width:50%}.cell.s5{width:62.5%}.cell.s6{width:75%}.cell.s7{width:87.5%}.cell.s8{width:100%}@media only screen and (min-width:601px){.cell.m1{width:12.5%}.cell.m2{width:25%}.cell.m3{width:37.5%}.cell.m4{width:50%}.cell.m5{width:62.5%}.cell.m6{width:75%}.cell.m7{width:87.5%}.cell.m8{width:100%}}@media only screen and (min-width:993px){.cell.l1{width:12.5%}.cell.l2{width:25%}.cell.l3{width:37.5%}.cell.l4{width:50%}.cell.l5{width:62.5%}.cell.l6{width:75%}.cell.l7{width:87.5%}.cell.l8{width:100%}}

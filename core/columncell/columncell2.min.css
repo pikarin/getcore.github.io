@@ -1,0 +1,8 @@
+/*!
+ * Core Column Table Cell 2 Compress by getcore.github.io
+ * Copyright 2017 Flamecore
+ * Github site github.com/getcore/core
+ * Author Andika Chamberlin Follow Me twitter.com/andikamingo
+ * MIT License 
+*/
+.row-cell{display:table;width:100%}.cell:before,.cell:after{display:table;content:" "}.cell:after{clear:both}.cell{display:table-cell}.cell.s1{width:50%}.cell.s2{width:100%}@media only screen and (min-width:601px){.cell.m1{width:50%}.cell.m2{width:100%}}@media only screen and (min-width:993px){.cell.l1{width:50%}.cell.l2{width:100%}}
