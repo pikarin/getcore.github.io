@@ -27,14 +27,14 @@
 html{
 	box-sizing: border-box;
 	overflow-x:hidden;
-	font-size:16px;
+	font-size:15px;
 	font-family: "Segoe UI",Verdana;
 	text-rendering: optimizeLegibility;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 }
 body{
-	font-size:16px;
+	font-size:15px;
 	color:#444;
 }
 a{
@@ -57,7 +57,7 @@ pre {
 	border-radius: 4px;
 }
 pre code {
-	font-size:13.5px;
+	font-size:14px;
 	white-space: pre-wrap;
 	font-family: inherit;
 	font-weight: inherit;
@@ -677,15 +677,15 @@ template {
 .border-mediumvioletred{border: 1px solid #C71585}
 
 /* Color Purple */
-.border-lavender{border: 1px solid #e6e6fa}Â 		
-.border-thistle{border: 1px solid #d8bfd8!important}Â 		
-.border-plum{border: 1px solid #dda0dd!important}Â 		
-.border-orchid{border: 1px solid #da70d6!important}		
+.border-lavender{border: 1px solid #e6e6fa}
+.border-thistle{border: 1px solid #d8bfd8}
+.border-plum{border: 1px solid #dda0dd}
+.border-orchid{border: 1px solid #da70d6}		
 .border-violet{border: 1px solid #ee82ee}		
 .border-fuchsia{border: 1px solid #ff00ff}		
 .border-magenta{border: 1px solid #ff00ff}		
-.border-mediumorchid{border: 1px solid #ba55d3}	Â 		
-.border-darkorchid{border: 1px solid #9932cc!important}	
+.border-mediumorchid{border: 1px solid #ba55d3}
+.border-darkorchid{border: 1px solid #9932cc}
 .border-darkviolet{border: 1px solid #9400d3}	
 .border-blueviolet{border: 1px solid #8a2be2}	
 .border-darkmagenta{border: 1px solid #8b008b}	
@@ -709,10 +709,10 @@ template {
 .border-darkred{border: 1px solid #8b0000}
 
 /* Orange */
-.border-orange{border: 1px solid #ffa500}Â 			
-.border-darkorange{border: 1px solid #ff8c00}	Â 				
-.border-coral{border: 1px solid #ff7f50}	Â 				
-.border-tomato{border: 1px solid #ff6347}	Â 			
+.border-orange{border: 1px solid #ffa500}
+.border-darkorange{border: 1px solid #ff8c00}
+.border-coral{border: 1px solid #ff7f50}
+.border-tomato{border: 1px solid #ff6347}
 .border-orangered{border: 1px solid #ff4500}	
 
 /* Yellow */
@@ -861,15 +861,15 @@ template {
 .dashed-mediumvioletred{border: 1px dashed #C71585}
 
 /* Color Purple */
-.dashed-lavender{border: 1px dashed #e6e6fa}Â 		
-.dashed-thistle{border: 1px dashed #d8bfd8!important}Â 		
-.dashed-plum{border: 1px dashed #dda0dd!important}Â 		
-.dashed-orchid{border: 1px dashed #da70d6!important}		
+.dashed-lavender{border: 1px dashed #e6e6fa}
+.dashed-thistle{border: 1px dashed #d8bfd8}
+.dashed-plum{border: 1px dashed #dda0dd}
+.dashed-orchid{border: 1px dashed #da70d6}		
 .dashed-violet{border: 1px dashed #ee82ee}		
 .dashed-fuchsia{border: 1px dashed #ff00ff}		
 .dashed-magenta{border: 1px dashed #ff00ff}		
-.dashed-mediumorchid{border: 1px dashed #ba55d3}	Â 		
-.dashed-darkorchid{border: 1px dashed #9932cc!important}	
+.dashed-mediumorchid{border: 1px dashed #ba55d3}
+.dashed-darkorchid{border: 1px dashed #9932cc}
 .dashed-darkviolet{border: 1px dashed #9400d3}	
 .dashed-blueviolet{border: 1px dashed #8a2be2}	
 .dashed-darkmagenta{border: 1px dashed #8b008b}	
@@ -893,10 +893,10 @@ template {
 .dashed-darkred{border: 1px dashed #8b0000}
 
 /* Orange */
-.dashed-orange{border: 1px dashed #ffa500}Â 			
-.dashed-darkorange{border: 1px dashed #ff8c00}	Â 				
-.dashed-coral{border: 1px dashed #ff7f50}	Â 				
-.dashed-tomato{border: 1px dashed #ff6347}	Â 			
+.dashed-orange{border: 1px dashed #ffa500}
+.dashed-darkorange{border: 1px dashed #ff8c00}
+.dashed-coral{border: 1px dashed #ff7f50}
+.dashed-tomato{border: 1px dashed #ff6347}
 .dashed-orangered{border: 1px dashed #ff4500}	
 
 /* Yellow */
@@ -1044,16 +1044,16 @@ template {
 .bottombar-mediumvioletred{border-bottom: 6px solid #C71585}
 
 /* Color Purple */
-.bottombar-lavender{border-bottom: 6px solid #e6e6fa}Â 		
-.bottombar-thistle{border-bottom: 6px solid #d8bfd8!important}Â 		
-.bottombar-plum{border-bottom: 6px solid #dda0dd!important}Â 		
-.bottombar-orchid{border-bottom: 6px solid #da70d6!important}		
+.bottombar-lavender{border-bottom: 6px solid #e6e6fa}
+.bottombar-thistle{border-bottom: 6px solid #d8bfd8}
+.bottombar-plum{border-bottom: 6px solid #dda0dd}
+.bottombar-orchid{border-bottom: 6px solid #da70d6}
 .bottombar-violet{border-bottom: 6px solid #ee82ee}		
 .bottombar-fuchsia{border-bottom: 6px solid #ff00ff}		
 .bottombar-magenta{border-bottom: 6px solid #ff00ff}		
-.bottombar-mediumorchid{border-bottom: 6px solid #ba55d3}	Â 		
-.bottombar-darkorchid{border-bottom: 6px solid #9932cc!important}	
-.bottombar-darkviolet{border-bottom: 6px solid #9400d3}	
+.bottombar-mediumorchid{border-bottom: 6px solid #ba55d3}
+.bottombar-darkorchid{border-bottom: 6px solid #9932cc}
+.bottombar-darkviolet{border-bottom: 6px solid #9400d3}
 .bottombar-blueviolet{border-bottom: 6px solid #8a2be2}	
 .bottombar-darkmagenta{border-bottom: 6px solid #8b008b}	
 .bottombar-purple{border-bottom: 6px solid #800080}
@@ -1076,11 +1076,11 @@ template {
 .bottombar-darkred{border-bottom: 6px solid #8b0000}
 
 /* Orange */
-.bottombar-orange{border-bottom: 6px solid #ffa500}Â 			
-.bottombar-darkorange{border-bottom: 6px solid #ff8c00}	Â 				
-.bottombar-coral{border-bottom: 6px solid #ff7f50}	Â 				
-.bottombar-tomato{border-bottom: 6px solid #ff6347}	Â 			
-.bottombar-orangered{border-bottom: 6px solid #ff4500}	
+.bottombar-orange{border-bottom: 6px solid #ffa500}
+.bottombar-darkorange{border-bottom: 6px solid #ff8c00}
+.bottombar-coral{border-bottom: 6px solid #ff7f50}
+.bottombar-tomato{border-bottom: 6px solid #ff6347}
+.bottombar-orangered{border-bottom: 6px solid #ff4500}
 
 /* Yellow */
 .bottombar-gold{border-bottom: 6px solid #ffd700}
@@ -1296,15 +1296,15 @@ template {
 
 /* Color Purple */
 .navbar-lavender li a:hover{color:#fff;transition-duration:0.9s;background-color:#e6e6fa}
-.navbar-thistle li a:hover{color:#fff;transition-duration:0.9s;background-color:#d8bfd8!important}
-.navbar-plum li a:hover{color:#fff;transition-duration:0.9s;background-color:#dda0dd!important}
-.navbar-orchid li a:hover{color:#fff;transition-duration:0.9s;background-color:#da70d6!important}		
+.navbar-thistle li a:hover{color:#fff;transition-duration:0.9s;background-color:#d8bfd8}
+.navbar-plum li a:hover{color:#fff;transition-duration:0.9s;background-color:#dda0dd}
+.navbar-orchid li a:hover{color:#fff;transition-duration:0.9s;background-color:#da70d6}
 .navbar-violet li a:hover{color:#fff;transition-duration:0.9s;background-color:#ee82ee}		
 .navbar-fuchsia li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff00ff}		
 .navbar-magenta li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff00ff}		
 .navbar-mediumorchid li a:hover{color:#fff;transition-duration:0.9s;background-color:#ba55d3}
-.navbar-darkorchid li a:hover{color:#fff;transition-duration:0.9s;background-color:#9932cc!important}	
-.navbar-darkviolet li a:hover{color:#fff;transition-duration:0.9s;background-color:#9400d3}	
+.navbar-darkorchid li a:hover{color:#fff;transition-duration:0.9s;background-color:#9932cc}
+.navbar-darkviolet li a:hover{color:#fff;transition-duration:0.9s;background-color:#9400d3}
 .navbar-blueviolet li a:hover{color:#fff;transition-duration:0.9s;background-color:#8a2be2}	
 .navbar-darkmagenta li a:hover{color:#fff;transition-duration:0.9s;background-color:#8b008b}	
 .navbar-purple li a:hover{color:#fff;transition-duration:0.9s;background-color:#800080}
@@ -1327,11 +1327,11 @@ template {
 .navbar-darkred li a:hover{color:#fff;transition-duration:0.9s;background-color:#8b0000}
 
 /* Orange */
-.navbar-orange li a:hover{color:#fff;transition-duration:0.9s;background-color:#ffa500}Â 			
-.navbar-darkorange li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff8c00}	Â 				
-.navbar-coral li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff7f50}	Â 				
-.navbar-tomato li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff6347}	Â 			
-.navbar-orangered li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff4500}	
+.navbar-orange li a:hover{color:#fff;transition-duration:0.9s;background-color:#ffa500}
+.navbar-darkorange li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff8c00}
+.navbar-coral li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff7f50}
+.navbar-tomato li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff6347}
+.navbar-orangered li a:hover{color:#fff;transition-duration:0.9s;background-color:#ff4500}
 
 /* Yellow */
 .navbar-gold li a:hover{color:#fff;transition-duration:0.9s;background-color:#ffd700}
@@ -1521,22 +1521,22 @@ template {
 .ndropdown:hover .active-mediumvioletred{color:#fff;background-color:#C71585}
 
 /* Purple */
-.ndropdown:hover .active-lavender{color:#fff;background-color:#e6e6fa}Â 		
-.ndropdown:hover .active-thistle{color:#fff;background-color:#d8bfd8!important}Â 		
-.ndropdown:hover .active-plum{color:#fff;background-color:#dda0dd!important}Â 		
-.ndropdown:hover .active-orchid{color:#fff;background-color:#da70d6!important}		
+.ndropdown:hover .active-lavender{color:#fff;background-color:#e6e6fa}
+.ndropdown:hover .active-thistle{color:#fff;background-color:#d8bfd8}
+.ndropdown:hover .active-plum{color:#fff;background-color:#dda0dd}
+.ndropdown:hover .active-orchid{color:#fff;background-color:#da70d6}
 .ndropdown:hover .active-violet{color:#fff;background-color:#ee82ee}		
 .ndropdown:hover .active-fuchsia{color:#fff;background-color:#ff00ff}		
 .ndropdown:hover .active-magenta{color:#fff;background-color:#ff00ff}		
-.ndropdown:hover .active-mediumorchid{color:#fff;background-color:#ba55d3}	Â 		
-.ndropdown:hover .active-darkorchid{color:#fff;background-color:#9932cc!important}	
-.ndropdown:hover .active-darkviolet{color:#fff;background-color:#9400d3}	
+.ndropdown:hover .active-mediumorchid{color:#fff;background-color:#ba55d3}
+.ndropdown:hover .active-darkorchid{color:#fff;background-color:#9932cc}
+.ndropdown:hover .active-darkviolet{color:#fff;background-color:#9400d3}
 .ndropdown:hover .active-blueviolet{color:#fff;background-color:#8a2be2}	
 .ndropdown:hover .active-darkmagenta{color:#fff;background-color:#8b008b}	
 .ndropdown:hover .active-purple{color:#fff;background-color:#800080}
 .ndropdown:hover .active-mediumpurple{color:#fff;background-color:#9370db}		
 .ndropdown:hover .active-mediumslateblue{color:#fff;background-color:#7b68ee}		
-.ndropdown:hover .active-slateblue{color:#fff;background-color:#6a5acd	}
+.ndropdown:hover .active-slateblue{color:#fff;background-color:#6a5acd}
 .ndropdown:hover .active-darkslateblue{color:#fff;background-color:#483d8b}	
 .ndropdown:hover .active-rebeccapurple{color:#fff;background-color:#663399}	
 .ndropdown:hover .active-indigo{color:#fff;background-color:#4b0082}
@@ -1553,11 +1553,11 @@ template {
 .ndropdown:hover .active-darkred{color:#fff;background-color:#8b0000}
 
 /* Orange */
-.ndropdown:hover .active-orange{color:#fff;background-color:#ffa500}Â 			
-.ndropdown:hover .active-darkorange{color:#fff;background-color:#ff8c00}	Â 				
-.ndropdown:hover .active-coral{color:#fff;background-color:#ff7f50}	Â 				
-.ndropdown:hover .active-tomato{color:#fff;background-color:#ff6347}	Â 			
-.ndropdown:hover .active-orangered{color:#fff;background-color:#ff4500}	
+.ndropdown:hover .active-orange{color:#fff;background-color:#ffa500}
+.ndropdown:hover .active-darkorange{color:#fff;background-color:#ff8c00}
+.ndropdown:hover .active-coral{color:#fff;background-color:#ff7f50}
+.ndropdown:hover .active-tomato{color:#fff;background-color:#ff6347}
+.ndropdown:hover .active-orangered{color:#fff;background-color:#ff4500}
 
 /* Yellow */
 .ndropdown:hover .active-gold{color:#000;background-color:#ffd700}
@@ -2489,32 +2489,115 @@ template {
 
 
 /*================================================= Font ========================================================*/
-/* Font Size */
-.font-2{font-size:2px}
-.font-4{font-size:4px}
-.font-5{font-size:5px}
-.font-6{font-size:6px}
-.font-8{font-size:8px}
-.font-10{font-size:10px}
-.font-12{font-size:12px}
-.font-14{font-size:14px}
-.font-16{font-size:16px}
-.font-18{font-size:18px}
-.font-20{font-size:20px}
-.font-21{font-size:21px}
-.font-22{font-size:22px}
-.font-24{font-size:24px}
-.font-26{font-size:26px}
-.font-28{font-size:28px}
-.font-30{font-size:30px}
-.font-32{font-size:32px}
-.font-36{font-size:36px}
-.font-48{font-size:48px}
-.font-64{font-size:64px}
-.font-72{font-size:72px}
-.font-128{font-size:128px}
-.font-256{font-size:256px}
-.font-512{font-size:512px}
+.font-1{font-size:1px;}
+.font-2{font-size:2px;}
+.font-3{font-size:3px;}
+.font-4{font-size:4px;}
+.font-5{font-size:5px;}
+.font-6{font-size:6px;}
+.font-7{font-size:7px;}
+.font-8{font-size:8px;}
+.font-9{font-size:9px;}
+.font-10{font-size:10px;}
+
+.font-11{font-size:11px;}
+.font-12{font-size:12px;}
+.font-13{font-size:13px;}
+.font-14{font-size:14px;}
+.font-15{font-size:15px;}
+.font-16{font-size:16px;}
+.font-17{font-size:17px;}
+.font-18{font-size:18px;}
+.font-19{font-size:19px;}
+.font-20{font-size:20px;}
+
+.font-21{font-size:21px;}
+.font-22{font-size:22px;}
+.font-23{font-size:23px;}
+.font-24{font-size:24px;}
+.font-25{font-size:25px;}
+.font-26{font-size:26px;}
+.font-27{font-size:27px;}
+.font-28{font-size:28px;}
+.font-29{font-size:29px;}
+.font-30{font-size:30px;}
+
+.font-31{font-size:31px;}
+.font-32{font-size:32px;}
+.font-33{font-size:33px;}
+.font-34{font-size:34px;}
+.font-35{font-size:35px;}
+.font-36{font-size:36px;}
+.font-37{font-size:37px;}
+.font-38{font-size:38px;}
+.font-39{font-size:39px;}
+.font-40{font-size:40px;}
+
+.font-41{font-size:41px;}
+.font-42{font-size:42px;}
+.font-43{font-size:43px;}
+.font-44{font-size:44px;}
+.font-45{font-size:45px;}
+.font-46{font-size:46px;}
+.font-47{font-size:47px;}
+.font-48{font-size:48px;}
+.font-49{font-size:49px;}
+.font-50{font-size:50px;}
+
+.font-51{font-size:51px;}
+.font-52{font-size:52px;}
+.font-53{font-size:53px;}
+.font-54{font-size:54px;}
+.font-55{font-size:55px;}
+.font-56{font-size:56px;}
+.font-57{font-size:57px;}
+.font-58{font-size:58px;}
+.font-59{font-size:59px;}
+.font-60{font-size:60px;}
+
+.font-61{font-size:61px;}
+.font-62{font-size:62px;}
+.font-63{font-size:63px;}
+.font-64{font-size:64px;}
+.font-65{font-size:65px;}
+.font-66{font-size:66px;}
+.font-67{font-size:67px;}
+.font-68{font-size:68px;}
+.font-69{font-size:69px;}
+.font-70{font-size:70px;}
+
+.font-71{font-size:71px;}
+.font-72{font-size:72px;}
+.font-73{font-size:73px;}
+.font-74{font-size:74px;}
+.font-75{font-size:75px;}
+.font-76{font-size:76px;}
+.font-77{font-size:77px;}
+.font-78{font-size:78px;}
+.font-79{font-size:79px;}
+.font-80{font-size:80px;}
+
+.font-81{font-size:81px;}
+.font-82{font-size:82px;}
+.font-83{font-size:83px;}
+.font-84{font-size:84px;}
+.font-85{font-size:85px;}
+.font-86{font-size:86px;}
+.font-87{font-size:87px;}
+.font-88{font-size:88px;}
+.font-89{font-size:89px;}
+.font-90{font-size:90px;}
+
+.font-91{font-size:91px;}
+.font-92{font-size:92px;}
+.font-93{font-size:93px;}
+.font-94{font-size:94px;}
+.font-95{font-size:95px;}
+.font-96{font-size:96px;}
+.font-97{font-size:97px;}
+.font-98{font-size:98px;}
+.font-99{font-size:99px;}
+.font-100{font-size:100px;}
 
 .left-align {
 	text-align: left;
@@ -3072,46 +3155,10 @@ template {
 }
 /*============================================= End Progress ====================================================*/
 
-/*============================================= Accordion =======================================================*/
-.accordion {
-    background-color: #eee;
-    cursor: pointer;
-    padding:16px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-	font-family:inherit;
-}
-.accordion.active,.accordion:hover {
-    background-color: #ddd;
-}
-.accordion-content {
-    padding:0 16px;
-    background-color: white;
-    display: none;
-}
-.accordion:after {
-    content: '\02795';
-    font-size: 16px;
-    float: right;
-    margin-left: 5px;
-}
-
-.accordion.active:after {
-    content: "\2796";
-	font-size:16px;
-}
-.accordion:focus{
-	outline:0;
-}
-
-/*============================================ And Accordion ====================================================*/
-
 /*=============================================== Button ========================================================*/
 .button{
 	display: inline-block;
-	font-size:16px;
+	font-size:inherit;
 	padding: 10px 16px;
 	text-align: center;
 	white-space: nowrap;
@@ -3123,7 +3170,7 @@ template {
 }
 .button-block{
 	display:block;
-	font-size:16px;
+	font-size:inherit;
 	padding: 10px 16px;
 	text-align: center;
 	white-space: nowrap;
@@ -3136,7 +3183,7 @@ template {
 }
 .button-default{
 	display: inline-block;
-	font-size:16px;
+	font-size:inherit;
 	padding: 10px 16px;
 	text-align: center;
 	white-space: nowrap;
@@ -3156,7 +3203,7 @@ template {
 }
 .button-disabled{
 	display: inline-block;
-	font-size:16px;
+	font-size:inherit;
 	padding: 10px 16px;
 	text-align: center;
 	white-space: nowrap;
@@ -3173,7 +3220,7 @@ template {
 
 /*============================================ Dropdown =========================================================*/
 .dropdown-button{
-    font-size: 16px;
+    font-size: inherit;
     cursor: pointer;
 }
 .dropdown {
@@ -3207,8 +3254,8 @@ template {
   height: 0;
   margin-left: 2px;
   vertical-align: middle;
-  border-top: 6px dashed;
-  border-top: 6px solid \9;
+  border-top: 5px dashed;
+  border-top: 5px solid \9;
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
 }
@@ -3218,8 +3265,8 @@ template {
   height: 0;
   margin-left: 2px;
   vertical-align: middle;
-  border-bottom: 6px dashed;
-  border-bottom: 6px solid \9;
+  border-bottom: 5px dashed;
+  border-bottom: 5px solid \9;
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
 }
@@ -3256,9 +3303,6 @@ template {
 /*=========================================== Box Shadow ========================================================*/
 
 .box-shadow{box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important}
-.box-shadow-bottom{box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important}
-.box-shadow-top{box-shadow:0 1px 4px 2px rgba(0,0,0,0.16),0 2px 10px 2px rgba(0,0,0,0.12)!important}
-
 .text-shadow{text-shadow: 0 1px 2px rgba(0, 0, 0, .6)!important}
 
 /*========================================== End Box-shadow =====================================================*/
@@ -3555,3 +3599,62 @@ template {
 	padding:0 32px;
 }
 /*========================================= End Grid ============================================================*/
+
+/*========================================= Cursor ==============================================================*/
+
+.cursor-help:hover{
+	cursor:help;
+}
+.cursor-alias:hover{
+	cursor:alias;
+}
+.cursor-all-scroll:hover{
+	cursor:all-scroll;
+}
+.cursor-auto:hover{
+	cursor:auto;
+}
+.cursor-not-allowed:hover{
+	cursor:not-allowed;
+}
+.cursor-wait:hover{
+	cursor:wait;
+}
+.cursor-cell:hover{
+	cursor:cell;
+}
+.cursor-copy:hover{
+	cursor:copy;
+}
+.cursor-crosshair:hover{
+	cursor:crosshair;
+}
+.cursor-col-resize:hover{
+	cursor:col-resize;
+}
+.cursor-vertical-text:hover{
+	cursor:vertical-text;
+}
+.cursor-text:hover{
+	cursor:text;
+}
+.cursor-progress:hover{
+	cursor:progress;
+}
+.cursor-zoom-in:hover{
+	cursor:zoom-in;
+}
+.cursor-pointer:hover{
+	cursor:pointer;
+}
+.cursor-move:hover{
+	cursor:move;
+}
+.cursor-zoom-out:hover{
+	cursor:zoom-out;
+}
+.cursor-none:hover{
+	cursor:none;
+}
+
+/*========================================= End Cursor ==========================================================*/
