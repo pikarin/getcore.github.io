@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,6 +26,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 .sidebar a{color:#fff}
 .list a{color:#000}
 .list a:hover{text-decoration:underline}
+
 </style>
 </head>
 <body>
@@ -93,6 +93,13 @@ Framework Indonesia, Core, Core Column, Core Color">
 				<li><a href="#position">Position</a></li>
 				<li><a href="#content">Content</a></li>
 				<li><a href="#filter">Filter</a></li>
+				<li><a href="#solid">Border Solid</a></li>
+				<li><a href="#dashed">Border Dashed</a></li>
+				<li><a href="#bottombar">Bottombar</a></li>
+				<li><a href="#character">Position Character</a></li>
+				<li><a href="#caret">Caret</a></li>
+				<li><a href="#radius">Radius</a></li>
+				<li><a href="#cursor">Cursor</a></li>
 				<div style="margin-bottom:50px"></div>
 			</ul>
 		</div>
@@ -543,7 +550,7 @@ Framework Indonesia, Core, Core Column, Core Color">
 								<h5 class="section">h5. Core</h5>
 								<h6 class="section">h6. Core</h6>
 							</div>
-							<div class="secpad-s">
+							<div class="secpad-s" style="margin-top:-16px">
 								<p class="subheader">Paragraf</p>
 								<p>Membuat 4 jenis paragraf.</p>
 								<ul class="list">
@@ -567,6 +574,8 @@ Framework Indonesia, Core, Core Column, Core Color">
 								<ul class="list">
 									<li>subheader</li>
 								</u>
+								<p class="subheader">Font Size</p>
+								<p>font-1 : Berarti font-size berukuran 1px, bisa digunakan hingga font-100 (100px)</p>
 								<br>
 <pre class="bg-crimson border-none">
 <code>
@@ -592,7 +601,10 @@ Framework Indonesia, Core, Core Column, Core Color">
    
    &ltp class="paragraf"&gtMendorong paragraf pertama&lt/p&gt 
 	
-   &ltp class="subheader"&gtMembuat sub judul&lt/p&gt 
+   &ltp class="subheader"&gtMembuat sub judul&lt/p&gt
+   
+   &ltp class="font-100"&gtfont-100&lt/p&gt
+ 
   &lt/div&gt
  &lt/div&gt
 &lt/body&gt
@@ -618,7 +630,8 @@ Framework Indonesia, Core, Core Column, Core Color">
  
 										</p> 
 											
-										<p class="subheader">Membuat sub judul</p> 
+										<p class="subheader">Membuat sub judul</p>
+										<p class="font-100">font-100</p> 
 									</div>
 								</div>
 							</div>
@@ -647,13 +660,13 @@ Framework Indonesia, Core, Core Column, Core Color">
  &ltdiv class="container"&gt
   &ltdiv class="interior"&gt
    &ltaddress&gt 
-    &ltstrong&gt Flamecore, Inc. &lt/strong&gt&ltbr&gt 
-     Jalan Melati II, Perbaungan, Serdang Bedagai &ltbr&gt Sumatra Utara, 20986 &ltbr&gt 
-    &ltabbr title= "Phone" &gt Phone:&lt/abbr&gt (+68) 23 6232 xxxx
+    &ltstrong&gtFlamecore, Inc.&lt/strong&gt&ltbr&gt 
+     Jalan Melati II, Perbaungan, Serdang Bedagai &ltbr&gt Sumatra Utara, 20986&ltbr&gt 
+    &ltabbr title="Phone"&gtPhone:&lt/abbr&gt(+68) 23 6232 xxxx
    &lt/address&gt 
    &ltaddress&gt 
-    &ltstrong&gt Email &lt/strong&gt&ltbr&gt 
-    &lta href= "mailto:htmlandika@gmail.com" &gt htmlandika@gmail.com &lt/a&gt 
+    &ltstrong&gtEmail&lt/strong&gt&ltbr&gt 
+    &lta href="mailto:htmlandika@gmail.com"&gthtmlandika@gmail.com&lt/a&gt 
    &lt/address&gt
   &lt/div&gt
  &lt/div&gt
@@ -2675,6 +2688,14 @@ box-shadow
  <dd>Menghilangkan Content seutuhnya</dd>
  <dt>show :</dt>
  <dd>Membuat content terlihat</dd>
+ <dt>border-none :</dt>
+ <dd>Menghilangkan border</dd>
+ <dt>radius-none :</dt>
+ <dd>Menghilangkan border-radius</dd>
+ <dt>hover-none :</dt>
+ <dd>Menghilangkan Hover</dd>
+ <dt>hover-text-none :</dt>
+ <dd>Menghilangkan Text Hover</dd>
 </div>
 <br>
 <div class="hs">
@@ -2791,8 +2812,19 @@ Menampilkan
 &lt/div&gt
 </code>
 </pre>
-<br>
-<br>
+<p class="subheader">rotate-circle</p>
+<p>Membuat element berputar ketika dihover</p>
+<xmp><div class="radius-circle bg-lightgray relative rotate-circle box-shadow" style="width:100px;height:100px">
+ <div class="position-middle">
+ rotate
+ </div>
+</div>
+</xmp>
+<div class="radius-circle bg-lightgray relative rotate-circle box-shadow" style="width:100px;height:100px">
+	<div class="position-middle">
+	rotate
+	</div>
+</div>
 					<!-- End Animation -->
 					
 					<!-- Position -->
@@ -2974,7 +3006,7 @@ Menampilkan
 					<p>Filter core seperti software photoshop untuk memanipulasi warna, contrast dan lain lain. Dibawah ini adalah
 					warna logo Framework Core Normal</p>
 					<div class="interior">
-						<img src="images/icore/icore.png">
+						<img src="http://getcore.github.io/images/icore.png">
 					</div>
 <xmp><img src="">
 </xmp>
@@ -3061,6 +3093,143 @@ Menampilkan
 </xmp>
 					<br>
 					<!-- End Filter -->
+					
+					<!-- Border Solid -->
+					<h4 class="section" id="solid">Border Solid Color Group</h4> 
+					<div class="bottombar-crimson box-shadow section-m"></div>
+					<p>Membuat border solid dengan nama color group class="border-(warna)"</p>
+<xmp><div class="border-lightgray">
+border-lightgray
+</div>
+</xmp>
+<div class="border-lightgray">
+	<div class="equal">
+		border-lightgray
+	</div>
+</div>
+					<!-- End Border Solid -->
+					
+					<!-- Border Dashed -->
+					<h4 class="section" id="dashed">Border Dashed Color Group</h4> 
+					<div class="bottombar-crimson box-shadow section-m"></div>
+					<p>Membuat border dashed dengan nama color group class="border-(warna)"</p>
+<xmp><div class="dashed-lightgray">
+dashed-lightgray
+</div>
+</xmp>
+<div class="dashed-lightgray">
+	<div class="equal">
+		dashed-lightgray
+	</div>
+</div>
+					<!-- End Border Solid -->
+					
+					<!-- Bottombar -->
+					<h4 class="section" id="bottombar">Bottombar Color Group</h4> 
+					<div class="bottombar-crimson box-shadow section-m"></div>
+					<p>Membuat border-bottom 6px solid dengan nama color group class="border-(warna)"</p>
+<xmp><div class="bottombar-lightgray">
+bottombar-lightgray
+</div>
+</xmp>
+<div class="bottombar-lightgray">
+	<div class="equal">
+		bottombar-lightgray
+	</div>
+</div>
+					<!-- End Border Solid -->
+					
+					<!-- Position Character -->
+					<h4 class="section" id="character">Position Character</h4> 
+					<div class="bottombar-crimson box-shadow section-m"></div>
+					<p>Membuat sifat element berganti posisi</p>
+<xmp><div class="left"></div>
+</xmp>
+<p>Class left membuat float left !important(didahulukan)</p>
+
+<xmp><div class="right"></div>
+</xmp>
+<p>Class right membuat float right !important(didahulukan)</p>
+
+<xmp><div class="left-flex"></div>
+</xmp>
+<p>Class left-flex membuat flex-direction row yang berarti row akan dimulai dari kiri ke kanan !important(didahulukan)</p>
+
+<xmp><div class="right-flex"></div>
+</xmp>
+<p>Class right-flex membuat flex-direction row-reverse yang berarti row akan dimulai dari kanan ke kiri !important(didahulukan)</p>
+
+					<!-- End Position Character -->
+					
+					<!-- Caret -->
+					<h4 class="section" id="caret">Caret</h4> 
+					<div class="bottombar-crimson box-shadow section-m"></div>
+					<p>Class caret adalah tanda untuk dropdown, hanya ada dua caret yaitu down dan up</p>
+<xmp><div class="button info">Caret <span class="caret-down"></span></div>
+<div class="button info">Caret <span class="caret-up"></span></div>
+</xmp>
+<div class="button info">caret-down <span class="caret-down"></span></div>
+<div class="button info">Caret-up <span class="caret-up"></span></div>
+					<!-- End Caret -->
+					
+					<!-- Radius -->
+					<h4 class="section" id="radius">Radius</h4> 
+					<div class="bottombar-crimson box-shadow section-m"></div>
+					<p>Membuat border-radius<p>
+					<ul class="list">
+						<li>radius : 4px</li>
+						<li>radius-s : 8px</li>
+						<li>radius-m : 16px</li>
+						<li>radius-l : 24px</li>
+						<li>radius-g : 32px</li>
+						<li>radius-circle : 50%</li>
+					</ul>
+<xmp><span class="button info radius">radius</span>
+<span class="button warning radius-s">radius-s</span>
+<span class="button danger radius-m">radius-m</span>
+<span class="button success radius-l">radius-l</span>
+<span class="button info radius-g">radius-g</span>
+<span class="button danger radius-circle relative" style="width:100px;height:100px">
+ <span class="position-middle">radius 50%</span>
+</span>
+</xmp>
+<span class="button info radius">radius</span>
+<span class="button warning radius-s">radius-s</span>
+<span class="button danger radius-m">radius-m</span>
+<span class="button success radius-l">radius-l</span>
+<span class="button info radius-g">radius-g</span>
+<span class="button danger radius-circle relative" style="width:100px;height:100px">
+	<span class="position-middle">radius 50%</span>
+</span>
+<p>radius-circle akan menjadi bulat jika width dan heightnya sama (px)</p>
+					<!-- End Radius -->
+					
+					<!-- Cursor -->
+					<h4 class="section" id="cursor">Cursor</h4> 
+					<div class="bottombar-crimson box-shadow section-m"></div>
+					<p>Membuat cCursor (core cursor)<p>
+<xmp><span class="button info cursor-help">cursor-help</span>
+</xmp>
+<span class="button info cursor-help">cursor-help</span>
+<span class="button info cursor-alias">cursor-alias</span>
+<span class="button info cursor-all-scroll">cursor-all-scroll</span>
+<span class="button info cursor-auto">cursor-auto</span>
+<span class="button info cursor-not-allowed">cursor-not-allowed</span>
+<span class="button info cursor-wait">cursor-wait</span>	
+<span class="button info cursor-copy">cursor-copy</span>	
+<span class="button info cursor-crosshair">cursor-crosshair</span>
+<span class="button info cursor-col-resize">cursor-col-resize</span>	
+<span class="button info cursor-vertical-text">cursor-vertical-text</span>		
+<span class="button info cursor-text">cursor-text</span>
+<span class="button info cursor-progress">cursor-progress</span>		
+<span class="button info cursor-pointer">cursor-pointer</span>	
+<span class="button info cursor-cell">cursor-cell</span>
+<span class="button info cursor-none">cursor-none</span>				
+<span class="button info cursor-zoom-in">cursor-zoom-in</span>		
+<span class="button info cursor-zoom-out">cursor-zoom-out</span>
+<span class="button info cursor-pointer">cursor-pointer</span>	
+<span class="button info cursor-move">cursor-move</span>												
+					<!-- End Cursor -->
 				</div>
 			</div>
 			
