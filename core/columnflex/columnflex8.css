@@ -15,14 +15,6 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 }
-.flex:before,
-.flex:after{
-	display: table;
-	content: " ";
-}
-.flex:after{
-	clear: both;
-}
 .flex{
 	width:100%;
 }
