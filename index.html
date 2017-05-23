@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Framework CSS Indonesia</title>
+<title>Framework Core Indonesia</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,14 +11,11 @@ Framework Indonesia, Core, Core Column, Core Color">
 <meta name="author" content="Andika Chamberlin">
 <link rel="icon" href="getcore.github.io/images/icore.png" type="image/x-icon">
 <link rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css">
-<link rel="stylesheet" href="getcore.github.io/core/color/color.css" type="text/css">
-<link rel="stylesheet" href="getcore.github.io/core/column/column12.css" type="text/css">
 <link rel="stylesheet" href="core/core.css" type="text/css">
-<link rel="stylesheet" href="core/color/color.css" type="text/css">
-<link rel="stylesheet" href="core/column/column12.css" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Finger+Paint" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -31,520 +28,286 @@ Framework Indonesia, Core, Core Column, Core Color">
 </script>
 <style>
 .font{font-family: 'Finger Paint', cursive;}
-.font2{font-family: 'Averia Sans Libre', cursive;}
-.navbar a{color:#fff}
 
-.core-animation-circle{
-	border: 5px solid skyblue;
-	margin: 0 auto;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	border-radius: 50%;
-	-webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-	opacity: .1;
+.phone{
+    height:480px;
+    width:100%;
+    border-left:15px solid #eee;
+    border-top:30px solid #eee;
+    border-right:15px solid #eee;
+    border-bottom:30px solid #eee;
+    border-radius:8px;
+    overflow: hidden;
+    z-index: 6!important;
 }
-.core-animation-circle:nth-child(1) {
-  width: 0px;
-  height: 0px;
-  border-color: #fff;
-  -webkit-animation: 2s 0s rotater infinite alternate;
-          animation: 2s 0s rotater infinite alternate;
-}
-.core-animation-circle:nth-child(2) {
-  width: 40px;
-  height: 40px;
-  border-color: #fff;
-  -webkit-animation: 2s 0.1s rotater infinite alternate;
-          animation: 2s 0.1s rotater infinite alternate;
-}
-.core-animation-circle:nth-child(3) {
-  width: 80px;
-  height: 80px;
-  border-color: #fff;
-  -webkit-animation: 2s 0.2s rotater infinite alternate;
-          animation: 2s 0.2s rotater infinite alternate;
+.tablet{
+    height:480px;
+    width:100%;
+    border-left:15px solid #eee;
+    border-top:30px solid #eee;
+    border-right:15px solid #eee;
+    border-bottom:30px solid #eee;
+    border-radius:8px;
+    overflow: hidden;
+    z-index: 5!important;
 }
 
-.core-animation-circle:nth-child(4) {
-  width: 120px;
-  height: 120px;
-  border-color: #fff;
-  -webkit-animation: 2s 0.3s rotater infinite alternate;
-          animation: 2s 0.3s rotater infinite alternate;
+/* Profil Card */
+.profil{
+	border:1px solid #f1f1f1;
+	border-radius:4px;
+	position: relative;
 }
+.profil-header{
+	height:200px;
+	overflow: hidden;
+	border-bottom:1px solid #f1f1f1;
+	background-size: cover;
+}
+.profil-images img{
+	position:absolute;top:135px;left:33%;
+	border-radius:50%;
+	border: 4px solid #fff;
+	width:120px;
+	height:120px;
+	box-shadow: 0px 0px 2px #888;
+}
+.profil-text{
+	padding:55px 16px;
 
-.core-animation-circle:nth-child(5) {
-  width: 160px;
-  height: 160px;
-  border-color: #fff;
-  -webkit-animation: 2s 0.4s rotater infinite alternate;
-          animation: 2s 0.4s rotater infinite alternate;
 }
-@-webkit-keyframes rotater {
-  to {
-    -webkit-transform: translate(-50%, -50%) scale(2.3);
-            transform: translate(-50%, -50%) scale(2.3);
-    opacity: 1;
-  }
-}
-
-@keyframes rotater {
-  to {
-    -webkit-transform: translate(-50%, -50%) scale(2.3);
-            transform: translate(-50%, -50%) scale(2.3);
-    opacity: 1;
-  }
-}
-
 </style>
 </head>
 <body>
-	<!-- Core Animation -->
-	<div class="position-topleft" style="top:50px">
-		<div class="core-animation-circle border-color:#fff"></div>
-		<div class="core-animation-circle border-color:#fff"></div>
-		<div class="core-animation-circle border-color:#fff"></div>
-		<div class="core-animation-circle border-color:#fff"></div>
-		<div class="core-animation-circle border-color:#fff"></div>
-	</div>
-	<!-- End Animation -->
-	
-	<div class="container-full">
-		<!-- Navbar -->
-		<div class="row">
-			<div class="column s12">
-				<ul class="navbar navbar-crimson bg-darkslategray box-shadow animation-top fixed-top">
-					<li class="hm hl">
-						<div class="dropdown">
-							<a onclick="dropdown()"><i class="fa fa-bars dropdown-button"></i></a>
-							<div id="dropdownMenu" class="dropnav-content bg-darkslategray box-shadow">
-								<a href="index.html">Core</a>
-								<a href="learn.html">Learn</a>
-								<a href="column.html">Column</a>
-								<a href="color.html">Color</a>
-								<a href="js.html">jcore</a>
-								<a href="templates.html">Templates</a>
-								<a href="author.html">Author</a>
+    <!-- Navoon -->
+    <div class="navoon">
+        <li><a onclick="toggleAside()"><i class="fa fa-bars toggle-aside"></i></a></li>
+        <li><a href=""><img src="images/icore.png" class="navoon-logo"></a></li>
+        <li class="right"><a onclick="toggleMenu()"><i class="fa fa-ellipsis-v toggle-menu"></i></a>
+            <div id="navoonMenu" class="navoon-menu">
+                <div class="row">
+                    <div class="column l3 m6 s12">
+                        <div class="navoon-tab">
+                            <button class="tablinks" onclick="openContent(event, 'navoon')" id="defaultOpen"><i class="fa fa-ellipsis-h"></i></button>
+                            <button class="tablinks" onclick="openContent(event, 'translate')">
+                                <i class="fa fa-language"></i>
+                            </button>
+                            <button class="tablinks" onclick="openContent(event, 'map')">
+                                <i class="fa fa-map-marker"></i>
+                            </button>
+                            <button class="tablinks" onclick="openContent(event, 'donate')">
+                                <i class="fa fa-credit-card-alt"></i>
+                            </button>
+                            <button class="tablinks" onclick="openContent(event, 'book')">
+                                <i class="fa fa-book"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="column l9 m6 s12">
+                        <div id="navoon" class="tabcontent navoon-list">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+
+                        <div id="translate" class="tabcontent">
+                          <h3>Paris</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+                        </div>
+
+                        <div id="map" class="tabcontent">
+                          <h3>Tokyo</h3>
+                          <p>Tokyo is the capital of Japan.</p>
+                        </div>
+
+                        <div id="donate" class="tabcontent">
+                          <h3>Tokyo</h3>
+                          <p>Tokyo is the capital of Japan.</p>
+                        </div>
+
+                        <div id="book" class="tabcontent position-container">
+                            <div class="position-middle center-align">
+                                <a href="https://github.com/getcore/getcore.github.io" class="font-30 text-shadow animation-left text-hover-black" title="Fork" target="_blank"><i class="fa fa-github"></i>&nbsp;&nbsp;</a>
+                                <a href="https://www.facebook.com/groups/1420436718030471/" class="font-30 text-hover-dodgerblue text-shadow animation-bottom" title="Group Framework Core" target="_blank"><i class="fa fa-facebook"></i>&nbsp;&nbsp;</a>
+                                <a href="https://www.facebook.com/groups/804418723055940/?fref=ts" class="font-30 text-hover-orange text-shadow animation-zoom" title="Group HTML Indonesia" target="_blank"><i class="fa fa-html5"></i>&nbsp;&nbsp;</a>
+                                <a href="https://www.facebook.com/groups/276149469476194/?fref=ts" class="font-30 text-hover-royalblue text-shadow animation-top" title="Group CSS Indonesia" target="_blank"><i class="fa fa-css3"></i>&nbsp;&nbsp;</a>
+                                <a href="https://www.youtube.com/channel/UC5rNlaJYxpPIh_CtIjzmQ1w " class="font-30 text-hover-red text-shadow animation-right" title="Tutorial Youtube" target="_blank"><i class="fa fa-youtube"></i>&nbsp;&nbsp;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </div>
+    <!-- End Navoon -->
+
+    <!-- Navoon Aside -->
+    <div id="navoonAside" class="navoon-aside">
+        <li><a><h4 style="padding:16px 0px">Flamecore<sup style="font-size: 12px">Org</sup></h4></a></li>
+        <li style="background-color: #f1f1f1"><a href="index.html">Framework Core</a></li>
+        <li><a href="learn.html">Learn</a></li>
+        <li><a href="column.html">Column</a></li>
+        <li><a href="color.html">Color</a></li>
+        <li><a href="js.html">jcore</a></li>
+        <li><a href="templates.html">Templates</a></li>
+        <li style="border-top:1px solid #ddd"><a href="tutorial.html">Tutorial</a></li>
+        <li><a href="ebook.html">Ebook</a></li>
+        <li><a href="organiser.html">Organiser</a></li>
+    </div>
+    <!-- End Navoon Aside -->
+
+    <!-- Content -->
+    <div class="navoon-content layout" style="padding-top:0">
+        <div class="bg-white position-container box-shadow" style="height:800px;">
+            <div class="position-middle center-align">
+				<div>
+					<img src="logo/redcore.png">
+				</div>
+				<p class="font-20">Framework CSS no 1 Indonesia</p>
+				<div class="section-m">
+					<a href="#" download style="color: inherit;padding:10px 20px;border:1px solid #f1f1f1" class="hover-box-shadow">
+						Download Core
+					</a>
+				</div>
+				<p style="color:#888" class="font-14">Version 2 Navoon</p>
+			</div>
+        </div>
+        <div class="center-align" style="padding:70px 16px 40px 16px">
+            <h3 class="secpad">Core 2 Navoon Is Comming</h3>
+            <p class="font-18" style="max-width: 700px;margin: auto;">Navoon adalah versi 2 dari Framework Core. Membuat Kerangka Kerja Modren dan responsive lebih mudah bersama Flamecore<sup style="font-size: 10px">org</sup></p>
+        </div>
+		<div style="margin:auto;max-width:1024px">
+			<div class="row grid section" style="margin-bottom:70px">
+				<div class="column grid l8 hm hs">
+					<h5 class="section center-align">Tablet</h5>
+					<div class="box-shadow bg-white tablet hs hm">
+						<iframe src="index.html" width="100%" height="440" frameborder="0"></iframe>
+					</div>
+				</div>
+				<div class="column grid l4 hm hs">
+					<h5 class="section center-align">Smartphone</h5>
+					<div class="box-shadow bg-white phone hs hm">
+						<iframe src="index.html" width="100%" height="440" frameborder="0"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="center-align">
+            <div class="row grid">
+                <div class="column grid l4 m12 s12">
+                    <h3>Compatibility Browser</h3>
+                    <span class="font-100"><i class="fa fa-cogs"></i></span>
+                    <p class="font-18"> Google Chrome, Mozilla Firefox, Opera, EDGE, Safari, IE</p>
+                </div>
+                <div class="column grid l4 m12 s12">
+                    <h3>Responsive</h3>
+                    <span class="font-100"><i class="fa fa-desktop"></i></span>
+                    <p class="font-18">
+                    Sangat mudah membuat website responsive menggunakan Framework Core.
+                    </p>
+                </div>
+                <div class="column grid l4 m12 s12">
+                    <h3>Powered by Github</h3>
+                    <span class="font-100"><i class="fa fa-code-fork"></i></span>
+                    <p class="font-18">Pengembangan Framework core melalui github</p>
+                </div>
+            </div>
+        </div>
+        <div class="row grid center-align section-l">
+            <div class="column grid l6 m6 s12">
+                <h3>Columns</h3>
+                <span class="font-100"><i class="fa fa-braille"></i></span>
+                <p class="font-18">3 Column dengan beda sifat yaitu float, table cell dan columnbox</p>
+            </div>
+            <div class="column grid l6 m6 s12">
+                 <h3>Colors</h3>
+                <span class="font-100"><i class="fa fa-camera"></i></span>
+                <p class="font-18">Perpustakaan warna Color Group, Crayola, Resene, Linear Gradient dan masih banyak lagi</p>
+            </div>
+        </div> 
+        <div class="row grid center-align">
+            <div class="column grid l6 m6 s12">
+                <h3>Codes</h3>
+                <span class="font-100"><i class="fa fa-code"></i></span>
+                <p class="font-18">HTML, CSS, Javascript, Jquery</p>
+            </div>
+            <div class="column grid l6 m6 s12">
+                <h3>Modify</h3>
+                <span class="font-100"><i class="fa fa-edit"></i></span>
+                <p class="font-18">Sangat mudah memodifikasi Framework Core</p>
+            </div>
+        </div> 
+        <div class="row grid center-align secpad-l">
+            <div class="column grid s12">
+                <h3>Next Project</h3>
+                <span class="font-100">?</span>
+                <p class="font-18">Colums, Colors, Templates and Many More</p>
+            </div>
+        </div>      
+        <div class="center-align secpad-g" style="margin:auto;max-width:1024px">
+            <div class="row grid">
+                <div class="column grid l4 m12 s12">
+                    <div class="profil">
+						<div class="profil-header">
+							<img src="logo/redcore.png">	
+							<div class="profil-images">
+								<a href="author.html"><img src="images/andika.jpg"></a>
 							</div>
 						</div>
-					</li>
-					<li class="bg-crimson hs"><a href="index.html">Core</a></li>
-					<li class="hs"><a href="learn.html">Learn</a></li>
-					<li class="hs"><a href="column.html">Column</a></li>
-					<li class="hs"><a href="color.html">Color</a></li>
-					<li class="hs"><a href="js.html">jcore</a></li>
-					<li class="hs"><a href="templates.html">Templates</a></li>
-					<li class="right hs">
-						<a href="author.html" target="_blank">
-							Author
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<!-- End Navbar -->
-		
-		<!-- Header -->
-<div class="row">
-	<div class="column s12">
-		<div class="interior bg-crimson box-shadow">
-			<header class="white" style="padding:200px 0px;">
-				<center>
-					<h1 class="font text-shadow animation-top" style="font-size:100px;margin-bottom:20px">Get Core</h1>
-					<div class="section">
-						<a href="https://github.com/getcore/getcore.github.io" class="white font-32 text-hover-black text-shadow animation-left" title="Fork" target="_blank"><i class="fa fa-github"></i>&nbsp;&nbsp;</a>
-						<a href="https://www.facebook.com/groups/1420436718030471/" class="white font-32 text-hover-dodgerblue text-shadow animation-bottom" title="Group Framework Core" target="_blank"><i class="fa fa-facebook"></i>&nbsp;&nbsp;</a>
-						<a href="https://www.facebook.com/groups/804418723055940/?fref=ts" class="white font-32 text-hover-orange text-shadow animation-zoom" title="Group HTML Indonesia" target="_blank"><i class="fa fa-html5"></i>&nbsp;&nbsp;</a>
-						<a href="https://www.facebook.com/groups/276149469476194/?fref=ts" class="white font-32 text-hover-royalblue text-shadow animation-top" title="Group CSS Indonesia" target="_blank"><i class="fa fa-css3"></i>&nbsp;&nbsp;</a>
-						<a href="https://www.youtube.com/channel/UC5rNlaJYxpPIh_CtIjzmQ1w " class="white font-32 text-hover-red text-shadow animation-right" title="Tutorial Youtube" target="_blank"><i class="fa fa-youtube"></i>&nbsp;&nbsp;</a>
-						
+						<div class="profil-text">
+							<p class="subheader">Top Level Developer</p>
+							<span>Andika Chamberlin alias si</span>
+							<span>Mood Booster</span>
+							<p>Web Designer, Youtuber</p>
+						</div>
 					</div>
-					<br>
-					<div class="section-s">
-						<a href="core/core.css" download class="white button box-shadow bg-darkslategray">
-						Download
-						</a>
+                </div>
+                <div class="column grid l4 m12 s12">
+                    <div class="profil">
+						<div class="profil-header">
+							<img src="logo/greencore.png">	
+							<div class="profil-images">
+								<img src="images/insan.jpg">
+							</div>
+						</div>
+						<div class="profil-text">
+							<p class="subheader">Developer 1</p>
+							<span>Insan Taufik alias si</span>
+							<span>Insan Simple</span>
+							<p>Instructor, Visual Basic Programming, Web Designer, Web Programming </p>
+						</div>
 					</div>
-					<p class="white" style="font-size:12px">Version 1.3</p>
-				</center>
-			</header>
-		</div>
-	</div>
-</div>
-<!-- End Header -->
+                </div>
+                <div class="column grid l4 m12 s12">
+                    <h3>Developer 2</h3>
+                    <span class="font-100">?</span>
+                    <p class="font-18"> alias si</p>
+                </div>
+            </div>
+        </div>
+        <div class="center-align" style="padding:0px 16px 100px 16px;">
+            <h4>Quote Andika Chamberlin</h4>
+            <br>
+            <p style="max-width:700px;margin:auto">
+                Petualangan terbesar di dunia ini adalah bermanfaat bagi semua orang.
+            </p>        
+        </div>
+        <div class="center-align" style="padding:44px 16px;background-color: #f1f1f1">
+            <p style="max-width:800px;margin:auto">Dibuat dengan ikhlas dan mengharapkan doa supaya pemilik masuk surga. Amiin yaitu untuk Web Designer indonesia. Di dukung oleh <span style="font-weight:bold">Flamecore Organization</span> yaitu organisasi yang mempunyai misi dan visi untuk memaksimalkan generasi muda Web Indonesia. Kode Lisensi <span style="font-weight:bold">MIT</span>.</p>
+            <br>
+            <h5>Copyright <i class="fa fa-copyright"></i> Andika Chamberlin</h5>
+        </div>
+    </div>
+    <!-- End Content -->
 
-<!-- Sub Header -->
-<div class="row" style="background-color:#f2f2f2">
-	<div class="column s12">
-		<div class="interior" style="padding:100px 16px">
-			<div class="center-align">
-				<h2 class="font2">Core Linear Gradient Is Comming</h2>
-				<p class="font-22 center-align">
-					Jernihkan Mata Anda Dengan Warna Warna Combine
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- End Sub Header -->
-
-<!-- Content -->
-<div class="section">
-	<div class="interior center-align">
-		<h3 class="section font2">Column Float</h3>
-		<br>
-		<br>
-		<div class="row">
-			<div class="column l2 m2 s6">
-				<div class="section-m">
-					<a href="http://getcore.github.io/core/column/column2.css" download class="box-shadow bg-darkslategray" style="padding:8px 16px">
-						Column 2
-					<a>
-				</div>
-			</div>
-			<div class="column l2 m2 s6">
-				<div class="section-m">
-					<a href="http://getcore.github.io/core/column/column4.css" download class="box-shadow bg-darkslategray" style="padding:8px 16px">
-						Column 4
-					<a>
-				</div>
-			</div>
-			<div class="column l2 m2 s6">
-				<div class="section-m">
-					<a href="http://getcore.github.io/core/column/column8.css" download class="box-shadow bg-darkslategray" style="padding:8px 16px">
-						Column 8
-					<a>
-				</div>
-			</div>
-			<div class="column l2 m2 s6">
-				<div class="section-m">
-					<a href="http://getcore.github.io/core/column/column12.css" download class="box-shadow bg-darkslategray" style="padding:8px 16px">
-						Column 12
-					<a>
-				</div>
-			</div>
-			<div class="column l2 m2 s6">
-				<div class="section-m">
-					<a href="http://getcore.github.io/core/column/column16.css" download class="box-shadow bg-darkslategray" style="padding:8px 16px">
-						Column 16
-					<a>
-				</div>
-			</div>
-			<div class="column l2 m2 s6">
-				<div class="section-m">
-					<a href="http://getcore.github.io/core/column/column24.css" download class="box-shadow bg-darkslategray" style="padding:8px 16px">
-						Column 24
-					<a>
-				</div>
-			</div>
-		</div>
-		<br>
-		<h3 class="section-l font2">Column Flexbox</h3>
-		<div class="row">
-			<div class="column l2 m2 s6">
-				<div class="section-m">
-					<a href="http://getcore.github.io/core/columnflex/columnflex2.css" download class="box-shadow bg-darkslategray" style="padding:8px 16px">
-						Flexbox 2
-					<a>
-				</div>
-			</div>
-			<div class="column l2 m2 s6">
-				<div class="section-m">
-					<a href="http://getcore.github.io/core/columnflex/columnflex4.css" download class="box-shadow bg-darkslategray" style="padding:8px 16px">
-						Flexbox 4
-					<a>
-				</div>
-			</div>
-			<div class="column l2 m2 s6">
-				<div class="section-m">
-					<a href="http://getcore.github.io/core/columnflex/columnflex8.css" download class="box-shadow bg-darkslategray" style="padding:8px 16px">
-						Flexbox 8
-					<a>
-				</div>
-			</div>
-			<div class="column l2 m2 s6">
-				<div class="section-m">
-					<a href="http://getcore.github.io/core/columnflex/columnflex12.css" download class="box-shadow bg-darkslategray" style="padding:8px 16px">
-						Flexbox 12
-					<a>
-				</div>
-			</div>
-			<div class="column l2 m2 s6">
-				<div class="section-m">
-					<a href="http://getcore.github.io/core/columnflex/columnflex16.css" download class="box-shadow bg-darkslategray" style="padding:8px 16px">
-						Flexbox 16
-					<a>
-				</div>
-			</div>
-			<div class="column l2 m2 s6">
-				<div class="section-m">
-					<a href="http://getcore.github.io/core/columnflex/columnflex24.css" download class="box-shadow bg-darkslategray" style="padding:8px 16px">
-						Flexbox 24
-					<a>
-				</div>
-			</div>
-		</div>
-		<br>
-		<h3 class="section-l font2">Column Teble Cell</h3>
-		<div class="row">
-			<div class="column l2 m2 s6">
-				<div class="section-m">
-					<a href="http://getcore.github.io/core/columncell/columncell2.css" download class="box-shadow bg-darkslategray" style="padding:8px 16px">
-						Cell 2
-					<a>
-				</div>
-			</div>
-			<div class="column l2 m2 s6">
-				<div class="section-m">
-					<a href="http://getcore.github.io/core/columncell/columncell4.css" download class="box-shadow bg-darkslategray" style="padding:8px 16px">
-						Cell 4
-					<a>
-				</div>
-			</div>
-			<div class="column l2 m2 s6">
-				<div class="section-m">
-					<a href="http://getcore.github.io/core/columncell/columncell8.css" download class="box-shadow bg-darkslategray" style="padding:8px 16px">
-						Cell 8
-					<a>
-				</div>
-			</div>
-			<div class="column l2 m2 s6">
-				<div class="section-m">
-					<a href="http://getcore.github.io/core/columncell/columncell12.css" download class="box-shadow bg-darkslategray" style="padding:8px 16px">
-						Cell 12
-					<a>
-				</div>
-			</div>
-			<div class="column l2 m2 s6">
-				<div class="section-m">
-					<a href="http://getcore.github.io/core/columncell/columncell16.css" download class="box-shadow bg-darkslategray" style="padding:8px 16px">
-						Cell 16
-					<a>
-				</div>
-			</div>
-			<div class="column l2 m2 s6">
-				<div class="section-m">
-					<a href="http://getcore.github.io/core/columncell/columncell24.css" download class="box-shadow bg-darkslategray" style="padding:8px 16px">
-						Cell 24
-					<a>
-				</div>
-			</div>
-		</div>
-		<br>
-		<h3 class="section-l font2">Core Library Colors</h3>
-		<div class="row">
-			<div class="column l4 m4 s12">
-				<div class="section-s center-align">
-					<a href="http://getcore.github.io/core/color/color.css" class="white button bg-darkslategray box-shadow" download>
-						Color Group
-					</a>
-				</div>
-			</div>
-			<div class="column l4 m4 s12">
-				<div class="section-s center-align">
-					<a href="http://getcore.github.io/core/color/crayola.css" class="white button bg-darkslategray box-shadow" download>
-						Crayola Colors
-					</a>
-				</div>
-			</div>
-			<div class="column l4 m4 s12">
-				<div class="section-s center-align">
-					<a href="http://getcore.github.io/core/color/resene.css" class="white button bg-darkslategray box-shadow" download>
-						Resene Colors
-					</a>
-				</div>
-			</div>
-		</div>
-		<br>
-		<br>
-		<div class="row center-align">
-			<div class="column l3 m6 s12">
-				<div class="section-m">
-					<a href="http://getcore.github.io/core/color/lgt-gradient.css" download class="white button bg-darkslategray box-shadow" style="padding:8px 16px">
-						lgt-gradient
-					<a>
-				</div>
-			</div>
-			<div class="column l3 m6 s12">
-				<div class="section-m">
-					<a href="http://getcore.github.io/core/color/lgr-gradient.css" download class="white button bg-darkslategray box-shadow" style="padding:8px 16px">
-						lgr-gradient
-					<a>
-				</div>
-			</div>
-			<div class="column l3 m6 s12">
-				<div class="section-m">
-					<a href="http://getcore.github.io/core/color/lgb-gradient.css" download class="white button bg-darkslategray box-shadow" style="padding:8px 16px">
-						lgb-gradient
-					<a>
-				</div>
-			</div>
-			<div class="column l3 m6 s12">
-				<div class="section-m">
-					<a href="http://getcore.github.io/core/color/lgl-gradient.css" download class="white button bg-darkslategray box-shadow" style="padding:8px 16px">
-						lgl-gradient
-					<a>
-				</div>
-			</div>
-			<div class="column s12">
-				<div class="section-m">
-					<a href="http://getcore.github.io/core/color/combine-gradient.css" download class="white button bg-darkslategray box-shadow" style="padding:8px 16px">
-						combine-gradient
-					<a>
-				</div>
-			</div>
-		</div>
-		<br>
-		<h3 class="section-l font2">Core Padding & Margin</h3>
-		<div class="row">
-			<div class="column l4 m4 s12">
-				<div class="section-s">
-					<a href="http://getcore.github.io/core/padding/padding.css" class="white button bg-darkslategray box-shadow" download>
-						Padding
-					</a>
-				</div>
-			</div>
-			<div class="column l4 m4 s12">
-				<div class="section-s">
-					<a href="http://getcore.github.io/core/padding/paddingHr.css" class="white button bg-darkslategray box-shadow" download>
-						PaddingHr
-					</a>
-				</div>
-			</div>
-			<div class="column l4 m4 s12">
-				<div class="section-s">
-					<a href="http://getcore.github.io/core/padding/paddingVr.css" class="white button bg-darkslategray box-shadow" download>
-						PaddingVr
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="row section">	
-			<div class="column l4 m4 s12">
-				<div class="section-s">
-					<a href="http://getcore.github.io/core/margin/margin.css" class="white button bg-darkslategray box-shadow" download>
-						Margin
-					</a>
-				</div>
-			</div>
-			<div class="column l4 m4 s12">
-				<div class="section-s">
-					<a href="http://getcore.github.io/core/margin/marginHr.css" class="white button bg-darkslategray box-shadow" download>
-						marginHr
-					</a>
-				</div>
-			</div>
-			<div class="column l4 m4 s12">
-				<div class="section-s">
-					<a href="http://getcore.github.io/core/margin/marginVr.css" class="white button bg-darkslategray box-shadow" download>
-						marginVr
-					</a>
-				</div>
-			</div>
-		</div>
-		<br>
-		<h3 class="section-l font2">Core Z-Index</h3>
-		<div class="section-s center-align">
-			<a href="http://getcore.github.io/core/zindex/zindex.css" class="white button bg-darkslategray box-shadow" download>
-				zindex
-			</a>
-		</div>
-		<br>
-		<h3 class="section-l font2">Core Width & Height</h3>
-		<div class="row">
-			<div class="column l6 m6 s6">
-				<div class="section-s">
-					<a href="http://getcore.github.io/core/width/width%.css" class="white button bg-darkslategray box-shadow" download>
-						width%
-					</a>
-				</div>
-			</div>
-			<div class="column l6 m6 s6">
-				<div class="section-s">
-					<a href="http://getcore.github.io/core/width/widthPx.css" class="white button bg-darkslategray box-shadow" download>
-						widthPx
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="row section">
-			<div class="column l6 m6 s6">
-				<div class="section-s">
-					<a href="http://getcore.github.io/core/height/height%.css" class="white button bg-darkslategray box-shadow" download>
-						height%
-					</a>
-				</div>
-			</div>
-			<div class="column l6 m6 s6">
-				<div class="section-s">
-					<a href="http://getcore.github.io/core/height/heightPx.css" class="white button bg-darkslategray box-shadow" download>
-						heightPx
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<br>
-</div>
-<!-- End Content -->
-
-<!-- Sub Footer -->
-<br>
-<div class="row" style="background-color:#f2f2f2">
-	<div class="column s12">
-		<div class="interior" style="padding:100px 16px">
-			<center>
-				<h2 class="font2">Next Project</h2>
-				<p>Form Transform, Table, Hover&Focus Animation And Many More</p>
-			</center>
-		</div>
-	</div>
-</div>
-<div class="row">
-	<div class="column s12">
-		<div class="interior" style="padding:100px 16px">
-			<center>
-				<h4 style="margin-bottom:10px" class="font2">Quote Andika Chamberlin</h4>
-				<em>"Color your life is determined not from yourself, but of others"</em>
-			</center>
-		</div>
-	</div>
-</div>
-<!-- End Sub Footer -->
-
-<!-- Footer -->
-<div class="row box-shadow">
-	<div class="column s12">
-		<div class="bg-crimson white" style="padding:32px 16px">
-			<p class="center-align">
-				Core is a CSS framework created by Andika Chamberlin. 
-			</p>
-			<p class="font center-align">Copyright © Andika Chamberlin.</p>
-		</div>
-	</div>
-</div>
-<!-- END Footer -->
-	</div>
 </body>
-<script>
-function dropdown() {
-    document.getElementById("dropdownMenu").classList.toggle("show");
-}
-
-window.onclick = function(event) {
-	if (!event.target.matches('.dropdown-button')) {
-
-    var dropdowns = document.getElementsByClassName("dropnav-content");
-    var i;
-	for (i = 0; i < dropdowns.length; i++) {
-    var openDropdown = dropdowns[i];
-    if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
+<script type="text/javascript" src="js/navoon.js"></script>
 </html>
