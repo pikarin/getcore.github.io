@@ -11,154 +11,102 @@ Framework Indonesia, Core, Core Column, Core Color">
 <meta name="author" content="Andika Chamberlin">
 <link rel="icon" href="getcore.github.io/icore.png" type="image/x-icon">
 <link rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css">
-<link rel="stylesheet" href="getcore.github.io/core/color/color.css" type="text/css">
-<link rel="stylesheet" href="getcore.github.io/core/column/column12.css" type="text/css">
-<link rel="stylesheet" href="getcore.github.io/core/columncell/columncell12.css" type="text/css">
-<link rel="stylesheet" href="getcore.github.io/core/columnflex/columnflex12.css" type="text/css">
 <link rel="stylesheet" href="core/core.css" type="text/css">
-<link rel="stylesheet" href="core/color/color.css" type="text/css">
-<link rel="stylesheet" href="core/column/column12.css" type="text/css">
-<link rel="stylesheet" href="core/columncell/columncell12.css" type="text/css">
-<link rel="stylesheet" href="core/columnflex/columnflex12.css" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Finger+Paint" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <style>
-.font{font-family: 'Finger Paint', cursive;}
-.font2{font-family: 'Averia Sans Libre', cursive;}
-.navbar a{color:#fff}
 </style>
 </head>
 <body>
-	<div class="container-full" id="up">
-		<div class="row">
-			<div class="column s12">
-				<ul class="navbar navbar-crimson bg-darkslategray box-shadow animation-top fixed-top">
-					<li class="hm hl">
-						<div class="dropdown">
-							<a onclick="dropdown()"><i class="fa fa-bars dropdown-button"></i></a>
-							<div id="dropdownMenu" class="dropnav-content bg-darkslategray box-shadow">
-								<a href="index.html">Core</a>
-								<a href="learn.html">Learn</a>
-								<a href="column.html">Column</a>
-								<a href="color.html">Color</a>
-								<a href="js.html">jcore</a>
-								<a href="templates.html">Templates</a>
-								<a href="author.html">Author</a>
-							</div>
-						</div>
-					</li>
-					<li class="hs"><a href="index.html">Core</a></li>
-					<li class="hs"><a href="learn.html">Learn</a></li>
-					<li class="bg-crimson hs"><a href="column.html">Column</a></li>
-					<li class="hs"><a href="color.html">Color</a></li>
-					<li class="hs"><a href="js.html">jcore</a></li>
-					<li class="hs"><a href="templates.html">Templates</a></li>
-					<li class="right hs">
-						<a href="author.html" target="_blank">
-							Author
-						</a>
-					</li>
-				</ul>
-				<!-- Balloon -->
-				<div class="radius-circle absolute bg-darkslategray box-shadow rotate-circle" 
-					style="position:fixed;bottom:10px;right:10px;width:90px;height:90px">
-					<div class="position-middle">
-						<a href="#up" class="font-32 white text-hover-crimson">Up</a>
-					</div>
+	<!-- Navoon -->
+    <div class="navoon">
+        <li><a onclick="toggleAside()"><i class="fa fa-bars toggle-aside"></i></a></li>
+        <li><a href=""><img src="images/flamecore.png" class="navoon-logo"></a></li>
+        <li class="right"><a onclick="toggleMenu()"><i class="fa fa-ellipsis-v toggle-menu"></i></a>
+            <div id="navoonMenu" class="navoon-menu">
+                <div class="row">
+                    <div class="column l3 m6 s12">
+                        <div class="navoon-tab">
+                            <button class="tablinks" onclick="openContent(event, 'content1')" id="defaultOpen"><i class="fa fa-ellipsis-h"></i></button>
+                        </div>
+                    </div>
+                    <div class="column l9 m6 s12">
+                        <div id="content1" class="tabcontent">
+                            <nav class="nav" id="cNav">
+                                <a href="index.html">Flamecore</a>
+                                <a href="learn.html">Learn</a>
+                                <a href="column.html" style="background-color: #ddd">Column</a>
+                                <a href="color.html">Color</a>
+                                <a href="author.html" target="_blank">Author</a>
+                                <a href="javascript:void(0);" class="toggle" onclick="cToggle()"><i class="fa fa-list"></i></a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </div>
+    <!-- End Navoon -->
+
+    <!-- Navoon Aside -->
+    <div id="navoonAside" class="navoon-aside">
+        <li><a><h4 style="padding:16px 0px">Column</h4></a></li>
+        <li><a href="#begin" class="jump">Memulai</a></li>
+		<li><a href="#grid" class="jump">Grid</a></li>
+        <li><a href="#column" class="jump">Float</a></li>
+        <li><a href="#cell" class="jump">Table Cell</a></li>
+        <li><a href="#flex" class="jump">Flexbox</a></li>
+		<div style="margin-bottom:70px"></div>
+    </div>
+    <!-- End Navoon Aside -->
+    <div class="navoon-content layout" style="padding: 0">
+		<div class="position-container box-shadow" style="height:800px;">
+            <div class="position-middle center-align">
+				<div>
+					<img src="logo/redcore.png">
 				</div>
-				<div class="radius-circle absolute bg-darkslategray box-shadow rotate-circle" 
-					style="position:fixed;bottom:120px;right:20px;width:50px;height:50px">
-					<div class="position-middle">
-						<a href="#float" class="white" title="Column Float">Fl</a>
-					</div>
-				</div>
-				<div class="radius-circle absolute bg-darkslategray box-shadow rotate-circle" 
-					style="position:fixed;bottom:99px;right:90px;width:50px;height:50px">
-					<div class="position-middle">
-						<a href="#cell" class="white" title="Column Cell">Cl</a>
-					</div>
-				</div>
-				<div class="radius-circle absolute bg-darkslategray box-shadow rotate-circle" 
-					style="position:fixed;bottom:30px;right:120px;width:50px;height:50px">
-					<div class="position-middle">
-						<a href="#flex" class="white" title="Column Flex">Fx</a>
-					</div>
-				</div>
-				<!-- End Ballon -->
-	
+				<p class="font-20">Membuat Kolom Jadi Lebih Muda</p>
+                <div class="section-m">
+                    <a href="core/corecolumn.zip" download style="color: inherit;padding:10px 20px;border:1px solid #f1f1f1" class="hover-box-shadow">
+                        All Download
+                    </a>
+                </div>
+                <p>min.css 2, 4, 8, 12, 16, 24</p>
 			</div>
-		</div>
-		<div class="row">
-			<div class="column s12">
-				<div class="interior bg-crimson box-shadow">
-					<header class="white" style="padding:200px 0px;">
-						<div class="center-align">
-							<h1 class="font hs text-shadow" style="font-size:100px;margin-bottom:50px">Core Columns</h1>
-							<h1 class="font hm hl" style="font-size:50px;margin-bottom:30px">Core Columns</h1>
-							<p class="font-21">Sangat mudah membuat kolom dengan core column</p>
-						</div>
-					</header>
-				</div>
-			</div>
-		</div>
+        </div>	
 		<div class="row">
 			<div class="column s12">
 				<div class="section">
 							<br>
-						<h3 class="section-l center-align font2">Memulai</h3>
+						<h3 class="section-l center-align font2" id="begin">Memulai</h3>
 
 						<div class="row grid">
 							<div class="column l6 m12 s12 grid">
-<p>Memulai column float 12</p>
-<xmp><DOCTYPE html>
+
+<p>Memulai secara online</p>
+<xmp><!DOCTYPE html>
 <html lang="en">
  <head>
   <link rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css">
-  <link rel="stylesheet" href="getcore.github.io/core/column/column12.css" type="text/css">
  </head>
 </html>
-</xmp>							
+</xmp>
+<p>Core Versi 2 membuat default untuk column 12 float, cell dan flex pada 1 file css yaitu core.css.</p>							
 							</div>
 							<div class="column l6 m12 s12 grid">
-<p>Memulai column cell 12</p>
+<p>Memulai secara offline</p>
 <xmp><DOCTYPE html>
 <html lang="en">
  <head>
-  <link rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css">
-  <link rel="stylesheet" href="getcore.github.io/core/columncell/columncell12.css" type="text/css">
- </head>
-</html>
-</xmp>								
-							</div>
-							<div class="column l6 m12 s12 grid">
-<p>Memulai column flexbox 12</p>
-<xmp><DOCTYPE html>
-<html lang="en">
- <head>
-  <link rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css">
-  <link rel="stylesheet" href="getcore.github.io/core/columnflex/columnflex12.css" type="text/css">
- </head>
-</html>
-</xmp>							
-							</div>
-							<div class="column l6 m12 s12 grid">
-<p>Memulai column Offline | <a href="http://getcore.github.io" target="_blank" class="hlink-underline">Download</a></p>
-<xmp><DOCTYPE html>
-<html lang="en">
- <head>
-  <link rel="stylesheet" href="folder.../core.css" type="text/css">
-  <link rel="stylesheet" href="folder.../column/column12.css" type="text/css">
+  <link rel="stylesheet" href="folder/core/core.css" type="text/css">
  </head>
 </html>
 </xmp>								
 							</div>
 						</div>
 					<div class="interior">
-						
-<br>
-<br>	
-						<h3 class="center-align font2">Pengantar</h3>
+					<br>
+						<h3 class="center-align font2" id="grid">Grid Column</h3>
+					<br>
 						<p>
 						Core Column memiliki 3 sifat, yaitu float, table cell dan flexbox. Dalam segi penulisan
 						code tidak jauh berbeda. Float menambahkan class (row) Table cell (row-cell) Flexbox 
@@ -166,6 +114,8 @@ Framework Indonesia, Core, Core Column, Core Color">
 						(flex). Untuk membuat kolom sama rata, gunakan class grid, jika menggunakan interior atau
 						inside, maka akan membuat jarak terlalu jauh. Grid class membersihkan kesenjangan itu. Berikut Contoh Penulisannya.
 						</p>
+<div class="row grid">
+	<div class="column grid l6 m6 s12">
 <p>Beberapa jarak grid yang bisa anda gunakan</p>
 <ul class="list">
 	<li>grid :padding: 0 8px;</li>
@@ -174,6 +124,8 @@ Framework Indonesia, Core, Core Column, Core Color">
 	<li>grid-l :padding: 0 24px;</li>
 	<li>grid-g :padding: 0 32px;</li>
 </ul>
+	</div>
+	<div class="column grid l6 m6 s12">
 <p class="subheader">grid (Bisa di gunakan untuk semua Column)</p>
 <xmp><div class="row grid">
  <div class="column grid l6 m6 s6">
@@ -184,210 +136,24 @@ Framework Indonesia, Core, Core Column, Core Color">
  </div>
 </div>
 </xmp>
+	</div>
+</div>
 <br>
 <div class="row grid">
 	<div class="column grid l6 m6 s6">
-		<div class="bg-crimson radius equal">
+		<div class="bg-crimson equal">
 		Grid
 		</div>
 	</div>
 	<div class="column grid l6 m6 s6">
-		<div class="bg-crimson radius equal">
+		<div class="bg-crimson  equal">
 		Grid
 		</div>
 	</div>
 </div>
-<br>
-<p class="subheader">Float (column)</p>
-<xmp><div class="row">
- <div class="column l6 m6 s6">;
- Column Float 6 (Kiri)
- </div>;
- <div class="column l6 m6 s6">;
- Column Float 6 (kanan)
- </div>;
-</div>;
-</xmp>
-<br>
-<div class="row center-align bg-crimson radius">
-	<div class="column l6 m6 s6">
-		<div class="equal">
-			Column Float 6 (Kiri)
-		</div>
-	</div>
-	<div class="column l6 m6 s6" style="border-left:1px dashed #fff">
-		<div class="equal">
-			Column Float 6 (Kanan)
-		</div>
-	</div>
-</div>
-<br>
 
-<p class="subheader">Table Cell (cell)</p>
-<p>Table Cell sangat cocok untuk anda yang menginginkan kolom sama tinggi, walaupun pada salah satu content 
-hanya sedikit, Cell akan membuat kolom sama tinggi dengan content yang banyak. Berikut codenya.
-</p>
-<xmp><div class="row-cell">
- <div class="cell l6 m6 s6">
- Column Cell 6 (Kiri)
- </div>;
- <div class="cell l6 m6 s6">
- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
- tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
- quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
- consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
- cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
- proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
- </div>
-</div>
-</xmp>
-<br>
-
-<div class="row-cell bg-crimson radius">
-	<div class="cell l6 m6 s6">
-		<div class="equal center-align">
-			Column Cell 6 (Kiri)
-		</div>
-	</div>
-	<div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
-		<div class="equal">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</div>
-	</div>
-</div>
-<p>Tetapi, cell memiliki kekurangan yaitu tidak bersifat block jika kita membuat cell dalam satu row cell. 
-Untuk mengatasinya, ketika ingin membuat cell baru, kita diwajibkan menuliskan row cell kembali. Ini adalah tampilan
-kekurangn dari cell jika tidak membuat row cell baru.
-</p>
-
-<div class="row-cell bg-crimson radius">
-	<div class="cell l6 m6 s6">
-		<div class="equal center-align">
-			Column Cell 6 (Kiri)
-		</div>
-	</div>
-	<div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
-		<div class="equal">
-			Column Cell 6 (Kanan)
-		</div>
-	</div>
-	<div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
-		<div class="equal">
-			Tanpa row-cell baru
-		</div>
-	</div>
-</div>
-<p>Maka untuk mengatasi hal tersebut, kita di wajibkan menuliskan row-cell baru</p>
-<pre class="bg-crimson border-none">
-<code>
-&lt;div class="row-cell"&gt;
- &lt;div class="cell l6 m6 s6"&gt;
-  Column Cell 6 (Kiri)
- &lt;/div&gt;
- &lt;div class="cell l6 m6 s6"&gt;
-  Column Cell 6 (Kanan)
- &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="row-cell"&gt;
- &lt;div class="cell l6 m6 s6"&gt;
-  Column Cell 6 (Kiri)
- &lt;/div&gt;
- &lt;div class="cell l6 m6 s6"&gt;
-  Column Cell 6 (Kanan)
- &lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
-<br>
-<div class="row-cell bg-crimson radius">
-	<div class="cell l6 m6 s6">
-		<div class="equal center-align">
-			Column Cell 6 (Kiri)
-		</div>
-	</div>
-	<div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
-		<div class="equal center-align">
-			Column Cell 6 (Kanan)
-		</div>
-	</div>
-</div>
-<div class="row-cell bg-crimson radius" style="border-top:1px dashed #fff">
-	<div class="cell l6 m6 s6">
-		<div class="equal center-align">
-			Column Cell 6 (Kiri)
-		</div>
-	</div>
-	<div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
-		<div class="equal center-align">
-			Column Cell 6 (Kanan)
-		</div>
-	</div>
-</div>
-<br>
-
-
-<p class="subheader">Flexbox (flex)</p>
-<p>Keunggulan dari flexbox adalah tidak menggunakan offset untuk membuat ruang tanpa content. 
-Sifat flexbox berbeda dengan float yang harus menggunakan margin untuk mendorong atau mengkosongkan content.
-Dengan flexbox dari Core, kita tidak harus menggunakan offset, gunakan code seperti biasanya dan lihat haslinya.
-Berikut codenya dan lihat hasilnya.
-</p>
-<pre class="bg-crimson border-none">
-<code>
-&lt;div class="row-flex"&gt;
- &lt;div class="flex l6 m6 s6"&gt;
-
- &lt;/div&gt;
- &lt;div class="flex l6 m6 s6"&gt;
-  Column Cell 6 (Kanan)
- &lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
-<br>
-<div class="row-flex center-align bg-crimson radius">
-	<div class="flex l6 m6 s6">
-		<div class="equal">
-			
-		</div>
-	</div>
-	<div class="flex l6 m6 s6" style="border-left:1px dashed #fff">
-		<div class="equal">
-			Column Flex 6 (Kanan)
-		</div>
-	</div>
-</div>
-<p>Wow! sangat keren, namun flexbox dari core mempunyai masalah pada responsive ukuran smarphone. 
-pada ukuran s1 (smartphone ukuran 1). Melebihi batas lebar browser. Untuk mengatasinya gunakan
-s2 minimal ketika ingin responsive terlihat bagus pada smartphone. Berikut yang tidak boleh di gunakan
-untuk responsive smartphone.
-</p>
-<xmp><div class="row-flex">
- <div class="flex l6 m6 s1">
- Column s1 pada smartphone akan melebih lebar browser (walaupun hanya sedikit).
- </div>
- <div class="flex l6 m6 s11">
-  Column Cell 6 (Kanan)
- </div>
-</div>
-</xmp>
-<br>
-<xmp><div class="row-flex">
- <div class="flex l6 m6 s1">
- Column s2 adalah yang paling di rekomendasikan untuk ukuran smartphone.
- </div>
- <div class="flex l6 m6 s11">
-  Column Cell 6 (Kanan)
- </div>
-</div>
-</xmp>				
-						<div style="margin-top:80px" id="float"></div>
-						<h3  class="center-align font2">Float Column 12 Responsive</h3>
+						<div style="margin-top:80px" id="column"></div>
+						<h3  class="center-align font2">Float Column 12 Responsive</h3>						
 						<h5 class="hs section center-align">Description</h5>
 						<div class="row hs">
 							<div class="column l6 m12 s12">
@@ -438,27 +204,53 @@ untuk responsive smartphone.
 									</div>
 									<div class="column l8 m8 s8">
 										<div class="left-align">
-											<p>width:100%</p>
-											<p>width:91.66666667%</p>
-											<p>width:83.33333333%</p>
-											<p>width:75%</p>
-											<p>width:66.66666667%</p>
-											<p>width:58.33333333%</p>
-											<p>width:50%</p>
-											<p>width:41.66666667%</p>
-											<p>width:33.33333333%</p>
-											<p>width:25%</p>
-											<p>width:16.66666667%</p>
-											<p>width:8.33333333%</p>
+											<p>width: 100%</p>
+											<p>width: 91.66666667%</p>
+											<p>width: 83.33333333%</p>
+											<p>width: 75%</p>
+											<p>width: 66.66666667%</p>
+											<p>width: 58.33333333%</p>
+											<p>width: 50%</p>
+											<p>width: 41.66666667%</p>
+											<p>width: 33.33333333%</p>
+											<p>width: 25%</p>
+											<p>width: 16.66666667%</p>
+											<p>width: 8.33333333%</p>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 						<br>
+<p class="subheader">Float (column)</p>
+<p>Column float adalah standard ke 1 untuk Framework Core, karena column ini Compatibility di
+Mozilla Firefox, Google Chrome, Opera, EDGE, IE dan Safari.</p>
+<xmp><div class="row">
+ <div class="column l6 m6 s6">;
+ Column Float 6 (Kiri)
+ </div>;
+ <div class="column l6 m6 s6">;
+ Column Float 6 (kanan)
+ </div>;
+</div>;
+</xmp>
+<br>
+<div class="row center-align bg-crimson ">
+	<div class="column l6 m6 s6">
+		<div class="equal">
+			Column Float 6 (Kiri)
+		</div>
+	</div>
+	<div class="column l6 m6 s6" style="border-left:1px dashed #fff">
+		<div class="equal">
+			Column Float 6 (Kanan)
+		</div>
+	</div>
+</div>
+<br>
 						
 <!-- Float -->
-<div class="row center-align bg-crimson radius">
+<div class="row center-align bg-crimson ">
  <div class="column l1 m1 s1">
   <div class="equal">
 	1
@@ -471,7 +263,7 @@ untuk responsive smartphone.
  </div>
 </div>
 <br>
-<div class="row center-align bg-crimson radius">
+<div class="row center-align bg-crimson ">
  <div class="column l2 m2 s2">
   <div class="equal">
 	2
@@ -484,7 +276,7 @@ untuk responsive smartphone.
  </div>
 </div>
 <br>
-<div class="row center-align bg-crimson radius">
+<div class="row center-align bg-crimson ">
  <div class="column l3 m3 s3">
   <div class="equal">
 	3
@@ -497,7 +289,7 @@ untuk responsive smartphone.
  </div>
 </div>
 <br>
-<div class="row center-align bg-crimson radius">
+<div class="row center-align bg-crimson ">
  <div class="column l4 m4 s4">
   <div class="equal">
 	4
@@ -510,7 +302,7 @@ untuk responsive smartphone.
  </div>
 </div>
 <br>
-<div class="row center-align bg-crimson radius">
+<div class="row center-align bg-crimson ">
  <div class="column l5 m5 s5">
   <div class="equal">
 	5
@@ -523,7 +315,7 @@ untuk responsive smartphone.
  </div>
 </div>
 <br>
-<div class="row center-align bg-crimson radius">
+<div class="row center-align bg-crimson ">
  <div class="column l6 m6 s6">
   <div class="equal">
 	6
@@ -537,7 +329,7 @@ untuk responsive smartphone.
 </div>
 <br>
 <p>Membuat kolom di dalam kolom</p>
-<div class="row center-align bg-crimson radius">
+<div class="row center-align bg-crimson ">
  <div class="column l6 m6 s6" style="border-right:1px dashed #fff">
   <div class="equal">
    6
@@ -578,63 +370,68 @@ untuk responsive smartphone.
  </div>
 </div>
 <br>
-<pre class="bg-crimson border-none">
-<code>
-&lt;div class="row center-align bg-crimson radius"&gt;
- &lt;div class="column l6 m6 s6" style="border-right:1px dashed #fff"&gt;
-  &lt;div class="equal"&gt;
+<xmp><div class="row center-align bg-crimson ">
+ <div class="column l6 m6 s6" style="border-right:1px dashed #fff">
+  <div class="equal">
    6
-  &lt;/div&gt;
-  &lt;!-- Sub Column --&gt;
-  &lt;div class="row" style="border-top:1px dashed #fff"&gt;
-   &lt;div class="column l6 m6 s6" style="border-right:1px dashed #fff"&gt;
-    &lt;div class="equal"&gt;
+  </div>
+  <!-- Sub Column -->
+  <div class="row" style="border-top:1px dashed #fff">
+   <div class="column l6 m6 s6" style="border-right:1px dashed #fff">
+    <div class="equal">
     6
-    &lt;/div&gt;
-    &lt;!-- Sub Column 2 --&gt;
-    &lt;div class="row" style="border-top:1px dashed #fff"&gt;
-     &lt;div class="column l6 m6 s6"&gt;
-      &lt;div class="equal"&gt;
+    </div>
+    <!-- Sub Column 2 -->
+    <div class="row" style="border-top:1px dashed #fff">
+     <div class="column l6 m6 s6">
+      <div class="equal">
       6
-      &lt;/div&gt;
-     &lt;/div&gt;
-     &lt;div class="column l6 m6 s6" style="border-left:1px dashed #fff"&gt;
-      &lt;div class="equal"&gt;
+      </div>
+     </div>
+     <div class="column l6 m6 s6" style="border-left:1px dashed #fff">
+      <div class="equal">
       6
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-   &lt;!-- End Sub Column 2 --&gt;
-   &lt;/div&gt;
-   &lt;!-- End Sub Column --&gt;
-   &lt;div class="column l6 m6 s6"&gt;
-    &lt;div class="equal"&gt;
+      </div>
+     </div>
+    </div>
+   <!-- End Sub Column 2 -->
+   </div>
+   <!-- End Sub Column -->
+   <div class="column l6 m6 s6">
+    <div class="equal">
     6
-    &lt;/div&gt;
-   &lt;/div&gt;
-  &lt;/div&gt;
- &lt;/div&gt;
- &lt;div class="column l6 m6 s6"&gt;
-  &lt;div class="equal"&gt;
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="column l6 m6 s6">
+  <div class="equal">
    6
-  &lt;/div&gt;
- &lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
+  </div>
+ </div>
+</div>
+</xmp>
 <br>
 <p class="subheader"> Membuat Column Responsive</p> 
 <p>Resize browser agar terlihat perubahannya. Jika tidak mengerti fungsi code hl hm dan hl berikut penjelasannya.</p>
-<div class="dl-horizontal">
- <dt>hs :</dt>
- <dd>Membuat content menghilang pada ukuran smartphone</dd>
- <dt>hm :</dt> 
- <dd>Membuat content menghilang pada ukuran Tablet</dd>
- <dt>hl :</dt> 
- <dd>Membuat content menghilang pada ukuran Laptop or Computer</dd>
+<div class="scroll-table">
+<table class="table-border">
+<tr>
+ <td>hs</td>
+ <td>Membuat content menghilang pada ukuran smartphone</td>
+</tr>
+<tr>
+ <td>hm</td> 
+ <td>Membuat content menghilang pada ukuran Tablet</td>
+</tr>
+<tr>
+ <td>hl</td> 
+ <td>Membuat content menghilang pada ukuran Laptop or Computer</td>
+</tr>
+</table>
 </div>
 <br>
-<div class="row bg-crimson radius center-align">
+<div class="row bg-crimson  center-align">
  <div class="column l8 m6 s12">
   <div class="hs hm equal">
   8
@@ -659,55 +456,49 @@ untuk responsive smartphone.
  </div>
 </div>
 <br>
-<pre class="bg-crimson border-none">
-<code>
-&lt;div class="row bg-crimson radius center-align"&gt;
- &lt;div class="column l8 m6 s12"&gt;
-  &lt;div class="hs hm equal"&gt;
+<xmp><div class="row bg-crimson  center-align">
+ <div class="column l8 m6 s12">
+  <div class="hs hm equal">
   8
-  &lt;/div&gt;
-  &lt;div class="hs hl equal"&gt;
+  </div>
+  <div class="hs hl equal">
   6
-  &lt;/div&gt;
-  &lt;div class="hm hl equal"&gt;
+  </div>
+  <div class="hm hl equal">
   12
-  &lt;/div&gt;
- &lt;/div&gt;
- &lt;div class="column l4 m6 s12" style="border-left:1px dashed #fff"&gt;
-  &lt;div class="hs hm equal"&gt;
+  </div>
+ </div>
+ <div class="column l4 m6 s12" style="border-left:1px dashed #fff">
+  <div class="hs hm equal">
   4
-  &lt;/div&gt;
-  &lt;div class="hs hl equal"&gt;
+  </div>
+  <div class="hs hl equal">
   6
-  &lt;/div&gt;
-  &lt;div class="hm hl equal"&gt;
+  </div>
+  <div class="hm hl equal">
   12
-  &lt;/div&gt;
- &lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
+  </div>
+ </div>
+</div>
+</xmp>
 <p> Class s(..) membuat kolom tetap sama pada setiap ukuran. Ukuran smartphone, table atau Laptop/Computer 
 tidak berpengaruh. Penulisan codenya juga hanya sekali. Berikut codenya dan lihat hasilnya.
 </p>
-<pre class="bg-crimson border-none">
-<code>
-&lt;div class="row radius bg-crimson"&gt;
- &lt;div class="column s6"&gt;
-  &lt;div class="equal"&gt;
+<xmp><div class="row  bg-crimson">
+ <div class="column s6">
+  <div class="equal">
    Ukuran tetap sama pada semua ukuran browser
-  &lt;/div&gt;
- &lt;/div&gt;
- &lt;div class="column s6" style="border-left:1px dashed #fff"&gt;
-  &lt;div class="equal"&gt;
+  </div>
+ </div>
+ <div class="column s6" style="border-left:1px dashed #fff">
+  <div class="equal">
    Ukuran tetap sama pada semua ukuran browser
-  &lt;/div&gt;
- &lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
+  </div>
+ </div>
+</div>
+</xmp>
 <br>
-<div class="row radius bg-crimson">
+<div class="row  bg-crimson">
  <div class="column s6">
   <div class="equal">
    Ukuran tetap sama pada semua ukuran browser
@@ -721,19 +512,16 @@ tidak berpengaruh. Penulisan codenya juga hanya sekali. Berikut codenya dan liha
 </div>
 <br>
 <p>Membuat offset yang tidak berpengaruh pada setiap ukuran</p>
-<pre class="bg-crimson border-none">
-<code>
-&lt;div class="row radius bg-crimson"&gt;
- &lt;div class="column s6 s6-offset"&gt;
-  &lt;div class="equal"&gt;
+<xmp><div class="row  bg-crimson">
+ <div class="column s6 s6-offset">
+  <div class="equal">
    Ukuran Offset tetap sama pada semua ukuran browser
-  &lt;/div&gt;
- &lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
+  </div>
+ </div>
+</div>
+</xmp>
 <br>
-<div class="row radius bg-crimson">
+<div class="row  bg-crimson">
  <div class="column s6 s6-offset" style="border-left:1px dashed #fff">
   <div class="equal">
    Ukuran Offset tetap sama pada semua ukuran browser
@@ -813,7 +601,7 @@ tidak berpengaruh. Penulisan codenya juga hanya sekali. Berikut codenya dan liha
 						</div>
 
 <!-- Offset -->
-<div class="row bg-crimson center-align radius">
+<div class="row bg-crimson center-align ">
  <div class="column l6 m6 s6 l6-offset m6-offset s6-offset" style="border-left:1px dashed #fff">
   <div class="equal">
   Offset 6
@@ -821,17 +609,14 @@ tidak berpengaruh. Penulisan codenya juga hanya sekali. Berikut codenya dan liha
  </div>
 </div>
 <br>
-<pre class="bg-crimson border-none">
-<code>
-&lt;div class="row bg-crimson center-align radius"&gt;
- &lt;div class="column l6 m6 s6 l6-offset m6-offset s6-offset" style="border-left:1px dashed #fff"&gt;
-  &lt;div class="equal"&gt;
+<xmp><div class="row bg-crimson center-align ">
+ <div class="column l6 m6 s6 l6-offset m6-offset s6-offset" style="border-left:1px dashed #fff">
+  <div class="equal">
   Offset 6
-  &lt;/div&gt;
- &lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
+  </div>
+ </div>
+</div>
+</xmp>
 <!-- End Offset -->			
 						<br>
 						<br>
@@ -903,9 +688,115 @@ tidak berpengaruh. Penulisan codenya juga hanya sekali. Berikut codenya dan liha
 								</div>
 							</div>
 						</div>
+<p class="subheader">Table Cell (cell)</p>
+<p>Column cell standard ke 2 dari Framework Core karena column ini Compatibility di
+Mozilla Firefox, Google Chrome, Opera, EDGE, IE dan Safari.</p>
+<p>Table Cell sangat cocok untuk anda yang menginginkan kolom sama tinggi, walaupun pada salah satu content 
+hanya sedikit, Cell akan membuat kolom sama tinggi dengan content yang banyak. Berikut codenya.
+</p>
+<xmp><div class="row-cell">
+ <div class="cell l6 m6 s6">
+ Column Cell 6 (Kiri)
+ </div>;
+ <div class="cell l6 m6 s6">
+ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+ </div>
+</div>
+</xmp>
+<br>
 
+<div class="row-cell bg-crimson ">
+	<div class="cell l6 m6 s6">
+		<div class="equal center-align">
+			Column Cell 6 (Kiri)
+		</div>
+	</div>
+	<div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
+		<div class="equal">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+	</div>
+</div>
+<p>Tetapi, cell memiliki kekurangan yaitu tidak bersifat block jika kita membuat cell dalam satu row cell. 
+Untuk mengatasinya, ketika ingin membuat cell baru, kita diwajibkan menuliskan row cell kembali. Ini adalah tampilan
+kekurangn dari cell jika tidak membuat row cell baru.
+</p>
+
+<div class="row-cell bg-crimson ">
+	<div class="cell l6 m6 s6">
+		<div class="equal center-align">
+			Column Cell 6 (Kiri)
+		</div>
+	</div>
+	<div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
+		<div class="equal">
+			Column Cell 6 (Kanan)
+		</div>
+	</div>
+	<div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
+		<div class="equal">
+			Tanpa row-cell baru
+		</div>
+	</div>
+</div>
+
+<p>Maka untuk mengatasi hal tersebut, kita di wajibkan menuliskan row-cell baru</p>
+<xmp><div class="row-cell">
+ <div class="cell l6 m6 s6">
+  Column Cell 6 (Kiri)
+ </div>
+ <div class="cell l6 m6 s6">
+  Column Cell 6 (Kanan)
+ </div>
+</div>
+<div class="row-cell">
+ <div class="cell l6 m6 s6">
+  Column Cell 6 (Kiri)
+ </div>
+ <div class="cell l6 m6 s6">
+  Column Cell 6 (Kanan)
+ </div>
+</div>
+</xmp>
+<br>
+<div class="row-cell bg-crimson ">
+	<div class="cell l6 m6 s6">
+		<div class="equal center-align">
+			Column Cell 6 (Kiri)
+		</div>
+	</div>
+	<div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
+		<div class="equal center-align">
+			Column Cell 6 (Kanan)
+		</div>
+	</div>
+</div>
+<div class="row-cell bg-crimson " style="border-top:1px dashed #fff">
+	<div class="cell l6 m6 s6">
+		<div class="equal center-align">
+			Column Cell 6 (Kiri)
+		</div>
+	</div>
+	<div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
+		<div class="equal center-align">
+			Column Cell 6 (Kanan)
+		</div>
+	</div>
+</div>						
+
+<br>
 <!-- Cell -->
-<div class="row-cell center-align bg-crimson radius">
+<div class="row-cell center-align bg-crimson ">
  <div class="cell l1 m1 s1">
   <div class="equal">
 	1
@@ -918,7 +809,7 @@ tidak berpengaruh. Penulisan codenya juga hanya sekali. Berikut codenya dan liha
  </div>
 </div>
 <br>
-<div class="row-cell center-align bg-crimson radius">
+<div class="row-cell center-align bg-crimson ">
  <div class="cell l2 m2 s2">
   <div class="equal">
 	2
@@ -931,7 +822,7 @@ tidak berpengaruh. Penulisan codenya juga hanya sekali. Berikut codenya dan liha
  </div>
 </div>
 <br>
-<div class="row-cell center-align bg-crimson radius">
+<div class="row-cell center-align bg-crimson ">
  <div class="cell l3 m3 s3">
   <div class="equal">
 	3
@@ -944,7 +835,7 @@ tidak berpengaruh. Penulisan codenya juga hanya sekali. Berikut codenya dan liha
  </div>
 </div>
 <br>
-<div class="row-cell center-align bg-crimson radius">
+<div class="row-cell center-align bg-crimson ">
  <div class="cell l4 m4 s4">
   <div class="equal">
 	4
@@ -957,7 +848,7 @@ tidak berpengaruh. Penulisan codenya juga hanya sekali. Berikut codenya dan liha
  </div>
 </div>
 <br>
-<div class="row-cell center-align bg-crimson radius">
+<div class="row-cell center-align bg-crimson ">
  <div class="cell l5 m5 s5">
   <div class="equal">
 	5
@@ -970,7 +861,7 @@ tidak berpengaruh. Penulisan codenya juga hanya sekali. Berikut codenya dan liha
  </div>
 </div>
 <br>
-<div class="row-cell center-align bg-crimson radius">
+<div class="row-cell center-align bg-crimson ">
  <div class="cell l6 m6 s6">
   <div class="equal">
 	6
@@ -983,47 +874,40 @@ tidak berpengaruh. Penulisan codenya juga hanya sekali. Berikut codenya dan liha
  </div>
 </div>
 <br>
-<pre class="bg-crimson border-none">
-<code>
-&lt;div class="row-cell center-align bg-crimson radius"&gt;
- &lt;div class="cell l6 m6 s6"&gt;
-  &lt;div class="equal"&gt;
+<xmp><div class="row-cell center-align bg-crimson ">
+ <div class="cell l6 m6 s6">
+  <div class="equal">
    6
-  &lt;/div&gt;
- &lt;/div&gt;
- &lt;div class="cell l6 m6 s6" style="border-left:1px dashed #fff"&gt;
-  &lt;div class="equal"&gt;
+  </div>
+ </div>
+ <div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
+  <div class="equal">
    6
-  &lt;/div&gt;
- &lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
-<br>
+  </div>
+ </div>
+</div>
+</xmp>
 <p>Core Cell membuat offset secara otomatis. Coba lihat code dibawah dan hasilnya</p>
-<pre class="bg-crimson border-none">
-<code>
-&lt;div class="row-cell center-align bg-crimson radius"&gt;
- &lt;div class="cell l6 m6 s6"&gt;
-  &lt;div class="equal"&gt;
+<xmp><div class="row-cell center-align bg-crimson ">
+ <div class="cell l6 m6 s6">
+  <div class="equal">
 	
-  &lt;/div&gt;
- &lt;/div&gt;
- &lt;div class="cell l6 m6 s6" style="border-left:1px dashed #fff"&gt;
-  &lt;div class="equal"&gt;
+  </div>
+ </div>
+ <div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
+  <div class="equal">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  &lt;/div&gt;
- &lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
+  </div>
+ </div>
+</div>
+</xmp>
 <br>
-<div class="row-cell center-align bg-crimson radius">
+<div class="row-cell center-align bg-crimson ">
  <div class="cell l6 m6 s6">
   <div class="equal">
 	
@@ -1042,7 +926,7 @@ tidak berpengaruh. Penulisan codenya juga hanya sekali. Berikut codenya dan liha
 </div>
 <br>
 <p>Membuat kolom di dalam kolom pada Cell</p>
-<div class="row-cell center-align bg-crimson radius">
+<div class="row-cell center-align bg-crimson ">
  <div class="cell l6 m6 s6" style="border-right:1px dashed #fff">
   <div class="equal">
    6
@@ -1083,53 +967,49 @@ tidak berpengaruh. Penulisan codenya juga hanya sekali. Berikut codenya dan liha
  </div>
 </div>
 <br>
-<pre class="bg-crimson border-none">
-<code>
-&lt;div class="row-cell center-align bg-crimson radius"&gt;
- &lt;div class="cell l6 m6 s6" style="border-right:1px dashed #fff"&gt;
-  &lt;div class="equal"&gt;
+<xmp><div class="row-cell center-align bg-crimson ">
+ <div class="cell l6 m6 s6" style="border-right:1px dashed #fff">
+  <div class="equal">
    6
-  &lt;/div&gt;
-  &lt;!-- Sub cell --&gt;
-  &lt;div class="row-cell" style="border-top:1px dashed #fff"&gt;
-   &lt;div class="cell l6 m6 s6" style="border-right:1px dashed #fff"&gt;
-    &lt;div class="equal"&gt;
+  </div>
+  <!-- Sub cell -->
+  <div class="row-cell" style="border-top:1px dashed #fff">
+   <div class="cell l6 m6 s6" style="border-right:1px dashed #fff">
+    <div class="equal">
     6
-    &lt;/div&gt;
-    &lt;!-- Sub cell 2 --&gt;
-    &lt;div class="row-cell" style="border-top:1px dashed #fff"&gt;
-     &lt;div class="cell l6 m6 s6"&gt;
-      &lt;div class="equal"&gt;
+    </div>
+    <!-- Sub cell 2 -->
+    <div class="row-cell" style="border-top:1px dashed #fff">
+     <div class="cell l6 m6 s6">
+      <div class="equal">
       6
-      &lt;/div&gt;
-     &lt;/div&gt;
-     &lt;div class="cell l6 m6 s6" style="border-left:1px dashed #fff"&gt;
-      &lt;div class="equal"&gt;
+      </div>
+     </div>
+     <div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
+      <div class="equal">
       6
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-   &lt;!-- End Sub cell 2 --&gt;
-   &lt;/div&gt;
-   &lt;!-- End Sub cell --&gt;
-   &lt;div class="cell l6 m6 s6"&gt;
-    &lt;div class="equal"&gt;
+      </div>
+     </div>
+    </div>
+   <!-- End Sub cell 2 -->
+   </div>
+   <!-- End Sub cell -->
+   <div class="cell l6 m6 s6">
+    <div class="equal">
     6
-    &lt;/div&gt;
-   &lt;/div&gt;
-  &lt;/div&gt;
- &lt;/div&gt;
- &lt;div class="cell l6 m6 s6"&gt;
-  &lt;div class="equal"&gt;
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="cell l6 m6 s6">
+  <div class="equal">
    6
-  &lt;/div&gt;
- &lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
-<br>
+  </div>
+ </div>
+</div>
+</xmp>
 <p>Membuat kolom responsive pada Cell.</p>
-<div class="row-cell bg-crimson radius center-align">
+<div class="row-cell bg-crimson  center-align">
  <div class="cell l8 m6 s12">
   <div class="hs hm equal">
   8
@@ -1154,34 +1034,31 @@ tidak berpengaruh. Penulisan codenya juga hanya sekali. Berikut codenya dan liha
  </div>
 </div>
 <br>
-<pre class="bg-crimson border-none">
-<code>
-&lt;div class="row-cell bg-crimson radius center-align"&gt;
- &lt;div class="cell l8 m6 s12"&gt;
-  &lt;div class="hs hm equal"&gt;
+<xmp><div class="row-cell bg-crimson  center-align">
+ <div class="cell l8 m6 s12">
+  <div class="hs hm equal">
   8
-  &lt;/div&gt;
-  &lt;div class="hs hl equal"&gt;
+  </div>
+  <div class="hs hl equal">
   6
-  &lt;/div&gt;
-  &lt;div class="hm hl equal"&gt;
+  </div>
+  <div class="hm hl equal">
   12
-  &lt;/div&gt;
- &lt;/div&gt;
- &lt;div class="cell l4 m6 s12" style="border-left:1px dashed #fff"&gt;
-  &lt;div class="hs hm equal"&gt;
+  </div>
+ </div>
+ <div class="cell l4 m6 s12" style="border-left:1px dashed #fff">
+  <div class="hs hm equal">
   4
-  &lt;/div&gt;
-  &lt;div class="hs hl equal"&gt;
+  </div>
+  <div class="hs hl equal">
   6
-  &lt;/div&gt;
-  &lt;div class="hm hl equal"&gt;
+  </div>
+  <div class="hm hl equal">
   12
-  &lt;/div&gt;
- &lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
+  </div>
+ </div>
+</div>
+</xmp>
 <!-- End Cell -->						
 						<br>
 						<br>
@@ -1253,8 +1130,65 @@ tidak berpengaruh. Penulisan codenya juga hanya sekali. Berikut codenya dan liha
 								</div>
 							</div>
 						</div>
+<p class="subheader">Flexbox (flex)</p>
+<p>Column Flex adalah standard ke 3 untuk pembuatan column Core. Walaupun mempunyai banyak kelebihan, karena Flexbox properti baru dari CSS, yaitu versi ke 3
+maka ada 1 browser tidak support pada column ini, yaitu browser Safari. Develover sudah uji coba dan 
+melihat column tetap sama, namun ada kesenjangan jarak yang membuat column menjadi kebawah. Tapi tidak bermasalah, jika
+anda menggunakan browser populer saat ini, yaitu Mozilla Firefox, Google Chrome dan Opera. Meraka adalah browser yang paling 
+support dan sedikit mempunyai masalah. Bahkan IE yang mempunyai banyak masalah support Column flex.
+<p>Keunggulan dari flexbox adalah tidak menggunakan offset untuk membuat ruang tanpa content. 
+Sifat flexbox berbeda dengan float yang harus menggunakan margin untuk mendorong atau mengkosongkan content.
+Dengan flexbox dari Core, kita tidak harus menggunakan offset, gunakan code seperti biasanya dan lihat haslinya.
+Berikut codenya dan lihat hasilnya.
+</p>
+<xmp><div class="row-flex">
+ <div class="flex l6 m6 s6">
+
+ </div>
+ <div class="flex l6 m6 s6">
+  Column Cell 6 (Kanan)
+ </div>
+</div>
+</xmp>
+<br>
+<div class="row-flex center-align bg-crimson ">
+	<div class="flex l6 m6 s6">
+		<div class="equal">
+			
+		</div>
+	</div>
+	<div class="flex l6 m6 s6" style="border-left:1px dashed #fff">
+		<div class="equal">
+			Column Flex 6 (Kanan)
+		</div>
+	</div>
+</div>
+<p>Wow! sangat keren, namun flexbox dari core mempunyai masalah pada responsive ukuran smarphone. 
+pada ukuran s1 (smartphone ukuran 1). Melebihi batas lebar browser. Untuk mengatasinya gunakan
+s2 minimal ketika ingin responsive terlihat bagus pada smartphone. Berikut yang tidak boleh di gunakan
+untuk responsive smartphone.
+</p>
+<xmp><div class="row-flex">
+ <div class="flex l6 m6 s1">
+ Column s1 pada smartphone akan melebih lebar browser (walaupun hanya sedikit).
+ </div>
+ <div class="flex l6 m6 s11">
+  Column Cell 6 (Kanan)
+ </div>
+</div>
+</xmp>
+<br>
+<xmp><div class="row-flex">
+ <div class="flex l6 m6 s1">
+ Column s2 adalah yang paling di rekomendasikan untuk ukuran smartphone.
+ </div>
+ <div class="flex l6 m6 s11">
+  Column Cell 6 (Kanan)
+ </div>
+</div>
+</xmp>				
 <!-- Flex -->
-<div class="row-flex center-align bg-crimson radius">
+<div class="row-flex center-align bg-crimson ">
  <div class="flex l1 m1 s1">
   <div class="equal">
 	1
@@ -1267,7 +1201,7 @@ tidak berpengaruh. Penulisan codenya juga hanya sekali. Berikut codenya dan liha
  </div>
 </div>
 <br>
-<div class="row-flex center-align bg-crimson radius">
+<div class="row-flex center-align bg-crimson ">
  <div class="flex l2 m2 s2">
   <div class="equal">
 	2
@@ -1280,7 +1214,7 @@ tidak berpengaruh. Penulisan codenya juga hanya sekali. Berikut codenya dan liha
  </div>
 </div>
 <br>
-<div class="row-flex center-align bg-crimson radius">
+<div class="row-flex center-align bg-crimson ">
  <div class="flex l3 m3 s3">
   <div class="equal">
 	3
@@ -1293,7 +1227,7 @@ tidak berpengaruh. Penulisan codenya juga hanya sekali. Berikut codenya dan liha
  </div>
 </div>
 <br>
-<div class="row-flex center-align bg-crimson radius">
+<div class="row-flex center-align bg-crimson ">
  <div class="flex l4 m4 s4">
   <div class="equal">
 	4
@@ -1306,7 +1240,7 @@ tidak berpengaruh. Penulisan codenya juga hanya sekali. Berikut codenya dan liha
  </div>
 </div>
 <br>
-<div class="row-flex center-align bg-crimson radius">
+<div class="row-flex center-align bg-crimson ">
  <div class="flex l5 m5 s5">
   <div class="equal">
 	5
@@ -1319,7 +1253,7 @@ tidak berpengaruh. Penulisan codenya juga hanya sekali. Berikut codenya dan liha
  </div>
 </div>
 <br>
-<div class="row-flex center-align bg-crimson radius">
+<div class="row-flex center-align bg-crimson ">
  <div class="flex l6 m6 s6">
   <div class="equal">
 	6
@@ -1332,25 +1266,22 @@ tidak berpengaruh. Penulisan codenya juga hanya sekali. Berikut codenya dan liha
  </div>
 </div>
 <br>
-<pre class="bg-crimson border-none">
-<code>
-&lt;div class="row-flex center-align bg-crimson radius"&gt;
- &lt;div class="flex l6 m6 s6"&gt;
-  &lt;div class="equal"&gt;
+<xmp><div class="row-flex center-align bg-crimson ">
+ <div class="flex l6 m6 s6">
+  <div class="equal">
    6
-  &lt;/div&gt;
- &lt;/div&gt;
- &lt;div class="flex l6 m6 s6" style="border-left:1px dashed #fff"&gt;
-  &lt;div class="equal"&gt;
+  </div>
+ </div>
+ <div class="flex l6 m6 s6" style="border-left:1px dashed #fff">
+  <div class="equal">
    6
-  &lt;/div&gt;
- &lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
+  </div>
+ </div>
+</div>
+</xmp>
 <br>
 <p>Membuat kolom di dalam kolom dengan Flex.</p>
-<div class="row-flex center-align bg-crimson radius">
+<div class="row-flex center-align bg-crimson ">
  <div class="flex l6 m6 s6" style="border-right:1px dashed #fff">
   <div class="equal">
    6
@@ -1391,53 +1322,50 @@ tidak berpengaruh. Penulisan codenya juga hanya sekali. Berikut codenya dan liha
  </div>
 </div>
 <br>
-<pre class="bg-crimson border-none">
-<code>
-&lt;div class="row-flex center-align bg-crimson radius"&gt;
- &lt;div class="flex l6 m6 s6" style="border-right:1px dashed #fff"&gt;
-  &lt;div class="equal"&gt;
+<xmp><div class="row-flex center-align bg-crimson ">
+ <div class="flex l6 m6 s6" style="border-right:1px dashed #fff">
+  <div class="equal">
    6
-  &lt;/div&gt;
-  &lt;!-- Sub flex --&gt;
-  &lt;div class="row-flex" style="border-top:1px dashed #fff"&gt;
-   &lt;div class="flex l6 m6 s6" style="border-right:1px dashed #fff"&gt;
-    &lt;div class="equal"&gt;
+  </div>
+  <!-- Sub flex -->
+  <div class="row-flex" style="border-top:1px dashed #fff">
+   <div class="flex l6 m6 s6" style="border-right:1px dashed #fff">
+    <div class="equal">
     6
-    &lt;/div&gt;
-    &lt;!-- Sub flex 2 --&gt;
-    &lt;div class="row-flex" style="border-top:1px dashed #fff"&gt;
-     &lt;div class="flex l6 m6 s6"&gt;
-      &lt;div class="equal"&gt;
+    </div>
+    <!-- Sub flex 2 -->
+    <div class="row-flex" style="border-top:1px dashed #fff">
+     <div class="flex l6 m6 s6">
+      <div class="equal">
       6
-      &lt;/div&gt;
-     &lt;/div&gt;
-     &lt;div class="flex l6 m6 s6" style="border-left:1px dashed #fff"&gt;
-      &lt;div class="equal"&gt;
+      </div>
+     </div>
+     <div class="flex l6 m6 s6" style="border-left:1px dashed #fff">
+      <div class="equal">
       6
-      &lt;/div&gt;
-     &lt;/div&gt;
-    &lt;/div&gt;
-   &lt;!-- End Sub flex 2 --&gt;
-   &lt;/div&gt;
-   &lt;!-- End Sub flex --&gt;
-   &lt;div class="flex l6 m6 s6"&gt;
-    &lt;div class="equal"&gt;
+      </div>
+     </div>
+    </div>
+   <!-- End Sub flex 2 -->
+   </div>
+   <!-- End Sub flex -->
+   <div class="flex l6 m6 s6">
+    <div class="equal">
     6
-    &lt;/div&gt;
-   &lt;/div&gt;
-  &lt;/div&gt;
- &lt;/div&gt;
- &lt;div class="flex l6 m6 s6"&gt;
-  &lt;div class="equal"&gt;
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="flex l6 m6 s6">
+  <div class="equal">
    6
-  &lt;/div&gt;
- &lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
+  </div>
+ </div>
+</div>
+</xmp>
 <br>
 <p>Membuat kolom responsive dengan flex</p>
-<div class="row-flex bg-crimson radius center-align">
+<div class="row-flex bg-crimson  center-align">
  <div class="flex l8 m6 s12">
   <div class="hs hm equal">
   8
@@ -1462,118 +1390,61 @@ tidak berpengaruh. Penulisan codenya juga hanya sekali. Berikut codenya dan liha
  </div>
 </div>
 <br>
-<pre class="bg-crimson border-none">
-<code>
-&lt;div class="row-flex bg-crimson radius center-align"&gt;
- &lt;div class="flex l8 m6 s12"&gt;
-  &lt;div class="hs hm equal"&gt;
+<xmp><div class="row-flex bg-crimson  center-align">
+ <div class="flex l8 m6 s12">
+  <div class="hs hm equal">
   8
-  &lt;/div&gt;
-  &lt;div class="hs hl equal"&gt;
+  </div>
+  <div class="hs hl equal">
   6
-  &lt;/div&gt;
-  &lt;div class="hm hl equal"&gt;
+  </div>
+  <div class="hm hl equal">
   12
-  &lt;/div&gt;
- &lt;/div&gt;
- &lt;div class="flex l4 m6 s12" style="border-left:1px dashed #fff"&gt;
-  &lt;div class="hs hm equal"&gt;
-  4
-  &lt;/div&gt;
-  &lt;div class="hs hl equal"&gt;
-  6
-  &lt;/div&gt;
-  &lt;div class="hm hl equal"&gt;
-  12
-  &lt;/div&gt;
- &lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
-<br>
-<p>Flex juga bisa membuat kolom sama tinggi. Berikut codenya dan lihat hasilnya</p>
-<pre class="bg-crimson border-none">
-<code>
-&lt;div class="row-flex bg-crimson radius"&gt;
- &lt;div class="flex l6 m6 s6"&gt;
-  &lt;div class="equal"&gt;
-   Content teks sedikit
-  &lt;/div&gt;
- &lt;/div&gt;
- &lt;div class="flex l6 m6 s6" style="border-left:1px dashed #fff"&gt;
-  &lt;div class="equal"&gt;
-   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  &lt;/div&gt;
- &lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
-<br>
-<div class="row-flex bg-crimson radius">
- <div class="flex l6 m6 s6">
-  <div class="equal">
-   Content text sedikit
   </div>
  </div>
- <div class="flex l6 m6 s6" style="border-left:1px dashed #fff">
-  <div class="equal">
-   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+ <div class="flex l4 m6 s12" style="border-left:1px dashed #fff">
+  <div class="hs hm equal">
+  4
+  </div>
+  <div class="hs hl equal">
+  6
+  </div>
+  <div class="hm hl equal">
+  12
   </div>
  </div>
 </div>
+</xmp>
 <!-- End Flex -->
 						
 					</div>	
 					<!-- End Interior -->
 				</div>
 			</div>
-		</div>
-		<div class="center-align" style="background-color:#f2f2f2;margin-top:20px">
-			<div class="interior">
-				<div class="secpad-g">
-					<h1 class="font2">Next Project</h1> 
-					<p class="font-18">Column CSS3 Transform 3D, Column 32, 64, 128 and Many More.</p>
-				</div>
-			</div>
-		</div>
-		
+		</div>	
 		<!-- Footer-->
-		<div class="bg-crimson white" style="padding:64px 16px">
-			<p class="center-align">
-				Core is a CSS framework created by Andika Chamberlin. 
-			</p>
-			<p class="font center-align">Copyright © Andika Chamberlin.</p>
-		</div>
+		<div class="center-align" style="padding:44px 16px;background-color: #f1f1f1">
+            <p style="max-width:800px;margin:auto">Dibuat dengan ikhlas dan mengharapkan doa supaya pemilik masuk surga. Amiin yaitu untuk Web Designer indonesia. Di dukung oleh <span style="font-weight:bold">Flamecore Organization</span> yaitu organisasi yang mempunyai misi dan visi untuk memaksimalkan generasi muda Web Indonesia. Kode Lisensi <span style="font-weight:bold">MIT</span>.</p>
+            <br>
+            <h5>Copyright <i class="fa fa-copyright"></i> Andika Chamberlin</h5>
+        </div>
 	</div>
 </body>
-<script>
-function dropdown() {
-    document.getElementById("dropdownMenu").classList.toggle("show");
-}
+<script type="text/javascript" src="js/navoon.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$('.jump').on('click', function(){
+		console.log('ok');
 
-window.onclick = function(event) {
-	if (!event.target.matches('.dropdown-button')) {
+		var jump = $(this).attr('href');
 
-    var dropdowns = document.getElementsByClassName("dropnav-content");
-    var i;
-	for (i = 0; i < dropdowns.length; i++) {
-    var openDropdown = dropdowns[i];
-    if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
+		var elementJump = $(jump);
+
+		$('body').animate({
+			scrollTop: elementJump.offset().top -70
+		}, 1250, 'swing');
+
+		e.preventDefault();
+	});
 </script>
-
 </html>
