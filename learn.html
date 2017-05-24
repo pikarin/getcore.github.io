@@ -1,108 +1,1508 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Comming Soon</title>
+<title>Learn Framework Core Indonesia</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="Flamecore, Framework Core, Core CSS, Templates with Core, Framework CSS Indonesia,
+<meta name="keywords" content="Flamecore, Learn Framework Core, Framework Core, Core CSS, Templates with Core, Framework CSS Indonesia,
 Framework Indonesia, Core, Core Column, Core Color">
 <meta name="description" content="Framework CSS with Library Colors Indonesia">
 <meta name="author" content="Andika Chamberlin">
 <link rel="icon" href="getcore.github.io/icore.png" type="image/x-icon">
-<link rel="stylesheet" href="getcore.github.io/core.css" type="text/css">
+<link rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css">
 <link rel="stylesheet" href="core/core.css" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Finger+Paint" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <style>
-.font{font-family: 'Finger Paint', cursive;}
-body{font-family: 'Averia Sans Libre', cursive;}
-
-.core-animation-circle{
-	border: 5px solid skyblue;
-	margin: 0 auto;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	border-radius: 50%;
-	-webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-	opacity: .1;
+@media (max-width: 600px){
+	.deep{
+		margin: 0;
+		border: none!important;
+	}
 }
-.core-animation-circle:nth-child(1) {
-  width: 0px;
-  height: 0px;
-  border-color: #fff;
-  -webkit-animation: 2s 0s rotater infinite alternate;
-          animation: 2s 0s rotater infinite alternate;
-}
-.core-animation-circle:nth-child(2) {
-  width: 40px;
-  height: 40px;
-  border-color: #fff;
-  -webkit-animation: 2s 0.1s rotater infinite alternate;
-          animation: 2s 0.1s rotater infinite alternate;
-}
-.core-animation-circle:nth-child(3) {
-  width: 80px;
-  height: 80px;
-  border-color: #fff;
-  -webkit-animation: 2s 0.2s rotater infinite alternate;
-          animation: 2s 0.2s rotater infinite alternate;
-}
-
-.core-animation-circle:nth-child(4) {
-  width: 120px;
-  height: 120px;
-  border-color: #fff;
-  -webkit-animation: 2s 0.3s rotater infinite alternate;
-          animation: 2s 0.3s rotater infinite alternate;
-}
-
-.core-animation-circle:nth-child(5) {
-  width: 160px;
-  height: 160px;
-  border-color: #fff;
-  -webkit-animation: 2s 0.4s rotater infinite alternate;
-          animation: 2s 0.4s rotater infinite alternate;
-}
-@-webkit-keyframes rotater {
-  to {
-    -webkit-transform: translate(-50%, -50%) scale(2.3);
-            transform: translate(-50%, -50%) scale(2.3);
-    opacity: 1;
-  }
-}
-
-@keyframes rotater {
-  to {
-    -webkit-transform: translate(-50%, -50%) scale(2.3);
-            transform: translate(-50%, -50%) scale(2.3);
-    opacity: 1;
-  }
+.navoon-aside li{
+	position:relative!important;-webkit-animation:none!important;animation:none 0.6s!important}
+	@-webkit-keyframes navoonAside{from{left:-300px} to{left:0}}
+	@keyframes navoonAside{from{left:-300px} to{left:0;}
 }
 </style>
 </head>
-<body class="bg-crimson" style="height:100%">
-		
-	<div class="position-topleft">
-		<div class="core-animation-circle border-color:#fff"></div>
-		<div class="core-animation-circle border-color:#fff"></div>
-		<div class="core-animation-circle border-color:#fff"></div>
-		<div class="core-animation-circle border-color:#fff"></div>
-		<div class="core-animation-circle border-color:#fff"></div>
-	</div>
-	
-	<div class="position-middle center-align" style="padding:16px">
-		<h1 class="font animation-top">COMMING SOON</h1>
-	</div>
-		
-	<div class="position-bottomleft" style="padding:16px">
-		Powered by <a href="http://getcore.github.io" class="white">getcore.github.io</a>
-	</div>
+<body>
+	<!-- Navoon -->
+    <div class="navoon">
+        <li><a onclick="toggleAside()"><i class="fa fa-bars toggle-aside"></i></a></li>
+        <li><a href=""><img src="images/flamecore.png" class="navoon-logo"></a></li>
+        <li class="right"><a onclick="toggleMenu()"><i class="fa fa-ellipsis-v toggle-menu"></i></a>
+            <div id="navoonMenu" class="navoon-menu">
+                <div class="row">
+                    <div class="column l3 m6 s12">
+                        <div class="navoon-tab">
+                            <button class="tablinks" onclick="openContent(event, 'content1')" id="defaultOpen"><i class="fa fa-ellipsis-h"></i></button>
+                        </div>
+                    </div>
+                    <div class="column l9 m6 s12">
+                        <div id="content1" class="tabcontent">
+                            <nav class="nav" id="cNav">
+                                <a href="index.html">Flamecore</a>
+                                <a href="learn.html" style="background-color: #ddd">Learn</a>
+                                <a href="column.html">Column</a>
+                                <a href="color.html">Color</a>
+                                <a href="author.html" target="_blank">Author</a>
+                                <a href="javascript:void(0);" class="toggle" onclick="cToggle()"><i class="fa fa-list"></i></a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </div>
+    <!-- End Navoon -->
+     <!-- Navoon Aside -->
+    <div id="navoonAside" class="navoon-aside">
+        <li><a><h4 style="padding:16px 0px">Learn</h4></a></li>
+        <li><a href="#begin" class="jump">Memulai</a></li>
+        <li><a href="#container" class="jump">Container</a></li>
+        <li><a href="#grid" class="jump">Sistem Grid</a></li>
+        <li><a href="#tipografi" class="jump">Tipografi</a></li>
+        <li><a href="#code" class="jump">Code</a></li>
+        <li><a href="#table" class="jump">Table</a></li>
+        <li><a href="#alert" class="jump">Alert</a></li>
+        <li><a href="#form" class="jump">Form</a></li>
+        <li><a href="#button" class="jump">Button</a></li>
+        <li><a href="#images" class="jump">Images</a></li>
+        <li><a href="#section" class="jump">Section</a></li>
+		<li><a href="#display" class="jump">Display</a></li>
+		<li><a href="#navbar" class="jump">Navbar</a></li>
+		<li><a href="#pagination" class="jump">Pagination</a></li>
+		<li><a href="#ribbon" class="jump">Ribbon</a></li>
+		<li><a href="#progressbar" class="jump">Progress Bar</a></li>
+		<li><a href="#sidebarlist" class="jump">Sidebar List</a></li>
+		<li><a href="#video" class="jump">Video</a></li>
+		<li><a href="#sidebar" class="jump">Sidebar</a></li>
+		<li><a href="#opacity" class="jump">Opacity</a></li>
+		<li><a href="#shadow" class="jump">Shadow</a></li>
+		<li><a href="#hide" class="jump">Hide</a></li>
+		<li><a href="#animation" class="jump">Animation</a></li>
+		<li><a href="#position" class="jump">Position</a></li>
+		<li><a href="#layout" class="jump">Layout</a></li>
+		<div style="margin-bottom:70px"></div>
+    </div>
+    <!-- End Navoon Aside -->
+
+    <div class="navoon-content layout">
+    	<div class="bg-white position-container box-shadow" style="height:800px;">
+            <div class="position-middle center-align">
+				<div>
+					<img src="logo/redcore.png">
+				</div>
+				<p>Learn Core</p>
+			</div>
+        </div>
+    	<div class="deep" style="border:1px solid #f1f1f1">
+    		<div class="equal">
+            	<h4>Learn Framework Core</h4>
+            	<div style="border-top:1px solid #f1f1f1;border-bottom:1px solid #f1f1f1;padding:16px;margin:16px 0px">
+            	</div>
+            	<h5>Basic HTML</h5>
+<xmp><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Core HTML</title>
+    <link href="css/core.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <h1>Hello, Core!</h1>
+  </body>
+  <script src="js/navoon.js"></script>
+</html>
+</xmp>            	
+            	<h5 id="begin">Memulai</h5>
+            	<p>Menghubungkan secara online</p>
+<xmp><link rel="stylesheet" type="text/css" href="http://getcore.github.io/core/core.css">
+</xmp>
+				<div class="right-align">
+					<a href="https://codepen.io" target="_blank" style="color: inherit;">
+						<button style="padding:10px 18px;" class="hover-box-shadow bg-darkslategray">Online <i class="fa fa-edit"></i>
+						</button>
+					</a>
+				</div>
+				<p>Menghubungkan secara offline</p>
+<xmp><link rel="stylesheet" type="text/css" href="path.../css/core.css">
+</xmp>
+				<div class="right-align">
+					<a href="https://www.sublimetext.com/download" target="_blank" style="color: inherit;">
+						<button style="padding:10px 18px;" class="hover-box-shadow bg-darkslategray">Sublime Text <i class="fa fa-download"></i>
+						</button>
+					</a>
+				</div>
+				<p class="subheader">HTML5</p>
+				<p>Core sangat menganjurkan untuk memasukan elemen DOCTYPE html. Karena sebagian besar core menggunakan HTML 5.</p>
+<xmp><!DOCTYPE hmtl>
+</xmp>		
+				<p class="subheader">Responsive</p>
+				<p>Core adalah framework yang dibuat khusus untuk membuat website responsive. Maka diwajibkan memasukan element ini pada document html.</p>
+<xmp><head>
+ <meta name= "viewport" content= "width=device-width, initial-scale=1">
+</head>
+</xmp>
+				<h5 id="container">Container</h5>
+				<p class="subheader">Container</p>
+				<p>Digunakan untuk membuat container dengan margin kanan kiri 24px.
+				</p>
+<xmp><body>
+ <div class="container">
+</body>
+</xmp>
+<p class="subheader">Container Equal</p>
+<p>Digunakan untuk membuat container dengan margin sama sebesar 24px.</p>
+<xmp><body>
+ <div class="container-equal">
+
+ </div>
+</body>
+</xmp>
+
+<p class="subheader">Container Full</p>
+<p>Digunakan untuk membuat container full yaitu margin 0 pada setiap sisi.</p>
+<xmp><body>
+ <div class="container-full"></div>
+</body>
+</xmp>
+
+<p class="subheader">Inside</p>
+<p>Digunakan untuk membuat margin kanan dan kiri sebesar 16px. Ini digunakan untuk content agar tidak terlalu dekat dengan dinding margin container.</p>
+<div class="scroll-table">
+	<table>
+		<tr>
+			<td>inside</td>
+			<td>: margin: 0px 16px;</td>
+		</tr>
+		<tr>
+			<td>inside-s</td>
+			<td>: margin: 0px 8px;</td>
+		</tr>
+		<tr>
+			<td>inside-m</td>
+			<td>: margin: 0px 24px;</td>
+		</tr>
+		<tr>
+			<td>inside-l</td>
+			<td>: margin: 0px 32px;</td>
+		</tr>
+		<tr>
+			<td>inside-g</td>
+			<td>: margin: 0px 64px;</td>
+		</tr>
+	</table>
+</div>
+<div class="scroll-table section">
+	<table>
+		<tr>
+			<td>(default)</td>
+			<td>: normal</td>
+		</tr>
+		<tr>
+			<td>(s)</td>
+			<td>: Small</td>
+		</tr>
+		<tr>
+			<td>(m)</td>
+			<td>: Medium</td>
+		</tr>
+		<tr>
+			<td>(l)</td>
+			<td>: Large</td>
+		</tr>
+		<tr>
+			<td>(g)</td>
+			<td>: Gigant</td>
+		</tr>
+	</table>
+</div>
+<div class="alert info-dashed">
+	Kenapa marginnya 0px 8px? Kok ada dua element?
+</div>
+<p>Core akan membari tahu teknik penulisan diatas<br><br>
+Jika satu element, artinya margin atas, kanan, bawah, kiri itu sama, berikut contohnya<br>
+margin : 8px<br><br>
+Jika dua element, maka element yang pertama adalah atas bawah dan element yang kedua kanan kiri.<br>
+margin : 0px 8px | Berarti margin atas bawah 0px, kanan kiri 8px <br><br>
+Jika 3 element, maka element yang pertama adalah atas, yang kedua kanan kiri, dan yang ketiga adalah bawah<br>
+margin : 0px 8px 16px | Berarti margin atas 0px, margin kanan kiri 8px dan margin bawah 16px. <br><br>
+Dan yang terakhir jika 4 element, berarti setiap sisi di atur marginya.<br>
+margin : 0px 8px 16px 32px | Berarti margin atas 0px kanan 8px bawah 16px kiri 32px.</p>
+
+<div class="alert warning-dashed">
+	Ingat polanya : atas kanan bawah kiri
+</div>
+<xmp><body>
+ <div class="containter">
+  <div class="inside"></div>
+ </div>
+</body>
+</xmp>
+<p class="subheader">Interior</p>
+<p>Sama seperti inside, interior digunakan untuk membuat content tidak terlalu dekat dengan margin container, bedanya, interior adalah padding sebeser 16px. Penulis lebih rekomendasi menggunakan interior untuk membuat content terlihat baik.</p>
+<div class="scroll-table section">
+	<table>
+		<tr>
+			<td>interior</td>
+			<td>: padding: 0px 16px</td>
+		</tr>
+		<tr>
+			<td>interior-s</td>
+			<td>: padding: 0px 8px</td>
+		</tr>
+		<tr>
+			<td>interior-m</td>
+			<td>: padding: 0px 24px</td>
+		</tr>
+		<tr>
+			<td>interior-l</td>
+			<td>: padding: 0px 32px</td>
+		</tr>
+		<tr>
+			<td>interior-g</td>
+			<td>: padding: 0px 64px</td>
+		</tr>
+	</table>
+</div>
+<xmp><div class="container">
+ <div class="interior"></div>
+</div>
+</xmp>	
+
+<p class="subheader">Deep</p>
+<p>Membuat margin sama sebesar 16px</p>
+<div class="scroll-table section">
+	<table>
+		<tr>
+			<td>deep</td>
+			<td>: margin: 16px</td>
+		</tr>
+		<tr>
+			<td>deep-s</td>
+			<td>: margin: 8px</td>
+		</tr>
+		<tr>
+			<td>deep-m</td>
+			<td>: margin: 24px</td>
+		</tr>
+		<tr>
+			<td>deep-l</td>
+			<td>: margin: 32px</td>
+		</tr>
+		<tr>
+			<td>deep-g</td>
+			<td>: margin: 64px</td>
+		</tr>
+	</table>
+</div>
+<xmp><div class="container">
+ <div class="deep"></div>
+</div>
+</xmp>
+
+<p class="subheader">Equal</p>
+<p>Membuat padding sama sebesar 16px</p>
+<div class="scroll-table section">
+	<table>
+		<tr>
+			<td>equal</td>
+			<td>: padding: 16px</td>
+		</tr>
+		<tr>
+			<td>equal-s</td>
+			<td>: padding: 8px</td>
+		</tr>
+		<tr>
+			<td>equal-m</td>
+			<td>: padding: 24px</td>
+		</tr>
+		<tr>
+			<td>equal-l</td>
+			<td>: padding: 32px</td>
+		</tr>
+		<tr>
+			<td>equal-g</td>
+			<td>: padding: 64px</td>
+		</tr>
+	</table>
+</div>
+<xmp><div class="container">
+ <div class="equal"></div>
+</div>
+</xmp>
+
+<h5 id="grid">Sistem Grid</h5>
+<p>Core mempunyai sistem grid, defaultnya 12 grid. Anda bisa menggunakan grid 2, 4, 8, 16, 24 sesuai kebutuhan anda. Selain itu, Core juga memiliki grid dengan dasar pembuatan table cell dan flexbox. Pelajari Sistem grid <a href="http://getcore.github.io/column.html" target="_blank" class="blue">Go</a>
+</p>
+
+<h5 id="tipografi">Tipografi</h5>
+<h1 class="section">h1. Core</h1>
+<h2 class="section">h2. Core</h2>
+<h3 class="section">h3. Core</h3>
+<h4 class="section">h4. Core</h4>
+<h5 class="section">h5. Core</h5>
+<h6 class="section">h6. Core</h6>
+
+<p class="subheader">Paragraf</p>
+<p>Membuat 4 jenis paragraf.</p>
+<ul class="list">
+	<li>center-align</li>
+	<li>left-align</li>
+	<li>right-align</li>
+	<li>justify-align</li>
+</ul>
+<xmp><p class="center-align">Paragraf Tengah</p>
+<p class="left-align">Paragraf Kiri</p>
+<p class="right-align">Paragraf Kanan</p>
+<p class="justify-align">Paragraf rata kanan kiri</p>
+</xmp>
+<p class="subheader">Transformasi</p>
+<ul class="list">
+	<li>lowercase</li>
+	<li>uppercase</li>
+	<li>capitalize</li>
+	<li>word-warp</li>
+</ul>
+<xmp><p class="lowercase">lowercase</p>
+<p class="uppercase">uppercase</p>
+<p class="capitalize">capitalize</p>
+<p class="word-warp">word-warp : Memaksa Text Supaya Responsive</p>
+<p>bidi-override : Membuat Text Effect Mirror</p>
+<p class="bidi-override">bidi-override : Membuat Text Effect Mirror</p>
+</xmp>
+
+<p class="lowercase">lowercase</p>
+<p class="uppercase">uppercase</p>
+<p class="capitalize">capitalize</p>
+<p class="word-warp">word-warp : Memaksa Text Supaya Responsive</p>
+<p>bidi-override : Membuat Text Effect Mirror</p>
+<p class="bidi-override">bidi-override : Membuat Text Effect Mirror</p>
+
+<p class="subheader">Mendorong Paragraf</p>
+<ul class="list">
+	<li>paragraf</li>
+</ul>
+<xmp><p class="paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</xmp>
+
+<p class="paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<p class="subheader">Sub Header</p>
+<p>Membuat Huruf sedikit tebal</p>
+<xmp><p class="subheader">Subheader</p>
+</xmp>
+<p class="subheader">Subheader</p>
+
+<p class="subheader">List</p>
+<xmp><ul class="list">
+ <li>List 1
+  <ul class="sublist">
+   <li>Sub List 1</li>
+   <li>Sub List 2</li>
+   <li>Sub List 3</li>
+  </ul>
+ </li>
+ <li>List 2
+  <ol class="subnum">
+   <li>Sub List 1</li>
+   <li>Sub List 2</li>
+   <li>Sub List 3</li>
+  </ol>
+ </li>
+ <li>List 3</li>
+</ul>
+</xmp>
+								<ul class="list">
+									<li>List 1
+										<ul class="sublist">
+											<li>Sub List 1</li>
+											<li>Sub List 2</li>
+											<li>Sub List 3</li>
+										</ul>
+									</li>
+									<li>List 2
+										<ol class="subnum">
+											<li>Sub List 1</li>
+											<li>Sub List 2</li>
+											<li>Sub List 3</li>
+										</ol>
+									</li>
+									<li>List 3</li>
+								</ul>
+
+<p>List Inline</p>
+<xmp><ul class="list-inline">
+ <li>List Inline</li>
+  <ul class="sublist">
+   <li>Sub List 1</li>
+   <li>Sub List 2</li>
+   <li>Sub List 3</li>
+  </ul>
+ </li>
+</ul>
+</xmp>
+								<ul class="list-inline">
+									<li>List Inline</li>
+										<ul class="sublist">
+											<li>Sub List 1</li>
+											<li>Sub List 2</li>
+											<li>Sub List 3</li>
+										</ul>
+									</li>
+								</ul>
+<p>List None</p>
+<xmp><ul class="list-none">
+ <li>list-style-type: none</li>
+</ul>
+</xmp>
+<p>Membuat lingkaran tag li menghilang</p>
+
+<p class="subheader">Font Size</p>
+<p>font-1 (1px) hingga font-100 (100px)</p>
+<xmp><span class="font-30">
+Font-30
+</span>
+</xmp>
+
+<span class="font-30">
+Font-30
+</span>
+
+
+<p class="subheader">Blockquotes</p>
+<xmp><blockquote> 
+ <p> "Color your life is determined not from yourself, but of others"</p> 
+ <cite> - Andika Chamberlin </cite>
+</blockquote>
+</xmp>
+
+<blockquote> 
+ <p> "Color your life is determined not from yourself, but of others"</p> 
+ <cite> - Andika Chamberlin </cite>
+</blockquote>
+
+<h5 id="code" class="section">Code</h5>
+<p>
+HTML5 menyediakan tag &lt;xmp&gt; yang memungkinkan tulisan
+sama persis dengan apa yang kita tulis. Tag xmp berbeda dengan tag pre yang
+kita harus membuat tag tanda <xmp>&lt;</xmp> untuk membuat (<). Pada tag xmp kita menuliskan
+< maka yang keluar adalah sama. Jadi fungsi setiap tag tidak berpengaruh.
+</p>
+
+<xmp><xamp>
+ <div>
+  <p>xmp tag html5</p>
+ </div>
+</xamp>
+</xmp>
+
+<p>Gunakan class scroll untuk membuat code responsive. Dibawah terdapat beberapa ukuran scroll (max-height)</p>	
+<div class="scroll-table">
+	<table>
+		<tr>
+			<td>scroll </td> 
+			<td>: 100px </td>
+		</tr>
+		<tr>
+			<td>scroll-s </td> 
+			<td>: 70px </td>
+		</tr>
+		<tr>
+			<td>scroll-m </td> 
+			<td>: 200px </td>
+		</tr>
+		<tr>
+			<td>scroll-l </td> 
+			<td>: 400px </td>
+		</tr>
+		<tr>
+			<td>scroll-g </td> 
+			<td>: 600px </td>
+		</tr>
+	</table>
+</div>
+<div class="scroll">
+<xmp><!DOCTYPE html>
+<html>
+<head>
+ <title></title>
+</head>
+<body>
 
 </body>
-<script>
+</html>
+</xmp>
+</div>
+
+<h5 id="table" class="section">Table</h5>
+<p>Terdapat Beberapa pilihan class table<p>
+<ul class="list">
+	<li>table</li>
+	<li>table-border</li>
+	<li>table-uborder</li>
+</ul>
+<div class="scroll-table">
+    <table class="table">
+     <tr>
+      <th>Buah</th>
+      <td>Pisang</td>
+      <td>Apel</td>
+      <td>Anggur</td>
+      <td>Nanas</td>
+      <td>Jeruk</td>
+      <td>Semangka</td>
+      <td>Durian</td>
+      <td>Mangga</td>
+     </tr>
+     <tr>
+      <th>Hewan</th>
+      <td>Komodo</td>
+      <td>Singa</td>
+      <td>Kudanil</td>
+      <td>Kadal</td>
+      <td>Koala</td>
+      <td>Buaya</td>
+      <td>Musang</td>
+      <td>Kambing</td>
+     </tr>
+     <tr>
+      <th>Sayur</th>
+      <td>Kangkung</td>
+      <td>Bayam</td>
+      <td>Sawi</td>
+      <td>Kubis</td>
+      <td>Brokoli</td>
+      <td>Daun Ubi</td>
+      <td>Wortel</td>
+      <td>Tomat</td>
+     </tr>
+    </table>
+</div>
+<br>
+<div class="scroll-table">
+    <table class="table-border">
+     <tr>
+      <th>Buah</th>
+      <td>Pisang</td>
+      <td>Apel</td>
+      <td>Anggur</td>
+      <td>Nanas</td>
+      <td>Jeruk</td>
+      <td>Semangka</td>
+      <td>Durian</td>
+      <td>Mangga</td>
+     </tr>
+     <tr>
+      <th>Hewan</th>
+      <td>Komodo</td>
+      <td>Singa</td>
+      <td>Kudanil</td>
+      <td>Kadal</td>
+      <td>Koala</td>
+      <td>Buaya</td>
+      <td>Musang</td>
+      <td>Kambing</td>
+     </tr>
+     <tr>
+      <th>Sayur</th>
+      <td>Kangkung</td>
+      <td>Bayam</td>
+      <td>Sawi</td>
+      <td>Kubis</td>
+      <td>Brokoli</td>
+      <td>Daun Ubi</td>
+      <td>Wortel</td>
+      <td>Tomat</td>
+     </tr>
+    </table>
+</div>
+<br>
+<div class="scroll-table">
+    <table class="table-uborder">
+     <tr>
+      <th>Buah</th>
+      <td>Pisang</td>
+      <td>Apel</td>
+      <td>Anggur</td>
+      <td>Nanas</td>
+      <td>Jeruk</td>
+      <td>Semangka</td>
+      <td>Durian</td>
+      <td>Mangga</td>
+     </tr>
+     <tr>
+      <th>Hewan</th>
+      <td>Komodo</td>
+      <td>Singa</td>
+      <td>Kudanil</td>
+      <td>Kadal</td>
+      <td>Koala</td>
+      <td>Buaya</td>
+      <td>Musang</td>
+      <td>Kambing</td>
+     </tr>
+     <tr>
+      <th>Sayur</th>
+      <td>Kangkung</td>
+      <td>Bayam</td>
+      <td>Sawi</td>
+      <td>Kubis</td>
+      <td>Brokoli</td>
+      <td>Daun Ubi</td>
+      <td>Wortel</td>
+      <td>Tomat</td>
+     </tr>
+    </table>
+</div>
+<div class="row-flex grid">
+	<div class="flex grid l4 m4 s12">
+<xmp><div class="scroll-table">
+ <table class="table">
+  <tr>
+   <th>Buah</th>
+    <td>Pisang</td>
+    <td>Apel</td>
+    <td>Anggur</td>
+    <td>Nanas</td>
+    <td>Jeruk</td>
+    <td>Semangka</td>
+    <td>Durian</td>
+    <td>Mangga</td>
+   </tr>
+   <tr>
+    <th>Hewan</th>
+    <td>Komodo</td>
+    <td>Singa</td>
+    <td>Kudanil</td>
+    <td>Kadal</td>
+    <td>Koala</td>
+    <td>Buaya</td>
+    <td>Musang</td>
+    <td>Kambing</td>
+   </tr>
+   <tr>
+    <th>Sayur</th>
+    <td>Kangkung</td>
+    <td>Bayam</td>
+    <td>Sawi</td>
+    <td>Kubis</td>
+    <td>Brokoli</td>
+    <td>Daun Ubi</td>
+    <td>Wortel</td>
+    <td>Tomat</td>
+   </tr>
+  </table>
+</div>
+</xmp>
+	</div>
+	<div class="flex grid l4 m4 s12">
+<xmp><div class="scroll-table">
+ <table class="table-border">
+  <tr>
+   <th>Buah</th>
+    <td>Pisang</td>
+    <td>Apel</td>
+    <td>Anggur</td>
+    <td>Nanas</td>
+    <td>Jeruk</td>
+    <td>Semangka</td>
+    <td>Durian</td>
+    <td>Mangga</td>
+   </tr>
+   <tr>
+    <th>Hewan</th>
+    <td>Komodo</td>
+    <td>Singa</td>
+    <td>Kudanil</td>
+    <td>Kadal</td>
+    <td>Koala</td>
+    <td>Buaya</td>
+    <td>Musang</td>
+    <td>Kambing</td>
+   </tr>
+   <tr>
+    <th>Sayur</th>
+    <td>Kangkung</td>
+    <td>Bayam</td>
+    <td>Sawi</td>
+    <td>Kubis</td>
+    <td>Brokoli</td>
+    <td>Daun Ubi</td>
+    <td>Wortel</td>
+    <td>Tomat</td>
+   </tr>
+  </table>
+</div>
+</xmp>
+	</div>
+	<div class="flex grid l4 m4 s12">
+<xmp><div class="scroll-table">
+ <table class="table-uborder">
+  <tr>
+   <th>Buah</th>
+    <td>Pisang</td>
+    <td>Apel</td>
+    <td>Anggur</td>
+    <td>Nanas</td>
+    <td>Jeruk</td>
+    <td>Semangka</td>
+    <td>Durian</td>
+    <td>Mangga</td>
+   </tr>
+   <tr>
+    <th>Hewan</th>
+    <td>Komodo</td>
+    <td>Singa</td>
+    <td>Kudanil</td>
+    <td>Kadal</td>
+    <td>Koala</td>
+    <td>Buaya</td>
+    <td>Musang</td>
+    <td>Kambing</td>
+   </tr>
+   <tr>
+    <th>Sayur</th>
+    <td>Kangkung</td>
+    <td>Bayam</td>
+    <td>Sawi</td>
+    <td>Kubis</td>
+    <td>Brokoli</td>
+    <td>Daun Ubi</td>
+    <td>Wortel</td>
+    <td>Tomat</td>
+   </tr>
+  </table>
+</div>
+</xmp>
+	</div>
+</div>
+
+<h5 id="alert" class="section">Alert</h5>
+<p class="subheader">Danger</p>
+								<div class="alert danger">
+									Danger
+								</div>
+								<p class="subheader">Warning</p>
+								<div class="alert warning">
+									Warning
+								</div>
+								<p class="subheader">Success</p>
+								<div class="alert success">
+									Success
+								</div>
+								<p class="subheader">Info</p>
+								<div class="alert info">
+									Info
+								</div>
+								<br>
+								
+								<p class="subheader">Danger Opacity</p>
+								<div class="alert-opacity danger">
+									Danger
+								</div>
+								<p class="subheader">Warning Opacity</p>
+								<div class="alert-opacity warning">
+									Warning
+								</div>
+								<p class="subheader">Success Opacity</p>
+								<div class="alert-opacity success">
+									Success
+								</div>
+								<p class="subheader">Info Opacity</p>
+								<div class="alert-opacity info">
+									Info
+								</div>
+								<br>
+								
+								<p class="subheader">Danger Dashed</p>
+								<div class="alert danger-dashed">
+									Danger
+								</div>
+								<p class="subheader">Warning Dashed</p>
+								<div class="alert warning-dashed">
+									Warning
+								</div>
+								<p class="subheader">Success Dashed</p>
+								<div class="alert success-dashed">
+									Success
+								</div>
+								<p class="subheader">Info Dashed</p>
+								<div class="alert info-dashed">
+									Info
+								</div>
+
+<h5 id="form" class="section">Form</h5>
+<p>Comming Soon</p>
+
+<h5 id="button" class="section">Button</h5>
+<p>Comming Soon</p>
+
+<h5 id="images" class="section">Images</h5>
+<p>Tag img sudah di default responsive, max-width: 100% dan margin auto.</p>
+<img src="images/ball.png">
+
+								<h5 id="section" class="section">Section</h5>
+								<p>
+								Section adalah margin atas dan bawah. Membuat content agar tidak terlalu dekat
+								dengan dinding margin atas dan bawah. Sama seperti section, secpad membuat content
+								tidak terlalu dekat dengan dinding margin, perbedaannya secpad bersifat padding.
+								
+								<ul class="list">
+									<li>section</li>
+									<li>section-s</li>
+									<li>section-m</li>
+									<li>section-l</li>
+									<li>section-g</li>
+								</ul>
+<xmp><div class="section">section margin: 0px 16px</div>
+<div class="section-s">section-s margin: 0px 8px</div>
+<div class="section-m">section-m margin: 0px 24px</div>
+<div class="section-l">section-l margin: 0px 32px</div>
+<div class="section-g">section-g margin: 0px 64px</div>
+</xmp>
+								<div class="section" style="border:1px solid #f1f1f1">
+									section
+								</div>
+								<div class="section-s" style="border:1px solid #f1f1f1">
+									section-s
+								</div>
+								<div class="section-m " style="border:1px solid #f1f1f1">
+									section-m
+								</div>
+								<div class="section-l " style="border:1px solid #f1f1f1">
+									section-l
+								</div>
+								<div class="section-g " style="border:1px solid #f1f1f1">
+									section-g
+								</div>
+								
+								<p class="subheader">secpad</p>
+<xmp><div class="secpad">secpad padding: 0px 16px</div>
+<div class="secpad-s">secpad-s padding: 0px 8px</div>
+<div class="secpad-m">secpad-m padding: 0px 24px</div>
+<div class="secpad-l">secpad-l padding: 0px 32px</div>
+<div class="secpad-g">secpad-g padding: 0px 64px</div>
+</xmp>								
+								<div class="secpad section" style="border:1px solid #f1f1f1">
+									secpad
+								</div>
+								<div class="secpad-s section" style="border:1px solid #f1f1f1">
+									secpad-s
+								</div>
+								<div class="secpad-m section" style="border:1px solid #f1f1f1">
+									secpad-m
+								</div>
+								<div class="secpad-l section" style="border:1px solid #f1f1f1">
+									secpad-l
+								</div>
+								<div class="secpad-g section" style="border:1px solid #f1f1f1">
+									secpad-g
+								</div>
+
+<h5 id="display" class="section">Display</h5>
+<p class="subheader">Inline</p>
+								<p>
+								Membuat display menjadi inline yang berarti kesamping, lebar bergantung pada
+								content. Tag yang sudah umum bersifat inline adalah tag &ltspan&gt
+								</p>
+									<span class="inline" style="border:1px solid #f1f1f1">Core</span>
+									<span class="inline" style="border:1px solid #f1f1f1">Balloon</span>
+<xmp><span class="inline" style="border:1px solid #f1f1f1">Core</span>
+<span class="inline" style="border:1px solid #f1f1f1">Balloon</span>
+</xmp>
+								<p class="subheader">Block</p>
+								<p>
+								Membuat display penuh 100%, berarti content selanjutnya berada di bawah.
+								Tag &lt;div&gt; adalah salah satu tag yang bersifat block.
+								</p>
+								
+									<div class="block" style="border:1px solid #f1f1f1">Core</div>
+									<div class="block" style="border:1px solid #f1f1f1">Balloon</div>
+								
+<xmp><div class="block" style="border:1px solid #f1f1f1;">Core</div>
+<div class="block" style="border:1px solid #f1f1f1">Balloon</div>
+</xmp>
+
+<h5 id="navbar" class="section">Navbar</h5>
+Navbar versi sebelumnya di hilangkan karena alasan tidak memenuhi standarisasi Flamecore Organization.
+Maka navbar Navoon hadir dengan dengan membawa perbedaan dari navbar biasanya. Responsive di semua ukuran. Menggabungkan classic dan modren pada designnya. Sangat simple dan multi element. Pada
+versi ini kita bisa membuat sidebar dan navbar sekaligus, juga kita dapat membuat keperluan lain lain
+di icon &nbsp;<i class="fa fa-ellipsis-v"></i>&nbsp;.
+
+<div class="row-flex grid">
+	<div class="flex grid l4 m6 s12 section">
+	<p>Di awali dari sidebar. Animation sidebar sudah mempunyai default 10 link. Maka animasi berikutnya tidak memiliki animation untuk mengatasinya, masukan code berikut di style.
+<xmp>.navoon-aside li{
+	position:relative!important;-webkit-animation:navoonAside 0.6s!important;animation:navoonAside 0.6s!important}
+	@-webkit-keyframes navoonAside{from{left:-300px} to{left:0}}
+	@keyframes navoonAside{from{left:-300px} to{left:0;}
+}
+</xmp>
+<p>!important berguna untuk mendahulukan animation. Karena navbar navoon sudah memiliki animation sendiri. Jadi gunakan element tersebut untuk menukar peran element.</p>
+	</div>
+	<div class="flex grid l8 m6 s12 section">
+		<iframe src="index.html" class="box-shadow" width="100%" height="440" frameborder="0"></iframe>
+	</div>
+	<div class="flex grid l3 m4 s12">
+<p>Fungsi click pada navoon aside di buat dengan javascript, maka kita harus meletakan scriptnya dibawah body</p>
+<xmp><body>
+	
+</body>
+<script type="text/javascript" src="js/navoon.js"></script>
+</xmp>
+	</div>
+	<div class="flex grid l9 m8 s12">
+<p>Kedua adalah logo. Pastikan logo di letakan pada element kedua, karena tag li sudah di atur pada child kedua untuk logo. Karena navbar navoon memiliki hover, untuk navbar logo juga akan terkana effect hover, jangan khawatir, core sudah membuatnya transparent. Ukuran logo 185px x 40px dan tentunya harus berekstensi png. CSS sudah di atur : Max-width: 100% dan height: 40px. Padding pada child logo sudah di reset 0, maka jika logo tidak sama rata, gunakan padding top untuk meratakannya. Tapi tidak perlu khawatir, padding-top sudah di default 9px untuk meratakannya.</p>
+<xmp>.navoon li:nth-child(2) a{
+ padding:0;
+}
+.navoon li:nth-child(2):hover a{
+ background-color: transparent;
+}
+.navoon-logo{
+ max-width: 100%;
+ height:40px;
+ padding-top:9px;
+}
+</xmp>
+	</div>
+	<div class="flex grid s12">
+		<p>Ketiga adalah icon &nbsp;<i class="fa fa-ellipsis-v"></i>&nbsp; untuk menambahkan element
+		yang kita butuhkan. icon ini sudah memiliki default untuk navbar, map, link, note, dan about. Animation Effect hanya terdapat 5 element, dan penulis sangat tidak menganjurkan lebih dari 5 element karena tidak akan responsive. Karena width dari masing masing child sudah di atur 20%.</p>
+	</div>
+</div>
+<div class="row-flex grid">
+			<div class="flex grid l4 m4 s12">
+<xmp><div class="navoon-tab">
+ <button class="tablinks" onclick="openContent(event, 'content1')" id="defaultOpen">
+  <i class="fa fa-ellipsis-h"></i></button>
+ <button class="tablinks" onclick="openContent(event, 'content2')">
+  <i class="fa fa-language"></i>
+ </button>
+ <button class="tablinks" onclick="openContent(event, 'content3')">
+  <i class="fa fa-map-marker"></i>
+ </button>
+ <button class="tablinks" onclick="openContent(event, 'content4')">
+  <i class="fa fa-credit-card-alt"></i>
+ </button>
+ <button class="tablinks" onclick="openContent(event, 'content5')">
+  <i class="fa fa-book"></i>
+ </button>
+</div>
+</xmp> 
+<p>id="defaultOpen" di gunakan untuk menampilkan element pertama kali di buka, jika tidak ingin menampilkan element ketika pertama kali di buka, hapus saja element tersebut.
+</p>
+<p>
+(event, 'content1') 'content1' adalah id dan harus sama dengan id tabcontent agar script javascript berjalan.
+</p>
+			</div>
+			<div class="flex grid l4 m4 s12">
+<xmp>.tabcontent {
+ display: none;
+ padding: 0;
+ margin: 0;
+ z-index: 8!important;
+ border-left:1px solid #ddd;
+ overflow: auto;
+ height:300px;
+}
+
+@media (max-width:600px){
+ .tabcontent {
+   border-left: none!important;
+   border-bottom:1px solid #ddd;
+ }
+}
+</xmp>
+<p>Jika ukuran height terlalu kecil, tambah ukuran height. Dan tidak di anjurkan menghapus height karena
+content body pada ukuran smartphone akan tertutup jika element yang kita masukan di class tabcontent terlalu panjang.
+			</div>
+
+			<div class="flex grid l4 m4 s12">
+			<p>pastikan pada tabcontent id sama dengan tablinks</p>
+
+<xmp><div id="content1" class="tabcontent">
+ <nav class="nav" id="cNav">
+  <a href="index.html">Flamecore</a>
+  <a href="learn.html" target="_blank">Learn</a>
+  <a href="column.html" target="_blank">Column</a>
+  <a href="color.html" target="_blank">Color</a>
+  <a href="author.html" target="_blank">Author</a>
+  <a href="javascript:void(0);" class="toggle" onclick="cToggle()"><i class="fa fa-list"></i></a>
+ </nav>
+</div>
+</xmp>
+<p>
+Jika ingin membuat element baru selain defaut navbar navoon, maka ganti id tabcontent dan id tablink.
+Untuk mengatur height otomatis bisa menambahkan element di style pada class tabcontent menjadi auto, scroll atau lain lain.
+</p>
+<xmp><div id="content1" class="tabcontent" style="height:auto"></div>
+</xmp>
+			</div>
+		</div>
+<div>
+<p>Source Code Default</p>
+<xmp><!-- Navoon -->
+<div class="navoon">
+ <li><a onclick="toggleAside()"><i class="fa fa-bars toggle-aside"></i></a></li>
+ <li><a href=""><img src="images/flamecore.png" class="navoon-logo"></a></li>
+ <li class="right"><a onclick="toggleMenu()"><i class="fa fa-ellipsis-v toggle-menu"></i></a>
+  <div id="navoonMenu" class="navoon-menu">
+   <div class="row">
+    <div class="column l3 m6 s12">
+     <div class="navoon-tab">
+      <button class="tablinks" onclick="openContent(event, 'content1')" id="defaultOpen"><i class="fa fa-ellipsis-h"></i></button>
+      <button class="tablinks" onclick="openContent(event, 'content2')">
+       <i class="fa fa-map-marker"></i>
+      </button>
+      <button class="tablinks" onclick="openContent(event, 'content3')">
+       <i class="fa fa-link"></i>
+      </button>
+      <button class="tablinks" onclick="openContent(event, 'content4')">
+       <i class="fa fa-book"></i>
+      </button>
+      <button class="tablinks" onclick="openContent(event, 'content5')">
+       <i class="fa fa-phone"></i>
+      </button>
+     </div>
+    </div>
+    <div class="column l9 m6 s12">
+     <div id="content1" class="tabcontent">
+      <nav class="nav" id="cNav">
+       <a href="index.html">Flamecore</a>
+       <a href="learn.html">Learn</a>
+       <a href="column.html">Column</a>
+       <a href="color.html">Color</a>
+       <a href="author.html">Author</a>
+       <a href="javascript:void(0);" class="toggle" onclick="cToggle()"><i class="fa fa-list"></i></a>
+      </nav>
+     </div>
+     <div id="content2" class="tabcontent">
+      <iframe width="100%" height="450" frameborder="0" style="border:0" src="">
+      	Map
+      </iframe>
+     </div>
+     <div id="content3" class="tabcontent">
+      <div class="navoon-link center-align">
+      Content Link
+      </div>
+     </div>
+     <div id="content4" class="tabcontent">
+      <div class="navoon-note">
+      Content Note
+      </div>
+     </div>
+     <div id="content5" class="tabcontent">
+      <div class="navoon-about">
+      Content About                   
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </li>
+</div>
+<!-- End Navoon -->
+</xmp>
+</div>
+
+<h5 id="pagination" class="section">Pagination</h5>
+<p>Comming Soon</p>
+
+<h5 id="ribbon" class="section">Ribbon</h5>
+<p>Comming Soon</p>
+
+<h5 id="progressbar" class="section">Progress Bar</h5>
+
+<xmp><div class="progress">
+ <div class="progressbar bg-seagreen" style="width:90%">
+  <div class="center-align white">90%</div>
+ </div>
+</div>
+<p>CSS</p>
+<div class="progress">
+ <div class="progressbar bg-seagreen" style="width:90%">
+  <div class="center-align white">90%</div>
+ </div>
+</div>
+<p>JavaScript</p>
+<div class="progress">
+ <div class="progressbar bg-gold" style="width:70%">
+  <div class="center-align black">70%</div>
+ </div>
+</div>
+</xmp>
+
+<p>HTML</p>
+<div class="progress font-14">
+ <div class="progressbar bg-seagreen" style="width:90%">
+  <div class="center-align white">90%</div>
+ </div>
+</div>
+<p>CSS</p>
+<div class="progress font-14">
+ <div class="progressbar bg-seagreen" style="width:90%">
+  <div class="center-align white">90%</div>
+ </div>
+</div>
+<p>JavaScript</p>
+<div class="progress font-14">
+ <div class="progressbar bg-gold" style="width:70%">
+  <div class="center-align black">70%</div>
+ </div>
+</div>
+
+<h5 id="sidebarlist" class="section">Sidebar List</h5>
+<p>Comming Soon</p>
+<h5 id="video" class="section">Video</h5>
+<!-- 16:9 aspect ratio --> 
+<xmp><div class="video v16by9 combine-teal"> 
+ <iframe class="video-item" src=""></iframe> 
+ <div class="position-middle">
+  Video 16:9
+ </div>
+</div> 
+</xmp>
+<p>Video 16:9</p>
+<div class="video v16by9 combine-teal"> 
+	<iframe class="video-item" src=""></iframe> 
+	<div class="position-middle">
+		Video 16:9
+	</div>
+</div> 
+<!-- 4:3 aspect ratio --> 
+<xmp><div class="video v4by3 combine-teal"> 
+ <iframe class="video-item" src=""></iframe> 
+ <div class="position-middle">
+  Video 4:3
+ </div>
+</div>
+</xmp>
+<p>Video 4:3</p>
+<div class="video v4by3 combine-teal"> 
+	<iframe class="video-item" src=""></iframe> 
+	<div class="position-middle">
+		Video 4:3
+	</div>
+</div>
+
+<h5 id="sidebar" class="section">Sidebar</h5>
+<p>Comming Soon</p>
+
+<h5 id="opacity" class="section">Opacity</h5>
+<p>Comming Soon</p>
+
+<h5 id="shadow" class="section">Shadow</h5>
+<p>Box Shadow</p>
+<xmp><div class="equal combine-purple box-shadow">
+box-shadow
+</div>
+</xmp>
+
+<div class="equal combine-purple box-shadow">
+box-shadow
+</div>
+
+<p>Hover Box Shadow</p>
+<xmp><div class="equal hover-box-shadow" style="border:1px solid #f1f1f1">
+ hover-box-shadow
+</div>
+</xmp>
+<div class="equal hover-box-shadow" style="border:1px solid #f1f1f1">
+	hover-box-shadow
+</div>
+
+<p>Text Shadow</p>
+<xmp><h4 class="text-shadow">text-shadow</h4>
+</xmp>
+
+<h4 class="text-shadow">text-shadow</h4>
+
+<p>Hover Text Shadow</p>
+<xmp><h4 class="hover-text-shadow">hover-text-shadow</h4>
+</xmp>
+<h4 class="hover-text-shadow">hover-text-shadow</h4>
+
+<br>
+<h5 id="hide" class="section">Hide</h5>
+<div class="scroll-table">
+	<table class="table-border">
+		<tr>
+			<td>hs </td>
+			<td>Membuat content menghilang pada ukuran smartphone</td>
+		</tr>
+		<tr>
+			<td>hm </td> 
+ 			<td>Membuat content menghilang pada ukuran Tablet</td>
+ 		</tr>
+ 		<tr>
+ 			<td>hl </td> 
+ 			<td>Membuat content menghilang pada ukuran Laptop or Computer</td>
+ 		</tr>
+ 		<tr>
+ 			<td>hide </td>
+ 			<td>Menghilangkan Content seutuhnya</td>
+ 		</tr>
+ 		<tr>
+ 			<td>show</td>
+ 			<td>Membuat content terlihat</td>
+		</tr>
+	</table>
+</div>
+
+<xmp><div class="hs">
+ Content Ini telah hilang pada ukuran smartphone
+</div>
+<div class="hm">
+ Content Ini telah hilang pada ukuran Tablet
+</div>
+<div class="hl">
+ Content Ini telah hilang pada ukuran Computer
+</div>
+</xmp>
+<div class="hs equal" style="border: 1px solid #f1f1f1">
+ Content Ini telah hilang pada ukuran smartphone
+</div>
+<div class="hm equal" style="border: 1px solid #f1f1f1">
+ Content Ini telah hilang pada ukuran Tablet
+</div>
+<div class="hl equal" style="border: 1px solid #f1f1f1">
+ Content Ini telah hilang pada ukuran Computer
+</div>
+
+<h5 id="animation" class="section">Animation</h5>
+<p>Refresh (F5) maka kamu akan melihat animation</p>
+<div class="animation-top secpad">
+ <div class="interior">
+  Animation Top
+ </div>
+</div>
+
+<xmp><div class="animation-top">
+  Animation Top
+</div>
+</xmp>
+
+<div class="animation-right secpad">
+ <div class="interior">
+  Animation Right
+ </div>
+</div>
+
+<xmp><div class="animation-right">
+  Animation Top
+</div>
+</xmp>
+
+<div class="animation-bottom secpad">
+ <div class="interior">
+  Animation Bottom
+ </div>
+</div>
+
+<xmp><div class="animation-bottom">
+  Animation Top
+</div>
+</xmp>
+
+<div class="animation-left secpad">
+ <div class="interior">
+  Animation Left
+ </div>
+</div>
+
+<xmp><div class="animation-left">
+  Animation Top
+</div>
+</xmp>
+
+<div class="animation-zoom secpad">
+ <div class="interior">
+  Animation Zoom
+ </div>
+</div>
+
+<xmp><div class="animation-zoom">
+  Animation Top
+</div>
+</xmp>
+
+<h5 id="position" class="section"></h5>
+<div class="scroll-table">
+<table class="table-border">
+<tr>
+ <td>relative</td>
+ <td>Membuat posisi menjadi relative</td>
+</tr>
+ <td>absolute</td> 
+ <td>Membuat posisi menjadi absolute</td>
+<tr>
+ <td>static</td> 
+ <td>Membuat posisi menjadi static</td>
+</tr>
+ <td>fixed</td>
+ <td>Membuat posisi menjadi fixed</td>
+<tr>
+ <td>fixed-top</td>
+ <td>Membuat posisi menjadi fixed 0 di atas</td>
+</tr>
+<tr>
+ <td>fixed-bottom</td>
+ <td>Membuat posisi menjadi fixed 0 di bawah</td>
+</tr>
+<tr>
+ <td>position-container</td>
+ <td>Pembungkus posisi</td>
+</tr>
+<tr>
+ <td>position-left</td>
+ <td>Membuat content berada di tengah sebelah kiri</td>
+</tr>
+<tr>
+ <td>position-right</td>
+ <td>Membuat content berada di tengah sebelah kanan</td>
+<tr>
+ <td>position-topmitdle</td>
+ <td>Membuat content berada di tengah atas</td>
+</tr>
+<tr>
+ <td>position-bottommitdle</td>
+ <td>Membuat content berada di tengah bawah</td>
+<tr>
+ <td>position-mitdle</td>
+ <td>Membuat content berada ditengah tepat</td>
+</tr>
+<tr>
+ <td>position-topleft</td>
+ <td>Membuat content berada di atas sebelah kiri</td>
+</tr>
+<tr>
+ <td>position-topright</td>
+ <td>Membuat content berada di atas sebelah kanan</td>
+</tr> 
+<tr>
+ <td>position-bottomright</td>
+ <td>Membuat content berada di bawah sebelah kanan</td>
+</tr>
+<tr>
+ <td>position-bottomleft</td>
+ <td>Membuat content berada di bawah sebelah kiri</td>
+</tr>
+</table>
+</div>
+
+<xmp><div class="static">
+ Membuat position Static
+</div>
+</xmp>
+
+<xmp><div class="position-container">
+ <div class="position-middle">Posisi Element di tengah</div>
+</div>
+</xmp>
+
+<div class="alert warning-dashed">
+Penting! Internet Explorer tidak support properti Transform, karena class position dibangun menggunakan
+CSS3 Transform, jika ingin berjalan baik di IE tidak di anjurkan menggunakan class ini. Tapi
+Selain IE seperti 3 Browser populer Mozilla Firefox, Google Chrome dan Opera, class ini tidak bermasalah.
+</div>
+
+<h5 id="layout" class="section">Layout</h5>
+<p>class layout, mempunyai default max width 1500px digunakan pada tag body atau tag yang ingin dicostumisasi. Memungkinkan layout akan berada di tengah walaupun ukuran browser diperkecil. pada umumnya mengecilkan browser adalah (ctrl) + (-).
+</p>
+<div class="scroll-table">
+<table class="table-border">
+	<tr>
+		<td>layout</td>
+		<td>max-width: 1500px</td>
+		<td>margin: auto</td>
+	</tr>
+	<tr>
+		<td>layout-s</td>
+		<td>max-width: 800px</td>
+		<td>margin: auto</td>
+	</tr>
+	<tr>
+		<td>layout-m</td>
+		<td>max-width: 1200px</td>
+		<td>margin: auto</td>
+	</tr>
+	<tr>
+		<td>layout-l</td>
+		<td>max-width: 1600px</td>
+		<td>margin: auto</td>
+	</tr>
+	<tr>
+		<td>layout-g</td>
+		<td>max-width: 2000px</td>
+		<td>margin: auto</td>
+	</tr>
+</table>
+</div>
+<p>Penerapan class layout pada body</p>
+<xmp><body class="layout">
+</body>
+</xmp>
+<p>Penerapan class layout pada tag yang ingin di modifikasi</p>
+<xmp><body>
+ <div class="layout">
+ 
+ </div>
+</body>
+</xmp>
+<p>Modifikasi Layout</p>
+<xmp><body>
+ <div class="layout" style="max-width: 700px">
+ 
+ </div>
+</body>
+</xmp>
+
+
+            </div>
+            <!-- End Navoon Content -->
+        </div>
+    </div>
+    <div class="center-align" style="padding:44px 16px;background-color: #f1f1f1">
+            <p style="max-width:800px;margin:auto">Dibuat dengan ikhlas dan mengharapkan doa supaya pemilik masuk surga. Amiin yaitu untuk Web Designer indonesia. Di dukung oleh <span style="font-weight:bold">Flamecore Organization</span> yaitu organisasi yang mempunyai misi dan visi untuk memaksimalkan generasi muda Web Indonesia. Kode Lisensi <span style="font-weight:bold">MIT</span>.</p>
+            <br>
+            <h5>Copyright <i class="fa fa-copyright"></i> Andika Chamberlin</h5>
+        </div>
+</body>
+<script type="text/javascript" src="js/navoon.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$('.jump').on('click', function(){
+		console.log('ok');
+
+		var jump = $(this).attr('href');
+
+		var elementJump = $(jump);
+
+		$('body').animate({
+			scrollTop: elementJump.offset().top -70
+		}, 1250, 'swing');
+
+		e.preventDefault();
+	});
 </script>
 </html>
