@@ -27,3 +27,12 @@ function openContent(event, tabContent) {
     event.currentTarget.className += " navoon-active";
 }
 document.getElementById("defaultOpen").click();
+
+function cToggle() {
+    var c = document.getElementById("cNav");
+    if (c.className === "nav") {
+        c.className += " responsive";
+    } else {
+        c.className = "nav";
+    }
+}
