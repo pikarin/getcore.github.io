@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Core Columns</title>
+<title>Learn Core Column Indonesia</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,78 +9,96 @@
 Framework Indonesia, Core, Core Column, Core Color">
 <meta name="description" content="Framework CSS with Library Colors Indonesia">
 <meta name="author" content="Andika Chamberlin">
-<link rel="icon" href="getcore.github.io/icore.png" type="image/x-icon">
-<link rel="stylesheet" href="getcore.github.io/core/core.css" type="text/css">
+<link rel="icon" href="images/icore.png" type="image/x-icon">
 <link rel="stylesheet" href="core/core.css" type="text/css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
 <style>
+@media (max-width: 600px){
+    .responsive-height{
+        height: 450px;
+    }
+}
+@media (max-width:1500px) and (min-width:601px){
+    .responsive-height{
+        height: 800px;
+    }  
+}
+@media (min-width: 1501px){
+    .responsive-height{
+        height: 1200px;
+    }  
+}
 </style>
 </head>
 <body>
-	<!-- Navoon -->
-    <div class="navoon">
-        <li><a onclick="toggleAside()"><i class="fa fa-bars toggle-aside"></i></a></li>
-        <li><a href=""><img src="images/flamecore.png" class="navoon-logo"></a></li>
-        <li class="right"><a onclick="toggleMenu()"><i class="fa fa-ellipsis-v toggle-menu"></i></a>
-            <div id="navoonMenu" class="navoon-menu">
-                <div class="row">
-                    <div class="column l3 m6 s12">
-                        <div class="navoon-tab">
-                            <button class="tablinks" onclick="openContent(event, 'content1')" id="defaultOpen"><i class="fa fa-ellipsis-h"></i></button>
-                        </div>
-                    </div>
-                    <div class="column l9 m6 s12">
-                        <div id="content1" class="tabcontent">
-                            <nav class="nav" id="cNav">
-                                <a href="index.html">Flamecore</a>
-                                <a href="learn.html">Learn</a>
-                                <a href="column.html" style="background-color: #ddd">Column</a>
-                                <a href="color.html">Color</a>
-                                <a href="author.html" target="_blank">Author</a>
-                                <a href="javascript:void(0);" class="toggle" onclick="cToggle()"><i class="fa fa-list"></i></a>
-                            </nav>
-                        </div>
-                    </div>
+
+    <!-- nava -->
+    <div class="nava">
+        <li>
+            <a onclick="toggleNava()" id="navaAsideActive">
+                <i class="fa fa-bars nava-toggle-aside"></i>
+            </a>
+            <div id="navaAside" class="nava-aside">
+                <div class="nava-link">
+                    <a><h5 style="padding:16px 0px">Columns</h5></a>
+                    <a href="#begin" class="jump">Memulai</a>
+                    <a href="#grid" class="jump">Grid</a>
+                    <a href="#column" class="jump">Float</a>
+                    <a href="#cell" class="jump">Table Cell</a>
+                    <a href="#flex" class="jump">Flexbox</a>
+                </div>
+            </div>
+        </li>
+        <li><a href="index.html"><img src="images/flamecore.png" class="nava-logo"></a></li>
+        <li class="right">
+            <a onclick="toggleNavaMenu()" id="navaMenuActive">
+                <i class="fa fa-ellipsis-v nava-toggle-menu"></i>
+            </a>
+            <div id="navaMenu" class="nava-menu">
+                <div class="nava-items">
+                    <a href="home.html">Home</a>
+                    <a href="learn.html">Learn</a>
+                    <a href="column.html" class="nava-items-active">Column</a>
+                    <a href="color.html">Color</a>
+                    <a href="author.html">Author</a>
+                    <a href="organiser.html" class="right">Organiser</a>
                 </div>
             </div>
         </li>
     </div>
-    <!-- End Navoon -->
+    <!-- End nava -->
 
-    <!-- Navoon Aside -->
-    <div id="navoonAside" class="navoon-aside">
-        <li><a><h4 style="padding:16px 0px">Column</h4></a></li>
-        <li><a href="#begin" class="jump">Memulai</a></li>
-		<li><a href="#grid" class="jump">Grid</a></li>
-        <li><a href="#column" class="jump">Float</a></li>
-        <li><a href="#cell" class="jump">Table Cell</a></li>
-        <li><a href="#flex" class="jump">Flexbox</a></li>
-		<div style="margin-bottom:70px"></div>
-    </div>
-    <!-- End Navoon Aside -->
-    <div class="navoon-content layout" style="padding: 0">
-		<div class="position-container box-shadow" style="height:800px;">
+    <!-- Content Header -->
+    <div class="nava-content">
+        <div class="bg-white position-container responsive-height" style="border-bottom: 1px solid #ddd">
             <div class="position-middle center-align">
-				<div>
-					<img src="logo/redcore.png">
-				</div>
-				<p class="font-20">Membuat Kolom Jadi Lebih Muda</p>
+                <div>
+                    <img src="logo/redcore.png">
+                </div>
+                <p class="font-20">Membuat Column Jadi Mudah</p>
                 <div class="section-m">
-                    <a href="core/corecolumn.zip" download style="color: inherit;padding:10px 20px;border:1px solid #f1f1f1" class="hover-box-shadow">
+                    <a href="core/corecolumn.zip" download style="color: inherit;padding:10px 20px;border:1px solid #f1f1f1" class="hover-lightgray">
                         All Download
                     </a>
                 </div>
                 <p>min.css 2, 4, 8, 12, 16, 24</p>
-			</div>
-        </div>	
-		<div class="row">
-			<div class="column s12">
-				<div class="section">
-							<br>
-						<h3 class="section-l center-align font2" id="begin">Memulai</h3>
+            </div>
+        </div>
+    </div>
+    <!-- End Content Header-->
 
-						<div class="row grid">
-							<div class="column l6 m12 s12 grid">
+    <div class="layout-m">
+<div class="row">
+            <div class="column s12">
+                <div class="section">
+                            <br>
+                        <h3 class="section-l center-align font2" id="begin">Memulai</h3>
+
+                        <div class="row grid">
+                            <div class="column l6 m12 s12 grid">
 
 <p>Memulai secara online</p>
 <xmp><!DOCTYPE html>
@@ -90,9 +108,9 @@ Framework Indonesia, Core, Core Column, Core Color">
  </head>
 </html>
 </xmp>
-							
-							</div>
-							<div class="column l6 m12 s12 grid">
+                            
+                            </div>
+                            <div class="column l6 m12 s12 grid">
 <p>Memulai secara offline</p>
 <xmp><DOCTYPE html>
 <html lang="en">
@@ -102,9 +120,9 @@ Framework Indonesia, Core, Core Column, Core Color">
 </html>
 </xmp>
 <div class="alert warning-dashed">
-	Core Versi 2 membuat default untuk column 12 float, cell dan flex pada 1 file css yaitu core-2.css.
+    Core Versi 2 membuat default untuk column 12 float, cell dan flex pada 1 file css yaitu core.css.
 </div>
-<p>Untuk menggunakan column selain column default, pastikan default Column di hapus supaya tidak terjadi tumpukan pemanggilan, setelah itu, masukan link rel lagi setelahnya</p>	
+<p>Untuk menggunakan column selain column default, pastikan default Column di hapus supaya tidak terjadi tumpukan pemanggilan, setelah itu, masukan link rel lagi setelahnya</p>    
 <xmp><DOCTYPE html>
 <html lang="en">
  <head>
@@ -112,32 +130,32 @@ Framework Indonesia, Core, Core Column, Core Color">
   <link rel="stylesheet" href="folder/core/column24.min.css" type="text/css">
  </head>
 </html>
-</xmp>							
-							</div>
-						</div>
-					<div class="interior">
-					<br>
-						<h3 class="center-align font2" id="grid">Grid Column</h3>
-					<br>
-						<p>
-						Core Column memiliki 3 sifat, yaitu float, table cell dan flexbox. Dalam segi penulisan
-						code tidak jauh berbeda. Float menambahkan class (row) Table cell (row-cell) Flexbox 
-						(row-flex) untuk membuat column, Float menambahkan (column) Table cell (cell) Flexbox
-						(flex). Untuk membuat kolom sama rata, gunakan class grid, jika menggunakan interior atau
-						inside, maka akan membuat jarak terlalu jauh. Grid class membersihkan kesenjangan itu. Berikut Contoh Penulisannya.
-						</p>
+</xmp>                          
+                            </div>
+                        </div>
+                    <div class="interior">
+                    <br>
+                        <h3 class="center-align font2" id="grid">Grid Column</h3>
+                    <br>
+                        <p>
+                        Core Column memiliki 3 sifat, yaitu float, table cell dan flexbox. Dalam segi penulisan
+                        code tidak jauh berbeda. Float menambahkan class (row) Table cell (row-cell) Flexbox 
+                        (row-flex) untuk membuat column, Float menambahkan (column) Table cell (cell) Flexbox
+                        (flex). Untuk membuat kolom sama rata, gunakan class grid, jika menggunakan interior atau
+                        inside, maka akan membuat jarak terlalu jauh. Grid class membersihkan kesenjangan itu. Berikut Contoh Penulisannya.
+                        </p>
 <div class="row grid">
-	<div class="column grid l6 m6 s12">
+    <div class="column grid l6 m6 s12">
 <p>Beberapa jarak grid yang bisa anda gunakan</p>
 <ul class="list">
-	<li>grid :padding: 0 8px;</li>
-	<li>grid-s :padding: 0 4px;</li>
-	<li>grid-m :padding: 0 16px;</li>
-	<li>grid-l :padding: 0 24px;</li>
-	<li>grid-g :padding: 0 32px;</li>
+    <li>grid :padding: 0 8px;</li>
+    <li>grid-s :padding: 0 4px;</li>
+    <li>grid-m :padding: 0 16px;</li>
+    <li>grid-l :padding: 0 24px;</li>
+    <li>grid-g :padding: 0 32px;</li>
 </ul>
-	</div>
-	<div class="column grid l6 m6 s12">
+    </div>
+    <div class="column grid l6 m6 s12">
 <p class="subheader">grid (Bisa di gunakan untuk semua Column)</p>
 <xmp><div class="row grid">
  <div class="column grid l6 m6 s6">
@@ -148,92 +166,92 @@ Framework Indonesia, Core, Core Column, Core Color">
  </div>
 </div>
 </xmp>
-	</div>
+    </div>
 </div>
 <br>
 <div class="row grid">
-	<div class="column grid l6 m6 s6">
-		<div class="bg-crimson equal">
-		Grid
-		</div>
-	</div>
-	<div class="column grid l6 m6 s6">
-		<div class="bg-crimson  equal">
-		Grid
-		</div>
-	</div>
+    <div class="column grid l6 m6 s6">
+        <div class="bg-crimson equal">
+        Grid
+        </div>
+    </div>
+    <div class="column grid l6 m6 s6">
+        <div class="bg-crimson  equal">
+        Grid
+        </div>
+    </div>
 </div>
 
-						<div style="margin-top:80px" id="column"></div>
-						<h3  class="center-align font2">Float Column 12 Responsive</h3>						
-						<h5 class="hs section center-align">Description</h5>
-						<div class="row hs">
-							<div class="column l6 m12 s12">
-								<div class="row">
-									<div class="column l3 m3 s3">
-										<div class="interior right-align">
-											<p>Technical :</p>
-										</div>
-									</div>
-									<div class="column l1 m1 s1">
-										<div class="left-align">
-											<p>[l]</p>
-											<p>[m]</p>
-											<p>[s]</p>
-										</div>
-									</div>
-									<div class="column l8 m8 s8">
-										<div class="left-align">
-											<p>Large (Computer, Notebook, Netbook)</p>
-											<p>Medium (Tablet)</p>
-											<p>Small (Smartphone)</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="column l6 m12 s12">
-								<div class="row">
-									<div class="column l3 m3 s3">
-										<div class="interior right-align">
-											<p>Size :</p>
-										</div>
-									</div>
-									<div class="column l1 m1 s1">
-										<div class="left-align">
-											<p>[12]</p>
-											<p>[11]</p>
-											<p>[10]</p>
-											<p>[9]</p>
-											<p>[8]</p>
-											<p>[7]</p>
-											<p>[6]</p>
-											<p>[5]</p>
-											<p>[4]</p>
-											<p>[3]</p>
-											<p>[2]</p>
-											<p>[1]</p>
-										</div>
-									</div>
-									<div class="column l8 m8 s8">
-										<div class="left-align">
-											<p>width: 100%</p>
-											<p>width: 91.66666667%</p>
-											<p>width: 83.33333333%</p>
-											<p>width: 75%</p>
-											<p>width: 66.66666667%</p>
-											<p>width: 58.33333333%</p>
-											<p>width: 50%</p>
-											<p>width: 41.66666667%</p>
-											<p>width: 33.33333333%</p>
-											<p>width: 25%</p>
-											<p>width: 16.66666667%</p>
-											<p>width: 8.33333333%</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<br>
+                        <div style="margin-top:80px" id="column"></div>
+                        <h3  class="center-align font2">Float Column 12 Responsive</h3>                     
+                        <h5 class="hs section center-align">Description</h5>
+                        <div class="row hs">
+                            <div class="column l6 m12 s12">
+                                <div class="row">
+                                    <div class="column l3 m3 s3">
+                                        <div class="interior right-align">
+                                            <p>Technical :</p>
+                                        </div>
+                                    </div>
+                                    <div class="column l1 m1 s1">
+                                        <div class="left-align">
+                                            <p>[l]</p>
+                                            <p>[m]</p>
+                                            <p>[s]</p>
+                                        </div>
+                                    </div>
+                                    <div class="column l8 m8 s8">
+                                        <div class="left-align">
+                                            <p>Large (Computer, Notebook, Netbook)</p>
+                                            <p>Medium (Tablet)</p>
+                                            <p>Small (Smartphone)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column l6 m12 s12">
+                                <div class="row">
+                                    <div class="column l3 m3 s3">
+                                        <div class="interior right-align">
+                                            <p>Size :</p>
+                                        </div>
+                                    </div>
+                                    <div class="column l1 m1 s1">
+                                        <div class="left-align">
+                                            <p>[12]</p>
+                                            <p>[11]</p>
+                                            <p>[10]</p>
+                                            <p>[9]</p>
+                                            <p>[8]</p>
+                                            <p>[7]</p>
+                                            <p>[6]</p>
+                                            <p>[5]</p>
+                                            <p>[4]</p>
+                                            <p>[3]</p>
+                                            <p>[2]</p>
+                                            <p>[1]</p>
+                                        </div>
+                                    </div>
+                                    <div class="column l8 m8 s8">
+                                        <div class="left-align">
+                                            <p>width: 100%</p>
+                                            <p>width: 91.66666667%</p>
+                                            <p>width: 83.33333333%</p>
+                                            <p>width: 75%</p>
+                                            <p>width: 66.66666667%</p>
+                                            <p>width: 58.33333333%</p>
+                                            <p>width: 50%</p>
+                                            <p>width: 41.66666667%</p>
+                                            <p>width: 33.33333333%</p>
+                                            <p>width: 25%</p>
+                                            <p>width: 16.66666667%</p>
+                                            <p>width: 8.33333333%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
 <p class="subheader">Float (column)</p>
 <p>Column float adalah standard ke 1 untuk Framework Core, karena column ini Compatibility di
 Mozilla Firefox, Google Chrome, Opera, EDGE, IE dan Safari.</p>
@@ -248,29 +266,29 @@ Mozilla Firefox, Google Chrome, Opera, EDGE, IE dan Safari.</p>
 </xmp>
 <br>
 <div class="row center-align bg-crimson ">
-	<div class="column l6 m6 s6">
-		<div class="equal">
-			Column Float 6 (Kiri)
-		</div>
-	</div>
-	<div class="column l6 m6 s6" style="border-left:1px dashed #fff">
-		<div class="equal">
-			Column Float 6 (Kanan)
-		</div>
-	</div>
+    <div class="column l6 m6 s6">
+        <div class="equal">
+            Column Float 6 (Kiri)
+        </div>
+    </div>
+    <div class="column l6 m6 s6" style="border-left:1px dashed #fff">
+        <div class="equal">
+            Column Float 6 (Kanan)
+        </div>
+    </div>
 </div>
 <br>
-						
+                        
 <!-- Float -->
 <div class="row center-align bg-crimson ">
  <div class="column l1 m1 s1">
   <div class="equal">
-	1
+    1
   </div>
  </div>
  <div class="column l11 m11 s11" style="border-left:1px dashed #fff">
   <div class="equal">
-	11
+    11
   </div>
  </div>
 </div>
@@ -278,12 +296,12 @@ Mozilla Firefox, Google Chrome, Opera, EDGE, IE dan Safari.</p>
 <div class="row center-align bg-crimson ">
  <div class="column l2 m2 s2">
   <div class="equal">
-	2
+    2
   </div>
  </div>
  <div class="column l10 m10 s10" style="border-left:1px dashed #fff">
   <div class="equal">
-	10
+    10
   </div>
  </div>
 </div>
@@ -291,12 +309,12 @@ Mozilla Firefox, Google Chrome, Opera, EDGE, IE dan Safari.</p>
 <div class="row center-align bg-crimson ">
  <div class="column l3 m3 s3">
   <div class="equal">
-	3
+    3
   </div>
  </div>
  <div class="column l9 m9 s9" style="border-left:1px dashed #fff">
   <div class="equal">
-	9
+    9
   </div>
  </div>
 </div>
@@ -304,12 +322,12 @@ Mozilla Firefox, Google Chrome, Opera, EDGE, IE dan Safari.</p>
 <div class="row center-align bg-crimson ">
  <div class="column l4 m4 s4">
   <div class="equal">
-	4
+    4
   </div>
  </div>
  <div class="column l8 m8 s8" style="border-left:1px dashed #fff">
   <div class="equal">
-	8
+    8
   </div>
  </div>
 </div>
@@ -317,12 +335,12 @@ Mozilla Firefox, Google Chrome, Opera, EDGE, IE dan Safari.</p>
 <div class="row center-align bg-crimson ">
  <div class="column l5 m5 s5">
   <div class="equal">
-	5
+    5
   </div>
  </div>
  <div class="column l7 m7 s7" style="border-left:1px dashed #fff">
   <div class="equal">
-	7
+    7
   </div>
  </div>
 </div>
@@ -330,12 +348,12 @@ Mozilla Firefox, Google Chrome, Opera, EDGE, IE dan Safari.</p>
 <div class="row center-align bg-crimson ">
  <div class="column l6 m6 s6">
   <div class="equal">
-	6
+    6
   </div>
  </div>
  <div class="column l6 m6 s6" style="border-left:1px dashed #fff">
   <div class="equal">
-	6
+    6
   </div>
  </div>
 </div>
@@ -349,35 +367,35 @@ Mozilla Firefox, Google Chrome, Opera, EDGE, IE dan Safari.</p>
   <!-- Sub Column -->
   <div class="row" style="border-top:1px dashed #fff">
    <div class="column l6 m6 s6" style="border-right:1px dashed #fff">
-	<div class="equal">
+    <div class="equal">
     6
-	</div>
-	<!-- Sub Column 2 -->
-	<div class="row" style="border-top:1px dashed #fff">
+    </div>
+    <!-- Sub Column 2 -->
+    <div class="row" style="border-top:1px dashed #fff">
      <div class="column l6 m6 s6">
-	  <div class="equal">
+      <div class="equal">
       6
-	  </div>
+      </div>
      </div>
      <div class="column l6 m6 s6" style="border-left:1px dashed #fff">
       <div class="equal">
       6
-	  </div>
+      </div>
      </div>
     </div>
-	<!-- End Sub Column 2 -->
+    <!-- End Sub Column 2 -->
    </div>
    <!-- End Sub Column -->
    <div class="column l6 m6 s6">
     <div class="equal">
     6
-	</div>
+    </div>
    </div>
   </div>
  </div>
  <div class="column l6 m6 s6">
   <div class="equal">
-	6
+    6
   </div>
  </div>
 </div>
@@ -540,77 +558,77 @@ tidak berpengaruh. Penulisan codenya juga hanya sekali. Berikut codenya dan liha
   </div>
  </div>
 </div>
-<!-- End Float -->						
-						<br>
-						<br>
-						<h3 class="section-l center-align font2">Float Column Offset 12</h3>
-						<h5 class="hs section center-align">Description</h5>
-						<div class="row hs">
-							<div class="column l6 m12 s12">
-								<div class="row">
-									<div class="column l3 m3 s3">
-										<div class="interior right-align">
-											<p>Technical :</p>
-										</div>
-									</div>
-									<div class="column l1 m1 s1">
-										<div class="left-align">
-											<p>[l]</p>
-											<p>[m]</p>
-											<p>[s]</p>
-										</div>
-									</div>
-									<div class="column l8 m8 s8">
-										<div class="left-align">
-											<p>Large (Computer, Notebook, Netbook)</p>
-											<p>Medium (Tablet)</p>
-											<p>Small (Smartphone)</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="column l6 m12 s12">
-								<div class="row">
-									<div class="column l3 m3 s3">
-										<div class="interior right-align">
-											<p>Margin:</p>
-										</div>
-									</div>
-									<div class="column l1 m1 s1">
-										<div class="left-align">
-											<p>[12]</p>
-											<p>[11]</p>
-											<p>[10]</p>
-											<p>[9]</p>
-											<p>[8]</p>
-											<p>[7]</p>
-											<p>[6]</p>
-											<p>[5]</p>
-											<p>[4]</p>
-											<p>[3]</p>
-											<p>[2]</p>
-											<p>[1]</p>
-										</div>
-									</div>
-									<div class="column l8 m8 s8">
-										<div class="left-align">
-											<p>margin-left:100%</p>
-											<p>margin-left:91.66666667%</p>
-											<p>margin-left:83.33333333%</p>
-											<p>margin-left:75%</p>
-											<p>margin-left:66.66666667%</p>
-											<p>margin-left:58.33333333%</p>
-											<p>margin-left:50%</p>
-											<p>margin-left:41.66666667%</p>
-											<p>margin-left:33.33333333%</p>
-											<p>margin-left:25%</p>
-											<p>margin-left:16.66666667%</p>
-											<p>margin-left:8.33333333%</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+<!-- End Float -->                      
+                        <br>
+                        <br>
+                        <h3 class="section-l center-align font2">Float Column Offset 12</h3>
+                        <h5 class="hs section center-align">Description</h5>
+                        <div class="row hs">
+                            <div class="column l6 m12 s12">
+                                <div class="row">
+                                    <div class="column l3 m3 s3">
+                                        <div class="interior right-align">
+                                            <p>Technical :</p>
+                                        </div>
+                                    </div>
+                                    <div class="column l1 m1 s1">
+                                        <div class="left-align">
+                                            <p>[l]</p>
+                                            <p>[m]</p>
+                                            <p>[s]</p>
+                                        </div>
+                                    </div>
+                                    <div class="column l8 m8 s8">
+                                        <div class="left-align">
+                                            <p>Large (Computer, Notebook, Netbook)</p>
+                                            <p>Medium (Tablet)</p>
+                                            <p>Small (Smartphone)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column l6 m12 s12">
+                                <div class="row">
+                                    <div class="column l3 m3 s3">
+                                        <div class="interior right-align">
+                                            <p>Margin:</p>
+                                        </div>
+                                    </div>
+                                    <div class="column l1 m1 s1">
+                                        <div class="left-align">
+                                            <p>[12]</p>
+                                            <p>[11]</p>
+                                            <p>[10]</p>
+                                            <p>[9]</p>
+                                            <p>[8]</p>
+                                            <p>[7]</p>
+                                            <p>[6]</p>
+                                            <p>[5]</p>
+                                            <p>[4]</p>
+                                            <p>[3]</p>
+                                            <p>[2]</p>
+                                            <p>[1]</p>
+                                        </div>
+                                    </div>
+                                    <div class="column l8 m8 s8">
+                                        <div class="left-align">
+                                            <p>margin-left:100%</p>
+                                            <p>margin-left:91.66666667%</p>
+                                            <p>margin-left:83.33333333%</p>
+                                            <p>margin-left:75%</p>
+                                            <p>margin-left:66.66666667%</p>
+                                            <p>margin-left:58.33333333%</p>
+                                            <p>margin-left:50%</p>
+                                            <p>margin-left:41.66666667%</p>
+                                            <p>margin-left:33.33333333%</p>
+                                            <p>margin-left:25%</p>
+                                            <p>margin-left:16.66666667%</p>
+                                            <p>margin-left:8.33333333%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
 <!-- Offset -->
 <div class="row bg-crimson center-align ">
@@ -629,77 +647,77 @@ tidak berpengaruh. Penulisan codenya juga hanya sekali. Berikut codenya dan liha
  </div>
 </div>
 </xmp>
-<!-- End Offset -->			
-						<br>
-						<br>
-						<h3 class="section-l center-align font2" id="cell">Table Cell Column 12</h3>
-						<h5 class="hs section center-align">Description</h5>
-						<div class="row hs">
-							<div class="column l6 m12 s12">
-								<div class="row">
-									<div class="column l3 m3 s3">
-										<div class="interior right-align">
-											<p>Technical :</p>
-										</div>
-									</div>
-									<div class="column l1 m1 s1">
-										<div class="left-align">
-											<p>[l]</p>
-											<p>[m]</p>
-											<p>[s]</p>
-										</div>
-									</div>
-									<div class="column l8 m8 s8">
-										<div class="left-align">
-											<p>Large (Computer, Notebook, Netbook)</p>
-											<p>Medium (Tablet)</p>
-											<p>Small (Smartphone)</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="column l6 m12 s12">
-								<div class="row">
-									<div class="column l3 m3 s3">
-										<div class="interior right-align">
-											<p>Width:</p>
-										</div>
-									</div>
-									<div class="column l1 m1 s1">
-										<div class="left-align">
-											<p>[12]</p>
-											<p>[11]</p>
-											<p>[10]</p>
-											<p>[9]</p>
-											<p>[8]</p>
-											<p>[7]</p>
-											<p>[6]</p>
-											<p>[5]</p>
-											<p>[4]</p>
-											<p>[3]</p>
-											<p>[2]</p>
-											<p>[1]</p>
-										</div>
-									</div>
-									<div class="column l8 m8 s8">
-										<div class="left-align">
-											<p>width:100%</p>
-											<p>width:91.66666667%</p>
-											<p>width:83.33333333%</p>
-											<p>width:75%</p>
-											<p>width:66.66666667%</p>
-											<p>width:58.33333333%</p>
-											<p>width:50%</p>
-											<p>width:41.66666667%</p>
-											<p>width:33.33333333%</p>
-											<p>width:25%</p>
-											<p>width:16.66666667%</p>
-											<p>width:8.33333333%</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+<!-- End Offset -->         
+                        <br>
+                        <br>
+                        <h3 class="section-l center-align font2" id="cell">Table Cell Column 12</h3>
+                        <h5 class="hs section center-align">Description</h5>
+                        <div class="row hs">
+                            <div class="column l6 m12 s12">
+                                <div class="row">
+                                    <div class="column l3 m3 s3">
+                                        <div class="interior right-align">
+                                            <p>Technical :</p>
+                                        </div>
+                                    </div>
+                                    <div class="column l1 m1 s1">
+                                        <div class="left-align">
+                                            <p>[l]</p>
+                                            <p>[m]</p>
+                                            <p>[s]</p>
+                                        </div>
+                                    </div>
+                                    <div class="column l8 m8 s8">
+                                        <div class="left-align">
+                                            <p>Large (Computer, Notebook, Netbook)</p>
+                                            <p>Medium (Tablet)</p>
+                                            <p>Small (Smartphone)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column l6 m12 s12">
+                                <div class="row">
+                                    <div class="column l3 m3 s3">
+                                        <div class="interior right-align">
+                                            <p>Width:</p>
+                                        </div>
+                                    </div>
+                                    <div class="column l1 m1 s1">
+                                        <div class="left-align">
+                                            <p>[12]</p>
+                                            <p>[11]</p>
+                                            <p>[10]</p>
+                                            <p>[9]</p>
+                                            <p>[8]</p>
+                                            <p>[7]</p>
+                                            <p>[6]</p>
+                                            <p>[5]</p>
+                                            <p>[4]</p>
+                                            <p>[3]</p>
+                                            <p>[2]</p>
+                                            <p>[1]</p>
+                                        </div>
+                                    </div>
+                                    <div class="column l8 m8 s8">
+                                        <div class="left-align">
+                                            <p>width:100%</p>
+                                            <p>width:91.66666667%</p>
+                                            <p>width:83.33333333%</p>
+                                            <p>width:75%</p>
+                                            <p>width:66.66666667%</p>
+                                            <p>width:58.33333333%</p>
+                                            <p>width:50%</p>
+                                            <p>width:41.66666667%</p>
+                                            <p>width:33.33333333%</p>
+                                            <p>width:25%</p>
+                                            <p>width:16.66666667%</p>
+                                            <p>width:8.33333333%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 <p class="subheader">Table Cell (cell)</p>
 <p>Column cell standard ke 2 dari Framework Core karena column ini Compatibility di
 Mozilla Firefox, Google Chrome, Opera, EDGE, IE dan Safari.</p>
@@ -723,21 +741,21 @@ hanya sedikit, Cell akan membuat kolom sama tinggi dengan content yang banyak. B
 <br>
 
 <div class="row-cell bg-crimson ">
-	<div class="cell l6 m6 s6">
-		<div class="equal center-align">
-			Column Cell 6 (Kiri)
-		</div>
-	</div>
-	<div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
-		<div class="equal">
+    <div class="cell l6 m6 s6">
+        <div class="equal center-align">
+            Column Cell 6 (Kiri)
+        </div>
+    </div>
+    <div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
+        <div class="equal">
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</div>
-	</div>
+        </div>
+    </div>
 </div>
 <p>Tetapi, cell memiliki kekurangan yaitu tidak bersifat block jika kita membuat cell dalam satu row cell. 
 Untuk mengatasinya, ketika ingin membuat cell baru, kita diwajibkan menuliskan row cell kembali. Ini adalah tampilan
@@ -745,21 +763,21 @@ kekurangn dari cell jika tidak membuat row cell baru.
 </p>
 
 <div class="row-cell bg-crimson ">
-	<div class="cell l6 m6 s6">
-		<div class="equal center-align">
-			Column Cell 6 (Kiri)
-		</div>
-	</div>
-	<div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
-		<div class="equal">
-			Column Cell 6 (Kanan)
-		</div>
-	</div>
-	<div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
-		<div class="equal">
-			Tanpa row-cell baru
-		</div>
-	</div>
+    <div class="cell l6 m6 s6">
+        <div class="equal center-align">
+            Column Cell 6 (Kiri)
+        </div>
+    </div>
+    <div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
+        <div class="equal">
+            Column Cell 6 (Kanan)
+        </div>
+    </div>
+    <div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
+        <div class="equal">
+            Tanpa row-cell baru
+        </div>
+    </div>
 </div>
 
 <p>Maka untuk mengatasi hal tersebut, kita di wajibkan menuliskan row-cell baru</p>
@@ -782,41 +800,41 @@ kekurangn dari cell jika tidak membuat row cell baru.
 </xmp>
 <br>
 <div class="row-cell bg-crimson ">
-	<div class="cell l6 m6 s6">
-		<div class="equal center-align">
-			Column Cell 6 (Kiri)
-		</div>
-	</div>
-	<div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
-		<div class="equal center-align">
-			Column Cell 6 (Kanan)
-		</div>
-	</div>
+    <div class="cell l6 m6 s6">
+        <div class="equal center-align">
+            Column Cell 6 (Kiri)
+        </div>
+    </div>
+    <div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
+        <div class="equal center-align">
+            Column Cell 6 (Kanan)
+        </div>
+    </div>
 </div>
 <div class="row-cell bg-crimson " style="border-top:1px dashed #fff">
-	<div class="cell l6 m6 s6">
-		<div class="equal center-align">
-			Column Cell 6 (Kiri)
-		</div>
-	</div>
-	<div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
-		<div class="equal center-align">
-			Column Cell 6 (Kanan)
-		</div>
-	</div>
-</div>						
+    <div class="cell l6 m6 s6">
+        <div class="equal center-align">
+            Column Cell 6 (Kiri)
+        </div>
+    </div>
+    <div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
+        <div class="equal center-align">
+            Column Cell 6 (Kanan)
+        </div>
+    </div>
+</div>                      
 
 <br>
 <!-- Cell -->
 <div class="row-cell center-align bg-crimson ">
  <div class="cell l1 m1 s1">
   <div class="equal">
-	1
+    1
   </div>
  </div>
  <div class="cell l11 m11 s11" style="border-left:1px dashed #fff">
   <div class="equal">
-	11
+    11
   </div>
  </div>
 </div>
@@ -824,12 +842,12 @@ kekurangn dari cell jika tidak membuat row cell baru.
 <div class="row-cell center-align bg-crimson ">
  <div class="cell l2 m2 s2">
   <div class="equal">
-	2
+    2
   </div>
  </div>
  <div class="cell l10 m10 s10" style="border-left:1px dashed #fff">
   <div class="equal">
-	10
+    10
   </div>
  </div>
 </div>
@@ -837,12 +855,12 @@ kekurangn dari cell jika tidak membuat row cell baru.
 <div class="row-cell center-align bg-crimson ">
  <div class="cell l3 m3 s3">
   <div class="equal">
-	3
+    3
   </div>
  </div>
  <div class="cell l9 m9 s9" style="border-left:1px dashed #fff">
   <div class="equal">
-	9
+    9
   </div>
  </div>
 </div>
@@ -850,12 +868,12 @@ kekurangn dari cell jika tidak membuat row cell baru.
 <div class="row-cell center-align bg-crimson ">
  <div class="cell l4 m4 s4">
   <div class="equal">
-	4
+    4
   </div>
  </div>
  <div class="cell l8 m8 s8" style="border-left:1px dashed #fff">
   <div class="equal">
-	8
+    8
   </div>
  </div>
 </div>
@@ -863,12 +881,12 @@ kekurangn dari cell jika tidak membuat row cell baru.
 <div class="row-cell center-align bg-crimson ">
  <div class="cell l5 m5 s5">
   <div class="equal">
-	5
+    5
   </div>
  </div>
  <div class="cell l7 m7 s7" style="border-left:1px dashed #fff">
   <div class="equal">
-	7
+    7
   </div>
  </div>
 </div>
@@ -876,12 +894,12 @@ kekurangn dari cell jika tidak membuat row cell baru.
 <div class="row-cell center-align bg-crimson ">
  <div class="cell l6 m6 s6">
   <div class="equal">
-	6
+    6
   </div>
  </div>
  <div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
   <div class="equal">
-	6
+    6
   </div>
  </div>
 </div>
@@ -903,7 +921,7 @@ kekurangn dari cell jika tidak membuat row cell baru.
 <xmp><div class="row-cell center-align bg-crimson ">
  <div class="cell l6 m6 s6">
   <div class="equal">
-	
+    
   </div>
  </div>
  <div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
@@ -922,7 +940,7 @@ kekurangn dari cell jika tidak membuat row cell baru.
 <div class="row-cell center-align bg-crimson ">
  <div class="cell l6 m6 s6">
   <div class="equal">
-	
+    
   </div>
  </div>
  <div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
@@ -946,35 +964,35 @@ kekurangn dari cell jika tidak membuat row cell baru.
   <!-- Sub cell -->
   <div class="row-cell" style="border-top:1px dashed #fff">
    <div class="cell l6 m6 s6" style="border-right:1px dashed #fff">
-	<div class="equal">
+    <div class="equal">
     6
-	</div>
-	<!-- Sub cell 2 -->
-	<div class="row-cell" style="border-top:1px dashed #fff">
+    </div>
+    <!-- Sub cell 2 -->
+    <div class="row-cell" style="border-top:1px dashed #fff">
      <div class="cell l6 m6 s6">
-	  <div class="equal">
+      <div class="equal">
       6
-	  </div>
+      </div>
      </div>
      <div class="cell l6 m6 s6" style="border-left:1px dashed #fff">
       <div class="equal">
       6
-	  </div>
+      </div>
      </div>
     </div>
-	<!-- End Sub cell 2 -->
+    <!-- End Sub cell 2 -->
    </div>
    <!-- End Sub cell -->
    <div class="cell l6 m6 s6">
     <div class="equal">
     6
-	</div>
+    </div>
    </div>
   </div>
  </div>
  <div class="cell l6 m6 s6">
   <div class="equal">
-	6
+    6
   </div>
  </div>
 </div>
@@ -1071,77 +1089,77 @@ kekurangn dari cell jika tidak membuat row cell baru.
  </div>
 </div>
 </xmp>
-<!-- End Cell -->						
-						<br>
-						<br>
-						<h3 class="section-l center-align font2" id="flex">Flexbox Column 12</h3>
-						<h5 class="hs section center-align">Description</h5>
-						<div class="row hs">
-							<div class="column l6 m12 s12">
-								<div class="row">
-									<div class="column l3 m3 s3">
-										<div class="interior right-align">
-											<p>Technical :</p>
-										</div>
-									</div>
-									<div class="column l1 m1 s1">
-										<div class="left-align">
-											<p>[l]</p>
-											<p>[m]</p>
-											<p>[s]</p>
-										</div>
-									</div>
-									<div class="column l8 m8 s8">
-										<div class="left-align">
-											<p>Large (Computer, Notebook, Netbook)</p>
-											<p>Medium (Tablet)</p>
-											<p>Small (Smartphone)</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="column l6 m12 s12">
-								<div class="row">
-									<div class="column l3 m3 s3">
-										<div class="interior right-align">
-											<p>Width:</p>
-										</div>
-									</div>
-									<div class="column l1 m1 s1">
-										<div class="left-align">
-											<p>[12]</p>
-											<p>[11]</p>
-											<p>[10]</p>
-											<p>[9]</p>
-											<p>[8]</p>
-											<p>[7]</p>
-											<p>[6]</p>
-											<p>[5]</p>
-											<p>[4]</p>
-											<p>[3]</p>
-											<p>[2]</p>
-											<p>[1]</p>
-										</div>
-									</div>
-									<div class="column l8 m8 s8">
-										<div class="left-align">
-											<p>width:100%</p>
-											<p>width:91.66666667%</p>
-											<p>width:83.33333333%</p>
-											<p>width:75%</p>
-											<p>width:66.66666667%</p>
-											<p>width:58.33333333%</p>
-											<p>width:50%</p>
-											<p>width:41.66666667%</p>
-											<p>width:33.33333333%</p>
-											<p>width:25%</p>
-											<p>width:16.66666667%</p>
-											<p>width:8.33333333%</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+<!-- End Cell -->                       
+                        <br>
+                        <br>
+                        <h3 class="section-l center-align font2" id="flex">Flexbox Column 12</h3>
+                        <h5 class="hs section center-align">Description</h5>
+                        <div class="row hs">
+                            <div class="column l6 m12 s12">
+                                <div class="row">
+                                    <div class="column l3 m3 s3">
+                                        <div class="interior right-align">
+                                            <p>Technical :</p>
+                                        </div>
+                                    </div>
+                                    <div class="column l1 m1 s1">
+                                        <div class="left-align">
+                                            <p>[l]</p>
+                                            <p>[m]</p>
+                                            <p>[s]</p>
+                                        </div>
+                                    </div>
+                                    <div class="column l8 m8 s8">
+                                        <div class="left-align">
+                                            <p>Large (Computer, Notebook, Netbook)</p>
+                                            <p>Medium (Tablet)</p>
+                                            <p>Small (Smartphone)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column l6 m12 s12">
+                                <div class="row">
+                                    <div class="column l3 m3 s3">
+                                        <div class="interior right-align">
+                                            <p>Width:</p>
+                                        </div>
+                                    </div>
+                                    <div class="column l1 m1 s1">
+                                        <div class="left-align">
+                                            <p>[12]</p>
+                                            <p>[11]</p>
+                                            <p>[10]</p>
+                                            <p>[9]</p>
+                                            <p>[8]</p>
+                                            <p>[7]</p>
+                                            <p>[6]</p>
+                                            <p>[5]</p>
+                                            <p>[4]</p>
+                                            <p>[3]</p>
+                                            <p>[2]</p>
+                                            <p>[1]</p>
+                                        </div>
+                                    </div>
+                                    <div class="column l8 m8 s8">
+                                        <div class="left-align">
+                                            <p>width:100%</p>
+                                            <p>width:91.66666667%</p>
+                                            <p>width:83.33333333%</p>
+                                            <p>width:75%</p>
+                                            <p>width:66.66666667%</p>
+                                            <p>width:58.33333333%</p>
+                                            <p>width:50%</p>
+                                            <p>width:41.66666667%</p>
+                                            <p>width:33.33333333%</p>
+                                            <p>width:25%</p>
+                                            <p>width:16.66666667%</p>
+                                            <p>width:8.33333333%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 <p class="subheader">Flexbox (flex)</p>
 <p>Column Flex adalah standard ke 3 untuk pembuatan column Core. Walaupun mempunyai banyak kelebihan, karena Flexbox properti baru dari CSS, yaitu versi ke 3
 maka ada 1 browser tidak support pada column ini, yaitu browser Safari. Develover sudah uji coba dan 
@@ -1164,16 +1182,16 @@ Berikut codenya dan lihat hasilnya.
 </xmp>
 <br>
 <div class="row-flex center-align bg-crimson ">
-	<div class="flex l6 m6 s6">
-		<div class="equal">
-			
-		</div>
-	</div>
-	<div class="flex l6 m6 s6" style="border-left:1px dashed #fff">
-		<div class="equal">
-			Column Flex 6 (Kanan)
-		</div>
-	</div>
+    <div class="flex l6 m6 s6">
+        <div class="equal">
+            
+        </div>
+    </div>
+    <div class="flex l6 m6 s6" style="border-left:1px dashed #fff">
+        <div class="equal">
+            Column Flex 6 (Kanan)
+        </div>
+    </div>
 </div>
 <p>Wow! sangat keren, namun flexbox dari core mempunyai masalah pada responsive ukuran smarphone. 
 pada ukuran s1 (smartphone ukuran 1). Melebihi batas lebar browser. Untuk mengatasinya gunakan
@@ -1191,24 +1209,24 @@ untuk responsive smartphone.
 </xmp>
 <br>
 <xmp><div class="row-flex">
- <div class="flex l6 m6 s1">
+ <div class="flex l6 m6 s2">
  Column s2 adalah yang paling di rekomendasikan untuk ukuran smartphone.
  </div>
- <div class="flex l6 m6 s11">
+ <div class="flex l6 m6 s10">
   Column Cell 6 (Kanan)
  </div>
 </div>
-</xmp>				
+</xmp>              
 <!-- Flex -->
 <div class="row-flex center-align bg-crimson ">
  <div class="flex l1 m1 s1">
   <div class="equal">
-	1
+    1
   </div>
  </div>
  <div class="flex l11 m11 s11" style="border-left:1px dashed #fff">
   <div class="equal">
-	11
+    11
   </div>
  </div>
 </div>
@@ -1216,12 +1234,12 @@ untuk responsive smartphone.
 <div class="row-flex center-align bg-crimson ">
  <div class="flex l2 m2 s2">
   <div class="equal">
-	2
+    2
   </div>
  </div>
  <div class="flex l10 m10 s10" style="border-left:1px dashed #fff">
   <div class="equal">
-	10
+    10
   </div>
  </div>
 </div>
@@ -1229,12 +1247,12 @@ untuk responsive smartphone.
 <div class="row-flex center-align bg-crimson ">
  <div class="flex l3 m3 s3">
   <div class="equal">
-	3
+    3
   </div>
  </div>
  <div class="flex l9 m9 s9" style="border-left:1px dashed #fff">
   <div class="equal">
-	9
+    9
   </div>
  </div>
 </div>
@@ -1242,12 +1260,12 @@ untuk responsive smartphone.
 <div class="row-flex center-align bg-crimson ">
  <div class="flex l4 m4 s4">
   <div class="equal">
-	4
+    4
   </div>
  </div>
  <div class="flex l8 m8 s8" style="border-left:1px dashed #fff">
   <div class="equal">
-	8
+    8
   </div>
  </div>
 </div>
@@ -1255,12 +1273,12 @@ untuk responsive smartphone.
 <div class="row-flex center-align bg-crimson ">
  <div class="flex l5 m5 s5">
   <div class="equal">
-	5
+    5
   </div>
  </div>
  <div class="flex l7 m7 s7" style="border-left:1px dashed #fff">
   <div class="equal">
-	7
+    7
   </div>
  </div>
 </div>
@@ -1268,12 +1286,12 @@ untuk responsive smartphone.
 <div class="row-flex center-align bg-crimson ">
  <div class="flex l6 m6 s6">
   <div class="equal">
-	6
+    6
   </div>
  </div>
  <div class="flex l6 m6 s6" style="border-left:1px dashed #fff">
   <div class="equal">
-	6
+    6
   </div>
  </div>
 </div>
@@ -1428,35 +1446,49 @@ untuk responsive smartphone.
 </div>
 </xmp>
 <!-- End Flex -->
-						
-					</div>	
-					<!-- End Interior -->
-				</div>
-			</div>
-		</div>	
-		<!-- Footer-->
-		<div class="center-align" style="padding:44px 16px;background-color: #f1f1f1">
-            <p style="max-width:800px;margin:auto">Dibuat dengan ikhlas dan mengharapkan doa supaya pemilik masuk surga. Amiin yaitu untuk Web Designer indonesia. Di dukung oleh <span style="font-weight:bold">Flamecore Organization</span> yaitu organisasi yang mempunyai misi dan visi untuk memaksimalkan generasi muda Web Indonesia. Kode Lisensi <span style="font-weight:bold">MIT</span>.</p>
+                        
+                    </div>  
+                    <!-- End Interior -->
+                </div>
+            </div>
+        </div>  
+        
+    </div>
+
+    <div>
+        <div class="center-align" style="padding:100px 16px;">
+            <h4>Quote Andika Chamberlin</h4>
             <br>
-            <h5>Copyright <i class="fa fa-copyright"></i> Andika Chamberlin</h5>
+            <p style="max-width:700px;margin:auto">
+                Bagaimana kamu bisa menaruh banyak orang pada ruang yang kecil? yup, dengan menggunakan sistem gedung yang sering kamu lihat.
+            </p>        
         </div>
-	</div>
+        <div class="center-align" style="padding:44px 16px;background-color: #f5f5f5;border-top:1px solid #eee">
+            <p style="max-width:800px;margin:auto">Dibuat dengan ikhlas dan mengharapkan doa supaya pemilik masuk surga. Amiin yaitu untuk Web Designer indonesia. Di dukung oleh <span style="font-weight:bold;color:#666">Flamecore Organization</span> yaitu organisasi yang mempunyai misi dan visi untuk memaksimalkan generasi muda Web Indonesia. Kode Lisensi <span style="font-weight:bold;color:#666">MIT</span>.</p>
+            <br>
+            <h5 style="color:#888">Copyright <i class="fa fa-copyright"></i> Andika Chamberlin</h5>
+        </div>
+    </div>
+
 </body>
-<script type="text/javascript" src="js/navoon.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Memanggil CDN Google Library jQuery -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Memanggil javascript Core -->
+<script type="text/javascript" src="js/core.js"></script>
+<script type="text/javascript" src="js/nava-accordion.js"></script>
 <script type="text/javascript">
-	$('.jump').on('click', function(){
-		console.log('ok');
+    $('.jump').on('click', function(){
+        console.log('ok');
 
-		var jump = $(this).attr('href');
+        var jump = $(this).attr('href');
 
-		var elementJump = $(jump);
+        var elementJump = $(jump);
 
-		$('body').animate({
-			scrollTop: elementJump.offset().top -70
-		}, 1250, 'swing');
+        $('body').animate({
+            scrollTop: elementJump.offset().top -70
+        }, 1250, 'swing');
 
-		e.preventDefault();
-	});
+        e.preventDefault();
+    });
 </script>
 </html>
