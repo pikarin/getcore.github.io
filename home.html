@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Framework Core Indonesia</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Flamecore, Framework Core, Core CSS, Templates with Core, Framework CSS Indonesia,
+Framework Indonesia, Core, Core Column, Core Color">
+<meta name="description" content="Framework CSS with Library Colors Indonesia">
+<meta name="author" content="Andika Chamberlin">
+<link rel="icon" href="images/icore.png" type="image/x-icon">
+<link rel="stylesheet" href="core/core.css" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+<style>
+.phone{
+    height:480px;
+    width:100%;
+    border-left:15px solid #eee;
+    border-top:30px solid #eee;
+    border-right:15px solid #eee;
+    border-bottom:30px solid #eee;
+    border-radius:8px;
+    overflow: hidden;
+    z-index: 6!important;
+}
+.tablet{
+    height:480px;
+    width:100%;
+    border-left:15px solid #eee;
+    border-top:30px solid #eee;
+    border-right:15px solid #eee;
+    border-bottom:30px solid #eee;
+    border-radius:8px;
+    overflow: hidden;
+    z-index: 5!important;
+}
+
+/* Profil Card */
+.profil{
+    border:1px solid #f1f1f1;
+    border-radius:4px;
+}
+.profil-header{
+    height:150px;
+    overflow: hidden;
+    border-bottom:1px solid #f1f1f1;
+    background-size: cover;
+    position: relative;
+}
+.profil-images img{
+    position:absolute;bottom:0;left:0;top:0;right:0;margin: auto;
+    border-radius:50%;
+    border: 4px solid #fff;
+    width:120px;
+    height:120px;
+    box-shadow: 0px 0px 2px #888;
+}
+.profil-text{
+    padding:0 16px;
+
+}
+@media (max-width: 600px){
+    .responsive-height{
+        height: 450px;
+    }
+}
+@media (max-width:1500px) and (min-width:601px){
+    .responsive-height{
+        height: 800px;
+    }  
+}
+@media (min-width: 1501px){
+    .responsive-height{
+        height: 1200px;
+    }  
+}
+</style>
+</head>
+<body>
+
+    <!-- nava -->
+    <div class="nava">
+        <li>
+            <a onclick="toggleNava()" id="navaAsideActive">
+                <i class="fa fa-bars nava-toggle-aside"></i>
+            </a>
+            <div id="navaAside" class="nava-aside">
+                <div class="nava-icons">
+                    <div class="nava-icon" id="navaIconActive1">
+                        <a onclick="toggleNavaIcon1()">
+                            <i class="fa fa-home nava-toggle-icon"></i>
+                        </a>
+                        <div id="navaIconContent1" class="nava-icon-content">
+                            <div class="equal">
+                               Core Version 2.1 Is Comming, Banyak Sekali Tambahan
+                               Navbar untuk memudahkan anda membuat website. Di bawah ini adalah list Keluarga baru Framework Core.
+
+                               <p class="subheader">Navbar</p>
+                               <ul class="list">
+                                   <li>Arsip</li>
+                                   <li>Mega</li>
+                                   <li>Nav Swing</li>
+                                   <li>Nava</li>
+                                   <li>Navbar Basic</li>
+                                   <li>Navop</li>
+                                   <li>Navor</li>
+                                   <li>Sticky Hidden</li>
+                                   <li>Sticky Jump</li>
+                                   <li>Sticky Landing</li>
+                               </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nava-icon" id="navaIconActive2">
+                        <a onclick="toggleNavaIcon2()">
+                            <i class="fa fa-leanpub nava-toggle-icon"></i>
+                        </a>
+                        <div id="navaIconContent2" class="nava-icon-content">
+                            <div class="equal">
+                                Sekarang pembelajaran lebih mudah karena menggunakan navbar nava yang mempunyai kelebihan accordion pada sidebarnya
+
+                                <p><a href="http://getcore.github.io/learn.html">
+                                Go Learn</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nava-icon" id="navaIconActive3">
+                        <a onclick="toggleNavaIcon3()">
+                            <i class="fa fa-columns nava-toggle-icon"></i>
+                        </a>
+                        <div id="navaIconContent3" class="nava-icon-content">
+                            <div class="equal">
+                                New Column Arsip, dibuat menggunakan dasar float, kolom ini khusus buat navbar arsip Framework Core
+
+                                <p><a href="column.html">
+                                Go Learn</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nava-icon" id="navaIconActive4">
+                        <a onclick="toggleNavaIcon4()">
+                            <i class="fa fa-camera nava-toggle-icon"></i>
+                        </a>
+                        <div id="navaIconContent4" class="nava-icon-content">
+                            <div class="equal">
+                                Tidak Ada yang baru dari Library Color Framework Core. Di tunggu saja warna-warna baru lainnya.
+                                <p><a href="color.html">
+                                Go Learn</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nava-icon" id="navaIconActive5">
+                        <a onclick="toggleNavaIcon5()">
+                            <i class="fa fa-sitemap nava-toggle-icon"></i>
+                        </a>
+                        <div id="navaIconContent5" class="nava-icon-content">
+                            <div class="equal">
+                                Anggota baru developer akan di promosikan disini
+                                <p><a href="organiser.html">
+                                See All</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nava-link">
+                    <a href="index.html">
+                        <h4>Flamecore<sup style="font-size: 15px">Org</sup>
+                        </h4>
+                    </a>
+                    <a href="index.html">Framework Core</a>
+                    <a href="learn.html">Learn</a>
+                    <a href="column.html">Column</a>
+                    <a href="color.html">Color</a>
+                    <a href="js.html">jCore</a>
+                    <a href="templates.html">Templates</a>
+                    <a href="tutorial.html" style="border-top: 1px solid #ddd">Tutuorial</a>
+                    <!-- nava-Accordion -->
+                    <div class="nava-Accordion">Ebook</div>
+                    <div class="nava-panel">
+                        <a href="">HTML</a>
+                        <a href="">CSS</a>
+                        <a href="">Javascript</a>
+                        <a href="">jQuery</a>
+                        <a href="">Special</a>
+                    </div>
+                    <a href="organiser.html">Organiser</a>
+                </div>
+            </div>
+        </li>
+        <li><a href="index.html"><img src="images/flamecore.png" class="nava-logo"></a></li>
+        <li class="right">
+            <a onclick="toggleNavaMenu()" id="navaMenuActive">
+                <i class="fa fa-ellipsis-v nava-toggle-menu"></i>
+            </a>
+            <div id="navaMenu" class="nava-menu">
+                <div class="nava-items">
+                    <a href="" class="nava-items-active">Home</a>
+                    <a href="">Learn</a>
+                    <a href="">Column</a>
+                    <a href="">Color</a>
+                    <a href="">Author</a>
+                    <a href="" class="right">Organiser</a>
+                </div>
+            </div>
+        </li>
+    </div>
+    <!-- End nava -->
+
+    <!-- Content Header -->
+    <div class="nava-content">
+        <div class="bg-white position-container responsive-height">
+            <div class="position-middle center-align">
+                <div>
+                    <img src="logo/redcore.png">
+                </div>
+                <p class="font-20">Framework CSS no 1 Indonesia</p>
+                <div class="section-m">
+                    <a href="https://downloadcore/core/core-2-1.zip" download style="color: #000;padding:10px 20px;border:1px solid #f1f1f1" class="hover-lightgray">
+                        Download
+                    </a>
+                </div>
+                <p style="color:#888" class="font-14">Version 2.1 Navoon</p>
+            </div>
+        </div>
+    </div>
+    <!-- End Content Header-->
+
+    <!-- Content Iklan -->
+    <div class="center-align" style="padding:70px 16px 40px 16px;border-top:1px solid #ddd">
+        <h3 class="secpad">Core 2.1 Navoon Is Comming</h3>
+        <p class="font-18" style="max-width: 700px;margin: auto;">
+            Versi Original Navbar Swing and Navigation Windows Framework Core. Tambahan Dropdown Swing Click, no jQuery. Navbar Sticky hidden, jump, and landing. Dan kamu akan di manjakan dengan berbagai macam navbar dari Framework Core.
+        </p>
+    </div>
+    <!-- End Content Iklan -->
+
+    <div style="margin:auto;max-width:1024px">
+        <div class="row grid section" style="margin-bottom:70px">
+            <div class="column grid l8 hm hs">
+                <h5 class="section center-align">Tablet</h5>
+                <div class="box-shadow bg-white tablet hs hm">
+                    <iframe src="index.html" width="100%" height="100%" frameborder="0"></iframe>
+                </div>
+            </div>
+            <div class="column grid l4 hm hs">
+                <h5 class="section center-align">Smartphone</h5>
+                <div class="box-shadow bg-white phone hs hm">
+                    <iframe src="index.html" width="100%" height="100%" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="layout-m">
+        <div class="center-align">
+            <div class="row grid">
+                <div class="column grid l4 m12 s12">
+                    <h3>Compatibility Browser</h3>
+                    <span class="font-100"><i class="fa fa-cogs"></i></span>
+                    <p class="font-18"> Google Chrome, Mozilla Firefox, Opera, EDGE, Safari, IE</p>
+                </div>
+                <div class="column grid l4 m12 s12">
+                    <h3>Responsive</h3>
+                    <span class="font-100"><i class="fa fa-laptop"></i></span>
+                    <p class="font-18">
+                    Sangat mudah membuat website responsive menggunakan Framework Core.
+                    </p>
+                </div>
+                <div class="column grid l4 m12 s12">
+                    <h3>Powered by Github</h3>
+                    <span class="font-100"><i class="fa fa-code-fork"></i></span>
+                    <p class="font-18">Pengembangan Framework core melalui github</p>
+                </div>
+            </div>
+        </div>
+        <div class="row grid center-align section-l">
+            <div class="column grid l4 m12 s12">
+                <h3>Columns</h3>
+                <span class="font-100"><i class="fa fa-columns"></i></span>
+                <p class="font-18">3 Column dengan beda sifat yaitu float, table cell dan flexbox</p>
+            </div>
+            <div class="column grid l4 m12 s12">
+                 <h3>Thank to CodyHouse</h3>
+                <span class="font-100"><i class="fa fa-puzzle-piece"></i></span>
+                <p class="font-18">Top Level Developer mengucapkan banyak terimakasih kepada CodyHouse</p>
+            </div>
+            <div class="column grid l4 m12 s12">
+                 <h3>Colors</h3>
+                <span class="font-100"><i class="fa fa-camera"></i></span>
+                <p class="font-18">Perpustakaan warna Color Group, Crayola, Resene, Linear Gradient dan masih banyak lagi</p>
+            </div>
+        </div> 
+        <div class="row grid center-align">
+            <div class="column grid l6 m6 s12">
+                <h3>Codes</h3>
+                <span class="font-100"><i class="fa fa-code"></i></span>
+                <p class="font-18">HTML, CSS, Javascript, Jquery</p>
+            </div>
+            <div class="column grid l6 m6 s12">
+                <h3>Modify</h3>
+                <span class="font-100"><i class="fa fa-edit"></i></span>
+                <p class="font-18">Sangat mudah memodifikasi Framework Core</p>
+            </div>
+        </div> 
+        <div class="row grid center-align secpad-l">
+            <div class="column grid s12">
+                <h3>Next Project</h3>
+                <span class="font-100">?</span>
+                <p class="font-18">Core 2.2 Navoon Sidebar</p>
+            </div>
+        </div>  
+    </div>    
+        <div class="center-align secpad-g" style="margin:auto;max-width:1024px">
+            <div class="row grid">
+                <div class="column grid l4 m12 s12">
+                    <div class="profil">
+                        <div class="profil-header bg-crimson">
+                            <div class="profil-images">
+                                <a href="author.html" target="_blank"><img src="images/andika.jpg"></a>
+                            </div>
+                        </div>
+                        <div class="profil-text">
+                            <p class="subheader">Top Level Developer</p>
+                            <span>Andika Chamberlin alias si</span>
+                            <span>Mood Booster</span>
+                            <p>Web Designer, Youtuber</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column grid l4 m12 s12">
+                    <div class="profil">
+                        <div class="profil-header bg-seagreen">
+                            <div class="profil-images">
+                                <img src="images/insan.jpg">
+                            </div>
+                        </div>
+                        <div class="profil-text">
+                            <p class="subheader">Developer 1</p>
+                            <span>Insan Taufik alias si</span>
+                            <span>Insan Simple</span>
+                            <p>Instructor, Visual Basic Programming, Web Designer, Web Programming </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column grid l4 m12 s12">
+                    <div class="profil">
+                        <div class="profil-header bg-lightblue">  
+                            <div class="profil-images">
+                                <a href="http://jihantoro.net" target="_blank"><img src="images/rub.jpg"></a>
+                            </div>
+                        </div>
+                        <div class="profil-text">
+                            <p class="subheader">Developer 2</p>
+                            <span>Rubi Jihantoro alias si</span>
+                            <span>Rubi</span>
+                            <p>Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="center-align" style="padding:0px 16px 100px 16px;">
+            <h4>Quote Andika Chamberlin</h4>
+            <br>
+            <p style="max-width:700px;margin:auto">
+                Petualangan terbesar di dunia ini adalah bermanfaat bagi semua orang.
+            </p>        
+        </div>
+        <div class="center-align" style="padding:44px 16px;background-color: #f5f5f5;border-top:1px solid #eee">
+            <p style="max-width:800px;margin:auto">Dibuat dengan ikhlas dan mengharapkan doa supaya pemilik masuk surga. Amiin yaitu untuk Web Designer indonesia. Di dukung oleh <span style="font-weight:bold;color:#666">Flamecore Organization</span> yaitu organisasi yang mempunyai misi dan visi untuk memaksimalkan generasi muda Web Indonesia. Kode Lisensi <span style="font-weight:bold;color:#666">MIT</span>.</p>
+            <br>
+            <h5 style="color:#888">Copyright <i class="fa fa-copyright"></i> Andika Chamberlin</h5>
+        </div>
+
+</body>
+<!-- Memanggil CDN Google Library jQuery -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Memanggil javascript Core -->
+<script type="text/javascript" src="js/core.js"></script>
+<script type="text/javascript" src="js/nava-accordion.js"></script>
+</html>
