@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+  	<meta name="keywords" content="">
+  	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nava</title>
+	<!-- Icon Title -->
+	<link rel="icon" href="" type="image/x-icon">
+	<!-- Memanggil core.min.css-->
+	<link rel="stylesheet" type="text/css" href="../core/core.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--[if lt IE 9]>
+  		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<style type="text/css">
+
+</style>
+<body style="height: 2000px">
+
+    <!-- nava -->
+    <div class="nava">
+        <li>
+            <a onclick="toggleNava()" id="navaAsideActive">
+                <i class="fa fa-bars nava-toggle-aside"></i>
+            </a>
+            <div id="navaAside" class="nava-aside">
+                <div class="nava-icons">
+                    <div class="nava-icon" id="navaIconActive1">
+                        <a onclick="toggleNavaIcon1()">
+                            <i class="fa fa-home nava-toggle-icon"></i>
+                        </a>
+                        <div id="navaIconContent1" class="nava-icon-content">
+                           Lorem ipsum dolor sit amet
+                        </div>
+                    </div>
+                    <div class="nava-icon" id="navaIconActive2">
+                        <a onclick="toggleNavaIcon2()">
+                            <i class="fa fa-leanpub nava-toggle-icon"></i>
+                        </a>
+                        <div id="navaIconContent2" class="nava-icon-content">
+                            Lorem ipsum dolor sit amet
+                        </div>
+                    </div>
+                    <div class="nava-icon" id="navaIconActive3">
+                        <a onclick="toggleNavaIcon3()">
+                            <i class="fa fa-columns nava-toggle-icon"></i>
+                        </a>
+                        <div id="navaIconContent3" class="nava-icon-content">
+                            Lorem ipsum dolor sit amet
+                        </div>
+                    </div>
+                    <div class="nava-icon" id="navaIconActive4">
+                        <a onclick="toggleNavaIcon4()">
+                            <i class="fa fa-camera nava-toggle-icon"></i>
+                        </a>
+                        <div id="navaIconContent4" class="nava-icon-content">
+                            Lorem ipsum dolor sit amet
+                        </div>
+                    </div>
+                    <div class="nava-icon" id="navaIconActive5">
+                        <a onclick="toggleNavaIcon5()">
+                            <i class="fa fa-sitemap nava-toggle-icon"></i>
+                        </a>
+                        <div id="navaIconContent5" class="nava-icon-content">
+                            Lorem ipsum dolor sit amet
+                        </div>
+                    </div>
+                </div>
+                <div class="nava-link">
+                    <a href="index.html">
+                        <h4>Flamecore<sup style="font-size: 15px">Org</sup>
+                        </h4>
+                    </a>
+                    <a href="index.html">Framework Core</a>
+                    <a href="learn.html">Learn</a>
+                    <a href="column.html">Column</a>
+                    <a href="color.html">Color</a>
+                    <a href="js.html">jCore</a>
+                    <a href="templates.html">Templates</a>
+                    <a href="tutorial.html" style="border-top: 1px solid #ddd">Tutuorial</a>
+                    <!-- nava-Accordion -->
+                    <div class="nava-Accordion">Ebook</div>
+                    <div class="nava-panel">
+                        <a href="">HTML</a>
+                        <a href="">CSS</a>
+                        <a href="">Javascript</a>
+                        <a href="">jQuery</a>
+                        <a href="">Special</a>
+                    </div>
+                    <a href="organiser.html">Organiser</a>
+                </div>
+            </div>
+        </li>
+        <li><a href="index.html"><img src="../images/flamecore.png" class="nava-logo"></a></li>
+        <li class="right">
+            <a onclick="toggleNavaMenu()" id="navaMenuActive">
+                <i class="fa fa-ellipsis-v nava-toggle-menu"></i>
+            </a>
+            <div id="navaMenu" class="nava-menu">
+                <div class="nava-items">
+                    <a href="" class="nava-items-active">Home</a>
+                    <a href="">Learn</a>
+                    <a href="">Column</a>
+                    <a href="">Color</a>
+                    <a href="">Author</a>
+                    <a href="" class="right">Organiser</a>
+                </div>
+            </div>
+        </li>
+    </div>
+    <!-- End nava -->
+
+    <!-- Content -->
+    <div class="nava-content">
+    Lorem ipsum dolor sit amet
+    </div>
+    <!-- End Content -->
+
+</body>
+<!-- Memanggil CDN Google Library jQuery -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Memanggil javascript Core -->
+<script type="text/javascript" src="../js/core.js"></script>
+<script type="text/javascript">
+// nava accordion 
+var navaAcc = document.getElementsByClassName("nava-Accordion");
+var c;
+
+for (c = 0; c < navaAcc.length; c++) {
+  navaAcc[c].onclick = function() {
+    this.classList.toggle("nava-accordion-active");
+    var navaPanel = this.nextElementSibling;
+    if (navaPanel.style.maxHeight){
+      navaPanel.style.maxHeight = null;
+    } else {
+      navaPanel.style.maxHeight = navaPanel.scrollHeight + "px";
+    } 
+  }
+}   
+</script>
+</html>

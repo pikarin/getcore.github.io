@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- Memanggil CDN Library Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style type="text/css">
+body{
+	margin: 0;
+}
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+/* nava-Accordion */
+.nava-Accordion {
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 12px 16px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+.nava-panel {
+    padding: 0 16px 0 30px;
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+.nava-panel a{
+	text-decoration: none;
+	color: inherit;
+	display: block;
+	padding:12px 0;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+}
+.nava-panel a:hover{
+	color: crimson;
+}
+.nava-Accordion.nava-accordion-active,
+.nava-Accordion:hover {
+    background-color: #ddd;
+}
+.nava-Accordion:after {
+    content: '';
+    float: right;
+    margin-left: 5px;
+    border: solid #444;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+
+.nava-Accordion.nava-accordion-active:after {
+    content: '';
+    border: solid #444;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+</style>
+<body>
+					<!-- nava-Accordion -->
+                    <div class="nava-Accordion">Section 1 </div>
+                    <div class="nava-panel">
+                   		<a href="">Learn</a>
+                    </div>
+
+</body>
+<script type="text/javascript">
+// nava accordion 
+var navaAcc = document.getElementsByClassName("nava-Accordion");
+var c;
+
+for (c = 0; c < navaAcc.length; c++) {
+  navaAcc[c].onclick = function() {
+    this.classList.toggle("nava-accordion-active");
+    var navaPanel = this.nextElementSibling;
+    if (navaPanel.style.maxHeight){
+      navaPanel.style.maxHeight = null;
+    } else {
+      navaPanel.style.maxHeight = navaPanel.scrollHeight + "px";
+    } 
+  }
+}	
+</script>
+</html>
