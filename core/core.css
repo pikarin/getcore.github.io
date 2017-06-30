@@ -1823,6 +1823,23 @@ ol, ul {
 
 /* Web Windows Navigation */
 
+body{
+	font-size: 15px;
+	font-family: "Segoe UI";
+	margin: 0;
+	overflow: hidden;
+}
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.white{
+	color:#fff;
+}
+.position-middle{
+	position:absolute;top:50%;left:50%;
+	transform:translate(-50%,-50%);
+}
 @media (max-width:600px){
 .box{
 	font-size: 24px;
@@ -1894,7 +1911,6 @@ ol, ul {
 	top:50%;
 	width:100%;
 	height: 50%;
-
 }
 .subbox2-item:nth-child(1){
 	position: absolute;
@@ -1927,7 +1943,6 @@ ol, ul {
 	width:50%;
 	height: 100%;
 }
-
 .box-item2:nth-child(1){
 	position: absolute;
 	right:0;
@@ -2045,26 +2060,10 @@ ol, ul {
 	height: 50%;
 }
 
-.animation-box1{position:relative;-webkit-animation:animationBoxOne 2s;animation:animationBoxOne 2s}
-@-webkit-keyframes animationBoxOne{from{left:-300px;opacity:0} to{left:0;opacity:1}}
-@keyframes animationBoxOne{from{left:-300px;} to{left:0;}}
-
-.animation-box2{position:relative;-webkit-animation:animationBoxTwo 2s;animation:animationBoxTwo 2s}
-@-webkit-keyframes animationBoxTwo{from{right:-300px;} to{right:0;}}
-@keyframes animationBoxTwo{from{right:-300px;} to{right:0;}}
-
-.animation-box3{position:relative;-webkit-animation:animationBoxThree 2s;animation:animationBoxThree 2s}
-@-webkit-keyframes animationBoxThree{from{left:-300px;} to{left:0;}}
-@keyframes animationBoxThree{from{left:-300px;} to{left:0;}}
-
-.animation-box4{position:relative;-webkit-animation:animationBoxFour 2s;animation:animationBoxFour 2s}
-@-webkit-keyframes animationBoxFour{from{right:-300px;} to{right:0;}}
-@keyframes animationBoxFour{from{right:-300px;} to{right:0;}}
-	
 }
+/* End Box */
 
-
-@media (max-width:992px) and (min-width:601px){
+@media (max-width:992px) and (min-width:601px) {
 .box{
 	font-size: 30px;
 }
@@ -2282,22 +2281,9 @@ ol, ul {
 	height: 50%;
 }
 
-.animation-box1{position:relative;-webkit-animation:animationBoxOne 2s;animation:animationBoxOne 2s}
-@-webkit-keyframes animationBoxOne{from{top:-300px;opacity:0} to{top:0;opacity:1}}
-@keyframes animationBoxOne{from{top:-300px;} to{top:0;}}
 
-.animation-box2{position:relative;-webkit-animation:animationBoxTwo 2s;animation:animationBoxTwo 2s}
-@-webkit-keyframes animationBoxTwo{from{right:-300px;} to{right:0;}}
-@keyframes animationBoxTwo{from{right:-300px;} to{right:0;}}
-
-.animation-box3{position:relative;-webkit-animation:animationBoxThree 2s;animation:animationBoxThree 2s}
-@-webkit-keyframes animationBoxThree{from{left:-300px;} to{left:0;}}
-@keyframes animationBoxThree{from{left:-300px;} to{left:0;}}
-
-.animation-box4{position:relative;-webkit-animation:animationBoxFour 2s;animation:animationBoxFour 2s}
-@-webkit-keyframes animationBoxFour{from{top:-300px;} to{bottom:0;}}
-@keyframes animationBoxFour{from{top:-300px;} to{bottom:0;}}
 }
+/* End Box */
 
 @media (min-width:993px){
 .box{
@@ -2511,81 +2497,85 @@ ol, ul {
 	width:100%;
 	height: 30%;
 }
-.animation-box1{position:relative;-webkit-animation:animationBoxOne 2s;animation:animationBoxOne 2s}
-@-webkit-keyframes animationBoxOne{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+
+}
+/* End Box */
+
+.animation-box1{position:relative;-webkit-animation:animationBoxOne 0.5s;animation:animationBoxOne 0.5s}
+@-webkit-keyframes animationBoxOne{from{left:-300px;opacity:0}}
 @keyframes animationBoxOne{from{left:-300px;} to{left:0;}}
 
-.animation-box2{position:relative;-webkit-animation:animationBoxTwo 2s;animation:animationBoxTwo 2s}
-@-webkit-keyframes animationBoxTwo{from{bottom:-300px;} to{bottom:0;}}
-@keyframes animationBoxTwo{from{bottom:-300px;} to{bottom:0;}}
+.animation-box2{position:relative;-webkit-animation:animationBoxTwo 1s;animation:animationBoxTwo 1s}
+@-webkit-keyframes animationBoxTwo{from{left:-300px;} to{left:0;}}
+@keyframes animationBoxTwo{from{left:-300px;} to{left:0;}}
 
-.animation-box3{position:relative;-webkit-animation:animationBoxThree 2s;animation:animationBoxThree 2s}
-@-webkit-keyframes animationBoxThree{from{top:-300px;} to{top:0;}}
-@keyframes animationBoxThree{from{top:-300px;} to{top:0;}}
+.animation-box3{position:relative;-webkit-animation:animationBoxThree 1.5s;animation:animationBoxThree 1.5s}
+@-webkit-keyframes animationBoxThree{from{left:-300px;} to{left:0;}}
+@keyframes animationBoxThree{from{left:-300px;} to{left:0;}}
 
 .animation-box4{position:relative;-webkit-animation:animationBoxFour 2s;animation:animationBoxFour 2s}
-@-webkit-keyframes animationBoxFour{from{right:-300px;} to{right:0;}}
-@keyframes animationBoxFour{from{right:-300px;} to{right:0;}}
-}
+@-webkit-keyframes animationBoxFour{from{left:-300px;} to{left:0;}}
+@keyframes animationBoxFour{from{left:-300px;} to{left:0;}}
+
 
 /* End Web Windows Navigation */
 
 /* Navbar Sticky */
 
 .sticky {
-  position: fixed;
-  z-index: 9!important;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  background-color: #fff;
-  -webkit-transition: .7s;
-  transition: .7s;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  	position: fixed;
+  	z-index: 9!important;
+  	top: 0;
+  	left: 0;
+  	right: 0;
+  	height: 60px;
+  	background-color: #fff;
+    -webkit-transition: .7s;
+  	transition: .7s;
+    -webkit-transform: translateZ(0);
+          	transform: translateZ(0);
 }
 .sticky:after {
-  clear: both;
-  content: "";
-  display: block;
+  	clear: both;
+  	content: "";
+  	display: block;
 }
 .sticky.sticky-jump {
-  -webkit-transform: translateY(-100%);
-      -ms-transform: translateY(-100%);
-          transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+          	transform: translateY(-100%);
 }
 @media only screen and (min-width: 993px) {
-  .sticky {
-    height: 80px;
-  }
+  	.sticky {
+    	height: 80px;
+  	}
 }
 .sticky .sticky-logo,
 .sticky .sticky-toggle {
-  position: absolute;
-  top: 50%;
-  bottom: auto;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  	position: absolute;
+  	top: 50%;
+  	bottom: auto;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+          	transform: translateY(-50%);
 }
 .sticky .sticky-logo {
-  padding-left: 16px;
+  	padding-left: 16px;
 }
 .sticky .sticky-logo a, 
 .sticky .sticky-logo img {
-  display: block;
+  	display: block;
 }
 
 .sticky .sticky-toggle {
-  display: table;
-  height: 100%;
-  padding: 0 16px;
-  right: 0;
+  	display: table;
+  	height: 100%;
+  	padding: 0 16px;
+  	right: 0;
 }
 .sticky .sticky-toggle span {
-  display: table-cell;
-  vertical-align: middle;
+  	display: table-cell;
+  	vertical-align: middle;
 }
 .sticky-toggle-active{
 	background-color: #ccc;
@@ -2594,230 +2584,230 @@ ol, ul {
 .sticky .sticky-toggle em, 
 .sticky .sticky-toggle em:after, 
 .sticky .sticky-toggle em:before {
-  display: block;
-  position: relative;
-  height: 1px;
-  width: 20px;
-  background-color: #444;
+  	display: block;
+  	position: relative;
+  	height: 1px;
+  	width: 20px;
+  	background-color: #444;
 }
 .sticky .sticky-toggle em:before, 
 .sticky .sticky-toggle em:after {
-  position: absolute;
-  content: '';
-  left: 0;
-  -webkit-transition: .2s;
-  transition: .2s;
+  	position: absolute;
+  	content: '';
+  	left: 0;
+    -webkit-transition: .2s;
+  	transition: .2s;
 }
 .sticky .sticky-toggle em:before {
-  -webkit-transform: translateY(-6px);
-      -ms-transform: translateY(-6px);
-          transform: translateY(-6px);
+    -webkit-transform: translateY(-6px);
+        -ms-transform: translateY(-6px);
+          	transform: translateY(-6px);
 }
 .sticky .sticky-toggle em:after {
-  -webkit-transform: translateY(6px);
-      -ms-transform: translateY(6px);
-          transform: translateY(6px);
+    -webkit-transform: translateY(6px);
+        -ms-transform: translateY(6px);
+          	transform: translateY(6px);
 }
 @media only screen and (min-width: 993px) {
-  .sticky .sticky-toggle {
-    display: none;
-  }
+  	.sticky .sticky-toggle {
+    	display: none;
+  	}
 }
 .sticky-items {
-  display: inline-block;
-  float: right;
-  height: 100%;
-  padding-right: 16px;
+  	display: inline-block;
+  	float: right;
+  	height: 100%;
+  	padding-right: 16px;
 }
 .sticky-items > .sticky-item {
-  position: absolute;
-  z-index: 8!important;
-  top: 60px;
-  left: 0;
-  width: 100%;
-  background-color: #fff;
-  display: none;
+  	position: absolute;
+  	z-index: 8!important;
+  	top: 60px;
+  	left: 0;
+  	width: 100%;
+  	background-color: #fff;
+  	display: none;
 }
 .sticky-items > .sticky-item a {
-  display: block;
-  height: 50px;
-  line-height: 50px;
-  padding-left: 16px;
-  color: inherit;
-  border-top: 1px solid #f1f1f1;
+  	display: block;
+  	height: 50px;
+  	line-height: 50px;
+  	padding-left: 16px;
+  	color: inherit;
+  	border-top: 1px solid #f1f1f1;
 }
 .sticky-items > .sticky-item a:hover{
-  color: crimson;
+  	color: crimson;
 }
 @media only screen and (min-width: 993px) {
-  .sticky-items {
-    display: table;
-  }
-  .sticky-items > .sticky-item {
-    display: table-cell;
-    vertical-align: middle;
-    position: relative;
-    width: auto;
-    top: 0;
-    padding: 0;
-    background-color: transparent;
-    box-shadow: none;
-  }
-  .sticky-items > .sticky-item:after {
-    clear: both;
-    content: "";
-    display: block;
-  }
-  .sticky-items > .sticky-item li {
-    display: inline-block;
-    float: left;
-    margin-right: 16px;
-  }
-  .sticky-items > .sticky-item li:last-of-type {
-    margin-right: 0;
-  }
-  .sticky-items > .sticky-item a {
-    height: auto;
-    line-height: normal;
-    padding: 0;
-    border: none;
-  }
+  	.sticky-items {
+    	display: table;
+  	}
+  	.sticky-items > .sticky-item {
+    	display: table-cell;
+    	vertical-align: middle;
+    	position: relative;
+    	width: auto;
+    	top: 0;
+    	padding: 0;
+    	background-color: transparent;
+    	box-shadow: none;
+  	}
+  	.sticky-items > .sticky-item:after {
+    	clear: both;
+    	content: "";
+    	display: block;
+  	}
+  	.sticky-items > .sticky-item li {
+    	display: inline-block;
+    	float: left;
+    	margin-right: 16px;
+  	}
+  	.sticky-items > .sticky-item li:last-of-type {
+    	margin-right: 0;
+  	}
+  	.sticky-items > .sticky-item a {
+    	height: auto;
+    	line-height: normal;
+    	padding: 0;
+    	border: none;
+  	}
 }
 
 .sticky-open .sticky-items ul,
 .sticky-items ul:target {
-  display: block;
+  	display: block;
 }
 @media only screen and (min-width: 993px) {
-  .sticky-open .sticky-items ul,
-  .sticky-items ul:target {
-    display: table-cell;
-  }
+  	.sticky-open .sticky-items ul,
+  	.sticky-items ul:target {
+    	display: table-cell;
+  	}
 }
 .sticky-two {
-  position: relative;
-  z-index: 7!important;
-  clear: both;
-  width: 100%;
-  height: 50px;
-  background-color: rgba(0,0,0, 0.8);
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  -webkit-transition: .7s;
-  transition: .7s;
+  	position: relative;
+  	z-index: 7!important;
+  	clear: both;
+  	width: 100%;
+  	height: 50px;
+  	background-color: rgba(0,0,0, 0.8);
+    -webkit-transform: translateZ(0);
+      	    transform: translateZ(0);
+    -webkit-transition: .7s;
+  	transition: .7s;
 }
 .sticky-two:after {
-  content: '';
-  position: absolute;
-  z-index: 7!important;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 35px;
-  pointer-events: none;
-  -webkit-transition: .2s;
-  transition: .2s;
+  	content: '';
+  	position: absolute;
+  	z-index: 7!important;
+  	top: 0;
+  	right: 0;
+  	height: 100%;
+  	width: 35px;
+  	pointer-events: none;
+    -webkit-transition: .2s;
+  	transition: .2s;
 }
 .sticky-two.nav-end:after {
-  opacity: 0;
+  	opacity: 0;
 }
 .sticky-two ul, 
 .sticky-two li, 
 .sticky-two a {
-  height: 100%;
+  	height: 100%;
 }
 .sticky-two ul {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0;
-  overflow-y: hidden; 
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+  	display: -webkit-box;
+  	display: -webkit-flex;
+  	display: -ms-flexbox;
+  	display: flex;
+  	padding: 0;
+  	overflow-y: hidden; 
+  	overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 .sticky-two ul:after {
-  clear: both;
-  content: "";
-  display: block;
+  	clear: both;
+  	content: "";
+  	display: block;
 }
 .sticky-two li {
-  display: inline-block;
-  float: left;
-  -webkit-flex-shrink: 0;
+  	display: inline-block;
+    float: left;
+    -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
-          flex-shrink: 0;
+       	   	flex-shrink: 0;
 }
 .sticky-two a {
-  display: block;
-  color: #fff;
-  opacity: .6;
-  line-height: 50px;
-  padding: 0 16px;
+  	display: block;
+  	color: #fff;
+  	opacity: .6;
+  	line-height: 50px;
+  	padding: 0 16px;
 }
 .sticky-two a:hover, .sticky-two a.sticky-active {
-  opacity: 1;
+  	opacity: 1;
 }
 @media only screen and (min-width: 993px) {
-  .sticky-two {
-    height: 70px;
-    overflow: visible;
-  }
-  .sticky-two ul {
-    display: block;
-    text-align: center;
-  }
-  .sticky-two li {
-    float: none;
-  }
-  .sticky-two a {
-    line-height: 70px;
-  }
-  .sticky-two a.sticky-active {
-    box-shadow: inset 0 -3px crimson;
-  }
+  	.sticky-two {
+    	height: 70px;
+    	overflow: visible;
+  	}
+  	.sticky-two ul {
+    	display: block;
+    	text-align: center;
+  	}
+  	.sticky-two li {
+    	float: none;
+  	}
+  	.sticky-two a {
+    	line-height: 70px;
+  	}
+  	.sticky-two a.sticky-active {
+    	box-shadow: inset 0 -3px crimson;
+  	}
 }
 .sticky-two.sticky-fixed {
-  position: fixed;
-  left:0;
-  right: 0;
-  top: 60px;
-  transition: .7s;
-  -webkit-transition: .7s;
+  	position: fixed;
+  	left:0;
+  	right: 0;
+  	top: 60px;
+  	transition: .7s;
+    -webkit-transition: .7s;
 }
 .sticky-two.sticky-up {
-  -webkit-transform: translateY(-60px);
-      -ms-transform: translateY(-60px);
-          transform: translateY(-60px);
+    -webkit-transform: translateY(-60px);
+        -ms-transform: translateY(-60px);
+          	transform: translateY(-60px);
 }
 @media only screen and (min-width: 993px) {
-  .sticky-two.sticky-fixed {
-    top: 80px;
-  }
-  .sticky-two.sticky-up {
-    -webkit-transform: translateY(-80px);
-        -ms-transform: translateY(-80px);
-            transform: translateY(-80px);
-  }
+  	.sticky-two.sticky-fixed {
+    	top: 80px;
+  	}
+  	.sticky-two.sticky-up {
+        -webkit-transform: translateY(-80px);
+            -ms-transform: translateY(-80px);
+                transform: translateY(-80px);
+  	}
 }
 .sticky-content {
-  padding: 16px;
-  overflow: hidden;
+  	padding: 16px;
+  	overflow: hidden;
 }
 .sticky-content.sticky-sub {
-  padding-top: 100px;
+  	padding-top: 100px;
 }
 .sticky-content.sticky-sub-landing {
-  padding-top: 0;
+  	padding-top: 0;
 }
 .sticky-content.sticky-sub-landing.sticky-two-fixed {
-  margin-top: 50px;
+  	margin-top: 50px;
 }
 .sticky-content{
-  max-width: 1024px;
-  margin: auto;
-  transition: 0.5s;
-		-webkit-transition: 0.5s;
+  	max-width: 1024px;
+  	margin: auto;
+  	transition: 0.5s;
+	-webkit-transition: 0.5s;
 }
 @media only screen and (max-width: 992px) {
 	.sticky-content{
@@ -2827,56 +2817,56 @@ ol, ul {
 	}
 }
 @media only screen and (min-width: 993px) {
-  .sticky-content {
-    padding-top: 80px;
-  }
-  .sticky-content.sticky-sub {
-    padding-top: 150px;
-  }
-  .sticky-content.sticky-sub-landing.sticky-two-fixed {
-    margin-top: 70px;
-  }
+  	.sticky-content {
+    	padding-top: 80px;
+  	}
+  	.sticky-content.sticky-sub {
+    	padding-top: 150px;
+  	}
+  	.sticky-content.sticky-sub-landing.sticky-two-fixed {
+    	margin-top: 70px;
+  	}
 }
 .sticky-content.sticky-sub :target:before,
 .sticky-content.sticky-sub-landing :target:before {
-  display: block;
-  content: "";
-  margin-top: -50px;
-  height: 50px;
-  visibility: hidden;
+  	display: block;
+  	content: "";
+  	margin-top: -50px;
+  	height: 50px;
+  	visibility: hidden;
 }
 @media only screen and (min-width: 993px) {
-  .sticky-content.sticky-sub :target:before,
-  .sticky-content.sticky-sub-landing :target:before {
-    margin-top: -70px;
-    height: 70px;
-  }
+  	.sticky-content.sticky-sub :target:before,
+  	.sticky-content.sticky-sub-landing :target:before {
+    	margin-top: -70px;
+    	height: 70px;
+  	}
 }
 .sticky-images {
-  display: table;
-  width: 100%;
-  margin-top: 60px;
-  height: 400px;
-  background-attachment: fixed;
-  background-size: cover;
-  overflow: hidden;
+  	display: table;
+  	width: 100%;
+  	margin-top: 60px;
+  	height: 400px;
+  	background-attachment: fixed;
+  	background-size: cover;
+  	overflow: hidden;
 }
 .sticky-images .sticky-images-content {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  opacity: 0.8;
+  	display: table-cell;
+  	vertical-align: middle;
+  	text-align: center;
+  	opacity: 0.8;
 }
 @media only screen and (min-width: 600px) {
-  .sticky-images {
-    height: 400px;
-  }
+  	.sticky-images {
+    	height: 400px;
+  	}
 }
 @media only screen and (min-width: 993px) {
-  .sticky-images {
-    height: 600px;
-    margin-top: 80px;
-  }
+  	.sticky-images {
+    	height: 600px;
+    	margin-top: 80px;
+  	}
 }
 
 /* End Navbar Sticky */
