@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dropdown</title>
+	<!-- Icon Title -->
+	<link rel="icon" href="https://cdncore.github.io/images/icore.png" type="image/x-icon">
+	<!-- Memanggil core.min.css-->
+	<link rel="stylesheet" type="text/css" href="../core/core.css">
+	<link rel="stylesheet" type="text/css" href="https://cdncore.github.io/core/2.1/core.min.css">
+	<!-- Memanggil CDN Library Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--[if lt IE 9]>
+  		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<![endif]-->
+	<style type="text/css">
+	/* Style */
+	</style>
+</head>
+<body class="layout-m equal">
+	<div style="padding:16px 0 30px 0">
+		<a href="https://getcore.github.io/learn.html" style="padding: 12px 16px;border:1px solid #ddd;color:inherit" class="hover-lightgray"><span class="fa fa-caret-left"></span> Kembali</a>
+	</div>
+
+	<!-- Content -->
+	<h5 id="dropdown" class="section">Dropdown</h5>
+<p>Dropdown Core tidak memiliki fungsi untuk close dropdown content dengan mengclick dimana saja. Jika menginginkan click dimana saja di anjurkan untuk membuatnya manual. Selebihnya dropdown core memanjakan anda dengan dropdown active dan smooth tanpa jQuery. Dropdown Core menawarkan 3 jenis sifat, yaitu basic, fade, dan swing.
+<div class="row">
+    <div class="column grid l8 m8 12">
+<div class="subheader">Drodown Basic</div>
+<p>Dropdown basic default dengan arah kanan dan memiliki caret transform berputar untuk defaultnya. Ketiga jenis Dropdown memiliki 3 Transform caret ketika di click. caret-down dan caret up circle, card-v (vertikal) dan card h(horizontal)</p>
+    </div>
+    <div class="column grid l4 m8 s12">
+        <div class="right-align">
+            <div class="basic-dropdown">
+                <button onclick="basicDropdown()" id="basicActiveDropdown" class="basic-dropdown-button">Dropdown 
+                    <span class="caret-down-circle" id="changeBasicToggle"></span>
+                </button>
+                <div id="basicDropdownContent" class="basic-dropdown-content">
+                    <a href="#">Core</a>
+                    <a href="#">Learn</a>
+                    <a href="#">Column</a>
+                    <a href="#">Color</a>
+                    <a href="#">author</a>
+                    <a href="#">ebook</a>
+                    <a href="#">tutorial</a>
+                    <a href="#">organiser</a>
+                    <a href="#">developer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Row Dropdown -->
+<div class="row">
+    <!-- Column Dropdown -->
+    <div class="column grid l8 m6 s12">
+<xmp><div class="right-align">
+ <div class="basic-dropdown">
+  <button onclick="basicDropdown()" id="basicActiveDropdown" class="basic-dropdown-button">Dropdown 
+   <span class="caret-down-circle" id="changeBasicToggle"></span>
+  </button>
+  <div id="basicDropdownContent" class="basic-dropdown-content">
+    <a href="#">Core</a>
+    <a href="#">Learn</a>
+    <a href="#">Column</a>
+    <a href="#">Color</a>
+    <a href="#">author</a>
+    <a href="#">ebook</a>
+    <a href="#">tutorial</a>
+    <a href="#">organiser</a>
+    <a href="#">developer</a>
+  </div>
+ </div>
+</div>
+</xmp>
+<p>Function Javascript basic dropdown</p>
+<xmp>function basicDropdown() {
+    document.getElementById("basicDropdownContent").classList.toggle("basic-show-dropdown");
+    document.getElementById("basicActiveDropdown").classList.toggle("basic-active-dropdown");
+    document.getElementById("changeBasicToggle").classList.toggle("caret-up-circle");
+    document.getElementById("changeBasicToggle").classList.toggle("caret-down-circle");
+}
+</xmp>
+    </div>
+    <!-- End Column Dropdown -->
+    <!-- Column Dropdown -->
+    <div class="column grid l4 m6 s12">
+<p>Untuk mengatur active basic dropdown, jika menginginkan warna text cukup membuatnya color : (warna) jika ingin active background maka gunakan background-color : (warna).</p>
+<xmp>.basic-active-dropdown{
+    background-color: #ddd;
+}
+</xmp>
+<p>Ada 3 pilihan effect transform caret dropdown</p>
+<div>caret-down-circle & caret-up-circle</div>
+<div>caret-down-card-v & caret-up-card-v</div>
+<div>caret-down-card-h & caret-up-card-h</div>
+<p>Untuk mengganti effect caret pada class</p>
+<xmp>class="caret-down-circle"
+</xmp>
+Menjadi
+<xmp>class="caret-down-card-v"
+</xmp>
+<p>dan ganti function javascript</p>
+<xmp>document.getElementById("changeBasicToggle").classList.toggle("caret-up-card-v");
+document.getElementById("changeBasicToggle").classList.toggle("caret-down-card-v");
+</xmp>
+    </div>
+    <!-- End Column Dropdown -->
+</div>
+<!-- End Row Dropdown -->
+
+<div class="row">
+    <div class="column grid l8 m8 12">
+<div class="subheader">Drodown Fade</div>
+<p>Dropdown Fade dibangun dengan visibility, dengan properti itu, effect transition
+dapat di buat dengan di gabungkan properti opacity</p>
+    </div>
+    <div class="column grid l4 m8 s12">
+        <div class="right-align">
+            <div class="fade-dropdown">
+                <button onclick="fadeDropdown()" id="fadeActiveDropdown" class="fade-dropdown-button">Dropdown 
+                    <span class="caret-down-circle" id="changeFadeToggle"></span>
+                </button>
+                <div id="fadeDropdownContent" class="fade-dropdown-content">
+                    <a href="#">Core</a>
+                    <a href="#">Learn</a>
+                    <a href="#">Column</a>
+                    <a href="#">Color</a>
+                    <a href="#">author</a>
+                    <a href="#">ebook</a>
+                    <a href="#">tutorial</a>
+                    <a href="#">organiser</a>
+                    <a href="#">developer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Row Dropdown -->
+<div class="row">
+    <!-- Column Dropdown -->
+    <div class="column grid l8 m6 s12">
+<xmp><div class="right-align">
+ <div class="fade-dropdown">
+  <button onclick="fadeDropdown()" id="fadeActiveDropdown" class="fade-dropdown-button">Dropdown 
+   <span class="caret-down-circle" id="changeFadeToggle"></span>
+  </button>
+  <div id="fadeDropdownContent" class="fade-dropdown-content">
+   <a href="#">Core</a>
+   <a href="#">Learn</a>
+   <a href="#">Column</a>
+   <a href="#">Color</a>
+   <a href="#">author</a>
+   <a href="#">ebook</a>
+   <a href="#">tutorial</a>
+   <a href="#">organiser</a>
+   <a href="#">developer</a>
+  </div>
+ </div>
+</div>
+</xmp>
+<p>Function Javascript Fade dropdown</p>
+<xmp>function fadeDropdown() {
+    document.getElementById("fadeDropdownContent").classList.toggle("fade-show-dropdown");
+    document.getElementById("fadeActiveDropdown").classList.toggle("fade-active-dropdown");
+    document.getElementById("changeFadeToggle").classList.toggle("caret-up-circle");
+    document.getElementById("changeFadeToggle").classList.toggle("caret-down-circle");
+}
+</xmp>
+    </div>
+    <!-- End Column Dropdown -->
+    <!-- Column Dropdown -->
+    <div class="column grid l4 m6 s12">
+<p>Untuk mengatur active fade dropdown, jika menginginkan warna text cukup membuatnya color : (warna) jika ingin active background maka gunakan background-color : (warna).</p>
+<xmp>.fade-active-dropdown{
+    background-color: #ddd;
+}
+</xmp>
+<p>Ada 3 pilihan effect transform caret dropdown</p>
+<div>caret-down-circle & caret-up-circle</div>
+<div>caret-down-card-v & caret-up-card-v</div>
+<div>caret-down-card-h & caret-up-card-h</div>
+<p>Untuk mengganti effect caret pada class</p>
+<xmp>class="caret-down-circle"
+</xmp>
+Menjadi
+<xmp>class="caret-down-card-v"
+</xmp>
+<p>dan ganti function javascript</p>
+<xmp>document.getElementById("changeFadeToggle").classList.toggle("caret-up-card-v");
+document.getElementById("changeFadeToggle").classList.toggle("caret-down-card-v");
+</xmp>
+    </div>
+    <!-- End Column Dropdown -->
+</div>
+<!-- End Row Dropdown -->
+
+<div class="row">
+    <div class="column grid l8 m8 12">
+<div class="subheader">Dropdown Swing</div>
+<p>Dropdown Swing dibangun dengan visibility, dengan properti itu, effect transition
+seperti ayunan dapat di lakukan. Karena effect swing di bangun dengan visibility, maka
+untuk mengatur supaya click terbuka semua, kita di anjurkan menganti ukuran height, kira kira berapa height untuk memunculkan keseluruhan Dropdown Content. Bisa juga menggunakan height 100%, yaitu pada 1 tag a di beri nilai 100%, untuk membuka dropdown content dengan effect swing, berarti jika terdapat 7 tag a, maka kita membutuhkan height 700%.
+</p>
+<xmp>.show-dropdown-swing {
+    visibility: visible;
+    height: 380px;
+    overflow: hidden;
+}
+</xmp>
+    </div>
+    <div class="column grid l4 m8 s12">
+        <div class="right-align">
+            <div class="dropdown-swing">
+                <button onclick="dropdownSwing()" id="activeDropdownSwing" class="dropdown-button-swing">Dropdown 
+                    <span class="caret-down-circle" id="changeSwingToggle"></span>
+                </button>
+                <div id="dropdownContentSwing" class="dropdown-content-swing">
+                    <a href="#">Core</a>
+                    <a href="#">Learn</a>
+                    <a href="#">Column</a>
+                    <a href="#">Color</a>
+                    <a href="#">author</a>
+                    <a href="#">ebook</a>
+                    <a href="#">tutorial</a>
+                    <a href="#">organiser</a>
+                    <a href="#">developer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Row Dropdown -->
+<div class="row">
+    <!-- Column Dropdown -->
+    <div class="column grid l8 m6 s12">
+<xmp><div class="right-align">
+ <div class="dropdown-swing">
+  <button onclick="dropdownSwing()" id="activeDropdownSwing" class="dropdown-button-swing">Dropdown 
+   <span class="caret-down-circle" id="changeSwingToggle"></span>
+  </button>
+  <div id="dropdownContentSwing" class="dropdown-content-swing">
+   <a href="#">Core</a>
+   <a href="#">Learn</a>
+   <a href="#">Column</a>
+   <a href="#">Color</a>
+   <a href="#">author</a>
+   <a href="#">ebook</a>
+   <a href="#">tutorial</a>
+   <a href="#">organiser</a>
+   <a href="#">developer</a>
+  </div>
+ </div>
+</div>
+</xmp>
+<p>Function Javascript Swing dropdown</p>
+<xmp>function dropdownSwing() {
+    document.getElementById("dropdownContentSwing").classList.toggle("show-dropdown-swing");
+    document.getElementById("activeDropdownSwing").classList.toggle("active-dropdown-swing");
+    document.getElementById("changeSwingToggle").classList.toggle("caret-up-circle");
+    document.getElementById("changeSwingToggle").classList.toggle("caret-down-circle");
+}
+</xmp>
+    </div>
+    <!-- End Column Dropdown -->
+    <!-- Column Dropdown -->
+    <div class="column grid l4 m6 s12">
+<p>Untuk mengatur active swing dropdown, jika menginginkan warna text cukup membuatnya color : (warna) jika ingin active background maka gunakan background-color : (warna).</p>
+<xmp>.active-dropdown-swing{
+    background-color: #ddd;
+}
+</xmp>
+<p>Ada 3 pilihan effect transform caret dropdown</p>
+<div>caret-down-circle & caret-up-circle</div>
+<div>caret-down-card-v & caret-up-card-v</div>
+<div>caret-down-card-h & caret-up-card-h</div>
+<p>Untuk mengganti effect caret pada class</p>
+<xmp>class="caret-down-circle"
+</xmp>
+Menjadi
+<xmp>class="caret-down-card-v"
+</xmp>
+<p>dan ganti function javascript</p>
+<xmp>document.getElementById("changeSwingToggle").classList.toggle("caret-up-card-v");
+document.getElementById("changeSwingToggle").classList.toggle("caret-down-card-v");
+</xmp>
+    </div>
+    <!-- End Column Dropdown -->
+</div>
+<!-- End Row Dropdown -->
+
+	<!-- End Content -->
+
+	<div style="padding:40px 0 16px 0" class="right-align">
+		<a href="https://getcore.github.io/learn.html" style="padding: 12px 16px;border:1px solid #ddd;color:inherit" class="hover-lightgray"><span class="fa fa-caret-left"></span> Kembali</a>
+	</div>
+
+</body>
+<!-- Memanggil CDN Google Library jQuery -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Memanggil javascript Core -->
+<script type="text/javascript" src="https://cdncore.github.io/js/2.1/core.min.js"></script>
+<script type="text/javascript" src="https://cdncore.github.io/js/2.1/nava-accordion.min.js"></script>
+</html>

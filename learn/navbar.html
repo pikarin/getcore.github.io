@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Navbar</title>
+	<!-- Icon Title -->
+	<link rel="icon" href="https://cdncore.github.io/images/icore.png" type="image/x-icon">
+	<!-- Memanggil core.min.css-->
+	<link rel="stylesheet" type="text/css" href="../core/core.css">
+	<link rel="stylesheet" type="text/css" href="https://cdncore.github.io/core/2.1/core.min.css">
+	<!-- Memanggil CDN Library Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--[if lt IE 9]>
+  		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<![endif]-->
+	<style type="text/css">
+	/* Style */
+	</style>
+</head>
+<body class="layout equal">
+	<div style="padding:16px 0 30px 0">
+		<a href="https://getcore.github.io/learn.html" style="padding: 12px 16px;border:1px solid #ddd;color:inherit" class="hover-lightgray"><span class="fa fa-caret-left"></span> Kembali</a>
+	</div>
+
+	<!-- Content -->
+
+<h5 id="navbar" class="section">Navbar</h5>
+<p class="subheader" id="navoon">Navoon</p>
+Navbar versi sebelumnya di hilangkan karena alasan tidak memenuhi standarisasi Flamecore Organization.
+Maka navbar Navoon hadir dengan dengan membawa perbedaan dari navbar biasanya. Responsive di semua ukuran. Menggabungkan classic dan modren pada designnya. Sangat simple dan multi element. Pada
+versi ini kita bisa membuat sidebar dan navbar sekaligus, juga kita dapat membuat keperluan lain lain
+di icon &nbsp;<i class="fa fa-ellipsis-v"></i>&nbsp;.
+
+<div class="row-flex grid">
+    <div class="flex grid l4 m6 s12 section">
+    <p>Di awali dari sidebar. Animation sidebar sudah mempunyai default 10 link. Maka animasi berikutnya tidak memiliki animation untuk mengatasinya, masukan code berikut di style.
+<xmp>.navoon-aside li{
+    position:relative!important;-webkit-animation:navoonAside 0.6s!important;animation:navoonAside 0.6s!important}
+    @-webkit-keyframes navoonAside{from{left:-300px} to{left:0}}
+    @keyframes navoonAside{from{left:-300px} to{left:0;}
+}
+</xmp>
+<p>!important berguna untuk mendahulukan animation. Karena navbar navoon sudah memiliki animation sendiri. Jadi gunakan element tersebut untuk menukar peran element.</p>
+    </div>
+    <div class="flex grid l8 m6 s12 section">
+        <iframe src="../demo/navoon.html" class="box-shadow" width="100%" height="440" frameborder="0"></iframe>
+    </div>
+    <div class="flex grid l3 m4 s12">
+<p>Fungsi click pada navoon aside di buat dengan javascript, maka kita harus meletakan scriptnya dibawah body</p>
+<xmp><body>
+    
+</body>
+<script type="text/javascript" src="js/navoon.js"></script>
+</xmp>
+    </div>
+    <div class="flex grid l9 m8 s12">
+<p>Kedua adalah logo. Pastikan logo di letakan pada element kedua, karena tag li sudah di atur pada child kedua untuk logo. Karena navbar navoon memiliki hover, untuk navbar logo juga akan terkana effect hover, jangan khawatir, core sudah membuatnya transparent. Ukuran logo 185px x 40px dan tentunya harus berekstensi png. CSS sudah di atur : Max-width: 100% dan height: 40px. Padding pada child logo sudah di reset 0, maka jika logo tidak sama rata, gunakan padding top untuk meratakannya. Tapi tidak perlu khawatir, padding-top sudah di default 9px untuk meratakannya.</p>
+<xmp>.navoon li:nth-child(2) a{
+ padding:0;
+}
+.navoon li:nth-child(2):hover a{
+ background-color: transparent;
+}
+.navoon-logo{
+ max-width: 100%;
+ height:40px;
+ padding-top:9px;
+}
+</xmp>
+    </div>
+    <div class="flex grid s12">
+        <p>Ketiga adalah icon &nbsp;<i class="fa fa-ellipsis-v"></i>&nbsp; untuk menambahkan element
+        yang kita butuhkan. icon ini sudah memiliki default untuk navbar, map, link, note, dan about. Animation Effect hanya terdapat 5 element, dan penulis sangat tidak menganjurkan lebih dari 5 element karena tidak akan responsive. Karena width dari masing masing child sudah di atur 20%.</p>
+    </div>
+</div>
+<div class="row-flex grid">
+            <div class="flex grid l4 m4 s12">
+<xmp><div class="navoon-tab">
+ <button class="tablinks" onclick="openContent(event, 'content1')" id="defaultOpen">
+  <i class="fa fa-ellipsis-h"></i></button>
+ <button class="tablinks" onclick="openContent(event, 'content2')">
+  <i class="fa fa-language"></i>
+ </button>
+ <button class="tablinks" onclick="openContent(event, 'content3')">
+  <i class="fa fa-map-marker"></i>
+ </button>
+ <button class="tablinks" onclick="openContent(event, 'content4')">
+  <i class="fa fa-credit-card-alt"></i>
+ </button>
+ <button class="tablinks" onclick="openContent(event, 'content5')">
+  <i class="fa fa-book"></i>
+ </button>
+</div>
+</xmp> 
+<p>id="defaultOpen" di gunakan untuk menampilkan element pertama kali di buka, jika tidak ingin menampilkan element ketika pertama kali di buka, hapus saja element tersebut.
+</p>
+<p>
+(event, 'content1') 'content1' adalah id dan harus sama dengan id tabcontent agar script javascript berjalan.
+</p>
+            </div>
+            <div class="flex grid l4 m4 s12">
+<xmp>.tabcontent {
+ display: none;
+ padding: 0;
+ margin: 0;
+ z-index: 8!important;
+ border-left:1px solid #ddd;
+ overflow: auto;
+ height:300px;
+}
+
+@media (max-width:600px){
+ .tabcontent {
+   border-left: none!important;
+   border-bottom:1px solid #ddd;
+ }
+}
+</xmp>
+<p>Jika ukuran height terlalu kecil, tambah ukuran height. Dan tidak di anjurkan menghapus height karena
+content body pada ukuran smartphone akan tertutup jika element yang kita masukan di class tabcontent terlalu panjang.
+            </div>
+
+            <div class="flex grid l4 m4 s12">
+            <p>pastikan pada tabcontent id sama dengan tablinks</p>
+
+<xmp><div id="content1" class="tabcontent">
+ <nav class="nav" id="cNav">
+  <a href="index.html">Flamecore</a>
+  <a href="learn.html" target="_blank">Learn</a>
+  <a href="column.html" target="_blank">Column</a>
+  <a href="color.html" target="_blank">Color</a>
+  <a href="author.html" target="_blank">Author</a>
+  <a href="javascript:void(0);" class="toggle" onclick="cToggle()"><i class="fa fa-list"></i></a>
+ </nav>
+</div>
+</xmp>
+<p>
+Jika ingin membuat element baru selain defaut navbar navoon, maka ganti id tabcontent dan id tablink.
+Untuk mengatur height otomatis bisa menambahkan element di style pada class tabcontent menjadi auto, scroll atau lain lain.
+</p>
+<xmp><div id="content1" class="tabcontent" style="height:auto"></div>
+</xmp>
+            </div>
+        </div>
+<div>
+<br>
+<div class="nava-Accordion" style="border: 1px solid #ddd">View Source Code</div>
+<div class="nava-panel" style="padding: 0">
+<xmp><!DOCTYPE html>
+<html>
+<head>
+    <title>Navoon</title>
+    <link rel="stylesheet" type="text/css" href="core/core.css">
+    <!-- Memanggil CDN Library Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- Navoon -->
+<div class="navoon">
+ <li><a onclick="toggleAside()"><i class="fa fa-bars toggle-aside"></i></a></li>
+ <li><a href=""><img src="images/flamecore.png" class="navoon-logo"></a></li>
+ <li class="right"><a onclick="toggleMenu()"><i class="fa fa-ellipsis-v toggle-menu"></i></a>
+  <div id="navoonMenu" class="navoon-menu">
+   <div class="row">
+    <div class="column l3 m6 s12">
+     <div class="navoon-tab">
+      <button class="tablinks" onclick="openContent(event, 'content1')" id="defaultOpen"><i class="fa fa-ellipsis-h"></i></button>
+      <button class="tablinks" onclick="openContent(event, 'content2')">
+       <i class="fa fa-map-marker"></i>
+      </button>
+      <button class="tablinks" onclick="openContent(event, 'content3')">
+       <i class="fa fa-link"></i>
+      </button>
+      <button class="tablinks" onclick="openContent(event, 'content4')">
+       <i class="fa fa-book"></i>
+      </button>
+      <button class="tablinks" onclick="openContent(event, 'content5')">
+       <i class="fa fa-phone"></i>
+      </button>
+     </div>
+    </div>
+    <div class="column l9 m6 s12">
+     <div id="content1" class="tabcontent">
+      <nav class="nav" id="cNav">
+       <a href="index.html">Flamecore</a>
+       <a href="learn.html">Learn</a>
+       <a href="column.html">Column</a>
+       <a href="color.html">Color</a>
+       <a href="author.html">Author</a>
+       <a href="javascript:void(0);" class="toggle" onclick="cToggle()"><i class="fa fa-list"></i></a>
+      </nav>
+     </div>
+     <div id="content2" class="tabcontent">
+      <iframe width="100%" height="450px" frameborder="0" style="border:0" src="">
+        Map
+      </iframe>
+     </div>
+     <div id="content3" class="tabcontent">
+      <div class="navoon-link center-align">
+      Content Link
+      </div>
+     </div>
+     <div id="content4" class="tabcontent">
+      <div class="navoon-note">
+      Content Note
+      </div>
+     </div>
+     <div id="content5" class="tabcontent">
+      <div class="navoon-about">
+      Content About                   
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </li>
+ </div>
+ <!-- Navoon Aside -->
+ <div id="navoonAside" class="navoon-aside">
+  <li><a href="#">Link 1</a></li>
+  <li><a href="#">Link 2</a></li>
+  <li><a href="#">Link 3</a></li>
+  <li><a href="#">Link 4</a></li>
+  <li><a href="#">Link 5</a></li>
+  <li><a href="#">Link 6</a></li>
+  <li><a href="#">Link 7</a></li>
+ </div>
+  <!-- End Navoon Aside -->
+
+</body>
+<!-- Memanggil CDN Google Library jQuery -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Memanggil javascript Core -->
+<script type="text/javascript" src="js/core.js"></script>
+</html>
+</xmp>
+</div>
+
+<p class="subheader" id="navSwing">Nav Swing and Crayola Color</p>
+<div class="row">
+    <div class="column grid l8 m6 s12">
+<p>Original navbar Framework Core di bangun atas dasar float, visibility, transition dan click Toggle.</p>
+<p>Untuk mengatur height full menu, atur seberapa besar height yang anda butuhkan, supaya tidak keluar dari dimensi full menu, gunakan overflow: auto, karena default full menu nav swing adalah overflow: hidden.
+<xmp>.show-nav1 {
+    visibility: visible;
+    height: 300px;
+    overflow: hidden;
+}
+</xmp>
+<p>Class show-nav1 adalah salah satu dari 8 show-nav default Nav Swing Core. Pastikan jika anda mengganti properti yang anda inginkan pada show-nav yang benar.</p>
+    </div>
+    <div class="column grid l4 m6 s12">
+<p>Untuk mengganti active nav swing pada class</p>
+<xmp>.active-nav{
+    color: #666;
+}
+</xmp>
+<p>active-nav tidak mendukung background-color untuk mengactive kan nav, karena Nav Swing di khususkan untuk navbar icon, bukan navbar text, tapi jika anda tetap menginginkan navbar text yang active pada backgroundnya, costumisasi manual source code.</p>
+    </div>
+</div>
+<div style="max-width: 1024px;margin:auto">
+    <div class="row">
+        <div class="column grid l8 hm s12">
+    		<iframe width="100%" height="400px" frameborder="0" class="box-shadow" src="../demo/nav-swing.html"></iframe>
+        </div>
+        <div class="column grid l4 hm hs">
+    		<iframe width="100%" height="400px" frameborder="0" class="box-shadow" src="../demo/nav-swing.html"></iframe>
+        </div>
+    </div>
+</div>
+<br>
+<!-- Source Code Nav Swing -->
+<div class="nava-Accordion" style="border: 1px solid #ddd">View Source Code</div>
+<div class="nava-panel" style="padding: 0">
+<xmp><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nav Swing</title>
+	<!-- Icon Title -->
+	<link rel="icon" href="" type="image/x-icon">
+	<!-- Memanggil core.min.css-->
+	<link rel="stylesheet" type="text/css" href="core/core.css">
+	<!-- Memanggil Nav Swing -->
+	<link rel="stylesheet" type="text/css" href="core/color/crayola.css">
+	<!-- Memanggil CDN Library Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--[if lt IE 9]>
+  		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<![endif]-->
+	<style type="text/css">
+	/* Style */
+	</style>
+</head>
+<body>
+	<div class="fixed-nav">
+		<div class="layout-nav">
+			<div class="row-nav">
+				<div class="col-nav grid1 cy-bg-moonstone">
+					<a onclick="buttonNav1()" id="activeNav1"><i class="fa fa-home button-nav" title="Name Nav"></i></a>
+					<div id="contentNav1" class="content-nav-swing cy-bg-moonstone">
+						<div class="layout-nav">
+							Content Nav 1
+						</div>
+					</div>
+				</div>
+				<div class="col-nav grid2 cy-bg-strawberry">
+					<a onclick="buttonNav2()" id="activeNav2"><i class="fa fa-list button-nav" title="Name Nav"></i></a>
+					<div id="contentNav2" class="content-nav-swing cy-bg-strawberry">
+						<div class="layout-nav">
+							Content Nav 2
+						</div>
+					</div>
+				</div>
+				<div class="col-nav grid3 cy-bg-malachite">
+					<a onclick="buttonNav3()" id="activeNav3"><i class="fa fa-link button-nav" title="Name Nav"></i></a>
+					<div id="contentNav3" class="content-nav-swing cy-bg-malachite">
+						<div class="layout-nav">
+							Content Nav 3
+						</div>
+					</div>
+				</div>
+				<div class="col-nav grid4 cy-bg-peridot">
+					<a onclick="buttonNav4()" id="activeNav4"><i class="fa fa-caret-square-o-right button-nav" title="Name Nav"></i></a>
+					<div id="contentNav4" class="content-nav-swing cy-bg-peridot">
+						<div class="layout-nav">
+							Content Nav 4
+						</div>
+					</div>
+				</div>
+				<div class="col-nav grid5 cy-bg-rose">
+					<a onclick="buttonNav5()" id="activeNav5"><i class="fa fa-camera button-nav" title="Name Nav"></i></a>
+					<div id="contentNav5" class="content-nav-swing cy-bg-rose">
+						<div class="layout-nav">
+							Content Nav 5
+						</div>
+					</div>
+				</div>
+				<div class="col-nav grid6 cy-bg-grape">
+					<div class="row-subnav">
+						<div class="col-subnav sub-grid1">
+							<i class="fa fa-search"></i>
+						</div>
+						<div class="col-subnav sub-grid2">
+							<input type="text" name="search" class="subnav-search" placeholder="search">
+						</div>
+					</div>
+				</div>
+				<div class="col-nav grid7 cy-bg-shinyshamrock">
+					<a onclick="buttonNav7()" id="activeNav7"><i class="fa fa-archive button-nav" title="Name Nav"></i></a>
+					<div id="contentNav7" class="content-nav-swing cy-bg-shinyshamrock">
+						<div class="layout-nav">
+							Content Nav 7
+						</div>
+					</div>
+				</div>
+				<div class="col-nav grid8 cy-bg-bigdiporuby">
+					<a onclick="buttonNav8()" id="activeNav8"><i class="fa fa-clone button-nav" title="Name Nav"></i></a>
+					<div id="contentNav8" class="content-nav-swing cy-bg-bigdiporuby">
+						<div class="layout-nav">
+							Content Nav 8
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<!-- Memanggil CDN Google Library jQuery -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Memanggil javascript Core -->
+<script type="text/javascript" src="js/core.js"></script>
+</html>
+</xmp>
+</div>
+<!-- End Source Code Nav Swing -->
+<p class="subheader" id="windows">Web Windows Navigation</p>
+<p>Original di buat oleh Top Level Developer yang dibangun dengan fixed, transition, transform untuk animation icon dan responsive Layout plus Crayola Color.</p>
+<iframe width="100%" height="500px" frameborder="0" class="box-shadow" src="../index.html"></iframe>
+<br>
+<div class="nava-Accordion" style="border: 1px solid #ddd">View Source Code</div>
+<div class="nava-panel" style="padding: 0">
+<xmp><div class="box animation-box1">
+ <div class="box-item cy-bg-maximumbluegreen">
+  <span class="position-middle">
+   <a href="home.html" class="white">
+    <i class="fa fa-home hover-rotate"></i>
+   </a>
+  </span>
+ </div>
+ <div class="box-item">
+ <div class="subbox2-item cy-bg-bigfootfeet">
+  <span class="position-middle">
+   <a href="learn.html" class="white">
+    <i class="fa fa-leanpub hover-card-v"></i>
+   </a>
+  </span>
+ </div>
+ <div class="subbox2-item cy-bg-blueberry">
+  <span class="position-middle">
+   <a href="author.html" class="white">
+    <i class="fa fa-user hover-card-v"></i>
+   </a>
+  </span>
+ </div>
+ </div>
+ <div class="box-item lgr-pink-3">
+  <div class="subbox3-item cy-bg-greensheen">
+   <span class="position-middle">
+    <a href="organiser.html" class="white">
+     <i class="fa fa-sitemap hover-card-v"></i>
+    </a>
+   </span>
+  </div>
+  <div class="subbox3-item cy-bg-ceruleanfrost">
+   <span class="position-middle">
+    <a href="ebook.html" class="white">
+     <i class="fa fa-book hover-card-v"></i>
+    </a>
+   </span>
+  </div>
+ </div>
+</div>
+<div class="box animation-box2">
+ <div class="box-item2 cy-bg-metallicseaweed">
+  <span class="position-middle">
+   <a href="column.html" class="white">
+    <i class="fa fa-television hover-card-v"></i>
+   </a>
+  </span>
+ </div>
+ <div class="box-item2 cy-bg-steelblue">
+  <span class="position-middle">
+   <a href="color.html" class="white">
+    <i class="fa fa-camera hover-rotate"></i>
+   </a>
+  </span>
+ </div>
+ <div class="box-item2 cy-bg-koalatree">
+  <span class="position-middle">
+   <a href="js.html" class="white">
+    <i class="fa fa-code hover-card-h"></i>
+   </a>
+  </span>
+ </div>
+</div>
+<div class="box animation-box3">
+ <div class="box-item3">
+  <div class="subbox-item3 cy-bg-shimmeringblush">
+   <span class="position-middle">
+    <a href="tutorial.html" class="white">
+     <i class="fa fa-pencil hover-card-v"></i>
+    </a>
+   </span>
+  </div>
+  <div class="subbox-item3 cy-bg-deepspacesparkle">
+   <span class="position-middle">
+    <a href="template.html" class="white">
+     <i class="fa fa-building hover-card-h"></i>
+    </a>
+   </span>
+  </div>
+  <div class="subbox-item3 cy-bg-razzmicberry">
+   <span class="position-middle">
+    <a href="http://github.com/getcore/getcore.github.io" class="white">
+     <i class="fa fa-github hover-rotate"></i>
+    </a>
+   </span>
+  </div>
+  <div class="subbox-item3 cy-bg-polishedpine">
+   <span class="position-middle">
+    <a href="core/core-2-1.zip" class="white">
+     <i class="fa fa-cloud-download hover-rotate"></i>
+    </a>
+   </span>
+  </div>
+ </div>
+ <div class="box-item3 cy-bg-amethyst">
+  <span class="position-middle">
+   <a href="dropbox.com" class="white">
+    <i class="fa fa-dropbox hover-rotate"></i>
+   </a>
+  </span>
+ </div>
+</div>
+<div class="box animation-box4">
+ <div class="box-item4">
+  <div class="subbox-item4 cy-bg-rose">
+   <span class="position-middle">
+    <a href="" class="white">
+     <i class="fa fa-css3 hover-rotate"></i>
+    </a>
+   </span>
+  </div>
+  <div class="subbox-item4 cy-bg-freshair">
+   <span class="position-middle">
+    <a href="" class="white">
+     <i class="fa fa-html5 hover-rotate"></i>
+    </a>
+   </span>
+  </div>
+  <div class="subbox-item4 cy-bg-peridot">
+   <span class="position-middle">
+    <a href="" class="white">
+     <i class="fa fa-facebook hover-rotate"></i>
+    </a>
+   </span>
+  </div>
+ </div>
+ <div class="box-item4 cy-bg-moonstone">
+  <span class="position-middle">
+   <a href="" class="white">
+    <i class="fa fa-youtube hover-card-h"></i>
+   </a>
+  </span>
+ </div>
+</div>
+</xmp>
+</div>
+
+<p class="subheader" id="arsip">Arsip</p>
+
+<iframe width="100%" height="300px" frameborder="0" class="box-shadow" src="../demo/arsip.html"></iframe>
+<br>
+<div class="nava-Accordion" style="border: 1px solid #ddd">View Source Code</div>
+<div class="nava-panel" style="padding: 0">
+<xmp><!-- arsip -->
+    <div class="arsip">
+        <li><a href=""><img src="images/flamecore.png" class="arsip-logo"></a></li>
+        <li class="right">
+            <a onclick="toggleArsip()" id="arsipMenuActive">
+                <i class="fa fa-ellipsis-v toggle-menu"></i>
+            </a>
+            <div id="arsipMenu" class="arsip-menu">
+                <div class="arsip-row arsip-grid">
+                    <div class="arsip-col arsip-grid l3 m6 s12">
+                        <a href="">Learn</a>
+                        <a href="">Begin</a>
+                        <a href="">Container></a>
+                    </div>
+                    <div class="arsip-col arsip-grid l3 m6 s12">
+                        <a href="">Column</a>
+                        <a href="">arsip-grid</a>
+                        <a href="">Float</a>
+                        <a href="">Table Cell</a>
+                        <a href="">Flexbox</a>
+                    </div>
+                    <div class="arsip-col arsip-grid l3 m6 s12">
+                        <a href="">Color</a>
+                        <a href="">Color Group</a>
+                    </div>
+                    <div class="arsip-col arsip-grid l3 m6 s12">
+                        <a href="">Organiser</a>
+                        <a href="">Top Level Developer</a>
+                    </div>
+                </div>
+                <div class="arsip-row arsip-grid">
+                    <div class="arsip-col arsip-grid l3 m6 s12">
+                        <a href="">Group Facebook</a>
+                        <a href="">CSS Indonesia</a>
+                        <a href="">HTML Indonesia</a>
+                        <a href="">Framework Core Indonesia</a>
+                    </div>
+                    <div class="arsip-col arsip-grid l3 m6 s12">
+                        <a href="">Youtube</a>
+                        <a href="">Framework Core Indonesia</a>
+                        <a href="">Geguin Video</a>
+                        <a href="">Andika Chamberlin</a>
+                    </div>
+                    <div class="arsip-col arsip-grid l3 m6 s12">
+                        <a href="">Sticky</a>
+                        <a href="">Sticky Hidden</a>
+                        <a href="">Sticky Jump</a>
+                        <a href="">Stikcy Landing</a>
+                    </div>
+                    <div class="arsip-col arsip-grid l3 m6 s12">
+                        <a href="">Navbar</a>
+                        <a href="">Web Windows Navigation</a>
+                    </div>
+                </div>
+                <div class="arsip-row arsip-grid">
+                    <div class="arsip-col arsip-grid l3 m6 s12">
+                        <a href="">Templates</a>
+                        <a href="">Education</a>
+                    </div>
+                    <div class="arsip-col arsip-grid l3 m6 s12">
+                        <a href="">Templates</a>
+                        <a href="">Education</a>
+                    </div>
+                    <div class="arsip-col arsip-grid l3 m6 s12">
+                        <a href="">Templates</a>
+                        <a href="">Education</a>
+                    </div>
+                    <div class="arsip-col arsip-grid l3 m6 s12">
+                        <a href="">Templates</a>
+                        <a href="">Education</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </div>
+    <!-- End arsip -->
+
+    <!-- Content -->
+    <div class="arsip-content">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <!-- End Content -->
+</xmp>    
+</div>
+
+<p class="subheader" id="nava">Nava</p>
+<iframe width="100%" height="300px" frameborder="0" class="box-shadow" src="../demo/nava.html"></iframe>
+<br>
+<div class="nava-Accordion" style="border: 1px solid #ddd">View Source Code</div>
+<div class="nava-panel" style="padding: 0">
+<xmp><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nava</title>
+    <!-- Icon Title -->
+    <link rel="icon" href="" type="image/x-icon">
+    <!-- Memanggil core.min.css-->
+    <link rel="stylesheet" type="text/css" href="core/core.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<style type="text/css">
+
+</style>
+<body style="height: 2000px">
+
+    <!-- nava -->
+    <div class="nava">
+        <li>
+            <a onclick="toggleNava()" id="navaAsideActive">
+                <i class="fa fa-bars nava-toggle-aside"></i>
+            </a>
+            <div id="navaAside" class="nava-aside">
+                <div class="nava-icons">
+                    <div class="nava-icon" id="navaIconActive1">
+                        <a onclick="toggleNavaIcon1()">
+                            <i class="fa fa-home nava-toggle-icon"></i>
+                        </a>
+                        <div id="navaIconContent1" class="nava-icon-content">
+                           Lorem ipsum dolor sit amet
+                        </div>
+                    </div>
+                    <div class="nava-icon" id="navaIconActive2">
+                        <a onclick="toggleNavaIcon2()">
+                            <i class="fa fa-leanpub nava-toggle-icon"></i>
+                        </a>
+                        <div id="navaIconContent2" class="nava-icon-content">
+                            Lorem ipsum dolor sit amet
+                        </div>
+                    </div>
+                    <div class="nava-icon" id="navaIconActive3">
+                        <a onclick="toggleNavaIcon3()">
+                            <i class="fa fa-columns nava-toggle-icon"></i>
+                        </a>
+                        <div id="navaIconContent3" class="nava-icon-content">
+                            Lorem ipsum dolor sit amet
+                        </div>
+                    </div>
+                    <div class="nava-icon" id="navaIconActive4">
+                        <a onclick="toggleNavaIcon4()">
+                            <i class="fa fa-camera nava-toggle-icon"></i>
+                        </a>
+                        <div id="navaIconContent4" class="nava-icon-content">
+                            Lorem ipsum dolor sit amet
+                        </div>
+                    </div>
+                    <div class="nava-icon" id="navaIconActive5">
+                        <a onclick="toggleNavaIcon5()">
+                            <i class="fa fa-sitemap nava-toggle-icon"></i>
+                        </a>
+                        <div id="navaIconContent5" class="nava-icon-content">
+                            Lorem ipsum dolor sit amet
+                        </div>
+                    </div>
+                </div>
+                <div class="nava-link">
+                    <a href="index.html">
+                        <h4>Flamecore<sup style="font-size: 15px">Org</sup>
+                        </h4>
+                    </a>
+                    <a href="index.html">Framework Core</a>
+                    <a href="learn.html">Learn</a>
+                    <a href="column.html">Column</a>
+                    <a href="color.html">Color</a>
+                    <a href="js.html">jCore</a>
+                    <a href="templates.html">Templates</a>
+                    <a href="tutorial.html" style="border-top: 1px solid #ddd">Tutuorial</a>
+                    <!-- nava-Accordion -->
+                    <div class="nava-Accordion">Ebook</div>
+                    <div class="nava-panel">
+                        <a href="">HTML</a>
+                        <a href="">CSS</a>
+                        <a href="">Javascript</a>
+                        <a href="">jQuery</a>
+                        <a href="">Special</a>
+                    </div>
+                    <a href="organiser.html">Organiser</a>
+                </div>
+            </div>
+        </li>
+        <li><a href="index.html"><img src="../images/flamecore.png" class="nava-logo"></a></li>
+        <li class="right">
+            <a onclick="toggleNavaMenu()" id="navaMenuActive">
+                <i class="fa fa-ellipsis-v nava-toggle-menu"></i>
+            </a>
+            <div id="navaMenu" class="nava-menu">
+                <div class="nava-items">
+                    <a href="" class="nava-items-active">Home</a>
+                    <a href="">Learn</a>
+                    <a href="">Column</a>
+                    <a href="">Color</a>
+                    <a href="">Author</a>
+                    <a href="" class="right">Organiser</a>
+                </div>
+            </div>
+        </li>
+    </div>
+    <!-- End nava -->
+
+    <!-- Content -->
+    <div class="nava-content">
+    Lorem ipsum dolor sit amet
+    </div>
+    <!-- End Content -->
+
+</body>
+<!-- Memanggil CDN Google Library jQuery -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Memanggil javascript Core -->
+<script type="text/javascript" src="js/core.js"></script>
+<script type="text/javascript" src="js/nava-accordion.js"></script>
+</html>
+</xmp>
+</div>
+
+<p class="subheader" id="navbarBasic">Navbar Basic</p>
+<iframe width="100%" height="300px" frameborder="0" class="box-shadow" src="../demo/navbar.html"></iframe>
+<br>
+<div class="nava-Accordion" style="border: 1px solid #ddd">View Source Code</div>
+<div class="nava-panel" style="padding: 0">
+<xmp><!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="core/core.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style type="text/css">
+
+</style>
+<body>
+    <div class="navbar" id="cNavbar">
+        <a href="#">Logo</a>
+        <a href="#"><i class="fa fa-home"></i> Home</a>
+        <a href="#"><i class="fa fa-leanpub"></i> Learn</a>
+        <a href="#"><i class="fa fa-columns"></i> Column</a>
+        <a href="#"><i class="fa fa-camera"></i> Color</a>
+        <a class="search-navoid-container">
+            <div class="search-group">
+                <span class="search-item">
+                    <i class="fa fa-search" class="search-navoid"></i>
+                </span>
+                <span class="search-item">
+                    <input type="text" name="search-navoid" class="input-search-navoid">
+                </span>
+            </div>
+        </a>
+        <a href="#" class="right"><i class="fa fa-sign-in"></i> Sign In</a>
+        <a href="javascript:void(0);" class="navbar-toggle" id="activeToggleNavoid" onclick="toggleNavbar()"><i class="fa fa-bars"></i></a>
+    </div>
+</body>
+<script type="text/javascript" src="js/navoon.js"></script>
+</html>
+</xmp>
+</div>
+
+<p class="subheader" id="navop">Navop</p>
+<iframe width="100%" height="300px" frameborder="0" class="box-shadow" src="../demo/navop.html"></iframe>
+<br>
+<div class="nava-Accordion" style="border: 1px solid #ddd">View Source Code</div>
+<div class="nava-panel" style="padding: 0">
+<xmp><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Navop</title>
+    <!-- toggle-navop Title -->
+    <link rel="icon" href="" type="image/icon">
+    <!-- Memanggil core.min.css-->
+    <link rel="stylesheet" type="text/css" href="core/core.css">
+    <!-- Memanggil CDN Library Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+<style type="text/css">
+
+</style>
+</head>
+<body style="height: 1000px">
+    <div class="navor-top">
+        <li>
+            <a href="#">
+                <img src="images/flamecore.png" class="navor-logo">
+            </a>
+        </li>
+        <li class="right"><a href="#"><i class="fa fa-user"></i> Login</a></li>
+        <li class="right"><a href="#"><i class="fa fa-lock"></i> Logout</a></li>
+    </div>
+    <div class="navop" id="cNavop">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Learn <i class="arrow-down arrow-white"></i></a>
+            <ul class="navop-sub">
+                <li><a href="">Sub 1</a></li>
+                <li><a href="">Sub 2</a></li>
+                <li><a href="">Sub 3 <i class="arrow-right arrow-white"></i></a>
+                    <ul class="navop-sub-2">
+                        <li><a href="">Sub 2.1</a></li>
+                        <li><a href="">Sub 2.2</a></li>
+                        <li><a href="">Sub 2.3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">Column <i class="arrow-down arrow-white"></i></a>
+            <ul class="navop-column">
+                <div class="row">
+                    <div class="column l3 m6 s12">
+                        <li><a href="">Float</a></li>
+                        <li><a href="">Table Cell</a></li>
+                        <li><a href="">Flexbox</a></li>
+                    </div>
+                    <div class="column l3 m6 s12">
+                        <li><a href="">Grid</a></li>
+                        <li><a href="">Mega Column</a></li>
+                        <li><a href="">Mega Column</a></li>
+                    </div>
+                    <div class="column l3 m6 s12">
+                        <li><a href="">Column</a></li>
+                        <li><a href="">Cell</a></li>
+                        <li><a href="">Flex</a></li>
+                    </div>
+                    <div class="column l3 m6 s12">
+                        <li><a href="">Inline</a></li>
+                        <li><a href="">inline-block</a></li>
+                        <li><a href="">block</a></li>
+                    </div>
+                </div>
+            </ul>
+        </li>
+        <li><a href="#">Color</a></li>
+        <li class="right"><a href="#">Author</a></li>
+        <li class="toggle-navop">
+            <a href="javascript:void(0);" onclick="myFunction()" id="activeNavop">
+                <i class="fa fa-bars"></i>
+            </a>
+        </li>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+</body>
+<!-- Memanggil CDN Google Library jQuery -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Memanggil javascript Core -->
+<script type="text/javascript" src="js/core.js"></script>
+</html>
+</xmp>
+</div>
+
+<p class="subheader" id="navor">Navor</p>
+<iframe width="100%" height="300px" frameborder="0" class="box-shadow" src="../demo/navor.html"></iframe>
+<br>
+<div class="nava-Accordion" style="border: 1px solid #ddd">View Source Code</div>
+<div class="nava-panel" style="padding: 0">
+<xmp><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Navor</title>
+    <!-- Icon Title -->
+    <link rel="icon" href="" type="image/x-icon">
+    <!-- Memanggil core.min.css-->
+    <link rel="stylesheet" type="text/css" href="core/core.css">
+    <!-- Memanggil CDN Library Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+<style type="text/css"> 
+</style>
+</head>
+<body style="height: 1000px">
+    <div class="navor-top">
+        <li>
+            <a href="#">
+                <img src="images/flamecore.png" class="navor-logo">
+            </a>
+        </li>
+        <li class="right"><a href="#"><i class="fa fa-user"></i> Login</a></li>
+        <li class="right"><a href="#"><i class="fa fa-lock"></i> Logout</a></li>
+    </div>
+    <div class="navor">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Learn <i class="arrow-down"></i></a>
+            <ul class="navor-sub">
+                <li><a href="">sub 1 (andikachamberlin.github.io)</a></li>
+                <li><a href="">sub 2</a></li>
+                <li><a href="">sub 3 <i class="arrow-right"></i></a>
+                    <ul class="navor-sub-2">
+                        <li><a href="">sub 3.1</a></li>
+                        <li><a href="">sub 3.1</a></li>
+                        <li><a href="">sub 3.1</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">Column <i class="arrow-down"></i></a>
+            <ul class="navor-column">
+                <div class="row">
+                    <div class="column l3 m6 s12">
+                        <li><a href="">Float</a></li>
+                        <li><a href="">Table Cell</a></li>
+                        <li><a href="">Flexbox</a></li>
+                    </div>
+                    <div class="column l3 m6 s12">
+                        <li><a href="">Grid</a></li>
+                        <li><a href="">Mega Column</a></li>
+                        <li><a href="">Mega Column</a></li>
+                    </div>
+                    <div class="column l3 m6 s12">
+                        <li><a href="">Column</a></li>
+                        <li><a href="">Cell</a></li>
+                        <li><a href="">Flex</a></li>
+                    </div>
+                    <div class="column l3 m6 s12">
+                        <li><a href="">Inline</a></li>
+                        <li><a href="">inline-block</a></li>
+                        <li><a href="">block</a></li>
+                    </div>
+                </div>
+            </ul>
+        </li>
+        <li><a href="#">Color</a></li>
+        <li class="right"><a href="#">Author</a></li>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</body>
+<!-- Memanggil CDN Google Library jQuery -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Memanggil javascript Core -->
+<script type="text/javascript" src="js/core.js"></script>
+</html>
+</xmp>
+</div>
+
+<!-- Nava Accordion -->
+<p class="subheader" id="navaAccordion">Nava Accordion</p>
+<div class="nava-Accordion" style="border: 1px solid #ddd">Open</div>
+<div class="nava-panel">
+Tadaaa!!!
+</div>
+<xmp><div class="nava-Accordion">Open</div>
+<div class="nava-panel">
+Tadaaa!!!
+</div>
+</xmp>
+<p>Script</p>
+<xmp><script type="text/javascript" src="js/nava-accordion.js"></script>
+</xmp>
+<!-- End Nava Accordion -->
+
+	<!-- End Content -->
+
+	<div style="padding:40px 0 16px 0" class="right-align">
+		<a href="https://getcore.github.io/learn.html" style="padding: 12px 16px;border:1px solid #ddd;color:inherit" class="hover-lightgray"><span class="fa fa-caret-left"></span> Kembali</a>
+	</div>
+
+</body>
+<!-- Memanggil CDN Google Library jQuery -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Memanggil javascript Core -->
+<script type="text/javascript" src="https://cdncore.github.io/js/2.1/core.min.js"></script>
+<script type="text/javascript" src="https://cdncore.github.io/js/2.1/nava-accordion.min.js"></script>
+<script type="text/javascript" src="../js/core.js"></script>
+<script type="text/javascript" src="../js/nava-accordion.js"></script>
+</html>
