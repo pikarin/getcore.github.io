@@ -1,0 +1,12 @@
+$(document).ready(function(){
+	$(".nav-toggle").click(function(){
+		$(".nav-link").slideToggle(300);
+		$(".nav-window").toggle();
+		document.getElementById("navActive").classList.toggle("nav-active");
+	})
+	$(".nav-window").click(function(){
+		$(".nav-link").slideToggle(300);
+		$(".nav-window").hide();
+		document.getElementById("navActive").classList.toggle("nav-active");
+	});
+});
