@@ -1,32 +1,21 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Container</title>
-	<!-- Icon Title -->
-	<link rel="icon" href="https://cdncore.github.io/images/icore.png" type="image/x-icon">
 	<!-- Memanggil core.min.css-->
 	<link rel="stylesheet" type="text/css" href="../core/core.css">
-	<link rel="stylesheet" type="text/css" href="https://cdncore.github.io/core/2.1/core.min.css">
 	<!-- Memanggil CDN Library Font Awesome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!--[if lt IE 9]>
-  		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-	<![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<style type="text/css">
 	/* Style */
 	</style>
 </head>
 <body class="layout-m equal">
-	<div style="padding:16px 0 30px 0">
-		<a href="https://getcore.github.io/learn.html" style="padding: 12px 16px;border:1px solid #ddd;color:inherit" class="hover-lightgray"><span class="fa fa-caret-left"></span> Kembali</a>
-	</div>
-
-	<h5 id="container">Container</h5>
+	<h4 class="section-l">Container</h4>
                 <p class="subheader">Container</p>
-                <p>Digunakan untuk membuat container dengan margin kanan kiri 24px.
+                <p>To create a container with left margin 24px left.
                 </p>
 <xmp><body>
  <div class="container">
@@ -35,7 +24,7 @@
 </body>
 </xmp>
 <p class="subheader">Container Equal</p>
-<p>Digunakan untuk membuat container dengan margin sama sebesar 24px.</p>
+<p>Used to create a container with the same margin of 24px.</p>
 <xmp><body>
  <div class="container-equal">
 
@@ -44,14 +33,14 @@
 </xmp>
 
 <p class="subheader">Container Full</p>
-<p>Digunakan untuk membuat container full yaitu margin 0 pada setiap sisi.</p>
+<p>Used to create a full container that is a margin of 0 on each side.</p>
 <xmp><body>
  <div class="container-full"></div>
 </body>
 </xmp>
 
 <p class="subheader">Inside</p>
-<p>Digunakan untuk membuat margin kanan dan kiri sebesar 16px. Ini digunakan untuk content agar tidak terlalu dekat dengan dinding margin container.</p>
+<p>Used to create a right and left margin of 16px. This is used for content not too close to the wall of margin container.</p>
 <div class="scroll-table">
     <table>
         <tr>
@@ -100,22 +89,6 @@
         </tr>
     </table>
 </div>
-<div class="alert info-dashed">
-    Kenapa marginnya 0px 8px? Kok ada dua element?
-</div>
-<p>Core akan membari tahu teknik penulisan diatas<br><br>
-Jika satu element, artinya margin atas, kanan, bawah, kiri itu sama, berikut contohnya<br>
-margin : 8px<br><br>
-Jika dua element, maka element yang pertama adalah atas bawah dan element yang kedua kanan kiri.<br>
-margin : 0px 8px | Berarti margin atas bawah 0px, kanan kiri 8px <br><br>
-Jika 3 element, maka element yang pertama adalah atas, yang kedua kanan kiri, dan yang ketiga adalah bawah<br>
-margin : 0px 8px 16px | Berarti margin atas 0px, margin kanan kiri 8px dan margin bawah 16px. <br><br>
-Dan yang terakhir jika 4 element, berarti setiap sisi di atur marginya.<br>
-margin : 0px 8px 16px 32px | Berarti margin atas 0px kanan 8px bawah 16px kiri 32px.</p>
-
-<div class="alert warning-dashed">
-    Ingat polanya : atas kanan bawah kiri
-</div>
 <xmp><body>
  <div class="containter">
   <div class="inside"></div>
@@ -123,7 +96,7 @@ margin : 0px 8px 16px 32px | Berarti margin atas 0px kanan 8px bawah 16px kiri 3
 </body>
 </xmp>
 <p class="subheader">Interior</p>
-<p>Sama seperti inside, interior digunakan untuk membuat content tidak terlalu dekat dengan margin container, bedanya, interior adalah padding sebeser 16px. Penulis lebih rekomendasi menggunakan interior untuk membuat content terlihat baik.</p>
+<p>Just like inside, the interior is used to make the content not too close to the margin container, the difference, the interior is padding 16px shift. More authors recommend using the interior to make the content look good.</p>
 <div class="scroll-table section">
     <table>
         <tr>
@@ -154,7 +127,7 @@ margin : 0px 8px 16px 32px | Berarti margin atas 0px kanan 8px bawah 16px kiri 3
 </xmp>  
 
 <p class="subheader">Deep</p>
-<p>Membuat margin sama sebesar 16px</p>
+<p>Make a margin equal to 16px</p>
 <div class="scroll-table section">
     <table>
         <tr>
@@ -185,7 +158,7 @@ margin : 0px 8px 16px 32px | Berarti margin atas 0px kanan 8px bawah 16px kiri 3
 </xmp>
 
 <p class="subheader">Equal</p>
-<p>Membuat padding sama sebesar 16px</p>
+<p>Make padding equal to 16px</p>
 <div class="scroll-table section">
     <table>
         <tr>
@@ -215,14 +188,5 @@ margin : 0px 8px 16px 32px | Berarti margin atas 0px kanan 8px bawah 16px kiri 3
 </div>
 </xmp>
 
-	<div style="padding:16px 0 16px 0" class="right-align">
-		<a href="https://getcore.github.io/learn.html" style="padding: 12px 16px;border:1px solid #ddd;color:inherit" class="hover-lightgray"><span class="fa fa-caret-left"></span> Kembali</a>
-	</div>
-
 </body>
-<!-- Memanggil CDN Google Library jQuery -->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!-- Memanggil javascript Core -->
-<script type="text/javascript" src="https://cdncore.github.io/js/2.1/core.min.js"></script>
-<script type="text/javascript" src="https://cdncore.github.io/js/2.1/nava-accordion.min.js"></script>
 </html>
